@@ -4,11 +4,11 @@
 
 
 
-[HOW TO GITHUB PAGES!](https://github.com/oleeskild/obsidian-digital-garden/discussions/389)
-
+## Instructions: How to get Digital Garden to work for Github Pages!
 
 ```text
 #build.yml
+# Reference: https://github.com/oleeskild/obsidian-digital-garden/discussions/389
 
 name: GH Pages
 
@@ -70,9 +70,16 @@ You will also need to name your repository in github, `<username>.github.io`. S
 https://dg-docs.ole.dev/getting-started/01-getting-started/
 
 https://github.com/marketplace/actions/github-pages-action
+
 https://github.com/peaceiris/actions-gh-pages
+
+Helpful: https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay
+
 possibly: https://github.com/peaceiris/actions-gh-pages/issues/736
+
 and API key: https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128
 
-https://forum.obsidian.md/t/create-blog-documentation-using-obsidian-11ty-github-pages/20775
+Set repository --> Settings --> Pages --> Source (Deploy from a branch): gh-pages /root
+
+View Actions and see if they are successful!
 
