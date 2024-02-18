@@ -346,7 +346,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-18T20:46:21.114Z';
+        const searchIndexDate = '2024-02-18T20:51:52.308Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -358,9 +358,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T20:46:21.114Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T20:51:52.308Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T20:46:21.114Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T20:51:52.308Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -613,8 +613,9 @@
       </header>
       
       
-      <p><a href="https://github.com/oleeskild/obsidian-digital-garden/discussions/389" target="_blank" class="external-link">HOW TO GITHUB PAGES!</a></p>
+      <h2 id="instructions-how-to-get-digital-garden-to-work-for-github-pages" tabindex="-1">Instructions: How to get Digital Garden to work for Github Pages!</h2>
 <pre><code class="language-text"><a class="tag" onclick="toggleTagSearch(this)" data-content="#build">#build</a>.yml
+# Reference: https://github.com/oleeskild/obsidian-digital-garden/discussions/389
 
 name: GH Pages
 
@@ -670,11 +671,13 @@ jobs:
 You will also need to name your repository in github, `&lt;username&gt;.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `&lt;username&gt;.github.io/&lt;repositoryname&gt;`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `&lt;username&gt;.github.io/styles/style.css`, because they are actually located in `&lt;username&gt;.github.io/&lt;repositoryname&gt;/styles/style.css`.
 </code></pre>
 <p><a href="https://dg-docs.ole.dev/getting-started/01-getting-started/" target="_blank" class="external-link">https://dg-docs.ole.dev/getting-started/01-getting-started/</a></p>
-<p><a href="https://github.com/marketplace/actions/github-pages-action" target="_blank" class="external-link">https://github.com/marketplace/actions/github-pages-action</a><br>
-<a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages</a><br>
-possibly: <a href="https://github.com/peaceiris/actions-gh-pages/issues/736" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages/issues/736</a><br>
-and API key: <a href="https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128" target="_blank" class="external-link">https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128</a></p>
-<p><a href="https://forum.obsidian.md/t/create-blog-documentation-using-obsidian-11ty-github-pages/20775" target="_blank" class="external-link">https://forum.obsidian.md/t/create-blog-documentation-using-obsidian-11ty-github-pages/20775</a></p>
+<p><a href="https://github.com/marketplace/actions/github-pages-action" target="_blank" class="external-link">https://github.com/marketplace/actions/github-pages-action</a></p>
+<p><a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages</a></p>
+<p>Helpful: <a href="https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay" target="_blank" class="external-link">https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay</a></p>
+<p>possibly: <a href="https://github.com/peaceiris/actions-gh-pages/issues/736" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages/issues/736</a></p>
+<p>and API key: <a href="https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128" target="_blank" class="external-link">https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128</a></p>
+<p>Set repository --&gt; Settings --&gt; Pages --&gt; Source (Deploy from a branch): gh-pages /root</p>
+<p>View Actions and see if they are successful!</p>
 
       
       
@@ -904,6 +907,23 @@ and API key: <a href="https://stackoverflow.com/questions/76023778/action-failed
 
                   
                         
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#instructions-how-to-get-digital-garden-to-work-for-github-pages">Instructions: How to get Digital Garden to work for Github Pages!</a>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
                         
 
                   
