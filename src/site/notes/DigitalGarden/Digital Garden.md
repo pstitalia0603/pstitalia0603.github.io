@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/digital-garden/digital-garden/","tags":["inbox"]}
 ---
 
-# Index page!
+
 
 [link1](https://github.com/oleeskild/obsidian-digital-garden/discussions/389)
 
