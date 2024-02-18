@@ -4,6 +4,7 @@
 
 It finally works! A port of my Obsidian Vault online through Github Pages!
 
+```html
 <body>
 <!-- Introduction -->
     <section class="intro" id="home">
@@ -60,4 +61,5 @@ It finally works! A port of my Obsidian Vault online through Github Pages!
                 </p>
                 <p><h3>INTERESTS</h3>
                 Italian Language/Culture, Learning new technology, Graphic design, Data analytics, Technology Podcasts and Blogs</p>
-            <a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry" class="footer-link">Contact Me</a>
+                <a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry" class="footer-link">Contact Me</a>
+```
