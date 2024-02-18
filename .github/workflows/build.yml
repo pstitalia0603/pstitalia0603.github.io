@@ -6,11 +6,20 @@ on:
   pull_request:
     branches: [ "main" ]
 
+# permissions:
+#   contents: write
+
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: "pages"
+  cancel-in-progress: false
+
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   build:
