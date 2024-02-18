@@ -1,15 +1,23 @@
 [
 {
 		"title": "Digital Garden",
-		"date":"Sun Feb 18 2024 20:27:18 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Feb 18 2024 20:28:46 GMT+0000 (Coordinated Universal Time)",
 		"url":"/digital-garden/digital-garden/",
 		"content": "link1\nhttps://github.com/jackyzha0/quartz\nhttps://dg-docs.ole.dev/getting-started/01-getting-started/\nhttps://github.com/oleeskild/Obsidian-digital-garden\nhttps://flowershow.app/\nhttps://github.com/jobindjohn/obsidian-publish-mkdocs\nhttps://dg-docs.ole.dev/advanced/hosting-alternatives/\nhttps://dg-docs.ole.dev/getting-started/01-getting-started/\nhttps://pstitalia0603.github.io/\nhttps://www.youtube.com/watch?v=eULVrTjT11w\nhttps://prakashjoshipax.com/free-obsidian-publish-alternative/\nhttps://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages\nhttps://forum.obsidian.md/t/obsidian-github-publisher/37953\nhttps://github.com/jobindjohn/obsidian-publish-mkdocs\nhttps://github.com/Jekyll-Garden/jekyll-garden.github.io\nhttps://brandonkboswell.com/blog/Publishing-your-Obsidian-Vault-Online-with-Quartz/\nhttps://github.com/topics/obsidian-publish\nhttps://forum.obsidian.md/t/create-blog-documentation-using-obsidian-11ty-github-pages/20775",
 		"tags": [ "note","inbox"]
 },
 
 {
+		"title": "Amazon Parent Dashboard",
+		"date":"Sun Feb 18 2024 20:28:46 GMT+0000 (Coordinated Universal Time)",
+		"url":"/inbox/amazon-parent-dashboard/",
+		"content": "https://www.amazon.com/parentdashboard/settings/child-settings/HERKY2YAHA",
+		"tags": [ "note","Reference","inbox"]
+},
+
+{
 		"title": "Testing",
-		"date":"Sun Feb 18 2024 20:27:18 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Feb 18 2024 20:28:46 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "THis is only a test...side bar menu?\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/digital-garden/digital-garden/\">Digital Garden</a>",
 		"tags": [ "note","gardenEntry"]
