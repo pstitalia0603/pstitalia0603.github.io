@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Amazon Parent Dashboard</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -172,39 +172,7 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('INBOX')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">INBOX</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/inbox/amazon-parent-dashboard/">Amazon Parent Dashboard </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Testing </a>
-                </div>
-            
-        </div>
-        
-    
-                    
+                <div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration: none;" class="filename" href="/home/">Home </a>
                 </div>
             
         </div>
@@ -377,7 +345,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-18T20:36:53.998Z';
+        const searchIndexDate = '2024-02-18T20:42:01.622Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -389,9 +357,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T20:36:53.998Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T20:42:01.622Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T20:36:53.998Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T20:42:01.622Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -623,24 +591,12 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Amazon Parent Dashboard</h1>
+          <h1 data-note-icon="">Home</h1>
         
         <div class="header-meta">
           
             <div class="header-tags">
               
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Reference
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #inbox
-                  </a>
                 
               
             </div>
@@ -650,7 +606,7 @@
       </header>
       
       
-      <p><a href="https://www.amazon.com/parentdashboard/settings/child-settings/HERKY2YAHA" target="_blank" class="external-link">https://www.amazon.com/parentdashboard/settings/child-settings/HERKY2YAHA</a></p>
+      <p>This is home!</p>
 
       
       

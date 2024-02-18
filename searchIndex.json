@@ -1,25 +1,17 @@
 [
 {
 		"title": "Digital Garden",
-		"date":"Sun Feb 18 2024 20:36:45 GMT+0000 (Coordinated Universal Time)",
+		"date":"Sun Feb 18 2024 20:41:53 GMT+0000 (Coordinated Universal Time)",
 		"url":"/digital-garden/digital-garden/",
 		"content": "HOW TO GITHUB PAGES!\n#build.yml\n\nname: GH Pages\n\non:\npush:\nbranches: [ &quot;main&quot; ]\npull_request:\nbranches: [ &quot;main&quot; ]\n\n# permissions:\n# contents: write\n\npermissions:\ncontents: read\npages: write\nid-token: write\n\nconcurrency:\ngroup: &quot;pages&quot;\ncancel-in-progress: false\n\n# concurrency:\n# group: ${{ github.workflow }}-${{ github.ref }}\n\njobs:\nbuild:\n\nruns-on: ubuntu-22.04\n\nstrategy:\nmatrix:\nnode-version: [20.x]\n# See supported Node.js release schedule at https://nodejs.org/en/about/releases/\n\nsteps:\n- uses: actions/checkout@v4\n- name: Use Node.js ${{ matrix.node-version }}\nuses: actions/setup-node@v4\nwith:\nnode-version: ${{ matrix.node-version }}\ncache: 'npm'\n- run: npm install\n- run: npm run build --if-present\n\n- name: Deploy\nuses: peaceiris/actions-gh-pages@v3\nwith:\ngithub_token: ${{ secrets.GH_TOKEN2 }} # This is from https://github.com/pstitalia0603/pstitalia0603.github.io/settings/secrets/actions --&gt; Repository secrets\npublish_dir: ./dist\n\nINSTRUCTIONS FOR TOKEN --&gt; ACTION SECRET\nYou will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)\nYou will also need to name your repository in github, `&lt;username&gt;.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `&lt;username&gt;.github.io/&lt;repositoryname&gt;`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `&lt;username&gt;.github.io/styles/style.css`, because they are actually located in `&lt;username&gt;.github.io/&lt;repositoryname&gt;/styles/style.css`.\n\nhttps://dg-docs.ole.dev/getting-started/01-getting-started/\nhttps://github.com/marketplace/actions/github-pages-action\nhttps://github.com/peaceiris/actions-gh-pages\npossibly: https://github.com/peaceiris/actions-gh-pages/issues/736\nand API key: https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128\nhttps://forum.obsidian.md/t/create-blog-documentation-using-obsidian-11ty-github-pages/20775",
 		"tags": ["build", "note","inbox"]
 },
 
 {
-		"title": "Amazon Parent Dashboard",
-		"date":"Sun Feb 18 2024 20:36:45 GMT+0000 (Coordinated Universal Time)",
-		"url":"/inbox/amazon-parent-dashboard/",
-		"content": "https://www.amazon.com/parentdashboard/settings/child-settings/HERKY2YAHA",
-		"tags": [ "note","Reference","inbox"]
-},
-
-{
-		"title": "Testing",
-		"date":"Sun Feb 18 2024 20:36:45 GMT+0000 (Coordinated Universal Time)",
-		"url":"/",
-		"content": "THis is only a test...side bar menu?\n<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/digital-garden/digital-garden/\">Digital Garden</a>",
-		"tags": [ "note","gardenEntry"]
+		"title": "Home",
+		"date":"Sun Feb 18 2024 20:41:53 GMT+0000 (Coordinated Universal Time)",
+		"url":"/home/",
+		"content": "This is home!",
+		"tags": [ "note"]
 }
 ]
