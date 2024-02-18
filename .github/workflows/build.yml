@@ -10,6 +10,7 @@
 #   pull_request:
 #     branches: [ "main" ]
 
+
 # jobs:
 #   build:
 
@@ -46,6 +47,10 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+   # added this below
+    paths-ignore:
+      - 'package.json'      
+      - 'CHANGELOG.md'
 
 permissions: 
   contents: write
