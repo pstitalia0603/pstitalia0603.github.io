@@ -377,7 +377,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-18T20:36:09.711Z';
+        const searchIndexDate = '2024-02-18T20:36:53.998Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -389,9 +389,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T20:36:09.711Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T20:36:53.998Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T20:36:09.711Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T20:36:53.998Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -645,7 +645,6 @@
       
       
       <p><a href="https://github.com/oleeskild/obsidian-digital-garden/discussions/389" target="_blank" class="external-link">HOW TO GITHUB PAGES!</a></p>
-<p><a href="https://pstitalia0603.github.io/" target="_blank" class="external-link">https://pstitalia0603.github.io/</a></p>
 <pre><code class="language-text"><a class="tag" onclick="toggleTagSearch(this)" data-content="#build">#build</a>.yml
 
 name: GH Pages
@@ -697,10 +696,10 @@ jobs:
           github_token: ${{ secrets.GH_TOKEN2 }}  # This is from https://github.com/pstitalia0603/pstitalia0603.github.io/settings/secrets/actions --&gt; Repository secrets
           publish_dir: ./dist
 </code></pre>
+<p>INSTRUCTIONS FOR TOKEN --&gt; ACTION SECRET</p>
 <pre><code class="language-text">You will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)  
 You will also need to name your repository in github, `&lt;username&gt;.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `&lt;username&gt;.github.io/&lt;repositoryname&gt;`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `&lt;username&gt;.github.io/styles/style.css`, because they are actually located in `&lt;username&gt;.github.io/&lt;repositoryname&gt;/styles/style.css`.
 </code></pre>
-<p>FINALLY!</p>
 <p><a href="https://dg-docs.ole.dev/getting-started/01-getting-started/" target="_blank" class="external-link">https://dg-docs.ole.dev/getting-started/01-getting-started/</a></p>
 <p><a href="https://github.com/marketplace/actions/github-pages-action" target="_blank" class="external-link">https://github.com/marketplace/actions/github-pages-action</a><br>
 <a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages</a><br>
