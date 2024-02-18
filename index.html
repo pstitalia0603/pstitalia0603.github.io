@@ -79,7 +79,7 @@
     
     
   </head>
-  
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section ">
     
     
       
@@ -346,7 +346,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-18T21:24:35.011Z';
+        const searchIndexDate = '2024-02-18T21:26:22.747Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -358,9 +358,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T21:24:35.011Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T21:26:22.747Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T21:24:35.011Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T21:26:22.747Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -588,7 +588,7 @@
     }
 </script>
     
-    
+    <main class="content cm-s-obsidian ">
       <header>
       
         <h1></h1>
@@ -611,64 +611,68 @@
       
       
       <p>It finally works! A port of my Obsidian Vault online through Github Pages!</p>
+<pre><code class="language-html">&lt;body&gt;
+&lt;!-- Introduction --&gt;
+    &lt;section class=&quot;intro&quot; id=&quot;home&quot;&gt;
+        &lt;h1 class=&quot;section__title section__title--intro&quot;&gt;
+            Hi, I'm &lt;strong&gt;Paula&lt;/strong&gt;
+        &lt;/h1&gt;
+        &lt;p class=&quot;section__subtitle section__subtitle--intro&quot;&gt;data,web,design&lt;/p&gt; 
+    &lt;/section&gt;
 
+    &lt;!-- My services --&gt;
+    &lt;section class=&quot;my-services&quot; id=&quot;services&quot;&gt;
+        &lt;h2  class=&quot;section__title section__title--services&quot;&gt;What I do&lt;/h2&gt;
+        &lt;div class=&quot;services&quot;&gt;
+            &lt;div class=&quot;service&quot;&gt;
+                &lt;h3&gt;Data Analysis&lt;/h3&gt;
+                &lt;p&gt;
+                &lt;strong&gt;SQL&lt;/strong&gt; (MSSQL Server, MySQL, PostgreSQL); &lt;strong&gt;NoSQL&lt;/strong&gt; (MongoDB); &lt;strong&gt;Excel&lt;/strong&gt;, &lt;strong&gt;Power Query&lt;/strong&gt;; &lt;strong&gt;PowerBi&lt;/strong&gt;, &lt;strong&gt;Tableau&lt;/strong&gt;, &lt;strong&gt;Google Data Studio&lt;/strong&gt;; &lt;strong&gt;Python&lt;/strong&gt;: pandas and NumPy&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;!-- / service --&gt;
+            &lt;div class=&quot;service&quot;&gt;
+                &lt;h3&gt;Web Development&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;HTML5&lt;/strong&gt;, &lt;strong&gt;CSS3&lt;/strong&gt;, Bootstrap, SASS; &lt;strong&gt;JavaScript&lt;/strong&gt;, NodeJS;
+                   &lt;strong&gt;CMS&lt;/strong&gt;: WordPress, Drupal;
+                    &lt;strong&gt;Version Control&lt;/strong&gt;: GitHub&lt;/p&gt;
+            &lt;/div&gt; &lt;!-- / service --&gt;
+            
+            &lt;div class=&quot;service&quot;&gt;
+                &lt;h3&gt;Multimedia Design&lt;/h3&gt;
+                &lt;p&gt;&lt;strong&gt;Adobe&lt;/strong&gt;: Photoshop, Illustrator, Acrobat; &lt;strong&gt;Affinity Suite&lt;/strong&gt;: Photo, Design, Publisher; &lt;strong&gt;Video Production&lt;/strong&gt;: Apple iMovie, Davinci Resolve; &lt;strong&gt;Microsoft Office 365&lt;/strong&gt;&lt;/p&gt;
+            &lt;/div&gt; &lt;!-- / service --&gt;         
+        &lt;/div&gt; &lt;!-- / services --&gt;
+        &lt;a href=&quot;#work&quot; class=&quot;btn&quot;&gt;My Work&lt;/a&gt;
+    &lt;/section&gt;
 
-    <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Hi, I'm <strong>Paula</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">data,web,design</p> 
-    </section>
-<p><br>
-<section class="my-services" id="services"><br>
-<h2  class="section__title section__title--services">What I do</h2><br>
-<div class="services"><br>
-<div class="service"><br>
-<h3>Data Analysis</h3><br>
-<p><br>
-<strong>SQL</strong> (MSSQL Server, MySQL, PostgreSQL); <strong>NoSQL</strong> (MongoDB); <strong>Excel</strong>, <strong>Power Query</strong>; <strong>PowerBi</strong>, <strong>Tableau</strong>, <strong>Google Data Studio</strong>; <strong>Python</strong>: pandas and NumPy</p><br>
-</div><br>
-<br>
-<div class="service"><br>
-<h3>Web Development</h3><br>
-<p><strong>HTML5</strong>, <strong>CSS3</strong>, Bootstrap, SASS; <strong>JavaScript</strong>, NodeJS;<br>
-<strong>CMS</strong>: WordPress, Drupal;<br>
-<strong>Version Control</strong>: GitHub</p><br>
-</div> 
-<p></p><div class="service"><br>
-<h3>Multimedia Design</h3><br>
-<p><strong>Adobe</strong>: Photoshop, Illustrator, Acrobat; <strong>Affinity Suite</strong>: Photo, Design, Publisher; <strong>Video Production</strong>: Apple iMovie, Davinci Resolve; <strong>Microsoft Office 365</strong></p><br>
-</div> <br>
-</div> <br>
-<a href="#work" class="btn">My Work</a><br>
-</section></p>
-<br>
-<br>
-<h2 class="section__title section__title--about">Who I am</h2><br>
-<p class="section__subtitle section__subtitle--about">I'm an <strong>analytical problem-solver</strong> who is <strong>Organized</strong> (I do things systematically and with order), <strong>Efficient</strong> (I create reproducible products and procedures), and <strong>Responsive</strong> (I get back to you every step of the way!)</p><br>
-<br>
-<p>Data Management &amp; Analysis, Web Development, Graphic Design/Desktop Publishing,<br>
-Multimedia / Video Production, Desktop/Mobile Support </p><br>
-<p><h3>SKILLS</h3><br>
-Web Development: HTML5, CSS3, JavaScript, NodeJS, Bootstrap; CMS: WordPress, Drupal; Version Control: GitHub<br>
-Data Management &amp; Analysis: SQL (SQL Server, MySQL, PostgreSQL), NoSQL (MongoDB), Microsoft Excel for data analytics<br>
-Graphic Design/Desktop Publishing: Adobe: Photoshop, Illustrator; Acrobat Affinity Suite: Photo, Design, Publisher Microsoft Office Suite<br>
-Multimedia / Video Production Davinci Resolve, Adobe Premiere, Apple iMovie<br>
-Desktop/Mobile Support: Maintain, install, upgrade, troubleshoot hardware and software Operating systems: Linux, Windows, MacOS, ChromeOS, Android, iOS<br>
-</p><br>
-<p><h3>EDUCATION</h3><br>
-M.S. - Information Systems<br>
-University of Maryland, Baltimore County<br><br>
-B.A. - Mass Communication<br>
-Towson University<br>
-</p><br>
-<p><h3>INTERESTS</h3><br>
-Italian Language/Culture, Learning new technology, Graphic design, Data analytics, Technology Podcasts and Blogs</p><br>
-<a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry" class="footer-link">Contact Me</a>
+    &lt;!-- About Me --&gt;
+    &lt;section class=&quot;about-me&quot; id=&quot;about&quot;&gt;
+        &lt;h2 class=&quot;section__title section__title--about&quot;&gt;Who I am&lt;/h2&gt;
+        &lt;p class=&quot;section__subtitle section__subtitle--about&quot;&gt;I'm an &lt;strong&gt;analytical problem-solver&lt;/strong&gt; who is &lt;strong&gt;Organized&lt;/strong&gt; (I do things systematically and with order), &lt;strong&gt;Efficient&lt;/strong&gt; (I create reproducible products and procedures), and &lt;strong&gt;Responsive&lt;/strong&gt; (I get back to you every step of the way!)&lt;/p&gt;
+        &lt;div class=&quot;about-me__body&quot;&gt;
+            &lt;p&gt;Data Management &amp; Analysis, Web Development, Graphic Design/Desktop Publishing,
+                Multimedia / Video Production, Desktop/Mobile Support &lt;/p&gt;
+            &lt;p&gt;&lt;h3&gt;SKILLS&lt;/h3&gt;
+                Web Development: HTML5, CSS3, JavaScript, NodeJS, Bootstrap; CMS: WordPress, Drupal; Version Control: GitHub
+                Data Management &amp; Analysis: SQL (SQL Server, MySQL, PostgreSQL), NoSQL (MongoDB), Microsoft Excel for data analytics
+                Graphic Design/Desktop Publishing: Adobe: Photoshop, Illustrator; Acrobat Affinity Suite: Photo, Design, Publisher Microsoft Office Suite
+                Multimedia / Video Production Davinci Resolve, Adobe Premiere, Apple iMovie
+                Desktop/Mobile Support: Maintain, install, upgrade, troubleshoot hardware and software Operating systems: Linux, Windows, MacOS, ChromeOS, Android, iOS
+                &lt;/p&gt;
+                &lt;p&gt;&lt;h3&gt;EDUCATION&lt;/h3&gt;
+                M.S. - Information Systems
+                University of Maryland, Baltimore County&lt;br&gt;
+                B.A. - Mass Communication
+                Towson University
+                &lt;/p&gt;
+                &lt;p&gt;&lt;h3&gt;INTERESTS&lt;/h3&gt;
+                Italian Language/Culture, Learning new technology, Graphic design, Data analytics, Technology Podcasts and Blogs&lt;/p&gt;
+                &lt;a href=&quot;mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry&quot; class=&quot;footer-link&quot;&gt;Contact Me&lt;/a&gt;
+</code></pre>
 
       
       
-    
+    </main>
 
     
       <aside>
@@ -1082,6 +1086,5 @@ lucide.createIcons({
             }
         });
 </script>
-    
-  
-</html>
+    </body>
+  </html>
