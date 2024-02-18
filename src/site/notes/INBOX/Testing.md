@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/inbox/testing/"}
+{"dg-publish":true,"permalink":"/inbox/testing/","tags":["gardenEntry"]}
 ---
 
 THis is only a test...side bar menu?
