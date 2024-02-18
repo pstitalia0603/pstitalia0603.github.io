@@ -377,7 +377,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-18T20:28:54.670Z';
+        const searchIndexDate = '2024-02-18T20:36:09.711Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -389,9 +389,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T20:28:54.670Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T20:36:09.711Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T20:28:54.670Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T20:36:09.711Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -644,23 +644,68 @@
       </header>
       
       
-      <p><a href="https://github.com/oleeskild/obsidian-digital-garden/discussions/389" target="_blank" class="external-link">link1</a></p>
-<p><a href="https://github.com/jackyzha0/quartz" target="_blank" class="external-link">https://github.com/jackyzha0/quartz</a></p>
-<p><a href="https://dg-docs.ole.dev/getting-started/01-getting-started/" target="_blank" class="external-link">https://dg-docs.ole.dev/getting-started/01-getting-started/</a></p>
-<p><a href="https://github.com/oleeskild/Obsidian-digital-garden" target="_blank" class="external-link">https://github.com/oleeskild/Obsidian-digital-garden</a></p>
-<p><a href="https://flowershow.app/" target="_blank" class="external-link">https://flowershow.app/</a></p>
-<p><a href="https://github.com/jobindjohn/obsidian-publish-mkdocs" target="_blank" class="external-link">https://github.com/jobindjohn/obsidian-publish-mkdocs</a></p>
-<p><a href="https://dg-docs.ole.dev/advanced/hosting-alternatives/" target="_blank" class="external-link">https://dg-docs.ole.dev/advanced/hosting-alternatives/</a><br>
-<a href="https://dg-docs.ole.dev/getting-started/01-getting-started/" target="_blank" class="external-link">https://dg-docs.ole.dev/getting-started/01-getting-started/</a></p>
+      <p><a href="https://github.com/oleeskild/obsidian-digital-garden/discussions/389" target="_blank" class="external-link">HOW TO GITHUB PAGES!</a></p>
 <p><a href="https://pstitalia0603.github.io/" target="_blank" class="external-link">https://pstitalia0603.github.io/</a></p>
-<p><a href="https://www.youtube.com/watch?v=eULVrTjT11w" target="_blank" class="external-link">https://www.youtube.com/watch?v=eULVrTjT11w</a></p>
-<p><a href="https://prakashjoshipax.com/free-obsidian-publish-alternative/" target="_blank" class="external-link">https://prakashjoshipax.com/free-obsidian-publish-alternative/</a></p>
-<p><a href="https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages" target="_blank" class="external-link">https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages</a></p>
-<p><a href="https://forum.obsidian.md/t/obsidian-github-publisher/37953" target="_blank" class="external-link">https://forum.obsidian.md/t/obsidian-github-publisher/37953</a></p>
-<p><a href="https://github.com/jobindjohn/obsidian-publish-mkdocs" target="_blank" class="external-link">https://github.com/jobindjohn/obsidian-publish-mkdocs</a></p>
-<p><a href="https://github.com/Jekyll-Garden/jekyll-garden.github.io" target="_blank" class="external-link">https://github.com/Jekyll-Garden/jekyll-garden.github.io</a></p>
-<p><a href="https://brandonkboswell.com/blog/Publishing-your-Obsidian-Vault-Online-with-Quartz/" target="_blank" class="external-link">https://brandonkboswell.com/blog/Publishing-your-Obsidian-Vault-Online-with-Quartz/</a></p>
-<p><a href="https://github.com/topics/obsidian-publish" target="_blank" class="external-link">https://github.com/topics/obsidian-publish</a></p>
+<pre><code class="language-text"><a class="tag" onclick="toggleTagSearch(this)" data-content="#build">#build</a>.yml
+
+name: GH Pages
+
+on:
+  push:
+    branches: [ &quot;main&quot; ]
+  pull_request:
+    branches: [ &quot;main&quot; ]
+
+# permissions:
+#   contents: write
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: &quot;pages&quot;
+  cancel-in-progress: false
+
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-22.04
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build --if-present
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN2 }}  # This is from https://github.com/pstitalia0603/pstitalia0603.github.io/settings/secrets/actions --&gt; Repository secrets
+          publish_dir: ./dist
+</code></pre>
+<pre><code class="language-text">You will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)  
+You will also need to name your repository in github, `&lt;username&gt;.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `&lt;username&gt;.github.io/&lt;repositoryname&gt;`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `&lt;username&gt;.github.io/styles/style.css`, because they are actually located in `&lt;username&gt;.github.io/&lt;repositoryname&gt;/styles/style.css`.
+</code></pre>
+<p>FINALLY!</p>
+<p><a href="https://dg-docs.ole.dev/getting-started/01-getting-started/" target="_blank" class="external-link">https://dg-docs.ole.dev/getting-started/01-getting-started/</a></p>
+<p><a href="https://github.com/marketplace/actions/github-pages-action" target="_blank" class="external-link">https://github.com/marketplace/actions/github-pages-action</a><br>
+<a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages</a><br>
+possibly: <a href="https://github.com/peaceiris/actions-gh-pages/issues/736" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages/issues/736</a><br>
+and API key: <a href="https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128" target="_blank" class="external-link">https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128</a></p>
 <p><a href="https://forum.obsidian.md/t/create-blog-documentation-using-obsidian-11ty-github-pages/20775" target="_blank" class="external-link">https://forum.obsidian.md/t/create-blog-documentation-using-obsidian-11ty-github-pages/20775</a></p>
 
       
