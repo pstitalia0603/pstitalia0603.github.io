@@ -48,8 +48,15 @@ on:
   pull_request:
     branches: [ "main" ]
 
-permissions: 
-  contents: write
+
+# added
+permissions:
+    contents: read  # Allow the action to read repository contents.
+    pull-requests: write  # Allow the action to create, update, and delete pull requests.
+
+
+# permissions: 
+ # contents: write
 
 jobs:
   build:
