@@ -82,10 +82,11 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./dist
-          github_token: ${{ secrets.GH_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: docs/_site # The folder the action should deploy.
-          CLEAN: true
+          # github_token: ${{ secrets.GH_TOKEN }}
+          repo-token: ${{ secrets.GH_TOKEN }}
+          # BRANCH: gh-pages # The branch the action should deploy to.
+          # FOLDER: docs/_site # The folder the action should deploy.
+          # CLEAN: true
 
       # - name: Deploy
       #   uses: peaceiris/actions-gh-pages@v3
