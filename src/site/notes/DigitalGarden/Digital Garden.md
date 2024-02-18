@@ -56,7 +56,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN2 }}  # This is from https://github.com/pstitalia0603/pstitalia0603.github.io/settings/secrets/actions --> Repository secrets
+          github_token: ${{ secrets.GH_TOKEN2 }}  # This is from /settings/secrets/actions --> Repository secrets
           publish_dir: ./dist
 ```
 
