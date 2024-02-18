@@ -4,38 +4,77 @@
 
 
 
-[link1](https://github.com/oleeskild/obsidian-digital-garden/discussions/389)
-
-
-https://github.com/jackyzha0/quartz
-
-https://dg-docs.ole.dev/getting-started/01-getting-started/
-
-https://github.com/oleeskild/Obsidian-digital-garden
-
-https://flowershow.app/
-
-https://github.com/jobindjohn/obsidian-publish-mkdocs
-
-https://dg-docs.ole.dev/advanced/hosting-alternatives/
-https://dg-docs.ole.dev/getting-started/01-getting-started/
+[HOW TO GITHUB PAGES!](https://github.com/oleeskild/obsidian-digital-garden/discussions/389)
 
 https://pstitalia0603.github.io/
 
-https://www.youtube.com/watch?v=eULVrTjT11w
+```text
+#build.yml
 
-https://prakashjoshipax.com/free-obsidian-publish-alternative/
+name: GH Pages
 
-https://notes.nicolevanderhoeven.com/How+to+publish+Obsidian+notes+with+Quartz+on+GitHub+Pages
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
-https://forum.obsidian.md/t/obsidian-github-publisher/37953
+# permissions:
+#   contents: write
 
-https://github.com/jobindjohn/obsidian-publish-mkdocs
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-https://github.com/Jekyll-Garden/jekyll-garden.github.io
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
-https://brandonkboswell.com/blog/Publishing-your-Obsidian-Vault-Online-with-Quartz/
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
 
-https://github.com/topics/obsidian-publish
+jobs:
+  build:
+  
+    runs-on: ubuntu-22.04
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build --if-present
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN2 }}  # This is from https://github.com/pstitalia0603/pstitalia0603.github.io/settings/secrets/actions --> Repository secrets
+          publish_dir: ./dist
+```
+
+
+```text
+You will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)  
+You will also need to name your repository in github, `<username>.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `<username>.github.io/<repositoryname>`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `<username>.github.io/styles/style.css`, because they are actually located in `<username>.github.io/<repositoryname>/styles/style.css`.
+```
+
+FINALLY!
+
+https://dg-docs.ole.dev/getting-started/01-getting-started/
+
+https://github.com/marketplace/actions/github-pages-action
+https://github.com/peaceiris/actions-gh-pages
+possibly: https://github.com/peaceiris/actions-gh-pages/issues/736
+and API key: https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128
 
 https://forum.obsidian.md/t/create-blog-documentation-using-obsidian-11ty-github-pages/20775
+
