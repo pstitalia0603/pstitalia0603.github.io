@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/digital-garden/","tags":["inbox"]}
+{"dg-publish":true,"permalink":"/digital-garden/digital-garden/","tags":["inbox","Portfolio"]}
 ---
 
 
