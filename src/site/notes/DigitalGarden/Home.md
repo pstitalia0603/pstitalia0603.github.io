@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","tags":["Portfolio","DigitalGarden","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/digital-garden/home/","tags":["Portfolio","DigitalGarden","gardenEntry","gardenEntry"],"noteIcon":""}
 ---
 
 It finally works! A port of my Obsidian Vault online through Github Pages!
