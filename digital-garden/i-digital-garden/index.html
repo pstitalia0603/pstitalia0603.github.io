@@ -403,7 +403,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-19T13:31:29.107Z';
+        const searchIndexDate = '2024-02-19T13:47:31.292Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -415,9 +415,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T13:31:29.107Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T13:47:31.292Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T13:31:29.107Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T13:47:31.292Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1030,9 +1030,8 @@ You will also need to name your repository in github, `&lt;username&gt;.github.
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
+                                                </div></div>
                               </div>
                         
                   
