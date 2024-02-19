@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Digital Garden</title>
+    <title>iDigital Garden</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -213,7 +213,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden/digital-garden/">Digital Garden </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home </a>
                 </div>
             
         </div>
@@ -224,7 +224,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden/i-digital-garden/">iDigital Garden </a>
                 </div>
             
         </div>
@@ -403,7 +403,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-19T11:47:17.935Z';
+        const searchIndexDate = '2024-02-19T11:48:20.057Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -415,9 +415,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T11:47:17.935Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T11:48:20.057Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T11:47:17.935Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T11:48:20.057Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -649,7 +649,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Digital Garden</h1>
+          <h1 data-note-icon="">iDigital Garden</h1>
         
         <div class="header-meta">
           
