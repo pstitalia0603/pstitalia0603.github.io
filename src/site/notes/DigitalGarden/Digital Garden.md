@@ -4,13 +4,14 @@
 
 ## Instructions: How to get Digital Garden to work for Github Pages!
 
-1) Reference:  https://dg-docs.ole.dev/advanced/hosting-alternatives/
+- Reference:  https://dg-docs.ole.dev/advanced/hosting-alternatives/
 
-2) Clone repository:  https://github.com/oleeskild/digitalgarden 
-	1) (USE THIS TEMPLATE > CREATE A NEW REPOSITORY)
-	2) NAME THE REPOSITORY "<GITHUBNAME>.github.io"
-4) Configure build.yml
-	1) https://github.com/oleeskild/obsidian-digital-garden/discussions/389
+- Clone repository:  https://github.com/oleeskild/digitalgarden 
+	-  (USE THIS TEMPLATE > CREATE A NEW REPOSITORY)
+	- NAME THE REPOSITORY "</GITHUBNAME/>.github.io"
+	
+- Configure build.yml
+	- https://github.com/oleeskild/obsidian-digital-garden/discussions/389
 
 ```text
 #build.yml
@@ -22,9 +23,6 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
-# permissions:
-#   contents: write
 
 permissions:
   contents: read
