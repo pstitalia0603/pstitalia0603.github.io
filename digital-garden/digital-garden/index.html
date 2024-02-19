@@ -83,7 +83,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized css-settings-manager h2-underline AT-row is-focused">
+  
     
     
     
@@ -352,7 +352,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-18T22:02:57.746Z';
+        const searchIndexDate = '2024-02-19T00:37:28.747Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -364,9 +364,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-18T22:02:57.746Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T00:37:28.747Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-18T22:02:57.746Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T00:37:28.747Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -595,7 +595,7 @@
 </script>
     
 
-    <main class="content cm-s-obsidian ">
+    
       <header>
         
           <h1 data-note-icon="">Digital Garden</h1>
@@ -626,8 +626,25 @@
       
       
       <h2 id="instructions-how-to-get-digital-garden-to-work-for-github-pages" tabindex="-1">Instructions: How to get Digital Garden to work for Github Pages!</h2>
+
+<li>
+<p>Reference:  <a href="https://dg-docs.ole.dev/advanced/hosting-alternatives/" target="_blank" class="external-link">https://dg-docs.ole.dev/advanced/hosting-alternatives/</a></p>
+</li>
+
+<p>Clone repository:  <a href="https://github.com/oleeskild/digitalgarden" target="_blank" class="external-link">https://github.com/oleeskild/digitalgarden</a></p>
+
+<li>(USE THIS TEMPLATE &gt; CREATE A NEW REPOSITORY)</li>
+NAME THE REPOSITORY &quot;.github.io&quot;
+
+
+<li>
+<p>Configure build.yml</p>
+<ol>
+<li><a href="https://github.com/oleeskild/obsidian-digital-garden/discussions/389" target="_blank" class="external-link">https://github.com/oleeskild/obsidian-digital-garden/discussions/389</a></li>
+</ol>
+</li>
+
 <pre><code class="language-text"><a class="tag" onclick="toggleTagSearch(this)" data-content="#build">#build</a>.yml
-# Reference: https://github.com/oleeskild/obsidian-digital-garden/discussions/389
 
 name: GH Pages
 
@@ -693,7 +710,7 @@ You will also need to name your repository in github, `&lt;username&gt;.github.
 
       
       
-    </main>
+    
 
     
       <aside>
@@ -1157,5 +1174,6 @@ lucide.createIcons({
             }
         });
 </script>
-  </body>
+  
+
 </html>
