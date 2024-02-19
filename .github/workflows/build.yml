@@ -9,14 +9,17 @@ on:
 # permissions:
 #   contents: write
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+# start getting duplicate gardenEntry?
+# permissions:
+#   contents: read
+#   pages: write
+#   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+# concurrency:
+#   group: "pages"
+#   cancel-in-progress: false
+
+# end
 
 # concurrency:
 #   group: ${{ github.workflow }}-${{ github.ref }}
