@@ -62,7 +62,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.eae2f3b6.css" rel="stylesheet">
+    <link href="/styles/_theme.34e03f37.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet">
@@ -83,7 +83,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized css-settings-manager h2-underline AT-row is-focused">
+  <body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized css-settings-manager h2-underline AT-row is-focused">
     
     
     
@@ -403,7 +403,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-19T13:47:31.292Z';
+        const searchIndexDate = '2024-02-19T13:49:29.366Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -415,9 +415,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T13:47:31.292Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T13:49:29.366Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T13:47:31.292Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T13:49:29.366Z', docs}));
             window.docs = docs
             window.index = index;
         }
