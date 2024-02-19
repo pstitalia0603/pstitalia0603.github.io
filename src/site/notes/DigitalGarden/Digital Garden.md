@@ -4,9 +4,16 @@
 
 ## Instructions: How to get Digital Garden to work for Github Pages!
 
+1) Reference:  https://dg-docs.ole.dev/advanced/hosting-alternatives/
+
+2) Clone repository:  https://github.com/oleeskild/digitalgarden 
+	1) (USE THIS TEMPLATE > CREATE A NEW REPOSITORY)
+	2) NAME THE REPOSITORY "<GITHUBNAME>.github.io"
+4) Configure build.yml
+	1) https://github.com/oleeskild/obsidian-digital-garden/discussions/389
+
 ```text
 #build.yml
-# Reference: https://github.com/oleeskild/obsidian-digital-garden/discussions/389
 
 name: GH Pages
 
@@ -59,6 +66,7 @@ jobs:
 ```
 
 INSTRUCTIONS FOR TOKEN --> ACTION SECRET
+
 ```text
 You will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)  
 You will also need to name your repository in github, `<username>.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `<username>.github.io/<repositoryname>`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `<username>.github.io/styles/style.css`, because they are actually located in `<username>.github.io/<repositoryname>/styles/style.css`.
