@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","tags":["Portfolio","DigitalGarden","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/digital-garden/home/","tags":["Portfolio","DigitalGarden","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
 ---
 
 This is a [[DigitalGarden/iDigital Garden\|port of my Obsidian Vault]] online through Github Pages!
