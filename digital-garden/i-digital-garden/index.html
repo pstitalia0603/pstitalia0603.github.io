@@ -162,17 +162,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden/dg-published-notes/">DG - PUBLISHED NOTES </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden/i-digital-garden/">iDigital Garden </a>
                 </div>
             
@@ -361,7 +350,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-19T22:25:28.508Z';
+        const searchIndexDate = '2024-02-19T22:26:53.497Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -373,9 +362,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T22:25:28.508Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T22:26:53.497Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T22:25:28.508Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T22:26:53.497Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -988,8 +977,7 @@ You will also need to name your repository in github, `&lt;username&gt;.github.
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/digital-garden/dg-published-notes/" data-note-icon="" class="backlink">DG - PUBLISHED NOTES</a>
-                                                </div><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
                                                 </div></div>
                               </div>
                         
