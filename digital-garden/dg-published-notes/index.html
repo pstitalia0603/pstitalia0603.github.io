@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>DG - LIST OF PUBLISHED FILES</title>
+    <title>DG - PUBLISHED NOTES</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -162,7 +162,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden/dg-list-of-published-files/">DG - LIST OF PUBLISHED FILES </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden/dg-published-notes/">DG - PUBLISHED NOTES </a>
                 </div>
             
         </div>
@@ -363,7 +363,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-19T19:56:05.869Z';
+        const searchIndexDate = '2024-02-19T19:56:07.828Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -375,9 +375,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T19:56:05.869Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-19T19:56:07.828Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T19:56:05.869Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-19T19:56:07.828Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -609,7 +609,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">DG - LIST OF PUBLISHED FILES</h1>
+          <h1 data-note-icon="">DG - PUBLISHED NOTES</h1>
         
         <div class="header-meta">
           
@@ -631,9 +631,9 @@
       
       
       <p>LIST OF PUBLISHED NOTES ( <strong>3</strong> ):<br>
-<a class="internal-link" target="" data-note-icon="" href="/digital-garden/dg-list-of-published-files/">DG - LIST OF PUBLISHED FILES</a><br>
 <a class="internal-link" target="" data-note-icon="" href="/">Home</a><br>
-<a class="internal-link" target="" data-note-icon="" href="/digital-garden/i-digital-garden/">iDigital Garden</a></p>
+<a class="internal-link" target="" data-note-icon="" href="/digital-garden/i-digital-garden/">iDigital Garden</a><br>
+<a class="internal-link" target="" data-note-icon="" href="/digital-garden/dg-published-notes/">DG - PUBLISHED NOTES</a></p>
 
       
       
