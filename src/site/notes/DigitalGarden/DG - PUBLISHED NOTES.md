@@ -4,8 +4,8 @@
 
 
 LIST OF PUBLISHED NOTES ( **3** ):
+[[Home\|Home]]
 [[DigitalGarden/iDigital Garden\|iDigital Garden]]
 [[DigitalGarden/DG - PUBLISHED NOTES\|DG - PUBLISHED NOTES]]
-[[Home\|Home]]
 
 
