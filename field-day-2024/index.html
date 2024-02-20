@@ -359,7 +359,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-20T22:47:42.098Z';
+        const searchIndexDate = '2024-02-20T22:47:44.337Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -371,9 +371,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-20T22:47:42.098Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-20T22:47:44.337Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-20T22:47:42.098Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-20T22:47:44.337Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -643,8 +643,40 @@
       alt="2.png|500"
       width="500px"
       ></picture></p>
-<p><img src="/img/user/4.png" alt="4.png|500" width="500px"></p>
-<p><img src="/img/user/6.png" alt="6.png|500" width="500px"></p>
+<p><picture src="/img/user/4.png" alt="4.png|500" width="500px"><source       media="(max-width:480px)"
+      srcset="/img/optimized/H0bh5cojC_-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/H0bh5cojC_-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/H0bh5cojC_-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/H0bh5cojC_-700.jpeg"
+        ><img       class=""
+      src="/img/user/4.png"
+      alt="4.png|500"
+      width="500px"
+      ></picture></p>
+<p><picture src="/img/user/6.png" alt="6.png|500" width="500px"><source       media="(max-width:480px)"
+      srcset="/img/optimized/8nlLbhUvQH-500.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/8nlLbhUvQH-500.jpeg"
+      >
+      <source         media="(max-width:1920px)"
+        srcset="/img/optimized/8nlLbhUvQH-700.webp"
+        type="image/webp"
+        ><source         media="(max-width:1920px)"
+        srcset="/img/optimized/8nlLbhUvQH-700.jpeg"
+        ><img       class=""
+      src="/img/user/6.png"
+      alt="6.png|500"
+      width="500px"
+      ></picture></p>
 <p><img src="/img/user/t-shirt-mockup4b.png" alt="t-shirt-mockup4b.png|500" width="500px"></p>
 
       
