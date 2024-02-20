@@ -12,7 +12,6 @@ I'm an **analytical problem-solver** who is:
 	==**Organized**== (I do things systematically and with order), 
 	==**Efficient**== (I create reproducible products and procedures), and 
 	==**Responsive**== (I get back to you every step of the way!)
-
 ## What I do
 ### Data Analysis
 	- SQL(MSSQL Server, MySQL, PostgreSQL)
