@@ -83,7 +83,7 @@
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section title-note-icon filetree-note-icon links-note-icon backlinks-note-icon css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized css-settings-manager h2-underline AT-row is-focused">
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon backlinks-note-icon css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized css-settings-manager h2-underline AT-row is-focused">
     
     
     
@@ -350,7 +350,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-20T22:03:50.650Z';
+        const searchIndexDate = '2024-02-20T22:24:08.552Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -362,9 +362,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-20T22:03:50.650Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-20T22:24:08.552Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-20T22:03:50.650Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-20T22:24:08.552Z', docs}));
             window.docs = docs
             window.index = index;
         }
