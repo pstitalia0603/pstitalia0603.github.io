@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry"],"noteIcon":""}
 ---
 
-This is a [[DigitalGarden/iDigital Garden\|port of my Obsidian Vault]] online through Github Pages!
+This is a [[PROFESSIONAL/CODE_SNIPPETS/iDigital Garden\|port of my Obsidian Vault]] online through Github Pages!
 
 # Hi, I'm Paula
 #### data, web, design -- Data Management & Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support
