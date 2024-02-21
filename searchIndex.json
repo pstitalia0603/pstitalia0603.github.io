@@ -1,7 +1,7 @@
 [
 {
 		"title": "Home",
-		"date":"Wed Feb 21 2024 22:09:12 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Feb 21 2024 23:51:27 GMT+0000 (Coordinated Universal Time)",
 		"url":"/",
 		"content": "This is a <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/professional/code-snippets/i-digital-garden/\">port of my Obsidian Vault</a> online through Github Pages!\nHi, I'm Paula\ndata, web, design -- Data Management &amp; Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support\nWho I am\nI'm an analytical problem-solver who is:\nOrganized (I do things systematically and with order),\nEfficient (I create reproducible products and procedures), and\nResponsive (I get back to you every step of the way!)\nWhat I do\nData Analysis\n- SQL(MSSQL Server, MySQL, PostgreSQL)\n- NoSQL\n- Excel, Power Query\n- PowerBi\n- Tableau\n- Google Data Studio\n- Python(pandas and NumPy)\nWeb Development\n- HTML5\n- CSS3\n- JavaScript, NodeJS\n- CMS (WordPress, Drupal)\n- Version Control (Git, Github)\nMultimedia Design\n- Adobe (Photoshop, Illustrator, Acrobat)\n- Affinity Suite: Photo, Designer, Publisher\n- Video Production: Apple iMovie, DaVinci Resolve\n- Microsoft Office 365\nEducation\nM.S. - Information Systems\nB.A. - Mass Communication\nInterests\n- Italian Language/Culture\n- Learning new technology\n- Graphic design\n- Data analytics\n- Technology Podcasts and Blogs\n\nContact Me",
 		"tags": [ "note","Portfolio","gardenEntry"]
@@ -9,7 +9,7 @@
 
 {
 		"title": "Field Day 2024",
-		"date":"Wed Feb 21 2024 22:09:12 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Feb 21 2024 23:51:27 GMT+0000 (Coordinated Universal Time)",
 		"url":"/personal/me/kids/school/field-day-2024/",
 		"content": "<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">Field day details</a>",
 		"tags": [ "note","STP","inbox"]
@@ -17,7 +17,7 @@
 
 {
 		"title": "iDigital Garden",
-		"date":"Wed Feb 21 2024 22:09:12 GMT+0000 (Coordinated Universal Time)",
+		"date":"Wed Feb 21 2024 23:51:27 GMT+0000 (Coordinated Universal Time)",
 		"url":"/professional/code-snippets/i-digital-garden/",
 		"content": "Instructions: How to get Digital Garden to work for Github Pages!\nConcept: https://dg-docs.ole.dev/advanced/hosting-alternatives/\nSteps\n\nClone repository: https://github.com/oleeskild/digitalgarden\n\n(USE THIS TEMPLATE &gt; CREATE A NEW REPOSITORY)\nNAME THE REPOSITORY &quot;&lt;/GITHUBNAME/&gt;.github.io&quot;\n\nConfigure build.yml\n\nhttps://github.com/oleeskild/obsidian-digital-garden/discussions/389\n\nSet repository --&gt; Settings --&gt; Pages --&gt; Source (Deploy from a branch): gh-pages\n\nView Actions and see if they are successful!\n\nbuild.yml\nname: GH Pages\n\non:\npush:\nbranches: [ &quot;main&quot; ]\npull_request:\nbranches: [ &quot;main&quot; ]\n\n# permissions:\n# contents: read\n# pages: write\n# id-token: write\n\n# concurrency:\n# group: &quot;pages&quot;\n# cancel-in-progress: false\n\n# concurrency:\n# group: ${{ github.workflow }}-${{ github.ref }}\n\njobs:\nbuild:\n\nruns-on: ubuntu-22.04\n\nstrategy:\nmatrix:\nnode-version: [20.x]\n# See supported Node.js release schedule at https://nodejs.org/en/about/releases/\n\nsteps:\n- uses: actions/checkout@v4\n- name: Use Node.js ${{ matrix.node-version }}\nuses: actions/setup-node@v4\nwith:\nnode-version: ${{ matrix.node-version }}\ncache: 'npm'\n- run: npm install\n- run: npm run build --if-present\n\n- name: Deploy\nuses: peaceiris/actions-gh-pages@v3\nwith:\ngithub_token: ${{ secrets.GH_TOKEN2 }} # This is from /settings/secrets/actions --&gt; Repository secrets\npublish_dir: ./dist\n\nNOTE: INSTRUCTIONS FOR TOKEN --&gt; ACTION SECRET\nYou will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)\nYou will also need to name your repository in github, `&lt;username&gt;.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `&lt;username&gt;.github.io/&lt;repositoryname&gt;`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `&lt;username&gt;.github.io/styles/style.css`, because they are actually located in `&lt;username&gt;.github.io/&lt;repositoryname&gt;/styles/style.css`.\n\nREFERENCES\nhttps://dg-docs.ole.dev/getting-started/01-getting-started/\nhttps://github.com/marketplace/actions/github-pages-action\nhttps://github.com/peaceiris/actions-gh-pages\nProof of Concept: https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay\npossibly necessary: https://github.com/peaceiris/actions-gh-pages/issues/736\nand API key: https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128",
 		"tags": [ "note","inbox","Portfolio","code"]
