@@ -357,7 +357,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-20T22:47:52.316Z';
+        const searchIndexDate = '2024-02-21T22:05:06.773Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -369,9 +369,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-20T22:47:52.316Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-21T22:05:06.773Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-20T22:47:52.316Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-21T22:05:06.773Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -627,7 +627,7 @@
       </header>
       
       
-      <p>This is a <a class="internal-link" target="" data-note-icon="" href="/digital-garden/i-digital-garden/">port of my Obsidian Vault</a> online through Github Pages!</p>
+      <p>This is a <a class="internal-link is-unresolved" href="/404" target="">port of my Obsidian Vault</a> online through Github Pages!</p>
 <h1 id="hi-i-m-paula" tabindex="-1">Hi, I'm Paula</h1>
 <h4 id="data-web-design-data-management-and-amp-analysis-web-development-graphic-design-desktop-publishing-multimedia-video-production-desktop-mobile-support" tabindex="-1">data, web, design -- Data Management &amp; Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support</h4>
 <h2 id="who-i-am" tabindex="-1">Who I am</h2>
