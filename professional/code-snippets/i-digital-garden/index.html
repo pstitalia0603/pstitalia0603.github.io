@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Field Day 2024</title>
+    <title>iDigital Garden</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -147,36 +147,6 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('DigitalGarden')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">DigitalGarden</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/digital-garden/i-digital-garden/">iDigital Garden </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PERSONAL')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -270,7 +240,49 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/field-day-2024/">Field Day 2024 </a>
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PROFESSIONAL')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">PROFESSIONAL</span>
+                    </div>
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PROFESSIONAL/CODE_SNIPPETS')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">CODE_SNIPPETS</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/professional/code-snippets/i-digital-garden/">iDigital Garden </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+    
+                    
                 </div>
             
         </div>
@@ -452,7 +464,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-21T22:05:24.772Z';
+        const searchIndexDate = '2024-02-21T22:09:21.063Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -464,9 +476,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-21T22:05:24.772Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-21T22:09:21.063Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-21T22:05:24.772Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-21T22:09:21.063Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -698,7 +710,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Field Day 2024</h1>
+          <h1 data-note-icon="">iDigital Garden</h1>
         
         <div class="header-meta">
           
@@ -708,7 +720,19 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #STP
+                    #inbox
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #Portfolio
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #code
                   </a>
                 
               
@@ -719,74 +743,85 @@
       </header>
       
       
-      <p><picture src="/img/user/2.png" alt="2.png|500" width="500px"><source       media="(max-width:480px)"
-      srcset="/img/optimized/wOLMMETREE-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/wOLMMETREE-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/wOLMMETREE-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/wOLMMETREE-700.jpeg"
-        ><img       class=""
-      src="/img/user/2.png"
-      alt="2.png|500"
-      width="500px"
-      ></picture></p>
-<p><picture src="/img/user/4.png" alt="4.png|500" width="500px"><source       media="(max-width:480px)"
-      srcset="/img/optimized/H0bh5cojC_-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/H0bh5cojC_-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/H0bh5cojC_-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/H0bh5cojC_-700.jpeg"
-        ><img       class=""
-      src="/img/user/4.png"
-      alt="4.png|500"
-      width="500px"
-      ></picture></p>
-<p><picture src="/img/user/6.png" alt="6.png|500" width="500px"><source       media="(max-width:480px)"
-      srcset="/img/optimized/8nlLbhUvQH-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/8nlLbhUvQH-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/8nlLbhUvQH-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/8nlLbhUvQH-700.jpeg"
-        ><img       class=""
-      src="/img/user/6.png"
-      alt="6.png|500"
-      width="500px"
-      ></picture></p>
-<p><picture src="/img/user/t-shirt-mockup4b.png" alt="t-shirt-mockup4b.png|500" width="500px"><source       media="(max-width:480px)"
-      srcset="/img/optimized/zlBKQGvWw0-500.webp"
-      type="image/webp"
-      >
-      <source       media="(max-width:480px)"
-      srcset="/img/optimized/zlBKQGvWw0-500.jpeg"
-      >
-      <source         media="(max-width:1920px)"
-        srcset="/img/optimized/zlBKQGvWw0-700.webp"
-        type="image/webp"
-        ><source         media="(max-width:1920px)"
-        srcset="/img/optimized/zlBKQGvWw0-700.jpeg"
-        ><img       class=""
-      src="/img/user/t-shirt-mockup4b.png"
-      alt="t-shirt-mockup4b.png|500"
-      width="500px"
-      ></picture></p>
+      <h2 id="instructions-how-to-get-digital-garden-to-work-for-github-pages" tabindex="-1">Instructions: How to get Digital Garden to work for Github Pages!</h2>
+<h4 id="concept-a-href-https-dg-docs-ole-dev-advanced-hosting-alternatives-target-blank-class-external-link-https-dg-docs-ole-dev-advanced-hosting-alternatives-a" tabindex="-1">Concept:  <a href="https://dg-docs.ole.dev/advanced/hosting-alternatives/" target="_blank" class="external-link">https://dg-docs.ole.dev/advanced/hosting-alternatives/</a></h4>
+<h2 id="steps" tabindex="-1">Steps</h2>
+<ol>
+<li>Clone repository:  <a href="https://github.com/oleeskild/digitalgarden" target="_blank" class="external-link">https://github.com/oleeskild/digitalgarden</a>
+<ul>
+<li>(USE THIS TEMPLATE &gt; CREATE A NEW REPOSITORY)</li>
+<li>NAME THE REPOSITORY &quot;&lt;/GITHUBNAME/&gt;.github.io&quot;</li>
+</ul>
+</li>
+<li>Configure build.yml
+<ul>
+<li><a href="https://github.com/oleeskild/obsidian-digital-garden/discussions/389" target="_blank" class="external-link">https://github.com/oleeskild/obsidian-digital-garden/discussions/389</a></li>
+</ul>
+</li>
+<li>Set repository --&gt; Settings --&gt; Pages --&gt; Source (Deploy from a branch): gh-pages
+<ul>
+<li>View Actions and see if they are successful!</li>
+</ul>
+</li>
+</ol>
+<h5 id="build-yml" tabindex="-1">build.yml</h5>
+<pre><code class="language-text">name: GH Pages
+
+on:
+  push:
+    branches: [ &quot;main&quot; ]
+  pull_request:
+    branches: [ &quot;main&quot; ]
+
+# permissions:
+  # contents: read
+  # pages: write
+  # id-token: write
+
+# concurrency:
+  # group: &quot;pages&quot;
+  # cancel-in-progress: false
+
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-22.04
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build --if-present
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN2 }}  # This is from /settings/secrets/actions --&gt; Repository secrets
+          publish_dir: ./dist
+</code></pre>
+<h4 id="note-instructions-for-token-and-gt-action-secret" tabindex="-1">NOTE: INSTRUCTIONS FOR TOKEN --&gt; ACTION SECRET</h4>
+<pre><code class="language-text">You will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)  
+You will also need to name your repository in github, `&lt;username&gt;.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `&lt;username&gt;.github.io/&lt;repositoryname&gt;`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `&lt;username&gt;.github.io/styles/style.css`, because they are actually located in `&lt;username&gt;.github.io/&lt;repositoryname&gt;/styles/style.css`.
+</code></pre>
+<h4 id="references" tabindex="-1">REFERENCES</h4>
+<p><a href="https://dg-docs.ole.dev/getting-started/01-getting-started/" target="_blank" class="external-link">https://dg-docs.ole.dev/getting-started/01-getting-started/</a></p>
+<p><a href="https://github.com/marketplace/actions/github-pages-action" target="_blank" class="external-link">https://github.com/marketplace/actions/github-pages-action</a></p>
+<p><a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages</a></p>
+<p>Proof of Concept: <a href="https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay" target="_blank" class="external-link">https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay</a></p>
+<p>possibly necessary: <a href="https://github.com/peaceiris/actions-gh-pages/issues/736" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages/issues/736</a></p>
+<p>and API key: <a href="https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128" target="_blank" class="external-link">https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128</a></p>
 
       
       
@@ -1017,6 +1052,44 @@
                   
                         
                         
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#instructions-how-to-get-digital-garden-to-work-for-github-pages">Instructions: How to get Digital Garden to work for Github Pages!</a>
+            
+                <ol>
+                    
+                    <li><a href="#concept-a-href-https-dg-docs-ole-dev-advanced-hosting-alternatives-target-blank-class-external-link-https-dg-docs-ole-dev-advanced-hosting-alternatives-a">Concept:  https://dg-docs.ole.dev/advanced/hosting-alternatives/</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#steps">Steps</a>
+            
+                <ol>
+                    
+                    <li><a href="#build-yml">build.yml</a>
+            		</li>
+
+                    <li><a href="#note-instructions-for-token-and-gt-action-secret">NOTE: INSTRUCTIONS FOR TOKEN --> ACTION SECRET</a>
+            		</li>
+
+                    <li><a href="#references">REFERENCES</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
+                        
 
                   
 
@@ -1024,9 +1097,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
+                                                </div></div>
                               </div>
                         
                   
