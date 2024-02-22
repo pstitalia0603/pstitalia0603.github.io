@@ -464,7 +464,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-22T00:06:56.305Z';
+        const searchIndexDate = '2024-02-22T00:07:00.368Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -476,9 +476,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-22T00:06:56.305Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-22T00:07:00.368Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-22T00:06:56.305Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-22T00:07:00.368Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -755,6 +755,18 @@
       alt="2.png|500"
       width="500px"
       ></picture></p>
+<p><picture src="/img/user/vault/attachments/1.png" alt="1.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/oA02Hn60jO-295.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/oA02Hn60jO-295.jpeg"
+      >
+      <img       class=""
+      src="/img/user/vault/attachments/1.png"
+      alt="1.png"
+      width=""
+      ></picture></p>
 <p><picture src="/img/user/vault/attachments/4.png" alt="4.png|500" width="500px"><source       media="(max-width:480px)"
       srcset="/img/optimized/H0bh5cojC_-500.webp"
       type="image/webp"
@@ -772,7 +784,19 @@
       alt="4.png|500"
       width="500px"
       ></picture></p>
-<p><picture src="/img/user/vault/attachments/6.png" alt="6.png|500" width="500px"><source       media="(max-width:480px)"
+<p><picture src="/img/user/vault/attachments/3.png" alt="3.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/8SvczEFAQl-295.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/8SvczEFAQl-295.jpeg"
+      >
+      <img       class=""
+      src="/img/user/vault/attachments/3.png"
+      alt="3.png"
+      width=""
+      ></picture><br>
+<picture src="/img/user/vault/attachments/6.png" alt="6.png|500" width="500px"><source       media="(max-width:480px)"
       srcset="/img/optimized/8nlLbhUvQH-500.webp"
       type="image/webp"
       >
@@ -788,8 +812,9 @@
       src="/img/user/vault/attachments/6.png"
       alt="6.png|500"
       width="500px"
-      ></picture></p>
-<p><picture src="/img/user/vault/attachments/t-shirt-mockup4b.png" alt="t-shirt-mockup4b.png|500" width="500px"><source       media="(max-width:480px)"
+      ></picture><br>
+<img src="/img/user/vault/attachments/10.png" alt="10.png"><br>
+<picture src="/img/user/vault/attachments/t-shirt-mockup4b.png" alt="t-shirt-mockup4b.png|500" width="500px"><source       media="(max-width:480px)"
       srcset="/img/optimized/zlBKQGvWw0-500.webp"
       type="image/webp"
       >
@@ -805,7 +830,8 @@
       src="/img/user/vault/attachments/t-shirt-mockup4b.png"
       alt="t-shirt-mockup4b.png|500"
       width="500px"
-      ></picture></p>
+      ></picture><br>
+<img src="/img/user/vault/attachments/9.png" alt="9.png"></p>
 
       
       
