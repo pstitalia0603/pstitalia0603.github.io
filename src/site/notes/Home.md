@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry"],"noteIcon":""}
 ---
 
 This is a [[PROFESSIONAL/CODE_SNIPPETS/iDigital Garden\|port of my Obsidian Vault]] online through Github Pages!
