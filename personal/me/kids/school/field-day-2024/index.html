@@ -464,7 +464,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-22T00:07:10.175Z';
+        const searchIndexDate = '2024-02-22T00:09:50.268Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -476,9 +476,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-22T00:07:10.175Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-22T00:09:50.268Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-22T00:07:10.175Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-22T00:09:50.268Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -842,7 +842,18 @@
       alt="t-shirt-mockup4b.png|500"
       width="500px"
       ></picture><br>
-<img src="/img/user/vault/attachments/9.png" alt="9.png"></p>
+<picture src="/img/user/vault/attachments/9.png" alt="9.png"><source       media="(max-width:480px)"
+      srcset="/img/optimized/U-8yypQ2aA-445.webp"
+      type="image/webp"
+      >
+      <source       media="(max-width:480px)"
+      srcset="/img/optimized/U-8yypQ2aA-445.jpeg"
+      >
+      <img       class=""
+      src="/img/user/vault/attachments/9.png"
+      alt="9.png"
+      width=""
+      ></picture></p>
 
       
       
