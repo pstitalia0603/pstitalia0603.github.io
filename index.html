@@ -369,7 +369,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-02-22T21:43:13.430Z';
+        const searchIndexDate = '2024-02-25T21:51:45.822Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -381,9 +381,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-02-22T21:43:13.430Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-02-25T21:51:45.822Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-22T21:43:13.430Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-02-25T21:51:45.822Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -639,8 +639,8 @@
       </header>
       
       
-      <p>This is a <a class="internal-link" target="" data-note-icon="" href="/professional/code-snippets/i-digital-garden/">port of my Obsidian Vault</a> online through Github Pages!</p>
-<h1 id="hi-i-m-paula" tabindex="-1">Hi, I'm Paula</h1>
+      <h1 id="hi-i-m-paula" tabindex="-1">Hi, I'm Paula</h1>
+<h6 id="this-is-a-professional-code-snippets-i-digital-garden-port-of-my-obsidian-vault-online-through-github-pages" tabindex="-1">This is a <a class="internal-link" target="" data-note-icon="" href="/professional/code-snippets/i-digital-garden/">port of my Obsidian Vault</a> online through Github Pages!</h6>
 <h4 id="data-web-design-data-management-and-amp-analysis-web-development-graphic-design-desktop-publishing-multimedia-video-production-desktop-mobile-support" tabindex="-1">data, web, design -- Data Management &amp; Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support</h4>
 <h2 id="who-i-am" tabindex="-1">Who I am</h2>
 <p>I'm an <strong>analytical problem-solver</strong> who is:<br>
@@ -648,36 +648,47 @@
 <mark><strong>Efficient</strong></mark> (I create reproducible products and procedures), and<br>
 <mark><strong>Responsive</strong></mark> (I get back to you every step of the way!)</p>
 <h2 id="what-i-do" tabindex="-1">What I do</h2>
-<h3 id="data-analysis" tabindex="-1">Data Analysis</h3>
-<p>- SQL(MSSQL Server, MySQL, PostgreSQL)<br>
-- NoSQL<br>
-- Excel, Power Query<br>
-- PowerBi<br>
-- Tableau<br>
-- Google Data Studio<br>
-- Python(pandas and NumPy)</p>
-<h3 id="web-development" tabindex="-1">Web Development</h3>
-<p>- HTML5<br>
-- CSS3<br>
-- JavaScript, NodeJS<br>
-- CMS (WordPress, Drupal)<br>
-- Version Control (Git, Github)</p>
-<h2 id="multimedia-design" tabindex="-1">Multimedia Design</h2>
-<p>- Adobe (Photoshop, Illustrator, Acrobat)<br>
-- Affinity Suite: Photo, Designer, Publisher<br>
-- Video Production: Apple iMovie, DaVinci Resolve<br>
-- Microsoft Office 365</p>
-<h3 id="education" tabindex="-1">Education</h3>
-<p>M.S. - Information Systems<br>
-B.A. - Mass Communication</p>
-<h3 id="interests" tabindex="-1">Interests</h3>
-<p>- Italian Language/Culture<br>
-- Learning new technology<br>
-- Graphic design<br>
-- Data analytics<br>
-- Technology Podcasts and Blogs</p>
+<h4 id="data-analysis" tabindex="-1">Data Analysis</h4>
+<ul>
+<li>SQL(MSSQL Server, MySQL, PostgreSQL)</li>
+<li>NoSQL</li>
+<li>Excel, Power Query</li>
+<li>PowerBi</li>
+<li>Tableau</li>
+<li>Google Data Studio</li>
+<li>Python(pandas and NumPy)</li>
+</ul>
+<h4 id="web-development" tabindex="-1">Web Development</h4>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript, NodeJS</li>
+<li>CMS (WordPress, Drupal)</li>
+<li>Version Control (Git, Github)</li>
+</ul>
+<h4 id="multimedia-design" tabindex="-1">Multimedia Design</h4>
+<ul>
+<li>Adobe (Photoshop, Illustrator, Acrobat)</li>
+<li>Affinity Suite: Photo, Designer, Publisher</li>
+<li>Video Production: Apple iMovie, DaVinci Resolve</li>
+<li>Microsoft Office 365</li>
+</ul>
 <hr>
-<p><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry" class="footer-link">Contact Me</a></p>
+<h3 id="education" tabindex="-1">Education</h3>
+<ul>
+<li>M.S. - Information Systems</li>
+<li>B.A. - Mass Communication</li>
+</ul>
+<h3 id="interests" tabindex="-1">Interests</h3>
+<ul>
+<li>Italian Language/Culture</li>
+<li>Learning new technology</li>
+<li>Graphic design</li>
+<li>Data analytics</li>
+<li>Technology Podcasts and Blogs</li>
+</ul>
+<hr>
+<p><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a></p>
 
       
       
@@ -922,6 +933,9 @@ B.A. - Mass Communication</p>
             
                 <ol>
                     
+                    <li><a href="#this-is-a-professional-code-snippets-i-digital-garden-port-of-my-obsidian-vault-online-through-github-pages">This is a [[PROFESSIONAL/CODE_SNIPPETS/iDigital Garden|port of my Obsidian Vault]] online through Github Pages!</a>
+            		</li>
+
                     <li><a href="#data-web-design-data-management-and-amp-analysis-web-development-graphic-design-desktop-publishing-multimedia-video-production-desktop-mobile-support">data, web, design -- Data Management & Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support</a>
             		</li>
 
@@ -937,13 +951,10 @@ B.A. - Mass Communication</p>
 
                     <li><a href="#web-development">Web Development</a>
             		</li>
-                </ol>
-            		</li>
 
                     <li><a href="#multimedia-design">Multimedia Design</a>
-            
-                <ol>
-                    
+            		</li>
+
                     <li><a href="#education">Education</a>
             		</li>
 
