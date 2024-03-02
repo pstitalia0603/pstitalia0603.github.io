@@ -220,6 +220,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/power-query-m/how-to-remove-duplicates-in-power-query-m-complete-guide/">How to Remove Duplicates in Power Query M (Complete Guide) </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/power-query-m/m-mode-multiple-columns/">M Mode - Multiple Columns </a>
                 </div>
             
@@ -552,7 +563,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T14:09:12.928Z';
+        const searchIndexDate = '2024-03-02T14:09:14.275Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -564,9 +575,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:09:12.928Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:09:14.275Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:09:12.928Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:09:14.275Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -865,7 +876,7 @@
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">How to Remove Duplicates in Power Query M (Complete Guide)</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/personal/data/power-query-m/how-to-remove-duplicates-in-power-query-m-complete-guide/">How to Remove Duplicates in Power Query M (Complete Guide)</a></td>
 <td>03-02-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
@@ -1143,7 +1154,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/personal/data/power-query-m/m-mode-multiple-columns/" data-note-icon="" class="backlink">M Mode - Multiple Columns</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/personal/data/power-query-m/how-to-remove-duplicates-in-power-query-m-complete-guide/" data-note-icon="" class="backlink">How to Remove Duplicates in Power Query M (Complete Guide)</a>
+                                                </div><div class="backlink-card"><a href="/personal/data/power-query-m/m-mode-multiple-columns/" data-note-icon="" class="backlink">M Mode - Multiple Columns</a>
                                                 </div><div class="backlink-card"><a href="/personal/data/power-query-m/m-code-mult-col/" data-note-icon="" class="backlink">M-CODE-mult-col</a>
                                                 </div><div class="backlink-card"><a href="/personal/data/power-query-m/pq-addressee-couple-lastnames/" data-note-icon="" class="backlink">PQ_addressee_COUPLE_LASTNAMES</a>
                                                 </div><div class="backlink-card"><a href="/personal/data/power-query-m/remove-duplicates/" data-note-icon="" class="backlink">REMOVE DUPLICATES</a>
