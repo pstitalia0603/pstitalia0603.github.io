@@ -479,6 +479,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/excel/transform-column-names-in-bulk-in-power-query-bi-gorilla/">Transform Column Names in Bulk in Power Query - BI Gorilla </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -487,6 +498,38 @@
                     
                         
     
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PERSONAL/INTERESTS/DATA/PowerBI - DAX')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">PowerBI - DAX</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/power-bi-dax/date-table-fy-column/">date-table-fy-column </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
     
                     
                 </div>
@@ -772,7 +815,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T13:41:05.381Z';
+        const searchIndexDate = '2024-03-02T13:41:06.656Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -784,9 +827,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:41:05.381Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:41:06.656Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:41:05.381Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:41:06.656Z', docs}));
             window.docs = docs
             window.index = index;
         }
