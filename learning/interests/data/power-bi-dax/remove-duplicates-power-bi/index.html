@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>date-table-fy-column</title>
+    <title>remove-duplicates-powerBI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -210,7 +210,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/remove-duplicates-power-bi/">remove-duplicates-powerBI </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/remove-duplicates-power-bi/">remove-duplicates-powerBI </a>
                 </div>
             
         </div>
@@ -466,7 +466,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/power-bi-dax/date-table-fy-column/">date-table-fy-column </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/power-bi-dax/date-table-fy-column/">date-table-fy-column </a>
                 </div>
             
         </div>
@@ -1162,7 +1162,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">date-table-fy-column</h1>
+          <h1 data-note-icon="">remove-duplicates-powerBI</h1>
         
         <div class="header-meta">
           
@@ -1172,25 +1172,13 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_bi
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_query
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #m-code
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
                     #dax
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #Power_bi
                   </a>
                 
               
@@ -1207,42 +1195,9 @@
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/professional/code-snippets/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>FISCAL YEAR M CODE<br>
-<a href="https://www.youtube.com/watch?v=bo-43zg1R8U" target="_blank" class="external-link">https://www.youtube.com/watch?v=bo-43zg1R8U</a></p>
-<p>if [Month] &lt;7 then &quot;FY&quot; &amp;<br>
-Text.End(Number.ToText([Year]-1),2)<br>
-else<br>
-&quot;FY&quot; &amp; Text.End(Number.ToText([Year]),2)</p>
-<p>DAX<br>
-NEW TABLE --&gt;</p>
-<p>DateTable =<br>
-VAR MinYear = YEAR ( MIN ( AF_DASHBOARD[GIFT DATE] ) )<br>
-VAR MaxYear = YEAR ( MAX ( AF_DASHBOARD[GIFT DATE] ) )<br>
-RETURN<br>
-ADDCOLUMNS (<br>
-FILTER (<br>
-CALENDARAUTO( ),<br>
-AND ( YEAR ( [Date] ) &gt;= MinYear, YEAR ( [Date] ) &lt;= MaxYear )<br>
-),<br>
-&quot;Calendar Year&quot;, YEAR ( [Date] ),<br>
-&quot;Month Name&quot;, FORMAT ( [Date], &quot;mmmm&quot; ),<br>
-&quot;Month Number&quot;, MONTH ( [Date] ),<br>
-&quot;Weekday&quot;, FORMAT ( [Date], &quot;dddd&quot; ),<br>
-&quot;Weekday number&quot;, WEEKDAY( [Date] )//,<br>
-//  &quot;Quarter&quot;, &quot;Q&quot; &amp; TRUNC ( ( MONTH ( [Date] ) - 1 ) / 3 ) + 1<br>
-)</p>
-<p>//Column<br>
-FISCAL_YEAR =<br>
-VAR _FiscalMonthStart=7<br>
-RETURN<br>
-IF(<br>
-DateTable[Month Number] &gt;= _FiscalMonthStart,<br>
-DateTable[Calendar Year] + 1,<br>
-DateTable[Calendar Year]<br>
-)</p>
-<p>//Column<br>
-FYMONTH_NUM = IF(MONTH(DateTable[Date])&gt;6, MONTH(DateTable[Date])-6, MONTH(DateTable[Date]) +6)</p>
+      <p><a class="internal-link" target="" data-note-icon="" href="/professional/portfolio-notes/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
+<p>remove duplicates from an individual cell PowerBi</p>
+<p>=Text.Combine (List.Distinct(List.Transform (Text.Split([EMAIL],&quot;,&quot;),each Text.Trim(_))),&quot;, &quot;)</p>
 
       
       
@@ -1480,7 +1435,7 @@ FYMONTH_NUM = IF(MONTH(DateTable[Date])&gt;6, MONTH(DateTable[Date])-6, MONTH(Da
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/professional/code-snippets/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/professional/portfolio-notes/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
                                                 </div></div>
                               </div>
                         
