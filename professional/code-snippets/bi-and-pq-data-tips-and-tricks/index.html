@@ -290,39 +290,6 @@
         
     
                     
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/transform-column-names-in-bulk-in-pq-bi-gorilla/">Transform Column Names in Bulk in PQ - BI Gorilla </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/uppercase-and-underscore-column-names/">UPPERCASE AND UNDERSCORE COLUMN NAMES </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">WEEKNUM function – convert week number to date and vice versa </a>
-                </div>
-            
-        </div>
-        
-    
-                    
                 </div>
             
         </div>
@@ -576,7 +543,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T14:11:43.865Z';
+        const searchIndexDate = '2024-03-02T14:11:45.718Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -588,9 +555,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:11:43.865Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:11:45.718Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:11:43.865Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:11:45.718Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -859,12 +826,12 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/personal/data/transform-column-names-in-bulk-in-pq-bi-gorilla/">Transform Column Names in Bulk in PQ - BI Gorilla</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">Transform Column Names in Bulk in PQ - BI Gorilla</a></td>
 <td>03-02-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/notes/personal-data-weeknum-function-convert-week-number-to-date-and-vice-versa">WEEKNUM function – convert week number to date and vice versa</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">WEEKNUM function – convert week number to date and vice versa</a></td>
 <td>03-02-2024</td>
 <td><ul><li>Excel</li><li>Data</li></ul></td>
 </tr>
@@ -899,7 +866,7 @@
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/personal/data/uppercase-and-underscore-column-names/">UPPERCASE AND UNDERSCORE COLUMN NAMES</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">UPPERCASE AND UNDERSCORE COLUMN NAMES</a></td>
 <td>03-02-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
@@ -1178,8 +1145,6 @@
                                                 </div><div class="backlink-card"><a href="/personal/data/replace-values-multiple-criteria/" data-note-icon="" class="backlink">REPLACE VALUES, MULTIPLE CRITERIA </a>
                                                 </div><div class="backlink-card"><a href="/personal/data/remove-duplicates-power-bi/" data-note-icon="" class="backlink">Remove Duplicates PowerBI</a>
                                                 </div><div class="backlink-card"><a href="/personal/data/remove-duplicates-in-power-query-m/" data-note-icon="" class="backlink">Remove Duplicates in Power Query M</a>
-                                                </div><div class="backlink-card"><a href="/personal/data/transform-column-names-in-bulk-in-pq-bi-gorilla/" data-note-icon="" class="backlink">Transform Column Names in Bulk in PQ - BI Gorilla</a>
-                                                </div><div class="backlink-card"><a href="/personal/data/uppercase-and-underscore-column-names/" data-note-icon="" class="backlink">UPPERCASE AND UNDERSCORE COLUMN NAMES</a>
                                                 </div></div>
                               </div>
                         
