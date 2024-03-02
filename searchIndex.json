@@ -120,6 +120,22 @@
 },
 
 {
+		"title": "REPLACE VALUES, MULTIPLE CRITERIA ",
+		"date":"Sat Mar 02 2024 14:00:00 GMT+0000 (Coordinated Universal Time)",
+		"url":"/personal/interests/data/power-query-m/replace-values-multiple-criteria/",
+		"content": "<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/professional/code-snippets/bi-and-pq-data-tips-and-tricks/\">BI and PQ DATA TIPS AND TRICKS</a>\nhttps://gorilla.bi/power-query/replace-values/\n= Table.ReplaceValue(#&quot;Added Custom&quot;,\neach [Amount],\n//each if [ConditionTrue] = &quot;YES&quot; then 0 else [Amount],\neach if [id] = 1 and [First Name] = &quot;joe&quot; then 0 else [Amount],\nReplacer.ReplaceValue,{&quot;Amount&quot;})",
+		"tags": [ "note","Power_query","Data"]
+},
+
+{
+		"title": "UPPERCASE-AND-UNDERSCORE-COLUMN-NAMES",
+		"date":"Sat Mar 02 2024 14:00:00 GMT+0000 (Coordinated Universal Time)",
+		"url":"/personal/interests/data/power-query-m/uppercase-and-underscore-column-names/",
+		"content": "<a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/professional/code-snippets/bi-and-pq-data-tips-and-tricks/\">BI and PQ DATA TIPS AND TRICKS</a>\nTable.TransformColumnNames( Source, each Text.Upper( _ ) )\n// CAPITALIZES All Column Names\nTable.TransformColumnNames(UppercasedText, each Text.Replace( , &quot; &quot;, &quot;&quot; ) )\n// Replaces all full stops with a space\nEXAMPLE IN EDITOR\nUppercasedText = Table.TransformColumnNames(#&quot;Renamed Columns4&quot;, each Text.Upper( _ ) ),\nAddUnderScore = Table.TransformColumnNames(UppercasedText, each Text.Replace( _, &quot;.&quot;, &quot; &quot; ))",
+		"tags": [ "note","Power_query","Data"]
+},
+
+{
 		"title": "BI and PQ DATA TIPS AND TRICKS",
 		"date":"Sat Mar 02 2024 14:00:00 GMT+0000 (Coordinated Universal Time)",
 		"url":"/professional/code-snippets/bi-and-pq-data-tips-and-tricks/",
