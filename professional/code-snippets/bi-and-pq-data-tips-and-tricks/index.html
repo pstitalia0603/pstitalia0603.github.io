@@ -541,7 +541,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T14:09:15.415Z';
+        const searchIndexDate = '2024-03-02T14:09:20.247Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -553,9 +553,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:09:15.415Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:09:20.247Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:09:15.415Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:09:20.247Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -824,41 +824,6 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/notes/personal-data-excel-excel-weeknum-function-convert-week-number-to-date-and-vice-versa">Excel WEEKNUM function – convert week number to date and vice versa</a></td>
-<td>03-02-2024</td>
-<td><ul><li>Excel</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Transform Column Names in Bulk in Power Query - BI Gorilla</a></td>
-<td>03-02-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">date-table-fy-column</a></td>
-<td>03-02-2024</td>
-<td><ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">FISCAL_MONTH_NUMBER_CALC</a></td>
-<td>03-02-2024</td>
-<td><ul><li>Power_bi</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">remove-duplicates-powerBI</a></td>
-<td>03-02-2024</td>
-<td><ul><li>dax</li><li>Power_bi</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">count-non-null-values-in-group-by-count</a></td>
-<td>03-02-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">How to Remove Duplicates in Power Query M (Complete Guide)</a></td>
-<td>03-02-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/personal/data/power-query-m/m-mode-multiple-columns/">M Mode - Multiple Columns</a></td>
 <td>03-02-2024</td>
 <td><ul><li>Data</li><li>m-code</li><li>dax</li><li>Power_query</li></ul></td>
@@ -889,7 +854,42 @@
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">UPPERCASE-AND-UNDERSCORE-COLUMN-NAMES</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/personal-data-excel-excel-weeknum-function-convert-week-number-to-date-and-vice-versa">Excel WEEKNUM function – convert week number to date and vice versa</a></td>
+<td>03-02-2024</td>
+<td><ul><li>Excel</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Transform Column Names in Bulk in PQ - BI Gorilla</a></td>
+<td>03-02-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Date Table and Fiscal Year column</a></td>
+<td>03-02-2024</td>
+<td><ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">FISCAL MONTH NUMBER CALC</a></td>
+<td>03-02-2024</td>
+<td><ul><li>Power_bi</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Remove Duplicates PowerBI</a></td>
+<td>03-02-2024</td>
+<td><ul><li>dax</li><li>Power_bi</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Count Non-null Values</a></td>
+<td>03-02-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Remove Duplicates in Power Query M</a></td>
+<td>03-02-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">UPPERCASE AND UNDERSCORE COLUMN NAMES</a></td>
 <td>03-02-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
