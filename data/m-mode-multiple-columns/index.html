@@ -301,6 +301,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">WEEKNUM function – convert week number to date and vice versa </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -512,7 +523,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T14:31:04.990Z';
+        const searchIndexDate = '2024-03-02T14:32:16.454Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -524,9 +535,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:31:04.990Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:32:16.454Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:31:04.990Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:32:16.454Z', docs}));
             window.docs = docs
             window.index = index;
         }
