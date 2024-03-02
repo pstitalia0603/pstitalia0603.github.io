@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Remove Duplicates in Power Query M</title>
+    <title>Remove Duplicates PowerBI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -239,7 +239,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/remove-duplicates-in-power-query-m/">Remove Duplicates in Power Query M </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/remove-duplicates-in-power-query-m/">Remove Duplicates in Power Query M </a>
                 </div>
             
         </div>
@@ -250,7 +250,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/remove-duplicates-power-bi/">Remove Duplicates PowerBI </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/remove-duplicates-power-bi/">Remove Duplicates PowerBI </a>
                 </div>
             
         </div>
@@ -714,7 +714,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Remove Duplicates in Power Query M</h1>
+          <h1 data-note-icon="">Remove Duplicates PowerBI</h1>
         
         <div class="header-meta">
           
@@ -724,7 +724,13 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_query
+                    #dax
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #Power_bi
                   </a>
                 
               
@@ -742,14 +748,8 @@
       
       
       <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
-<h1 id="a-href-https-gorilla-bi-power-query-removing-duplicates-target-blank-class-external-link-how-to-remove-duplicates-in-power-query-m-complete-guide-a" tabindex="-1"><a href="https://gorilla.bi/power-query/removing-duplicates/" target="_blank" class="external-link">How to Remove Duplicates in Power Query M (Complete Guide)</a></h1>
-<h2 id="basics-for-removing-duplicates" tabindex="-1">Basics for Removing Duplicates</h2>
-<p>So, how can you remove duplicates using the Power Query Editor? Under the hood, the operation uses the <a href="https://powerquery.how/table-distinct/" target="_blank" class="external-link">Table.Distinct</a> function to remove duplicates. The syntax for the function is as follows:</p>
-<pre><code>= Table.Distinct(
-    table as table, 
-    optional equationCriteria as any
-   )
-</code></pre>
+<p>remove duplicates from an individual cell PowerBi</p>
+<p>=Text.Combine (List.Distinct(List.Transform (Text.Split([EMAIL],&quot;,&quot;),each Text.Trim(_))),&quot;, &quot;)</p>
 
       
       
@@ -979,29 +979,6 @@
 
                   
                         
-                        
-                              <div class="toc">
-                                    <div class="toc-title-container">
-                                          <div class="toc-title">
-                                                On this page
-                                          </div>
-                                    </div>
-                                    <div class="toc-container">
-                                          <nav class="toc">
-                <ol>
-                    
-                    <li><a href="#a-href-https-gorilla-bi-power-query-removing-duplicates-target-blank-class-external-link-how-to-remove-duplicates-in-power-query-m-complete-guide-a">How to Remove Duplicates in Power Query M (Complete Guide)</a>
-            
-                <ol>
-                    
-                    <li><a href="#basics-for-removing-duplicates">Basics for Removing Duplicates</a>
-            		</li>
-                </ol>
-            		</li>
-                </ol>
-            </nav>
-                                    </div>
-                              </div>
                         
 
                   
