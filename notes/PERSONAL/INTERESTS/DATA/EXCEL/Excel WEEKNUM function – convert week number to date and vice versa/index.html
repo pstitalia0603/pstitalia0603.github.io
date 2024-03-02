@@ -660,7 +660,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T13:52:32.751Z';
+        const searchIndexDate = '2024-03-02T13:59:38.926Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -672,9 +672,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:52:32.751Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:59:38.926Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:52:32.751Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:59:38.926Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1159,8 +1159,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/professional/code-snippets/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   
