@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Count Non-null Values</title>
+    <title>M Mode - Multiple Columns</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -173,7 +173,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/count-non-null-values/">Count Non-null Values </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/count-non-null-values/">Count Non-null Values </a>
                 </div>
             
         </div>
@@ -206,7 +206,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/m-mode-multiple-columns/">M Mode - Multiple Columns </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/m-mode-multiple-columns/">M Mode - Multiple Columns </a>
                 </div>
             
         </div>
@@ -681,7 +681,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Count Non-null Values</h1>
+          <h1 data-note-icon="">M Mode - Multiple Columns</h1>
         
         <div class="header-meta">
           
@@ -691,13 +691,25 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_query
+                    #Data
                   </a>
                 
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Data
+                    #m-code
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #dax
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #Power_query
                   </a>
                 
               
@@ -709,12 +721,52 @@
       
       
       <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>{&quot;Count&quot;, each Table.RowCount(_), Int64.Type}})</p>
-<p>{&quot;Count&quot;, each List.NonNullCount(_), Int64.Type}})</p>
-<p>List.Count(List.RemoveNulls(Record.ToList(Record.RemoveFields(_,&quot;Total Sales&quot;))))</p>
-<p>Table.RowCount(Table.SelectRows(_,(x)=&gt;x[Total Sales]&lt;&gt;null)),</p>
-<p Count,="" each="" Table.RowCount(Table.SelectRows(_,(x)="&gt;x[Total" Price]&lt;null)),="" Int64.Type="">SOLUTION --&gt; GroupBY Table count of non null values</p>
-<p><a href="https://community.fabric.microsoft.com/t5/Desktop/Distinct-Count-with-no-blank-values-using-power-query/td-p/2211994" target="_blank" class="external-link">https://community.fabric.microsoft.com/t5/Desktop/Distinct-Count-with-no-blank-values-using-power-query/td-p/2211994</a></p>
+<p>//let<br>
+//    Source = #&quot;Families-Parents-Students-LIST&quot;,<br>
+//  #&quot;Renamed Columns&quot; = Table.RenameColumns(Source,{{&quot;CHILD GRADE&quot;, &quot;GRADE&quot;}})<br>
+//in<br>
+//  #&quot;Renamed Columns&quot;</p>
+<p>let</p>
+<p>//Read in the data and set data types<br>
+Source = Excel.CurrentWorkbook(){[Name=&quot;FAM&quot;]}[Content],<br>
+#&quot;Changed Type&quot; = Table.TransformColumnTypes(Source,{<br>
+{&quot;C_FNAME&quot;, type text}, {&quot;C_LNAME&quot;, type text}, {&quot;GRADE&quot;, type text},<br>
+{&quot;FAMILY&quot;, type text}, {&quot;EMAIL&quot;, type text},{&quot;ADDRESS&quot;, type text},{&quot;PHONE&quot;, type text },{&quot;DONATION&quot;, type text}}),</p>
+<p>//Unpivot columns other than the two Parent columns<br>
+#&quot;Unpivoted Other Columns&quot; = Table.UnpivotOtherColumns(#&quot;Changed Type&quot;,<br>
+{&quot;EMAIL&quot;, &quot;PHONE&quot;, &quot;ADDRESS&quot;, &quot;DONATION&quot;, &quot;FAMILY&quot;}, &quot;Attribute&quot;, &quot;Value&quot;),</p>
+<p>//Group by the Parent Columns<br>
+//Then add an index colum to each sub-table<br>
+#&quot;Grouped Rows&quot; = Table.Group(#&quot;Unpivoted Other Columns&quot;, {&quot;EMAIL&quot;, &quot;PHONE&quot;, &quot;ADDRESS&quot;, &quot;DONATION&quot;, &quot;FAMILY&quot;}, {<br>
+{&quot;idx&quot;, each  Table.AddIndexColumn(_,&quot;idx&quot;),Int64.Type}}),</p>
+<p>//Add integer/divide by 3 column to each subtable to differentiate the different children<br>
+//Note that we set the data type to Text for later combining with the Attributes<br>
+#&quot;Added Custom&quot; = Table.AddColumn(#&quot;Grouped Rows&quot;, &quot;int/div&quot;,<br>
+each Table.TransformColumnTypes(<br>
+Table.AddColumn([idx], &quot;Integer-Division&quot;,<br>
+each Number.IntegerDivide([idx], 3)),{&quot;Integer-Division&quot;,Text.Type})),</p>
+<p>//Combine Attribute and int/divide column to create unique names for each child/column<br>
+#&quot;Added Custom1&quot; = Table.AddColumn(#&quot;Added Custom&quot;, &quot;childNum&quot;,<br>
+each Table.CombineColumns([#&quot;int/div&quot;],<br>
+{&quot;Attribute&quot;,&quot;Integer-Division&quot;},<br>
+Combiner.CombineTextByDelimiter(&quot;.&quot;),&quot;Attribute&quot;)),</p>
+<p>//Remove unneeded columns<br>
+#&quot;Removed Columns&quot; = Table.RemoveColumns(#&quot;Added Custom1&quot;,{&quot;idx&quot;, &quot;int/div&quot;}),</p>
+<p>//Pivot each sub-table<br>
+#&quot;Added Custom2&quot; = Table.AddColumn(#&quot;Removed Columns&quot;, &quot;pivot subtable&quot;, each<br>
+let<br>
+//Remove columns we don't want when we pivot<br>
+x=Table.RemoveColumns([childNum],{&quot;EMAIL&quot;, &quot;PHONE&quot;, &quot;ADDRESS&quot;, &quot;DONATION&quot;, &quot;FAMILY&quot;, &quot;idx&quot;})<br>
+in<br>
+Table.Pivot(x,x[Attribute],&quot;Attribute&quot;,&quot;Value&quot;)),</p>
+<p>//Remove unneeded columns and expand the pivot subtables<br>
+//May need to generate the list of expanded column names dynamically<br>
+#&quot;Removed Columns1&quot; = Table.RemoveColumns(#&quot;Added Custom2&quot;,{&quot;childNum&quot;}),<br>
+#&quot;Expanded pivot subtable&quot; = Table.ExpandTableColumn(#&quot;Removed Columns1&quot;, &quot;pivot subtable&quot;,<br>
+{&quot;C_FNAME.0&quot;, &quot;C_LNAME.0&quot;, &quot;GRADE.0&quot;, &quot;C_FNAME.1&quot;, &quot;C_LNAME.1&quot;, &quot;GRADE.1&quot;, &quot;C_FNAME.2&quot;, &quot;C_LNAME.2&quot;, &quot;GRADE.2&quot;, &quot;C_FNAME.3&quot;, &quot;C_LNAME.3&quot;, &quot;GRADE.3&quot;,&quot;C_FNAME.4&quot;, &quot;C_LNAME.4&quot;, &quot;GRADE.4&quot;,&quot;C_FNAME.5&quot;, &quot;C_LNAME.5&quot;, &quot;GRADE.5&quot;},<br>
+{&quot;C_FNAME.0&quot;, &quot;C_LNAME.0&quot;, &quot;GRADE.0&quot;, &quot;C_FNAME.1&quot;, &quot;C_LNAME.1&quot;, &quot;GRADE.1&quot;, &quot;C_FNAME.2&quot;, &quot;C_LNAME.2&quot;, &quot;GRADE.2&quot;, &quot;C_FNAME.3&quot;, &quot;C_LNAME.3&quot;, &quot;GRADE.3&quot;,&quot;C_FNAME.4&quot;, &quot;C_LNAME.4&quot;, &quot;GRADE.4&quot;,&quot;C_FNAME.5&quot;, &quot;C_LNAME.5&quot;, &quot;GRADE.5&quot;})<br>
+in<br>
+#&quot;Expanded pivot subtable&quot;</p>
 
       
       
