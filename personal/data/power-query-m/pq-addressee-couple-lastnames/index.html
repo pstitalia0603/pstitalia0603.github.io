@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>PQ_addressee_COUPLE_LASTNAMES</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -84,6 +84,7 @@
     
   </head>
   <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon backlinks-note-icon css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized css-settings-manager h2-underline AT-row is-focused">
+    
     
     
       
@@ -220,7 +221,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/power-query-m/pq-addressee-couple-lastnames/">PQ_addressee_COUPLE_LASTNAMES </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/power-query-m/pq-addressee-couple-lastnames/">PQ_addressee_COUPLE_LASTNAMES </a>
                 </div>
             
         </div>
@@ -335,7 +336,7 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home </a>
                 </div>
             
         </div>
@@ -345,6 +346,7 @@
     </div>
 
     
+
     
       <div class="search-container" id="globalsearch" onclick="toggleSearch()">
     <div class="search-box">
@@ -749,84 +751,94 @@
     }
 </script>
     
+
     <main class="content cm-s-obsidian ">
       <header>
-      
-        <h1></h1>
-      
-
-      <div class="header-meta">
         
-          <div class="header-tags">
-            
+          <h1 data-note-icon="">PQ_addressee_COUPLE_LASTNAMES</h1>
+        
+        <div class="header-meta">
+          
+            <div class="header-tags">
               
-            
+                
               
-                <a class="tag" onclick="toggleTagSearch(this)">
-                  #Portfolio
-                </a>
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #Power_query
+                  </a>
+                
               
-            
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #Data
+                  </a>
+                
               
-            
+            </div>
           </div>
-        
-      </div>
       
       
       </header>
       
       
-      <h1 id="hi-i-m-paula" tabindex="-1">Hi, I'm Paula</h1>
-<h6 id="this-is-a-professional-code-snippets-i-digital-garden-port-of-my-obsidian-vault-online-through-github-pages" tabindex="-1">This is a <a class="internal-link" target="" data-note-icon="" href="/professional/code-snippets/i-digital-garden/">port of my Obsidian Vault</a> online through Github Pages!</h6>
-<h4 id="data-web-design-data-management-and-amp-analysis-web-development-graphic-design-desktop-publishing-multimedia-video-production-desktop-mobile-support" tabindex="-1">data, web, design -- Data Management &amp; Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support</h4>
-<h2 id="who-i-am" tabindex="-1">Who I am</h2>
-<p>I'm an <strong>analytical problem-solver</strong> who is:<br>
-<mark><strong>Organized</strong></mark> (I do things systematically and with order),<br>
-<mark><strong>Efficient</strong></mark> (I create reproducible products and procedures), and<br>
-<mark><strong>Responsive</strong></mark> (I get back to you every step of the way!)</p>
-<h2 id="what-i-do" tabindex="-1">What I do</h2>
-<h4 id="data-analysis" tabindex="-1">Data Analysis</h4>
-<ul>
-<li>SQL(MSSQL Server, MySQL, PostgreSQL)</li>
-<li>NoSQL</li>
-<li>Excel, Power Query</li>
-<li>PowerBi</li>
-<li>Tableau</li>
-<li>Google Data Studio</li>
-<li>Python(pandas and NumPy)</li>
-</ul>
-<h4 id="web-development" tabindex="-1">Web Development</h4>
-<ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript, NodeJS</li>
-<li>CMS (WordPress, Drupal)</li>
-<li>Version Control (Git, Github)</li>
-</ul>
-<h4 id="multimedia-design" tabindex="-1">Multimedia Design</h4>
-<ul>
-<li>Adobe (Photoshop, Illustrator, Acrobat)</li>
-<li>Affinity Suite: Photo, Designer, Publisher</li>
-<li>Video Production: Apple iMovie, DaVinci Resolve</li>
-<li>Microsoft Office 365</li>
-</ul>
-<hr>
-<h3 id="education" tabindex="-1">Education</h3>
-<ul>
-<li>M.S. - Information Systems</li>
-<li>B.A. - Mass Communication</li>
-</ul>
-<h3 id="interests" tabindex="-1">Interests</h3>
-<ul>
-<li>Italian Language/Culture</li>
-<li>Learning new technology</li>
-<li>Graphic design</li>
-<li>Data analytics</li>
-<li>Technology Podcasts and Blogs</li>
-</ul>
-<hr>
-<p><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a></p>
+      <p><a class="internal-link" target="" data-note-icon="" href="/professional/code-snippets/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
+<p>ADDRESSEE_SLN (SAME LAST NAME)</p>
+<p>if [Spouse Nickname] = null then<br>
+Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
+else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
+Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
+else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
+else null</p>
+<p>ADDRESSEE DIFFERENT LASTNAME<br>
+if [Spouse Nickname] = null then<br>
+null<br>
+else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
+null<br>
+else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
+Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
+else null</p>
+<p>let<br>
+Source = Excel.CurrentWorkbook(){[Name=&quot;Table1&quot;]}[Content],<br>
+#&quot;Added Custom&quot; = Table.AddColumn(Source, &quot;SAME_LASTNAME&quot;, each if [Last Name] = [Spouse Last Name] then &quot;Y&quot; else &quot;N&quot;),<br>
+#&quot;Added Custom1&quot; = Table.AddColumn(#&quot;Added Custom&quot;, &quot;ADDRESSEE_SLN&quot;, each if [Spouse Nickname] = null then<br>
+Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
+else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
+Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
+else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
+else null),<br>
+#&quot;Added Custom2&quot; = Table.AddColumn(#&quot;Added Custom1&quot;, &quot;DIFF_LASTNAME&quot;, each if [Spouse Nickname] = null then<br>
+null<br>
+else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
+null<br>
+else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
+Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
+else null),<br>
+#&quot;Merged Columns&quot; = Table.CombineColumns(#&quot;Added Custom2&quot;,{&quot;ADDRESSEE_SLN&quot;, &quot;DIFF_LASTNAME&quot;},Combiner.CombineTextByDelimiter(&quot;&quot;, QuoteStyle.None),&quot;ADDRESSEE&quot;),<br>
+#&quot;Removed Columns&quot; = Table.RemoveColumns(#&quot;Merged Columns&quot;,{&quot;SAME_LASTNAME&quot;}),<br>
+#&quot;Reordered Columns&quot; = Table.ReorderColumns(#&quot;Removed Columns&quot;,{&quot;ADDRESSEE&quot;, &quot;Constituent ID&quot;, &quot;Nickname&quot;, &quot;Last Name&quot;, &quot;Spouse Nickname&quot;, &quot;Spouse Last Name&quot;, &quot;Constituency Code&quot;, &quot;Primary Addressee&quot;, &quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;, &quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;, &quot;HouseholdID&quot;}),<br>
+#&quot;Removed Columns1&quot; = Table.RemoveColumns(#&quot;Reordered Columns&quot;,{&quot;Primary Addressee&quot;, &quot;HouseholdID&quot;}),<br>
+#&quot;Changed Type&quot; = Table.TransformColumnTypes(#&quot;Removed Columns1&quot;,{{&quot;Constituent ID&quot;, type text}}),<br>
+#&quot;Promoted Headers&quot; = Table.PromoteHeaders(#&quot;Changed Type&quot;, [PromoteAllScalars=true]),<br>
+#&quot;Changed Type1&quot; = Table.TransformColumnTypes(#&quot;Promoted Headers&quot;,{{&quot;Alumnae Class Reps Date&quot;, type date}, {&quot;Alumnae Council Date&quot;, type date}}),<br>
+#&quot;Replaced Value&quot; = Table.ReplaceValue(#&quot;Changed Type1&quot;,&quot;Maryland&quot;,&quot;MD&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value1&quot; = Table.ReplaceValue(#&quot;Replaced Value&quot;,&quot;District of Columbia&quot;,&quot;DC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value2&quot; = Table.ReplaceValue(#&quot;Replaced Value1&quot;,&quot;Virginia&quot;,&quot;VA&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value3&quot; = Table.ReplaceValue(#&quot;Replaced Value2&quot;,&quot;Colorado&quot;,&quot;CO&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value4&quot; = Table.ReplaceValue(#&quot;Replaced Value3&quot;,&quot;South Carolina&quot;,&quot;SC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value5&quot; = Table.ReplaceValue(#&quot;Replaced Value4&quot;,&quot;Florida&quot;,&quot;FL&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value6&quot; = Table.ReplaceValue(#&quot;Replaced Value5&quot;,&quot;Indiana&quot;,&quot;IN&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value7&quot; = Table.ReplaceValue(#&quot;Replaced Value6&quot;,&quot;North Carolina&quot;,&quot;NC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Changed Type2&quot; = Table.TransformColumnTypes(#&quot;Replaced Value7&quot;,{{&quot;Alumnae Council Date&quot;, type text}, {&quot;Alumnae Class Reps Date&quot;, type text}}),<br>
+#&quot;Merged Columns1&quot; = Table.CombineColumns(Table.TransformColumnTypes(#&quot;Changed Type2&quot;, {{&quot;Alumnae Council&quot;, type text}}, &quot;en-US&quot;),{&quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_COUNCIL&quot;),<br>
+#&quot;Merged Columns2&quot; = Table.CombineColumns(#&quot;Merged Columns1&quot;,{&quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_CLASS_REPS&quot;),<br>
+#&quot;Renamed Columns&quot; = Table.RenameColumns(#&quot;Merged Columns2&quot;,{{&quot;Nickname Last Name and Spouse Nickname Spouse Last Name&quot;, &quot;ADDRESSEE&quot;}}),<br>
+#&quot;Changed Type4&quot; = Table.TransformColumnTypes(#&quot;Renamed Columns&quot;,{{&quot;Preferred ZIP&quot;, type text}}),<br>
+#&quot;Grouped Rows&quot; = Table.Group(#&quot;Changed Type4&quot;, {&quot;ADDRESSEE&quot;,&quot;Household_NAME&quot;}, {{&quot;ADDRESS&quot;, each Text.Combine(List.Distinct([Preferred Address Line 1]),&quot;, &quot;), type text}, {&quot;CITY&quot;, each Text.Combine(List.Distinct([Preferred City]),&quot;, &quot;), type text}, {&quot;STATE&quot;, each Text.Combine(List.Distinct([Preferred State]),&quot;, &quot;), type nullable text}, {&quot;ZIP&quot;, each Text.Combine(List.Distinct([Preferred ZIP]),&quot;, &quot;), type text}}),<br>
+#&quot;Uppercased Text&quot; = Table.TransformColumns(#&quot;Grouped Rows&quot;,{{&quot;Household_NAME&quot;, Text.Upper, type text}}),<br>
+#&quot;Changed Type3&quot; = Table.TransformColumnTypes(#&quot;Uppercased Text&quot;,{{&quot;ZIP&quot;, type text}})<br>
+in<br>
+#&quot;Changed Type3&quot;</p>
 
       
       
@@ -1057,56 +1069,6 @@
                   
                         
                         
-                              <div class="toc">
-                                    <div class="toc-title-container">
-                                          <div class="toc-title">
-                                                On this page
-                                          </div>
-                                    </div>
-                                    <div class="toc-container">
-                                          <nav class="toc">
-                <ol>
-                    
-                    <li><a href="#hi-i-m-paula">Hi, I'm Paula</a>
-            
-                <ol>
-                    
-                    <li><a href="#this-is-a-professional-code-snippets-i-digital-garden-port-of-my-obsidian-vault-online-through-github-pages">This is a [[PROFESSIONAL/CODE_SNIPPETS/iDigital Garden|port of my Obsidian Vault]] online through Github Pages!</a>
-            		</li>
-
-                    <li><a href="#data-web-design-data-management-and-amp-analysis-web-development-graphic-design-desktop-publishing-multimedia-video-production-desktop-mobile-support">data, web, design -- Data Management & Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support</a>
-            		</li>
-
-                    <li><a href="#who-i-am">Who I am</a>
-            		</li>
-
-                    <li><a href="#what-i-do">What I do</a>
-            
-                <ol>
-                    
-                    <li><a href="#data-analysis">Data Analysis</a>
-            		</li>
-
-                    <li><a href="#web-development">Web Development</a>
-            		</li>
-
-                    <li><a href="#multimedia-design">Multimedia Design</a>
-            		</li>
-
-                    <li><a href="#education">Education</a>
-            		</li>
-
-                    <li><a href="#interests">Interests</a>
-            		</li>
-                </ol>
-            		</li>
-                </ol>
-            		</li>
-                </ol>
-            </nav>
-                                    </div>
-                              </div>
-                        
 
                   
 
@@ -1114,9 +1076,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/professional/code-snippets/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
+                                                </div></div>
                               </div>
                         
                   
@@ -1127,6 +1088,39 @@
     
 
     
+        <script>
+      if (window.location.hash) {
+        document.getElementById(window.location.hash.slice(1)).classList.add('referred');
+      }
+      window.addEventListener('hashchange', (evt) => {
+        const oldParts = evt.oldURL.split("#");
+        if (oldParts[1]) {
+          document.getElementById(oldParts[1]).classList.remove('referred');
+        }
+        const newParts = evt.newURL.split("#");
+        if (newParts[1]) {
+          document.getElementById(newParts[1]).classList.add('referred');
+        }
+      }, false);
+      const url_parts = window.location.href.split("#")
+      const url = url_parts[0];
+      const referrence = url_parts[1];
+      document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function (el) {
+        el.ondblclick = function(evt) {
+          const ref_url = url + '#' + evt.target.id
+          navigator.clipboard.writeText(ref_url);
+      }
+      });
+
+      
+    </script>
+    <script src=" https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js "></script>
+<script defer>
+    TIMESTAMP_FORMAT = "MMM dd, yyyy h:mm a";
+    document.querySelectorAll('.human-date').forEach(function (el) {
+        el.innerHTML = luxon.DateTime.fromISO(el.getAttribute('data-date') || el.innerText).toFormat(TIMESTAMP_FORMAT);
+      });
+</script>
     
     
     <script>
@@ -1136,5 +1130,5 @@ lucide.createIcons({
             }
         });
 </script>
-    </body>
-  </html>
+  </body>
+</html>
