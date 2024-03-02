@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FISCAL_MONTH_NUMBER_CALC</title>
+    <title>PQ_addressee_COUPLE_LASTNAMES</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -253,7 +253,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/fiscal-month-number-calc/">FISCAL_MONTH_NUMBER_CALC </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/fiscal-month-number-calc/">FISCAL_MONTH_NUMBER_CALC </a>
                 </div>
             
         </div>
@@ -629,7 +629,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/power-query-m/pq-addressee-couple-lastnames/">PQ_addressee_COUPLE_LASTNAMES </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/power-query-m/pq-addressee-couple-lastnames/">PQ_addressee_COUPLE_LASTNAMES </a>
                 </div>
             
         </div>
@@ -1194,7 +1194,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">FISCAL_MONTH_NUMBER_CALC</h1>
+          <h1 data-note-icon="">PQ_addressee_COUPLE_LASTNAMES</h1>
         
         <div class="header-meta">
           
@@ -1204,7 +1204,7 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_bi
+                    #Power_query
                   </a>
                 
               
@@ -1221,10 +1221,63 @@
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/professional/portfolio-notes/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>POWER PIVOT DAX</p>
-<p>FISCAL_MONTH_NUMBER<br>
-=if('Calendar'[Month Number]&lt;7,'Calendar'[Month Number]+6,MOD('Calendar'[Month Number],7)+1)</p>
+      <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
+<p>ADDRESSEE_SLN (SAME LAST NAME)</p>
+<p>if [Spouse Nickname] = null then<br>
+Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
+else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
+Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
+else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
+else null</p>
+<p>ADDRESSEE DIFFERENT LASTNAME<br>
+if [Spouse Nickname] = null then<br>
+null<br>
+else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
+null<br>
+else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
+Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
+else null</p>
+<p>let<br>
+Source = Excel.CurrentWorkbook(){[Name=&quot;Table1&quot;]}[Content],<br>
+#&quot;Added Custom&quot; = Table.AddColumn(Source, &quot;SAME_LASTNAME&quot;, each if [Last Name] = [Spouse Last Name] then &quot;Y&quot; else &quot;N&quot;),<br>
+#&quot;Added Custom1&quot; = Table.AddColumn(#&quot;Added Custom&quot;, &quot;ADDRESSEE_SLN&quot;, each if [Spouse Nickname] = null then<br>
+Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
+else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
+Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
+else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
+else null),<br>
+#&quot;Added Custom2&quot; = Table.AddColumn(#&quot;Added Custom1&quot;, &quot;DIFF_LASTNAME&quot;, each if [Spouse Nickname] = null then<br>
+null<br>
+else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
+null<br>
+else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
+Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
+else null),<br>
+#&quot;Merged Columns&quot; = Table.CombineColumns(#&quot;Added Custom2&quot;,{&quot;ADDRESSEE_SLN&quot;, &quot;DIFF_LASTNAME&quot;},Combiner.CombineTextByDelimiter(&quot;&quot;, QuoteStyle.None),&quot;ADDRESSEE&quot;),<br>
+#&quot;Removed Columns&quot; = Table.RemoveColumns(#&quot;Merged Columns&quot;,{&quot;SAME_LASTNAME&quot;}),<br>
+#&quot;Reordered Columns&quot; = Table.ReorderColumns(#&quot;Removed Columns&quot;,{&quot;ADDRESSEE&quot;, &quot;Constituent ID&quot;, &quot;Nickname&quot;, &quot;Last Name&quot;, &quot;Spouse Nickname&quot;, &quot;Spouse Last Name&quot;, &quot;Constituency Code&quot;, &quot;Primary Addressee&quot;, &quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;, &quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;, &quot;HouseholdID&quot;}),<br>
+#&quot;Removed Columns1&quot; = Table.RemoveColumns(#&quot;Reordered Columns&quot;,{&quot;Primary Addressee&quot;, &quot;HouseholdID&quot;}),<br>
+#&quot;Changed Type&quot; = Table.TransformColumnTypes(#&quot;Removed Columns1&quot;,{{&quot;Constituent ID&quot;, type text}}),<br>
+#&quot;Promoted Headers&quot; = Table.PromoteHeaders(#&quot;Changed Type&quot;, [PromoteAllScalars=true]),<br>
+#&quot;Changed Type1&quot; = Table.TransformColumnTypes(#&quot;Promoted Headers&quot;,{{&quot;Alumnae Class Reps Date&quot;, type date}, {&quot;Alumnae Council Date&quot;, type date}}),<br>
+#&quot;Replaced Value&quot; = Table.ReplaceValue(#&quot;Changed Type1&quot;,&quot;Maryland&quot;,&quot;MD&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value1&quot; = Table.ReplaceValue(#&quot;Replaced Value&quot;,&quot;District of Columbia&quot;,&quot;DC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value2&quot; = Table.ReplaceValue(#&quot;Replaced Value1&quot;,&quot;Virginia&quot;,&quot;VA&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value3&quot; = Table.ReplaceValue(#&quot;Replaced Value2&quot;,&quot;Colorado&quot;,&quot;CO&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value4&quot; = Table.ReplaceValue(#&quot;Replaced Value3&quot;,&quot;South Carolina&quot;,&quot;SC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value5&quot; = Table.ReplaceValue(#&quot;Replaced Value4&quot;,&quot;Florida&quot;,&quot;FL&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value6&quot; = Table.ReplaceValue(#&quot;Replaced Value5&quot;,&quot;Indiana&quot;,&quot;IN&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Replaced Value7&quot; = Table.ReplaceValue(#&quot;Replaced Value6&quot;,&quot;North Carolina&quot;,&quot;NC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
+#&quot;Changed Type2&quot; = Table.TransformColumnTypes(#&quot;Replaced Value7&quot;,{{&quot;Alumnae Council Date&quot;, type text}, {&quot;Alumnae Class Reps Date&quot;, type text}}),<br>
+#&quot;Merged Columns1&quot; = Table.CombineColumns(Table.TransformColumnTypes(#&quot;Changed Type2&quot;, {{&quot;Alumnae Council&quot;, type text}}, &quot;en-US&quot;),{&quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_COUNCIL&quot;),<br>
+#&quot;Merged Columns2&quot; = Table.CombineColumns(#&quot;Merged Columns1&quot;,{&quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_CLASS_REPS&quot;),<br>
+#&quot;Renamed Columns&quot; = Table.RenameColumns(#&quot;Merged Columns2&quot;,{{&quot;Nickname Last Name and Spouse Nickname Spouse Last Name&quot;, &quot;ADDRESSEE&quot;}}),<br>
+#&quot;Changed Type4&quot; = Table.TransformColumnTypes(#&quot;Renamed Columns&quot;,{{&quot;Preferred ZIP&quot;, type text}}),<br>
+#&quot;Grouped Rows&quot; = Table.Group(#&quot;Changed Type4&quot;, {&quot;ADDRESSEE&quot;,&quot;Household_NAME&quot;}, {{&quot;ADDRESS&quot;, each Text.Combine(List.Distinct([Preferred Address Line 1]),&quot;, &quot;), type text}, {&quot;CITY&quot;, each Text.Combine(List.Distinct([Preferred City]),&quot;, &quot;), type text}, {&quot;STATE&quot;, each Text.Combine(List.Distinct([Preferred State]),&quot;, &quot;), type nullable text}, {&quot;ZIP&quot;, each Text.Combine(List.Distinct([Preferred ZIP]),&quot;, &quot;), type text}}),<br>
+#&quot;Uppercased Text&quot; = Table.TransformColumns(#&quot;Grouped Rows&quot;,{{&quot;Household_NAME&quot;, Text.Upper, type text}}),<br>
+#&quot;Changed Type3&quot; = Table.TransformColumnTypes(#&quot;Uppercased Text&quot;,{{&quot;ZIP&quot;, type text}})<br>
+in<br>
+#&quot;Changed Type3&quot;</p>
 
       
       
@@ -1462,8 +1515,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/professional/portfolio-notes/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   

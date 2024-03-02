@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FISCAL_MONTH_NUMBER_CALC</title>
+    <title>count-non-null-values-in-group-by-count</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -253,7 +253,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/fiscal-month-number-calc/">FISCAL_MONTH_NUMBER_CALC </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/fiscal-month-number-calc/">FISCAL_MONTH_NUMBER_CALC </a>
                 </div>
             
         </div>
@@ -574,7 +574,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/power-query-m/count-non-null-values-in-group-by-count/">count-non-null-values-in-group-by-count </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/power-query-m/count-non-null-values-in-group-by-count/">count-non-null-values-in-group-by-count </a>
                 </div>
             
         </div>
@@ -1194,7 +1194,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">FISCAL_MONTH_NUMBER_CALC</h1>
+          <h1 data-note-icon="">count-non-null-values-in-group-by-count</h1>
         
         <div class="header-meta">
           
@@ -1204,7 +1204,7 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_bi
+                    #Power_query
                   </a>
                 
               
@@ -1221,10 +1221,13 @@
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/professional/portfolio-notes/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>POWER PIVOT DAX</p>
-<p>FISCAL_MONTH_NUMBER<br>
-=if('Calendar'[Month Number]&lt;7,'Calendar'[Month Number]+6,MOD('Calendar'[Month Number],7)+1)</p>
+      <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
+<p>{&quot;Count&quot;, each Table.RowCount(_), Int64.Type}})</p>
+<p>{&quot;Count&quot;, each List.NonNullCount(_), Int64.Type}})</p>
+<p>List.Count(List.RemoveNulls(Record.ToList(Record.RemoveFields(_,&quot;Total Sales&quot;))))</p>
+<p>Table.RowCount(Table.SelectRows(_,(x)=&gt;x[Total Sales]&lt;&gt;null)),</p>
+<p Count,="" each="" Table.RowCount(Table.SelectRows(_,(x)="&gt;x[Total" Price]&lt;null)),="" Int64.Type="">SOLUTION --&gt; GroupBY Table count of non null values</p>
+<p><a href="https://community.fabric.microsoft.com/t5/Desktop/Distinct-Count-with-no-blank-values-using-power-query/td-p/2211994" target="_blank" class="external-link">https://community.fabric.microsoft.com/t5/Desktop/Distinct-Count-with-no-blank-values-using-power-query/td-p/2211994</a></p>
 
       
       
@@ -1462,8 +1465,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/professional/portfolio-notes/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   
