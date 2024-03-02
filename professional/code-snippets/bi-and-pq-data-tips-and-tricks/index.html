@@ -266,6 +266,38 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PERSONAL/DATA/PowerQuery - M')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">PowerQuery - M</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/power-query-m/count-non-null-values-in-group-by-count/">count-non-null-values-in-group-by-count </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -778,7 +810,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T13:59:43.954Z';
+        const searchIndexDate = '2024-03-02T13:59:44.948Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -790,9 +822,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:59:43.954Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:59:44.948Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:59:43.954Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:59:44.948Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1086,7 +1118,7 @@
 <td><ul><li>dax</li><li>Power_bi</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">count-non-null-values-in-group-by-count</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/personal/data/power-query-m/count-non-null-values-in-group-by-count/">count-non-null-values-in-group-by-count</a></td>
 <td>03-02-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
@@ -1373,6 +1405,7 @@
                                                 </div><div class="backlink-card"><a href="/personal/data/power-bi-dax/fiscal-month-number-calc/" data-note-icon="" class="backlink">FISCAL_MONTH_NUMBER_CALC</a>
                                                 </div><div class="backlink-card"><a href="/personal/data/power-bi-dax/date-table-fy-column/" data-note-icon="" class="backlink">date-table-fy-column</a>
                                                 </div><div class="backlink-card"><a href="/personal/data/power-bi-dax/remove-duplicates-power-bi/" data-note-icon="" class="backlink">remove-duplicates-powerBI</a>
+                                                </div><div class="backlink-card"><a href="/personal/data/power-query-m/count-non-null-values-in-group-by-count/" data-note-icon="" class="backlink">count-non-null-values-in-group-by-count</a>
                                                 </div><div class="backlink-card"><a href="/personal/interests/data/excel/transform-column-names-in-bulk-in-power-query-bi-gorilla/" data-note-icon="" class="backlink">Transform Column Names in Bulk in Power Query - BI Gorilla</a>
                                                 </div><div class="backlink-card"><a href="/personal/interests/data/power-bi-dax/fiscal-month-number-calc/" data-note-icon="" class="backlink">FISCAL_MONTH_NUMBER_CALC</a>
                                                 </div><div class="backlink-card"><a href="/personal/interests/data/power-bi-dax/date-table-fy-column/" data-note-icon="" class="backlink">date-table-fy-column</a>
