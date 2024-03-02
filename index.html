@@ -183,49 +183,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('LEARNING/INTERESTS/DATA/PowerBI - DAX')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">PowerBI - DAX</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/fiscal-month-number-calc/">FISCAL_MONTH_NUMBER_CALC </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/remove-duplicates-power-bi/">remove-duplicates-powerBI </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('LEARNING/INTERESTS/DATA/PowerQuery - M')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -235,28 +192,6 @@
                     
                         
     
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/count-non-null-values-in-group-by-count/">count-non-null-values-in-group-by-count </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/how-to-remove-duplicates-in-power-query-m-complete-guide/">How to Remove Duplicates in Power Query M (Complete Guide) </a>
-                </div>
-            
-        </div>
-        
     
                     
                         
@@ -914,7 +849,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T13:41:24.443Z';
+        const searchIndexDate = '2024-03-02T13:41:27.163Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -926,9 +861,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:41:24.443Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:41:27.163Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:41:24.443Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:41:27.163Z', docs}));
             window.docs = docs
             window.index = index;
         }
