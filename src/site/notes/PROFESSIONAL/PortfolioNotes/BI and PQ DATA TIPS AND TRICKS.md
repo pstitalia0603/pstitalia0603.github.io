@@ -16,7 +16,7 @@
 | [[LEARNING/INTERESTS/DATA/PowerQuery - M/pq - number rows by group\|pq - number rows by group]]                                                                            | 01-13-2024 | <ul><li>Power_query</li><li>Data</li><li>STP</li></ul>                                 |
 | [[LEARNING/INTERESTS/DATA/PowerQuery - M/REMOVE DUPLICATES\|REMOVE DUPLICATES]]                                                                                            | 01-13-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[LEARNING/INTERESTS/DATA/EXCEL/Excel WEEKNUM function – convert week number to date and vice versa\|Excel WEEKNUM function – convert week number to date and vice versa]] | 01-13-2024 | <ul><li>Excel</li><li>Data</li></ul>                                                   |
-| [[LEARNING/INTERESTS/DATA/EXCEL/Transform Column Names in Bulk in Power Query - BI Gorilla\|Transform Column Names in Bulk in Power Query - BI Gorilla]]                   | 01-13-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[LEARNING/INTERESTS/DATA/PowerBI - DAX/date-table-fy-column\|date-table-fy-column]]                                                                                       | 01-13-2024 | <ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul> |
+| [[LEARNING/INTERESTS/DATA/EXCEL/Transform Column Names in Bulk in Power Query - BI Gorilla\|Transform Column Names in Bulk in Power Query - BI Gorilla]]                   | 01-13-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 
 { .block-language-dataview}
