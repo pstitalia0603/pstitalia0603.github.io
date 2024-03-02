@@ -178,92 +178,6 @@
                     
                         
     
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('LEARNING/INTERESTS/DATA/EXCEL')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">EXCEL</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/excel/transform-column-names-in-bulk-in-power-query-bi-gorilla/">Transform Column Names in Bulk in Power Query - BI Gorilla </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('LEARNING/INTERESTS/DATA/PowerBI - DAX')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">PowerBI - DAX</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/date-table-fy-column/">date-table-fy-column </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/fiscal-month-number-calc/">FISCAL_MONTH_NUMBER_CALC </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-bi-dax/remove-duplicates-power-bi/">remove-duplicates-powerBI </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
     
                     
                         
@@ -959,7 +873,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T13:41:14.248Z';
+        const searchIndexDate = '2024-03-02T13:41:16.385Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -971,9 +885,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:41:14.248Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:41:16.385Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:41:14.248Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:41:16.385Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1242,7 +1156,7 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/learning/interests/data/power-bi-dax/fiscal-month-number-calc/">FISCAL_MONTH_NUMBER_CALC</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">FISCAL_MONTH_NUMBER_CALC</a></td>
 <td>01-13-2024</td>
 <td><ul><li>Power_bi</li><li>Data</li></ul></td>
 </tr>
@@ -1272,7 +1186,7 @@
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/learning/interests/data/power-bi-dax/remove-duplicates-power-bi/">remove-duplicates-powerBI</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">remove-duplicates-powerBI</a></td>
 <td>01-13-2024</td>
 <td><ul><li>dax</li><li>Power_bi</li><li>Data</li></ul></td>
 </tr>
@@ -1302,12 +1216,12 @@
 <td><ul><li>Excel</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/learning/interests/data/power-bi-dax/date-table-fy-column/">date-table-fy-column</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">date-table-fy-column</a></td>
 <td>01-13-2024</td>
 <td><ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/learning/interests/data/excel/transform-column-names-in-bulk-in-power-query-bi-gorilla/">Transform Column Names in Bulk in Power Query - BI Gorilla</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">Transform Column Names in Bulk in Power Query - BI Gorilla</a></td>
 <td>01-13-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
@@ -1550,11 +1464,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/learning/interests/data/excel/transform-column-names-in-bulk-in-power-query-bi-gorilla/" data-note-icon="" class="backlink">Transform Column Names in Bulk in Power Query - BI Gorilla</a>
-                                                </div><div class="backlink-card"><a href="/learning/interests/data/power-bi-dax/fiscal-month-number-calc/" data-note-icon="" class="backlink">FISCAL_MONTH_NUMBER_CALC</a>
-                                                </div><div class="backlink-card"><a href="/learning/interests/data/power-bi-dax/date-table-fy-column/" data-note-icon="" class="backlink">date-table-fy-column</a>
-                                                </div><div class="backlink-card"><a href="/learning/interests/data/power-bi-dax/remove-duplicates-power-bi/" data-note-icon="" class="backlink">remove-duplicates-powerBI</a>
-                                                </div><div class="backlink-card"><a href="/learning/interests/data/power-query-m/how-to-remove-duplicates-in-power-query-m-complete-guide/" data-note-icon="" class="backlink">How to Remove Duplicates in Power Query M (Complete Guide)</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/learning/interests/data/power-query-m/how-to-remove-duplicates-in-power-query-m-complete-guide/" data-note-icon="" class="backlink">How to Remove Duplicates in Power Query M (Complete Guide)</a>
                                                 </div><div class="backlink-card"><a href="/learning/interests/data/power-query-m/m-mode-multiple-columns/" data-note-icon="" class="backlink">M Mode - Multiple Columns</a>
                                                 </div><div class="backlink-card"><a href="/learning/interests/data/power-query-m/m-code-mult-col/" data-note-icon="" class="backlink">M-CODE-mult-col</a>
                                                 </div><div class="backlink-card"><a href="/learning/interests/data/power-query-m/pq-addressee-couple-lastnames/" data-note-icon="" class="backlink">PQ_addressee_COUPLE_LASTNAMES</a>
