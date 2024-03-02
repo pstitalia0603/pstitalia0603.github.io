@@ -191,17 +191,6 @@
         
     
                     
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column </a>
-                </div>
-            
-        </div>
-        
-    
-                    
                 </div>
             
         </div>
@@ -455,7 +444,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T14:11:38.548Z';
+        const searchIndexDate = '2024-03-02T14:11:40.713Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -467,9 +456,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:11:38.548Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:11:40.713Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:11:38.548Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:11:40.713Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -748,7 +737,7 @@
 <td><ul><li>Excel</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/personal/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">Date Table and Fiscal Year column</a></td>
 <td>03-02-2024</td>
 <td><ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul></td>
 </tr>
@@ -1048,7 +1037,6 @@
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
                                           <div class="backlink-list"><div class="backlink-card"><a href="/personal/data/addressee-couple-lastnames/" data-note-icon="" class="backlink">Addressee COUPLE LASTNAMES</a>
                                                 </div><div class="backlink-card"><a href="/personal/data/count-non-null-values/" data-note-icon="" class="backlink">Count Non-null Values</a>
-                                                </div><div class="backlink-card"><a href="/personal/data/date-table-and-fiscal-year-column/" data-note-icon="" class="backlink">Date Table and Fiscal Year column</a>
                                                 </div></div>
                               </div>
                         
