@@ -8,10 +8,34 @@
 },
 
 {
+		"title": "REMOVE DUPLICATES",
+		"date":"Sat Mar 02 2024 14:20:21 GMT+0000 (Coordinated Universal Time)",
+		"url":"/personal/data/remove-duplicates/",
+		"content": "<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">BI and PQ DATA TIPS AND TRICKS</a>\nRemove duplicates from an individual cell\n=Text.Combine (List.Distinct(List.Transform (Text.Split([EMAIL],&quot;,&quot;),each Text.Trim(_))),&quot;, &quot;)",
+		"tags": [ "note","Power_query","Data"]
+},
+
+{
 		"title": "REPLACE VALUES, MULTIPLE CRITERIA ",
 		"date":"Sat Mar 02 2024 14:20:21 GMT+0000 (Coordinated Universal Time)",
 		"url":"/personal/data/replace-values-multiple-criteria/",
 		"content": "<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">BI and PQ DATA TIPS AND TRICKS</a>\nhttps://gorilla.bi/power-query/replace-values/\n= Table.ReplaceValue(#&quot;Added Custom&quot;,\neach [Amount],\n//each if [ConditionTrue] = &quot;YES&quot; then 0 else [Amount],\neach if [id] = 1 and [First Name] = &quot;joe&quot; then 0 else [Amount],\nReplacer.ReplaceValue,{&quot;Amount&quot;})",
+		"tags": [ "note","Power_query","Data"]
+},
+
+{
+		"title": "Remove Duplicates PowerBI",
+		"date":"Sat Mar 02 2024 14:20:21 GMT+0000 (Coordinated Universal Time)",
+		"url":"/personal/data/remove-duplicates-power-bi/",
+		"content": "<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">BI and PQ DATA TIPS AND TRICKS</a>\nremove duplicates from an individual cell PowerBi\n=Text.Combine (List.Distinct(List.Transform (Text.Split([EMAIL],&quot;,&quot;),each Text.Trim(_))),&quot;, &quot;)",
+		"tags": [ "note","dax","Power_bi","Data"]
+},
+
+{
+		"title": "Remove Duplicates in Power Query M",
+		"date":"Sat Mar 02 2024 14:20:21 GMT+0000 (Coordinated Universal Time)",
+		"url":"/personal/data/remove-duplicates-in-power-query-m/",
+		"content": "<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">BI and PQ DATA TIPS AND TRICKS</a>\nHow to Remove Duplicates in Power Query M (Complete Guide)\nBasics for Removing Duplicates\nSo, how can you remove duplicates using the Power Query Editor? Under the hood, the operation uses the Table.Distinct function to remove duplicates. The syntax for the function is as follows:\n= Table.Distinct(\ntable as table,\noptional equationCriteria as any\n)",
 		"tags": [ "note","Power_query","Data"]
 },
 
