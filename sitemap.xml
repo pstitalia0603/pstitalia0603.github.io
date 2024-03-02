@@ -3,32 +3,87 @@
     
         <url>
             <loc>/404/</loc>
-            <lastmod>2024-03-02T14:28:08.836Z</lastmod>
+            <lastmod>2024-03-02T14:28:06.709Z</lastmod>
         </url>
     
         <url>
             <loc>/</loc>
-            <lastmod>2024-03-02T14:28:08.836Z</lastmod>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/code-snippets/i-digital-garden/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/addressee-couple-lastnames/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/count-non-null-values/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/date-table-and-fiscal-year-column/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/fiscal-month-number-calc/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/m-mode-multiple-columns/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/m-code-mult-col/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/number-rows-by-group/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/remove-duplicates/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
         </url>
     
         <url>
             <loc>/professional/data/replace-values-multiple-criteria/</loc>
-            <lastmod>2024-03-02T14:28:08.836Z</lastmod>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/remove-duplicates-power-bi/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
+        </url>
+    
+        <url>
+            <loc>/professional/data/remove-duplicates-in-power-query-m/</loc>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
         </url>
     
         <url>
             <loc>/professional/data/transform-column-names-in-bulk-in-pq-bi-gorilla/</loc>
-            <lastmod>2024-03-02T14:28:08.836Z</lastmod>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
         </url>
     
         <url>
             <loc>/professional/data/uppercase-and-underscore-column-names/</loc>
-            <lastmod>2024-03-02T14:28:08.836Z</lastmod>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
         </url>
     
         <url>
             <loc>/notes/PROFESSIONAL/DATA/WEEKNUM function – convert week number to date and vice versa/</loc>
-            <lastmod>2024-03-02T14:28:08.836Z</lastmod>
+            <lastmod>2024-03-02T14:28:06.713Z</lastmod>
         </url>
     
 </urlset>

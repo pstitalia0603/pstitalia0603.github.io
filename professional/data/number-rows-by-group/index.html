@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>REPLACE VALUES, MULTIPLE CRITERIA </title>
+    <title>Number rows by group</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -271,7 +271,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/professional/data/number-rows-by-group/">Number rows by group </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/professional/data/number-rows-by-group/">Number rows by group </a>
                 </div>
             
         </div>
@@ -315,7 +315,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/professional/data/replace-values-multiple-criteria/">REPLACE VALUES, MULTIPLE CRITERIA  </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/professional/data/replace-values-multiple-criteria/">REPLACE VALUES, MULTIPLE CRITERIA  </a>
                 </div>
             
         </div>
@@ -792,7 +792,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">REPLACE VALUES, MULTIPLE CRITERIA </h1>
+          <h1 data-note-icon="">Number rows by group</h1>
         
         <div class="header-meta">
           
@@ -812,6 +812,12 @@
                   </a>
                 
               
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #STP
+                  </a>
+                
+              
             </div>
           </div>
       
@@ -820,12 +826,8 @@
       
       
       <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p><a href="https://gorilla.bi/power-query/replace-values/" target="_blank" class="external-link">https://gorilla.bi/power-query/replace-values/</a></p>
-<p>= Table.ReplaceValue(#&quot;Added Custom&quot;,<br>
-each [Amount],<br>
-//each if [ConditionTrue] = &quot;YES&quot; then 0 else [Amount],<br>
-each if [id] = 1 and [First Name] = &quot;joe&quot; then 0 else [Amount],<br>
-Replacer.ReplaceValue,{&quot;Amount&quot;})</p>
+<p><a href="https://excelguru.ca/number-rows-by-group-using-power-query/" target="_blank" class="external-link">PQ NUMBER ROW BY GROUP</a></p>
+<p>necessary for AF DASHBOARD (get oldest kid only from a family and show transactions for that family)</p>
 
       
       
