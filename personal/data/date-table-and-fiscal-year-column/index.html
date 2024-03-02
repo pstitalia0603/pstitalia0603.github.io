@@ -367,17 +367,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/professional/code-snippets/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/professional/code-snippets/i-digital-garden/">iDigital Garden </a>
                 </div>
             
@@ -576,7 +565,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T14:14:44.955Z';
+        const searchIndexDate = '2024-03-02T14:14:47.122Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -588,9 +577,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:14:44.955Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T14:14:47.122Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:14:44.955Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T14:14:47.122Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -867,7 +856,7 @@
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/professional/code-snippets/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
+      <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
 <p>FISCAL YEAR M CODE<br>
 <a href="https://www.youtube.com/watch?v=bo-43zg1R8U" target="_blank" class="external-link">https://www.youtube.com/watch?v=bo-43zg1R8U</a></p>
 <p>if [Month] &lt;7 then &quot;FY&quot; &amp;<br>
@@ -1140,8 +1129,9 @@ FYMONTH_NUM = IF(MONTH(DateTable[Date])&gt;6, MONTH(DateTable[Date])-6, MONTH(Da
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/professional/code-snippets/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   
