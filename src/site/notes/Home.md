@@ -1,10 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
 ---
 
 # Hi, I'm Paula
 
-###### This is a [[CODE/iDigital Garden\|port of my Obsidian Vault]] online through Github Pages!
+###### This is a [[PROJECTS/iDigital Garden\|port of my Obsidian Vault]] online through Github Pages!
 #### data, web, design -- Data Management & Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support
 
 ## Who I am
