@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Count Non-null Values</title>
+    <title>Transform Column Names in Bulk in PQ - BI Gorilla</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -184,7 +184,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/count-non-null-values/">Count Non-null Values </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/count-non-null-values/">Count Non-null Values </a>
                 </div>
             
         </div>
@@ -294,7 +294,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/transform-column-names-in-bulk-in-pq-bi-gorilla/">Transform Column Names in Bulk in PQ - BI Gorilla </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/data/transform-column-names-in-bulk-in-pq-bi-gorilla/">Transform Column Names in Bulk in PQ - BI Gorilla </a>
                 </div>
             
         </div>
@@ -822,7 +822,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Count Non-null Values</h1>
+          <h1 data-note-icon="">Transform Column Names in Bulk in PQ - BI Gorilla</h1>
         
         <div class="header-meta">
           
@@ -850,12 +850,85 @@
       
       
       <p><a class="internal-link" target="" data-note-icon="" href="/professional/code-snippets/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>{&quot;Count&quot;, each Table.RowCount(_), Int64.Type}})</p>
-<p>{&quot;Count&quot;, each List.NonNullCount(_), Int64.Type}})</p>
-<p>List.Count(List.RemoveNulls(Record.ToList(Record.RemoveFields(_,&quot;Total Sales&quot;))))</p>
-<p>Table.RowCount(Table.SelectRows(_,(x)=&gt;x[Total Sales]&lt;&gt;null)),</p>
-<p Count,="" each="" Table.RowCount(Table.SelectRows(_,(x)="&gt;x[Total" Price]&lt;null)),="" Int64.Type="">SOLUTION --&gt; GroupBY Table count of non null values</p>
-<p><a href="https://community.fabric.microsoft.com/t5/Desktop/Distinct-Count-with-no-blank-values-using-power-query/td-p/2211994" target="_blank" class="external-link">https://community.fabric.microsoft.com/t5/Desktop/Distinct-Count-with-no-blank-values-using-power-query/td-p/2211994</a></p>
+<h1 id="a-href-https-gorilla-bi-power-query-transform-column-names-target-blank-class-external-link-transform-column-names-in-bulk-in-power-query-bi-gorilla-a" tabindex="-1"><a href="https://gorilla.bi/power-query/transform-column-names/" target="_blank" class="external-link">Transform Column Names in Bulk in Power Query - BI Gorilla</a></h1>
+<p>techniques for <strong>replacing column names in bulk</strong>.<br>
+<strong>Table of contents</strong></p>
+<h2 id="1-basic-transformations" tabindex="-1">1. Basic Transformations</h2>
+<p><a href="https://powerquery.how/table-transformcolumnnames/" target="_blank" class="external-link">Table.TransformColumnNames</a></p>
+<pre><code>= Table.TransformColumnNames(
+  table as table, 
+  nameGenerator as function, 
+  optional options as nullable record
+)
+</code></pre>
+<h3 id="1-1-replacing-characters" tabindex="-1">1.1. Replacing Characters</h3>
+<pre><code>= Table.TransformColumnNames( Source,  each Text.Replace( _, &quot;_&quot;, &quot; &quot; ) )
+// Replaces all underscores with a space
+
+= Table.TransformColumnNames( Source,  each Text.Replace( _, &quot;.&quot;, &quot; &quot; ) )
+// Replaces all full stops with a space
+</code></pre>
+<h3 id="1-2-adding-a-prefix-or-suffix" tabindex="-1">1.2. Adding a Prefix or Suffix</h3>
+<pre><code>= Table.TransformColumnNames( Source,  each &quot;Prefix.&quot; &amp; _ )
+// Adds the text &quot;Prefix.&quot; in front of each column name
+
+= Table.TransformColumnNames( Source,  each _ &amp; &quot;.Suffix&quot; )
+// Adds the text &quot;.Suffix&quot; after each column name
+</code></pre>
+<h3 id="1-3-changing-capitalization" tabindex="-1">1.3. Changing Capitalization</h3>
+<pre><code>= Table.TransformColumnNames( Source,  each Text.Lower( _ ) )
+// Transforms column names to lowercase
+
+= Table.TransformColumnNames( Source,  each Text.Upper( _ ) )
+// Transforms column names to uppercase
+
+= Table.TransformColumnNames( Source,  each Text.Proper( _ ) )
+// Capitalizes each word in the column names
+</code></pre>
+<h3 id="1-4-clean-or-trim-strings" tabindex="-1">1.4. Clean or Trim Strings</h3>
+<pre><code>= Table.TransformColumnNames( Source,  each Text.Trim( _ ) )
+// Removes leading and trailing whitespaces in column names
+
+= Table.TransformColumnNames( Source,  each Text.Clean( _ ) )
+// Removes non printable characters in column names
+</code></pre>
+<h2 id="2-advanced-transformations" tabindex="-1">2. Advanced Transformations</h2>
+<h3 id="2-1-conditionally-transform-column-names" tabindex="-1">2.1. Conditionally Transform Column Names</h3>
+<pre><code>Table.TransformColumnNames( Source,
+                            each if Text.Contains(_, &quot;date&quot; ) then &quot;Bingo.&quot; &amp; _ else _ )
+// Adds a prefix to each column name that contains the text &quot;date&quot; 
+</code></pre>
+<h3 id="2-2-split-by-capital-letter-uppercase-to-lowercase" tabindex="-1">2.2. Split by Capital Letter / Uppercase to Lowercase</h3>
+<pre><code>Table.SplitColumn(
+  #&quot;Split Column by Character Transition&quot;,
+  &quot;Product Color&quot;,
+  Splitter.SplitTextByCharacterTransition({&quot;a&quot; .. &quot;z&quot;}, {&quot;A&quot; .. &quot;Z&quot;}),
+  {&quot;Product Color.1&quot;, &quot;Product Color.2&quot;}
+)
+
+// From here you only need to copy the following part: 
+ = Splitter.SplitTextByCharacterTransition({&quot;a&quot; .. &quot;z&quot;}, {&quot;A&quot; .. &quot;Z&quot;})
+</code></pre>
+<pre><code>Table.TransformColumnNames(
+    Source, 
+    each Text.Combine(
+         Splitter.SplitTextByCharacterTransition({&quot;a&quot; .. &quot;z&quot;}, {&quot;A&quot; .. &quot;Z&quot;})(_)
+        , &quot; &quot;)
+)
+</code></pre>
+<h3 id="2-3-rename-with-translation-table" tabindex="-1">2.3. Rename with Translation Table</h3>
+<pre><code>= Table.RenameColumns( table as table,      // the table to rename columns on
+                       renames as list,     // pairs of old and new colum names as list
+                       optional missingField )
+</code></pre>
+<pre><code>= Table.RenameColumns( Source,
+                       List.Zip( { Rename[OldName], Rename[NewName] } ),
+                       MissingField.Ignore )
+ 
+= Table.RenameColumns( Source,
+                       Table.ToRows( Rename[[OldName],[NewName]] ),
+                       MissingField.Ignore )
+</code></pre>
 
       
       
@@ -1085,6 +1158,59 @@
 
                   
                         
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#a-href-https-gorilla-bi-power-query-transform-column-names-target-blank-class-external-link-transform-column-names-in-bulk-in-power-query-bi-gorilla-a">Transform Column Names in Bulk in Power Query - BI Gorilla</a>
+            
+                <ol>
+                    
+                    <li><a href="#1-basic-transformations">1. Basic Transformations</a>
+            
+                <ol>
+                    
+                    <li><a href="#1-1-replacing-characters">1.1. Replacing Characters</a>
+            		</li>
+
+                    <li><a href="#1-2-adding-a-prefix-or-suffix">1.2. Adding a Prefix or Suffix</a>
+            		</li>
+
+                    <li><a href="#1-3-changing-capitalization">1.3. Changing Capitalization</a>
+            		</li>
+
+                    <li><a href="#1-4-clean-or-trim-strings">1.4. Clean or Trim Strings</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#2-advanced-transformations">2. Advanced Transformations</a>
+            
+                <ol>
+                    
+                    <li><a href="#2-1-conditionally-transform-column-names">2.1. Conditionally Transform Column Names</a>
+            		</li>
+
+                    <li><a href="#2-2-split-by-capital-letter-uppercase-to-lowercase">2.2. Split by Capital Letter / Uppercase to Lowercase</a>
+            		</li>
+
+                    <li><a href="#2-3-rename-with-translation-table">2.3. Rename with Translation Table</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
                         
 
                   
