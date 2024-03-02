@@ -681,7 +681,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T00:53:10.846Z';
+        const searchIndexDate = '2024-03-02T00:53:13.456Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -693,9 +693,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T00:53:10.846Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T00:53:13.456Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T00:53:10.846Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T00:53:13.456Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1024,14 +1024,14 @@
 <td><ul><li>Excel</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/learning/interests/data/excel/transform-column-names-in-bulk-in-power-query-bi-gorilla/">Transform Column Names in Bulk in Power Query - BI Gorilla</a></td>
-<td>01-13-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/learning/interests/data/power-bi-dax/date-table-fy-column/">date-table-fy-column</a></td>
 <td>01-13-2024</td>
 <td><ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/learning/interests/data/excel/transform-column-names-in-bulk-in-power-query-bi-gorilla/">Transform Column Names in Bulk in Power Query - BI Gorilla</a></td>
+<td>01-13-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 </tbody>
 </table></div>
