@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>count-non-null-values-in-group-by-count</title>
+    <title>How to Remove Duplicates in Power Query M (Complete Guide)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -296,7 +296,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/count-non-null-values-in-group-by-count/">count-non-null-values-in-group-by-count </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/count-non-null-values-in-group-by-count/">count-non-null-values-in-group-by-count </a>
                 </div>
             
         </div>
@@ -307,7 +307,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/how-to-remove-duplicates-in-power-query-m-complete-guide/">How to Remove Duplicates in Power Query M (Complete Guide) </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/how-to-remove-duplicates-in-power-query-m-complete-guide/">How to Remove Duplicates in Power Query M (Complete Guide) </a>
                 </div>
             
         </div>
@@ -927,7 +927,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">count-non-null-values-in-group-by-count</h1>
+          <h1 data-note-icon="">How to Remove Duplicates in Power Query M (Complete Guide)</h1>
         
         <div class="header-meta">
           
@@ -955,12 +955,196 @@
       
       
       <p><a class="internal-link" target="" data-note-icon="" href="/professional/portfolio-notes/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>{&quot;Count&quot;, each Table.RowCount(_), Int64.Type}})</p>
-<p>{&quot;Count&quot;, each List.NonNullCount(_), Int64.Type}})</p>
-<p>List.Count(List.RemoveNulls(Record.ToList(Record.RemoveFields(_,&quot;Total Sales&quot;))))</p>
-<p>Table.RowCount(Table.SelectRows(_,(x)=&gt;x[Total Sales]&lt;&gt;null)),</p>
-<p Count,="" each="" Table.RowCount(Table.SelectRows(_,(x)="&gt;x[Total" Price]&lt;null)),="" Int64.Type="">SOLUTION --&gt; GroupBY Table count of non null values</p>
-<p><a href="https://community.fabric.microsoft.com/t5/Desktop/Distinct-Count-with-no-blank-values-using-power-query/td-p/2211994" target="_blank" class="external-link">https://community.fabric.microsoft.com/t5/Desktop/Distinct-Count-with-no-blank-values-using-power-query/td-p/2211994</a></p>
+<p>2023-12-03 -</p>
+<h1 id="a-href-https-gorilla-bi-power-query-removing-duplicates-target-blank-class-external-link-how-to-remove-duplicates-in-power-query-m-complete-guide-a" tabindex="-1"><a href="https://gorilla.bi/power-query/removing-duplicates/" target="_blank" class="external-link">How to Remove Duplicates in Power Query M (Complete Guide)</a></h1>
+<p>In this article, we’ll explore <strong>how to remove duplicates in Power Query</strong>. We’ll cover basic and advanced methods for removing duplicates, including how to remove duplicates from single and multiple columns, how to remove duplicates case-insensitively, and how to keep values based on a condition.</p>
+<p>We’ll also delve into an inconsistency problem, often related to sort order, that can occur when removing duplicates and how to solve it. By the end of this article, you’ll have a thorough understanding of how to remove duplicates in Power Query.</p>
+<p><strong>Table of contents</strong></p>
+<ul>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#importance" target="_blank" class="external-link">Importance of Removing Duplicates</a></li>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#basics" target="_blank" class="external-link">Basics for Removing Duplicates</a>
+<ul>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#single-column" target="_blank" class="external-link">Removing Duplicates from a Single Column</a></li>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#multiple-columns" target="_blank" class="external-link">Removing Duplicates from Multiple Columns</a></li>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#case-insensitive" target="_blank" class="external-link">Removing Duplicates Case-Insensitive</a></li>
+</ul>
+</li>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#inconsistent-results" target="_blank" class="external-link">Inconsistent Results</a></li>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#advanced-techniques" target="_blank" class="external-link">Advanced Techniques for Removing Duplicates</a>
+<ul>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#first-or-last-value" target="_blank" class="external-link">Keep First or Last Value</a></li>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#earliest-or-latest-value" target="_blank" class="external-link">Keep Earliest or Latest Value</a></li>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#lowest-or-highest-value" target="_blank" class="external-link">Keep Lowest or Highest Value</a></li>
+</ul>
+</li>
+<li><a href="https://gorilla.bi/power-query/removing-duplicates/#conclusion" target="_blank" class="external-link">Conclusion</a></li>
+</ul>
+<h2 id="importance-of-removing-duplicates" tabindex="-1">Importance of Removing Duplicates</h2>
+<p>Eliminating duplicate rows is a critical step when cleaning your data in Power Query. Duplicates can cause problems in many situations. For example, when:</p>
+<ul>
+<li><strong>Performing a join:</strong> duplicates in your join table, result in duplicate rows in the destination table.</li>
+<li><strong>Creating a dimension table:</strong> you can’t make a one-to-many relationship with duplicates on the one side.</li>
+<li><strong>Inspecting Values:</strong> duplicates can be an indication that an earlier join had duplicate values.</li>
+</ul>
+<p>To prevent this, we need an expression to check for duplicates and filter our dataset only to include unique values.</p>
+<h2 id="basics-for-removing-duplicates" tabindex="-1">Basics for Removing Duplicates</h2>
+<p>So, how can you remove duplicates using the Power Query Editor? Under the hood, the operation uses the <a href="https://powerquery.how/table-distinct/" target="_blank" class="external-link">Table.Distinct</a> function to remove duplicates. The syntax for the function is as follows:</p>
+<pre><code>= Table.Distinct(
+    table as table, 
+    optional equationCriteria as any
+   )
+</code></pre>
+<p>This function has two arguments: the first argument is the <strong>table to remove duplicates from</strong>, and the second argument is an <strong>optional equationCriteria that tells the function which columns to look at when removing duplicates</strong>. You can provide a column name, or instruct the function to respect or ignore capitals. If you omit the equationCriteria, the function will remove duplicates from the entire table.</p>
+<h3 id="removing-duplicates-from-a-single-column" tabindex="-1">Removing Duplicates from a Single Column</h3>
+<p>Let’s start with removing duplicates from a single column. This is one of the most basic methods for removing duplicates in Power Query, and it’s really easy to do.</p>
+<p>To remove duplicates from a single column, you:</p>
+<ul>
+<li>Right-click on the column that contains duplicates</li>
+<li>Select the “<strong>Remove Duplicates</strong>” option.</li>
+<li>Now click OK.</li>
+</ul>
+<p>That’s it! Power Query will remove all duplicates from the selected column.</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Single-Column-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Single-Column-in-Power-Query.png" alt="Remove Duplicates Single Column in Power Query"></a></p>
+<p>The remove duplicates operation makes use of the <a href="https://powerquery.how/table-distinct/" title="Table.Distinct" target="_blank" class="external-link">Table.Distinct</a> function in Power Query. When performing the operation on a single-column table, the above operation will show:</p>
+<pre><code>= Table.Distinct( Source )
+</code></pre>
+<p>This removes duplicates from the entire table. When your table has multiple columns, the code below removes the duplicates from only the “<strong>Fruit</strong>” column.</p>
+<pre><code>= Table.Distinct( Source, { &quot;Fruit&quot; } )
+</code></pre>
+<p>But what if you have duplicate values across multiple columns? No problem!</p>
+<h3 id="removing-duplicates-based-on-multiple-columns" tabindex="-1">Removing Duplicates based on Multiple Columns</h3>
+<p>The easiest way to remove duplicates based on multiple columns is:</p>
+<ul>
+<li>Hold down the CTRL Key.</li>
+<li><strong>Select the columns</strong> you want to remove duplicates from.</li>
+<li>Click on <strong>Remove Duplicates</strong>.</li>
+</ul>
+<p>Now, Power Query will delete all rows with duplicated values across the selected columns. This operation focuses on returning unique combinations of values.</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Multiple-Column-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Multiple-Column-in-Power-Query.png" alt="Remove Duplicates Multiple Column in Power Query"></a></p>
+<pre><code>= Table.Distinct(
+     Source, 
+     { &quot;Brand&quot;, &quot;Country&quot;} )
+</code></pre>
+<p>Performing this operation still uses the <a href="https://powerquery.how/table-distinct/" title="Table.Distinct" target="_blank" class="external-link">Table.Distinct</a> function. This time, the second argument contains both column names within a list. If you could use a refresher, have a look at <a href="https://gorilla.bi/power-query/list-functions/" target="_blank" class="external-link">list use-cases and syntax</a>.</p>
+<p>So you know how to remove duplicates from one or more columns, but what if you want to remove duplicates case-insensitive?</p>
+<h3 id="removing-duplicates-case-insensitive" tabindex="-1">Removing Duplicates Case-Insensitive</h3>
+<p>To remove duplicates in a manner that is case-insensitive, you can make use of the optional equation argument of <a href="https://powerquery.how/table-distinct/" target="_blank" class="external-link">Table.Distinct</a>. Whether you’re working with one or multiple columns or even the entire table, you can easily remove duplicates case-insensitive.</p>
+<p>So, what if you have a dataset that contains duplicates, and you want to perform a case-sensitive removing duplicates operation on the <strong>Wood</strong> column? Removing duplicates (case sensitive) then only removes a row for the value ‘<strong>Cedar</strong>‘.</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Data-with-Duplicates-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Data-with-Duplicates-in-Power-Query.png" alt="Data with Duplicates in Power Query"></a></p>
+<p>To achieve this, you can use <a href="https://powerquery.how/table-distinct/" title="Table.Distinct" target="_blank" class="external-link">Table.Distinct</a> function and provide the column name <strong>“Wood”</strong> in the second argument. The result is a case-sensitive removal of duplicates as below.</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Case-Sensitive-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Case-Sensitive-in-Power-Query.png" alt="Remove Duplicates Case Sensitive in Power Query"></a></p>
+<p>Now, let’s say you want to <strong>ignore the capitalization when removing duplicates</strong>. The easiest way to remove duplicates case-insensitive is by adding a <a href="https://powerquery.how/comparer-functions/" target="_blank" class="external-link">comparer function</a>:</p>
+<ul>
+<li>Right-click on the column that contains duplicates</li>
+<li>Select <strong>Remove Duplicates</strong></li>
+<li>Provide the column name and <strong><a href="https://powerquery.how/comparer-ordinalignorecase/" title="Comparer.OrdinalIgnoreCase" target="_blank" class="external-link">Comparer.OrdinalIgnoreCase</a></strong> as equation criteria.</li>
+<li>Use format: { “ColumnName”, <a href="https://powerquery.how/comparer-ordinalignorecase/" title="Comparer.OrdinalIgnoreCase" target="_blank" class="external-link">Comparer.OrdinalIgnoreCase</a> }</li>
+</ul>
+<p>The result is a case-insensitive removal of duplicates.</p>
+<pre><code>= Table.Distinct(
+   Source, 
+   { &quot;Wood&quot;, Comparer.OrdinalIgnoreCase } )
+</code></pre>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Ignore-Case-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Ignore-Case-in-Power-Query.png" alt="Remove Duplicates Ignore Case in Power Query"></a></p>
+<p>But what if you want to apply this method to multiple columns?</p>
+<pre><code>= Table.Distinct(
+     Source, 
+     { { &quot;Wood&quot;, Comparer.OrdinalIgnoreCase },
+       { &quot;Area&quot;, Comparer.OrdinalIgnoreCase } } )
+</code></pre>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Cases-Insensitive-on-Multiple-Columns-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-Cases-Insensitive-on-Multiple-Columns-in-Power-Query.png" alt="Remove Duplicates Cases Insensitive on Multiple Columns in Power Query"></a></p>
+<p>You can use the <a href="https://powerquery.how/table-distinct/" title="Table.Distinct" target="_blank" class="external-link">Table.Distinct</a> function and provide the method to look for duplicates for every column. This allows you to specify whether to ignore capitalization (<a href="https://powerquery.how/comparer-ordinalignorecase/" target="_blank" class="external-link">Comparer.OrdinalIgnoreCase</a>) or respect capitalization (<a href="https://powerquery.how/comparer-ordinal/" target="_blank" class="external-link">Comparer.Ordinal</a>) for each column individually.</p>
+<p>So there you have it – some basic methods for removing duplicates in Power Query. Whether you’re working with a single column, with multiple columns, or whether you check capital sensitive, Power Query makes it easy to get rid of the duplicates and get your data in tip-top shape.</p>
+<p>But be aware that the methods shown so far don’t always return the same results. Let’s see why that is in the next section.</p>
+<h2 id="inconsistent-results" tabindex="-1">Inconsistent Results</h2>
+<p>Did you know that the remove duplicates operation in Power Query often returns inconsistent results? It might sound strange, but it’s actually a side effect of certain optimizations that Power Query uses to be as efficient as possible.</p>
+<p>One of these optimizations is <strong>Query Folding, which sends certain operations to the data source to be processed instead of in Power Query</strong>. While this can help make things faster and more efficient, it can also cause problems when it comes to removing duplicates. Without using additional measures, <strong>there’s no guarantee that removing duplicates</strong> <strong>returns the same records</strong>. That means you can’t assume that removing duplicates will return only the first duplicate row in your dataset.</p>
+<p>But there’s a simple solution to this randomness problem. To make the remove duplicates operation predictable, you can use <a href="https://powerquery.how/table-buffer/" target="_blank" class="external-link">Table.Buffer</a>. This function forces Power Query to cache the data in memory, which means that you can control which records are returned when removing duplicates.</p>
+<p>So, if you want to ensure that you’re getting consistent results when removing duplicates, be sure to use <a href="https://powerquery.how/table-buffer/" title="Table.Buffer" target="_blank" class="external-link">Table.Buffer</a>. We’ll dive deeper into this topic and explore advanced methods in the next chapter.</p>
+<h2 id="advanced-techniques-for-removing-duplicates" tabindex="-1">Advanced Techniques for Removing Duplicates</h2>
+<p>Sometimes, removing duplicates isn’t as straightforward as it seems, and you may need more advanced methods to get the job done. That’s where this chapter comes in – we’re going to explore some advanced methods for removing duplicates in Power Query.</p>
+<p>In this chapter, we’ll dive into how you can <strong>remove duplicates based on a condition</strong>. We’ll look at retrieving the first or last value, the earliest or latest value and the lowest or highest value.</p>
+<h3 id="keep-first-or-last-value" tabindex="-1">Keep First or Last Value</h3>
+<p>First, let’s talk about how to delete duplicates and keep the first or last value in your dataset. <strong>By default, <a href="https://powerquery.how/table-distinct/" title="Table.Distinct" target="_blank" class="external-link">Table.Distinct</a> returns the first duplicate row it finds</strong>. But as we learned in the previous chapter, the sorting order of your table isn’t guaranteed, which can cause issues.</p>
+<p>To ensure that we’re keeping the first or last value, we need to sort our data and make sure it stays sorted.</p>
+<p>To remove duplicates and retrieve the first value in a dataset, you:</p>
+<ul>
+<li>Sort your data</li>
+<li>Select columns to remove duplicates from</li>
+<li>Wrap the data in <a href="https://powerquery.how/table-buffer/" target="_blank" class="external-link">Table.Buffer</a></li>
+<li>Remove duplicates</li>
+</ul>
+<p>You can do that with this dataset.</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-with-Table.Buffer-to-Guarantee-Sort-Order-in-Power-Query-1.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-with-Table.Buffer-to-Guarantee-Sort-Order-in-Power-Query-1.png" alt="Remove Duplicates with Table.Buffer to Guarantee Sort Order in Power Query"></a></p>
+<p>Prepare your data by sorting the table and wrapping it in <a href="https://powerquery.how/table-buffer/" title="Table.Buffer" target="_blank" class="external-link">Table.Buffer</a>. You can then select the Category column and click Remove duplicates, returning:</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Removing-Duplicates-and-Return-First-Value-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Removing-Duplicates-and-Return-First-Value-in-Power-Query.png" alt="Removing Duplicates and Return First Value in Power Query"></a></p>
+<p>You will end up removing duplicates but keeping the first instance within your category. So to return the first value when removing duplicates, you sort your code with:</p>
+<pre><code>= Table.Buffer( 
+    Table.Sort( Dataset,
+                { {&quot;Category&quot;,    Order.Ascending },
+                  {&quot;Description&quot;, Order.Ascending } } ) )
+</code></pre>
+<p>If you want to keep the last value instead, you can simply <a href="https://gorilla.bi/power-query/how-list-sort-works-in-m/" target="_blank" class="external-link">sort your data in descending order</a> by the column you want to keep the last value of. Then, wrap your data in <a href="https://powerquery.how/table-buffer/" title="Table.Buffer" target="_blank" class="external-link">Table.Buffer</a>, and remove duplicates.</p>
+<pre><code>= Table.Buffer( 
+    Table.Sort( Dataset,
+                { {&quot;Category&quot;,    Order.Ascending },
+                  {&quot;Description&quot;, Order.Descending } } ) )
+</code></pre>
+<h3 id="keep-earliest-or-latest-value" tabindex="-1">Keep Earliest or Latest Value</h3>
+<p>In case you want to return the earliest or the latest value, you can perform something similar. To return unique rows for the category with the latest date, you:</p>
+<ol>
+<li>Sort your data by Category and in a Descending order for your Date Column.</li>
+<li>Remove Duplicates from the relevant column(s).</li>
+</ol>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-and-Return-Latest-Row.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Remove-Duplicates-and-Return-Latest-Row.png" alt="Remove Duplicates and Return Latest Row"></a></p>
+<pre><code>// Sorts and buffers data, so removing duplicates returns the latest category row
+= Table.Buffer( 
+    Table.Sort( Dataset,
+                { {&quot;Category&quot;,    Order.Ascending }, 
+                  {&quot;Date&quot;,        Order.Descending } } ) )
+
+// Sorts and buffers data, so removing duplicates returns the earliest category row
+= Table.Buffer( 
+    Table.Sort( Dataset,
+                { {&quot;Category&quot;,    Order.Ascending }, 
+                  {&quot;Date&quot;,        Order.Ascending } } ) )
+</code></pre>
+<h3 id="keep-lowest-or-highest-value" tabindex="-1">Keep Lowest or Highest Value</h3>
+<p>The last advanced method returns <a href="https://gorilla.bi/power-query/using-table-max/" target="_blank" class="external-link"><strong>the lowest or highest value within a group</strong></a>. We could make use of the above method to achieve this. Yet, since I’m certain you will know how to sort your data in a similar way, let’s explore an alternative.</p>
+<p>To remove duplicates and return the lowest value, you can:</p>
+<ol>
+<li>Group your data.</li>
+<li>Perform an All Rows operation.</li>
+<li>Adjust the M-code to return the row with the lowest value.</li>
+<li>Expand the record column to get your result.</li>
+</ol>
+<p>Let’s see how that can work. The Group By operation returns only unique rows for the columns selected.</p>
+<p>To group your data, go to the Home Tab, and select Group By.</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Group-Your-Data-to-Remove-Duplicates-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Group-Your-Data-to-Remove-Duplicates-in-Power-Query.png" alt="Group Your Data to Remove Duplicates in Power Query"></a></p>
+<p>To keep the lowest value for each Category, you can <strong>group your data by Category</strong> and perform an <strong>All Rows operation</strong>. This creates a table object with all summarized rows for each Category. This produces below code:</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Group-Rows-and-use-All-Rows-operation-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Group-Rows-and-use-All-Rows-operation-in-Power-Query.png" alt="Group Rows and use All Rows operation in Power Query"></a></p>
+<p>We’re going to change the formula above. A useful function is <a href="https://powerquery.how/table-min/" target="_blank" class="external-link">Table.Min</a>. The <strong><a href="https://powerquery.how/table-min/" title="Table.Min" target="_blank" class="external-link">Table.Min</a> function returns the table row that contains the lowest value of a column</strong>. In other words, you can delete duplicate rows based on the column value.</p>
+<p>To achieve this, adjust the code like in the below picture. Then, expand <a href="https://gorilla.bi/power-query/records/" target="_blank" class="external-link">the record</a> column by selecting the arrows in the column header.</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/06/Return-Row-with-Lowest-Value-using-Table.Group-in-Power-Query.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/06/Return-Row-with-Lowest-Value-using-Table.Group-in-Power-Query.png" alt="Return Row with Lowest Value using Table.Group in Power Query"></a></p>
+<p>After clicking OK, you’ll end up with the desired result:</p>
+<p><a href="https://gorilla.bi/wp-content/uploads/2023/03/Rows-returning-the-Lowest-Value-using-Table.Group_.png" target="_blank" class="external-link"><img src="https://gorilla.bi/wp-content/uploads/2023/03/Rows-returning-the-Lowest-Value-using-Table.Group_.png" alt="Rows returning the Lowest Value using Table.Group"></a></p>
+<p>To instead keep the highest value when removing duplicates, you can simply swap out <a href="https://powerquery.how/" target="_blank" class="external-link">Table.Min</a> for <a href="https://powerquery.how/table-max/" target="_blank" class="external-link">Table.Max</a>. That means you either use:</p>
+<pre><code>// Sorts and buffers data, so removing duplicates returns the latest category row
+= Table.Group( Dataset, 
+    {&quot;Category&quot;}, 
+    {{&quot;Details&quot;, each Table.Min( _, &quot;Amount&quot; ) , type record }} )
+
+// Sorts and buffers data, so removing duplicates returns the earliest category row
+= Table.Group( Dataset, 
+    {&quot;Category&quot;}, 
+    {{&quot;Details&quot;, each Table.Max( _, &quot;Amount&quot; ) , type record }} )
+</code></pre>
+<p>You can learn more about the <a href="https://gorilla.bi/power-query/grouping-data/" target="_blank" class="external-link">Group By Operation</a> or also read into the <a href="https://gorilla.bi/power-query/group-by-to-concatenate-text/" target="_blank" class="external-link">All Rows operation</a> and how it works.</p>
+<h2 id="conclusion" tabindex="-1">Conclusion</h2>
+<p>And there, you have everything you need to know about removing duplicates in Power Query. Whether you’re dealing with a single column or multiple columns, case-sensitive or case-insensitive duplicates, or advanced methods for keeping the first, last, earliest, latest, lowest or highest values, Power Query has you covered.</p>
+<p>Remember, removing duplicates is an important step in cleaning your data. By removing duplicates, you can avoid issues with joins, dimension tables, and prepare your data for your data model.</p>
+<p>Just be aware of the randomness problem that can occur with the <a href="https://powerquery.how/table-distinct/" target="_blank" class="external-link">Table.Distinct</a> function, and use <a href="https://powerquery.how/table-buffer/" target="_blank" class="external-link">Table.Buffer</a> to ensure consistent results.</p>
+<p>Happy querying!</p>
 
       
       
@@ -1190,6 +1374,65 @@
 
                   
                         
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#a-href-https-gorilla-bi-power-query-removing-duplicates-target-blank-class-external-link-how-to-remove-duplicates-in-power-query-m-complete-guide-a">How to Remove Duplicates in Power Query M (Complete Guide)</a>
+            
+                <ol>
+                    
+                    <li><a href="#importance-of-removing-duplicates">Importance of Removing Duplicates</a>
+            		</li>
+
+                    <li><a href="#basics-for-removing-duplicates">Basics for Removing Duplicates</a>
+            
+                <ol>
+                    
+                    <li><a href="#removing-duplicates-from-a-single-column">Removing Duplicates from a Single Column</a>
+            		</li>
+
+                    <li><a href="#removing-duplicates-based-on-multiple-columns">Removing Duplicates based on Multiple Columns</a>
+            		</li>
+
+                    <li><a href="#removing-duplicates-case-insensitive">Removing Duplicates Case-Insensitive</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#inconsistent-results">Inconsistent Results</a>
+            		</li>
+
+                    <li><a href="#advanced-techniques-for-removing-duplicates">Advanced Techniques for Removing Duplicates</a>
+            
+                <ol>
+                    
+                    <li><a href="#keep-first-or-last-value">Keep First or Last Value</a>
+            		</li>
+
+                    <li><a href="#keep-earliest-or-latest-value">Keep Earliest or Latest Value</a>
+            		</li>
+
+                    <li><a href="#keep-lowest-or-highest-value">Keep Lowest or Highest Value</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#conclusion">Conclusion</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
                         
 
                   

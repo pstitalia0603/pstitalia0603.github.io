@@ -303,6 +303,94 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/how-to-remove-duplicates-in-power-query-m-complete-guide/">How to Remove Duplicates in Power Query M (Complete Guide) </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/m-mode-multiple-columns/">M Mode - Multiple Columns </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/m-code-mult-col/">M-CODE-mult-col </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/pq-number-rows-by-group/">pq - number rows by group </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/pq-addressee-couple-lastnames/">PQ_addressee_COUPLE_LASTNAMES </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/remove-duplicates/">REMOVE DUPLICATES </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/replace-values-multiple-criteria/">REPLACE VALUES, MULTIPLE CRITERIA  </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/interests/data/power-query-m/uppercase-and-underscore-column-names/">UPPERCASE-AND-UNDERSCORE-COLUMN-NAMES </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -378,6 +466,38 @@
                     
                         
     
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PROFESSIONAL/PortfolioNotes')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">PortfolioNotes</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/professional/portfolio-notes/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
     
                     
                 </div>
@@ -561,7 +681,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T00:47:05.733Z';
+        const searchIndexDate = '2024-03-02T00:53:08.574Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -573,9 +693,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T00:47:05.733Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T00:53:08.574Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T00:47:05.733Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T00:53:08.574Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1060,9 +1180,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/professional/portfolio-notes/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
+                                                </div></div>
                               </div>
                         
                   
