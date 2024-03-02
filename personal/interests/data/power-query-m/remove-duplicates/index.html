@@ -437,17 +437,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/power-bi-dax/date-table-fy-column/">date-table-fy-column </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/data/power-bi-dax/fiscal-month-number-calc/">FISCAL_MONTH_NUMBER_CALC </a>
                 </div>
             
@@ -855,7 +844,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-02T13:59:47.889Z';
+        const searchIndexDate = '2024-03-02T13:59:49.731Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -867,9 +856,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:59:47.889Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-02T13:59:49.731Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:59:47.889Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-02T13:59:49.731Z', docs}));
             window.docs = docs
             window.index = index;
         }
