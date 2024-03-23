@@ -94,29 +94,6 @@ print(f'{file_name} saved.')
 
 
 
-## 5. Add to Obsidian (Full Calendar)
-
-1) Create a Calendar folder under PERSONAL/CALENDARS For each calendar below:
-	1) PSF - tags = "#Paula"
-	2) COURSES  - tags = "#Courses"
-	3) EVENTS - tags = ?
-	4) KIDS_SCHOOL - tags = "#Kids"
-	5) PROTOCOL - tags = "#JOURNEY"
-	6) DSF - tags = "#Nico"
-	7) TRAVEL - tags = ?
-	8) EP - tags = ?
-	9) ENZOMIO - tags = "#Enzo"
-	10) P - tags = "#Enzo", "#Paula"
-	11) TTA - tags = ?
-	12) FAMDATES - tags = ?
-	13) FITNESS - tags = ?
-	14) TWINS - tags = "#Ella", "#Gianluca"
-	15) GMF - tags = "#Gianluca"
-	16) CPF - tags ="#Ella"
-	17) WEDDING - tags = ?
-	18) PWORK - tags = "#Work"
-2) Configure Full Calendar settings by adding a "Full Note" that points to the folder created
-3) Check Full Calendar that it opens archived calendar data
 
 
 
