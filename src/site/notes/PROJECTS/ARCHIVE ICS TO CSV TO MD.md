@@ -119,5 +119,5 @@ print(f'{file_name} saved.')
 3) Check Full Calendar that it opens archived calendar data
 
 
-Location: 
+
 
