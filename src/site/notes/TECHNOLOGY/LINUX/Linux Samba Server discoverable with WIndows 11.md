@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/technology/linux/linux-samba-server-discoverable-with-w-indows-11/","tags":["linux"],"noteIcon":""}
 ---
 
-# [How to configure Samba Server with Debian 11](https://unixcop.com/how-to-configure-samba-server-with-debian-11/)
+# [Configure Samba Server with Debian](https://unixcop.com/how-to-configure-samba-server-with-debian-11/)
 
 ## Install Samba server
 
