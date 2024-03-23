@@ -585,7 +585,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-23T13:50:30.994Z';
+        const searchIndexDate = '2024-03-23T13:50:33.364Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -597,9 +597,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T13:50:30.994Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T13:50:33.364Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T13:50:30.994Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T13:50:33.364Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -877,7 +877,7 @@
 <li>Export ICS from from  Calendar app</li>
 <li>Run convert_ICS
 <ol>
-<li>File will export to: C:/Users/</li>
+<li>File will export to: C:/Users/XXXXX/OneDrive/xfer/CALENDARS/COMPLETE</li>
 </ol>
 </li>
 </ol>
