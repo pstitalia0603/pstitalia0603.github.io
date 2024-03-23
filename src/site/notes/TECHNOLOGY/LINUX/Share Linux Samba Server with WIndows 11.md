@@ -87,6 +87,14 @@ Mount external drive into that new directory.
 sudo mount -t auto /dev/sda1 /media/USBHDD
 ```
 
+Edit fstab configuration so that drive will properly mount whenever Raspberry Pi reboots.
+
+```bash
+sudo nano /etc/fstab
+```
+
+Add the following line to the bottom of the config file
+`/dev/sda1 /media/USBHDD auto noatime 0 0` 
 ## How to setup samba share.
 
 Define a folder that will be shared across the network. In our example, the scenario folder name will be smbshare.
@@ -106,12 +114,15 @@ cp /etc/samba/smb.conf smb.conf.orig
 Edit the conf file and amend the following line at the bottom.
 
 ```
-\[samba-share\]
-comment = unixcop share
+[sambashare]
+comment = Samba share
 path = /media/USBHDD
 read-only = no
 browsable = yes
 writeable=yes
+guest ok = yes
+create mask = 0777
+directory mask = 0777
 ```
 
 Add a samba user to provide access over the internet.
