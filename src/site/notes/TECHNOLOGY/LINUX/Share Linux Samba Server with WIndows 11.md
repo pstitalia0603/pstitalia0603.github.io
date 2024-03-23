@@ -52,6 +52,41 @@ Check running status of service.
 systemctl status smbd
 ```
 
+## Mount drive in Linux
+
+https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/
+
+```bash
+sudo fdisk -l
+```
+
+Look towards bottom and assuming this is the only additional drive you have plugged in, you should see something like this:
+
+```bash
+Device     Boot Start       End   Sectors   Size Id Type
+/dev/sda1  *        2 975400959 975400958 465.1G 83 Linu
+```
+
+/dev/sda1 is the name of the partition on our external drive.
+
+Create a directory within our `/media/` folder to mount drive into
+
+```bash
+sudo mkdir /media/USBHDD
+```
+
+Ensure full access to the directory.
+
+```bash
+sudo chmod -R 777 /media/USBHDD/share
+```
+
+Mount external drive into that new directory.
+
+```bash
+sudo mount -t auto /dev/sda1 /media/USBHDD
+```
+
 ## How to setup samba share.
 
 Define a folder that will be shared across the network. In our example, the scenario folder name will be smbshare.
