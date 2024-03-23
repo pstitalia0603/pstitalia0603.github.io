@@ -585,7 +585,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-23T13:50:00.551Z';
+        const searchIndexDate = '2024-03-23T13:50:30.994Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -597,9 +597,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T13:50:00.551Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T13:50:30.994Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T13:50:00.551Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T13:50:30.994Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -959,33 +959,6 @@ for file in files:
         f.close()
 print(f'{file_name} saved.')
 </code></pre>
-<h2 id="5-add-to-obsidian-full-calendar" tabindex="-1">5. Add to Obsidian (Full Calendar)</h2>
-<ol>
-<li>Create a Calendar folder under PERSONAL/CALENDARS For each calendar below:
-<ol>
-<li>PSF - tags = &quot;#Paula&quot;</li>
-<li>COURSES  - tags = &quot;#Courses&quot;</li>
-<li>EVENTS - tags = ?</li>
-<li>KIDS_SCHOOL - tags = &quot;#Kids&quot;</li>
-<li>PROTOCOL - tags = &quot;#JOURNEY&quot;</li>
-<li>DSF - tags = &quot;#Nico&quot;</li>
-<li>TRAVEL - tags = ?</li>
-<li>EP - tags = ?</li>
-<li>ENZOMIO - tags = &quot;#Enzo&quot;</li>
-<li>P - tags = &quot;#Enzo&quot;, &quot;#Paula&quot;</li>
-<li>TTA - tags = ?</li>
-<li>FAMDATES - tags = ?</li>
-<li>FITNESS - tags = ?</li>
-<li>TWINS - tags = &quot;#Ella&quot;, &quot;#Gianluca&quot;</li>
-<li>GMF - tags = &quot;#Gianluca&quot;</li>
-<li>CPF - tags =&quot;#Ella&quot;</li>
-<li>WEDDING - tags = ?</li>
-<li>PWORK - tags = &quot;#Work&quot;</li>
-</ol>
-</li>
-<li>Configure Full Calendar settings by adding a &quot;Full Note&quot; that points to the folder created</li>
-<li>Check Full Calendar that it opens archived calendar data</li>
-</ol>
 
       
       
@@ -1236,9 +1209,6 @@ print(f'{file_name} saved.')
             		</li>
 
                     <li><a href="#4-convert-csv-to-md-and-gt-run-csv-2-md-code">4. Convert CSV to MD --> Run CSV2MD code</a>
-            		</li>
-
-                    <li><a href="#5-add-to-obsidian-full-calendar">5. Add to Obsidian (Full Calendar)</a>
             		</li>
                 </ol>
             </nav>
