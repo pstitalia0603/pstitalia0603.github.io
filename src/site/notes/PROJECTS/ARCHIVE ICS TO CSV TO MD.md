@@ -9,7 +9,7 @@ Converting historic calendar events to Full Calendar in Obsidian
 ## 1. Convert ICS files to CSV
 1. Export ICS from from  Calendar app
 2. Run convert_ICS 
-	1. File will export to: C:/Users/
+	1. File will export to: C:/Users/XXXXX/OneDrive/xfer/CALENDARS/COMPLETE
 ## 2. Run convert_ics code
 
 ```python
