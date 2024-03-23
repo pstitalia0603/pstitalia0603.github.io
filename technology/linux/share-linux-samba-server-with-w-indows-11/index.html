@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Number rows by group</title>
+    <title>Share Linux Samba Server with WIndows 11</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -228,7 +228,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/number-rows-by-group/">Number rows by group </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/number-rows-by-group/">Number rows by group </a>
                 </div>
             
         </div>
@@ -380,7 +380,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/technology/linux/share-linux-samba-server-with-w-indows-11/">Share Linux Samba Server with WIndows 11 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/technology/linux/share-linux-samba-server-with-w-indows-11/">Share Linux Samba Server with WIndows 11 </a>
                 </div>
             
         </div>
@@ -820,7 +820,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Number rows by group</h1>
+          <h1 data-note-icon="">Share Linux Samba Server with WIndows 11</h1>
         
         <div class="header-meta">
           
@@ -830,19 +830,7 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_query
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Data
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #STP
+                    #linux
                   </a>
                 
               
@@ -853,9 +841,63 @@
       </header>
       
       
-      <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p><a href="https://excelguru.ca/number-rows-by-group-using-power-query/" target="_blank" class="external-link">PQ NUMBER ROW BY GROUP</a></p>
-<p>necessary for AF DASHBOARD (get oldest kid only from a family and show transactions for that family)</p>
+      <h1 id="a-href-https-unixcop-com-how-to-configure-samba-server-with-debian-11-target-blank-class-external-link-how-to-configure-samba-server-with-debian-11-a" tabindex="-1"><a href="https://unixcop.com/how-to-configure-samba-server-with-debian-11/" target="_blank" class="external-link">How to configure Samba Server with Debian 11</a></h1>
+<h2 id="install-samba-server" tabindex="-1">Install Samba server</h2>
+<p>Check what is the IP address of the server.</p>
+<pre><code># ip addr
+</code></pre>
+<p>Update Server</p>
+<pre><code>sudo apt update
+</code></pre>
+<p>Install required package for Samba server.</p>
+<pre><code>sudo apt install samba
+</code></pre>
+<p>Enable samba service on reboot.</p>
+<pre><code>systemctl enable smbd
+</code></pre>
+<p>Open the following ports on the firewall.</p>
+<pre><code>ufw allow 139
+
+ufw allow 445 
+
+sudo ufw allow Samba
+</code></pre>
+<p>Now, restart the smbd service</p>
+<pre><code>systemctl restart smbd
+</code></pre>
+<p>Check running status of service.</p>
+<pre><code>systemctl status smbd
+</code></pre>
+<h2 id="how-to-setup-samba-share" tabindex="-1">How to setup samba share.</h2>
+<p>Define a folder that will be shared across the network. In our example, the scenario folder name will be smbshare.</p>
+<p>Create a folder first.</p>
+<pre><code>mkdir /media/USBHDD
+</code></pre>
+<p>Before editing, copy the samba configuration file for the safe side.</p>
+<pre><code>cp /etc/samba/smb.conf smb.conf.orig
+</code></pre>
+<p>Edit the conf file and amend the following line at the bottom.</p>
+<pre><code>\[samba-share\]
+comment = unixcop share
+path = /media/USBHDD
+read-only = no
+browsable = yes
+writeable=yes
+</code></pre>
+<p>Add a samba user to provide access over the internet.</p>
+<pre><code>sudo useradd smbuser
+</code></pre>
+<p>Provide smb authentication to the newly created user i.e. smbuser.</p>
+<pre><code>sudo smbpasswd -a smbuser
+</code></pre>
+<p>Make smbuser owner for samba share.</p>
+<pre><code>sudo chown smbuser:smbuser /smbshare/
+</code></pre>
+<p>Restart the samba service once again.</p>
+<pre><code>systemctl restart smbd
+</code></pre>
+<p>Open an MS window client. Map drive</p>
+<p><img src="https://unixcop.com/wp-content/uploads/2021/09/image-95.png" alt=""></p>
 
       
       
@@ -1085,6 +1127,32 @@
 
                   
                         
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#a-href-https-unixcop-com-how-to-configure-samba-server-with-debian-11-target-blank-class-external-link-how-to-configure-samba-server-with-debian-11-a">How to configure Samba Server with Debian 11</a>
+            
+                <ol>
+                    
+                    <li><a href="#install-samba-server">Install Samba server</a>
+            		</li>
+
+                    <li><a href="#how-to-setup-samba-share">How to setup samba share.</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
                         
 
                   
