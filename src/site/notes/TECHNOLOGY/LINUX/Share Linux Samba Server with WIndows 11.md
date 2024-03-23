@@ -106,3 +106,9 @@ systemctl restart smbd
 Open an MS window client. Map drive
 
 ![](https://unixcop.com/wp-content/uploads/2021/09/image-95.png)
+
+Reference: 
+[[TECHNOLOGY/LINUX/Share external drive with Samba on Raspberry Pi\|Share external drive with Samba on Raspberry Pi]]
+[[TECHNOLOGY/LINUX/Raspberry Pi as a Samba server to create a Shared folder between two or more computers.\|Raspberry Pi as a Samba server to create a Shared folder between two or more computers.]]
+[[TECHNOLOGY/LINUX/Upgrade Debian 12 From Debian 11\|Upgrade Debian 12 From Debian 11]]
+[[TECHNOLOGY/LINUX/How to Enable SMB Server in Windows 11 PC – WebNots\|How to Enable SMB Server in Windows 11 PC – WebNots]]
