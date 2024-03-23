@@ -596,7 +596,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-23T14:19:14.075Z';
+        const searchIndexDate = '2024-03-23T14:23:00.794Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -608,9 +608,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T14:19:14.075Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T14:23:00.794Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T14:19:14.075Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T14:23:00.794Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -890,6 +890,29 @@ sudo ufw allow Samba
 <p>Check running status of service.</p>
 <pre><code>systemctl status smbd
 </code></pre>
+<h2 id="mount-drive-in-linux" tabindex="-1">Mount drive in Linux</h2>
+<p><a href="https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/" target="_blank" class="external-link">https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/</a></p>
+<pre><code class="language-bash">sudo fdisk -l
+</code></pre>
+<p>Look towards bottom and assuming this is the only additional drive you have plugged in, you should see something like this:</p>
+<pre><code class="language-bash">Device     Boot Start       End   Sectors   Size Id Type
+/dev/sda1  *        2 975400959 975400958 465.1G 83 Linu
+</code></pre>
+<p>/dev/sda1 is the name of the partition on our external drive.</p>
+<p>Create a directory within our <code>/media/</code> folder to mount drive into</p>
+<pre><code class="language-bash">sudo mkdir /media/USBHDD
+</code></pre>
+<p>Ensure full access to the directory.</p>
+<pre><code class="language-bash">sudo chmod -R 777 /media/USBHDD/share
+</code></pre>
+<p>Mount external drive into that new directory.</p>
+<pre><code class="language-bash">sudo mount -t auto /dev/sda1 /media/USBHDD
+</code></pre>
+<p>Edit fstab configuration so that drive will properly mount whenever Raspberry Pi reboots.</p>
+<pre><code class="language-bash">sudo nano /etc/fstab
+</code></pre>
+<p>Add the following line to the bottom of the config file<br>
+<code>/dev/sda1 /media/USBHDD auto noatime 0 0</code></p>
 <h2 id="how-to-setup-samba-share" tabindex="-1">How to setup samba share.</h2>
 <p>Define a folder that will be shared across the network. In our example, the scenario folder name will be smbshare.</p>
 <p>Create a folder first.</p>
@@ -899,12 +922,15 @@ sudo ufw allow Samba
 <pre><code>cp /etc/samba/smb.conf smb.conf.orig
 </code></pre>
 <p>Edit the conf file and amend the following line at the bottom.</p>
-<pre><code>\[samba-share\]
-comment = unixcop share
+<pre><code>[sambashare]
+comment = Samba share
 path = /media/USBHDD
 read-only = no
 browsable = yes
 writeable=yes
+guest ok = yes
+create mask = 0777
+directory mask = 0777
 </code></pre>
 <p>Add a samba user to provide access over the internet.</p>
 <pre><code>sudo useradd smbuser
@@ -1170,6 +1196,9 @@ writeable=yes
                 <ol>
                     
                     <li><a href="#install-samba-server">Install Samba server</a>
+            		</li>
+
+                    <li><a href="#mount-drive-in-linux">Mount drive in Linux</a>
             		</li>
 
                     <li><a href="#how-to-setup-samba-share">How to setup samba share.</a>
