@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Share Linux Samba Server with WIndows 11</title>
+    <title>Linux Samba Server discoverable with WIndows 11</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -402,7 +402,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/technology/linux/share-linux-samba-server-with-w-indows-11/">Share Linux Samba Server with WIndows 11 </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/technology/linux/linux-samba-server-discoverable-with-w-indows-11/">Linux Samba Server discoverable with WIndows 11 </a>
                 </div>
             
         </div>
@@ -596,7 +596,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-23T14:23:00.794Z';
+        const searchIndexDate = '2024-03-23T14:47:44.489Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -608,9 +608,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T14:23:00.794Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T14:47:44.489Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T14:23:00.794Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T14:47:44.489Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -842,7 +842,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Share Linux Samba Server with WIndows 11</h1>
+          <h1 data-note-icon="">Linux Samba Server discoverable with WIndows 11</h1>
         
         <div class="header-meta">
           
@@ -948,9 +948,12 @@ directory mask = 0777
 <p><img src="https://unixcop.com/wp-content/uploads/2021/09/image-95.png" alt=""></p>
 <p>Reference:<br>
 <a class="internal-link is-unresolved" href="/404" target="">Share external drive with Samba on Raspberry Pi</a><br>
-<a class="internal-link is-unresolved" href="/404" target="">Raspberry Pi as a Samba server to create a Shared folder between two or more computers.</a><br>
+<a href="https://fernandezvictor.medium.com/raspberry-pi-as-samba-server-to-create-shared-folder-between-computers-cdea979092b8" target="_blank" class="external-link">https://fernandezvictor.medium.com/raspberry-pi-as-samba-server-to-create-shared-folder-between-computers-cdea979092b8</a><br>
 <a class="internal-link is-unresolved" href="/404" target="">Upgrade Debian 12 From Debian 11</a><br>
-<a class="internal-link is-unresolved" href="/404" target="">How to Enable SMB Server in Windows 11 PC – WebNots</a></p>
+<a href="https://www.webnots.com/how-to-enable-smb-server-in-windows-pc/" target="_blank" class="external-link">https://www.webnots.com/how-to-enable-smb-server-in-windows-pc/</a><br>
+<a href="https://orcacore.com/install-samba-file-sharing-debian-12/?trk=article-ssr-frontend-pulse_little-text-block" target="_blank" class="external-link">https://orcacore.com/install-samba-file-sharing-debian-12/?trk=article-ssr-frontend-pulse_little-text-block</a><br>
+<a href="https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/" target="_blank" class="external-link">https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/</a><br>
+<a class="internal-link is-unresolved" href="/404" target="">UFW firewall allow Samba inbound from Windows</a></p>
 
       
       
