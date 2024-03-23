@@ -596,7 +596,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-23T20:46:33.768Z';
+        const searchIndexDate = '2024-03-23T20:50:11.011Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -608,9 +608,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T20:46:33.768Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-23T20:50:11.011Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T20:46:33.768Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-23T20:50:11.011Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -863,7 +863,7 @@
       </header>
       
       
-      <h1 id="a-href-https-unixcop-com-how-to-configure-samba-server-with-debian-11-target-blank-class-external-link-how-to-configure-samba-server-with-debian-11-a" tabindex="-1"><a href="https://unixcop.com/how-to-configure-samba-server-with-debian-11/" target="_blank" class="external-link">How to configure Samba Server with Debian 11</a></h1>
+      <h1 id="a-href-https-unixcop-com-how-to-configure-samba-server-with-debian-11-target-blank-class-external-link-configure-samba-server-with-debian-a" tabindex="-1"><a href="https://unixcop.com/how-to-configure-samba-server-with-debian-11/" target="_blank" class="external-link">Configure Samba Server with Debian</a></h1>
 <h2 id="install-samba-server" tabindex="-1">Install Samba server</h2>
 <p>Check what is the IP address of the server.</p>
 <pre><code># ip addr
@@ -1194,7 +1194,7 @@ directory mask = 0777
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#a-href-https-unixcop-com-how-to-configure-samba-server-with-debian-11-target-blank-class-external-link-how-to-configure-samba-server-with-debian-11-a">How to configure Samba Server with Debian 11</a>
+                    <li><a href="#a-href-https-unixcop-com-how-to-configure-samba-server-with-debian-11-target-blank-class-external-link-configure-samba-server-with-debian-a">Configure Samba Server with Debian</a>
             
                 <ol>
                     
