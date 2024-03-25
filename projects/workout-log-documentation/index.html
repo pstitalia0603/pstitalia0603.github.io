@@ -596,7 +596,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-03-25T00:15:45.257Z';
+        const searchIndexDate = '2024-03-25T00:15:47.683Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -608,9 +608,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-03-25T00:15:45.257Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-03-25T00:15:47.683Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-25T00:15:45.257Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-03-25T00:15:47.683Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1001,8 +1001,8 @@ for (let group of pages.sort(d =&gt; d.key, 'desc')) {
 
 | File                                                             | Date       | Miles | Minutes | lbs   | kgs   | MPH | mps  | Rate | Calories Burned |
 | ---------------------------------------------------------------- | ---------- | ----- | ------- | ----- | ----- | --- | ---- | ---- | --------------- |
-| <a class="internal-link is-unresolved" href="/404" target="">2024-01-14 1st</a>               | 2024-01-14 | 1     | 30      | 138.9 | 62.99 | 3   | 1.34 | 4.29 | 128.73          |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-02-09 With twins</a> | 2024-02-09 | 0.77  | 19      | 138.6 | 62.86 | 2.4 | 1.07 | 3.53 | 67.11           |
+| <a class="internal-link is-unresolved" href="/404" target="">2024-01-14 1st</a>               | 2024-01-14 | 1     | 30      | 138.9 | 62.99 | 3   | 1.34 | 4.29 | 128.73          |
 
 { .block-language-dataview}
 
