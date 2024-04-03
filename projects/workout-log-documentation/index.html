@@ -449,6 +449,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/i-digital-garden/">iDigital Garden </a>
                 </div>
             
@@ -699,7 +710,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T19:48:50.402Z';
+        const searchIndexDate = '2024-04-03T19:52:02.108Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -711,9 +722,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:48:50.402Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:52:02.108Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:48:50.402Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:52:02.108Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1104,8 +1115,8 @@ for (let group of pages.sort(d =&gt; d.key, 'desc')) {
 
 | File                                                             | Date       | Miles | Minutes | lbs   | kgs   | MPH  | mps  | Rate | Calories Burned |
 | ---------------------------------------------------------------- | ---------- | ----- | ------- | ----- | ----- | ---- | ---- | ---- | --------------- |
-| <a class="internal-link is-unresolved" href="/404" target="">2024-02-09 With twins</a> | 2024-02-09 | 0.77  | 19      | 138.6 | 62.86 | 2.4  | 1.07 | 3.53 | 67.11           |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-01-14 1st</a>               | 2024-01-14 | 1     | 30      | 138.9 | 62.99 | 3    | 1.34 | 4.29 | 128.73          |
+| <a class="internal-link is-unresolved" href="/404" target="">2024-02-09 With twins</a> | 2024-02-09 | 0.77  | 19      | 138.6 | 62.86 | 2.4  | 1.07 | 3.53 | 67.11           |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-03-25 Gym</a>               | 2024-03-25 | 2.49  | 50      | 139.9 | 63.45 | 3.5  | 1.56 | 5.08 | 254.04          |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-03-30 Mar30</a>           | 2024-03-30 | 0.99  | 27.5    | 140.2 | 63.58 | 2.17 | 0.97 | 3.33 | 91.5            |
 
