@@ -721,7 +721,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T20:11:29.746Z';
+        const searchIndexDate = '2024-04-03T20:12:15.714Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -733,9 +733,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T20:11:29.746Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T20:12:15.714Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T20:11:29.746Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T20:12:15.714Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -996,9 +996,6 @@
       
       <p>2024-03-14 13:47 -</p>
 <h1 id="a-href-https-learn-microsoft-com-en-us-powerquery-m-list-repeat-target-blank-class-external-link-list-repeat-power-query-m-a" tabindex="-1"><a href="https://learn.microsoft.com/en-us/powerquery-m/list-repeat" target="_blank" class="external-link">List.Repeat - PowerQuery M</a></h1>
-<p><a href="#main" target="_blank" class="external-link">Skip to main content</a></p>
-<p>This browser is no longer supported.</p>
-<p>Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.</p>
 <h2 id="list-repeat" tabindex="-1">List.Repeat</h2>
 <pre><code>List.Repeat( { [col1] }, [col2] )
 </code></pre>
