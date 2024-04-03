@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/replace-values-multiple-criteria/","tags":["Power_query","Data"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 https://gorilla.bi/power-query/replace-values/ 
 
