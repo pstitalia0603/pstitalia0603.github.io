@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/remove-duplicates/","tags":["Power_query","Data"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 ### Remove duplicates from an individual cell
 
