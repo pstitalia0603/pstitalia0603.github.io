@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/m-mode-multiple-columns/","tags":["Data","m-code","dax","Power_query"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 //let
 //    Source = #"Families-Parents-Students-LIST",
