@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/fiscal-month-number-calc/","tags":["Power_bi","Data"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 POWER PIVOT DAX
 
