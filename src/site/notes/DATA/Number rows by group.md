@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/number-rows-by-group/","tags":["Power_query","Data","STP"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 [PQ NUMBER ROW BY GROUP](https://excelguru.ca/number-rows-by-group-using-power-query/)
 
