@@ -721,7 +721,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T20:12:16.890Z';
+        const searchIndexDate = '2024-04-03T20:15:00.513Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -733,9 +733,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T20:12:16.890Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T20:15:00.513Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T20:12:16.890Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T20:15:00.513Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -994,7 +994,7 @@
       </header>
       
       
-      <p>2024-03-14 13:47 -</p>
+      <p><a class="internal-link" target="" data-note-icon="" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
 <h1 id="a-href-https-learn-microsoft-com-en-us-powerquery-m-list-repeat-target-blank-class-external-link-list-repeat-power-query-m-a" tabindex="-1"><a href="https://learn.microsoft.com/en-us/powerquery-m/list-repeat" target="_blank" class="external-link">List.Repeat - PowerQuery M</a></h1>
 <h2 id="list-repeat" tabindex="-1">List.Repeat</h2>
 <pre><code>List.Repeat( { [col1] }, [col2] )
