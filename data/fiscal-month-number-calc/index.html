@@ -62,7 +62,7 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <link href="/styles/digital-garden-base.css" rel="stylesheet">
     <link href="/styles/obsidian-base.css" rel="stylesheet">
-    <link href="/styles/_theme.087d286e.css" rel="stylesheet">
+    <link href="/styles/_theme.3eef2815.css" rel="stylesheet">
 
 
 <link href="/styles/custom-style.css" rel="stylesheet">
@@ -76,14 +76,14 @@
 
 
     <style>
-        body.css-settings-manager { } body.theme-light.css-settings-manager { } body.theme-dark.css-settings-manager { }
+        body.css-settings-manager { --text-highlight-bg-l: rgb(45,24,84); --text-highlight-bg-d: rgb(124,21,124); --strong-color:
     </style>
 
 <style></style>
     
     
   </head>
-  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon backlinks-note-icon css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized css-settings-manager h2-underline AT-row is-focused">
+  <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon backlinks-note-icon css-settings-manager theme-dark mod-linux is-mobile is-android is-phone obsidian-app show-inline-title show-view-header css-settings-manager floating-button-off progress-color h2-underline highlightr-realistic AT-row">
     
     
     
@@ -699,7 +699,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T12:16:36.333Z';
+        const searchIndexDate = '2024-04-03T16:27:09.791Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -711,9 +711,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T12:16:36.333Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T16:27:09.791Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T12:16:36.333Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T16:27:09.791Z', docs}));
             window.docs = docs
             window.index = index;
         }
