@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/date-table-and-fiscal-year-column/","tags":["Power_bi","Power_query","m-code","dax","Data"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 FISCAL YEAR M CODE
 https://www.youtube.com/watch?v=bo-43zg1R8U
