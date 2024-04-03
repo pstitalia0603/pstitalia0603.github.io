@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/uppercase-and-underscore-column-names/","tags":["Power_query","Data"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 Table.TransformColumnNames( Source, each Text.Upper( _ ) )
 // CAPITALIZES All Column Names
