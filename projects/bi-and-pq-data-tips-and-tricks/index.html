@@ -710,7 +710,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T19:53:50.963Z';
+        const searchIndexDate = '2024-04-03T19:57:12.170Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -722,9 +722,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:53:50.963Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:12.170Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:53:50.963Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:12.170Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1317,9 +1317,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/addressee-couple-lastnames/" data-note-icon="" class="backlink">Addressee COUPLE LASTNAMES</a>
-                                                </div><div class="backlink-card"><a href="/data/count-non-null-values/" data-note-icon="" class="backlink">Count Non-null Values</a>
-                                                </div><div class="backlink-card"><a href="/data/date-table-and-fiscal-year-column/" data-note-icon="" class="backlink">Date Table and Fiscal Year column</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/date-table-and-fiscal-year-column/" data-note-icon="" class="backlink">Date Table and Fiscal Year column</a>
                                                 </div><div class="backlink-card"><a href="/data/fiscal-month-number-calc/" data-note-icon="" class="backlink">FISCAL MONTH NUMBER CALC</a>
                                                 </div><div class="backlink-card"><a href="/data/m-mode-multiple-columns/" data-note-icon="" class="backlink">M Mode - Multiple Columns</a>
                                                 </div><div class="backlink-card"><a href="/data/m-code-mult-col/" data-note-icon="" class="backlink">M-CODE-mult-col</a>
