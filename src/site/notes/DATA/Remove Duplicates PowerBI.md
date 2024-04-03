@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/remove-duplicates-power-bi/","tags":["dax","Power_bi","Data"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 remove duplicates from an individual cell PowerBi
 
