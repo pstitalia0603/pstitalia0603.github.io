@@ -394,6 +394,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/learning/courses/progress-of-cs-50-sql/">PROGRESS OF CS50 SQL </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -688,7 +699,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T12:04:18.089Z';
+        const searchIndexDate = '2024-04-03T12:04:21.962Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -700,9 +711,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T12:04:18.089Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T12:04:21.962Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T12:04:18.089Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T12:04:21.962Z', docs}));
             window.docs = docs
             window.index = index;
         }
