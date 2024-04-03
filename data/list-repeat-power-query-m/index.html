@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Remove Duplicates PowerBI</title>
+    <title>List.Repeat - PowerQuery M</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -217,7 +217,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/list-repeat-power-query-m/">List.Repeat - PowerQuery M </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/list-repeat-power-query-m/">List.Repeat - PowerQuery M </a>
                 </div>
             
         </div>
@@ -272,7 +272,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/remove-duplicates-power-bi/">Remove Duplicates PowerBI </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/remove-duplicates-power-bi/">Remove Duplicates PowerBI </a>
                 </div>
             
         </div>
@@ -967,7 +967,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Remove Duplicates PowerBI</h1>
+          <h1 data-note-icon="">List.Repeat - PowerQuery M</h1>
         
         <div class="header-meta">
           
@@ -977,19 +977,13 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #dax
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_bi
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
                     #Data
+                  </a>
+                
+              
+                
+                  <a class="tag" onclick="toggleTagSearch(this)">
+                    #Power_query
                   </a>
                 
               
@@ -1000,9 +994,27 @@
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>remove duplicates from an individual cell PowerBi</p>
-<p>=Text.Combine (List.Distinct(List.Transform (Text.Split([EMAIL],&quot;,&quot;),each Text.Trim(_))),&quot;, &quot;)</p>
+      <p>2024-03-14 13:47 -</p>
+<h1 id="a-href-https-learn-microsoft-com-en-us-powerquery-m-list-repeat-target-blank-class-external-link-list-repeat-power-query-m-a" tabindex="-1"><a href="https://learn.microsoft.com/en-us/powerquery-m/list-repeat" target="_blank" class="external-link">List.Repeat - PowerQuery M</a></h1>
+<p><a href="#main" target="_blank" class="external-link">Skip to main content</a></p>
+<p>This browser is no longer supported.</p>
+<p>Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.</p>
+<h2 id="list-repeat" tabindex="-1">List.Repeat</h2>
+<pre><code>List.Repeat( { [col1] }, [col2] )
+</code></pre>
+<p>This produces a column with a list in each row where the elements of the list are <code>[col1]</code> listed <code>[col2]</code> number of times.</p>
+<h2 id="syntax" tabindex="-1">Syntax</h2>
+<p>List.Repeat(<strong>list</strong> as list, <strong>count</strong> as number) as list</p>
+<h2 id="about" tabindex="-1">About</h2>
+<p>Returns a list that is <code>count</code> repetitions of the original list, <code>list</code>.</p>
+<h2 id="example-1" tabindex="-1">Example 1</h2>
+<p>Create a list that has {1, 2} repeated 3 times.</p>
+<p><strong>Usage</strong></p>
+<pre><code>List.Repeat({1, 2}, 3)
+</code></pre>
+<p><strong>Output</strong></p>
+<p><code>{1, 2, 1, 2, 1, 2}</code></p>
+<hr>
 
       
       
@@ -1232,6 +1244,38 @@
 
                   
                         
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#a-href-https-learn-microsoft-com-en-us-powerquery-m-list-repeat-target-blank-class-external-link-list-repeat-power-query-m-a">List.Repeat - PowerQuery M</a>
+            
+                <ol>
+                    
+                    <li><a href="#list-repeat">List.Repeat</a>
+            		</li>
+
+                    <li><a href="#syntax">Syntax</a>
+            		</li>
+
+                    <li><a href="#about">About</a>
+            		</li>
+
+                    <li><a href="#example-1">Example 1</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
                         
 
                   
