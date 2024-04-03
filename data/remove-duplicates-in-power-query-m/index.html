@@ -173,6 +173,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/count-non-null-values/">Count Non-null Values </a>
                 </div>
             
@@ -449,17 +460,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/i-digital-garden/">iDigital Garden </a>
                 </div>
             
@@ -710,7 +710,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T19:57:17.638Z';
+        const searchIndexDate = '2024-04-03T19:58:54.017Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -722,9 +722,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:17.638Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:58:54.017Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:17.638Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:58:54.017Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -983,7 +983,7 @@
       </header>
       
       
-      <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
+      <p><a class="internal-link" target="" data-note-icon="" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
 <h1 id="a-href-https-gorilla-bi-power-query-removing-duplicates-target-blank-class-external-link-how-to-remove-duplicates-in-power-query-m-complete-guide-a" tabindex="-1"><a href="https://gorilla.bi/power-query/removing-duplicates/" target="_blank" class="external-link">How to Remove Duplicates in Power Query M (Complete Guide)</a></h1>
 <h2 id="basics-for-removing-duplicates" tabindex="-1">Basics for Removing Duplicates</h2>
 <p>So, how can you remove duplicates using the Power Query Editor? Under the hood, the operation uses the <a href="https://powerquery.how/table-distinct/" target="_blank" class="external-link">Table.Distinct</a> function to remove duplicates. The syntax for the function is as follows:</p>
@@ -1252,7 +1252,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/projects/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
                                                 </div></div>
                               </div>
                         
