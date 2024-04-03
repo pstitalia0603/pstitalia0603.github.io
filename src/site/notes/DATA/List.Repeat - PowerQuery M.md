@@ -6,12 +6,6 @@
 
 # [List.Repeat - PowerQuery M](https://learn.microsoft.com/en-us/powerquery-m/list-repeat)
 
-[Skip to main content](#main)
-
-This browser is no longer supported.
-
-Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.
-
 ## List.Repeat
 
 ```
