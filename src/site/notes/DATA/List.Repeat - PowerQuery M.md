@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/list-repeat-power-query-m/","tags":["Data","Power_query"],"noteIcon":""}
 ---
 
-2024-03-14 13:47 -
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 # [List.Repeat - PowerQuery M](https://learn.microsoft.com/en-us/powerquery-m/list-repeat)
 
