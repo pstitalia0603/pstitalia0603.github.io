@@ -710,7 +710,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T19:57:12.170Z';
+        const searchIndexDate = '2024-04-03T19:57:13.166Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -722,9 +722,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:12.170Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:13.166Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:12.170Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:13.166Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1317,10 +1317,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/date-table-and-fiscal-year-column/" data-note-icon="" class="backlink">Date Table and Fiscal Year column</a>
-                                                </div><div class="backlink-card"><a href="/data/fiscal-month-number-calc/" data-note-icon="" class="backlink">FISCAL MONTH NUMBER CALC</a>
-                                                </div><div class="backlink-card"><a href="/data/m-mode-multiple-columns/" data-note-icon="" class="backlink">M Mode - Multiple Columns</a>
-                                                </div><div class="backlink-card"><a href="/data/m-code-mult-col/" data-note-icon="" class="backlink">M-CODE-mult-col</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/m-code-mult-col/" data-note-icon="" class="backlink">M-CODE-mult-col</a>
                                                 </div><div class="backlink-card"><a href="/data/number-rows-by-group/" data-note-icon="" class="backlink">Number rows by group</a>
                                                 </div><div class="backlink-card"><a href="/data/remove-duplicates/" data-note-icon="" class="backlink">REMOVE DUPLICATES</a>
                                                 </div><div class="backlink-card"><a href="/data/replace-values-multiple-criteria/" data-note-icon="" class="backlink">REPLACE VALUES, MULTIPLE CRITERIA </a>
