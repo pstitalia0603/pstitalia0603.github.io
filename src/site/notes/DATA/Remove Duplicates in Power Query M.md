@@ -3,7 +3,7 @@
 ---
 
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 # [How to Remove Duplicates in Power Query M (Complete Guide)](https://gorilla.bi/power-query/removing-duplicates/)
 
