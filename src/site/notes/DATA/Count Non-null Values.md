@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/count-non-null-values/","tags":["Power_query","Data"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 {"Count", each Table.RowCount(_), Int64.Type}})
 
