@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/data/transform-column-names-in-bulk-in-pq-bi-gorilla/","tags":["Power_query","Data"],"noteIcon":""}
 ---
 
-[[PROJECTS/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 # [Transform Column Names in Bulk in Power Query - BI Gorilla](https://gorilla.bi/power-query/transform-column-names/)
 
 techniques for **replacing column names in bulk**. 
