@@ -710,7 +710,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T19:57:15.557Z';
+        const searchIndexDate = '2024-04-03T19:57:16.685Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -722,9 +722,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:15.557Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:16.685Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:15.557Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:16.685Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -983,7 +983,7 @@
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/projects/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
+      <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
 <h1 id="a-href-https-gorilla-bi-power-query-removing-duplicates-target-blank-class-external-link-how-to-remove-duplicates-in-power-query-m-complete-guide-a" tabindex="-1"><a href="https://gorilla.bi/power-query/removing-duplicates/" target="_blank" class="external-link">How to Remove Duplicates in Power Query M (Complete Guide)</a></h1>
 <h2 id="basics-for-removing-duplicates" tabindex="-1">Basics for Removing Duplicates</h2>
 <p>So, how can you remove duplicates using the Power Query Editor? Under the hood, the operation uses the <a href="https://powerquery.how/table-distinct/" target="_blank" class="external-link">Table.Distinct</a> function to remove duplicates. The syntax for the function is as follows:</p>

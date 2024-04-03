@@ -710,7 +710,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T19:57:15.557Z';
+        const searchIndexDate = '2024-04-03T19:57:16.685Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -722,9 +722,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:15.557Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:16.685Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:15.557Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:16.685Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -989,7 +989,7 @@
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/projects/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
+      <p><a class="internal-link is-unresolved" href="/404" target="">BI and PQ DATA TIPS AND TRICKS</a></p>
 <p>remove duplicates from an individual cell PowerBi</p>
 <p>=Text.Combine (List.Distinct(List.Transform (Text.Split([EMAIL],&quot;,&quot;),each Text.Trim(_))),&quot;, &quot;)</p>
 

@@ -710,7 +710,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-03T19:57:15.557Z';
+        const searchIndexDate = '2024-04-03T19:57:16.685Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -722,9 +722,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:15.557Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-03T19:57:16.685Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:15.557Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-03T19:57:16.685Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1317,13 +1317,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/remove-duplicates/" data-note-icon="" class="backlink">REMOVE DUPLICATES</a>
-                                                </div><div class="backlink-card"><a href="/data/replace-values-multiple-criteria/" data-note-icon="" class="backlink">REPLACE VALUES, MULTIPLE CRITERIA </a>
-                                                </div><div class="backlink-card"><a href="/data/remove-duplicates-power-bi/" data-note-icon="" class="backlink">Remove Duplicates PowerBI</a>
-                                                </div><div class="backlink-card"><a href="/data/remove-duplicates-in-power-query-m/" data-note-icon="" class="backlink">Remove Duplicates in Power Query M</a>
-                                                </div><div class="backlink-card"><a href="/data/transform-column-names-in-bulk-in-pq-bi-gorilla/" data-note-icon="" class="backlink">Transform Column Names in Bulk in PQ - BI Gorilla</a>
-                                                </div><div class="backlink-card"><a href="/data/uppercase-and-underscore-column-names/" data-note-icon="" class="backlink">UPPERCASE AND UNDERSCORE COLUMN NAMES</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   
