@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry"],"noteIcon":""}
 ---
 
 # Hi, I'm Paula
@@ -9,9 +9,9 @@
 
 ## Who I am
 I'm an **analytical problem-solver** who is:
-	==**Organized**== -- I do things systematically and with order, 
-	==**Efficient**== -- I create reproducible products and procedures, 
-	==**Responsive**== -- I get back to you every step of the way!
+	==**Organized**== -- I do things systematically and with order
+	==**Efficient**== -- I create reproducible products and procedures
+	==**Responsive**== -- I get back to you every step of the way
 ## What I do
 #### Data Analysis
 - SQL(MSSQL Server, MySQL, PostgreSQL)
