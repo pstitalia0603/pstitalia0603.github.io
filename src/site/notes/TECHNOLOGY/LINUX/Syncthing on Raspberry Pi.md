@@ -357,7 +357,6 @@ Once it has finished synchronizing, you should see both the folder and the devic
 # Reference
 
 - [Syncthing](https://apt.syncthing.net/)
+- https://pimylifeup.com/raspberry-pi-syncthing/
 - https://www.linuxfordevices.com/tutorials/ubuntu/syncthing-install-and-setup
 
-
-**find configuration file: syncthing -paths**
