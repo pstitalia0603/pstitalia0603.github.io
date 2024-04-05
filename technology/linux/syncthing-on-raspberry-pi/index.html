@@ -732,7 +732,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T15:24:09.313Z';
+        const searchIndexDate = '2024-04-05T15:25:27.605Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -744,9 +744,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T15:24:09.313Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T15:25:27.605Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T15:24:09.313Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T15:25:27.605Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1013,6 +1013,7 @@
       
       <h1 id="synchronizing-files-on-your-raspberry-pi-with-syncthing" tabindex="-1">Synchronizing Files on your Raspberry Pi with Syncthing</h1>
 <p><a href="https://syncthing.net/downloads/" target="_blank" class="external-link">Clients for Syncthing</a> are available for each of these operating systems that make it easy to use.</p>
+<p>Escalidraw: <a class="internal-link is-unresolved" href="/404" target="">rPi-syncthing</a></p>
 <h2 id="installing-syncthing-to-your-raspberry-pi" tabindex="-1">Installing Syncthing to Your Raspberry Pi</h2>
 <p>In this section, you will learn how to easily install the Syncthing software to your Raspberry Pi using straightforward steps.</p>
 <p>To install the software, we will need to add the project’s PGP keys and add its package repository as a potential source.</p>
