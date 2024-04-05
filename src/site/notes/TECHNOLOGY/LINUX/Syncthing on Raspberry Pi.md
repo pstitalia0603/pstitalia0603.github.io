@@ -6,6 +6,8 @@
 
 [Clients for Syncthing](https://syncthing.net/downloads/) are available for each of these operating systems that make it easy to use.
 
+Escalidraw: [[Excalidraw/rPi-syncthing\|rPi-syncthing]]
+
 ## Installing Syncthing to Your Raspberry Pi
 
 In this section, you will learn how to easily install the Syncthing software to your Raspberry Pi using straightforward steps.
