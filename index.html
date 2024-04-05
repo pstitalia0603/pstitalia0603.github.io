@@ -730,7 +730,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T00:47:17.907Z';
+        const searchIndexDate = '2024-04-05T15:24:05.103Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -742,9 +742,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T00:47:17.907Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T15:24:05.103Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T00:47:17.907Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T15:24:05.103Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1005,9 +1005,9 @@
 <h4 id="data-web-design-data-management-and-amp-analysis-web-development-graphic-design-desktop-publishing-multimedia-video-production-desktop-mobile-support" tabindex="-1">data, web, design -- Data Management &amp; Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support</h4>
 <h2 id="who-i-am" tabindex="-1">Who I am</h2>
 <p>I'm an <strong>analytical problem-solver</strong> who is:<br>
-<mark><strong>Organized</strong></mark> (I do things systematically and with order),<br>
-<mark><strong>Efficient</strong></mark> (I create reproducible products and procedures), and<br>
-<mark><strong>Responsive</strong></mark> (I get back to you every step of the way!)</p>
+<mark><strong>Organized</strong></mark> -- I do things systematically and with order,<br>
+<mark><strong>Efficient</strong></mark> -- I create reproducible products and procedures,<br>
+<mark><strong>Responsive</strong></mark> -- I get back to you every step of the way!</p>
 <h2 id="what-i-do" tabindex="-1">What I do</h2>
 <h4 id="data-analysis" tabindex="-1">Data Analysis</h4>
 <ul>
