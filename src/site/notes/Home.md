@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry"],"noteIcon":""}
 ---
 
 # Hi, I'm Paula
@@ -34,6 +34,10 @@ I'm an **analytical problem-solver** who is:
 - Microsoft Office 365
 
 ---
+
+
+
+---
 ### Education
 - M.S. - Information Systems
 - B.A. - Mass Communication
@@ -44,4 +48,13 @@ I'm an **analytical problem-solver** who is:
 - Data analytics
 - Technology Podcasts and Blogs
 ---
-<a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a>
+### Projects
+[[PROJECTS/iDigital Garden\|iDigital Garden]]
+[[PROJECTS/ARCHIVE ICS TO CSV TO MD\|ARCHIVE ICS TO CSV TO MD]]
+[[PROJECTS/Workout log DOCUMENTATION\|Workout log DOCUMENTATION]]
+
+---
+<mark style="background: #BBFABBA6;"><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a></mark>
+
+
+
