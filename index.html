@@ -730,7 +730,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T16:51:00.586Z';
+        const searchIndexDate = '2024-04-05T16:51:03.399Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -742,9 +742,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T16:51:00.586Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T16:51:03.399Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T16:51:00.586Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T16:51:03.399Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1035,6 +1035,7 @@
 <li>Microsoft Office 365</li>
 </ul>
 <hr>
+<hr>
 <h3 id="education" tabindex="-1">Education</h3>
 <ul>
 <li>M.S. - Information Systems</li>
@@ -1049,7 +1050,12 @@
 <li>Technology Podcasts and Blogs</li>
 </ul>
 <hr>
-<p><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a></p>
+<h3 id="projects" tabindex="-1">Projects</h3>
+<p><a class="internal-link" target="" data-note-icon="" href="/projects/i-digital-garden/">iDigital Garden</a><br>
+<a class="internal-link" target="" data-note-icon="" href="/projects/archive-ics-to-csv-to-md/">ARCHIVE ICS TO CSV TO MD</a><br>
+<a class="internal-link" target="" data-note-icon="" href="/projects/workout-log-documentation/">Workout log DOCUMENTATION</a></p>
+<hr>
+<p><mark style="background: #BBFABBA6;"><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a></mark></p>
 
       
       
@@ -1320,6 +1326,9 @@
             		</li>
 
                     <li><a href="#interests">Interests</a>
+            		</li>
+
+                    <li><a href="#projects">Projects</a>
             		</li>
                 </ol>
             		</li>

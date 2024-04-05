@@ -732,7 +732,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-05T16:51:00.586Z';
+        const searchIndexDate = '2024-04-05T16:51:03.399Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -744,9 +744,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T16:51:00.586Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-05T16:51:03.399Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T16:51:00.586Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-05T16:51:03.399Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1369,9 +1369,8 @@ print(f'{file_name} saved.')
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
+                                                </div></div>
                               </div>
                         
                   
