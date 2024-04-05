@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>iDigital Garden</title>
+    <title>Syncthing on Raspberry Pi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -471,7 +471,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/i-digital-garden/">iDigital Garden </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/i-digital-garden/">iDigital Garden </a>
                 </div>
             
         </div>
@@ -538,7 +538,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/technology/linux/syncthing-on-raspberry-pi/">Syncthing on Raspberry Pi </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/technology/linux/syncthing-on-raspberry-pi/">Syncthing on Raspberry Pi </a>
                 </div>
             
         </div>
@@ -978,7 +978,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">iDigital Garden</h1>
+          <h1 data-note-icon="">Syncthing on Raspberry Pi</h1>
         
         <div class="header-meta">
           
@@ -988,25 +988,19 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #inbox
+                    #Obsidian
                   </a>
                 
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Portfolio
+                    #linux
                   </a>
                 
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #code
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Projects
+                    #syncthing
                   </a>
                 
               
@@ -1017,85 +1011,198 @@
       </header>
       
       
-      <h2 id="instructions-how-to-get-digital-garden-to-work-for-github-pages" tabindex="-1">Instructions: How to get Digital Garden to work for Github Pages!</h2>
-<h4 id="concept-a-href-https-dg-docs-ole-dev-advanced-hosting-alternatives-target-blank-class-external-link-https-dg-docs-ole-dev-advanced-hosting-alternatives-a" tabindex="-1">Concept:  <a href="https://dg-docs.ole.dev/advanced/hosting-alternatives/" target="_blank" class="external-link">https://dg-docs.ole.dev/advanced/hosting-alternatives/</a></h4>
-<h2 id="steps" tabindex="-1">Steps</h2>
-<ol>
-<li>Clone repository:  <a href="https://github.com/oleeskild/digitalgarden" target="_blank" class="external-link">https://github.com/oleeskild/digitalgarden</a>
-<ul>
-<li>(USE THIS TEMPLATE &gt; CREATE A NEW REPOSITORY)</li>
-<li>NAME THE REPOSITORY &quot;&lt;/GITHUBNAME/&gt;.github.io&quot;</li>
-</ul>
-</li>
-<li>Configure build.yml
-<ul>
-<li><a href="https://github.com/oleeskild/obsidian-digital-garden/discussions/389" target="_blank" class="external-link">https://github.com/oleeskild/obsidian-digital-garden/discussions/389</a></li>
-</ul>
-</li>
-<li>Set repository --&gt; Settings --&gt; Pages --&gt; Source (Deploy from a branch): gh-pages
-<ul>
-<li>View Actions and see if they are successful!</li>
-</ul>
-</li>
-</ol>
-<h5 id="build-yml" tabindex="-1">build.yml</h5>
-<pre><code class="language-text">name: GH Pages
-
-on:
-  push:
-    branches: [ &quot;main&quot; ]
-  pull_request:
-    branches: [ &quot;main&quot; ]
-
-# permissions:
-  # contents: read
-  # pages: write
-  # id-token: write
-
-# concurrency:
-  # group: &quot;pages&quot;
-  # cancel-in-progress: false
-
-# concurrency:
-#   group: ${{ github.workflow }}-${{ github.ref }}
-
-jobs:
-  build:
-  
-    runs-on: ubuntu-22.04
-
-    strategy:
-      matrix:
-        node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-      - uses: actions/checkout@v4
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
-      - run: npm install
-      - run: npm run build --if-present
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GH_TOKEN2 }}  # This is from /settings/secrets/actions --&gt; Repository secrets
-          publish_dir: ./dist
+      <h1 id="synchronizing-files-on-your-raspberry-pi-with-syncthing" tabindex="-1">Synchronizing Files on your Raspberry Pi with Syncthing</h1>
+<p><a href="https://syncthing.net/downloads/" target="_blank" class="external-link">Clients for Syncthing</a> are available for each of these operating systems that make it easy to use.</p>
+<h2 id="installing-syncthing-to-your-raspberry-pi" tabindex="-1">Installing Syncthing to Your Raspberry Pi</h2>
+<p>In this section, you will learn how to easily install the Syncthing software to your Raspberry Pi using straightforward steps.</p>
+<p>To install the software, we will need to add the project’s PGP keys and add its package repository as a potential source.</p>
+<p><strong>1.</strong> Before installing the file synchronization software to our Pi, we should first update the system.</p>
+<p>We can update our Raspberry Pi by running the following two commands.</p>
+<pre><code class="language-bash">sudo apt update
+sudo apt full-upgrade
 </code></pre>
-<h4 id="note-instructions-for-token-and-gt-action-secret" tabindex="-1">NOTE: INSTRUCTIONS FOR TOKEN --&gt; ACTION SECRET</h4>
-<pre><code class="language-text">You will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)  
-You will also need to name your repository in github, `&lt;username&gt;.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `&lt;username&gt;.github.io/&lt;repositoryname&gt;`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `&lt;username&gt;.github.io/styles/style.css`, because they are actually located in `&lt;username&gt;.github.io/&lt;repositoryname&gt;/styles/style.css`.
+<p><strong>2.</strong> Next, we need to make sure that we have the <code>apt-transport-https</code> package installed.</p>
+<p>This package allows the package manager to handle sources that operate over the HTTPS protocol. By default, this is not supported.</p>
+<p>Typically this is provided with most operating systems these days, however, trimmed back ones such as Raspberry Pi OS Lite might have it removed.</p>
+<p>We can install the required package by running the command below.</p>
+<pre><code class="language-bash">sudo apt install apt-transport-https
 </code></pre>
-<h4 id="references" tabindex="-1">REFERENCES</h4>
-<p><a href="https://dg-docs.ole.dev/getting-started/01-getting-started/" target="_blank" class="external-link">https://dg-docs.ole.dev/getting-started/01-getting-started/</a></p>
-<p><a href="https://github.com/marketplace/actions/github-pages-action" target="_blank" class="external-link">https://github.com/marketplace/actions/github-pages-action</a></p>
-<p><a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages</a></p>
-<p>Proof of Concept: <a href="https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay" target="_blank" class="external-link">https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay</a></p>
-<p>possibly necessary: <a href="https://github.com/peaceiris/actions-gh-pages/issues/736" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages/issues/736</a></p>
-<p>and API key: <a href="https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128" target="_blank" class="external-link">https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128</a></p>
+<p><strong>3.</strong> Finally, we can store the Syncthing GPG keys in our keyrings directory.</p>
+<p>These keys are designed to ensure that the packages we are installing have been correctly signed and aren’t coming from an unexpected source.</p>
+<p>Download and save the keys by using the following command on your Raspberry Pi.</p>
+<pre><code class="language-bash">curl -s https://syncthing.net/release-key.txt | gpg --dearmor | sudo tee /usr/share/keyrings/syncthing-archive-keyring.gpg &gt;/dev/null
+</code></pre>
+<p><strong>4.</strong> With the key added, we can now add the repository itself.</p>
+<p>For this Raspberry Pi project, we will be utilizing the stable branch of the Syncthing software.</p>
+<p>Add the repository to our sources list by using the command below.</p>
+<pre><code class="language-bash">echo &quot;deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable&quot; | sudo tee /etc/apt/sources.list.d/syncthing.list
+</code></pre>
+<p><strong>5.</strong> Before we will install Syncthing from the repository, we need to update the package list.</p>
+<p>We need to update the list so that the package manager reads from our newly added source.</p>
+<p>Refresh the package list by running the following command on your device.</p>
+<pre><code class="language-bash">sudo apt update
+</code></pre>
+<p><strong>6.</strong> Finally, let us install the Syncthing software to our Raspberry Pi.</p>
+<p>With the package repository now added, all we need to do to install the software is run the following command.</p>
+<pre><code class="language-bash">sudo apt install syncthing
+</code></pre>
+<h2 id="allowing-outside-access-to-your-syncthing-web-interface" tabindex="-1">Allowing Outside Access to your Syncthing Web Interface</h2>
+<p>By default, we won’t be able to access the Syncthing web interface without being physically on the device.</p>
+<p>As this would make it a frustrating experience for those <a href="https://pimylifeup.com/headless-raspberry-pi-setup/" target="_blank" class="external-link">running a headless Raspberry Pi</a>, we can modify the configuration to allow outside access.</p>
+<p><strong>1.</strong> Our first task is to get the <a href="https://pimylifeup.com/raspberry-pi-ip-address/" target="_blank" class="external-link">current local IP address</a> assigned to our Raspberry Pi.</p>
+<p>Please note that you should have your Raspberry Pi set up with a static IP address before completing this section.</p>
+<p>You can retrieve the local IP of your Pi by using the following command.</p>
+<pre><code class="language-bash">hostname -I
+</code></pre>
+<p><strong>2.</strong> Before we continue any further, we will need to run Syncthing once to generate config files.</p>
+<p>For this guide, we will just be running Syncthing under the current user.</p>
+<pre><code class="language-bash">syncthing
+</code></pre>
+<p>After the initial run, kill the application by pressing CTRL + C.</p>
+<p><strong>3.</strong> After the first run, Syncthing will create all the configuration files we need.</p>
+<p>This configuration file will only work as long as we run the Syncthing software with our <code>pi</code> user.</p>
+<p>Begin editing the required config file using the <a href="https://pimylifeup.com/nano-text-editor/" target="_blank" class="external-link">nano text editor</a> by using the command below.</p>
+<h2 id="important-to-find-config-file" tabindex="-1">IMPORTANT TO FIND CONFIG FILE:</h2>
+<p><strong>find configuration file: syncthing -paths</strong></p>
+<pre><code class="language-bash">nano ~/.config/syncthing/config.xml
+</code></pre>
+<p><strong>4.</strong> Within this file, you need to find the following line.</p>
+<p>To make it easier to find this line, you can use the CTRL + W shortcut to search.</p>
+<pre><code>&lt;address&gt;127.0.0.1:8384&lt;/address&gt;
+</code></pre>
+<p>We will need to replace the local IP defined on this line (<code>127.0.0.1</code>) with our Pi’s local IP address.</p>
+<p>For example, using our Pi’s IP, this line would end up turning into the following.</p>
+<pre><code>&lt;address&gt;192.168.0.193:8384&lt;/address&gt;
+</code></pre>
+<p>Using the local IP address, we are restricting access to the web interface only to users on the same local network.</p>
+<p>Alternatively, if you want to allow access to any address, use the IP “<code>0.0.0.0</code>“.</p>
+<p><strong>5.</strong> Once you have changed the IP, save the file by pressing CTRL + X, followed by Y, then ENTER.</p>
+<h2 id="setting-up-syncthing-as-a-service-on-the-raspberry-pi" tabindex="-1">Setting up Syncthing as a Service on the Raspberry Pi</h2>
+<p>With Syncthing’s web interface now accessible outside of the Raspberry Pi, we need to do one last task.</p>
+<p>That task is to create and enable a service for the software. The service will allow Syncthing to start at boot and let it to be easily stopped and started.</p>
+<p><strong>1.</strong> We need to make use of nano again to create the file for our service.</p>
+<p>The service that we will be putting together is from the <a href="https://github.com/syncthing/syncthing" target="_blank" class="external-link">official GitHub for Syncthing</a>.</p>
+<p>Run the following command to begin writing the file within the “<code>/lib/systemd/system</code>” directory.</p>
+<pre><code class="language-bash">sudo nano /lib/systemd/system/syncthing.service
+</code></pre>
+<p><strong>2.</strong> Within this file, enter the following lines.</p>
+<p>While entering these lines ensure that you replace “<code>pi</code>” with the name of your user.</p>
+<pre><code class="language-systemd">[Unit]
+Description=Syncthing - Open Source Continuous File Synchronization
+Documentation=man:syncthing(1)
+After=network.target
+
+[Service]
+User=pi
+ExecStart=/usr/bin/syncthing -no-browser -no-restart -logflags=0
+Restart=on-failure
+RestartSec=5
+SuccessExitStatus=3 4
+RestartForceExitStatus=3 4
+
+# Hardening
+ProtectSystem=full
+PrivateTmp=true
+SystemCallArchitectures=native
+MemoryDenyWriteExecute=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>These lines dictate how the operating system will handle Syncthing on our Raspberry Pi.</p>
+<p><strong>3.</strong> With all the lines entered, save the file by pressing CTRL + X, then Y, followed by the ENTER key.</p>
+<p><strong>4.</strong> With our service created, we can now enable it to start at boot.</p>
+<p>All you need to do is run the following command.</p>
+<pre><code class="language-bash">sudo systemctl enable syncthing
+</code></pre>
+<p><strong>5.</strong> Next, start the service so that we can begin accessing the Syncthing web interface.</p>
+<p>To start the service, we need to use the <code>systemctl</code> command again.</p>
+<pre><code class="language-bash">sudo systemctl start syncthing
+</code></pre>
+<p><strong>6.</strong> We should verify that our Syncthing service started on our Raspberry Pi.</p>
+<p>We can verify this by using the command below.</p>
+<pre><code class="language-bash">sudo systemctl status syncthing
+</code></pre>
+<p>If the service has started correctly and is running, you should see the following displayed within the message.</p>
+<pre><code>Active: active (running)
+</code></pre>
+<h2 id="using-your-raspberry-pi-s-syncthing-web-interface" tabindex="-1">Using your Raspberry Pi’s Syncthing Web Interface</h2>
+<p>At this point, you should now have the Syncthing software up and running on your Raspberry Pi.</p>
+<p>We can finally move on to configuring the software and adding a device to synchronize files with. To make this easier to follow, we will split this into smaller sections.</p>
+<p>The web interface makes the process of setting up and connecting to devices very straightforward process.</p>
+<h3 id="connecting-to-the-syncthing-web-interface" tabindex="-1">Connecting to the Syncthing Web Interface</h3>
+<p>Before you can even use the web interface, you will need to first load it up in your <a href="https://pimylifeup.com/category/guides/browsers/" target="_blank" class="external-link">favorite web browser</a>.</p>
+<p><strong>1.</strong> To access the web interface, you will need to know the Raspberry Pi’s IP address.</p>
+<p>With the IP in hand, you can go to the following web address in a web browser of your choice.</p>
+<pre><code>http://[PIIPADDRESS]:8384
+</code></pre>
+<p>It’s essential that whatever you type in that the port number (<code>8384</code>) remains at the end as this is where the Syncthing software listens.</p>
+<p><strong>2.</strong> Upon going to the web address, you will be introduced to the Syncthing web interface.</p>
+<p>Please note that you will be required to login before seeing the following screen once you set up a username and password.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Initial-Website-With-Danger.jpg" alt="Raspberry Pi Syncthing Initial Website With Danger"></p>
+<h3 id="securing-the-syncthing-interface" tabindex="-1">Securing the Syncthing Interface</h3>
+<p>By default, Syncthing comes with no username or password defined. What this means is that any user can access the interface and adjust your settings.</p>
+<p>To stop users from being able to do any unwanted damage, you can define login details.</p>
+<p><strong>1.</strong> If you haven’t set the username and password before, you will see a message warning you of the dangers.</p>
+<p>To get to the settings page quickly, we can click the “<code>Settings</code>” button on this warning.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Changing-Password-in-Settings-Option-A.jpg" alt="Raspberry Pi Syncthing Changing Password in Settings Option A"></p>
+<p>If this message isn’t displaying for you, you can also find the settings page by clicking the “<code>Actions</code>” (<strong>1.</strong>) dropdown box in the top right corner and selecting “<code>Settings</code>” (<strong>2.</strong>).</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Changing-Password-in-Settings-Option-B.jpg" alt="Changing Password in Settings Option B"></p>
+<p><strong>2.</strong> Within the popup settings page, you will need to change to the “<code>GUI</code>” tab.</p>
+<p>You can change to this tab by clicking “<code>GUI</code>” in the bar at the top of the popup.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Setting-Page-Goto-GUI.jpg" alt="Setting Page Goto GUI"></p>
+<p><strong>3.</strong> On this page, you will need to enter both a username (<strong>1.</strong>) and a password (<strong>2.</strong>).</p>
+<p>Make sure you set a secure password that is not easily guessable. Try and use a combination of letters, numbers, and symbols.</p>
+<p>Once you have entered both of these, you can save your changes by clicking the “<code>Save</code>” button (<strong>3.</strong>).</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Setting-a-Username-and-Password.jpg" alt="Raspberry Pi Syncthing Setting a Username and Password"></p>
+<p><strong>4.</strong> Upon saving your new password, you will be kicked out of the web interface.</p>
+<p>Every time you want to use Syncthing’s interface, you will need to enter your new login details.</p>
+<h3 id="retrieving-your-devices-syncthing-id" tabindex="-1">Retrieving your Devices Syncthing ID</h3>
+<p>Syncthing works by generating a unique ID for every single device. To synchronize data between devices, each one must have the other device’s ID added.</p>
+<p>Finding the ID of your Raspberry Pi Syncthing setup is a straightforward process and can be found within the web interface.</p>
+<p><strong>1.</strong> Back on the web interface’s main page, click the “<code>Actions</code>” toggle (<strong>1.</strong>) in the top right corner of the screen.</p>
+<p>In the dropdown box, click the “<code>Show ID</code>” option (<strong>2.</strong>) to bring up the dialog box we are after.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Actions-Find-Show-ID.jpg" alt="Raspberry Pi Syncthing Actions Find Show ID"></p>
+<p><strong>2.</strong> On this page, you will see the identification string (<strong>1.</strong>) and the matching QR code for the ID (<strong>2.</strong>).</p>
+<p>Then identification string should be 50-56 characters long and contain numbers, letters, and hyphens. The hyphens are ignored by the system but are there to make the ID easier to read.</p>
+<p>You will need to add your Raspberry Pi’s ID to the other devices you will be connecting to. Likewise, you will also need to add their ID.</p>
+<p>The ID works as part of Syncthing’s method for connecting multiple devices to the same pool.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Device-Identification.jpg" alt="Raspberry Pi Syncthing Device Identification"></p>
+<h3 id="adding-a-device-to-your-raspberry-pi-s-syncthing-pool" tabindex="-1">Adding a Device to your Raspberry Pi’s Syncthing Pool</h3>
+<p>Now that you know how to retrieve your device’s ID let us now show you how to add another device’s ID.</p>
+<p>Remember, whatever device you are adding must also add your Raspberry Pi’s ID. Otherwise, the devices will not be able to connect.</p>
+<p><strong>1.</strong> On the Syncthing interface, you need to click the “<code>Add Remote Device</code>” button located at the bottom right side.</p>
+<p>Clicking this button will take us to the dialog that will allow us to add a device to our Syncthing pool.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Adding-a-Remote-Device-Step.jpg" alt="Raspberry Pi Syncthing Adding a Remote Device Step"></p>
+<p><strong>2.</strong> In this dialog, you can add the device ID you want to your pool.</p>
+<p>In the top textbox (<strong>1.</strong>), enter the ID for the device you want to connect to. As the ID is relatively long, it will likely be easier to copy and paste the ID over.</p>
+<p>Once done, you can click the “<code>Save</code>” button (<strong>2.</strong>) to add the device and begin the connection process.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Adding-a-Remote-Device-Options.jpg" alt="Adding a Remote Device Options Page"></p>
+<p><strong>3.</strong> Once both Syncthing servers have each other’s IDs added, you should see that you’re successfully connected.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Remote-Device-Successfully-Connected.jpg" alt="Raspberry Pi Syncthing Remote Device Successfully Connected"></p>
+<h3 id="synchronizing-a-folder-with-your-connected-devices" tabindex="-1">Synchronizing a Folder with your Connected Devices</h3>
+<p>With a device now connected to our Raspberry Pi Syncthing, we can try sharing a folder with the device.</p>
+<p>For this section, we are just going to use the default folder. In this case, the folder is located at “<code>/home/pi/sync</code>” on our Raspberry Pi.</p>
+<p><strong>1.</strong> To begin editing an existing folder’s share settings, click the “<code>Edit</code>” button underneath that folder.</p>
+<p>This button will bring up the settings dialog, for that folder and will allow us to adjust who it is shared with.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Edit-Existing-Folders-Settings.jpg" alt="Raspberry Pi Syncthing Edit Existing Folders Settings"></p>
+<p><strong>2.</strong> Within the file settings dialog we will need to change to the sharing tab.</p>
+<p>You can change to this tab by clicking the “<code>Sharing</code>” tab.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Edit-Folder-Change-to-Sharing-Tab.jpg" alt="Change to Sharing Tab"></p>
+<p><strong>3.</strong> Using this dialog, you can select the devices you want to share the folder with (<strong>1.</strong>).</p>
+<p>Once you have the devices you want to be synchronized with selected, click the “<code>Save</code>” button (<strong>2.</strong>).</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Share-Folder-with-Connected-Device.jpg" alt="Share Folder with Connected Device"></p>
+<p>Please note that after you share a folder with another device, you will have to accept it on that device before the synchronization will begin.</p>
+<p><strong>4.</strong> You should now see that your folder has now begun synchronizing.</p>
+<p>Once it has finished synchronizing, you should see both the folder and the device marked as “Up to date”.</p>
+<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Successfully-Connected-and-Synchronizing.jpg" alt="Raspberry Pi Syncthing Successfully Connected and Synchronizing"></p>
+<h1 id="reference" tabindex="-1">Reference</h1>
+<ul>
+<li><a href="https://apt.syncthing.net/" target="_blank" class="external-link">Syncthing</a></li>
+<li><a href="https://www.linuxfordevices.com/tutorials/ubuntu/syncthing-install-and-setup" target="_blank" class="external-link">https://www.linuxfordevices.com/tutorials/ubuntu/syncthing-install-and-setup</a></li>
+</ul>
+<p><strong>find configuration file: syncthing -paths</strong></p>
 
       
       
@@ -1336,28 +1443,46 @@ You will also need to name your repository in github, `&lt;username&gt;.github.
                                           <nav class="toc">
                 <ol>
                     
-                    <li><a href="#instructions-how-to-get-digital-garden-to-work-for-github-pages">Instructions: How to get Digital Garden to work for Github Pages!</a>
+                    <li><a href="#synchronizing-files-on-your-raspberry-pi-with-syncthing">Synchronizing Files on your Raspberry Pi with Syncthing</a>
             
                 <ol>
                     
-                    <li><a href="#concept-a-href-https-dg-docs-ole-dev-advanced-hosting-alternatives-target-blank-class-external-link-https-dg-docs-ole-dev-advanced-hosting-alternatives-a">Concept:  https://dg-docs.ole.dev/advanced/hosting-alternatives/</a>
+                    <li><a href="#installing-syncthing-to-your-raspberry-pi">Installing Syncthing to Your Raspberry Pi</a>
+            		</li>
+
+                    <li><a href="#allowing-outside-access-to-your-syncthing-web-interface">Allowing Outside Access to your Syncthing Web Interface</a>
+            		</li>
+
+                    <li><a href="#important-to-find-config-file">IMPORTANT TO FIND CONFIG FILE:</a>
+            		</li>
+
+                    <li><a href="#setting-up-syncthing-as-a-service-on-the-raspberry-pi">Setting up Syncthing as a Service on the Raspberry Pi</a>
+            		</li>
+
+                    <li><a href="#using-your-raspberry-pi-s-syncthing-web-interface">Using your Raspberry Pi’s Syncthing Web Interface</a>
+            
+                <ol>
+                    
+                    <li><a href="#connecting-to-the-syncthing-web-interface">Connecting to the Syncthing Web Interface</a>
+            		</li>
+
+                    <li><a href="#securing-the-syncthing-interface">Securing the Syncthing Interface</a>
+            		</li>
+
+                    <li><a href="#retrieving-your-devices-syncthing-id">Retrieving your Devices Syncthing ID</a>
+            		</li>
+
+                    <li><a href="#adding-a-device-to-your-raspberry-pi-s-syncthing-pool">Adding a Device to your Raspberry Pi’s Syncthing Pool</a>
+            		</li>
+
+                    <li><a href="#synchronizing-a-folder-with-your-connected-devices">Synchronizing a Folder with your Connected Devices</a>
+            		</li>
+                </ol>
             		</li>
                 </ol>
             		</li>
 
-                    <li><a href="#steps">Steps</a>
-            
-                <ol>
-                    
-                    <li><a href="#build-yml">build.yml</a>
-            		</li>
-
-                    <li><a href="#note-instructions-for-token-and-gt-action-secret">NOTE: INSTRUCTIONS FOR TOKEN --> ACTION SECRET</a>
-            		</li>
-
-                    <li><a href="#references">REFERENCES</a>
-            		</li>
-                </ol>
+                    <li><a href="#reference">Reference</a>
             		</li>
                 </ol>
             </nav>
@@ -1371,8 +1496,9 @@ You will also need to name your repository in github, `&lt;username&gt;.github.
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   
