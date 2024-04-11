@@ -741,7 +741,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-11T15:24:42.407Z';
+        const searchIndexDate = '2024-04-11T15:24:45.632Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -753,9 +753,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T15:24:42.407Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T15:24:45.632Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T15:24:42.407Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T15:24:45.632Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -998,6 +998,12 @@
               
                 <a class="tag" onclick="toggleTagSearch(this)">
                   #Portfolio
+                </a>
+              
+            
+              
+                <a class="tag" onclick="toggleTagSearch(this)">
+                  #resume
                 </a>
               
             
