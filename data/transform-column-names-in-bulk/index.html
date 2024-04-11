@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Transform Column Names in Bulk in PQ - BI Gorilla</title>
+    <title>Transform Column Names in Bulk</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -316,7 +316,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/transform-column-names-in-bulk-in-pq-bi-gorilla/">Transform Column Names in Bulk in PQ - BI Gorilla </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/transform-column-names-in-bulk/">Transform Column Names in Bulk </a>
                 </div>
             
         </div>
@@ -743,7 +743,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-11T01:22:01.131Z';
+        const searchIndexDate = '2024-04-11T01:22:04.221Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -755,9 +755,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T01:22:01.131Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T01:22:04.221Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T01:22:01.131Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T01:22:04.221Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -989,7 +989,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Transform Column Names in Bulk in PQ - BI Gorilla</h1>
+          <h1 data-note-icon="">Transform Column Names in Bulk</h1>
         
         <div class="header-meta">
           
@@ -1010,7 +1010,7 @@
                 
               
             </div>
-          <div class="timestamps"></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-12-03 10:12"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-01 19:45"></span></div></div></div>
       
       
       </header>
@@ -1386,9 +1386,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
+                                                </div></div>
                               </div>
                         
                   
