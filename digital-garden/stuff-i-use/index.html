@@ -743,7 +743,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-11T16:04:05.838Z';
+        const searchIndexDate = '2024-04-11T18:04:18.579Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -755,9 +755,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T16:04:05.838Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T18:04:18.579Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T16:04:05.838Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T18:04:18.579Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1030,21 +1030,29 @@
 <h2 id="data-stack" tabindex="-1">Data Stack</h2>
 <ul>
 <li>MS Power BI</li>
-<li>MS Excel</li>
+<li>MS Excel / Power Query</li>
 <li>SQL (Postgres, MSSQL, MySQL)</li>
-<li>Python (Pandas)</li>
+<li>Python (Pandas, NumPy)</li>
+<li>HTML5</li>
+<li>CSS3</li>
+</ul>
+<h2 id="multimedia-design" tabindex="-1">Multimedia Design</h2>
+<ul>
+<li>Affinity Suite: Photo, Designer, Publisher</li>
+<li>Adobe (Photoshop, Illustrator, Acrobat)</li>
+<li>Video Production: Apple iMovie, DaVinci Resolve</li>
+<li>Microsoft Office 365</li>
 </ul>
 <h2 id="development" tabindex="-1">Development</h2>
 <ul>
 <li>Brave – Web Browser</li>
 <li>Visual Studio Code</li>
-<li>git</li>
+<li>git/github</li>
 <li>DBeaver</li>
 </ul>
 <h2 id="other-software" tabindex="-1">Other Software</h2>
 <ul>
 <li><a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> – Notes and documentation</li>
-<li>Affinity Designer/Photo/Publisher</li>
 <li>Cryptomator</li>
 <li>AntennaPod</li>
 <li>Aegis</li>
@@ -1307,6 +1315,9 @@
             		</li>
 
                     <li><a href="#data-stack">Data Stack</a>
+            		</li>
+
+                    <li><a href="#multimedia-design">Multimedia Design</a>
             		</li>
 
                     <li><a href="#development">Development</a>
