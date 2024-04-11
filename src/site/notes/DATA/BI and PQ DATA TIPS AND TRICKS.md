@@ -1,9 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/data/bi-and-pq-data-tips-and-tricks/","tags":["inbox","Data","Projects"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/data/bi-and-pq-data-tips-and-tricks/","tags":["inbox","Data","Projects"],"noteIcon":"","created":"2024-01-04 12:22","updated":"2024-03-01 19:42"}
 ---
 
 | File                                                                                                                                     | DATE       | tags                                                                                   |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------- |
+| [[DATA/Dealing with errors in Power Query\|Dealing with errors in Power Query]]                                                       | 04-10-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
+| [[DATA/Transform Column Names in Bulk\|Transform Column Names in Bulk]]                                                               | 04-10-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/WEEKNUM function – convert week number to date and vice versa\|WEEKNUM function – convert week number to date and vice versa]] | 03-02-2024 | <ul><li>Excel</li><li>Data</li></ul>                                                   |
 | [[DATA/M-CODE-mult-col\|M-CODE-mult-col]]                                                                                             | 03-01-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Count Non-null Values\|Count Non-null Values]]                                                                                 | 03-01-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
@@ -18,6 +20,5 @@
 | [[DATA/REMOVE DUPLICATES\|REMOVE DUPLICATES]]                                                                                         | 03-01-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Remove Duplicates in Power Query M\|Remove Duplicates in Power Query M]]                                                       | 03-02-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Date Table and Fiscal Year column\|Date Table and Fiscal Year column]]                                                         | 03-01-2024 | <ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul> |
-| [[DATA/Transform Column Names in Bulk in PQ - BI Gorilla\|Transform Column Names in Bulk in PQ - BI Gorilla]]                         | 03-01-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 
 { .block-language-dataview}
