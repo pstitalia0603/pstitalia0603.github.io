@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/addressee-couple-lastnames/","tags":["Power_query","Data"],"noteIcon":"","created":"2023-12-03 10:12","updated":"2024-03-01 19:44"}
+{"dg-publish":true,"permalink":"/data/addressee-couple-lastnames/","tags":["Power_query","Data"],"noteIcon":"","created":"2024-03-01 7:44:33 pm","updated":"2024-04-10 9:25:07 pm"}
 ---
 
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
