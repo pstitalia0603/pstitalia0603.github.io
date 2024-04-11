@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/learning/courses/programming-media-literacy-courses-for-kids/","tags":["Python","Learning","Courses"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/learning/courses/programming-media-literacy-courses-for-kids/","tags":["Python","Learning","Courses"],"noteIcon":"","created":"2023-12-01 14:22","updated":"2024-04-03 07:58"}
 ---
 
 ## Python courses (for kids)
