@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry","gardenEntry"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry"],"noteIcon":"","created":"2024-02-17 15:34","updated":"2024-02-17 15:34"}
 ---
 
 # Hi, I'm Paula
@@ -36,8 +36,6 @@ I'm an **analytical problem-solver** who is:
 ---
 
 
-
----
 ### Education
 - M.S. - Information Systems
 - B.A. - Mass Communication
