@@ -743,7 +743,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-11T16:01:55.141Z';
+        const searchIndexDate = '2024-04-11T16:03:56.886Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -755,9 +755,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T16:01:55.141Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T16:03:56.886Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T16:01:55.141Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T16:03:56.886Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1013,12 +1013,13 @@
       <h2 id="life-stuff" tabindex="-1">Life stuff</h2>
 <ul>
 <li>Coros Pace 3</li>
-<li></li>
+<li><a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> – Notes and documentation</li>
 </ul>
 <h2 id="hardware" tabindex="-1">Hardware</h2>
 <ul>
 <li>Laptop: Surface Laptop 4</li>
 <li>Phone: Samsung Galaxy S23U</li>
+<li>RaspberryPi 4B</li>
 </ul>
 <h2 id="os-environment" tabindex="-1">OS / Environment</h2>
 <ul>
