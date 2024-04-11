@@ -741,7 +741,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-11T15:24:45.632Z';
+        const searchIndexDate = '2024-04-11T15:36:45.465Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -753,9 +753,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T15:24:45.632Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T15:36:45.465Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T15:24:45.632Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T15:36:45.465Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1071,7 +1071,7 @@
 <a class="internal-link" target="" data-note-icon="" href="/projects/archive-ics-to-csv-to-md/">ARCHIVE ICS TO CSV TO MD</a><br>
 <a class="internal-link" target="" data-note-icon="" href="/projects/workout-log-documentation/">Workout log DOCUMENTATION</a></p>
 <hr>
-<p><mark style="background: #BBFABBA6;"><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a></mark></p>
+<p><mark style="background: #FFFF99;"><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a></mark></p>
 
       
       
