@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/linux/syncthing-on-raspberry-pi/","tags":["Obsidian","linux","syncthing"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/technology/linux/syncthing-on-raspberry-pi/","tags":["Obsidian","linux","syncthing"],"noteIcon":"","created":"2024-04-04 14:49","updated":"2024-04-04 14:50"}
 ---
 
 # Synchronizing Files on your Raspberry Pi with Syncthing
