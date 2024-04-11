@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/replace-values-multiple-criteria/","tags":["Power_query","Data"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/data/replace-values-multiple-criteria/","tags":["Power_query","Data"],"noteIcon":"","created":"2023-12-04 16:08","updated":"2024-03-01 19:43"}
 ---
 
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
