@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"","created":"2024-02-17 15:34","updated":"2024-02-17 15:34"}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","gardenEntry"],"noteIcon":"","created":"2024-02-17 15:34","updated":"2024-02-17 15:34"}
 ---
 
 # Hi, I'm Paula
