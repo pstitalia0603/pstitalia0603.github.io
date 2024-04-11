@@ -743,7 +743,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-11T01:33:18.551Z';
+        const searchIndexDate = '2024-04-11T01:38:15.100Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -755,9 +755,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T01:33:18.551Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T01:38:15.100Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T01:33:18.551Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T01:38:15.100Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1016,7 +1016,8 @@
       </header>
       
       
-      <h1 id="a-href-https-curbal-com-curbal-learning-portal-new-way-of-dealing-with-errors-in-power-query-target-blank-class-external-link-new-way-of-dealing-with-errors-in-power-query-curbal-a" tabindex="-1"><a href="https://curbal.com/curbal-learning-portal/new-way-of-dealing-with-errors-in-power-query" target="_blank" class="external-link">New way of Dealing with errors in Power Query – Curbal</a></h1>
+      <p><a class="internal-link" target="" data-note-icon="" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
+<h1 id="a-href-https-curbal-com-curbal-learning-portal-new-way-of-dealing-with-errors-in-power-query-target-blank-class-external-link-new-way-of-dealing-with-errors-in-power-query-curbal-a" tabindex="-1"><a href="https://curbal.com/curbal-learning-portal/new-way-of-dealing-with-errors-in-power-query" target="_blank" class="external-link">New way of Dealing with errors in Power Query – Curbal</a></h1>
 <p>You are here: <a href="https://curbal.com/" target="_blank" class="external-link">Home</a> / Knowledge Base / New way of Dealing with errors in Power Query</p>
 <p><em>Tip: Start typing in the input box for immediate search results.</em></p>
 <p>There is now a new way (Released in May 2020) to manage errors with more granularity in Power Query.</p>
