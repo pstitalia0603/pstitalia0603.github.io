@@ -35,7 +35,6 @@ I'm an **analytical problem-solver** who is:
 
 ---
 
-
 ### Education
 - M.S. - Information Systems
 - B.A. - Mass Communication
@@ -52,7 +51,7 @@ I'm an **analytical problem-solver** who is:
 [[PROJECTS/Workout log DOCUMENTATION\|Workout log DOCUMENTATION]]
 
 ---
-<mark style="background: #BBFABBA6;"><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a></mark>
+<mark style="background: #FFFF99;"><a href="mailto:psf@duck.com?subject=PSF-Portfolio-Inquiry">Contact Me</a></mark>
 
 
 
