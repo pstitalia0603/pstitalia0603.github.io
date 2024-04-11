@@ -5,8 +5,8 @@
 ## Life stuff
 - Coros Pace 3
 - [Obsidian](https://obsidian.md/) – Notes and documentation
-## Hardware
 
+## Hardware
 - Laptop: Surface Laptop 4
 - Phone: Samsung Galaxy S23U
 - RaspberryPi 4B
@@ -15,21 +15,29 @@
 - Debian / Ubuntu Linux 
 - Android
 - Windows 11
+
 ## Data Stack
 - MS Power BI
-- MS Excel
+- MS Excel / Power Query
 - SQL (Postgres, MSSQL, MySQL)
-- Python (Pandas)
-## Development
+- Python (Pandas, NumPy)
+- HTML5
+- CSS3
+ 
+## Multimedia Design
+- Affinity Suite: Photo, Designer, Publisher
+- Adobe (Photoshop, Illustrator, Acrobat)
+- Video Production: Apple iMovie, DaVinci Resolve
+- Microsoft Office 365
 
+## Development
 - Brave – Web Browser
 - Visual Studio Code
-- git
+- git/github
 - DBeaver
-## Other Software
 
+## Other Software
 - [Obsidian](https://obsidian.md/) – Notes and documentation
-- Affinity Designer/Photo/Publisher
 - Cryptomator 
 - AntennaPod
 - Aegis
