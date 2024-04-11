@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/data/dealing-with-errors-in-power-query/","tags":["Data","Power_query"],"noteIcon":"","created":"2024-04-10T11:00:00","updated":"2024-04-10T15:56:00"}
 ---
 
+[[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
+
 # [New way of Dealing with errors in Power Query – Curbal](https://curbal.com/curbal-learning-portal/new-way-of-dealing-with-errors-in-power-query)
 
 You are here: [Home](https://curbal.com/) / Knowledge Base / New way of Dealing with errors in Power Query
