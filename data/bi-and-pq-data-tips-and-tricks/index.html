@@ -743,7 +743,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-11T15:36:45.465Z';
+        const searchIndexDate = '2024-04-11T15:59:20.320Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -755,9 +755,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T15:36:45.465Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-11T15:59:20.320Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T15:36:45.465Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-11T15:59:20.320Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1032,11 +1032,6 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/errors-in-pq/">Errors in PQ</a></td>
-<td>04-11-2024</td>
-<td><ul><li>Data</li><li>Power_query</li></ul></td>
-</tr>
-<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/notes/data-weeknum-function">WEEKNUM function</a></td>
 <td>04-11-2024</td>
 <td><ul><li>Excel</li><li>Data</li></ul></td>
@@ -1095,6 +1090,11 @@
 <td><a class="internal-link" target="" data-note-icon="" href="/data/fiscal-month-number-calc/">FISCAL MONTH NUMBER CALC</a></td>
 <td>04-05-2024</td>
 <td><ul><li>Power_bi</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/errors-in-pq/">Errors in PQ</a></td>
+<td>04-11-2024</td>
+<td><ul><li>Data</li><li>Power_query</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column</a></td>
