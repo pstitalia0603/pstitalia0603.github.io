@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/workout-log-documentation/","tags":["portfolio","code","Projects","Obsidian"],"noteIcon":"","created":"2024-02-03 15:54","updated":"2024-03-23 10:14"}
+{"dg-publish":true,"permalink":"/projects/workout-log-documentation/","tags":["portfolio","code","Projects","Obsidian"],"noteIcon":"","created":"2024-02-03T15:54:00","updated":"2024-03-23 10:14"}
 ---
 
 # WORKOUT LOG DOCUMENTATION IN OBSIDIAN
