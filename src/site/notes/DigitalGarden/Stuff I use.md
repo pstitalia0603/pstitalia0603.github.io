@@ -4,11 +4,12 @@
 
 ## Life stuff
 - Coros Pace 3
-- 
+- [Obsidian](https://obsidian.md/) – Notes and documentation
 ## Hardware
 
 - Laptop: Surface Laptop 4
 - Phone: Samsung Galaxy S23U
+- RaspberryPi 4B
 
 ## OS / Environment
 - Debian / Ubuntu Linux 
