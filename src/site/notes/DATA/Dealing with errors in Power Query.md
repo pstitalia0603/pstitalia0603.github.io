@@ -6,12 +6,8 @@
 
 # [New way of Dealing with errors in Power Query – Curbal](https://curbal.com/curbal-learning-portal/new-way-of-dealing-with-errors-in-power-query)
 
-You are here: [Home](https://curbal.com/) / Knowledge Base / New way of Dealing with errors in Power Query
 
-*Tip: Start typing in the input box for immediate search results.*
-
-
-There is now a new way (Released in May 2020) to manage errors with more granularity in Power Query.
+*There is now a new way (Released in May 2020) to manage errors with more granularity in Power Query.
 
 Before you could use **try** **otherwise** to capture the error and convert it to null or something else:
 
