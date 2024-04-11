@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/bi-and-pq-data-tips-and-tricks/","tags":["inbox","Data","Projects"],"noteIcon":"","created":"2024-01-04 12:22","updated":"2024-03-01 19:42"}
+{"dg-publish":true,"permalink":"/data/bi-and-pq-data-tips-and-tricks/","tags":["inbox","Data","Projects"],"noteIcon":"","created":"2024-04-03 4:09:59 pm","updated":"2024-04-10 9:25:21 pm"}
 ---
 
 | File                                                                                                                                     | DATE       | tags                                                                                   |
