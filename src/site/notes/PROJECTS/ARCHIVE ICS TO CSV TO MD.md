@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/archive-ics-to-csv-to-md/","tags":["Portfolio","code","Projects","Python"],"noteIcon":"","created":"2024-01-08 17:31","updated":"2024-03-23 09:40"}
+{"dg-publish":true,"permalink":"/projects/archive-ics-to-csv-to-md/","tags":["Portfolio","code","Projects","Python"],"noteIcon":"","created":"2024-01-08T17:31:00","updated":"2024-03-23T09:40:00"}
 ---
 
 [[DO LIST/Archived calendars to obsidian\|Archived calendars to obsidian]]
