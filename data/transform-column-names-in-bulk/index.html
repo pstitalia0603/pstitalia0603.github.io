@@ -147,6 +147,57 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('ARCHIVE')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">ARCHIVE</span>
+                    </div>
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('ARCHIVE/2023')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">2023</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2023/the-witch-trials-of-j-k-rowling/">The Witch Trials of J.K. Rowling </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('DATA')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -600,6 +651,36 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('TRACK')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">TRACK</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/track/podcasts/">PODCASTS </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home </a>
                 </div>
             
@@ -773,7 +854,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-13T14:46:44.702Z';
+        const searchIndexDate = '2024-04-13T14:54:17.937Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -785,9 +866,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T14:46:44.702Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T14:54:17.937Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T14:46:44.702Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T14:54:17.937Z', docs}));
             window.docs = docs
             window.index = index;
         }
