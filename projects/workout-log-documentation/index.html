@@ -613,57 +613,6 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PERSONAL')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">PERSONAL</span>
-                    </div>
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PERSONAL/INTERESTS')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">INTERESTS</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/la-divina-commedia/">La Divina Commedia </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PROJECTS')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -1154,7 +1103,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-13T16:52:13.625Z';
+        const searchIndexDate = '2024-04-13T16:52:15.600Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1166,9 +1115,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T16:52:13.625Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T16:52:15.600Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T16:52:13.625Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T16:52:15.600Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1542,9 +1491,9 @@ for (let group of pages.sort(d =&gt; d.key, 'desc')) {
 # Workout Totals for Week of 2024-04-07
 | File                                                         | Date       | Miles | Minutes | lbs   | kgs   | MPH  | mps  | Rate | Cal_Burned |
 | ------------------------------------------------------------ | ---------- | ----- | ------- | ----- | ----- | ---- | ---- | ---- | ---------- |
-| <a class="internal-link is-unresolved" href="/404" target="">2024-04-13 Satmorn</a>   | 2024-04-13 | 2.61  | 47.8    | 139   | 63.04 | 3.27 | 1.46 | 4.69 | 224.03     |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-04-09 wTam1</a>       | 2024-04-09 | 2.54  | 57.37   | 140.4 | 63.67 | 2.66 | 1.19 | 3.89 | 222.97     |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-04-11 thurs411</a> | 2024-04-11 | 2.4   | 44.07   | 139.8 | 63.4  | 3.28 | 1.47 | 4.73 | 208.41     |
+| <a class="internal-link is-unresolved" href="/404" target="">2024-04-13 Satmorn</a>   | 2024-04-13 | 2.61  | 47.8    | 139   | 63.04 | 3.27 | 1.46 | 4.69 | 224.03     |
 
 { .block-language-dataview}
 
@@ -1567,10 +1516,10 @@ for (let group of pages.sort(d =&gt; d.key, 'desc')) {
 | <a class="internal-link is-unresolved" href="/404" target="">2024-01-14 1st</a>                   | 2024-01-14 | 1     | 30      | 138.9 | 62.99 | 3    | 1.34 | 4.29 | 128.73          |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-03-25 Gym</a>                   | 2024-03-25 | 2.49  | 50      | 139.9 | 63.45 | 3.5  | 1.56 | 5.08 | 254.04          |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-03-30 Mar30</a>               | 2024-03-30 | 0.99  | 27.5    | 140.2 | 63.58 | 2.17 | 0.97 | 3.33 | 91.5            |
-| <a class="internal-link is-unresolved" href="/404" target="">2024-04-13 Satmorn</a>           | 2024-04-13 | 2.61  | 47.8    | 139   | 63.04 | 3.27 | 1.46 | 4.69 | 224.03          |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-04-07 startApril24</a> | 2024-04-07 | 2.5   | 46.56   | 139.8 | 63.4  | 3.22 | 1.44 | 4.64 | 215.95          |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-04-09 wTam1</a>               | 2024-04-09 | 2.54  | 57.37   | 140.4 | 63.67 | 2.66 | 1.19 | 3.89 | 222.97          |
 | <a class="internal-link is-unresolved" href="/404" target="">2024-04-11 thurs411</a>         | 2024-04-11 | 2.4   | 44.07   | 139.8 | 63.4  | 3.28 | 1.47 | 4.73 | 208.41          |
+| <a class="internal-link is-unresolved" href="/404" target="">2024-04-13 Satmorn</a>           | 2024-04-13 | 2.61  | 47.8    | 139   | 63.04 | 3.27 | 1.46 | 4.69 | 224.03          |
 
 { .block-language-dataview}
 
