@@ -6,9 +6,6 @@
 
 
 
-```mapview
-{"name":"Default","mapZoom":1,"centerLat":33.137551192346145,"centerLng":-11.953125000000002,"query":"tag:#Italia","chosenMapSource":0}
-```
 # Notes
 
 
@@ -21,7 +18,7 @@
 
 - Dinner
 
-# Day 2 (2023-07-22T00:00:00.000-04:00)`
+# Day 2 (2023-07-22T00:00:00.000-04:00)
 ### Travel / arrive CDG TO VCE
 ## Paris Charles de Gaulle Airport
 [charles de gaulle airport](geo:49.0068908,2.5710819691019156)
