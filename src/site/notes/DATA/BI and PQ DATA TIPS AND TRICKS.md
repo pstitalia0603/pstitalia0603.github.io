@@ -16,7 +16,7 @@
 | [[DATA/M Mode - Multiple Columns\|M Mode - Multiple Columns]]                         | 04-05-2024 | <ul><li>Data</li><li>m-code</li><li>dax</li><li>Power_query</li></ul>                  |
 | [[DATA/List.Repeat - PowerQuery M\|List.Repeat - PowerQuery M]]                       | 04-11-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
 | [[DATA/FISCAL MONTH NUMBER CALC\|FISCAL MONTH NUMBER CALC]]                           | 04-05-2024 | <ul><li>Power_bi</li><li>Data</li></ul>                                                |
-| [[DATA/Errors in PQ\|Errors in PQ]]                                                   | 04-11-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
+| [[DATA/Errors in PQ\|Errors in PQ]]                                                   | 04-12-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
 | [[DATA/Date Table and Fiscal Year column\|Date Table and Fiscal Year column]]         | 04-11-2024 | <ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul> |
 | [[DATA/Count Non-null Values\|Count Non-null Values]]                                 | 04-11-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Addressee COUPLE LASTNAMES\|Addressee COUPLE LASTNAMES]]                       | 04-11-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
