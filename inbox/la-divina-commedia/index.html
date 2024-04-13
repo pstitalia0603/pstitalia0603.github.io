@@ -1103,7 +1103,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-13T16:33:42.509Z';
+        const searchIndexDate = '2024-04-13T16:33:45.578Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1115,9 +1115,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T16:33:42.509Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T16:33:45.578Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T16:33:42.509Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T16:33:45.578Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1389,6 +1389,11 @@
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> <a href="https://www.pbs.org/show/dante-inferno-to-paradise/" target="_blank" class="external-link">Dante PBS</a>📅 2024-04-13</label></li>
 </ul>
+<p>Inferno <img src="https://www.dailyinfographic.com/wp-content/uploads/2017/05/dante-2.jpg" alt=""></p>
+<p>Purgatorio<br>
+<img src="https://c1.staticflickr.com/3/2693/4044225229_64e1664fbd_b.jpg" alt=""></p>
+<p>Paradiso<br>
+<img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F76c87929-985f-4c5c-8a04-f8067ab7502c_1943x1536.gif" alt=""></p>
 
       
       
