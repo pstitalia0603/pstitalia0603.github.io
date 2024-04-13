@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Addressee COUPLE LASTNAMES</title>
+    <title>Stuffed Peppers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -289,7 +289,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES </a>
                 </div>
             
         </div>
@@ -771,7 +771,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/stuffed-peppers/">Stuffed Peppers </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/stuffed-peppers/">Stuffed Peppers </a>
                 </div>
             
         </div>
@@ -1297,7 +1297,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Addressee COUPLE LASTNAMES</h1>
+          <h1 data-note-icon="">Stuffed Peppers</h1>
         
         <div class="header-meta">
           
@@ -1305,82 +1305,79 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_query
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Data
-                  </a>
-                
-              
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-01T07:44:33"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-10T09:25:07"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-02-04T08:54:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-25 15:58"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>ADDRESSEE_SLN (SAME LAST NAME)</p>
-<p>if [Spouse Nickname] = null then<br>
-Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
-else null</p>
-<p>ADDRESSEE DIFFERENT LASTNAME<br>
-if [Spouse Nickname] = null then<br>
-null<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-null<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
-else null</p>
-<p>let<br>
-Source = Excel.CurrentWorkbook(){[Name=&quot;Table1&quot;]}[Content],<br>
-#&quot;Added Custom&quot; = Table.AddColumn(Source, &quot;SAME_LASTNAME&quot;, each if [Last Name] = [Spouse Last Name] then &quot;Y&quot; else &quot;N&quot;),<br>
-#&quot;Added Custom1&quot; = Table.AddColumn(#&quot;Added Custom&quot;, &quot;ADDRESSEE_SLN&quot;, each if [Spouse Nickname] = null then<br>
-Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
-else null),<br>
-#&quot;Added Custom2&quot; = Table.AddColumn(#&quot;Added Custom1&quot;, &quot;DIFF_LASTNAME&quot;, each if [Spouse Nickname] = null then<br>
-null<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-null<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
-else null),<br>
-#&quot;Merged Columns&quot; = Table.CombineColumns(#&quot;Added Custom2&quot;,{&quot;ADDRESSEE_SLN&quot;, &quot;DIFF_LASTNAME&quot;},Combiner.CombineTextByDelimiter(&quot;&quot;, QuoteStyle.None),&quot;ADDRESSEE&quot;),<br>
-#&quot;Removed Columns&quot; = Table.RemoveColumns(#&quot;Merged Columns&quot;,{&quot;SAME_LASTNAME&quot;}),<br>
-#&quot;Reordered Columns&quot; = Table.ReorderColumns(#&quot;Removed Columns&quot;,{&quot;ADDRESSEE&quot;, &quot;Constituent ID&quot;, &quot;Nickname&quot;, &quot;Last Name&quot;, &quot;Spouse Nickname&quot;, &quot;Spouse Last Name&quot;, &quot;Constituency Code&quot;, &quot;Primary Addressee&quot;, &quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;, &quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;, &quot;HouseholdID&quot;}),<br>
-#&quot;Removed Columns1&quot; = Table.RemoveColumns(#&quot;Reordered Columns&quot;,{&quot;Primary Addressee&quot;, &quot;HouseholdID&quot;}),<br>
-#&quot;Changed Type&quot; = Table.TransformColumnTypes(#&quot;Removed Columns1&quot;,{{&quot;Constituent ID&quot;, type text}}),<br>
-#&quot;Promoted Headers&quot; = Table.PromoteHeaders(#&quot;Changed Type&quot;, [PromoteAllScalars=true]),<br>
-#&quot;Changed Type1&quot; = Table.TransformColumnTypes(#&quot;Promoted Headers&quot;,{{&quot;Alumnae Class Reps Date&quot;, type date}, {&quot;Alumnae Council Date&quot;, type date}}),<br>
-#&quot;Replaced Value&quot; = Table.ReplaceValue(#&quot;Changed Type1&quot;,&quot;Maryland&quot;,&quot;MD&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value1&quot; = Table.ReplaceValue(#&quot;Replaced Value&quot;,&quot;District of Columbia&quot;,&quot;DC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value2&quot; = Table.ReplaceValue(#&quot;Replaced Value1&quot;,&quot;Virginia&quot;,&quot;VA&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value3&quot; = Table.ReplaceValue(#&quot;Replaced Value2&quot;,&quot;Colorado&quot;,&quot;CO&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value4&quot; = Table.ReplaceValue(#&quot;Replaced Value3&quot;,&quot;South Carolina&quot;,&quot;SC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value5&quot; = Table.ReplaceValue(#&quot;Replaced Value4&quot;,&quot;Florida&quot;,&quot;FL&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value6&quot; = Table.ReplaceValue(#&quot;Replaced Value5&quot;,&quot;Indiana&quot;,&quot;IN&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value7&quot; = Table.ReplaceValue(#&quot;Replaced Value6&quot;,&quot;North Carolina&quot;,&quot;NC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Changed Type2&quot; = Table.TransformColumnTypes(#&quot;Replaced Value7&quot;,{{&quot;Alumnae Council Date&quot;, type text}, {&quot;Alumnae Class Reps Date&quot;, type text}}),<br>
-#&quot;Merged Columns1&quot; = Table.CombineColumns(Table.TransformColumnTypes(#&quot;Changed Type2&quot;, {{&quot;Alumnae Council&quot;, type text}}, &quot;en-US&quot;),{&quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_COUNCIL&quot;),<br>
-#&quot;Merged Columns2&quot; = Table.CombineColumns(#&quot;Merged Columns1&quot;,{&quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_CLASS_REPS&quot;),<br>
-#&quot;Renamed Columns&quot; = Table.RenameColumns(#&quot;Merged Columns2&quot;,{{&quot;Nickname Last Name and Spouse Nickname Spouse Last Name&quot;, &quot;ADDRESSEE&quot;}}),<br>
-#&quot;Changed Type4&quot; = Table.TransformColumnTypes(#&quot;Renamed Columns&quot;,{{&quot;Preferred ZIP&quot;, type text}}),<br>
-#&quot;Grouped Rows&quot; = Table.Group(#&quot;Changed Type4&quot;, {&quot;ADDRESSEE&quot;,&quot;Household_NAME&quot;}, {{&quot;ADDRESS&quot;, each Text.Combine(List.Distinct([Preferred Address Line 1]),&quot;, &quot;), type text}, {&quot;CITY&quot;, each Text.Combine(List.Distinct([Preferred City]),&quot;, &quot;), type text}, {&quot;STATE&quot;, each Text.Combine(List.Distinct([Preferred State]),&quot;, &quot;), type nullable text}, {&quot;ZIP&quot;, each Text.Combine(List.Distinct([Preferred ZIP]),&quot;, &quot;), type text}}),<br>
-#&quot;Uppercased Text&quot; = Table.TransformColumns(#&quot;Grouped Rows&quot;,{{&quot;Household_NAME&quot;, Text.Upper, type text}}),<br>
-#&quot;Changed Type3&quot; = Table.TransformColumnTypes(#&quot;Uppercased Text&quot;,{{&quot;ZIP&quot;, type text}})<br>
-in<br>
-#&quot;Changed Type3&quot;</p>
+      <h1 id="a-href-https-www-onceuponachef-com-recipes-stuffed-peppers-html-tabrecipe-target-blank-class-external-link-stuffed-peppers-once-upon-a-chef-a" tabindex="-1"><a href="https://www.onceuponachef.com/recipes/stuffed-peppers.html#tabrecipe" target="_blank" class="external-link">Stuffed Peppers - Once Upon a Chef</a></h1>
+<p><em>Classic stuffed peppers filled with ground beef, rice, tomato sauce, and cheese make an easy weeknight supper.</em></p>
+<p>Almost every cuisine has a version of stuffed peppers, or hollowed bell peppers filled with meat, tomato sauce, vegetables, rice and cheese. In the US, the dish undeniably retro – in fact, the most popular internet recipe comes from the one and only Betty Crocker. Here, I’ve given the classic recipe a little update by quickly tenderizing the beef before cooking and seasoning it with Southwestern spices, which complement the sweetness of the bell peppers perfectly. That said, the recipe is endlessly versatile; you can change up the meat, spices, grain, or cheese to give the dish a whole new spin. This version goes nicely with cornbread.</p>
+<p>The peppers need to be par-cooked before filling so that they cook through. Many recipes call for boiling the peppers first, but I prefer to roast them – more flavor and less cleanup! The best way is to slice the peppers in half from the stem end down through the base, remove all the seeds and membranes, and then roast the halves until they’re tender-crisp.</p>
+<h2 id="what-you-ll-need-to-make-stuffed-peppers" tabindex="-1">What You’ll Need To Make Stuffed Peppers</h2>
+<p><img src="https://i0.wp.com/www.onceuponachef.com/images/2022/02/stuffed-peppers-15.jpg?resize=760%2C492&amp;ssl=1" alt="stuffed peppers ingredients"></p>
+<p>When selecting bell peppers, look for peppers that are bright, shiny and firm. They should not have wrinkled skin, soft spots, or moldy stems. I prefer red, orange, or yellow peppers; green peppers are unripe and have an unpleasant, somewhat bitter taste. (If left to fully ripen, green peppers will eventually turn another color, and the flavor will become increasingly sweet.) Bell peppers keep for up to a week in the refrigerator crisper drawer.</p>
+<h2 id="step-by-step-instructions" tabindex="-1">Step-by-Step Instructions</h2>
+<p>Tenderize the beef: In a medium bowl, add the beef, 1 teaspoon of the salt, and the baking soda.</p>
+<p>Use your hands to mix until evenly combined, and let the mixture sit for 20 minutes while you continue with the recipe. As it rests, the baking soda raises the pH of the meat, helping to lock in moisture and making the beef tender.<br>
+Slice the peppers in half from the stem end down through the base.</p>
+<p>Remove all the seeds and membranes.</p>
+<p>Place the peppers, cut side up, in a 9×13-inch baking dish; drizzle with 1 tablespoon of the oil and sprinkle with the remaining salt. Roast the peppers for about 20 minutes, until slightly browned and tender-crisp. A bit of liquid will accumulate in the bottom of the peppers; that’s okay.</p>
+<p>Meanwhile, heat the remaining 2 tablespoons of oil over medium heat in a large nonstick skillet. Add the onion and cook, stirring frequently, until soft and translucent, 3 to 4 minutes.</p>
+<p>Add the garlic and cook 1 minute more; do not brown.</p>
+<p>To the skillet, add the ground beef mixture, chili powder, cumin, and oregano and increase the heat to medium high.</p>
+<p>Cook, breaking the meat up with a wooden spoon, until the meat is browned and almost cooked through, 4 to 5 minutes. Add the tomato sauce and bring to a boil.</p>
+<p>Reduce the heat to medium low and cook, uncovered, until the meat is cooked through, 2 to 3 minutes. Add the rice and 3/4 cup of the cheese.</p>
+<p>Stir until melted and remove the skillet from the heat.</p>
+<p>Remove the peppers from the oven and spoon the meat filling evenly into the peppers. Sprinkle with the remaining 3/4 cup cheese and place back in the oven.</p>
+<p>Roast for 10 to 15 minutes, until the filling is hot and the cheese is melted and bubbling, and serve.</p>
+<h2 id="video-tutorial" tabindex="-1">Video Tutorial</h2>
+<ul>
+<li><a href="https://www.onceuponachef.com/recipes/stuffed-peppers.html#tabrecipe" target="_blank" class="external-link">Recipe</a></li>
+</ul>
+<p>Classic stuffed peppers filled with ground beef, rice, tomato sauce, and cheese make an easy weeknight supper.</p>
+<h3 id="ingredients" tabindex="-1">Ingredients</h3>
+<ul>
+<li>1 pound 90% lean ground beef</li>
+<li>1¼ teaspoons salt, divided</li>
+<li>Heaping ¼ teaspoon baking soda</li>
+<li>3 large red, yellow, or orange bell peppers, cut in half from the stem to the bottom and cored</li>
+<li>3 tablespoons extra-virgin oil</li>
+<li>1 medium yellow onion, finely chopped</li>
+<li>3 cloves garlic, minced</li>
+<li>1½ teaspoons chili powder</li>
+<li>½ teaspoon ground cumin</li>
+<li>¼ teaspoon dried oregano</li>
+<li>1 (8-oz) can tomato sauce</li>
+<li>1 cup cooked rice, quinoa, or any grain</li>
+<li>1½ cups shredded Monterey Jack or Cheddar Jack cheese</li>
+</ul>
+<h3 id="instructions" tabindex="-1">Instructions</h3>
+<ol>
+<li>Preheat the oven to 425°F and set an oven rack in the middle position.</li>
+<li>Tenderize the beef: In a medium bowl, using your hands, mash the beef with 1 teaspoon of the salt and the baking soda. Let sit for 20 minutes while you continue with the recipe.</li>
+<li>Line a 9x13-inch baking dish with aluminum foil for easy clean-up, if you like. Place the peppers, cut side up, in the baking dish; drizzle with 1 tablespoon of the oil and sprinkle with the remaining ¼ teaspoon salt.</li>
+<li>Roast the peppers for about 20 minutes, until slightly browned and tender-crisp. A bit of liquid will accumulate in the bottom of the peppers; that's okay.</li>
+<li>Meanwhile, heat the remaining 2 tablespoons of oil over medium heat in a large nonstick skillet. Add the onion and cook, stirring frequently, until soft and translucent, 3 to 4 minutes. Add the garlic and cook 1 minute more; do not brown. Add the ground beef mixture, chili powder, cumin, and oregano and increase the heat to medium high. Cook, breaking the meat up with a wooden spoon, until the meat is browned and almost cooked through, 4 to 5 minutes. Add the tomato sauce and bring to a boil; reduce the heat to medium low and cook, uncovered, until the meat is cooked through, 2 to 3 minutes. Add the rice and ¾ cup of the cheese, and stir until melted. Remove the skillet from the heat.</li>
+<li>Remove the peppers from the oven and spoon the meat filling evenly into the peppers. Sprinkle with the remaining ¾ cup cheese and place back in the oven. Roast for 10 to 15 minutes, until the filling is hot and the cheese is melted and bubbling, and serve.</li>
+<li>Make-Ahead Instructions: The peppers can be partially cooked and filled with the beef mixture up to 2 days ahead of time and refrigerated, or frozen in an airtight container for up to 3 months. When ready to serve, defrost overnight in the refrigerator if frozen, cover the dish with foil, and bake in a 425°F-oven for about 15 minutes. Remove the dish from the oven and remove and discard the foil. Top the peppers with the cheese and place back in the oven for about 5 minutes, or until the filling is heated through and the cheese is melted.</li>
+</ol>
+<h3 id="nutrition-information" tabindex="-1">Nutrition Information</h3>
+<ul>
+<li>Per serving (6 servings)</li>
+<li><strong>Serving size:</strong> One 1/2 pepper</li>
+<li><strong>Calories:</strong> 381</li>
+<li><strong>Fat:</strong> 24 g</li>
+<li><strong>Saturated fat:</strong> 9 g</li>
+<li><strong>Carbohydrates:</strong> 17 g</li>
+<li><strong>Sugar:</strong> 6 g</li>
+<li><strong>Fiber:</strong> 3 g</li>
+<li><strong>Protein:</strong> 24 g</li>
+<li><strong>Sodium:</strong> 646 mg</li>
+<li><strong>Cholesterol:</strong> 74 mg</li>
+</ul>
 
       
       
@@ -1611,6 +1608,47 @@ in<br>
                   
                         
                         
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#a-href-https-www-onceuponachef-com-recipes-stuffed-peppers-html-tabrecipe-target-blank-class-external-link-stuffed-peppers-once-upon-a-chef-a">Stuffed Peppers - Once Upon a Chef</a>
+            
+                <ol>
+                    
+                    <li><a href="#what-you-ll-need-to-make-stuffed-peppers">What You’ll Need To Make Stuffed Peppers</a>
+            		</li>
+
+                    <li><a href="#step-by-step-instructions">Step-by-Step Instructions</a>
+            		</li>
+
+                    <li><a href="#video-tutorial">Video Tutorial</a>
+            
+                <ol>
+                    
+                    <li><a href="#ingredients">Ingredients</a>
+            		</li>
+
+                    <li><a href="#instructions">Instructions</a>
+            		</li>
+
+                    <li><a href="#nutrition-information">Nutrition Information</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
+                        
 
                   
 
@@ -1618,8 +1656,9 @@ in<br>
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   

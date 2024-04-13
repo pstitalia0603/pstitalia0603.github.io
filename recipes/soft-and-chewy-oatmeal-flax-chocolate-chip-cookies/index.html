@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Addressee COUPLE LASTNAMES</title>
+    <title>Soft and Chewy Oatmeal Flax Chocolate Chip Cookies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -289,7 +289,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES </a>
                 </div>
             
         </div>
@@ -760,7 +760,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/soft-and-chewy-oatmeal-flax-chocolate-chip-cookies/">Soft and Chewy Oatmeal Flax Chocolate Chip Cookies </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/soft-and-chewy-oatmeal-flax-chocolate-chip-cookies/">Soft and Chewy Oatmeal Flax Chocolate Chip Cookies </a>
                 </div>
             
         </div>
@@ -1297,7 +1297,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Addressee COUPLE LASTNAMES</h1>
+          <h1 data-note-icon="">Soft and Chewy Oatmeal Flax Chocolate Chip Cookies</h1>
         
         <div class="header-meta">
           
@@ -1307,80 +1307,59 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_query
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Data
+                    #Recipes
                   </a>
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-01T07:44:33"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-10T09:25:07"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-10T19:07:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-10 19:07"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>ADDRESSEE_SLN (SAME LAST NAME)</p>
-<p>if [Spouse Nickname] = null then<br>
-Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
-else null</p>
-<p>ADDRESSEE DIFFERENT LASTNAME<br>
-if [Spouse Nickname] = null then<br>
-null<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-null<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
-else null</p>
-<p>let<br>
-Source = Excel.CurrentWorkbook(){[Name=&quot;Table1&quot;]}[Content],<br>
-#&quot;Added Custom&quot; = Table.AddColumn(Source, &quot;SAME_LASTNAME&quot;, each if [Last Name] = [Spouse Last Name] then &quot;Y&quot; else &quot;N&quot;),<br>
-#&quot;Added Custom1&quot; = Table.AddColumn(#&quot;Added Custom&quot;, &quot;ADDRESSEE_SLN&quot;, each if [Spouse Nickname] = null then<br>
-Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
-else null),<br>
-#&quot;Added Custom2&quot; = Table.AddColumn(#&quot;Added Custom1&quot;, &quot;DIFF_LASTNAME&quot;, each if [Spouse Nickname] = null then<br>
-null<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-null<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
-else null),<br>
-#&quot;Merged Columns&quot; = Table.CombineColumns(#&quot;Added Custom2&quot;,{&quot;ADDRESSEE_SLN&quot;, &quot;DIFF_LASTNAME&quot;},Combiner.CombineTextByDelimiter(&quot;&quot;, QuoteStyle.None),&quot;ADDRESSEE&quot;),<br>
-#&quot;Removed Columns&quot; = Table.RemoveColumns(#&quot;Merged Columns&quot;,{&quot;SAME_LASTNAME&quot;}),<br>
-#&quot;Reordered Columns&quot; = Table.ReorderColumns(#&quot;Removed Columns&quot;,{&quot;ADDRESSEE&quot;, &quot;Constituent ID&quot;, &quot;Nickname&quot;, &quot;Last Name&quot;, &quot;Spouse Nickname&quot;, &quot;Spouse Last Name&quot;, &quot;Constituency Code&quot;, &quot;Primary Addressee&quot;, &quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;, &quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;, &quot;HouseholdID&quot;}),<br>
-#&quot;Removed Columns1&quot; = Table.RemoveColumns(#&quot;Reordered Columns&quot;,{&quot;Primary Addressee&quot;, &quot;HouseholdID&quot;}),<br>
-#&quot;Changed Type&quot; = Table.TransformColumnTypes(#&quot;Removed Columns1&quot;,{{&quot;Constituent ID&quot;, type text}}),<br>
-#&quot;Promoted Headers&quot; = Table.PromoteHeaders(#&quot;Changed Type&quot;, [PromoteAllScalars=true]),<br>
-#&quot;Changed Type1&quot; = Table.TransformColumnTypes(#&quot;Promoted Headers&quot;,{{&quot;Alumnae Class Reps Date&quot;, type date}, {&quot;Alumnae Council Date&quot;, type date}}),<br>
-#&quot;Replaced Value&quot; = Table.ReplaceValue(#&quot;Changed Type1&quot;,&quot;Maryland&quot;,&quot;MD&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value1&quot; = Table.ReplaceValue(#&quot;Replaced Value&quot;,&quot;District of Columbia&quot;,&quot;DC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value2&quot; = Table.ReplaceValue(#&quot;Replaced Value1&quot;,&quot;Virginia&quot;,&quot;VA&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value3&quot; = Table.ReplaceValue(#&quot;Replaced Value2&quot;,&quot;Colorado&quot;,&quot;CO&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value4&quot; = Table.ReplaceValue(#&quot;Replaced Value3&quot;,&quot;South Carolina&quot;,&quot;SC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value5&quot; = Table.ReplaceValue(#&quot;Replaced Value4&quot;,&quot;Florida&quot;,&quot;FL&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value6&quot; = Table.ReplaceValue(#&quot;Replaced Value5&quot;,&quot;Indiana&quot;,&quot;IN&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value7&quot; = Table.ReplaceValue(#&quot;Replaced Value6&quot;,&quot;North Carolina&quot;,&quot;NC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Changed Type2&quot; = Table.TransformColumnTypes(#&quot;Replaced Value7&quot;,{{&quot;Alumnae Council Date&quot;, type text}, {&quot;Alumnae Class Reps Date&quot;, type text}}),<br>
-#&quot;Merged Columns1&quot; = Table.CombineColumns(Table.TransformColumnTypes(#&quot;Changed Type2&quot;, {{&quot;Alumnae Council&quot;, type text}}, &quot;en-US&quot;),{&quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_COUNCIL&quot;),<br>
-#&quot;Merged Columns2&quot; = Table.CombineColumns(#&quot;Merged Columns1&quot;,{&quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_CLASS_REPS&quot;),<br>
-#&quot;Renamed Columns&quot; = Table.RenameColumns(#&quot;Merged Columns2&quot;,{{&quot;Nickname Last Name and Spouse Nickname Spouse Last Name&quot;, &quot;ADDRESSEE&quot;}}),<br>
-#&quot;Changed Type4&quot; = Table.TransformColumnTypes(#&quot;Renamed Columns&quot;,{{&quot;Preferred ZIP&quot;, type text}}),<br>
-#&quot;Grouped Rows&quot; = Table.Group(#&quot;Changed Type4&quot;, {&quot;ADDRESSEE&quot;,&quot;Household_NAME&quot;}, {{&quot;ADDRESS&quot;, each Text.Combine(List.Distinct([Preferred Address Line 1]),&quot;, &quot;), type text}, {&quot;CITY&quot;, each Text.Combine(List.Distinct([Preferred City]),&quot;, &quot;), type text}, {&quot;STATE&quot;, each Text.Combine(List.Distinct([Preferred State]),&quot;, &quot;), type nullable text}, {&quot;ZIP&quot;, each Text.Combine(List.Distinct([Preferred ZIP]),&quot;, &quot;), type text}}),<br>
-#&quot;Uppercased Text&quot; = Table.TransformColumns(#&quot;Grouped Rows&quot;,{{&quot;Household_NAME&quot;, Text.Upper, type text}}),<br>
-#&quot;Changed Type3&quot; = Table.TransformColumnTypes(#&quot;Uppercased Text&quot;,{{&quot;ZIP&quot;, type text}})<br>
-in<br>
-#&quot;Changed Type3&quot;</p>
+      <ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Oatmeal Flax Cookies 🛫 2024-04-20</label></li>
+</ul>
+<h1 id="a-href-https-lovetobeinthekitchen-com-2014-08-12-soft-chewy-oatmeal-flax-chocolate-chip-cookie-target-blank-class-external-link-soft-and-chewy-oatmeal-flax-chocolate-chip-cookies-love-to-be-in-the-kitchen-a" tabindex="-1"><a href="https://lovetobeinthekitchen.com/2014/08/12/soft-chewy-oatmeal-flax-chocolate-chip-cookie/" target="_blank" class="external-link">Soft and Chewy Oatmeal Flax Chocolate Chip Cookies - Love to be in the Kitchen</a></h1>
+<p><em><strong>These Soft and Chewy Oatmeal Flax Chocolate Chip Cookies are DELICIOUS! They are made with coconut oil instead of butter and have oats and flaxseed!</strong></em></p>
+<p><a href="https://www.lovetobeinthekitchen.com/wp-content/uploads/2014/05/Soft-and-Chewy-Oatmeal-Flax-Chocolate-Chip-Cookies2.jpg" target="_blank" class="external-link"><img src="https://www.lovetobeinthekitchen.com/wp-content/uploads/2014/05/Soft-and-Chewy-Oatmeal-Flax-Chocolate-Chip-Cookies2-768x1024.jpg" alt="Soft and Chewy Oatmeal Flax Chocolate Chip Cookies"></a></p>
+<p>This recipe is like a typical chocolate chip cookie but with a few healthier changes. Instead of butter, you use coconut oil. Just melt the coconut oil until it’s liquid and measure as you would another oil like canola. I love using coconut oil. I usually buy coconut oil from Trader Joe’s or Costco. I also love <a href="https://amzn.to/3QdurDH" target="_blank" class="external-link">this one from Amazon</a>.</p>
+<p>In this cookie recipe, you add a full cup of oats and 1/2 a cup of flax seed! I adapted this recipe from Averie Cooks’ recipe for <a href="http://www.averiecooks.com/2013/12/soft-and-chewy-oatmeal-coconut-chocolate-chip-cookies.html" target="_blank" class="external-link">Soft and Chewy Oatmeal Coconut Chocolate Chip Cookies</a>. I have been wanting to make a cookie and pack it full of flax seed since it’s so good for you! <a href="https://lovetobeinthekitchen.com/2012/01/12/flax-seed/" target="_blank" class="external-link">You can read more about the benefits of flaxseed and how to use it in this post.</a> When I was making this recipe I wasn’t sure if 1/2 a cup of flaxseed would be too much but it turned out to be perfect! You hardly notice except that you can see it in the cookie. It gives it a darker color than a typical chocolate chip cookie. If you’d like more coconut flavor, you could even add 1/2 a cup of shredded coconut to these cookies. (But may need to add a little more melted coconut oil if it seems too dry.)</p>
+<p><a href="https://www.lovetobeinthekitchen.com/wp-content/uploads/2014/05/IMG_6964.jpg" target="_blank" class="external-link"><img src="https://www.lovetobeinthekitchen.com/wp-content/uploads/2014/05/IMG_6964-1024x768.jpg" alt="Soft and Chewy Oatmeal Flax Chocolate Chip Cookies"></a>Look at all that chocolatey goodness! Mmm! These cookies were so good! My kids loved them too and they are my toughest critics.</p>
+<p>Just a note about the recipe, the dough needs to be chilled for at least 2 hours in the fridge. I just place all my dough balls on one cookie sheet, cover it with plastic wrap, and put it in the fridge. But if you are short on time you can just place it in the freezer for 15 minutes and that will work. This helps the cookies not to spread and enhances the flavor. Also, I love to add some chocolate chips on top to make it look prettier and give it more chocolatey goodness!</p>
+<p><img src="https://www.lovetobeinthekitchen.com/wp-content/uploads/2014/05/zz-1024x768.jpg" alt="Soft and Chewy Oatmeal Flax Chocolate Chip Cookies"></p>
+<p>Enjoy!</p>
+<h2 id="ingredients" tabindex="-1">Ingredients</h2>
+<ul>
+<li>1 large egg</li>
+<li>1/2 cup melted coconut oil</li>
+<li>1/2 cup light brown sugar, packed</li>
+<li>1/4 cup granulated sugar</li>
+<li>1 tablespoon vanilla extract</li>
+<li>1 teaspoon cinnamon</li>
+<li>¼ teaspoon salt</li>
+<li>1 teaspoon baking soda</li>
+<li>1 cup old-fashioned whole rolled oats (not instant or quick)</li>
+<li>1 cup all-purpose flour</li>
+<li>½ cup finely ground flaxseed</li>
+<li>3/4 cup semi-sweet chocolate chips</li>
+</ul>
+<h2 id="instructions" tabindex="-1">Instructions</h2>
+<ol>
+<li>In a large mixing bowl, or bowl of a stand mixer, add the egg, coconut oil, sugars, vanilla, cinnamon and salt. Mix until combined.</li>
+<li>Add the baking soda, oats, flour, and flaxseed and mix until combined. Mix in the chocolate chips.</li>
+<li>Form the dough into balls and place on a cookie sheet lined with a Silpat or parchment paper. Top with more chocolate chips if desired. Cover with plastic wrap and refrigerate or at least 2 hours or up to 5 days. This will help the cookies not to spread. (Shortcut: Freeze for about 15 minutes.) Also, the cookies won’t spread much after being chilled so if you want the cookies to be a little flatter press down slightly.</li>
+<li>Preheat oven to 350 F, line 2 baking sheets with a Silpat or parchment paper. Place the cookie dough balls 2 inches apart. Bake about 9 minutes or until edges and top are just beginning to set. Do not bake longer than 10 minutes to ensure the cookies are still soft. They will firm up as they cool. Let cookies cool for 5 minutes before transferring to cooling rack.</li>
+<li>Store cookies in an airtight container for up to 1 week or freeze for up to 4 months. The cookie dough can be stored in an airtight container for up to 5 days or in the freezer for up to 4 months.</li>
+</ol>
+<p><em>Adapted from <a href="http://www.averiecooks.com/2013/12/soft-and-chewy-oatmeal-coconut-chocolate-chip-cookies.html" target="_blank" class="external-link">Averie Cooks</a></em></p>
+<p><strong>Keep up with my latest and greatest by following along with me here:</strong></p>
+<p><strong><a href="https://www.facebook.com/LoveToBeInTheKitchen" target="_blank" class="external-link">Facebook</a>/<a href="http://www.pinterest.com/bblad/" target="_blank" class="external-link">Pinterest</a>/<a href="https://twitter.com/love_thekitchen" target="_blank" class="external-link">Twitter</a>/<a href="http://www.bloglovin.com/en/blog/10816423" target="_blank" class="external-link">Bloglovin’</a>/<a href="https://plus.google.com/u/0/100416216154312997680/posts" target="_blank" class="external-link">G+</a></strong></p>
+<p><strong>For more delicious cookie recipes check out some of my favorites!</strong></p>
+<p><a href="https://www.lovetobeinthekitchen.com/wp-content/uploads/2014/05/Snickers-Chocolate-Chip-Cookies2.jpg" target="_blank" class="external-link"><img src="https://www.lovetobeinthekitchen.com/wp-content/uploads/2014/05/Snickers-Chocolate-Chip-Cookies2-768x1024.jpg" alt="Snickers Chocolate Chip Cookies"></a><a href="https://www.lovetobeinthekitchen.com/2014/05/06/soft-chewy-snickers-chocolate-chip-cookies/" target="_blank" class="external-link"><strong>Soft &amp; Chewy Snickers Chocolate Chip Cookies</strong></a></p>
+<p><a href="https://www.lovetobeinthekitchen.com/wp-content/uploads/2014/03/Dark-Chocolate-MM-Cookies-112.jpg" target="_blank" class="external-link"><img src="https://www.lovetobeinthekitchen.com/wp-content/uploads/2014/03/Dark-Chocolate-MM-Cookies-112-710x1024.jpg" alt="Dark Chocolate M&amp;M Cookies"></a><a href="https://www.lovetobeinthekitchen.com/2014/03/18/dark-chocolate-mm-cookies/" target="_blank" class="external-link"><strong>Dark Chocolate M&amp;M Cookies</strong></a></p>
+<p><a href="https://www.lovetobeinthekitchen.com/wp-content/uploads/2013/10/Reeses-Pieces-Soft-Peanut-Butter-Cookies-3.jpg" target="_blank" class="external-link"><img src="https://www.lovetobeinthekitchen.com/wp-content/uploads/2013/10/Reeses-Pieces-Soft-Peanut-Butter-Cookies-3-1024x768.jpg" alt="Reese's Pieces Soft Peanut Butter Cookies"></a><strong><a href="https://www.lovetobeinthekitchen.com/2013/10/30/reeses-pieces-soft-peanut-butter-cookies/" target="_blank" class="external-link">Reese’s Pieces Soft Peanut Butter Cookies</a></strong></p>
 
       
       
@@ -1611,6 +1590,32 @@ in<br>
                   
                         
                         
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#a-href-https-lovetobeinthekitchen-com-2014-08-12-soft-chewy-oatmeal-flax-chocolate-chip-cookie-target-blank-class-external-link-soft-and-chewy-oatmeal-flax-chocolate-chip-cookies-love-to-be-in-the-kitchen-a">Soft and Chewy Oatmeal Flax Chocolate Chip Cookies - Love to be in the Kitchen</a>
+            
+                <ol>
+                    
+                    <li><a href="#ingredients">Ingredients</a>
+            		</li>
+
+                    <li><a href="#instructions">Instructions</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
+                        
 
                   
 
@@ -1618,7 +1623,7 @@ in<br>
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/recipes/recipes/" data-note-icon="" class="backlink">RECIPES</a>
                                                 </div></div>
                               </div>
                         

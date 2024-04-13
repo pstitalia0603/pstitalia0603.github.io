@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Addressee COUPLE LASTNAMES</title>
+    <title>Pasta with Roasted Cauliflower Capers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -289,7 +289,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES </a>
                 </div>
             
         </div>
@@ -738,7 +738,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/pasta-with-roasted-cauliflower-capers/">Pasta with Roasted Cauliflower Capers </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/pasta-with-roasted-cauliflower-capers/">Pasta with Roasted Cauliflower Capers </a>
                 </div>
             
         </div>
@@ -1297,7 +1297,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Addressee COUPLE LASTNAMES</h1>
+          <h1 data-note-icon="">Pasta with Roasted Cauliflower Capers</h1>
         
         <div class="header-meta">
           
@@ -1307,80 +1307,75 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_query
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Data
+                    #Recipes
                   </a>
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-01T07:44:33"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-10T09:25:07"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-02T08:53:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-02 08:53"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>ADDRESSEE_SLN (SAME LAST NAME)</p>
-<p>if [Spouse Nickname] = null then<br>
-Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
-else null</p>
-<p>ADDRESSEE DIFFERENT LASTNAME<br>
-if [Spouse Nickname] = null then<br>
-null<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-null<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
-else null</p>
-<p>let<br>
-Source = Excel.CurrentWorkbook(){[Name=&quot;Table1&quot;]}[Content],<br>
-#&quot;Added Custom&quot; = Table.AddColumn(Source, &quot;SAME_LASTNAME&quot;, each if [Last Name] = [Spouse Last Name] then &quot;Y&quot; else &quot;N&quot;),<br>
-#&quot;Added Custom1&quot; = Table.AddColumn(#&quot;Added Custom&quot;, &quot;ADDRESSEE_SLN&quot;, each if [Spouse Nickname] = null then<br>
-Text.Combine({[Nickname],&quot; &quot;, [Last Name]})<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; and &quot;, [Spouse Nickname], &quot; &quot;, [Last Name]})<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then null<br>
-else null),<br>
-#&quot;Added Custom2&quot; = Table.AddColumn(#&quot;Added Custom1&quot;, &quot;DIFF_LASTNAME&quot;, each if [Spouse Nickname] = null then<br>
-null<br>
-else if [Spouse Nickname] &lt;&gt; null and [Last Name] = [Spouse Last Name] then<br>
-null<br>
-else if [Last Name] &lt;&gt; [Spouse Last Name] then<br>
-Text.Combine({[Nickname],&quot; &quot;,[Last Name], &quot; and &quot;,[Spouse Nickname],&quot; &quot;,[Spouse Last Name]})<br>
-else null),<br>
-#&quot;Merged Columns&quot; = Table.CombineColumns(#&quot;Added Custom2&quot;,{&quot;ADDRESSEE_SLN&quot;, &quot;DIFF_LASTNAME&quot;},Combiner.CombineTextByDelimiter(&quot;&quot;, QuoteStyle.None),&quot;ADDRESSEE&quot;),<br>
-#&quot;Removed Columns&quot; = Table.RemoveColumns(#&quot;Merged Columns&quot;,{&quot;SAME_LASTNAME&quot;}),<br>
-#&quot;Reordered Columns&quot; = Table.ReorderColumns(#&quot;Removed Columns&quot;,{&quot;ADDRESSEE&quot;, &quot;Constituent ID&quot;, &quot;Nickname&quot;, &quot;Last Name&quot;, &quot;Spouse Nickname&quot;, &quot;Spouse Last Name&quot;, &quot;Constituency Code&quot;, &quot;Primary Addressee&quot;, &quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;, &quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;, &quot;HouseholdID&quot;}),<br>
-#&quot;Removed Columns1&quot; = Table.RemoveColumns(#&quot;Reordered Columns&quot;,{&quot;Primary Addressee&quot;, &quot;HouseholdID&quot;}),<br>
-#&quot;Changed Type&quot; = Table.TransformColumnTypes(#&quot;Removed Columns1&quot;,{{&quot;Constituent ID&quot;, type text}}),<br>
-#&quot;Promoted Headers&quot; = Table.PromoteHeaders(#&quot;Changed Type&quot;, [PromoteAllScalars=true]),<br>
-#&quot;Changed Type1&quot; = Table.TransformColumnTypes(#&quot;Promoted Headers&quot;,{{&quot;Alumnae Class Reps Date&quot;, type date}, {&quot;Alumnae Council Date&quot;, type date}}),<br>
-#&quot;Replaced Value&quot; = Table.ReplaceValue(#&quot;Changed Type1&quot;,&quot;Maryland&quot;,&quot;MD&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value1&quot; = Table.ReplaceValue(#&quot;Replaced Value&quot;,&quot;District of Columbia&quot;,&quot;DC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value2&quot; = Table.ReplaceValue(#&quot;Replaced Value1&quot;,&quot;Virginia&quot;,&quot;VA&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value3&quot; = Table.ReplaceValue(#&quot;Replaced Value2&quot;,&quot;Colorado&quot;,&quot;CO&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value4&quot; = Table.ReplaceValue(#&quot;Replaced Value3&quot;,&quot;South Carolina&quot;,&quot;SC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value5&quot; = Table.ReplaceValue(#&quot;Replaced Value4&quot;,&quot;Florida&quot;,&quot;FL&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value6&quot; = Table.ReplaceValue(#&quot;Replaced Value5&quot;,&quot;Indiana&quot;,&quot;IN&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Replaced Value7&quot; = Table.ReplaceValue(#&quot;Replaced Value6&quot;,&quot;North Carolina&quot;,&quot;NC&quot;,Replacer.ReplaceText,{&quot;Preferred State&quot;}),<br>
-#&quot;Changed Type2&quot; = Table.TransformColumnTypes(#&quot;Replaced Value7&quot;,{{&quot;Alumnae Council Date&quot;, type text}, {&quot;Alumnae Class Reps Date&quot;, type text}}),<br>
-#&quot;Merged Columns1&quot; = Table.CombineColumns(Table.TransformColumnTypes(#&quot;Changed Type2&quot;, {{&quot;Alumnae Council&quot;, type text}}, &quot;en-US&quot;),{&quot;Alumnae Council&quot;, &quot;Alumnae Council Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_COUNCIL&quot;),<br>
-#&quot;Merged Columns2&quot; = Table.CombineColumns(#&quot;Merged Columns1&quot;,{&quot;Alumnae Class Reps&quot;, &quot;Alumnae Class Reps Date&quot;},Combiner.CombineTextByDelimiter(&quot; - &quot;, QuoteStyle.None),&quot;ALUM_CLASS_REPS&quot;),<br>
-#&quot;Renamed Columns&quot; = Table.RenameColumns(#&quot;Merged Columns2&quot;,{{&quot;Nickname Last Name and Spouse Nickname Spouse Last Name&quot;, &quot;ADDRESSEE&quot;}}),<br>
-#&quot;Changed Type4&quot; = Table.TransformColumnTypes(#&quot;Renamed Columns&quot;,{{&quot;Preferred ZIP&quot;, type text}}),<br>
-#&quot;Grouped Rows&quot; = Table.Group(#&quot;Changed Type4&quot;, {&quot;ADDRESSEE&quot;,&quot;Household_NAME&quot;}, {{&quot;ADDRESS&quot;, each Text.Combine(List.Distinct([Preferred Address Line 1]),&quot;, &quot;), type text}, {&quot;CITY&quot;, each Text.Combine(List.Distinct([Preferred City]),&quot;, &quot;), type text}, {&quot;STATE&quot;, each Text.Combine(List.Distinct([Preferred State]),&quot;, &quot;), type nullable text}, {&quot;ZIP&quot;, each Text.Combine(List.Distinct([Preferred ZIP]),&quot;, &quot;), type text}}),<br>
-#&quot;Uppercased Text&quot; = Table.TransformColumns(#&quot;Grouped Rows&quot;,{{&quot;Household_NAME&quot;, Text.Upper, type text}}),<br>
-#&quot;Changed Type3&quot; = Table.TransformColumnTypes(#&quot;Uppercased Text&quot;,{{&quot;ZIP&quot;, type text}})<br>
-in<br>
-#&quot;Changed Type3&quot;</p>
+      <h1 id="a-href-https-www-foodandwine-com-recipes-pasta-roasted-cauliflower-and-crispy-capers-target-blank-class-external-link-pasta-with-roasted-cauliflower-and-crispy-capers-recipe-a" tabindex="-1"><a href="https://www.foodandwine.com/recipes/pasta-roasted-cauliflower-and-crispy-capers" target="_blank" class="external-link">Pasta with Roasted Cauliflower and Crispy Capers Recipe</a></h1>
+<h2 id="ingredients" tabindex="-1">Ingredients</h2>
+<ul>
+<li>
+<p>8 ounces dried rigatoni</p>
+</li>
+<li>
+<p>1 medium head cauliflower, cut into small florets</p>
+</li>
+<li>
+<p>3/4 teaspoon kosher salt</p>
+</li>
+<li>
+<p>1/2 teaspoon ground black pepper</p>
+</li>
+<li>
+<p>1/3 cup olive oil, divided</p>
+</li>
+<li>
+<p>3 tablespoons capers, rinsed</p>
+</li>
+<li>
+<p>3 garlic cloves, thinly sliced</p>
+</li>
+<li>
+<p>4 anchovy fillets, roughly chopped</p>
+</li>
+<li>
+<p>Pinch of crushed red pepper</p>
+</li>
+<li>
+<p>1 tablespoon lemon zest</p>
+</li>
+<li>
+<p>1/2 cup roughly chopped fresh flat-leaf parsley, divided</p>
+</li>
+<li>
+<p>1/4 cup grated Pecorino Romano cheese, divided, plus more for serving</p>
+</li>
+</ul>
+<h2 id="directions" tabindex="-1">Directions</h2>
+<ol>
+<li>
+<p>Preheat oven to 450°F. Bring a large pot of salted water to a boil. Cook pasta until package directions for al dente, about 10 minutes; drain and reserve about 1 cup cooking water.</p>
+</li>
+<li>
+<p>Toss cauliflower with salt, black pepper, and half of oil on a large rimmed baking sheet. Arrange cauliflower in a single layer; roast in preheated oven until deeply golden brown, about 25 minutes, tossing halfway through to ensure even browning.</p>
+</li>
+<li>
+<p>When cauliflower is about 5 minutes from being done, heat remaining olive oil in a deep 12-inch skillet over medium-high. Add capers, and cook, spooning hot oil over capers, until crispy, about 3 minutes. Remove capers with a slotted spoon, and set aside on a plate lined with paper towels. Reduce heat to medium; add garlic, anchovies, and red pepper. Cook until garlic is pale golden and anchovies have melted into oil, 1 to 2 minutes.</p>
+</li>
+<li>
+<p>Add pasta, roasted cauliflower, lemon zest, 1/4 cup parsley, and 1/2 cup cooking water to skillet; toss to coat until glossy. Remove from heat, and add 2 tablespoons cheese. Tossing pasta constantly, add additional cooking water as needed for sauce to reach desired consistency.</p>
+</li>
+<li>
+<p>Top pasta with crispy capers, remaining 2 tablespoons cheese, and remaining 1/4 cup parsley. Divide evenly among bowls, and top with additional cheese.</p>
+</li>
+</ol>
 
       
       
@@ -1611,6 +1606,32 @@ in<br>
                   
                         
                         
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#a-href-https-www-foodandwine-com-recipes-pasta-roasted-cauliflower-and-crispy-capers-target-blank-class-external-link-pasta-with-roasted-cauliflower-and-crispy-capers-recipe-a">Pasta with Roasted Cauliflower and Crispy Capers Recipe</a>
+            
+                <ol>
+                    
+                    <li><a href="#ingredients">Ingredients</a>
+            		</li>
+
+                    <li><a href="#directions">Directions</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
+                        
 
                   
 
@@ -1618,7 +1639,7 @@ in<br>
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/recipes/recipes/" data-note-icon="" class="backlink">RECIPES</a>
                                                 </div></div>
                               </div>
                         
