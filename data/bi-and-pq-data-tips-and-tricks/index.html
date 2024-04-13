@@ -743,7 +743,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-13T14:44:03.503Z';
+        const searchIndexDate = '2024-04-13T14:46:39.204Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -755,9 +755,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T14:44:03.503Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T14:46:39.204Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T14:44:03.503Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T14:46:39.204Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1093,7 +1093,7 @@
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/errors-in-pq/">Errors in PQ</a></td>
-<td>04-11-2024</td>
+<td>04-12-2024</td>
 <td><ul><li>Data</li><li>Power_query</li></ul></td>
 </tr>
 <tr>
