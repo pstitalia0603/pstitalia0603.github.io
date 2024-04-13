@@ -15,8 +15,8 @@
 | [[RECIPES/Best-Ever Potato Latkes\|Best-Ever Potato Latkes]]                                                       | 2024-02-20 |
 | [[RECIPES/Nutella Crepes\|Nutella Crepes]]                                                                         | 2023-12-01 |
 | [[RECIPES/Italian Grilled Cheese Sandwich\|Italian Grilled Cheese Sandwich]]                                       | 2016-12-03 |
-| [[RECIPES/Chocolate Waffles\|Chocolate Waffles]]                                                                   | \-         |
 | [[RECIPES/Best Breakfast casserole\|Best Breakfast casserole]]                                                     | \-         |
+| [[RECIPES/Chocolate Waffles\|Chocolate Waffles]]                                                                   | \-         |
 | [[RECIPES/Mini Cinnamon Muffin - Kidstir\|Mini Cinnamon Muffin - Kidstir]]                                         | \-         |
 | [[RECIPES/Mini Quiche - Kidstir\|Mini Quiche - Kidstir]]                                                           | \-         |
 | [[RECIPES/Smoothie Recipe\|Smoothie Recipe]]                                                                       | \-         |
