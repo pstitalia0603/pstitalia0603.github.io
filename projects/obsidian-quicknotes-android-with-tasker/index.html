@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Date Table and Fiscal Year column</title>
+    <title>Obsidian Quicknotes - Android with Tasker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -322,7 +322,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column </a>
                 </div>
             
         </div>
@@ -754,7 +754,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/obsidian-quicknotes-android-with-tasker/">Obsidian Quicknotes - Android with Tasker </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/obsidian-quicknotes-android-with-tasker/">Obsidian Quicknotes - Android with Tasker </a>
                 </div>
             
         </div>
@@ -1464,7 +1464,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">Date Table and Fiscal Year column</h1>
+          <h1 data-note-icon="">Obsidian Quicknotes - Android with Tasker</h1>
         
         <div class="header-meta">
           
@@ -1474,77 +1474,97 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_bi
+                    #Obsidian
                   </a>
                 
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Power_query
+                    #code
                   </a>
                 
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #m-code
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #dax
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Data
+                    #Projects
                   </a>
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-12-03T10:12:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-01 19:45"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-02 9:29:28 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-13 12:42:15 pm"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>FISCAL YEAR M CODE<br>
-<a href="https://www.youtube.com/watch?v=bo-43zg1R8U" target="_blank" class="external-link">https://www.youtube.com/watch?v=bo-43zg1R8U</a></p>
-<p>if [Month] &lt;7 then &quot;FY&quot; &amp;<br>
-Text.End(Number.ToText([Year]-1),2)<br>
-else<br>
-&quot;FY&quot; &amp; Text.End(Number.ToText([Year]),2)</p>
-<p>DAX<br>
-NEW TABLE --&gt;</p>
-<p>DateTable =<br>
-VAR MinYear = YEAR ( MIN ( AF_DASHBOARD[GIFT DATE] ) )<br>
-VAR MaxYear = YEAR ( MAX ( AF_DASHBOARD[GIFT DATE] ) )<br>
-RETURN<br>
-ADDCOLUMNS (<br>
-FILTER (<br>
-CALENDARAUTO( ),<br>
-AND ( YEAR ( [Date] ) &gt;= MinYear, YEAR ( [Date] ) &lt;= MaxYear )<br>
-),<br>
-&quot;Calendar Year&quot;, YEAR ( [Date] ),<br>
-&quot;Month Name&quot;, FORMAT ( [Date], &quot;mmmm&quot; ),<br>
-&quot;Month Number&quot;, MONTH ( [Date] ),<br>
-&quot;Weekday&quot;, FORMAT ( [Date], &quot;dddd&quot; ),<br>
-&quot;Weekday number&quot;, WEEKDAY( [Date] )//,<br>
-//  &quot;Quarter&quot;, &quot;Q&quot; &amp; TRUNC ( ( MONTH ( [Date] ) - 1 ) / 3 ) + 1<br>
-)</p>
-<p>//Column<br>
-FISCAL_YEAR =<br>
-VAR _FiscalMonthStart=7<br>
-RETURN<br>
-IF(<br>
-DateTable[Month Number] &gt;= _FiscalMonthStart,<br>
-DateTable[Calendar Year] + 1,<br>
-DateTable[Calendar Year]<br>
-)</p>
-<p>//Column<br>
-FYMONTH_NUM = IF(MONTH(DateTable[Date])&gt;6, MONTH(DateTable[Date])-6, MONTH(DateTable[Date]) +6)</p>
+      <h1 id="a-href-https-github-com-guy-92-quick-note-target-blank-class-external-link-git-hub-guy-92-quick-note-a-way-to-take-quick-notes-in-obsidian-on-android-a" tabindex="-1"><a href="https://github.com/Guy-92/QuickNote" target="_blank" class="external-link">GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android</a></h1>
+<p><a href="https://github.com/Guy-92/QuickNote#start-of-content" target="_blank" class="external-link">https://github.com/Guy-92/QuickNote#start-of-content</a></p>
+<h2 id="quick-note" tabindex="-1">QuickNote</h2>
+<h3 id="a-way-to-take-quick-notes-in-a-href-https-obsidian-md-target-blank-class-external-link-obsidian-a-on-android" tabindex="-1">A way to take Quick Notes in <a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> on Android</h3>
+<p>This task displays an input dialog to take a note in the app Obsidian.</p>
+<hr>
+<p><a href="https://taskernet.com/shares/?user=AS35m8nSFNRSqPmtuWoUzDvbOkD1v%2FlqgfcQ2ZMUW6BRdBoRrpot%2BuokAci2FnhAYxkZxeZC&amp;id=Project%3AObsidian+QuickNote" target="_blank" class="external-link">Link to project in TaskerNet</a></p>
+<h4 id="features" tabindex="-1">Features</h4>
+<ul>
+<li>Open a Quick Note dialog from a home screen widget, quick tile or notification</li>
+<li>Special characters - configurable characters that do a certain thing.
+<ul>
+<li>Save note
+<ul>
+<li>Saves the note. Must be written at the end of a note.</li>
+</ul>
+</li>
+<li>Save and exit note
+<ul>
+<li>Saves the note and closes the input dialog. Must be written at the end of a note.</li>
+</ul>
+</li>
+<li>Clear note
+<ul>
+<li>Clears all the text in the input dialog. Must be written at the end of the note.</li>
+</ul>
+</li>
+<li>Escape
+<ul>
+<li>Tells the task to ignore a custom character.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="permissions" tabindex="-1">Permissions</h4>
+<ul>
+<li>Manage external storage - To write and read notes in the device</li>
+<li>Accessibly service - To detect tapped notification with Tasker notification (this is optional)</li>
+<li>App usage stats - To detect AutoNotification is installed. (this is optional)</li>
+<li>Calendar - To detect AutoNotification is installed. (this is optional)</li>
+</ul>
+<h4 id="apps" tabindex="-1">Apps</h4>
+<h5 id="required" tabindex="-1">Required</h5>
+<ul>
+<li><a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> - A notes app that is a powerful knowledge base on top of a local folder of plain text Markdown files.
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=md.obsidian" target="_blank" class="external-link">Play Store link</a></li>
+</ul>
+</li>
+<li><a href="https://tasker.joaoapps.com/" target="_blank" class="external-link">Tasker</a> - Tasker is an Android application that performs tasks, based on contexts like application, event, gesture, date, time, location in user defined profiles or home screen widgets. A 7 day free trial can be downloaded <a href="https://tasker.joaoapps.com/download.html" target="_blank" class="external-link">here</a>.
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&amp;hl=en&amp;gl=US" target="_blank" class="external-link">Play Store link</a></li>
+</ul>
+</li>
+</ul>
+<h5 id="optional" tabindex="-1">Optional</h5>
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification" target="_blank" class="external-link">AutoNotification</a> - To add quick tile to trigger the Quick Notes dialog (this can be done with just Tasker too)</li>
+</ul>
+<h4 id="what-is-tasker-net" tabindex="-1">What is TaskerNet</h4>
+<p>TaskerNet is a website where you can store and share Tasker projects and tasks.</p>
+<h4 id="notes" tabindex="-1">Notes</h4>
+<ul>
+<li>Tapping outside of the input dialog when the keyboard is hidden will cancel the note and delete all contents, if you are writing a long note, you can save the note by typing the &quot;SaveNoteCharacter&quot; and pressing ok.</li>
+<li>Locking the screen when taking a note will cancel the note and delete all contents, use the &quot;SaveAndExitNoteCharacter&quot; before locking the screen</li>
+<li>The timestamp format can be configured in the &quot;QuickNote&quot; task, enter the task, tap on the search icon and search &quot;timestamp&quot;, this will lead you to the action where you can edit the timestamp format.</li>
+</ul>
 
       
       
@@ -1775,6 +1795,62 @@ FYMONTH_NUM = IF(MONTH(DateTable[Date])&gt;6, MONTH(DateTable[Date])-6, MONTH(Da
                   
                         
                         
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#a-href-https-github-com-guy-92-quick-note-target-blank-class-external-link-git-hub-guy-92-quick-note-a-way-to-take-quick-notes-in-obsidian-on-android-a">GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android</a>
+            
+                <ol>
+                    
+                    <li><a href="#quick-note">QuickNote</a>
+            
+                <ol>
+                    
+                    <li><a href="#a-way-to-take-quick-notes-in-a-href-https-obsidian-md-target-blank-class-external-link-obsidian-a-on-android">A way to take Quick Notes in Obsidian on Android</a>
+            
+                <ol>
+                    
+                    <li><a href="#features">Features</a>
+            		</li>
+
+                    <li><a href="#permissions">Permissions</a>
+            		</li>
+
+                    <li><a href="#apps">Apps</a>
+            
+                <ol>
+                    
+                    <li><a href="#required">Required</a>
+            		</li>
+
+                    <li><a href="#optional">Optional</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#what-is-tasker-net">What is TaskerNet</a>
+            		</li>
+
+                    <li><a href="#notes">Notes</a>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
+                        
 
                   
 
@@ -1782,8 +1858,9 @@ FYMONTH_NUM = IF(MONTH(DateTable[Date])&gt;6, MONTH(DateTable[Date])-6, MONTH(Da
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/data/bi-and-pq-data-tips-and-tricks/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   

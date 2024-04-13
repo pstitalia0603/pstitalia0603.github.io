@@ -256,6 +256,14 @@
 },
 
 {
+		"title": "Obsidian Quicknotes - Android with Tasker",
+		"date":"Sat Apr 13 2024 16:52:01 GMT+0000 (Coordinated Universal Time)",
+		"url":"/projects/obsidian-quicknotes-android-with-tasker/",
+		"content": "GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android\nhttps://github.com/Guy-92/QuickNote#start-of-content\nQuickNote\nA way to take Quick Notes in Obsidian on Android\nThis task displays an input dialog to take a note in the app Obsidian.\n\nLink to project in TaskerNet\nFeatures\n\nOpen a Quick Note dialog from a home screen widget, quick tile or notification\nSpecial characters - configurable characters that do a certain thing.\n\nSave note\n\nSaves the note. Must be written at the end of a note.\n\nSave and exit note\n\nSaves the note and closes the input dialog. Must be written at the end of a note.\n\nClear note\n\nClears all the text in the input dialog. Must be written at the end of the note.\n\nEscape\n\nTells the task to ignore a custom character.\n\nPermissions\n\nManage external storage - To write and read notes in the device\nAccessibly service - To detect tapped notification with Tasker notification (this is optional)\nApp usage stats - To detect AutoNotification is installed. (this is optional)\nCalendar - To detect AutoNotification is installed. (this is optional)\n\nApps\nRequired\n\nObsidian - A notes app that is a powerful knowledge base on top of a local folder of plain text Markdown files.\n\nPlay Store link\n\nTasker - Tasker is an Android application that performs tasks, based on contexts like application, event, gesture, date, time, location in user defined profiles or home screen widgets. A 7 day free trial can be downloaded here.\n\nPlay Store link\n\nOptional\n\nAutoNotification - To add quick tile to trigger the Quick Notes dialog (this can be done with just Tasker too)\n\nWhat is TaskerNet\nTaskerNet is a website where you can store and share Tasker projects and tasks.\nNotes\n\nTapping outside of the input dialog when the keyboard is hidden will cancel the note and delete all contents, if you are writing a long note, you can save the note by typing the &quot;SaveNoteCharacter&quot; and pressing ok.\nLocking the screen when taking a note will cancel the note and delete all contents, use the &quot;SaveAndExitNoteCharacter&quot; before locking the screen\nThe timestamp format can be configured in the &quot;QuickNote&quot; task, enter the task, tap on the search icon and search &quot;timestamp&quot;, this will lead you to the action where you can edit the timestamp format.",
+		"tags": [ "note","Obsidian","code","Projects"]
+},
+
+{
 		"title": "Workout log DOCUMENTATION",
 		"date":"Sat Apr 13 2024 16:52:01 GMT+0000 (Coordinated Universal Time)",
 		"url":"/projects/workout-log-documentation/",
