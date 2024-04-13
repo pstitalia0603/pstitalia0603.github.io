@@ -22,3 +22,12 @@ EPUB: [La Divina Commedia](https://standardebooks.org/ebooks/dante-alighieri/the
 
 
 - [ ] [Dante PBS](https://www.pbs.org/show/dante-inferno-to-paradise/)📅 2024-04-13
+
+Inferno ![](https://www.dailyinfographic.com/wp-content/uploads/2017/05/dante-2.jpg)
+
+Purgatorio
+![](https://c1.staticflickr.com/3/2693/4044225229_64e1664fbd_b.jpg)
+
+Paradiso
+![](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F76c87929-985f-4c5c-8a04-f8067ab7502c_1943x1536.gif)
+
