@@ -147,57 +147,6 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('ARCHIVE')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">ARCHIVE</span>
-                    </div>
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('ARCHIVE/2023')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">2023</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2023/the-witch-trials-of-j-k-rowling/">The Witch Trials of J.K. Rowling </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('DATA')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -854,7 +803,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-13T14:54:17.937Z';
+        const searchIndexDate = '2024-04-13T14:54:19.106Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -866,9 +815,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T14:54:17.937Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T14:54:19.106Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T14:54:17.937Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T14:54:19.106Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1156,11 +1105,6 @@
 <td>5</td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/archive/2023/the-witch-trials-of-j-k-rowling/">The Witch Trials of J.K. Rowling</a></td>
-<td>2023-10-12</td>
-<td>5</td>
-</tr>
-<tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">The Deep Conflict Between Our Work and Parenting Ideals</a></td>
 <td>2024-03-25</td>
 <td>4.5</td>
@@ -1168,11 +1112,6 @@
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Economist Roland Fryer on Adversity, Race, and Refusing to Conform</a></td>
 <td>2024-02-21</td>
-<td>4.5</td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">About a Boy-The Story of Vladimir Putin</a></td>
-<td>2024-02-12</td>
 <td>4.5</td>
 </tr>
 <tr>
@@ -1444,8 +1383,9 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/archive/2023/the-witch-trials-of-j-k-rowling/" data-note-icon="" class="backlink">The Witch Trials of J.K. Rowling</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   
