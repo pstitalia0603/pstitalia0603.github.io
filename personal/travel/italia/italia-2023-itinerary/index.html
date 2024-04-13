@@ -1188,7 +1188,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-13T17:00:03.927Z';
+        const searchIndexDate = '2024-04-13T17:02:59.160Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1200,9 +1200,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T17:00:03.927Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T17:02:59.160Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T17:00:03.927Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T17:02:59.160Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1461,9 +1461,7 @@
       </header>
       
       
-      <pre><code class="language-mapview">{&quot;name&quot;:&quot;Default&quot;,&quot;mapZoom&quot;:1,&quot;centerLat&quot;:33.137551192346145,&quot;centerLng&quot;:-11.953125000000002,&quot;query&quot;:&quot;tag:#Italia&quot;,&quot;chosenMapSource&quot;:0}
-</code></pre>
-<h1 id="notes" tabindex="-1">Notes</h1>
+      <h1 id="notes" tabindex="-1">Notes</h1>
 <p><a href="https://www.nytimes.com/2023/04/01/world/europe/venice-mose-flooding.html" target="_blank" class="external-link">https://www.nytimes.com/2023/04/01/world/europe/venice-mose-flooding.html</a></p>
 <h1 id="day-1-2023-07-21-t00-00-00-000-04-00" tabindex="-1">Day 1 (2023-07-21T00:00:00.000-04:00)</h1>
 <h3 id="travel-iad-to-cdg" tabindex="-1">Travel IAD TO CDG</h3>
@@ -1473,7 +1471,7 @@
 <ul>
 <li>Dinner</li>
 </ul>
-<h1 id="day-2-2023-07-22-t00-00-00-000-04-00" tabindex="-1">Day 2 (2023-07-22T00:00:00.000-04:00)`</h1>
+<h1 id="day-2-2023-07-22-t00-00-00-000-04-00" tabindex="-1">Day 2 (2023-07-22T00:00:00.000-04:00)</h1>
 <h3 id="travel-arrive-cdg-to-vce" tabindex="-1">Travel / arrive CDG TO VCE</h3>
 <h2 id="paris-charles-de-gaulle-airport" tabindex="-1">Paris Charles de Gaulle Airport</h2>
 <p><a href="geo:49.0068908,2.5710819691019156" target="_blank" class="external-link">charles de gaulle airport</a><br>
@@ -1878,7 +1876,7 @@ Lunch:  Masseria Irene (Zia Lucia's 75th school anniversary)</p>
                 </ol>
             		</li>
 
-                    <li><a href="#day-2-2023-07-22-t00-00-00-000-04-00">Day 2 (2023-07-22T00:00:00.000-04:00)`</a>
+                    <li><a href="#day-2-2023-07-22-t00-00-00-000-04-00">Day 2 (2023-07-22T00:00:00.000-04:00)</a>
             
                 <ol>
                     
