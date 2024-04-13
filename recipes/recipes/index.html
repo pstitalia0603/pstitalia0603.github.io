@@ -510,36 +510,6 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('INBOX')}" @click.stop="isOpen=!isOpen">
-                    <div class="foldername-wrapper align-icon">
-                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
-                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
-                    <span class="foldername">INBOX</span>
-                    </div>
-                    
-                        
-    
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/inbox/la-divina-commedia/">La Divina Commedia </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('LEARNING')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -613,6 +583,110 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PERSONAL')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">PERSONAL</span>
+                    </div>
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PERSONAL/INTERESTS')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">INTERESTS</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/interests/la-divina-commedia/">La Divina Commedia </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PERSONAL/TRAVEL')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">TRAVEL</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PERSONAL/TRAVEL/ITALIA')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">ITALIA</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/personal/travel/italia/italia-2023-itinerary/">Italia 2023 - ITINERARY </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('PROJECTS')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -640,6 +714,17 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/i-digital-garden/">iDigital Garden </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/obsidian-quicknotes-android-with-tasker/">Obsidian Quicknotes - Android with Tasker </a>
                 </div>
             
         </div>
@@ -1103,7 +1188,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-13T16:52:15.600Z';
+        const searchIndexDate = '2024-04-13T16:54:43.931Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1115,9 +1200,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T16:52:15.600Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-13T16:54:43.931Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T16:52:15.600Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-13T16:54:43.931Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1425,11 +1510,11 @@
 <td>2016-12-03</td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/recipes/chocolate-waffles/">Chocolate Waffles</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/best-breakfast-casserole/">Best Breakfast casserole</a></td>
 <td>-</td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/recipes/best-breakfast-casserole/">Best Breakfast casserole</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/chocolate-waffles/">Chocolate Waffles</a></td>
 <td>-</td>
 </tr>
 <tr>
