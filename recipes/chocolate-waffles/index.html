@@ -1188,7 +1188,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-15T16:29:02.284Z';
+        const searchIndexDate = '2024-04-18T16:02:20.318Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1200,9 +1200,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-15T16:29:02.284Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:20.318Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-15T16:29:02.284Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:20.318Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1455,7 +1455,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-05 8:43:10 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-13 10:47:47 am"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-04T08:43:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-13 10:47:47 am"></span></div></div></div>
       
       
       </header>
