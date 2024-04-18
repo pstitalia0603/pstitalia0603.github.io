@@ -1199,7 +1199,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T17:34:41.203Z';
+        const searchIndexDate = '2024-04-18T17:34:45.244Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1211,9 +1211,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T17:34:41.203Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T17:34:45.244Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T17:34:41.203Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T17:34:45.244Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1487,6 +1487,10 @@
 <td>2024-04-05</td>
 </tr>
 <tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/tomato-basil-soup/">Tomato Basil Soup</a></td>
+<td>2024-04-04</td>
+</tr>
+<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/recipes/chocolate-waffles/">Chocolate Waffles</a></td>
 <td>2024-04-04</td>
 </tr>
@@ -1495,23 +1499,11 @@
 <td>2024-04-04</td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/recipes/tomato-basil-soup/">Tomato Basil Soup</a></td>
-<td>2024-04-04</td>
-</tr>
-<tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Smoothie Recipe</a></td>
 <td>2024-04-04</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/recipes/mini-cinnamon-muffin/">Mini Cinnamon Muffin</a></td>
-<td>2024-04-03</td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Lemon-Blueberry Oatmeal Bars</a></td>
-<td>2024-04-03</td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Mini Quiche</a></td>
 <td>2024-04-03</td>
 </tr>
 <tr>
