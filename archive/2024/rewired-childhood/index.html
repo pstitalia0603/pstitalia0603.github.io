@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ARCHIVE ICS TO CSV TO MD</title>
+    <title>Rewired Childhood</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -249,7 +249,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
                 </div>
             
         </div>
@@ -713,7 +713,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/archive-ics-to-csv-to-md/">ARCHIVE ICS TO CSV TO MD </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/archive-ics-to-csv-to-md/">ARCHIVE ICS TO CSV TO MD </a>
                 </div>
             
         </div>
@@ -1478,7 +1478,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">ARCHIVE ICS TO CSV TO MD</h1>
+          <h1 data-note-icon="">Rewired Childhood</h1>
         
         <div class="header-meta">
           
@@ -1488,124 +1488,26 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #Portfolio
+                    #ToListen
                   </a>
                 
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #code
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Projects
-                  </a>
-                
-              
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Python
+                    #podcast
                   </a>
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-01-08T17:31:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-23T09:40:00"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-26T06:07:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-26T06:08:00"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="internal-link is-unresolved" href="/404" target="">Archived calendars to obsidian</a></p>
-<p>Converting historic calendar events to Full Calendar in Obsidian</p>
-<h2 id="1-convert-ics-files-to-csv" tabindex="-1">1. Convert ICS files to CSV</h2>
-<ol>
-<li>Export ICS from from  Calendar app</li>
-<li>Run convert_ICS
-<ol>
-<li>File will export to: C:/Users/XXXXX/OneDrive/xfer/CALENDARS/COMPLETE</li>
-</ol>
-</li>
-</ol>
-<h2 id="2-run-convert-ics-code" tabindex="-1">2. Run convert_ics code</h2>
-<pre><code class="language-python">pip install icalendar
-
-from datetime import datetime
-import csv
-import os
-import sys
-from icalendar import Calendar
-
-current_directory = os.getcwd()
-print(current_directory)
-
-# Path to the .ics file
-FILE_NAME = &quot;COURSES&quot;
-ics_file_path = f'{FILE_NAME}.ics'
-
-# Create a new CSV file
-csv_file_path = f'{FILE_NAME}.csv'
-csv_file = open(csv_file_path, 'w', newline='', encoding='utf-8')
-
-# Write the CSV header
-csv_writer = csv.writer(csv_file)
-csv_writer.writerow(['Subject', 'Start Time', 'End Time', 'Description','Location'])
-
-# Read the iCalendar file
-with open(f'C:/Users/XXXXX/OneDrive/xfer/CALENDARS/COMPLETE/ICS/{FILE_NAME}.ics', 'rb') as ics_file:
-    cal = Calendar.from_ical(ics_file.read())
-    for event in cal.walk('VEVENT'):
-        subject = event['SUMMARY']
-        start_time = event['DTSTART'].dt
-        end_time = event['DTEND'].dt
-        description = event['DESCRIPTION']
-        location = event['LOCATION']
-        csv_writer.writerow([subject, start_time, end_time, description, location])
-
-# Close the CSV file
-csv_file.close()
-</code></pre>
-<h2 id="3-clean-csv-output-power-query" tabindex="-1">3. Clean csv output (power query)</h2>
-<ol>
-<li>Check errors (try --&gt; HasError = &quot;True&quot;) --&gt; automated power query file in /COMPLETE/WORKING_XLSX/</li>
-<li>Replace value for TimeZone Start time and End time (-04:00 --&gt; +00:00) or (-05:00 --&gt; +00:00)
-<ol>
-<li>Duplicate Start Time and End Time</li>
-<li>Split Start Time/End Time into START_DATE/START_TIME (Date Type) and END_DATE/END_TIME (time type)</li>
-</ol>
-</li>
-<li>Export new csv file (for example, PSF2.csv)</li>
-</ol>
-<h2 id="4-convert-csv-to-md-and-gt-run-csv-2-md-code" tabindex="-1">4. Convert CSV to MD --&gt; Run CSV2MD code</h2>
-<pre><code class="language-python"><a class="tag" onclick="toggleTagSearch(this)" data-content="#FIELDS">#FIELDS</a>: Index, Subject, START_DATE, START_TIME, END_DATE, END_TIME, Description, Location
-import pandas as pd
-<a class="tag" onclick="toggleTagSearch(this)" data-content="#from">#from</a> datetime import datetime
-import datetime as dt
-from datetime import datetime,date
-
-CAL_NAME=&quot;DSF&quot;
-tag_name=&quot;\n- '#Nico'&quot;  <a class="tag" onclick="toggleTagSearch(this)" data-content="#How">#How</a> to export multiple tags? another \n?
-
-data = pd.read_csv(f'C:/Users/XXXXX/OneDrive/xfer/CALENDARS/COMPLETE/CSV/{CAL_NAME}2.csv', delimiter=',')
-
-files = data.values.tolist()
-
-for file in files:
-    index = file[0]
-    subject = file[1]
-    start_date = pd.to_datetime(file[2]).strftime(&quot;%Y-%m-%d&quot;)
-    start_time = pd.to_datetime(file[3]).strftime(&quot;%H:%M&quot;)
-    end_date = pd.to_datetime(file[4]).strftime(&quot;%Y-%m-%d&quot;)
-    end_time = pd.to_datetime(file[5]).strftime(&quot;%H:%M&quot;)
-    description = file[6]
-    location = file[7]
-    file_name = f'C:/Users/XXXXX/OneDrive/xfer/CALENDARS/COMPLETE/CSV/{CAL_NAME}/{start_date}_{index}_{CAL_NAME}.md'
-    with open(file_name, 'w', encoding='utf-8') as f:
-        f.write(f'---\ntitle: {subject}\ndate: {start_date}\nstartTime: {start_time}\ncompleted: {end_date}\nendTime: {end_time}\ntags:{tag_name}\n---\nIndex: {index}_{CAL_NAME}\nDescription: {description}\nLocation: {location}\n')
-        f.close()
-print(f'{file_name} saved.')
-</code></pre>
+      <p>Honestly with Bari Weiss: Jonathan Haidt: Smartphones Rewired Childhood. Here's How to Fix It.</p>
+<p>Episode webpage: <a href="https://www.bariweiss.com/" target="_blank" class="external-link">https://www.bariweiss.com/</a></p>
+<p>Media file: <a href="https://pdst.fm/e/mgln.ai/track/verifi.podscribe.com/rss/p/chrt.fm/track/384D27/pscrb.fm/rss/p/traffic.megaphone.fm/RSV3188865547.mp3?updated=1711480150" target="_blank" class="external-link">https://pdst.fm/e/mgln.ai/track/verifi.podscribe.com/rss/p/chrt.fm/track/384D27/pscrb.fm/rss/p/traffic.megaphone.fm/RSV3188865547.mp3?updated=1711480150</a></p>
 
       
       
@@ -1836,32 +1738,6 @@ print(f'{file_name} saved.')
                   
                         
                         
-                              <div class="toc">
-                                    <div class="toc-title-container">
-                                          <div class="toc-title">
-                                                On this page
-                                          </div>
-                                    </div>
-                                    <div class="toc-container">
-                                          <nav class="toc">
-                <ol>
-                    
-                    <li><a href="#1-convert-ics-files-to-csv">1. Convert ICS files to CSV</a>
-            		</li>
-
-                    <li><a href="#2-run-convert-ics-code">2. Run convert_ics code</a>
-            		</li>
-
-                    <li><a href="#3-clean-csv-output-power-query">3. Clean csv output (power query)</a>
-            		</li>
-
-                    <li><a href="#4-convert-csv-to-md-and-gt-run-csv-2-md-code">4. Convert CSV to MD --> Run CSV2MD code</a>
-            		</li>
-                </ol>
-            </nav>
-                                    </div>
-                              </div>
-                        
 
                   
 
@@ -1869,7 +1745,7 @@ print(f'{file_name} saved.')
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/track/podcasts/" data-note-icon="" class="backlink">PODCASTS</a>
                                                 </div></div>
                               </div>
                         
