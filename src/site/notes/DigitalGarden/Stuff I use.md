@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/digital-garden/stuff-i-use/","tags":["DigitalGarden"],"noteIcon":"","created":"2024-02-19T15:12:00","updated":"2024-02-19T15:12:00"}
 ---
 
+[[Home\|Home]]
 ## Life stuff
 - Coros Pace 3
 - [Obsidian](https://obsidian.md/) – Notes and documentation
