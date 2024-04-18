@@ -4,11 +4,11 @@
 
 | File                                                                                     | DATE       | tags                                                                                   |
 | ---------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------- |
+| [[DATA/REMOVE DUPLICATES\|REMOVE DUPLICATES]]                                         | 04-05-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/WEEKNUM function\|WEEKNUM function]]                                           | 04-11-2024 | <ul><li>Excel</li><li>Data</li></ul>                                                   |
 | [[DATA/UPPERCASE AND UNDERSCORE COLUMN NAMES\|UPPERCASE AND UNDERSCORE COLUMN NAMES]] | 04-05-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Transform Column Names in Bulk\|Transform Column Names in Bulk]]               | 04-11-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/REPLACE VALUES, MULTIPLE CRITERIA \|REPLACE VALUES, MULTIPLE CRITERIA ]]       | 04-05-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
-| [[DATA/REMOVE DUPLICATES\|REMOVE DUPLICATES]]                                         | 04-05-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Remove Duplicates PowerBI\|Remove Duplicates PowerBI]]                         | 04-05-2024 | <ul><li>dax</li><li>Power_bi</li><li>Data</li></ul>                                    |
 | [[DATA/Remove Duplicates in Power Query M\|Remove Duplicates in Power Query M]]       | 04-05-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Number rows by group\|Number rows by group]]                                   | 04-05-2024 | <ul><li>Power_query</li><li>Data</li><li>STP</li></ul>                                 |
