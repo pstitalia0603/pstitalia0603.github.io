@@ -21,7 +21,7 @@ https://soundcloud.com/user-380352436/the-book-club-divine-comedy-by-dante-with-
 EPUB: [La Divina Commedia](https://standardebooks.org/ebooks/dante-alighieri/the-divine-comedy/henry-wadsworth-longfellow/download?format=epub)
 
 
-- [ ] [Dante PBS](https://www.pbs.org/show/dante-inferno-to-paradise/)📅 2024-04-13
+- [x] [Dante PBS](https://www.pbs.org/show/dante-inferno-to-paradise/)📅 2024-04-13 ✅ 2024-04-13
 
 Inferno ![](https://www.dailyinfographic.com/wp-content/uploads/2017/05/dante-2.jpg)
 
