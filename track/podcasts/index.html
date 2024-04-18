@@ -1199,7 +1199,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T17:34:45.244Z';
+        const searchIndexDate = '2024-04-18T17:35:14.941Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1211,9 +1211,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T17:34:45.244Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T17:35:14.941Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T17:34:45.244Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T17:35:14.941Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1491,7 +1491,7 @@
 <td>5</td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Honestly-Why the Kids Aren't Alright</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">Why the Kids Aren't Alright</a></td>
 <td>2024-02-27</td>
 <td>5</td>
 </tr>
@@ -1546,12 +1546,12 @@
 <td>4</td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">The Ezra Klein Show-Democrats Have a Better Option Than Biden</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">Democrats Have a Better Option Than Biden</a></td>
 <td>2024-02-21</td>
 <td>3.75</td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">The Money Expert - Do Not Buy A House</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">Do Not Buy A House</a></td>
 <td>2024-02-18</td>
 <td>3.5</td>
 </tr>
