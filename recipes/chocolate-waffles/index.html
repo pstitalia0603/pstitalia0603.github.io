@@ -238,7 +238,18 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/jonathan-haidt-rewired-childhood/">Jonathan Haidt- Rewired Childhood </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/">Nicole Avant on Tragedy, Forgiveness, and Thinking Free </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
                 </div>
             
         </div>
@@ -798,7 +809,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/mini-cinnamon-muffin-kidstir/">Mini Cinnamon Muffin - Kidstir </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/mini-cinnamon-muffin/">Mini Cinnamon Muffin </a>
                 </div>
             
         </div>
@@ -809,7 +820,7 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/monkey-bread-recipe-with-caramel-sauce/">Monkey Bread Recipe With Caramel Sauce </a>
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/monkey-bread-with-caramel-sauce/">Monkey Bread With Caramel Sauce </a>
                 </div>
             
         </div>
@@ -853,6 +864,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/oatmeal-flax-chocolate-chip-cookies/">Oatmeal Flax Chocolate Chip Cookies </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/pasta-with-roasted-cauliflower-capers/">Pasta with Roasted Cauliflower Capers </a>
                 </div>
             
@@ -865,17 +887,6 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/recipes/">RECIPES </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/recipes/soft-and-chewy-oatmeal-flax-chocolate-chip-cookies/">Soft and Chewy Oatmeal Flax Chocolate Chip Cookies </a>
                 </div>
             
         </div>
@@ -1188,7 +1199,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T16:02:29.835Z';
+        const searchIndexDate = '2024-04-18T16:02:44.130Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1200,9 +1211,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:29.835Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:44.130Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:29.835Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:44.130Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1455,7 +1466,7 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-05 8:43:10 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-13 10:47:47 am"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-04T08:43:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-13 10:47:47 am"></span></div></div></div>
       
       
       </header>
