@@ -4,8 +4,9 @@
 
 | File                                                                                                                                                       | DATE       | rating |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------ |
+| [[ARCHIVE/2024/Nicole Avant on Tragedy, Forgiveness, and Thinking Free\|Nicole Avant on Tragedy, Forgiveness, and Thinking Free]]                       | 2024-04-18 | 5      |
 | [[ARCHIVE/2024/How the Working Class Became America’s Second Class\|How the Working Class Became America’s Second Class]]                               | 2024-04-02 | 5      |
-| [[ARCHIVE/2024/Jonathan Haidt- Rewired Childhood\|Jonathan Haidt- Rewired Childhood]]                                                                   | 2024-03-26 | 5      |
+| [[ARCHIVE/2024/Rewired Childhood\|Rewired Childhood]]                                                                                                   | 2024-03-26 | 5      |
 | [[ARCHIVE/2024/Honestly-Why the Kids Aren't Alright\|Honestly-Why the Kids Aren't Alright]]                                                             | 2024-02-27 | 5      |
 | [[ARCHIVE/2024/Covid Failures\|Covid Failures]]                                                                                                         | 2024-01-18 | 5      |
 | [[ARCHIVE/2024/Why Half of American Babies are Born to Unmarried Couples\|Why Half of American Babies are Born to Unmarried Couples]]                   | 2023-12-26 | 5      |
