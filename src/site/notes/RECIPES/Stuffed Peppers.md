@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/stuffed-peppers/","noteIcon":"","created":"2024-02-04T08:54:00","updated":"2024-02-25 15:58"}
+{"dg-publish":true,"permalink":"/recipes/stuffed-peppers/","tags":["Recipes"],"noteIcon":"","created":"2024-02-04T08:54:00","updated":"2024-02-25 15:58"}
 ---
 
+- [ ] stuffed peppers 🛫 2024-04-19 
 # [Stuffed Peppers - Once Upon a Chef](https://www.onceuponachef.com/recipes/stuffed-peppers.html#tabrecipe)
 
 
