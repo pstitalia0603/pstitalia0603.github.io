@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/best-breakfast-casserole/","tags":["Recipes"],"noteIcon":"","created":"2024-04-05 8:43:10 am","updated":"2024-04-13 10:48:05 am"}
+{"dg-publish":true,"permalink":"/recipes/best-breakfast-casserole/","tags":["Recipes"],"noteIcon":"","created":"2024-04-05T08:43:00","updated":"2024-04-13 10:48:05 am"}
 ---
 
 
