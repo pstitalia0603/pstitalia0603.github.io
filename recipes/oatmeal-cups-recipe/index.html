@@ -249,28 +249,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/">Nicole Avant on Tragedy, Forgiveness, and Thinking Free </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/">The Deep Conflict Between Our Work and Parenting Ideals </a>
                 </div>
             
@@ -1210,7 +1188,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T16:02:28.154Z';
+        const searchIndexDate = '2024-04-18T16:02:29.835Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1222,9 +1200,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:28.154Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:29.835Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:28.154Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:29.835Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1480,7 +1458,7 @@
       <h1 id="a-href-https-www-thecookingfoodie-com-recipe-oatmeal-cups-recipe-target-blank-class-external-link-oatmeal-cups-recipe-a" tabindex="-1"><a href="https://www.thecookingfoodie.com/recipe/Oatmeal-Cups-Recipe" target="_blank" class="external-link">Oatmeal Cups Recipe</a></h1>
 <p><a href="https://www.thecookingfoodie.com/recipe/Oatmeal-Cups-Recipe#" target="_blank" class="external-link"><img src="https://www.thecookingfoodie.com/Images/Site/Products/241011_video_d1.jpg" alt="Oatmeal Cups Recipe" title="Oatmeal Cups Recipe"></a></p>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Oatmeal Cups Recipe 📅 2024-04-25</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Oatmeal Cups Recipe 📅 2024-04-16</label></li>
 </ul>
 <p>Healthy oatmeal cups filled with delicious raspberry filling. This treat is healthy, easy to make and super delicious!</p>
 <p>INGREDIENTS FOR YIELDS</p>

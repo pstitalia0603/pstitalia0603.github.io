@@ -249,28 +249,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/">Nicole Avant on Tragedy, Forgiveness, and Thinking Free </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/">The Deep Conflict Between Our Work and Parenting Ideals </a>
                 </div>
             
@@ -1210,7 +1188,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T16:02:28.154Z';
+        const searchIndexDate = '2024-04-18T16:02:29.835Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1222,9 +1200,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:28.154Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:29.835Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:28.154Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:29.835Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1464,12 +1442,6 @@
               
                 
               
-                
-                  <a class="tag" onclick="toggleTagSearch(this)">
-                    #Recipes
-                  </a>
-                
-              
             </div>
           <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-02-04T08:54:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-25 15:58"></span></div></div></div>
       
@@ -1477,10 +1449,7 @@
       </header>
       
       
-      <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> stuffed peppers 🛫 2024-04-19</label></li>
-</ul>
-<h1 id="a-href-https-www-onceuponachef-com-recipes-stuffed-peppers-html-tabrecipe-target-blank-class-external-link-stuffed-peppers-once-upon-a-chef-a" tabindex="-1"><a href="https://www.onceuponachef.com/recipes/stuffed-peppers.html#tabrecipe" target="_blank" class="external-link">Stuffed Peppers - Once Upon a Chef</a></h1>
+      <h1 id="a-href-https-www-onceuponachef-com-recipes-stuffed-peppers-html-tabrecipe-target-blank-class-external-link-stuffed-peppers-once-upon-a-chef-a" tabindex="-1"><a href="https://www.onceuponachef.com/recipes/stuffed-peppers.html#tabrecipe" target="_blank" class="external-link">Stuffed Peppers - Once Upon a Chef</a></h1>
 <p><em>Classic stuffed peppers filled with ground beef, rice, tomato sauce, and cheese make an easy weeknight supper.</em></p>
 <p>Almost every cuisine has a version of stuffed peppers, or hollowed bell peppers filled with meat, tomato sauce, vegetables, rice and cheese. In the US, the dish undeniably retro – in fact, the most popular internet recipe comes from the one and only Betty Crocker. Here, I’ve given the classic recipe a little update by quickly tenderizing the beef before cooking and seasoning it with Southwestern spices, which complement the sweetness of the bell peppers perfectly. That said, the recipe is endlessly versatile; you can change up the meat, spices, grain, or cheese to give the dish a whole new spin. This version goes nicely with cornbread.</p>
 <p>The peppers need to be par-cooked before filling so that they cook through. Many recipes call for boiling the peppers first, but I prefer to roast them – more flavor and less cleanup! The best way is to slice the peppers in half from the stem end down through the base, remove all the seeds and membranes, and then roast the halves until they’re tender-crisp.</p>
@@ -1824,9 +1793,9 @@ Slice the peppers in half from the stem end down through the base.</p>
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/recipes/recipes/" data-note-icon="" class="backlink">RECIPES</a>
-                                                </div><div class="backlink-card"><a href="/track/recipes/" data-note-icon="" class="backlink">RECIPES</a>
-                                                </div></div>
+                                          <div class="backlink-list"><div class="backlink-card">
+                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
+                                                      </div></div>
                               </div>
                         
                   

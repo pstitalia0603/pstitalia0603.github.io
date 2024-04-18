@@ -249,28 +249,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/">Nicole Avant on Tragedy, Forgiveness, and Thinking Free </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/">The Deep Conflict Between Our Work and Parenting Ideals </a>
                 </div>
             
@@ -1210,7 +1188,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T16:02:28.154Z';
+        const searchIndexDate = '2024-04-18T16:02:29.835Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1222,9 +1200,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:28.154Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:29.835Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:28.154Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:29.835Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1774,9 +1752,9 @@ Monkey bread with caramel sauce is the best pull apart bread you can find. Stick
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/recipes/recipes/" data-note-icon="" class="backlink">RECIPES</a>
+                                                </div><div class="backlink-card"><a href="/track/recipes/" data-note-icon="" class="backlink">RECIPES</a>
+                                                </div></div>
                               </div>
                         
                   

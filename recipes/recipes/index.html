@@ -249,28 +249,6 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/">Nicole Avant on Tragedy, Forgiveness, and Thinking Free </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/">The Deep Conflict Between Our Work and Parenting Ideals </a>
                 </div>
             
@@ -1210,7 +1188,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-18T16:02:28.154Z';
+        const searchIndexDate = '2024-04-18T16:02:29.835Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1222,9 +1200,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:28.154Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-18T16:02:29.835Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:28.154Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-18T16:02:29.835Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1492,38 +1470,6 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Curried Lentil, Tomato, and Coconut Soup</a></td>
-<td>2024-04-16</td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Sweet Spinach Muffins with Banana</a></td>
-<td>2024-04-15</td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/recipes/best-breakfast-casserole/">Best Breakfast casserole</a></td>
-<td>2024-04-05</td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/recipes/tomato-basil-soup/">Tomato Basil Soup</a></td>
-<td>2024-04-04</td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/recipes/chocolate-waffles/">Chocolate Waffles</a></td>
-<td>2024-04-04</td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Soft Boiled Eggs</a></td>
-<td>2024-04-04</td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Smoothie Recipe</a></td>
-<td>2024-04-04</td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Mini Cinnamon Muffin</a></td>
-<td>2024-04-03</td>
-</tr>
-<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/recipes/no-bake-chocolate-oatmeal-bars/">No-Bake Chocolate Oatmeal Bars</a></td>
 <td>2024-03-18</td>
 </tr>
@@ -1532,7 +1478,7 @@
 <td>2024-03-10</td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Oatmeal Flax Chocolate Chip Cookies</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/soft-and-chewy-oatmeal-flax-chocolate-chip-cookies/">Soft and Chewy Oatmeal Flax Chocolate Chip Cookies</a></td>
 <td>2024-03-10</td>
 </tr>
 <tr>
@@ -1544,20 +1490,16 @@
 <td>2024-03-01</td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Monkey Bread With Caramel Sauce</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/monkey-bread-recipe-with-caramel-sauce/">Monkey Bread Recipe With Caramel Sauce</a></td>
 <td>2024-02-28</td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Deviled Eggs Recipe</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">BEST Deviled Eggs Recipe</a></td>
 <td>2024-02-23</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Best-Ever Potato Latkes</a></td>
 <td>2024-02-20</td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/recipes/stuffed-peppers/">Stuffed Peppers</a></td>
-<td>2024-02-04</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/recipes/nutella-crepes/">Nutella Crepes</a></td>
@@ -1566,6 +1508,38 @@
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Italian Grilled Cheese Sandwich</a></td>
 <td>2016-12-03</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/best-breakfast-casserole/">Best Breakfast casserole</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/chocolate-waffles/">Chocolate Waffles</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/mini-cinnamon-muffin-kidstir/">Mini Cinnamon Muffin - Kidstir</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Mini Quiche - Kidstir</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Smoothie Recipe</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Soft Boiled Eggs</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">These Lemon-Blueberry Oatmeal Bars</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/tomato-basil-soup/">Tomato Basil Soup</a></td>
+<td>-</td>
 </tr>
 </tbody>
 </table></div>
