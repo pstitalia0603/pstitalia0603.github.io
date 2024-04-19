@@ -12,8 +12,8 @@
 | [[RECIPES/Soft Boiled Eggs\|Soft Boiled Eggs]]                                                 | 2024-04-04 |
 | [[RECIPES/Tomato Basil Soup\|Tomato Basil Soup]]                                               | 2024-04-04 |
 | [[RECIPES/Smoothie Recipe\|Smoothie Recipe]]                                                   | 2024-04-04 |
-| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                         | 2024-04-03 |
 | [[RECIPES/Lemon-Blueberry Oatmeal Bars\|Lemon-Blueberry Oatmeal Bars]]                         | 2024-04-03 |
+| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                         | 2024-04-03 |
 | [[RECIPES/Mini Quiche\|Mini Quiche]]                                                           | 2024-04-03 |
 | [[RECIPES/No-Bake Chocolate Oatmeal Bars\|No-Bake Chocolate Oatmeal Bars]]                     | 2024-03-18 |
 | [[RECIPES/Oatmeal Cups Recipe\|Oatmeal Cups Recipe]]                                           | 2024-03-10 |
