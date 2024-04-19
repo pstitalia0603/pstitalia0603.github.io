@@ -1199,7 +1199,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-19T18:31:57.344Z';
+        const searchIndexDate = '2024-04-19T18:31:58.877Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1211,9 +1211,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T18:31:57.344Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T18:31:58.877Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T18:31:57.344Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T18:31:58.877Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1467,7 +1467,7 @@
       
       
       <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> stuffed peppers 🛫 2024-04-19</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> stuffed peppers 🛫 2024-04-19 ✅ 2024-04-19</label></li>
 </ul>
 <h1 id="a-href-https-www-onceuponachef-com-recipes-stuffed-peppers-html-tabrecipe-target-blank-class-external-link-stuffed-peppers-once-upon-a-chef-a" tabindex="-1"><a href="https://www.onceuponachef.com/recipes/stuffed-peppers.html#tabrecipe" target="_blank" class="external-link">Stuffed Peppers - Once Upon a Chef</a></h1>
 <p><em>Classic stuffed peppers filled with ground beef, rice, tomato sauce, and cheese make an easy weeknight supper.</em></p>
