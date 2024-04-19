@@ -1197,7 +1197,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-19T18:31:53.607Z';
+        const searchIndexDate = '2024-04-19T18:31:55.359Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1209,9 +1209,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T18:31:53.607Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-19T18:31:55.359Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T18:31:53.607Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-19T18:31:55.359Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1508,7 +1508,7 @@
 <li>Microsoft Office 365</li>
 </ul>
 <hr>
-<h3 id="digital-garden-stuff-i-use-stuff-i-use" tabindex="-1"><a class="internal-link" target="" data-note-icon="" href="/digital-garden/stuff-i-use/">Stuff I use</a></h3>
+<h2 id="digital-garden-stuff-i-use-stuff-i-use" tabindex="-1"><a class="internal-link" target="" data-note-icon="" href="/digital-garden/stuff-i-use/">Stuff I use</a></h2>
 <h3 id="education" tabindex="-1">Education</h3>
 <ul>
 <li>M.S. - Information Systems</li>
@@ -1794,10 +1794,13 @@
 
                     <li><a href="#multimedia-design">Multimedia Design</a>
             		</li>
-
-                    <li><a href="#digital-garden-stuff-i-use-stuff-i-use">[[DigitalGarden/Stuff I use|Stuff I use]]</a>
+                </ol>
             		</li>
 
+                    <li><a href="#digital-garden-stuff-i-use-stuff-i-use">[[DigitalGarden/Stuff I use|Stuff I use]]</a>
+            
+                <ol>
+                    
                     <li><a href="#education">Education</a>
             		</li>
 
