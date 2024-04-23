@@ -20,7 +20,7 @@ I'm an **analytical problem-solver** who is:
 - PowerBi
 - Tableau
 - Google Data Studio
-- Python(pandas and NumPy)
+- Python (pandas and NumPy)
 #### Web Development
  - HTML5
  - CSS3
