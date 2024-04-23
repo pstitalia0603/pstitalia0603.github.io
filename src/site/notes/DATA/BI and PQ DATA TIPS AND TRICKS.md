@@ -13,7 +13,7 @@
 | [[DATA/List.Repeat - PowerQuery M\|List.Repeat - PowerQuery M]]                       | 04-03-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
 | [[DATA/UPPERCASE AND UNDERSCORE COLUMN NAMES\|UPPERCASE AND UNDERSCORE COLUMN NAMES]] | 03-01-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/REPLACE VALUES, MULTIPLE CRITERIA \|REPLACE VALUES, MULTIPLE CRITERIA ]]       | 03-01-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
-| [[DATA/Errors in PQ\|Errors in PQ]]                                                   | 04-11-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
+| [[DATA/Errors in PQ\|Errors in PQ]]                                                   | 04-19-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
 | [[DATA/Remove Duplicates PowerBI\|Remove Duplicates PowerBI]]                         | 03-02-2024 | <ul><li>dax</li><li>Power_bi</li><li>Data</li></ul>                                    |
 | [[DATA/REMOVE DUPLICATES\|REMOVE DUPLICATES]]                                         | 03-01-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Remove Duplicates in Power Query M\|Remove Duplicates in Power Query M]]       | 03-02-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
