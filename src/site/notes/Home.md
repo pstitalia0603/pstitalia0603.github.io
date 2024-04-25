@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","resume","gardenEntry","gardenEntry"],"noteIcon":"","created":"2024-02-17T15:34:00","updated":"2024-04-11T15:34:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","resume","gardenEntry"],"noteIcon":"","created":"2024-02-17T15:34:00","updated":"2024-04-11T15:34:00"}
 ---
 
 # Hi, I'm Paula
@@ -35,7 +35,7 @@ I'm an **analytical problem-solver** who is:
 ---
 ### [[DigitalGarden/Stuff I use\|Stuff I use]]
 
-### [[What am I working on now\|What am I working on now]]
+### [[WORK/What am I working on now\|What am I working on now]]
 
 ---
 
