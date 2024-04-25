@@ -1047,6 +1047,17 @@
         
     
                     
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/work/what-am-i-working-on-now/">What am I working on now </a>
+                </div>
+            
+        </div>
+        
+    
+                    
                 </div>
             
         </div>
@@ -1056,15 +1067,6 @@
         <div x-show="isOpen" style="display:none" class="">
             
                 <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home </a>
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/what-am-i-working-on-now/">What am I working on now </a>
                 </div>
             
         </div>
@@ -1236,7 +1238,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-25T17:05:09.776Z';
+        const searchIndexDate = '2024-04-25T17:05:11.493Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1248,9 +1250,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T17:05:09.776Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T17:05:11.493Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T17:05:09.776Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T17:05:11.493Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1548,7 +1550,7 @@
 </ul>
 <hr>
 <h3 id="digital-garden-stuff-i-use-stuff-i-use" tabindex="-1"><a class="internal-link" target="" data-note-icon="" href="/digital-garden/stuff-i-use/">Stuff I use</a></h3>
-<h3 id="work-what-am-i-working-on-now-what-am-i-working-on-now" tabindex="-1"><a class="internal-link is-unresolved" href="/404" target="">What am I working on now</a></h3>
+<h3 id="work-what-am-i-working-on-now-what-am-i-working-on-now" tabindex="-1"><a class="internal-link" target="" data-note-icon="" href="/work/what-am-i-working-on-now/">What am I working on now</a></h3>
 <hr>
 <h3 id="education" tabindex="-1">Education</h3>
 <ul>
@@ -1867,7 +1869,7 @@
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
                                           <div class="backlink-list"><div class="backlink-card"><a href="/digital-garden/stuff-i-use/" data-note-icon="" class="backlink">Stuff I use</a>
-                                                </div><div class="backlink-card"><a href="/what-am-i-working-on-now/" data-note-icon="" class="backlink">What am I working on now</a>
+                                                </div><div class="backlink-card"><a href="/work/what-am-i-working-on-now/" data-note-icon="" class="backlink">What am I working on now</a>
                                                 </div></div>
                               </div>
                         
