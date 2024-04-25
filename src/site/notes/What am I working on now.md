@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/what-am-i-working-on-now/","tags":["Work","Projects","inbox"],"noteIcon":"","created":"2024-04-25T12:25:27","updated":"2024-04-25T12:25:39"}
 ---
 
+[[Home\|Home]]
 # Rapid HTML Email development
 
 - With Markdown / JSON
