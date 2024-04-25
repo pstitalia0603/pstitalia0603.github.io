@@ -1240,7 +1240,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-25T17:05:11.493Z';
+        const searchIndexDate = '2024-04-25T22:56:03.573Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1252,9 +1252,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T17:05:11.493Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T22:56:03.573Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T17:05:11.493Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T22:56:03.573Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1522,8 +1522,7 @@
       <p><a class="internal-link" target="" data-note-icon="" href="/">Home</a></p>
 <h1 id="rapid-html-email-development" tabindex="-1">Rapid HTML Email development</h1>
 <ul>
-<li>
-<p>With Markdown / JSON</p>
+<li>With Markdown / JSON
 <ul>
 <li><a href="https://static-maildown.onrender.com/" target="_blank" class="external-link">https://static-maildown.onrender.com/</a>
 <ul>
@@ -1536,37 +1535,6 @@
 <li><a href="https://jigsaw.maizzle.com/docs/examples/gradients/" target="_blank" class="external-link">https://jigsaw.maizzle.com/docs/examples/gradients/</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li>
-<p>Other</p>
-<ul>
-<li><a href="https://github.com/voidlabs/mosaico" target="_blank" class="external-link">https://github.com/voidlabs/mosaico</a>
-<ul>
-<li><a href="https://mosaico.io/" target="_blank" class="external-link">https://mosaico.io/</a></li>
-</ul>
-</li>
-<li><a href="https://bojler.slicejack.com/" target="_blank" class="external-link">https://bojler.slicejack.com/</a>
-<ul>
-<li><a href="https://github.com/Slicejack/bojler" target="_blank" class="external-link">https://github.com/Slicejack/bojler</a></li>
-</ul>
-</li>
-<li><a href="https://github.com/mysigmail/card" target="_blank" class="external-link">https://github.com/mysigmail/card</a>
-<ul>
-<li><a href="https://card.mysigmail.com/app/" target="_blank" class="external-link">https://card.mysigmail.com/app/</a></li>
-</ul>
-</li>
-<li><a href="https://colorlib.com/wp/responsive-html-email-templates/" target="_blank" class="external-link">https://colorlib.com/wp/responsive-html-email-templates/</a></li>
-<li><a href="https://beefree.io/app/1184281/1170126/2152302/10961912/edit/message" target="_blank" class="external-link">https://beefree.io/app/1184281/1170126/2152302/10961912/edit/message</a></li>
-<li><a href="https://dashboard.unlayer.com/create/irish-traditions" target="_blank" class="external-link">https://dashboard.unlayer.com/create/irish-traditions</a></li>
-<li><a href="https://bootstrapemail.com/" target="_blank" class="external-link">https://bootstrapemail.com/</a></li>
-<li><a href="https://mjml.io/" target="_blank" class="external-link">https://mjml.io/</a></li>
-<li><a href="https://get.foundation/emails/docs/" target="_blank" class="external-link">https://get.foundation/emails/docs/</a></li>
-<li><a href="https://maizzle.com/" target="_blank" class="external-link">https://maizzle.com/</a></li>
-<li><a href="https://mdbootstrap.com/freebies/emails/" target="_blank" class="external-link">https://mdbootstrap.com/freebies/emails/</a></li>
-<li><a href="https://andrewlaurentiu.medium.com/best-responsive-email-templates-builder-2018-9dedb6883783" target="_blank" class="external-link">https://andrewlaurentiu.medium.com/best-responsive-email-templates-builder-2018-9dedb6883783</a></li>
-<li><a href="https://medevel.com/os-free-email-templates/" target="_blank" class="external-link">https://medevel.com/os-free-email-templates/</a></li>
-<li><a href="https://colorlib.com/wp/responsive-html-email-templates/" target="_blank" class="external-link">https://colorlib.com/wp/responsive-html-email-templates/</a></li>
 </ul>
 </li>
 </ul>
