@@ -11,25 +11,6 @@
 	- https://github.com/maizzle/maizzle
 		- https://github.com/maizzle/maizzle-php
 		- https://jigsaw.maizzle.com/docs/examples/gradients/
-	
-- Other
-	- https://github.com/voidlabs/mosaico
-		- https://mosaico.io/
-	- https://bojler.slicejack.com/
-		- https://github.com/Slicejack/bojler
-	- https://github.com/mysigmail/card
-		- https://card.mysigmail.com/app/
-	- https://colorlib.com/wp/responsive-html-email-templates/
-	- https://beefree.io/app/1184281/1170126/2152302/10961912/edit/message
-	- https://dashboard.unlayer.com/create/irish-traditions
-	- https://bootstrapemail.com/
-	- https://mjml.io/
-	- https://get.foundation/emails/docs/
-	- https://maizzle.com/
-	- https://mdbootstrap.com/freebies/emails/
-	- https://andrewlaurentiu.medium.com/best-responsive-email-templates-builder-2018-9dedb6883783
-	- https://medevel.com/os-free-email-templates/
-	- https://colorlib.com/wp/responsive-html-email-templates/
 
 # Graphic Design
 - Brochure in Affinity Designer
@@ -56,3 +37,6 @@
 - https://tailwindcss.com/
 - https://astro.build/
 - https://www.markdownguide.org/cheat-sheet/
+
+
+
