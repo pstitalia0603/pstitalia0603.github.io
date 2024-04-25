@@ -37,6 +37,8 @@ I'm an **analytical problem-solver** who is:
 
 ### [[What am I working on now\|What am I working on now]]
 
+---
+
 
 
 ### Education
