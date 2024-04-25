@@ -1236,7 +1236,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-25T16:39:42.360Z';
+        const searchIndexDate = '2024-04-25T17:05:08.360Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1248,9 +1248,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T16:39:42.360Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T17:05:08.360Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T16:39:42.360Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T17:05:08.360Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1548,7 +1548,7 @@
 </ul>
 <hr>
 <h3 id="digital-garden-stuff-i-use-stuff-i-use" tabindex="-1"><a class="internal-link" target="" data-note-icon="" href="/digital-garden/stuff-i-use/">Stuff I use</a></h3>
-<h3 id="what-am-i-working-on-now-what-am-i-working-on-now" tabindex="-1"><a class="internal-link" target="" data-note-icon="" href="/what-am-i-working-on-now/">What am I working on now</a></h3>
+<h3 id="work-what-am-i-working-on-now-what-am-i-working-on-now" tabindex="-1"><a class="internal-link is-unresolved" href="/404" target="">What am I working on now</a></h3>
 <hr>
 <h3 id="education" tabindex="-1">Education</h3>
 <ul>
@@ -1839,7 +1839,7 @@
                     <li><a href="#digital-garden-stuff-i-use-stuff-i-use">[[DigitalGarden/Stuff I use|Stuff I use]]</a>
             		</li>
 
-                    <li><a href="#what-am-i-working-on-now-what-am-i-working-on-now">[[What am I working on now|What am I working on now]]</a>
+                    <li><a href="#work-what-am-i-working-on-now-what-am-i-working-on-now">[[WORK/What am I working on now|What am I working on now]]</a>
             		</li>
 
                     <li><a href="#education">Education</a>

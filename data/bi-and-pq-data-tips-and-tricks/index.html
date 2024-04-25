@@ -1238,7 +1238,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-25T16:39:42.360Z';
+        const searchIndexDate = '2024-04-25T17:05:08.360Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1250,9 +1250,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T16:39:42.360Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T17:05:08.360Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T16:39:42.360Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T17:05:08.360Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1527,84 +1527,84 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-weeknum-function">WEEKNUM function</a></td>
-<td>04-11-2024</td>
-<td><ul><li>Excel</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/uppercase-and-underscore-column-names/">UPPERCASE AND UNDERSCORE COLUMN NAMES</a></td>
-<td>04-05-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/transform-column-names-in-bulk/">Transform Column Names in Bulk</a></td>
-<td>04-11-2024</td>
+<td>04-10-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/replace-values-multiple-criteria/">REPLACE VALUES, MULTIPLE CRITERIA </a></td>
-<td>04-05-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/remove-duplicates/">REMOVE DUPLICATES</a></td>
-<td>04-05-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/remove-duplicates-power-bi/">Remove Duplicates PowerBI</a></td>
-<td>04-05-2024</td>
-<td><ul><li>dax</li><li>Power_bi</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/remove-duplicates-in-power-query-m/">Remove Duplicates in Power Query M</a></td>
-<td>04-05-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/number-rows-by-group/">Number rows by group</a></td>
-<td>04-05-2024</td>
-<td><ul><li>Power_query</li><li>Data</li><li>STP</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/m-code-mult-col/">M-CODE-mult-col</a></td>
-<td>04-11-2024</td>
+<td>03-01-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/count-non-null-values/">Count Non-null Values</a></td>
+<td>03-01-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/m-mode-multiple-columns/">M Mode - Multiple Columns</a></td>
-<td>04-05-2024</td>
+<td>03-01-2024</td>
 <td><ul><li>Data</li><li>m-code</li><li>dax</li><li>Power_query</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/list-repeat-power-query-m/">List.Repeat - PowerQuery M</a></td>
-<td>04-11-2024</td>
-<td><ul><li>Data</li><li>Power_query</li></ul></td>
-</tr>
-<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/fiscal-month-number-calc/">FISCAL MONTH NUMBER CALC</a></td>
-<td>04-05-2024</td>
+<td>03-01-2024</td>
 <td><ul><li>Power_bi</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/errors-in-pq/">Errors in PQ</a></td>
-<td>04-12-2024</td>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/number-rows-by-group/">Number rows by group</a></td>
+<td>03-01-2024</td>
+<td><ul><li>Power_query</li><li>Data</li><li>STP</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/list-repeat-power-query-m/">List.Repeat - PowerQuery M</a></td>
+<td>04-03-2024</td>
 <td><ul><li>Data</li><li>Power_query</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column</a></td>
-<td>04-11-2024</td>
-<td><ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/uppercase-and-underscore-column-names/">UPPERCASE AND UNDERSCORE COLUMN NAMES</a></td>
+<td>03-01-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/count-non-null-values/">Count Non-null Values</a></td>
-<td>04-11-2024</td>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/replace-values-multiple-criteria/">REPLACE VALUES, MULTIPLE CRITERIA </a></td>
+<td>03-01-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/errors-in-pq/">Errors in PQ</a></td>
+<td>04-19-2024</td>
+<td><ul><li>Data</li><li>Power_query</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/remove-duplicates-power-bi/">Remove Duplicates PowerBI</a></td>
+<td>03-02-2024</td>
+<td><ul><li>dax</li><li>Power_bi</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/remove-duplicates/">REMOVE DUPLICATES</a></td>
+<td>03-01-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/remove-duplicates-in-power-query-m/">Remove Duplicates in Power Query M</a></td>
+<td>03-02-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column</a></td>
+<td>03-01-2024</td>
+<td><ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES</a></td>
 <td>04-11-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-weeknum-function">WEEKNUM function</a></td>
+<td>04-11-2024</td>
+<td><ul><li>Excel</li><li>Data</li></ul></td>
 </tr>
 </tbody>
 </table></div>
