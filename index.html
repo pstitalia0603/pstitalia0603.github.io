@@ -1227,7 +1227,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-24T10:23:07.858Z';
+        const searchIndexDate = '2024-04-25T16:36:50.686Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1239,9 +1239,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-24T10:23:07.858Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-25T16:36:50.686Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-24T10:23:07.858Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-25T16:36:50.686Z', docs}));
             window.docs = docs
             window.index = index;
         }
