@@ -17,7 +17,7 @@
 - Style guide
 
 # Databases / BI tools
-- [[Apache Superset\|Apache Superset]] (https://preset.io/)
+ - [ ] [[Apache Superset\|Apache Superset]] (https://preset.io/) 🛫 2024-04-30
 - https://dbeaver.io/download/
 
 # Obsidian
