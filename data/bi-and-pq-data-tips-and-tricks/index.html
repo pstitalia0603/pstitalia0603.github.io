@@ -1067,6 +1067,15 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/apache-superset/">Apache Superset </a>
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home </a>
                 </div>
             
@@ -1240,7 +1249,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-27T19:39:00.608Z';
+        const searchIndexDate = '2024-04-27T23:25:15.647Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1252,9 +1261,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-27T19:39:00.608Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-27T23:25:15.647Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-27T19:39:00.608Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-27T23:25:15.647Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1529,7 +1538,7 @@
 </thead>
 <tbody class="table-view-tbody">
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Apache Superset</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/apache-superset/">Apache Superset</a></td>
 <td>04-27-2024</td>
 <td><ul><li>Data</li><li>Projects</li><li>inbox</li></ul></td>
 </tr>
