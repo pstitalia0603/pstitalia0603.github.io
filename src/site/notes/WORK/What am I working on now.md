@@ -16,6 +16,13 @@
 - Brochure in Affinity Designer
 - Style guide
 
+# Databases / BI tools
+- [[Apache Superset\|Apache Superset]] (https://preset.io/)
+- https://dbeaver.io/download/
+
+# Obsidian
+- https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd
+
 # CRM Database
 - [CiviCRM](https://civicrm.org/)
 - https://www.odoo.com/app/crm
