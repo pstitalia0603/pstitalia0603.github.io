@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/recipes/oatmeal-flax-chocolate-chip-cookies/","tags":["Recipes"],"noteIcon":"","created":"2024-03-10T19:07:00","updated":"2024-03-10 19:07"}
 ---
 
-- [ ] Oatmeal Flax Cookies 🛫 2024-04-27
+- [ ] Oatmeal Flax Cookies 🛫 2024-05-01
 
 # [Soft and Chewy Oatmeal Flax Chocolate Chip Cookies - Love to be in the Kitchen](https://lovetobeinthekitchen.com/2014/08/12/soft-chewy-oatmeal-flax-chocolate-chip-cookie/)
 
