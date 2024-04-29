@@ -521,6 +521,36 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
+                <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('INBOX')}" @click.stop="isOpen=!isOpen">
+                    <div class="foldername-wrapper align-icon">
+                    <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
+                    <i x-show="!isOpen"  icon-name="chevron-right"></i>
+                    <span class="foldername">INBOX</span>
+                    </div>
+                    
+                        
+    
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/inbox/apache-superset/">Apache Superset </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                </div>
+            
+        </div>
+        
+    
+    
+        <div x-show="isOpen" style="display:none" class="">
+            
                 <div class="folder inner-folder"  x-data="{isOpen: $persist(false).as('LEARNING')}" @click.stop="isOpen=!isOpen">
                     <div class="foldername-wrapper align-icon">
                     <i x-show="isOpen" style="display: none;"  icon-name="chevron-down"></i>
@@ -707,17 +737,6 @@
                     
                         
     
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/apache-superset/">Apache Superset </a>
-                </div>
-            
-        </div>
-        
     
                     
                         
@@ -1251,7 +1270,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-29T22:48:59.633Z';
+        const searchIndexDate = '2024-04-29T22:49:02.620Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1263,9 +1282,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:48:59.633Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:49:02.620Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:48:59.633Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:49:02.620Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1556,7 +1575,7 @@
 </ul>
 <h1 id="databases-bi-tools" tabindex="-1">Databases / BI tools</h1>
 <ul>
-<li><a class="internal-link" target="" data-note-icon="" href="/projects/apache-superset/">Apache Superset</a> (<a href="https://preset.io/" target="_blank" class="external-link">https://preset.io/</a>)
+<li><a class="internal-link is-unresolved" href="/404" target="">Apache Superset</a> (<a href="https://preset.io/" target="_blank" class="external-link">https://preset.io/</a>)
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <a href="https://www.restack.io/docs/superset-knowledge-apache-superset-raspberry-pi" target="_blank" class="external-link">https://www.restack.io/docs/superset-knowledge-apache-superset-raspberry-pi</a> 🛫 2024-04-30</label></li>
 </ul>
@@ -1876,7 +1895,7 @@
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
                                           <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
-                                                </div><div class="backlink-card"><a href="/projects/apache-superset/" data-note-icon="" class="backlink">Apache Superset</a>
+                                                </div><div class="backlink-card"><a href="/inbox/apache-superset/" data-note-icon="" class="backlink">Apache Superset</a>
                                                 </div><div class="backlink-card"><a href="/projects/ohmyposh/" data-note-icon="" class="backlink">ohmyposh</a>
                                                 </div></div>
                               </div>
