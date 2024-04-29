@@ -17,7 +17,7 @@
 - Style guide
 
 # Databases / BI tools
-- [[INBOX/Apache Superset\|Apache Superset]] (https://preset.io/)
+- [[PROJECTS/Apache Superset\|Apache Superset]] (https://preset.io/)
 	- [ ] https://www.restack.io/docs/superset-knowledge-apache-superset-raspberry-pi 🛫 2024-04-30 
 - https://dbeaver.io/download/
 
