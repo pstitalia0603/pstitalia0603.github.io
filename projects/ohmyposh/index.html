@@ -1281,7 +1281,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-29T22:31:20.211Z';
+        const searchIndexDate = '2024-04-29T22:31:21.663Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1293,9 +1293,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:31:20.211Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:31:21.663Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:31:20.211Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:31:21.663Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1554,9 +1554,7 @@
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/work/what-am-i-working-on-now/">What am I working on now</a></p>
-<p><a href="https://ohmyposh.dev/docs/installation/prompt" target="_blank" class="external-link">https://ohmyposh.dev/docs/installation/prompt</a></p>
-<p>nerd fonts: <a href="https://www.nerdfonts.com/font-downloads" target="_blank" class="external-link">https://www.nerdfonts.com/font-downloads</a></p>
+      <p><a href="https://ohmyposh.dev/docs/installation/prompt" target="_blank" class="external-link">https://ohmyposh.dev/docs/installation/prompt</a></p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> ohmyposh 🛫 2024-04-28 ✅ 2024-04-28</label></li>
 </ul>
