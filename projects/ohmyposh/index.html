@@ -1281,7 +1281,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-29T22:31:24.202Z';
+        const searchIndexDate = '2024-04-29T22:43:43.692Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1293,9 +1293,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:31:24.202Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:43:43.692Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:31:24.202Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:43:43.692Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1959,9 +1959,8 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/work/what-am-i-working-on-now/" data-note-icon="" class="backlink">What am I working on now</a>
+                                                </div></div>
                               </div>
                         
                   

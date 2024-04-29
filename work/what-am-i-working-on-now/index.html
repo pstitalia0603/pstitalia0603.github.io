@@ -1281,7 +1281,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-29T22:31:24.202Z';
+        const searchIndexDate = '2024-04-29T22:43:43.692Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1293,9 +1293,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:31:24.202Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:43:43.692Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:31:24.202Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:43:43.692Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1586,12 +1586,16 @@
 </ul>
 <h1 id="databases-bi-tools" tabindex="-1">Databases / BI tools</h1>
 <ul>
-<li><a class="internal-link" target="" data-note-icon="" href="/inbox/apache-superset/">Apache Superset</a> (<a href="https://preset.io/" target="_blank" class="external-link">https://preset.io/</a>)</li>
+<li><a class="internal-link" target="" data-note-icon="" href="/inbox/apache-superset/">Apache Superset</a> (<a href="https://preset.io/" target="_blank" class="external-link">https://preset.io/</a>)
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <a href="https://www.restack.io/docs/superset-knowledge-apache-superset-raspberry-pi" target="_blank" class="external-link">https://www.restack.io/docs/superset-knowledge-apache-superset-raspberry-pi</a> 🛫 2024-04-30</label></li>
+</ul>
+</li>
 <li><a href="https://dbeaver.io/download/" target="_blank" class="external-link">https://dbeaver.io/download/</a></li>
 </ul>
 <h1 id="obsidian" tabindex="-1">Obsidian</h1>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <a href="https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd" target="_blank" class="external-link">https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd</a> 🛫 2024-04-30</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> <a href="https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd" target="_blank" class="external-link">1</a> ; <a href="https://www.linkedin.com/pulse/apache-superset-getting-up-running-soteri-panagou" target="_blank" class="external-link">2</a> 🛫 2024-04-30</label></li>
 </ul>
 <h1 id="crm-database" tabindex="-1">CRM Database</h1>
 <ul>
@@ -1616,11 +1620,12 @@
 <ul>
 <li><a class="internal-link is-unresolved" href="/404" target="">FULLCALENDAR</a></li>
 </ul>
-<h1 id="web" tabindex="-1">Web</h1>
+<h1 id="web-development" tabindex="-1">Web / Development</h1>
 <ul>
 <li><a href="https://tailwindcss.com/" target="_blank" class="external-link">https://tailwindcss.com/</a></li>
 <li><a href="https://astro.build/" target="_blank" class="external-link">https://astro.build/</a></li>
 <li><a href="https://www.markdownguide.org/cheat-sheet/" target="_blank" class="external-link">https://www.markdownguide.org/cheat-sheet/</a></li>
+<li><a class="internal-link" target="" data-note-icon="" href="/projects/ohmyposh/">ohmyposh</a></li>
 </ul>
 
       
@@ -1886,7 +1891,7 @@
                     <li><a href="#dynamic-calendar">Dynamic Calendar</a>
             		</li>
 
-                    <li><a href="#web">Web</a>
+                    <li><a href="#web-development">Web / Development</a>
             		</li>
                 </ol>
             </nav>

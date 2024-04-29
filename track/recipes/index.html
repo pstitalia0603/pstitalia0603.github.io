@@ -1281,7 +1281,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-29T22:31:24.202Z';
+        const searchIndexDate = '2024-04-29T22:43:43.692Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1293,9 +1293,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:31:24.202Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:43:43.692Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:31:24.202Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:43:43.692Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1589,11 +1589,11 @@
 <td>2024-04-03</td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/recipes/mini-cinnamon-muffin/">Mini Cinnamon Muffin</a></td>
+<td><a class="internal-link is-unresolved" href="/404" target="">Mini Quiche</a></td>
 <td>2024-04-03</td>
 </tr>
 <tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Mini Quiche</a></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/mini-cinnamon-muffin/">Mini Cinnamon Muffin</a></td>
 <td>2024-04-03</td>
 </tr>
 <tr>
