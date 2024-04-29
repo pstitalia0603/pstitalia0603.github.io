@@ -2,7 +2,11 @@
 {"dg-publish":true,"permalink":"/projects/ohmyposh/","tags":["Projects","code"],"noteIcon":"","created":"2024-04-28 11:32:43 am","updated":"2024-04-28 11:32:50 am"}
 ---
 
+[[WORK/What am I working on now\|What am I working on now]]
+
 https://ohmyposh.dev/docs/installation/prompt
+
+nerd fonts: https://www.nerdfonts.com/font-downloads
 
 - [x] ohmyposh 🛫 2024-04-28 ✅ 2024-04-28
 
