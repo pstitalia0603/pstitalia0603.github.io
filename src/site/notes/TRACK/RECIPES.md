@@ -21,7 +21,6 @@
 | [[RECIPES/Pasta with Roasted Cauliflower Capers\|Pasta with Roasted Cauliflower Capers]]       | 2024-03-02 |
 | [[RECIPES/Bananakies\|Bananakies]]                                                             | 2024-03-01 |
 | [[RECIPES/Monkey Bread With Caramel Sauce\|Monkey Bread With Caramel Sauce]]                   | 2024-02-28 |
-| [[RECIPES/RECIPES\|RECIPES]]                                                                   | 2024-02-25 |
 | [[RECIPES/Deviled Eggs Recipe\|Deviled Eggs Recipe]]                                           | 2024-02-23 |
 | [[RECIPES/Best-Ever Potato Latkes\|Best-Ever Potato Latkes]]                                   | 2024-02-20 |
 | [[RECIPES/Stuffed Peppers\|Stuffed Peppers]]                                                   | 2024-02-04 |
