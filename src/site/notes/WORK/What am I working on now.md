@@ -18,10 +18,11 @@
 
 # Databases / BI tools
 - [[INBOX/Apache Superset\|Apache Superset]] (https://preset.io/)
+	- [ ] https://www.restack.io/docs/superset-knowledge-apache-superset-raspberry-pi 🛫 2024-04-30 
 - https://dbeaver.io/download/
 
 # Obsidian
-- [ ] https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd 🛫 2024-04-30 
+- [ ] [1](https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd) ; [2](https://www.linkedin.com/pulse/apache-superset-getting-up-running-soteri-panagou) 🛫 2024-04-30 
 
 # CRM Database
 - [CiviCRM](https://civicrm.org/)
@@ -39,10 +40,11 @@
 # Dynamic Calendar	
 - [[PROJECTS/FULLCALENDAR\|FULLCALENDAR]]
 
-# Web
+# Web / Development
 - https://tailwindcss.com/
 - https://astro.build/
 - https://www.markdownguide.org/cheat-sheet/
+- [[PROJECTS/ohmyposh\|ohmyposh]]
 
 
 
