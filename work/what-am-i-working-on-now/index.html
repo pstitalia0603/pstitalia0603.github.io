@@ -1249,7 +1249,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-27T23:25:15.647Z';
+        const searchIndexDate = '2024-04-29T21:13:38.934Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1261,9 +1261,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-27T23:25:15.647Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T21:13:38.934Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-27T23:25:15.647Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T21:13:38.934Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1553,8 +1553,8 @@
 <li>Style guide</li>
 </ul>
 <h1 id="databases-bi-tools" tabindex="-1">Databases / BI tools</h1>
-<ul>
-<li><a class="internal-link" target="" data-note-icon="" href="/apache-superset/">Apache Superset</a> (<a href="https://preset.io/" target="_blank" class="external-link">https://preset.io/</a>)</li>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <a class="internal-link" target="" data-note-icon="" href="/apache-superset/">Apache Superset</a> (<a href="https://preset.io/" target="_blank" class="external-link">https://preset.io/</a>) 🛫 2024-04-30</label></li>
 <li><a href="https://dbeaver.io/download/" target="_blank" class="external-link">https://dbeaver.io/download/</a></li>
 </ul>
 <h1 id="obsidian" tabindex="-1">Obsidian</h1>
