@@ -4,7 +4,7 @@
 
 [[WORK/What am I working on now\|What am I working on now]]
 
-- [ ] Superset - Install in docker image: https://docs.docker.com/engine/install/debian/ 🛫 2024-04-30
+- [ ] Superset - Install in docker image: https://docs.docker.com/engine/install/debian/ 🛫 2024-05-02
 
 https://superset.apache.org/docs/intro
 
