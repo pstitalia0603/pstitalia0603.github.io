@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/work/resources/","tags":["inbox","web_design","code"],"noteIcon":"","created":"2024-04-21T11:13:44","updated":"2024-04-21 11:14:00 am"}
+{"dg-publish":true,"permalink":"/work/resources/","tags":["web_design","code","Work"],"noteIcon":"","created":"2024-04-21T11:13:44","updated":"2024-04-21 11:14:00 am"}
 ---
 
 # Code
