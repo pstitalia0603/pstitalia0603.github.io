@@ -20,8 +20,8 @@
 | [[DATA/Date Table and Fiscal Year column\|Date Table and Fiscal Year column]]                                    | 03-01-2024 | <ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul> |
 | [[DATA/Addressee COUPLE LASTNAMES\|Addressee COUPLE LASTNAMES]]                                                  | 04-11-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/WEEKNUM function\|WEEKNUM function]]                                                                      | 04-11-2024 | <ul><li>Excel</li><li>Data</li></ul>                                                   |
+| [[PROJECTS/Apache Superset\|Apache Superset]]                                                                    | 04-29-2024 | <ul><li>Data</li><li>Projects</li></ul>                                                |
 | [[INBOX/A 6-month Roadmap for Learning Data Analysis\|A 6-month Roadmap for Learning Data Analysis]]             | 04-27-2024 | <ul><li>Data</li><li>Learning</li></ul>                                                |
-| [[INBOX/Apache Superset\|Apache Superset]]                                                                       | 04-29-2024 | <ul><li>Data</li><li>Projects</li><li>inbox</li></ul>                                  |
 | [[ReadItLater Inbox/A 6-month Roadmap for Learning Data Analysis\|A 6-month Roadmap for Learning Data Analysis]] | 04-28-2024 | <ul><li>Learning</li><li>Data</li><li>inbox</li></ul>                                  |
 
 { .block-language-dataview}
