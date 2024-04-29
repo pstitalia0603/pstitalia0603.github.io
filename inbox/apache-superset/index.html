@@ -1281,7 +1281,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-29T21:16:26.675Z';
+        const searchIndexDate = '2024-04-29T22:31:20.211Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1293,9 +1293,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T21:16:26.675Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T22:31:20.211Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T21:16:26.675Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T22:31:20.211Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1562,7 +1562,7 @@
       
       <p><a class="internal-link" target="" data-note-icon="" href="/work/what-am-i-working-on-now/">What am I working on now</a></p>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Superset - Install in docker image: <a href="https://docs.docker.com/engine/install/debian/" target="_blank" class="external-link">https://docs.docker.com/engine/install/debian/</a> 🛫 2024-04-30</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Superset - Install in docker image: <a href="https://docs.docker.com/engine/install/debian/" target="_blank" class="external-link">https://docs.docker.com/engine/install/debian/</a> 🛫 2024-05-02</label></li>
 </ul>
 <p><a href="https://superset.apache.org/docs/intro" target="_blank" class="external-link">https://superset.apache.org/docs/intro</a></p>
 
