@@ -776,6 +776,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/ohmyposh/">ohmyposh </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/projects/workout-log-documentation/">Workout log DOCUMENTATION </a>
                 </div>
             
@@ -1097,15 +1108,6 @@
     
         <div x-show="isOpen" style="display:none" class="">
             
-                <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/apache-superset/">Apache Superset </a>
-                </div>
-            
-        </div>
-        
-    
-    
-        <div x-show="isOpen" style="display:none" class="">
-            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/">Home </a>
                 </div>
             
@@ -1279,7 +1281,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-29T21:13:41.443Z';
+        const searchIndexDate = '2024-04-29T21:16:26.675Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1291,9 +1293,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T21:13:41.443Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-29T21:16:26.675Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T21:13:41.443Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-29T21:16:26.675Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1898,8 +1900,7 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card"><a href="/apache-superset/" data-note-icon="" class="backlink">Apache Superset</a>
-                                                </div><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
                                                 </div><div class="backlink-card"><a href="/inbox/apache-superset/" data-note-icon="" class="backlink">Apache Superset</a>
                                                 </div></div>
                               </div>
