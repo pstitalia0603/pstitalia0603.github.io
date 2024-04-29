@@ -17,15 +17,14 @@
 - Style guide
 
 # Databases / BI tools
- - [ ] [[Apache Superset\|Apache Superset]] (https://preset.io/) 🛫 2024-04-30
+- [[INBOX/Apache Superset\|Apache Superset]] (https://preset.io/)
 - https://dbeaver.io/download/
 
 # Obsidian
-- https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd
+- [ ] https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd 🛫 2024-04-30 
 
 # CRM Database
 - [CiviCRM](https://civicrm.org/)
-- https://www.odoo.com/app/crm
 - https://www.odoo.com/app/crm
 
 # Project Management
@@ -38,7 +37,7 @@
 - online forms
 
 # Dynamic Calendar	
-- http://www.fullcalendar.io 
+- [[PROJECTS/FULLCALENDAR\|FULLCALENDAR]]
 
 # Web
 - https://tailwindcss.com/
