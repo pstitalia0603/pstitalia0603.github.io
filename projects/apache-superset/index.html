@@ -1251,7 +1251,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-30T21:51:04.831Z';
+        const searchIndexDate = '2024-04-30T21:51:09.937Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1263,9 +1263,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T21:51:04.831Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T21:51:09.937Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T21:51:04.831Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T21:51:09.937Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1526,9 +1526,56 @@
       
       <p><a class="internal-link" target="" data-note-icon="" href="/work/what-am-i-working-on-now/">What am I working on now</a></p>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Superset - Install in docker image: <a href="https://docs.docker.com/engine/install/debian/" target="_blank" class="external-link">https://docs.docker.com/engine/install/debian/</a> 🛫 2024-05-02</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Superset - Install in docker image: <a href="https://docs.docker.com/engine/install/debian/" target="_blank" class="external-link">https://docs.docker.com/engine/install/debian/</a> 🛫 2024-05-02 ✅ 2024-04-30<br>
+<a href="https://superset.apache.org/docs/intro" target="_blank" class="external-link">https://superset.apache.org/docs/intro</a></label></li>
 </ul>
-<p><a href="https://superset.apache.org/docs/intro" target="_blank" class="external-link">https://superset.apache.org/docs/intro</a></p>
+<h2 id="remove-old-docker-containers" tabindex="-1">Remove old Docker containers</h2>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes" target="_blank" class="external-link">https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes</a></p>
+<hr>
+<h1 id="install-apache-superset-in-venv" tabindex="-1">Install Apache Superset in venv</h1>
+<p>-- reference: <a href="https://www.youtube.com/watch?v=yE5oFC0VAKo" target="_blank" class="external-link">https://www.youtube.com/watch?v=yE5oFC0VAKo</a></p>
+<ul>
+<li>python -m venv supersetvenv</li>
+<li>. ./supersetvenv/bin/activate</li>
+<li>pip install apache-superset</li>
+<li>pip install --upgrade pip</li>
+<li>export FLASK_APP=superset</li>
+<li>openssl rand -base64 42</li>
+<li>&lt;/copy SECRET_KEY&gt;</li>
+<li>cd/supersetvenv/lib/python3.11/site-packages/superset</li>
+<li>sudo nano <a href="http://config.py" target="_blank" class="external-link">config.py</a></li>
+<li>&lt;/below SECRET_KEY = os.environ.get(&quot;SUPERSET_SECRET_KEY&quot;) or CHANGE_ME SECRET_KEY/&gt; ... add</li>
+<li>SECRET_KEY='&lt;SECRET_ _KEY CREATED ABOVE /&gt;'</li>
+<li>superset db upgrade</li>
+<li>pip install pillow</li>
+<li>superset fab create-admin
+<ul>
+<li>username: admin</li>
+<li>password: admin</li>
+</ul>
+</li>
+<li>superset load_examples</li>
+<li>superset init</li>
+<li>Open UFW Port
+<ul>
+<li>sudo ufw allow 8089</li>
+</ul>
+</li>
+<li>superset run -h 192.168.1.167 -p 8089 --with-threads --reload --debugger</li>
+<li><a href="http://192.168.1.167:8089/login/" target="_blank" class="external-link">http://192.168.1.167:8089/login/</a></li>
+<li>&lt;/ctrl c/&gt;</li>
+<li>to end: deactivate</li>
+<li>To spin up again (cd ~): source supersetvenv/bin/activate</li>
+</ul>
+<h1 id="next-and-gt-connect-to-sqlite-db" tabindex="-1">Next --&gt; connect to sqlite db</h1>
+<p><a href="https://superset.apache.org/docs/databases/installing-database-drivers/" target="_blank" class="external-link">https://superset.apache.org/docs/databases/installing-database-drivers/</a></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> SQLITE --&gt; SUPERSET</label>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> sqlite://path/to/file.db?check_same_thread=false 🛫 2024-05-02</label></li>
+</ul>
+</li>
+</ul>
 
       
       
@@ -1758,6 +1805,29 @@
 
                   
                         
+                        
+                              <div class="toc">
+                                    <div class="toc-title-container">
+                                          <div class="toc-title">
+                                                On this page
+                                          </div>
+                                    </div>
+                                    <div class="toc-container">
+                                          <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#remove-old-docker-containers">Remove old Docker containers</a>
+            		</li>
+
+                    <li><a href="#install-apache-superset-in-venv">Install Apache Superset in venv</a>
+            		</li>
+
+                    <li><a href="#next-and-gt-connect-to-sqlite-db">Next --> connect to sqlite db</a>
+            		</li>
+                </ol>
+            </nav>
+                                    </div>
+                              </div>
                         
 
                   
