@@ -4,7 +4,46 @@
 
 [[WORK/What am I working on now\|What am I working on now]]
 
-- [ ] Superset - Install in docker image: https://docs.docker.com/engine/install/debian/ 🛫 2024-05-02
-
+- [x] Superset - Install in docker image: https://docs.docker.com/engine/install/debian/ 🛫 2024-05-02 ✅ 2024-04-30
 https://superset.apache.org/docs/intro
+
+## Remove old Docker containers
+https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
+
+---
+# Install Apache Superset in venv
+-- reference: https://www.youtube.com/watch?v=yE5oFC0VAKo
+
+- python -m venv supersetvenv
+- . ./supersetvenv/bin/activate
+- pip install apache-superset
+- pip install --upgrade pip
+- export FLASK_APP=superset
+- openssl rand -base64 42
+- </copy SECRET_KEY>
+- cd/supersetvenv/lib/python3.11/site-packages/superset
+- sudo nano config.py
+- </below SECRET_KEY = os.environ.get("SUPERSET_SECRET_KEY") or CHANGE_ME SECRET_KEY/> ... add
+- SECRET_KEY='<SECRET_ _KEY CREATED ABOVE />'
+- superset db upgrade
+- pip install pillow
+- superset fab create-admin
+	- username: admin
+	- password: admin
+- superset load_examples
+- superset init
+- Open UFW Port
+	- sudo ufw allow 8089
+- superset run -h 192.168.1.167 -p 8089 --with-threads --reload --debugger
+- http://192.168.1.167:8089/login/
+- </ctrl c/>
+- to end: deactivate
+- To spin up again (cd ~): source supersetvenv/bin/activate 
+
+# Next --> connect to sqlite db 
+
+https://superset.apache.org/docs/databases/installing-database-drivers/
+
+- [ ] SQLITE --> SUPERSET 
+	- [ ] sqlite://path/to/file.db?check_same_thread=false 🛫 2024-05-02
 
