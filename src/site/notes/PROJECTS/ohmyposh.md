@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/projects/ohmyposh/","tags":["Projects","code"],"noteIcon":"","created":"2024-04-28 11:32:43 am","updated":"2024-04-28 11:32:50 am"}
+{"dg-publish":true,"permalink":"/projects/ohmyposh/","tags":["Projects","code"],"noteIcon":"","created":"2024-04-28 11:32:43 am","updated":"2024-04-28T11:32:50"}
 ---
 
-[[WORK/What am I working on now\|What am I working on now]]
+[[TRACK/CURRENT PROJECTS\|CURRENT PROJECTS]]
 
 https://ohmyposh.dev/docs/installation/prompt
 
