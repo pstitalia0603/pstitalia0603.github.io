@@ -44,6 +44,8 @@
 - https://astro.build/
 - https://www.markdownguide.org/cheat-sheet/
 - [[PROJECTS/ohmyposh\|ohmyposh]]
+- https://tina.io/
+- https://picocss.com/
 
 
 
