@@ -17,12 +17,12 @@
 - Style guide
 
 # Databases / BI tools
-- [[PROJECTS/Apache Superset\|Apache Superset]] (https://preset.io/)
-	- [ ] https://www.restack.io/docs/superset-knowledge-apache-superset-raspberry-pi 🛫 2024-04-30 
+- [[PROJECTS/Apache Superset\|Apache Superset]]  (https://preset.io/)
+	- [ ] [1](https://www.restack.io/docs/superset-knowledge-apache-superset-raspberry-pi) ; [supersetRpi](https://www.linkedin.com/pulse/apache-superset-getting-up-running-soteri-panagou) 🛫 2024-04-30
 - https://dbeaver.io/download/
 
 # Obsidian
-- [ ] [1](https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd) ; [2](https://www.linkedin.com/pulse/apache-superset-getting-up-running-soteri-panagou) 🛫 2024-04-30 
+- [ ] [syncthing](https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd) 🛫 2024-05-03
 
 # CRM Database
 - [CiviCRM](https://civicrm.org/)
@@ -45,6 +45,8 @@
 - https://astro.build/
 - https://www.markdownguide.org/cheat-sheet/
 - [[PROJECTS/ohmyposh\|ohmyposh]]
+
+
 
 
 
