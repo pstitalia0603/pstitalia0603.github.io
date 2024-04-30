@@ -1251,7 +1251,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-30T21:51:09.937Z';
+        const searchIndexDate = '2024-04-30T21:55:26.256Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1263,9 +1263,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T21:51:09.937Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T21:55:26.256Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T21:51:09.937Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T21:55:26.256Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1518,13 +1518,13 @@
                 
               
             </div>
-          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-28 11:32:43 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-28 11:32:50 am"></span></div></div></div>
+          <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-28 11:32:43 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-28T11:32:50"></span></div></div></div>
       
       
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/work/what-am-i-working-on-now/">What am I working on now</a></p>
+      <p><a class="internal-link is-unresolved" href="/404" target="">CURRENT PROJECTS</a></p>
 <p><a href="https://ohmyposh.dev/docs/installation/prompt" target="_blank" class="external-link">https://ohmyposh.dev/docs/installation/prompt</a></p>
 <p>nerd fonts: <a href="https://www.nerdfonts.com/font-downloads" target="_blank" class="external-link">https://www.nerdfonts.com/font-downloads</a></p>
 <ul class="task-list">

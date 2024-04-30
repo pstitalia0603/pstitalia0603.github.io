@@ -1251,7 +1251,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-30T21:51:09.937Z';
+        const searchIndexDate = '2024-04-30T21:55:26.256Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1263,9 +1263,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T21:51:09.937Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T21:55:26.256Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T21:51:09.937Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T21:55:26.256Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1524,7 +1524,7 @@
       </header>
       
       
-      <p><a class="internal-link" target="" data-note-icon="" href="/work/what-am-i-working-on-now/">What am I working on now</a></p>
+      <p><a class="internal-link is-unresolved" href="/404" target="">CURRENT PROJECTS</a></p>
 <ul class="task-list">
 <li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Superset - Install in docker image: <a href="https://docs.docker.com/engine/install/debian/" target="_blank" class="external-link">https://docs.docker.com/engine/install/debian/</a> 🛫 2024-05-02 ✅ 2024-04-30<br>
 <a href="https://superset.apache.org/docs/intro" target="_blank" class="external-link">https://superset.apache.org/docs/intro</a></label></li>
@@ -1533,6 +1533,9 @@
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes" target="_blank" class="external-link">https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes</a></p>
 <hr>
 <h1 id="install-apache-superset-in-venv" tabindex="-1">Install Apache Superset in venv</h1>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> Install apache superset/venv 🛫 2024-04-30 ✅ 2024-04-30</label></li>
+</ul>
 <p>-- reference: <a href="https://www.youtube.com/watch?v=yE5oFC0VAKo" target="_blank" class="external-link">https://www.youtube.com/watch?v=yE5oFC0VAKo</a></p>
 <ul>
 <li>python -m venv supersetvenv</li>
@@ -1570,9 +1573,9 @@
 <h1 id="next-and-gt-connect-to-sqlite-db" tabindex="-1">Next --&gt; connect to sqlite db</h1>
 <p><a href="https://superset.apache.org/docs/databases/installing-database-drivers/" target="_blank" class="external-link">https://superset.apache.org/docs/databases/installing-database-drivers/</a></p>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> SQLITE --&gt; SUPERSET</label>
+<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> SQLITE --&gt; SUPERSET</label>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> sqlite://path/to/file.db?check_same_thread=false 🛫 2024-05-02</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3" disabled="true"><label for="cbx_3"> sqlite://path/to/file.db?check_same_thread=false 🛫 2024-05-02</label></li>
 </ul>
 </li>
 </ul>
