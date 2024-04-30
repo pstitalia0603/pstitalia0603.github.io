@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>What am I working on now</title>
+    <title>CURRENT PROJECTS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>
@@ -1011,6 +1011,17 @@
     
         <div x-show="isOpen" style="display:none" class="filelist">
             
+                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/track/current-projects/">CURRENT PROJECTS </a>
+                </div>
+            
+        </div>
+        
+    
+                    
+                        
+    
+        <div x-show="isOpen" style="display:none" class="filelist">
+            
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/track/podcasts/">PODCASTS </a>
                 </div>
             
@@ -1053,17 +1064,6 @@
         <div x-show="isOpen" style="display:none" class="filelist">
             
                 <div @click.stop class="notelink "><a data-note-icon="" style="text-decoration: none;" class="filename" href="/work/resources/">Resources </a>
-                </div>
-            
-        </div>
-        
-    
-                    
-                        
-    
-        <div x-show="isOpen" style="display:none" class="filelist">
-            
-                <div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration: none;" class="filename" href="/work/what-am-i-working-on-now/">What am I working on now </a>
                 </div>
             
         </div>
@@ -1251,7 +1251,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-30T21:55:26.256Z';
+        const searchIndexDate = '2024-04-30T21:55:28.367Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1263,9 +1263,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T21:55:26.256Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T21:55:28.367Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T21:55:26.256Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T21:55:28.367Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1497,7 +1497,7 @@
     <main class="content cm-s-obsidian ">
       <header>
         
-          <h1 data-note-icon="">What am I working on now</h1>
+          <h1 data-note-icon="">CURRENT PROJECTS</h1>
         
         <div class="header-meta">
           
@@ -1519,7 +1519,7 @@
               
                 
                   <a class="tag" onclick="toggleTagSearch(this)">
-                    #inbox
+                    #tracking
                   </a>
                 
               
@@ -1556,16 +1556,12 @@
 </ul>
 <h1 id="databases-bi-tools" tabindex="-1">Databases / BI tools</h1>
 <ul>
-<li><a class="internal-link" target="" data-note-icon="" href="/projects/apache-superset/">Apache Superset</a>  (<a href="https://preset.io/" target="_blank" class="external-link">https://preset.io/</a>)
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <a href="https://www.restack.io/docs/superset-knowledge-apache-superset-raspberry-pi" target="_blank" class="external-link">1</a> ; <a href="https://www.linkedin.com/pulse/apache-superset-getting-up-running-soteri-panagou" target="_blank" class="external-link">supersetRpi</a> 🛫 2024-04-30</label></li>
-</ul>
-</li>
+<li><a class="internal-link" target="" data-note-icon="" href="/projects/apache-superset/">Apache Superset</a>  (<a href="https://preset.io/" target="_blank" class="external-link">https://preset.io/</a>)</li>
 <li><a href="https://dbeaver.io/download/" target="_blank" class="external-link">https://dbeaver.io/download/</a></li>
 </ul>
 <h1 id="obsidian" tabindex="-1">Obsidian</h1>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> <a href="https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd" target="_blank" class="external-link">syncthing</a> 🛫 2024-05-03</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <a href="https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd" target="_blank" class="external-link">syncthing</a> 🛫 2024-05-03</label></li>
 </ul>
 <h1 id="crm-database" tabindex="-1">CRM Database</h1>
 <ul>
@@ -1875,9 +1871,10 @@
                               
                               <div class="backlinks">
                                     <div class="backlink-title" style="margin: 4px 0 !important;">Pages mentioning this page</div>
-                                          <div class="backlink-list"><div class="backlink-card">
-                                                            <span class="no-backlinks-message">No other pages mentions this page</span>
-                                                      </div></div>
+                                          <div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
+                                                </div><div class="backlink-card"><a href="/projects/apache-superset/" data-note-icon="" class="backlink">Apache Superset</a>
+                                                </div><div class="backlink-card"><a href="/projects/ohmyposh/" data-note-icon="" class="backlink">ohmyposh</a>
+                                                </div></div>
                               </div>
                         
                   
