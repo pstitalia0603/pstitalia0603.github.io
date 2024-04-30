@@ -35,7 +35,7 @@ I'm an **analytical problem-solver** who is:
 ---
 ### [[DigitalGarden/Stuff I use\|Stuff I use]]
 
-### [[WORK/What am I working on now\|What am I working on now]]
+### [[TRACK/CURRENT PROJECTS\|CURRENT PROJECTS]]
 
 ---
 
