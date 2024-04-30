@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/projects/apache-superset/","tags":["Data","Projects"],"noteIcon":"","created":"2024-04-27 3:27:06 pm","updated":"2024-04-27 3:27:53 pm"}
 ---
 
-[[WORK/What am I working on now\|What am I working on now]]
+[[TRACK/CURRENT PROJECTS\|CURRENT PROJECTS]]
 
 - [x] Superset - Install in docker image: https://docs.docker.com/engine/install/debian/ 🛫 2024-05-02 ✅ 2024-04-30
 https://superset.apache.org/docs/intro
@@ -11,7 +11,9 @@ https://superset.apache.org/docs/intro
 https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes
 
 ---
-# Install Apache Superset in venv
+# Install Apache Superset in venv 
+- [x] Install apache superset/venv 🛫 2024-04-30 ✅ 2024-04-30
+
 -- reference: https://www.youtube.com/watch?v=yE5oFC0VAKo
 
 - python -m venv supersetvenv
