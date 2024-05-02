@@ -1251,7 +1251,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-02T21:52:30.936Z';
+        const searchIndexDate = '2024-05-02T21:52:32.823Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1263,9 +1263,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-02T21:52:30.936Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-02T21:52:32.823Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-02T21:52:30.936Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-02T21:52:32.823Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1521,7 +1521,7 @@
       <h1 id="a-href-https-www-thecookingfoodie-com-recipe-oatmeal-cups-recipe-target-blank-class-external-link-oatmeal-cups-recipe-a" tabindex="-1"><a href="https://www.thecookingfoodie.com/recipe/Oatmeal-Cups-Recipe" target="_blank" class="external-link">Oatmeal Cups Recipe</a></h1>
 <p><a href="https://www.thecookingfoodie.com/recipe/Oatmeal-Cups-Recipe#" target="_blank" class="external-link"><img src="https://www.thecookingfoodie.com/Images/Site/Products/241011_video_d1.jpg" alt="Oatmeal Cups Recipe" title="Oatmeal Cups Recipe"></a></p>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Oatmeal Cups Recipe 📅 2024-05-01</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Oatmeal Cups Recipe 📅 2024-05-03</label></li>
 </ul>
 <p>Healthy oatmeal cups filled with delicious raspberry filling. This treat is healthy, easy to make and super delicious!</p>
 <p>INGREDIENTS FOR YIELDS</p>
