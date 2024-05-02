@@ -20,6 +20,7 @@
 | [[ARCHIVE/2024/Can Dean Phillips Pull Off the Impossible Defeat Joe Biden\|Can Dean Phillips Pull Off the Impossible Defeat Joe Biden]]                 | 2024-01-12 | 4      |
 | [[ARCHIVE/2024/Democrats Have a Better Option Than Biden\|Democrats Have a Better Option Than Biden]]                                                   | 2024-02-21 | 3.75   |
 | [[ARCHIVE/2024/Do Not Buy A House\|Do Not Buy A House]]                                                                                                 | 2024-02-18 | 3.5    |
+| [[ARCHIVE/2024/Should the U.S. Shut Its Borders\|Should the U.S. Shut Its Borders]]                                                                     | 2024-04-30 | \-     |
 
 { .block-language-dataview}
 
