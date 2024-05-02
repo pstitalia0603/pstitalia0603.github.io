@@ -7,7 +7,7 @@
 
 [![Oatmeal Cups Recipe](https://www.thecookingfoodie.com/Images/Site/Products/241011_video_d1.jpg "Oatmeal Cups Recipe")](https://www.thecookingfoodie.com/recipe/Oatmeal-Cups-Recipe#)
 
-- [ ] Oatmeal Cups Recipe 📅 2024-05-01
+- [ ] Oatmeal Cups Recipe 📅 2024-05-03
 
 
 
