@@ -1251,7 +1251,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-05-02T21:52:32.823Z';
+        const searchIndexDate = '2024-05-02T21:52:35.570Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1263,9 +1263,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-05-02T21:52:32.823Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-02T21:52:35.570Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-02T21:52:32.823Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-02T21:52:35.570Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1606,11 +1606,6 @@
 <td><a class="internal-link is-unresolved" href="/404" target="">Do Not Buy A House</a></td>
 <td>2024-02-18</td>
 <td>3.5</td>
-</tr>
-<tr>
-<td><a class="internal-link is-unresolved" href="/404" target="">Should the U.S. Shut Its Borders</a></td>
-<td>2024-04-30</td>
-<td>-</td>
 </tr>
 </tbody>
 </table></div>
