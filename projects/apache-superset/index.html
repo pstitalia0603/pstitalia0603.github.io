@@ -1251,7 +1251,7 @@
     async function init() {
         //init offline search index
 
-        const searchIndexDate = '2024-04-30T21:58:21.504Z';
+        const searchIndexDate = '2024-05-02T21:52:27.446Z';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
             let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
@@ -1263,9 +1263,9 @@
             }        
         }
         if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v=2024-04-30T21:58:21.504Z')).json();
+            let docs = await(await fetch('/searchIndex.json?v=2024-05-02T21:52:27.446Z')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-04-30T21:58:21.504Z', docs}));
+            localStorage.setItem("searchIndex", JSON.stringify({date: '2024-05-02T21:52:27.446Z', docs}));
             window.docs = docs
             window.index = index;
         }
@@ -1526,11 +1526,17 @@
       
       <p><a class="internal-link" target="" data-note-icon="" href="/track/current-projects/">CURRENT PROJECTS</a></p>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Superset - Install in docker image: <a href="https://docs.docker.com/engine/install/debian/" target="_blank" class="external-link">https://docs.docker.com/engine/install/debian/</a> 🛫 2024-05-02 ✅ 2024-04-30<br>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Superset - Install in docker image: <a href="https://docs.docker.com/engine/install/debian/" target="_blank" class="external-link">https://docs.docker.com/engine/install/debian/</a> 🛫  ✅ 2024-04-30<br>
 <a href="https://superset.apache.org/docs/intro" target="_blank" class="external-link">https://superset.apache.org/docs/intro</a></label></li>
 </ul>
 <h2 id="remove-old-docker-containers" tabindex="-1">Remove old Docker containers</h2>
 <p><a href="https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes" target="_blank" class="external-link">https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes</a></p>
+<p>LIST:</p>
+<pre><code>sudo docker images -a
+</code></pre>
+<p>REMOVE ALL:</p>
+<pre><code>sudo docker system prune -a
+</code></pre>
 <hr>
 <h1 id="install-apache-superset-in-venv" tabindex="-1">Install Apache Superset in venv</h1>
 <ul class="task-list">
@@ -1548,7 +1554,7 @@
 <li>cd/supersetvenv/lib/python3.11/site-packages/superset</li>
 <li>sudo nano <a href="http://config.py" target="_blank" class="external-link">config.py</a></li>
 <li>&lt;/below SECRET_KEY = os.environ.get(&quot;SUPERSET_SECRET_KEY&quot;) or CHANGE_ME SECRET_KEY/&gt; ... add</li>
-<li>SECRET_KEY='&lt;SECRET_ _KEY CREATED ABOVE /&gt;'</li>
+<li>SECRET_KEY='&lt;/ SECRET_ _KEY CREATED ABOVE /&gt;'</li>
 <li>superset db upgrade</li>
 <li>pip install pillow</li>
 <li>superset fab create-admin
@@ -1568,14 +1574,29 @@
 <li><a href="http://192.168.1.167:8089/login/" target="_blank" class="external-link">http://192.168.1.167:8089/login/</a></li>
 <li>&lt;/ctrl c/&gt;</li>
 <li>to end: deactivate</li>
-<li>To spin up again (cd ~): source supersetvenv/bin/activate</li>
+<li>To spin up again:
+<ul>
+<li>First time only:
+<ul>
+<li>pip install python-dotenv</li>
+<li>Create a &quot;.flaskenv&quot; in your project's root directory<br>
+- sudo nano .flaskenv<br>
+- Enter this--&gt;<br>
+- FLASK_APP=superset</li>
+</ul>
+</li>
+<li>cd ~</li>
+<li>source supersetvenv/bin/activate</li>
+<li>superset run -h 192.168.1.167 -p 8089 --with-threads --reload --debugger</li>
+</ul>
+</li>
 </ul>
 <h1 id="next-and-gt-connect-to-sqlite-db" tabindex="-1">Next --&gt; connect to sqlite db</h1>
 <p><a href="https://superset.apache.org/docs/databases/installing-database-drivers/" target="_blank" class="external-link">https://superset.apache.org/docs/databases/installing-database-drivers/</a></p>
+<ul>
+<li>SQLITE --&gt; SUPERSET
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> SQLITE --&gt; SUPERSET</label>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_3" disabled="true"><label for="cbx_3"> sqlite://path/to/file.db?check_same_thread=false 🛫 2024-05-02</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_2" checked="true" disabled="true"><label for="cbx_2"> sqlite://path/to/file.db?check_same_thread=false 🛫 2024-05-02 ✅ 2024-05-02</label></li>
 </ul>
 </li>
 </ul>
