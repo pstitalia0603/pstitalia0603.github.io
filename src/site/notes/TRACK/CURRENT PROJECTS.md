@@ -11,6 +11,8 @@
 	- https://github.com/maizzle/maizzle
 		- https://github.com/maizzle/maizzle-php
 		- https://jigsaw.maizzle.com/docs/examples/gradients/
+	- https://github.com/voidlabs/mosaico
+	- https://mosaico.io/
 
 # Graphic Design
 - Brochure in Affinity Designer
@@ -21,7 +23,7 @@
 - https://dbeaver.io/download/
 
 # Obsidian
-- [ ] [syncthing](https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd) 🛫 2024-05-03
+- [x] [syncthing](https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd) 🛫 2024-05-04 ✅ 2024-05-04
 
 # CRM Database
 - [CiviCRM](https://civicrm.org/)
