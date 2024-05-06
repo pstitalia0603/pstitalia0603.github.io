@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Syncthing on Raspberry Pi</title>
+<title>30 Useful Concepts (Spring 2024)</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -221,7 +221,7 @@ CTRL + K
 <span class="foldername">INBOX</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/inbox/30-useful-concepts-spring-2024/">30 Useful Concepts (Spring 2024) </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/inbox/30-useful-concepts-spring-2024/">30 Useful Concepts (Spring 2024) </a>
 </div>
 </div>
 </div>
@@ -409,7 +409,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/linux/syncthing-on-raspberry-pi/">Syncthing on Raspberry Pi </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/linux/syncthing-on-raspberry-pi/">Syncthing on Raspberry Pi </a>
 </div>
 </div>
 </div>
@@ -536,213 +536,165 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Syncthing on Raspberry Pi</h1>
+<h1 data-note-icon="">30 Useful Concepts (Spring 2024)</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Obsidian
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#linux
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#syncthing
+#ToRead
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-04T14:49:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-04 14:50"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-05-06T07:14:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-05-06 7:14:52 am"></span></div></div></div>
 </header>
-<h1 id="synchronizing-files-on-your-raspberry-pi-with-syncthing" tabindex="-1">Synchronizing Files on your Raspberry Pi with Syncthing</h1>
-<p><a href="https://syncthing.net/downloads/" target="_blank" class="external-link">Clients for Syncthing</a> are available for each of these operating systems that make it easy to use.</p>
-<h2 id="installing-syncthing-to-your-raspberry-pi" tabindex="-1">Installing Syncthing to Your Raspberry Pi</h2>
-<p>In this section, you will learn how to easily install the Syncthing software to your Raspberry Pi using straightforward steps.</p>
-<p>To install the software, we will need to add the project’s PGP keys and add its package repository as a potential source.</p>
-<p><strong>1.</strong> Before installing the file synchronization software to our Pi, we should first update the system.</p>
-<p>We can update our Raspberry Pi by running the following two commands.</p>
-<pre><code class="language-bash">sudo apt update
-sudo apt full-upgrade
-</code></pre>
-<p><strong>2.</strong> Next, we need to make sure that we have the <code>apt-transport-https</code> package installed.</p>
-<p>This package allows the package manager to handle sources that operate over the HTTPS protocol. By default, this is not supported.</p>
-<p>Typically this is provided with most operating systems these days, however, trimmed back ones such as Raspberry Pi OS Lite might have it removed.</p>
-<p>We can install the required package by running the command below.</p>
-<pre><code class="language-bash">sudo apt install apt-transport-https
-</code></pre>
-<p><strong>3.</strong> Finally, we can store the Syncthing GPG keys in our keyrings directory.</p>
-<p>These keys are designed to ensure that the packages we are installing have been correctly signed and aren’t coming from an unexpected source.</p>
-<p>Download and save the keys by using the following command on your Raspberry Pi.</p>
-<pre><code class="language-bash">curl -s https://syncthing.net/release-key.txt | gpg --dearmor | sudo tee /usr/share/keyrings/syncthing-archive-keyring.gpg &gt;/dev/null
-</code></pre>
-<p><strong>4.</strong> With the key added, we can now add the repository itself.</p>
-<p>For this Raspberry Pi project, we will be utilizing the stable branch of the Syncthing software.</p>
-<p>Add the repository to our sources list by using the command below.</p>
-<pre><code class="language-bash">echo &quot;deb [signed-by=/usr/share/keyrings/syncthing-archive-keyring.gpg] https://apt.syncthing.net/ syncthing stable&quot; | sudo tee /etc/apt/sources.list.d/syncthing.list
-</code></pre>
-<p><strong>5.</strong> Before we will install Syncthing from the repository, we need to update the package list.</p>
-<p>We need to update the list so that the package manager reads from our newly added source.</p>
-<p>Refresh the package list by running the following command on your device.</p>
-<pre><code class="language-bash">sudo apt update
-</code></pre>
-<p><strong>6.</strong> Finally, let us install the Syncthing software to our Raspberry Pi.</p>
-<p>With the package repository now added, all we need to do to install the software is run the following command.</p>
-<pre><code class="language-bash">sudo apt install syncthing
-</code></pre>
-<h2 id="allowing-outside-access-to-your-syncthing-web-interface" tabindex="-1">Allowing Outside Access to your Syncthing Web Interface</h2>
-<p>By default, we won’t be able to access the Syncthing web interface without being physically on the device.</p>
-<p>As this would make it a frustrating experience for those <a href="https://pimylifeup.com/headless-raspberry-pi-setup/" target="_blank" class="external-link">running a headless Raspberry Pi</a>, we can modify the configuration to allow outside access.</p>
-<p><strong>1.</strong> Our first task is to get the <a href="https://pimylifeup.com/raspberry-pi-ip-address/" target="_blank" class="external-link">current local IP address</a> assigned to our Raspberry Pi.</p>
-<p>Please note that you should have your Raspberry Pi set up with a static IP address before completing this section.</p>
-<p>You can retrieve the local IP of your Pi by using the following command.</p>
-<pre><code class="language-bash">hostname -I
-</code></pre>
-<p><strong>2.</strong> Before we continue any further, we will need to run Syncthing once to generate config files.</p>
-<p>For this guide, we will just be running Syncthing under the current user.</p>
-<pre><code class="language-bash">syncthing
-</code></pre>
-<p>After the initial run, kill the application by pressing CTRL + C.</p>
-<p><strong>3.</strong> After the first run, Syncthing will create all the configuration files we need.</p>
-<p>This configuration file will only work as long as we run the Syncthing software with our <code>pi</code> user.</p>
-<p>Begin editing the required config file using the <a href="https://pimylifeup.com/nano-text-editor/" target="_blank" class="external-link">nano text editor</a> by using the command below.</p>
-<h2 id="important-to-find-config-file" tabindex="-1">IMPORTANT TO FIND CONFIG FILE:</h2>
-<p><strong>find configuration file: syncthing -paths</strong></p>
-<pre><code class="language-bash">nano ~/.config/syncthing/config.xml
-</code></pre>
-<p><strong>4.</strong> Within this file, you need to find the following line.</p>
-<p>To make it easier to find this line, you can use the CTRL + W shortcut to search.</p>
-<pre><code>&lt;address&gt;127.0.0.1:8384&lt;/address&gt;
-</code></pre>
-<p>We will need to replace the local IP defined on this line (<code>127.0.0.1</code>) with our Pi’s local IP address.</p>
-<p>For example, using our Pi’s IP, this line would end up turning into the following.</p>
-<pre><code>&lt;address&gt;192.168.0.193:8384&lt;/address&gt;
-</code></pre>
-<p>Using the local IP address, we are restricting access to the web interface only to users on the same local network.</p>
-<p>Alternatively, if you want to allow access to any address, use the IP “<code>0.0.0.0</code>“.</p>
-<p><strong>5.</strong> Once you have changed the IP, save the file by pressing CTRL + X, followed by Y, then ENTER.</p>
-<h2 id="setting-up-syncthing-as-a-service-on-the-raspberry-pi" tabindex="-1">Setting up Syncthing as a Service on the Raspberry Pi</h2>
-<p>With Syncthing’s web interface now accessible outside of the Raspberry Pi, we need to do one last task.</p>
-<p>That task is to create and enable a service for the software. The service will allow Syncthing to start at boot and let it to be easily stopped and started.</p>
-<p><strong>1.</strong> We need to make use of nano again to create the file for our service.</p>
-<p>The service that we will be putting together is from the <a href="https://github.com/syncthing/syncthing" target="_blank" class="external-link">official GitHub for Syncthing</a>.</p>
-<p>Run the following command to begin writing the file within the “<code>/lib/systemd/system</code>” directory.</p>
-<pre><code class="language-bash">sudo nano /lib/systemd/system/syncthing.service
-</code></pre>
-<p><strong>2.</strong> Within this file, enter the following lines.</p>
-<p>While entering these lines ensure that you replace “<code>pi</code>” with the name of your user.</p>
-<pre><code class="language-systemd">[Unit]
-Description=Syncthing - Open Source Continuous File Synchronization
-Documentation=man:syncthing(1)
-After=network.target
-
-[Service]
-User=pi
-ExecStart=/usr/bin/syncthing -no-browser -no-restart -logflags=0
-Restart=on-failure
-RestartSec=5
-SuccessExitStatus=3 4
-RestartForceExitStatus=3 4
-
-# Hardening
-ProtectSystem=full
-PrivateTmp=true
-SystemCallArchitectures=native
-MemoryDenyWriteExecute=true
-NoNewPrivileges=true
-
-[Install]
-WantedBy=multi-user.target
-</code></pre>
-<p>These lines dictate how the operating system will handle Syncthing on our Raspberry Pi.</p>
-<p><strong>3.</strong> With all the lines entered, save the file by pressing CTRL + X, then Y, followed by the ENTER key.</p>
-<p><strong>4.</strong> With our service created, we can now enable it to start at boot.</p>
-<p>All you need to do is run the following command.</p>
-<pre><code class="language-bash">sudo systemctl enable syncthing
-</code></pre>
-<p><strong>5.</strong> Next, start the service so that we can begin accessing the Syncthing web interface.</p>
-<p>To start the service, we need to use the <code>systemctl</code> command again.</p>
-<pre><code class="language-bash">sudo systemctl start syncthing
-</code></pre>
-<p><strong>6.</strong> We should verify that our Syncthing service started on our Raspberry Pi.</p>
-<p>We can verify this by using the command below.</p>
-<pre><code class="language-bash">sudo systemctl status syncthing
-</code></pre>
-<p>If the service has started correctly and is running, you should see the following displayed within the message.</p>
-<pre><code>Active: active (running)
-</code></pre>
-<h2 id="using-your-raspberry-pi-s-syncthing-web-interface" tabindex="-1">Using your Raspberry Pi’s Syncthing Web Interface</h2>
-<p>At this point, you should now have the Syncthing software up and running on your Raspberry Pi.</p>
-<p>We can finally move on to configuring the software and adding a device to synchronize files with. To make this easier to follow, we will split this into smaller sections.</p>
-<p>The web interface makes the process of setting up and connecting to devices very straightforward process.</p>
-<h3 id="connecting-to-the-syncthing-web-interface" tabindex="-1">Connecting to the Syncthing Web Interface</h3>
-<p>Before you can even use the web interface, you will need to first load it up in your <a href="https://pimylifeup.com/category/guides/browsers/" target="_blank" class="external-link">favorite web browser</a>.</p>
-<p><strong>1.</strong> To access the web interface, you will need to know the Raspberry Pi’s IP address.</p>
-<p>With the IP in hand, you can go to the following web address in a web browser of your choice.</p>
-<pre><code>http://[PIIPADDRESS]:8384
-</code></pre>
-<p>It’s essential that whatever you type in that the port number (<code>8384</code>) remains at the end as this is where the Syncthing software listens.</p>
-<p><strong>2.</strong> Upon going to the web address, you will be introduced to the Syncthing web interface.</p>
-<p>Please note that you will be required to login before seeing the following screen once you set up a username and password.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Initial-Website-With-Danger.jpg" alt="Raspberry Pi Syncthing Initial Website With Danger"></p>
-<h3 id="securing-the-syncthing-interface" tabindex="-1">Securing the Syncthing Interface</h3>
-<p>By default, Syncthing comes with no username or password defined. What this means is that any user can access the interface and adjust your settings.</p>
-<p>To stop users from being able to do any unwanted damage, you can define login details.</p>
-<p><strong>1.</strong> If you haven’t set the username and password before, you will see a message warning you of the dangers.</p>
-<p>To get to the settings page quickly, we can click the “<code>Settings</code>” button on this warning.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Changing-Password-in-Settings-Option-A.jpg" alt="Raspberry Pi Syncthing Changing Password in Settings Option A"></p>
-<p>If this message isn’t displaying for you, you can also find the settings page by clicking the “<code>Actions</code>” (<strong>1.</strong>) dropdown box in the top right corner and selecting “<code>Settings</code>” (<strong>2.</strong>).</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Changing-Password-in-Settings-Option-B.jpg" alt="Changing Password in Settings Option B"></p>
-<p><strong>2.</strong> Within the popup settings page, you will need to change to the “<code>GUI</code>” tab.</p>
-<p>You can change to this tab by clicking “<code>GUI</code>” in the bar at the top of the popup.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Setting-Page-Goto-GUI.jpg" alt="Setting Page Goto GUI"></p>
-<p><strong>3.</strong> On this page, you will need to enter both a username (<strong>1.</strong>) and a password (<strong>2.</strong>).</p>
-<p>Make sure you set a secure password that is not easily guessable. Try and use a combination of letters, numbers, and symbols.</p>
-<p>Once you have entered both of these, you can save your changes by clicking the “<code>Save</code>” button (<strong>3.</strong>).</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Setting-a-Username-and-Password.jpg" alt="Raspberry Pi Syncthing Setting a Username and Password"></p>
-<p><strong>4.</strong> Upon saving your new password, you will be kicked out of the web interface.</p>
-<p>Every time you want to use Syncthing’s interface, you will need to enter your new login details.</p>
-<h3 id="retrieving-your-devices-syncthing-id" tabindex="-1">Retrieving your Devices Syncthing ID</h3>
-<p>Syncthing works by generating a unique ID for every single device. To synchronize data between devices, each one must have the other device’s ID added.</p>
-<p>Finding the ID of your Raspberry Pi Syncthing setup is a straightforward process and can be found within the web interface.</p>
-<p><strong>1.</strong> Back on the web interface’s main page, click the “<code>Actions</code>” toggle (<strong>1.</strong>) in the top right corner of the screen.</p>
-<p>In the dropdown box, click the “<code>Show ID</code>” option (<strong>2.</strong>) to bring up the dialog box we are after.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Actions-Find-Show-ID.jpg" alt="Raspberry Pi Syncthing Actions Find Show ID"></p>
-<p><strong>2.</strong> On this page, you will see the identification string (<strong>1.</strong>) and the matching QR code for the ID (<strong>2.</strong>).</p>
-<p>Then identification string should be 50-56 characters long and contain numbers, letters, and hyphens. The hyphens are ignored by the system but are there to make the ID easier to read.</p>
-<p>You will need to add your Raspberry Pi’s ID to the other devices you will be connecting to. Likewise, you will also need to add their ID.</p>
-<p>The ID works as part of Syncthing’s method for connecting multiple devices to the same pool.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Device-Identification.jpg" alt="Raspberry Pi Syncthing Device Identification"></p>
-<h3 id="adding-a-device-to-your-raspberry-pi-s-syncthing-pool" tabindex="-1">Adding a Device to your Raspberry Pi’s Syncthing Pool</h3>
-<p>Now that you know how to retrieve your device’s ID let us now show you how to add another device’s ID.</p>
-<p>Remember, whatever device you are adding must also add your Raspberry Pi’s ID. Otherwise, the devices will not be able to connect.</p>
-<p><strong>1.</strong> On the Syncthing interface, you need to click the “<code>Add Remote Device</code>” button located at the bottom right side.</p>
-<p>Clicking this button will take us to the dialog that will allow us to add a device to our Syncthing pool.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Adding-a-Remote-Device-Step.jpg" alt="Raspberry Pi Syncthing Adding a Remote Device Step"></p>
-<p><strong>2.</strong> In this dialog, you can add the device ID you want to your pool.</p>
-<p>In the top textbox (<strong>1.</strong>), enter the ID for the device you want to connect to. As the ID is relatively long, it will likely be easier to copy and paste the ID over.</p>
-<p>Once done, you can click the “<code>Save</code>” button (<strong>2.</strong>) to add the device and begin the connection process.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Adding-a-Remote-Device-Options.jpg" alt="Adding a Remote Device Options Page"></p>
-<p><strong>3.</strong> Once both Syncthing servers have each other’s IDs added, you should see that you’re successfully connected.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Remote-Device-Successfully-Connected.jpg" alt="Raspberry Pi Syncthing Remote Device Successfully Connected"></p>
-<h3 id="synchronizing-a-folder-with-your-connected-devices" tabindex="-1">Synchronizing a Folder with your Connected Devices</h3>
-<p>With a device now connected to our Raspberry Pi Syncthing, we can try sharing a folder with the device.</p>
-<p>For this section, we are just going to use the default folder. In this case, the folder is located at “<code>/home/pi/sync</code>” on our Raspberry Pi.</p>
-<p><strong>1.</strong> To begin editing an existing folder’s share settings, click the “<code>Edit</code>” button underneath that folder.</p>
-<p>This button will bring up the settings dialog, for that folder and will allow us to adjust who it is shared with.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Edit-Existing-Folders-Settings.jpg" alt="Raspberry Pi Syncthing Edit Existing Folders Settings"></p>
-<p><strong>2.</strong> Within the file settings dialog we will need to change to the sharing tab.</p>
-<p>You can change to this tab by clicking the “<code>Sharing</code>” tab.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Edit-Folder-Change-to-Sharing-Tab.jpg" alt="Change to Sharing Tab"></p>
-<p><strong>3.</strong> Using this dialog, you can select the devices you want to share the folder with (<strong>1.</strong>).</p>
-<p>Once you have the devices you want to be synchronized with selected, click the “<code>Save</code>” button (<strong>2.</strong>).</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Share-Folder-with-Connected-Device.jpg" alt="Share Folder with Connected Device"></p>
-<p>Please note that after you share a folder with another device, you will have to accept it on that device before the synchronization will begin.</p>
-<p><strong>4.</strong> You should now see that your folder has now begun synchronizing.</p>
-<p>Once it has finished synchronizing, you should see both the folder and the device marked as “Up to date”.</p>
-<p><img src="https://pimylifeup.com/wp-content/uploads/2021/01/Raspberry-Pi-Syncthing-Successfully-Connected-and-Synchronizing.jpg" alt="Raspberry Pi Syncthing Successfully Connected and Synchronizing"></p>
-<h1 id="reference" tabindex="-1">Reference</h1>
-<ul>
-<li><a href="https://apt.syncthing.net/" target="_blank" class="external-link">Syncthing</a></li>
-<li><a href="https://pimylifeup.com/raspberry-pi-syncthing/" target="_blank" class="external-link">https://pimylifeup.com/raspberry-pi-syncthing/</a></li>
-<li><a href="https://www.linuxfordevices.com/tutorials/ubuntu/syncthing-install-and-setup" target="_blank" class="external-link">https://www.linuxfordevices.com/tutorials/ubuntu/syncthing-install-and-setup</a></li>
-</ul>
+<h1 id="a-href-https-open-substack-com-pub-gurwinder-p-30-useful-concepts-spring-2024-utm-source-share-and-amp-utm-medium-android-and-amp-r-9yuk2-target-blank-class-external-link-30-useful-concepts-spring-2024-a" tabindex="-1"><a href="https://open.substack.com/pub/gurwinder/p/30-useful-concepts-spring-2024?utm_source=share&amp;utm_medium=android&amp;r=9yuk2" target="_blank" class="external-link">30 Useful Concepts (Spring 2024)</a></h1>
+<p>It’s that time again; a summary of interesting and useful concepts to spur your curiosity. Click the titles for more information.</p>
+<p>1. <a href="https://www.honest-broker.com/p/the-state-of-the-culture-2024" target="_blank" class="external-link">Dopamine Culture</a></p>
+<blockquote>
+<p><em>“Every kind of organized distraction tends to become progressively more and more imbecile.” — Aldous Huxley</em></p>
+</blockquote>
+<p>The delay between desire &amp; gratification is shrinking. Pleasure is increasingly more instant &amp; effortless. Everything is becoming a drug. What will it do to us?</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3fa6f337-7d2c-4a37-97e9-38f29f12b017_1490x860.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3fa6f337-7d2c-4a37-97e9-38f29f12b017_1490x860.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3fa6f337-7d2c-4a37-97e9-38f29f12b017_1490x860.jpeg</a>)</p>
+<p>2. <a href="https://www.simplypsychology.org/false-consensus-effect.html" target="_blank" class="external-link">False Consensus Effect</a></p>
+<blockquote>
+<p><em>“Everyone driving slower than you is an idiot and everyone driving faster than you is a maniac.” — George Carlin</em></p>
+</blockquote>
+<p>Our model of the world assumes people are like us. We don’t just do whatever we consider normal, we also consider normal whatever we do.</p>
+<p>3. <a href="https://www.theguardian.com/lifeandstyle/2018/oct/19/this-column-will-change-your-life-oliver-burkeman" target="_blank" class="external-link">Fredkin's Paradox</a></p>
+<p>The more similar two choices seem, the less the decision should matter, yet the harder it is to choose between them. As a result, we often spend the most time on the decisions that matter least.</p>
+<p>To avoid being paralyzed by meaningless choices, <a href="https://www.gurwinder.blog/p/overchoice-and-how-to-avoid-it/comment/55316158?utm_source=activity_item" target="_blank" class="external-link">use decision-making heuristics</a>.</p>
+<p>4. <a href="https://unherd.com/2020/12/how-random-are-your-politics/" target="_blank" class="external-link">Package-Deal Ethics</a></p>
+<blockquote>
+<p><em>“If I can predict all of your beliefs from one of your beliefs, you’re not a serious thinker.” — Chris Williamson</em></p>
+</blockquote>
+<p>Being pro-choice and pro-gun-control don't logically follow from each other, yet those who believe one usually also believe the other. This is because most people don’t choose beliefs individually but subscribe to “packages” of beliefs offered by a tribe.</p>
+<p>5. <a href="https://www.sciencedirect.com/science/article/pii/S187118711730189X" target="_blank" class="external-link">Ovsiankina Effect (aka Hemingway Effect)</a></p>
+<p>We have an intrinsic need to finish what we’ve started. Exploit this by taking your breaks mid-task; the incompleteness will gnaw at you, increasing your motivation to return to work. (When writing, I end each day mid-sentence because it</p>
+<p>6. Naxalt Fallacy</p>
+<p>Smart people tend to use qualifiers like “generally” and “most”, and dumb people tend to ignore them.</p>
+<blockquote>
+<p>“Most people who are pro-choice are also pro-gun-control.”</p>
+<p>“Wrong! I’m not!”</p>
+</blockquote>
+<blockquote>
+<p>“Men are generally taller than women.”</p>
+<p>“False! My wife is 7 feet tall!”</p>
+</blockquote>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faffa74fa-56ff-4924-a3ff-1da3fba22f6d_500x441.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faffa74fa-56ff-4924-a3ff-1da3fba22f6d_500x441.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faffa74fa-56ff-4924-a3ff-1da3fba22f6d_500x441.jpeg</a>)</p>
+<p>7. <a href="https://www.sciencedaily.com/releases/2012/05/120507131948.htm" target="_blank" class="external-link">Fiction Lag (aka Experience-Taking)</a></p>
+<p>When people are captivated by a work of fiction, they unconsciously adopt the traits of their favorite characters. We develop our identities by copying others, and perhaps one reason we enjoy fiction is that it gives us ideas on who to be.</p>
+<p>8. <a href="https://luca-dellanna.com/derisk-exercise/" target="_blank" class="external-link">Premortem</a></p>
+<p>&quot;Hindsight is 20/20.&quot;</p>
+<p>Instead of waiting for something to go wrong and then conducting a post-mortem, conduct a “pre-mortem” by imagining it went wrong then using the power of hindsight to deduce the likeliest reason it went wrong.</p>
+<blockquote>
+<p><em><strong>Imagine you wake up in a hospital.</strong> What could have been the most likely reason? Is there anything you can do today to prevent that?</em></p>
+<p><em><strong>Imagine your partner breaks up with you.</strong> What could have been the most likely reason? Is there anything you can do today to prevent that?</em></p>
+<p><em><strong>Imagine you lose your job.</strong> What could have been the most likely reason? Is there anything you can do today to prevent that?</em></p>
+<p><em>—Luca Dellanna</em></p>
+</blockquote>
+<p>9. <a href="https://en.wikipedia.org/wiki/Gambler%27s_conceit" target="_blank" class="external-link">Gambler’s Conceit</a></p>
+<p>People hooked on a risky behavior (e.g. gambling, smoking) reassure themselves they’ll be able to quit while ahead (before bankruptcy, lung cancer). However, their future-self tends to act a lot like them, so if they can't quit now, they likely won't quit later when they’re even deeper in.</p>
+<p>10. <a href="https://www.mja.com.au/system/files/issues/206_02/10.5694mja16.00398.pdf" target="_blank" class="external-link">Youngest-Kid-in-Class Syndrome</a></p>
+<p>A study of 300,000 children found that the youngest kids in class were more likely to be diagnosed with ADHD. This suggests that immaturity is sometimes being mistaken for disorders.</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F707a63a5-7c47-4101-9621-9a930427a278_1152x886.png" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F707a63a5-7c47-4101-9621-9a930427a278_1152x886.png" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F707a63a5-7c47-4101-9621-9a930427a278_1152x886.png</a>)</p>
+<p>discusses this further in his <a href="https://www.stevestewartwilliams.com/p/youngest-kid-in-class-syndrome" target="_blank" class="external-link">incisive piece</a> (paywalled)</p>
+<p>11. <a href="https://www.academia.edu/40085508/Noble_Cause_Corruption_in_Politics" target="_blank" class="external-link">Noble Cause Corruption</a></p>
+<p>The greatest evils come not from people seeking to do evil, but people seeking to do good and believing the ends justify the means. Everyone who was on the wrong side of history believed they were on the right side.</p>
+<ol start="12">
+<li><a href="https://www.talkspace.com/blog/grey-rock-method/" target="_blank" class="external-link">Grey Rock Method</a></li>
+</ol>
+<p>Reacting emotionally to narcissists and other toxic people only gives them what they want — your time &amp; energy — which encourages further abuse. If you want to stop receiving provocations, stop being provoked. When the narcissist realizes they can’t manipulate your emotions, they’ll stop trying.</p>
+<p>13. <a href="https://thecynefin.co/the-woozle-effect/" target="_blank" class="external-link">Woozle Effect</a></p>
+<p>When a source makes an unproven claim, is then cited as proof by another, which is cited by another, and so on, until the chain of citations looks like evidence. Common because, while many writers check their sources, few check their sources’ sources.</p>
+<p>A recent example: evidence that puberty blockers are safe and effective was overestimated because institutions were <a href="https://www.buttonslives.news/p/new-systematic-review-exposes-deceptive" target="_blank" class="external-link">circularly citing each other</a>:</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac7662b-5487-4176-ae6a-2d1fd7182c18_1280x928.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac7662b-5487-4176-ae6a-2d1fd7182c18_1280x928.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac7662b-5487-4176-ae6a-2d1fd7182c18_1280x928.jpeg</a>)</p>
+<p>14. <a href="https://www.discoursemagazine.com/p/post-journalism-and-the-death-of-news" target="_blank" class="external-link">Postjournalism</a></p>
+<p>The press lost its monopoly on news when the internet democratized info. To save its business model, it pivoted from journalism into tribalism. The new role of the press is not to inform its readers but to confirm what they already believe.</p>
+<p>15. <a href="https://dilbertblog.typepad.com/the_dilbert_blog/2007/07/career-advice.html" target="_blank" class="external-link">Adams’ 25% rule (aka Skill-Stacking)</a></p>
+<p>Instead of trying to be the best at one thing, try to be &quot;merely&quot; great at two things and then learn to combine them. Not only is this easier, but it will make your skillset more unique, cutting out the competition.</p>
+<p>16. <a href="https://einzelganger.co/the-backwards-law/" target="_blank" class="external-link">Backwards Law</a></p>
+<p>The more you pursue happiness, the less likely you are to obtain it, because the focus on acquiring it only reinforces the fact that you don’t have it. Ironically, happiness comes easiest to those who don’t worry about it.</p>
+<blockquote>
+<p><em>“Happiness is like a butterfly, the more you chase it, the more it will evade you, but if you notice the other things around you, it will gently come and sit on your shoulder.”</em></p>
+<p><em>― Henry David Thoreau</em></p>
+</blockquote>
+<p>17. <a href="https://twitter.com/george__mack/status/1665059477802893315" target="_blank" class="external-link">Balaji's Transformer</a></p>
+<p>Have a written idea? Draw it. Have a visual idea? Write it. Reformatting an idea lets you see it from a new perspective. Walt Disney turned a dull business plan into a diagram, revealing new connections and opening new pathways of thought.</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52c85a01-11ad-4e14-89fb-248e40b248c0_1480x1295.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52c85a01-11ad-4e14-89fb-248e40b248c0_1480x1295.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52c85a01-11ad-4e14-89fb-248e40b248c0_1480x1295.jpeg</a>)</p>
+<p>18. <a href="https://www.businessinsider.com/longevity-escape-velocity-what-is-it" target="_blank" class="external-link">Longevity Escape Velocity</a></p>
+<p>Technology is gradually improving our lifespans, so if you try to live as long as possible, you may live to see technology that'll allow you to live even longer. Time is the most valuable currency of all, and longevity yields compound interest.</p>
+<p>19. Roseto Effect</p>
+<p>Many long-term studies, including the 50 year <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1695733/" target="_blank" class="external-link">Roseto study</a> and the 85 year <a href="https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/" target="_blank" class="external-link">Harvard Study of Adult Development</a>, found that having close-knit relationships is as important for longevity as diet, sleep, and exercise, yet it’s often neglected by fitness gurus. If you want to live, love.</p>
+<ol start="20">
+<li><a href="https://encyclopedia.pub/entry/36589" target="_blank" class="external-link">Hitchens' Razor</a></li>
+</ol>
+<blockquote>
+<p><em>“What can be asserted without evidence can be dismissed without evidence.”</em></p>
+<p><em>― Christopher Hitchens</em></p>
+</blockquote>
+<p>If you make a claim, it's up to you to prove it, not to me to disprove it.</p>
+<ol start="21">
+<li><a href="https://hbr.org/2024/02/people-probably-like-you-more-than-you-think" target="_blank" class="external-link">The Liking Gap</a></li>
+</ol>
+<p>Multiple studies have found that people consistently underestimate how much a conversation partner likes them and enjoys their company. So don't be shy, you're probably cooler than you think.</p>
+<ol start="22">
+<li><a href="https://www.academia.edu/29560176/The_Boomerang_Effect_A_Synthesis_of_Findings_and_a_Preliminary_Theoretical_Framework" target="_blank" class="external-link">Boomerang Effect</a></li>
+</ol>
+<p>Deny someone something, and they'll want it even more, out of defiance. If you want your child to eat broccoli, tell them they’re not big enough to eat broccoli.</p>
+<p>Helps explain why censorship often backfires (the <a href="https://www.britannica.com/topic/Streisand-effect" target="_blank" class="external-link">Streisand Effect</a>).</p>
+<ol start="23">
+<li><a href="https://collabfund.com/blog/the-psychology-of-money/" target="_blank" class="external-link">Anchored-to-your-own-history bias</a></li>
+</ol>
+<blockquote>
+<p><em>“Your personal experiences make up maybe 0.00000001% of what’s happened in the world but maybe 80% of how you think the world works.” — Morgan Housel</em></p>
+</blockquote>
+<p>Boomers &amp; Generation X had wildly different experiences of how the economy works, and this gave them different dispositions, worldviews, and political preferences.</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fcb6605-e762-474b-83fb-faf6caac75bb_1426x796.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fcb6605-e762-474b-83fb-faf6caac75bb_1426x796.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fcb6605-e762-474b-83fb-faf6caac75bb_1426x796.jpeg</a>)</p>
+<ol start="24">
+<li><a href="https://www.psychologytoday.com/gb/blog/naturally-selected/201804/evolutionary-mismatch" target="_blank" class="external-link">Mismatch Theory</a></li>
+</ol>
+<p>Moths evolved to navigate by the moon, a good strategy until the invention of electric lamps, which now lead them astray. Equally, humans evolved to be tribal, a good strategy until the digital age, where it now leads us to act like polarized goons online.</p>
+<ol start="25">
+<li><a href="https://www.nngroup.com/articles/common-knowledge-effect/" target="_blank" class="external-link">Common Knowledge Effect</a></li>
+</ol>
+<p>Groups are meant to be better decision-makers than individuals, because they combine many perspectives. But in practice, a group doesn't base its decisions on the info specific to each member, but only on the info common to them all. This casts doubt on the idea that “two heads are better than one”, and helps explain why, despite popular wisdom, diversity generally <a href="https://osf.io/preprints/psyarxiv/nscd4" target="_blank" class="external-link">does not make teams better</a>.</p>
+<ol start="26">
+<li><a href="https://www.forbes.com/sites/forbescoachescouncil/2018/11/29/your-important-decisions-may-be-biased/?sh=2570df021639" target="_blank" class="external-link">Champion Bias</a></li>
+</ol>
+<p>We assume winners have the best advice, but those who win rarely examine why they won, while those who lose often regretfully dwell on their mistakes. So you’ll often obtain the best advice on winning not from winners but from losers.</p>
+<ol start="27">
+<li><a href="https://bigthink.com/thinking/gibsons-law-hard-trust-experts/" target="_blank" class="external-link">Gibson’s Law</a></li>
+</ol>
+<p>“For every PhD there is an equal and opposite PhD.”</p>
+<p>Both sides in a court case or policy debate will have support from experts, no matter how crazy the position, because education doesn’t make someone right, it often just makes them more skilled at being wrong.</p>
+<ol start="28">
+<li><a href="https://www.investopedia.com/terms/p/prospecttheory.asp" target="_blank" class="external-link">Prospect Theory</a></li>
+</ol>
+<p>People don’t weigh gains and losses evenly. We hate losing money about twice as much as we like gaining it. So, for instance, we’d need to gain $20 to assuage the pain of losing $10. This bias toward loss aversion is one of the foundations of economic behavior.</p>
+<ol start="29">
+<li><a href="https://www.lesswrong.com/posts/2MD3NMLBPCqPfnfre/cached-thoughts" target="_blank" class="external-link">Cached Thoughts</a></li>
+</ol>
+<p>Most of your beliefs were formed earlier in your life, when you were naiver. You continue to believe them only because you’ve never reconsidered them. When you’re about to offer an opinion, consider when you formed it, and ask: is it really <em>your</em> belief, or your younger self’s?</p>
+<ol start="30">
+<li><a href="https://www.goodreads.com/author/quotes/7659.Paul_Bowles" target="_blank" class="external-link">Finality Principle</a></li>
+</ol>
+<p>One day you’ll do something for the last time and never know it. So, whether you’re watching a sunset or arguing with a friend, ask yourself: “What if this was the last time I experience this?” A sense of finality can turn even nuisances into miracles.</p>
+<blockquote>
+<p><em>“Death is always on the way, but the fact that you don't know when it will arrive seems to take away from the finiteness of life. It's that terrible precision that we hate so much. But because we don't know, we get to think of life as an inexhaustible well. Yet everything happens a certain number of times, and a very small number, really. How many more times will you remember a certain afternoon of your childhood, some afternoon that's so deeply a part of your being that you can't even conceive of your life without it? Perhaps four or five times more. Perhaps not even. How many more times will you watch the full moon rise? Perhaps twenty. And yet it all seems limitless.”</em></p>
+<p><em>― Paul Bowles, The Sheltering Sky</em></p>
+</blockquote>
+<p>And that’s 30 concepts. As usual, don’t mistake these rules of thumb for laws of nature, as that would be a fallacy called Secundum Quid.</p>
+<p>I’m going to start scheduling video-calls with paid subscribers again soon; will give more details in my next post. Until then, peace.</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -784,33 +736,7 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#synchronizing-files-on-your-raspberry-pi-with-syncthing">Synchronizing Files on your Raspberry Pi with Syncthing</a>
-<ol>
-<li><a href="#installing-syncthing-to-your-raspberry-pi">Installing Syncthing to Your Raspberry Pi</a>
-</li>
-<li><a href="#allowing-outside-access-to-your-syncthing-web-interface">Allowing Outside Access to your Syncthing Web Interface</a>
-</li>
-<li><a href="#important-to-find-config-file">IMPORTANT TO FIND CONFIG FILE:</a>
-</li>
-<li><a href="#setting-up-syncthing-as-a-service-on-the-raspberry-pi">Setting up Syncthing as a Service on the Raspberry Pi</a>
-</li>
-<li><a href="#using-your-raspberry-pi-s-syncthing-web-interface">Using your Raspberry Pi’s Syncthing Web Interface</a>
-<ol>
-<li><a href="#connecting-to-the-syncthing-web-interface">Connecting to the Syncthing Web Interface</a>
-</li>
-<li><a href="#securing-the-syncthing-interface">Securing the Syncthing Interface</a>
-</li>
-<li><a href="#retrieving-your-devices-syncthing-id">Retrieving your Devices Syncthing ID</a>
-</li>
-<li><a href="#adding-a-device-to-your-raspberry-pi-s-syncthing-pool">Adding a Device to your Raspberry Pi’s Syncthing Pool</a>
-</li>
-<li><a href="#synchronizing-a-folder-with-your-connected-devices">Synchronizing a Folder with your Connected Devices</a>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><a href="#reference">Reference</a>
+<li><a href="#a-href-https-open-substack-com-pub-gurwinder-p-30-useful-concepts-spring-2024-utm-source-share-and-amp-utm-medium-android-and-amp-r-9yuk2-target-blank-class-external-link-30-useful-concepts-spring-2024-a">30 Useful Concepts (Spring 2024)</a>
 </li>
 </ol>
 </nav>
