@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>ohmyposh</title>
+<title>30 Useful Concepts (Spring 2024)</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -221,7 +221,7 @@ CTRL + K
 <span class="foldername">INBOX</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/inbox/30-useful-concepts-spring-2024/">30 Useful Concepts (Spring 2024) </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/inbox/30-useful-concepts-spring-2024/">30 Useful Concepts (Spring 2024) </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -328,7 +328,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/ohmyposh/">ohmyposh </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/ohmyposh/">ohmyposh </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -540,186 +540,165 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">ohmyposh</h1>
+<h1 data-note-icon="">30 Useful Concepts (Spring 2024)</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Projects
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#code
+#ToRead
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-28 11:32:43 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-28T11:32:50"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-05-06T07:14:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-05-06 7:14:52 am"></span></div></div></div>
 </header>
-<p><a class="internal-link" target="" data-note-icon="" href="/track/current-projects/">CURRENT PROJECTS</a></p>
-<p><a href="https://ohmyposh.dev/docs/installation/prompt" target="_blank" class="external-link">https://ohmyposh.dev/docs/installation/prompt</a></p>
-<p>nerd fonts: <a href="https://www.nerdfonts.com/font-downloads" target="_blank" class="external-link">https://www.nerdfonts.com/font-downloads</a></p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> ohmyposh 🛫 2024-04-28 ✅ 2024-04-28</label></li>
-</ul>
-<pre><code class="language-json">{
-//filename: psf-dark.omp.json
-  &quot;$schema&quot;: &quot;https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json&quot;,
-
-  &quot;blocks&quot;: [
-
-    {
-
-      &quot;alignment&quot;: &quot;left&quot;,
-
-      &quot;segments&quot;: [
-
-        {
-
-         // &quot;background&quot;: &quot;#0A703E&quot;,
-
-          &quot;foreground&quot;: &quot;#ffffff&quot;,
-
-          &quot;style&quot;: &quot;plain&quot;,
-
-          &quot;template&quot;: &quot; \uf0e7 &quot;,
-
-          &quot;type&quot;: &quot;root&quot;
-
-        },
-
-        {
-
-          &quot;background&quot;: &quot;#BF231D&quot;,
-
-          &quot;foreground&quot;: &quot;#ffffff&quot;,
-
-          &quot;style&quot;: &quot;plain&quot;,
-
-          &quot;template&quot;: &quot; {{ .Icon }} &quot;,
-
-          &quot;type&quot;: &quot;os&quot;
-
-        },
-
-        {
-
-          &quot;background&quot;: &quot;#0A703E&quot;,
-
-          &quot;foreground&quot;: &quot;#ffffff&quot;,
-
-          &quot;style&quot;: &quot;plain&quot;,
-
-          &quot;template&quot;: &quot;{{ .UserName }} &quot;,
-
-          &quot;type&quot;: &quot;session&quot;
-
-        },
-
-        {
-
-          //&quot;background&quot;: &quot;#256C9D&quot;,
-
-         // &quot;background&quot;: &quot;#BF231D&quot;,
-
-         &quot;background&quot;: &quot;#0A703E&quot;,
-
-          &quot;foreground&quot;: &quot;#ffffff&quot;,
-
-          &quot;properties&quot;: {
-
-            &quot;folder_icon&quot;: &quot;\uf115&quot;,
-
-            &quot;folder_separator_icon&quot;: &quot; \ue0b1 &quot;,
-
-            &quot;max_depth&quot;: 2,
-
-            &quot;style&quot;: &quot;agnoster_short&quot;
-
-          },
-
-          &quot;style&quot;: &quot;plain&quot;,
-
-          &quot;template&quot;: &quot; {{ .Path }} &quot;,
-
-          &quot;type&quot;: &quot;path&quot;
-
-        },
-
-        {
-
-        // &quot;background&quot;: &quot;#256C9D&quot;,
-
-          &quot;background&quot;: &quot;#0A703E&quot;,
-
-          &quot;foreground&quot;: &quot;#ffffff&quot;,
-
-          &quot;properties&quot;: {
-
-            &quot;branch_max_length&quot;: 30,
-
-            &quot;fetch_stash_count&quot;: false,
-
-            &quot;fetch_status&quot;: true,
-
-            &quot;fetch_upstream_icon&quot;: true
-
-          },
-
-          &quot;style&quot;: &quot;plain&quot;,
-
-          &quot;template&quot;: &quot;[ {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ]&quot;,
-
-          &quot;type&quot;: &quot;git&quot;
-
-        },
-
-        {
-
-         &quot;background&quot;: &quot;#256C9D&quot;,
-
-         // &quot;background&quot;: &quot;#0A703E&quot;,
-
-          &quot;foreground&quot;: &quot;#ffffff&quot;,
-
-          &quot;powerline_symbol&quot;: &quot;\ue0b0&quot;,
-
-          &quot;style&quot;: &quot;plain&quot;,
-
-          &quot;template&quot;: &quot; \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} &quot;,
-
-          &quot;properties&quot;: {
-
-            &quot;text&quot;: &quot;\ue0b0&quot;
-
-          },
-
-          &quot;type&quot;: &quot;python&quot;
-
-        },
-
-        {
-
-          &quot;foreground&quot;: &quot;#256C9D&quot;,
-
-        //  &quot;background&quot;: &quot;#0A703E&quot;,
-
-          &quot;style&quot;: &quot;plain&quot;,
-
-          &quot;template&quot;: &quot;\ue0b0 &quot;,
-
-          &quot;type&quot;: &quot;text&quot;
-
-        }
-
-      ],
-
-      &quot;type&quot;: &quot;prompt&quot;
-
-    }
-
-  ],
-
-  &quot;version&quot;: 2
-
-}
-</code></pre>
+<h1 id="a-href-https-open-substack-com-pub-gurwinder-p-30-useful-concepts-spring-2024-utm-source-share-and-amp-utm-medium-android-and-amp-r-9yuk2-target-blank-class-external-link-30-useful-concepts-spring-2024-a" tabindex="-1"><a href="https://open.substack.com/pub/gurwinder/p/30-useful-concepts-spring-2024?utm_source=share&amp;utm_medium=android&amp;r=9yuk2" target="_blank" class="external-link">30 Useful Concepts (Spring 2024)</a></h1>
+<p>It’s that time again; a summary of interesting and useful concepts to spur your curiosity. Click the titles for more information.</p>
+<p>1. <a href="https://www.honest-broker.com/p/the-state-of-the-culture-2024" target="_blank" class="external-link">Dopamine Culture</a></p>
+<blockquote>
+<p><em>“Every kind of organized distraction tends to become progressively more and more imbecile.” — Aldous Huxley</em></p>
+</blockquote>
+<p>The delay between desire &amp; gratification is shrinking. Pleasure is increasingly more instant &amp; effortless. Everything is becoming a drug. What will it do to us?</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3fa6f337-7d2c-4a37-97e9-38f29f12b017_1490x860.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3fa6f337-7d2c-4a37-97e9-38f29f12b017_1490x860.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3fa6f337-7d2c-4a37-97e9-38f29f12b017_1490x860.jpeg</a>)</p>
+<p>2. <a href="https://www.simplypsychology.org/false-consensus-effect.html" target="_blank" class="external-link">False Consensus Effect</a></p>
+<blockquote>
+<p><em>“Everyone driving slower than you is an idiot and everyone driving faster than you is a maniac.” — George Carlin</em></p>
+</blockquote>
+<p>Our model of the world assumes people are like us. We don’t just do whatever we consider normal, we also consider normal whatever we do.</p>
+<p>3. <a href="https://www.theguardian.com/lifeandstyle/2018/oct/19/this-column-will-change-your-life-oliver-burkeman" target="_blank" class="external-link">Fredkin's Paradox</a></p>
+<p>The more similar two choices seem, the less the decision should matter, yet the harder it is to choose between them. As a result, we often spend the most time on the decisions that matter least.</p>
+<p>To avoid being paralyzed by meaningless choices, <a href="https://www.gurwinder.blog/p/overchoice-and-how-to-avoid-it/comment/55316158?utm_source=activity_item" target="_blank" class="external-link">use decision-making heuristics</a>.</p>
+<p>4. <a href="https://unherd.com/2020/12/how-random-are-your-politics/" target="_blank" class="external-link">Package-Deal Ethics</a></p>
+<blockquote>
+<p><em>“If I can predict all of your beliefs from one of your beliefs, you’re not a serious thinker.” — Chris Williamson</em></p>
+</blockquote>
+<p>Being pro-choice and pro-gun-control don't logically follow from each other, yet those who believe one usually also believe the other. This is because most people don’t choose beliefs individually but subscribe to “packages” of beliefs offered by a tribe.</p>
+<p>5. <a href="https://www.sciencedirect.com/science/article/pii/S187118711730189X" target="_blank" class="external-link">Ovsiankina Effect (aka Hemingway Effect)</a></p>
+<p>We have an intrinsic need to finish what we’ve started. Exploit this by taking your breaks mid-task; the incompleteness will gnaw at you, increasing your motivation to return to work. (When writing, I end each day mid-sentence because it</p>
+<p>6. Naxalt Fallacy</p>
+<p>Smart people tend to use qualifiers like “generally” and “most”, and dumb people tend to ignore them.</p>
+<blockquote>
+<p>“Most people who are pro-choice are also pro-gun-control.”</p>
+<p>“Wrong! I’m not!”</p>
+</blockquote>
+<blockquote>
+<p>“Men are generally taller than women.”</p>
+<p>“False! My wife is 7 feet tall!”</p>
+</blockquote>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faffa74fa-56ff-4924-a3ff-1da3fba22f6d_500x441.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faffa74fa-56ff-4924-a3ff-1da3fba22f6d_500x441.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faffa74fa-56ff-4924-a3ff-1da3fba22f6d_500x441.jpeg</a>)</p>
+<p>7. <a href="https://www.sciencedaily.com/releases/2012/05/120507131948.htm" target="_blank" class="external-link">Fiction Lag (aka Experience-Taking)</a></p>
+<p>When people are captivated by a work of fiction, they unconsciously adopt the traits of their favorite characters. We develop our identities by copying others, and perhaps one reason we enjoy fiction is that it gives us ideas on who to be.</p>
+<p>8. <a href="https://luca-dellanna.com/derisk-exercise/" target="_blank" class="external-link">Premortem</a></p>
+<p>&quot;Hindsight is 20/20.&quot;</p>
+<p>Instead of waiting for something to go wrong and then conducting a post-mortem, conduct a “pre-mortem” by imagining it went wrong then using the power of hindsight to deduce the likeliest reason it went wrong.</p>
+<blockquote>
+<p><em><strong>Imagine you wake up in a hospital.</strong> What could have been the most likely reason? Is there anything you can do today to prevent that?</em></p>
+<p><em><strong>Imagine your partner breaks up with you.</strong> What could have been the most likely reason? Is there anything you can do today to prevent that?</em></p>
+<p><em><strong>Imagine you lose your job.</strong> What could have been the most likely reason? Is there anything you can do today to prevent that?</em></p>
+<p><em>—Luca Dellanna</em></p>
+</blockquote>
+<p>9. <a href="https://en.wikipedia.org/wiki/Gambler%27s_conceit" target="_blank" class="external-link">Gambler’s Conceit</a></p>
+<p>People hooked on a risky behavior (e.g. gambling, smoking) reassure themselves they’ll be able to quit while ahead (before bankruptcy, lung cancer). However, their future-self tends to act a lot like them, so if they can't quit now, they likely won't quit later when they’re even deeper in.</p>
+<p>10. <a href="https://www.mja.com.au/system/files/issues/206_02/10.5694mja16.00398.pdf" target="_blank" class="external-link">Youngest-Kid-in-Class Syndrome</a></p>
+<p>A study of 300,000 children found that the youngest kids in class were more likely to be diagnosed with ADHD. This suggests that immaturity is sometimes being mistaken for disorders.</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F707a63a5-7c47-4101-9621-9a930427a278_1152x886.png" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F707a63a5-7c47-4101-9621-9a930427a278_1152x886.png" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F707a63a5-7c47-4101-9621-9a930427a278_1152x886.png</a>)</p>
+<p>discusses this further in his <a href="https://www.stevestewartwilliams.com/p/youngest-kid-in-class-syndrome" target="_blank" class="external-link">incisive piece</a> (paywalled)</p>
+<p>11. <a href="https://www.academia.edu/40085508/Noble_Cause_Corruption_in_Politics" target="_blank" class="external-link">Noble Cause Corruption</a></p>
+<p>The greatest evils come not from people seeking to do evil, but people seeking to do good and believing the ends justify the means. Everyone who was on the wrong side of history believed they were on the right side.</p>
+<ol start="12">
+<li><a href="https://www.talkspace.com/blog/grey-rock-method/" target="_blank" class="external-link">Grey Rock Method</a></li>
+</ol>
+<p>Reacting emotionally to narcissists and other toxic people only gives them what they want — your time &amp; energy — which encourages further abuse. If you want to stop receiving provocations, stop being provoked. When the narcissist realizes they can’t manipulate your emotions, they’ll stop trying.</p>
+<p>13. <a href="https://thecynefin.co/the-woozle-effect/" target="_blank" class="external-link">Woozle Effect</a></p>
+<p>When a source makes an unproven claim, is then cited as proof by another, which is cited by another, and so on, until the chain of citations looks like evidence. Common because, while many writers check their sources, few check their sources’ sources.</p>
+<p>A recent example: evidence that puberty blockers are safe and effective was overestimated because institutions were <a href="https://www.buttonslives.news/p/new-systematic-review-exposes-deceptive" target="_blank" class="external-link">circularly citing each other</a>:</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac7662b-5487-4176-ae6a-2d1fd7182c18_1280x928.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac7662b-5487-4176-ae6a-2d1fd7182c18_1280x928.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcac7662b-5487-4176-ae6a-2d1fd7182c18_1280x928.jpeg</a>)</p>
+<p>14. <a href="https://www.discoursemagazine.com/p/post-journalism-and-the-death-of-news" target="_blank" class="external-link">Postjournalism</a></p>
+<p>The press lost its monopoly on news when the internet democratized info. To save its business model, it pivoted from journalism into tribalism. The new role of the press is not to inform its readers but to confirm what they already believe.</p>
+<p>15. <a href="https://dilbertblog.typepad.com/the_dilbert_blog/2007/07/career-advice.html" target="_blank" class="external-link">Adams’ 25% rule (aka Skill-Stacking)</a></p>
+<p>Instead of trying to be the best at one thing, try to be &quot;merely&quot; great at two things and then learn to combine them. Not only is this easier, but it will make your skillset more unique, cutting out the competition.</p>
+<p>16. <a href="https://einzelganger.co/the-backwards-law/" target="_blank" class="external-link">Backwards Law</a></p>
+<p>The more you pursue happiness, the less likely you are to obtain it, because the focus on acquiring it only reinforces the fact that you don’t have it. Ironically, happiness comes easiest to those who don’t worry about it.</p>
+<blockquote>
+<p><em>“Happiness is like a butterfly, the more you chase it, the more it will evade you, but if you notice the other things around you, it will gently come and sit on your shoulder.”</em></p>
+<p><em>― Henry David Thoreau</em></p>
+</blockquote>
+<p>17. <a href="https://twitter.com/george__mack/status/1665059477802893315" target="_blank" class="external-link">Balaji's Transformer</a></p>
+<p>Have a written idea? Draw it. Have a visual idea? Write it. Reformatting an idea lets you see it from a new perspective. Walt Disney turned a dull business plan into a diagram, revealing new connections and opening new pathways of thought.</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52c85a01-11ad-4e14-89fb-248e40b248c0_1480x1295.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52c85a01-11ad-4e14-89fb-248e40b248c0_1480x1295.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F52c85a01-11ad-4e14-89fb-248e40b248c0_1480x1295.jpeg</a>)</p>
+<p>18. <a href="https://www.businessinsider.com/longevity-escape-velocity-what-is-it" target="_blank" class="external-link">Longevity Escape Velocity</a></p>
+<p>Technology is gradually improving our lifespans, so if you try to live as long as possible, you may live to see technology that'll allow you to live even longer. Time is the most valuable currency of all, and longevity yields compound interest.</p>
+<p>19. Roseto Effect</p>
+<p>Many long-term studies, including the 50 year <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1695733/" target="_blank" class="external-link">Roseto study</a> and the 85 year <a href="https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/" target="_blank" class="external-link">Harvard Study of Adult Development</a>, found that having close-knit relationships is as important for longevity as diet, sleep, and exercise, yet it’s often neglected by fitness gurus. If you want to live, love.</p>
+<ol start="20">
+<li><a href="https://encyclopedia.pub/entry/36589" target="_blank" class="external-link">Hitchens' Razor</a></li>
+</ol>
+<blockquote>
+<p><em>“What can be asserted without evidence can be dismissed without evidence.”</em></p>
+<p><em>― Christopher Hitchens</em></p>
+</blockquote>
+<p>If you make a claim, it's up to you to prove it, not to me to disprove it.</p>
+<ol start="21">
+<li><a href="https://hbr.org/2024/02/people-probably-like-you-more-than-you-think" target="_blank" class="external-link">The Liking Gap</a></li>
+</ol>
+<p>Multiple studies have found that people consistently underestimate how much a conversation partner likes them and enjoys their company. So don't be shy, you're probably cooler than you think.</p>
+<ol start="22">
+<li><a href="https://www.academia.edu/29560176/The_Boomerang_Effect_A_Synthesis_of_Findings_and_a_Preliminary_Theoretical_Framework" target="_blank" class="external-link">Boomerang Effect</a></li>
+</ol>
+<p>Deny someone something, and they'll want it even more, out of defiance. If you want your child to eat broccoli, tell them they’re not big enough to eat broccoli.</p>
+<p>Helps explain why censorship often backfires (the <a href="https://www.britannica.com/topic/Streisand-effect" target="_blank" class="external-link">Streisand Effect</a>).</p>
+<ol start="23">
+<li><a href="https://collabfund.com/blog/the-psychology-of-money/" target="_blank" class="external-link">Anchored-to-your-own-history bias</a></li>
+</ol>
+<blockquote>
+<p><em>“Your personal experiences make up maybe 0.00000001% of what’s happened in the world but maybe 80% of how you think the world works.” — Morgan Housel</em></p>
+</blockquote>
+<p>Boomers &amp; Generation X had wildly different experiences of how the economy works, and this gave them different dispositions, worldviews, and political preferences.</p>
+<p>[</p>
+<p><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fcb6605-e762-474b-83fb-faf6caac75bb_1426x796.jpeg" alt=""></p>
+<p>](<a href="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fcb6605-e762-474b-83fb-faf6caac75bb_1426x796.jpeg" target="_blank" class="external-link">https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6fcb6605-e762-474b-83fb-faf6caac75bb_1426x796.jpeg</a>)</p>
+<ol start="24">
+<li><a href="https://www.psychologytoday.com/gb/blog/naturally-selected/201804/evolutionary-mismatch" target="_blank" class="external-link">Mismatch Theory</a></li>
+</ol>
+<p>Moths evolved to navigate by the moon, a good strategy until the invention of electric lamps, which now lead them astray. Equally, humans evolved to be tribal, a good strategy until the digital age, where it now leads us to act like polarized goons online.</p>
+<ol start="25">
+<li><a href="https://www.nngroup.com/articles/common-knowledge-effect/" target="_blank" class="external-link">Common Knowledge Effect</a></li>
+</ol>
+<p>Groups are meant to be better decision-makers than individuals, because they combine many perspectives. But in practice, a group doesn't base its decisions on the info specific to each member, but only on the info common to them all. This casts doubt on the idea that “two heads are better than one”, and helps explain why, despite popular wisdom, diversity generally <a href="https://osf.io/preprints/psyarxiv/nscd4" target="_blank" class="external-link">does not make teams better</a>.</p>
+<ol start="26">
+<li><a href="https://www.forbes.com/sites/forbescoachescouncil/2018/11/29/your-important-decisions-may-be-biased/?sh=2570df021639" target="_blank" class="external-link">Champion Bias</a></li>
+</ol>
+<p>We assume winners have the best advice, but those who win rarely examine why they won, while those who lose often regretfully dwell on their mistakes. So you’ll often obtain the best advice on winning not from winners but from losers.</p>
+<ol start="27">
+<li><a href="https://bigthink.com/thinking/gibsons-law-hard-trust-experts/" target="_blank" class="external-link">Gibson’s Law</a></li>
+</ol>
+<p>“For every PhD there is an equal and opposite PhD.”</p>
+<p>Both sides in a court case or policy debate will have support from experts, no matter how crazy the position, because education doesn’t make someone right, it often just makes them more skilled at being wrong.</p>
+<ol start="28">
+<li><a href="https://www.investopedia.com/terms/p/prospecttheory.asp" target="_blank" class="external-link">Prospect Theory</a></li>
+</ol>
+<p>People don’t weigh gains and losses evenly. We hate losing money about twice as much as we like gaining it. So, for instance, we’d need to gain $20 to assuage the pain of losing $10. This bias toward loss aversion is one of the foundations of economic behavior.</p>
+<ol start="29">
+<li><a href="https://www.lesswrong.com/posts/2MD3NMLBPCqPfnfre/cached-thoughts" target="_blank" class="external-link">Cached Thoughts</a></li>
+</ol>
+<p>Most of your beliefs were formed earlier in your life, when you were naiver. You continue to believe them only because you’ve never reconsidered them. When you’re about to offer an opinion, consider when you formed it, and ask: is it really <em>your</em> belief, or your younger self’s?</p>
+<ol start="30">
+<li><a href="https://www.goodreads.com/author/quotes/7659.Paul_Bowles" target="_blank" class="external-link">Finality Principle</a></li>
+</ol>
+<p>One day you’ll do something for the last time and never know it. So, whether you’re watching a sunset or arguing with a friend, ask yourself: “What if this was the last time I experience this?” A sense of finality can turn even nuisances into miracles.</p>
+<blockquote>
+<p><em>“Death is always on the way, but the fact that you don't know when it will arrive seems to take away from the finiteness of life. It's that terrible precision that we hate so much. But because we don't know, we get to think of life as an inexhaustible well. Yet everything happens a certain number of times, and a very small number, really. How many more times will you remember a certain afternoon of your childhood, some afternoon that's so deeply a part of your being that you can't even conceive of your life without it? Perhaps four or five times more. Perhaps not even. How many more times will you watch the full moon rise? Perhaps twenty. And yet it all seems limitless.”</em></p>
+<p><em>― Paul Bowles, The Sheltering Sky</em></p>
+</blockquote>
+<p>And that’s 30 concepts. As usual, don’t mistake these rules of thumb for laws of nature, as that would be a fallacy called Secundum Quid.</p>
+<p>I’m going to start scheduling video-calls with paid subscribers again soon; will give more details in my next post. Until then, peace.</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -752,9 +731,25 @@ CTRL + K
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
 </div>
 </div>
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#a-href-https-open-substack-com-pub-gurwinder-p-30-useful-concepts-spring-2024-utm-source-share-and-amp-utm-medium-android-and-amp-r-9yuk2-target-blank-class-external-link-30-useful-concepts-spring-2024-a">30 Useful Concepts (Spring 2024)</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><a href="/track/current-projects/" data-note-icon="" class="backlink">CURRENT PROJECTS</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
