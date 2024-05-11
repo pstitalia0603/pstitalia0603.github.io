@@ -5,6 +5,7 @@
 
 | File                                                                                              | DATE       |
 | ------------------------------------------------------------------------------------------------- | ---------- |
+| [[RECIPES/Dairy Free Tomato Soup\|Dairy Free Tomato Soup]]                                     | 2024-05-09 |
 | [[RECIPES/Curried Lentil, Tomato, and Coconut Soup\|Curried Lentil, Tomato, and Coconut Soup]] | 2024-04-16 |
 | [[RECIPES/Sweet Spinach Muffins with Banana\|Sweet Spinach Muffins with Banana]]               | 2024-04-15 |
 | [[RECIPES/Best Breakfast casserole\|Best Breakfast casserole]]                                 | 2024-04-05 |
