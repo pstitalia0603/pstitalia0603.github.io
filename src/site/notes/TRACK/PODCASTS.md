@@ -1,6 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/track/podcasts/","tags":["tracking"],"noteIcon":"","created":"2024-04-02 14:27","updated":"2024-04-02 14:28"}
+{"dg-publish":true,"permalink":"/track/podcasts/","tags":["Interests"],"noteIcon":"","created":"2024-04-02 14:27","updated":"2024-04-02 14:28"}
 ---
+
+[[TRACK/INTERESTS\|INTERESTS]]
 
 | File                                                                                                                                                       | DATE       | rating |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------ |
