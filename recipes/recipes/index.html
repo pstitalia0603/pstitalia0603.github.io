@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Resources</title>
+<title>RECIPES</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -299,10 +299,6 @@ CTRL + K
 <span class="foldername">PROJECTS</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/apache-superset/">Apache Superset </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/archive-ics-to-csv-to-md/">ARCHIVE ICS TO CSV TO MD </a>
 </div>
 </div>
@@ -312,10 +308,6 @@ CTRL + K
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/obsidian-quicknotes-android-with-tasker/">Obsidian Quicknotes - Android with Tasker </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/ohmyposh/">ohmyposh </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -372,6 +364,10 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/recipes/">RECIPES </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/stuffed-peppers/">Stuffed Peppers </a>
 </div>
 </div>
@@ -387,6 +383,27 @@ CTRL + K
 <i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
 <i x-show="!isOpen" icon-name="chevron-right"></i>
 <span class="foldername">TECHNOLOGY</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('TECHNOLOGY/DEV')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">DEV</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/apache-superset/">Apache Superset </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/ohmyposh/">ohmyposh </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/resources/">Resources </a>
+</div>
+</div>
+</div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
 <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('TECHNOLOGY/LINUX')}" @click.stop="isOpen=!isOpen">
@@ -420,23 +437,6 @@ CTRL + K
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/track/podcasts/">PODCASTS </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/track/recipes/">RECIPES </a>
-</div>
-</div>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('WORK')}" @click.stop="isOpen=!isOpen">
-<div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
-<span class="foldername">WORK</span>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/work/resources/">Resources </a>
 </div>
 </div>
 </div>
@@ -509,7 +509,7 @@ CTRL + K
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-12T00:40:12.309Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-12T00:40:12.309Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-12T00:40:12.309Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-12T00:40:16.027Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-12T00:40:16.027Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-12T00:40:16.027Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
                     <a class="search-link" href="${e.url}">${e.title}</a>
                     <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
@@ -527,112 +527,114 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Resources</h1>
+<h1 data-note-icon="">RECIPES</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#web_design
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#code
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#Work
+#Interests
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-21T11:13:44"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-21 11:14:00 am"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-02-25T15:55:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-25 15:59"></span></div></div></div>
 </header>
-<h1 id="code" tabindex="-1">Code</h1>
-<ul>
-<li><a href="https://updateyourfooter.com/" target="_blank" class="external-link">https://updateyourfooter.com/</a></li>
-</ul>
-<h1 id="images" tabindex="-1">Images</h1>
-<ul>
-<li><a href="https://placehold.co/" target="_blank" class="external-link">https://placehold.co/</a></li>
-<li><a href="https://iconscout.com/" target="_blank" class="external-link">https://iconscout.com/</a></li>
-<li><a href="https://www.freepik.com" target="_blank" class="external-link">https://www.freepik.com</a></li>
-<li><a href="https://undraw.co/illustrations" target="_blank" class="external-link">https://undraw.co/illustrations</a></li>
-<li><a href="https://www.pexels.com/" target="_blank" class="external-link">https://www.pexels.com/</a></li>
-</ul>
-<h1 id="text" tabindex="-1">Text</h1>
-<ul>
-<li><a href="https://cupcakeipsum.com/" target="_blank" class="external-link">https://cupcakeipsum.com/</a></li>
-<li><a href="https://loremipsum.io/" target="_blank" class="external-link">https://loremipsum.io/</a></li>
-<li><a href="https://pirateipsum.me/" target="_blank" class="external-link">https://pirateipsum.me/</a></li>
-<li><a href="http://officeipsum.com/" target="_blank" class="external-link">http://officeipsum.com/</a></li>
-<li><a href="https://loremipsum.ro/" target="_blank" class="external-link">https://loremipsum.ro/</a></li>
-</ul>
-<h1 id="fonts" tabindex="-1">Fonts</h1>
-<ul>
-<li><a href="https://fontshub.pro/" target="_blank" class="external-link">https://fontshub.pro/</a></li>
-<li><a href="https://freefontsfamily.net/" target="_blank" class="external-link">https://freefontsfamily.net/</a></li>
-<li><a href="https://fonts.google.com/" target="_blank" class="external-link">https://fonts.google.com/</a></li>
-<li><a href="https://fontawesome.com/start" target="_blank" class="external-link">https://fontawesome.com/start</a></li>
-</ul>
-<h1 id="colors" tabindex="-1">Colors</h1>
-<ul>
-<li><a href="https://imagecolorpicker.com/en" target="_blank" class="external-link">https://imagecolorpicker.com/en</a></li>
-<li><a href="https://coolors.co/" target="_blank" class="external-link">https://coolors.co/</a></li>
-<li><a href="https://colours.neilorangepeel.com/" target="_blank" class="external-link">https://colours.neilorangepeel.com/</a></li>
-<li><a href="https://www.materialpalette.com/" target="_blank" class="external-link">https://www.materialpalette.com/</a></li>
-<li><a href="https://colorhunt.co/" target="_blank" class="external-link">https://colorhunt.co/</a></li>
-</ul>
-<h1 id="database" tabindex="-1">Database</h1>
-<ul>
-<li><a href="https://app.quickdatabasediagrams.com/#/" target="_blank" class="external-link">https://app.quickdatabasediagrams.com/#/</a></li>
-<li><a href="https://dbdiagram.io/d" target="_blank" class="external-link">https://dbdiagram.io/d</a></li>
-<li><a href="https://robomongo.org/" target="_blank" class="external-link">https://robomongo.org/</a></li>
-</ul>
-<h1 id="tools" tabindex="-1">Tools</h1>
-<ul>
-<li><a href="https://rallly.co/" target="_blank" class="external-link">https://rallly.co/</a></li>
-<li><a href="https://excalidraw.com/" target="_blank" class="external-link">https://excalidraw.com/</a></li>
-<li><a href="https://www.figma.com/" target="_blank" class="external-link">https://www.figma.com/</a></li>
-<li><a href="https://wireframe.cc/" target="_blank" class="external-link">https://wireframe.cc/</a></li>
-<li><a href="https://app.diagrams.net/" target="_blank" class="external-link">https://app.diagrams.net/</a></li>
-<li><a href="https://getsharex.com/" target="_blank" class="external-link">https://getsharex.com/</a></li>
-<li><a href="https://flameshot.org/" target="_blank" class="external-link">https://flameshot.org/</a></li>
-<li><a href="https://www.converto.io/en69//" target="_blank" class="external-link">https://www.converto.io/en69//</a></li>
-</ul>
-<h1 id="pdf" tabindex="-1">PDF</h1>
-<ul>
-<li><a href="https://heyzine.com/" target="_blank" class="external-link">https://heyzine.com/</a></li>
-</ul>
-<h1 id="emojis" tabindex="-1">Emojis 🤌</h1>
-<ul>
-<li><a href="https://emojipedia.org/pinched-fingers" target="_blank" class="external-link">https://emojipedia.org/pinched-fingers</a></li>
-</ul>
-<h1 id="audio" tabindex="-1">Audio</h1>
-<ul>
-<li><a href="https://www.pond5.com/" target="_blank" class="external-link">https://www.pond5.com/</a></li>
-</ul>
-<h1 id="shell" tabindex="-1">Shell</h1>
-<ul>
-<li><a href="https://ohmyposh.dev/docs/installation/prompt" target="_blank" class="external-link">https://ohmyposh.dev/docs/installation/prompt</a></li>
-</ul>
-<h1 id="crm" tabindex="-1">CRM</h1>
-<ul>
-<li><a href="https://civicrm.org/download" target="_blank" class="external-link">https://civicrm.org/download</a></li>
-<li><a href="https://suitecrm.com/" target="_blank" class="external-link">https://suitecrm.com/</a></li>
-</ul>
-<h1 id="css" tabindex="-1">CSS</h1>
-<ul>
-<li><a href="https://cssreference.io/" target="_blank" class="external-link">https://cssreference.io/</a></li>
-<li><a href="https://css-tricks.com/" target="_blank" class="external-link">https://css-tricks.com/</a></li>
-</ul>
-<h1 id="templates" tabindex="-1">Templates</h1>
-<ul>
-<li><a href="https://www.template.net/editable/5198/school-email-newsletter" target="_blank" class="external-link">https://www.template.net/editable/5198/school-email-newsletter</a></li>
-</ul>
-<h1 id="git" tabindex="-1">Git</h1>
-<ul>
-<li><a href="https://learngitbranching.js.org/" target="_blank" class="external-link">https://learngitbranching.js.org/</a></li>
-</ul>
-<h1 id="tutorial" tabindex="-1">Tutorial</h1>
-<ul>
-<li><a href="https://htmldog.com/guides/" target="_blank" class="external-link">https://htmldog.com/guides/</a></li>
-<li></li>
-</ul>
+<p><a class="internal-link is-unresolved" href="/404" target="">INTERESTS</a></p>
+<div class="block-language-dataview table-wrapper"><table class="dataview table-view-table">
+<thead class="table-view-thead">
+<tr class="table-view-tr-header">
+<th class="table-view-th">File</th>
+<th class="table-view-th">DATE</th>
+</tr>
+</thead>
+<tbody class="table-view-tbody">
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Dairy Free Tomato Soup</a></td>
+<td>2024-05-09</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Curried Lentil, Tomato, and Coconut Soup</a></td>
+<td>2024-04-16</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Sweet Spinach Muffins with Banana</a></td>
+<td>2024-04-15</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/best-breakfast-casserole/">Best Breakfast casserole</a></td>
+<td>2024-04-05</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/chocolate-waffles/">Chocolate Waffles</a></td>
+<td>2024-04-04</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Soft Boiled Eggs</a></td>
+<td>2024-04-04</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/tomato-basil-soup/">Tomato Basil Soup</a></td>
+<td>2024-04-04</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Smoothie Recipe</a></td>
+<td>2024-04-04</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Lemon-Blueberry Oatmeal Bars</a></td>
+<td>2024-04-03</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/mini-cinnamon-muffin/">Mini Cinnamon Muffin</a></td>
+<td>2024-04-03</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Mini Quiche</a></td>
+<td>2024-04-03</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/no-bake-chocolate-oatmeal-bars/">No-Bake Chocolate Oatmeal Bars</a></td>
+<td>2024-03-18</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/oatmeal-cups-recipe/">Oatmeal Cups Recipe</a></td>
+<td>2024-03-10</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/oatmeal-flax-chocolate-chip-cookies/">Oatmeal Flax Chocolate Chip Cookies</a></td>
+<td>2024-03-10</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/pasta-with-roasted-cauliflower-capers/">Pasta with Roasted Cauliflower Capers</a></td>
+<td>2024-03-02</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/bananakies/">Bananakies</a></td>
+<td>2024-03-01</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/monkey-bread-with-caramel-sauce/">Monkey Bread With Caramel Sauce</a></td>
+<td>2024-02-28</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Deviled Eggs Recipe</a></td>
+<td>2024-02-23</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Best-Ever Potato Latkes</a></td>
+<td>2024-02-20</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/stuffed-peppers/">Stuffed Peppers</a></td>
+<td>2024-02-04</td>
+</tr>
+<tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/recipes/nutella-crepes/">Nutella Crepes</a></td>
+<td>2023-12-01</td>
+</tr>
+<tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Italian Grilled Cheese Sandwich</a></td>
+<td>2016-12-03</td>
+</tr>
+</tbody>
+</table></div>
 </main>
 <aside>
 <div class="sidebar">
@@ -663,51 +665,6 @@ CTRL + K
 <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
 <div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
-</div>
-</div>
-<div class="toc">
-<div class="toc-title-container">
-<div class="toc-title">
-On this page
-</div>
-</div>
-<div class="toc-container">
-<nav class="toc">
-<ol>
-<li><a href="#code">Code</a>
-</li>
-<li><a href="#images">Images</a>
-</li>
-<li><a href="#text">Text</a>
-</li>
-<li><a href="#fonts">Fonts</a>
-</li>
-<li><a href="#colors">Colors</a>
-</li>
-<li><a href="#database">Database</a>
-</li>
-<li><a href="#tools">Tools</a>
-</li>
-<li><a href="#pdf">PDF</a>
-</li>
-<li><a href="#emojis">Emojis 🤌</a>
-</li>
-<li><a href="#audio">Audio</a>
-</li>
-<li><a href="#shell">Shell</a>
-</li>
-<li><a href="#crm">CRM</a>
-</li>
-<li><a href="#css">CSS</a>
-</li>
-<li><a href="#templates">Templates</a>
-</li>
-<li><a href="#git">Git</a>
-</li>
-<li><a href="#tutorial">Tutorial</a>
-</li>
-</ol>
-</nav>
 </div>
 </div>
 <div class="backlinks">
