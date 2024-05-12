@@ -3,23 +3,18 @@
 ---
 
 [[Home\|Home]]
-# Rapid HTML Email development
 
-- With Markdown / JSON
-	- https://static-maildown.onrender.com/
-		- https://github.com/lobau/maildown?tab=readme-ov-file
-	- https://github.com/maizzle/maizzle
-		- https://github.com/maizzle/maizzle-php
-		- https://jigsaw.maizzle.com/docs/examples/gradients/
-	- https://github.com/voidlabs/mosaico
-	- https://mosaico.io/
+[[TECHNOLOGY/DEV/Resources\|Resources]]
+
+
+# [[TECHNOLOGY/DEV/HTML Email Resources\|HTML Email Resources]] 
 
 # Graphic Design
 - Brochure in Affinity Designer
 - Style guide
 
 # Databases / BI tools
-- [[PROJECTS/Apache Superset\|Apache Superset]]  (https://preset.io/)
+- [[TECHNOLOGY/DEV/Apache Superset\|Apache Superset]]  (https://preset.io/)
 - https://dbeaver.io/download/
 
 # Obsidian
@@ -43,14 +38,10 @@
 
 # Web / Development
 - https://tailwindcss.com/
-- https://astro.build/
+- [ ] https://astro.build/ --> [[PROJECTS/MEED Project\|MEED Project]] 🛫 2024-05-12 
 - https://www.markdownguide.org/cheat-sheet/
-- [[PROJECTS/ohmyposh\|ohmyposh]]
+- [[TECHNOLOGY/DEV/ohmyposh\|ohmyposh]]
 - https://tina.io/
 - https://picocss.com/
-
-
-
-
 
 
