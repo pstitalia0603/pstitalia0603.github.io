@@ -2,6 +2,9 @@
 {"dg-publish":true,"permalink":"/recipes/recipes/","tags":["Interests"],"noteIcon":"","created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/05-May/2024-05-13\|2024-05-13]]
+
+
 [[TRACK/INTERESTS\|INTERESTS]]
 
 | File                                                                                              | DATE       |
@@ -15,8 +18,8 @@
 | [[RECIPES/Tomato Basil Soup\|Tomato Basil Soup]]                                               | 2024-04-04 |
 | [[RECIPES/Smoothie Recipe\|Smoothie Recipe]]                                                   | 2024-04-04 |
 | [[RECIPES/Lemon-Blueberry Oatmeal Bars\|Lemon-Blueberry Oatmeal Bars]]                         | 2024-04-03 |
-| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                         | 2024-04-03 |
 | [[RECIPES/Mini Quiche\|Mini Quiche]]                                                           | 2024-04-03 |
+| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                         | 2024-04-03 |
 | [[RECIPES/No-Bake Chocolate Oatmeal Bars\|No-Bake Chocolate Oatmeal Bars]]                     | 2024-03-18 |
 | [[RECIPES/Oatmeal Cups Recipe\|Oatmeal Cups Recipe]]                                           | 2024-03-10 |
 | [[RECIPES/Oatmeal Flax Chocolate Chip Cookies\|Oatmeal Flax Chocolate Chip Cookies]]           | 2024-03-10 |
