@@ -87,7 +87,7 @@ https://ohmyposh.dev/
 - https://htmldog.com/guides/
 
 # Localhost tunnels/other
-- [ ] links-cloud and web hosting 🛫 2024-05-14
+links-cloud and web hosting 🛫 2024-05-13
 - [ ] https://pinggy.io
 - [ ] https://zrok.io/ 
 - [ ] https://localxpose.io/docs/tutorials/sharing-files-from-localhost 
