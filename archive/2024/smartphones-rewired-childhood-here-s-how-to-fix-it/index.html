@@ -1,0 +1,4019 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Smartphones Rewired Childhood. Here&#39;s How to Fix It.</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:!0})</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",()=>{document.querySelectorAll(".callout").forEach(e=>{var t,l,c=getComputedStyle(e).getPropertyValue("--callout-icon"),c=c&&c.trim().replace(/^lucide-/,"");c&&(e=e.querySelector(".callout-title"))&&(t=document.createElement("div"),l=document.createElement("i"),t.appendChild(l),l.setAttribute("icon-name",c),t.setAttribute("class","callout-icon"),e.insertBefore(t,e.firstChild))}),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach(t=>{t.querySelector(".callout-title").addEventListener("click",e=>{t.classList.contains("is-collapsed")?t.classList.remove("is-collapsed"):t.classList.add("is-collapsed")})})})</script>
+<script src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script defer="defer" src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" defer="defer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.0556102d.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style>body.css-settings-manager{--text-highlight-bg-l:rgb(45,24,84);--text-highlight-bg-d:rgb(124,21,124)}</style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section filetree-note-icon backlinks-note-icon css-settings-manager theme-dark mod-linux is-mobile is-android is-phone obsidian-app show-inline-title show-view-header css-settings-manager floating-button-off progress-color h2-underline highlightr-realistic AT-row">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
+<nav class="navbar">
+<div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">PSF Data Garden</h1>
+</a>
+</div>
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">PSF Data Garden</h1>
+</a>
+<div style="display:flex;justify-content:center">
+<div class="search-button align-icon" onclick="toggleSearch()">
+<span class="search-icon">
+<i icon-name="search"></i>
+</span>
+<span class="search-text">
+<span>Search</span>
+<span style="font-size:.6rem;padding:2px 2px 0 6px;text-align:center;transform:translateY(4px)" class="search-keys">
+CTRL + K
+</span>
+</span>
+</div>
+</div>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('ARCHIVE')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">ARCHIVE</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('ARCHIVE/2023')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2023</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2023/the-witch-trials-of-j-k-rowling/">The Witch Trials of J.K. Rowling </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('ARCHIVE/2024')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">2024</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/30-useful-concepts-spring-2024/">30 Useful Concepts (Spring 2024) </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/about-a-boy-the-story-of-vladimir-putin/">About a Boy-The Story of Vladimir Putin </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/economist-roland-fryer-on-adversity-race-and-refusing-to-conform/">Economist Roland Fryer on Adversity, Race, and Refusing to Conform </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/how-the-working-class-became-america-s-second-class/">How the Working Class Became America’s Second Class </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/">Nicole Avant on Tragedy, Forgiveness, and Thinking Free </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/smartphones-rewired-childhood-here-s-how-to-fix-it/">Smartphones Rewired Childhood. Here&#39;s How to Fix It. </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/">The Deep Conflict Between Our Work and Parenting Ideals </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('DATA')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">DATA</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/count-non-null-values/">Count Non-null Values </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/errors-in-pq/">Errors in PQ </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/fiscal-month-number-calc/">FISCAL MONTH NUMBER CALC </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/list-repeat-power-query-m/">List.Repeat - PowerQuery M </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/m-mode-multiple-columns/">M Mode - Multiple Columns </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/m-code-mult-col/">M-CODE-mult-col </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/number-rows-by-group/">Number rows by group </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/remove-duplicates-in-power-query-m/">Remove Duplicates in Power Query M </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/remove-duplicates-power-bi/">Remove Duplicates PowerBI </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/remove-duplicates/">REMOVE DUPLICATES </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/replace-values-multiple-criteria/">REPLACE VALUES, MULTIPLE CRITERIA </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/transform-column-names-in-bulk/">Transform Column Names in Bulk </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/uppercase-and-underscore-column-names/">UPPERCASE AND UNDERSCORE COLUMN NAMES </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">WEEKNUM function </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('DigitalGarden')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">DigitalGarden</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/stuff-i-use/">Stuff I use </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('LEARNING')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">LEARNING</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('LEARNING/Courses')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">Courses</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/learning/courses/cs-50-s-intro-to-databases-with-sql/">CS50&#39;s Intro to Databases with SQL </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/learning/courses/programming-media-literacy-courses-for-kids/">Programming - Media Literacy Courses for Kids </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/learning/courses/progress-of-cs-50-sql/">PROGRESS OF CS50 SQL </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('PERSONAL')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PERSONAL</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('PERSONAL/INTERESTS')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">INTERESTS</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/personal/interests/la-divina-commedia/">La Divina Commedia </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('PERSONAL/TRAVEL')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">TRAVEL</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('PERSONAL/TRAVEL/ITALIA')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">ITALIA</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/personal/travel/italia/italia-2023-itinerary/">Italia 2023 - ITINERARY </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('PROJECTS')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">PROJECTS</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/archive-ics-to-csv-to-md/">ARCHIVE ICS TO CSV TO MD </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/i-digital-garden/">iDigital Garden </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/obsidian-quicknotes-android-with-tasker/">Obsidian Quicknotes - Android with Tasker </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/workout-log-documentation/">Workout log DOCUMENTATION </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('RECIPES')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">RECIPES</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/bananakies/">Bananakies </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/best-breakfast-casserole/">Best Breakfast casserole </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/chocolate-waffles/">Chocolate Waffles </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/mini-cinnamon-muffin/">Mini Cinnamon Muffin </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/monkey-bread-with-caramel-sauce/">Monkey Bread With Caramel Sauce </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/no-bake-chocolate-oatmeal-bars/">No-Bake Chocolate Oatmeal Bars </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/nutella-crepes/">Nutella Crepes </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/oatmeal-cups-recipe/">Oatmeal Cups Recipe </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/oatmeal-flax-chocolate-chip-cookies/">Oatmeal Flax Chocolate Chip Cookies </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/pasta-with-roasted-cauliflower-capers/">Pasta with Roasted Cauliflower Capers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/recipes/">RECIPES </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/stuffed-peppers/">Stuffed Peppers </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/tomato-basil-soup/">Tomato Basil Soup </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('TECHNOLOGY')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">TECHNOLOGY</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('TECHNOLOGY/DEV')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">DEV</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/apache-superset/">Apache Superset </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/ohmyposh/">ohmyposh </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/resources/">Resources </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('TECHNOLOGY/LINUX')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">LINUX</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/linux/linux-samba-server-on-windows-11/">Linux Samba Server on Windows 11 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/linux/syncthing-on-raspberry-pi/">Syncthing on Raspberry Pi </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('TRACK')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">TRACK</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/track/current-projects/">CURRENT PROJECTS </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/track/podcasts/">PODCASTS </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Home </a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div class="search-container" id="globalsearch" onclick="toggleSearch()">
+<div class="search-box">
+<input type="search" id="term" placeholder="Start typing...">
+<div id="search-results"></div>
+<footer class="search-box-footer">
+<div class="navigation-hint">
+<span>Enter to select</span>
+</div>
+<div class="navigation-hint align-icon">
+<i icon-name="arrow-up" aria-hidden="true"></i>
+<i icon-name="arrow-down" aria-hidden="true"></i>
+<span>to navigate</span>
+</div>
+<div class="navigation-hint">
+<span>ESC to close</span>
+</div>
+</footer>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);e=e.textContent;e&&(window.document.getElementById("term").value=e.trim(),window.toggleSearch(),window.search())};const loadingSvg=`
+    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">
+          <circle cx="22" cy="22" r="6" stroke-opacity="0">
+              <animate attributeName="r"
+                   begin="1.5s" dur="3s"
+                   values="6;22"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                   begin="1.5s" dur="3s"
+                   values="1;0" calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-width"
+                   begin="1.5s" dur="3s"
+                   values="2;0" calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="6" stroke-opacity="0">
+              <animate attributeName="r"
+                   begin="3s" dur="3s"
+                   values="6;22"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-opacity"
+                   begin="3s" dur="3s"
+                   values="1;0" calcMode="linear"
+                   repeatCount="indefinite" />
+              <animate attributeName="stroke-width"
+                   begin="3s" dur="3s"
+                   values="2;0" calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+          <circle cx="22" cy="22" r="8">
+              <animate attributeName="r"
+                   begin="0s" dur="1.5s"
+                   values="6;1;2;3;4;5;6"
+                   calcMode="linear"
+                   repeatCount="indefinite" />
+          </circle>
+      </g>
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-14T01:43:40.608Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-14T01:43:40.608Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-14T01:43:40.608Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+                    <a class="search-link" href="${e.url}">${e.title}</a>
+                    <div onclick="window.location='${e.url}'">
+                        <div class="header-meta">
+                            <div class="header-tags">
+                                ${e.tags.map(e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>").join("")}
+                            </div>
+                        </div>
+                        ${e.content}
+                    </div>
+                </div>`:t+=`<div class="searchresult">
+                    <a class="search-link" href="${e.url}">${e.title}</a>
+                    <div onclick="window.location='${e.url}'">
+                        ${e.content}
+                    </div>
+                </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
+<main class="content cm-s-obsidian">
+<header>
+<h1 data-note-icon="">Smartphones Rewired Childhood. Here&#39;s How to Fix It.</h1>
+<div class="header-meta">
+<div class="header-tags">
+<a class="tag" onclick="toggleTagSearch(this)">
+#podcast
+</a>
+</div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-05-13T08:36:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-05-13 8:36:56 pm"></span></div></div></div>
+</header>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> The Free Press 3/25/2024 🛫 2024-05-14</label></li>
+</ul>
+<p>Honestly with Bari Weiss: Jonathan Haidt: Smartphones Rewired Childhood. Here's How to Fix It.</p>
+<p>Episode webpage: <a href="https://www.bariweiss.com/" target="_blank" class="external-link">https://www.bariweiss.com/</a></p>
+<p>Media file: <a href="https://pdst.fm/e/mgln.ai/track/verifi.podscribe.com/rss/p/chrt.fm/track/384D27/pscrb.fm/rss/p/traffic.megaphone.fm/RSV3188865547.mp3?updated=1711480150" target="_blank" class="external-link">https://pdst.fm/e/mgln.ai/track/verifi.podscribe.com/rss/p/chrt.fm/track/384D27/pscrb.fm/rss/p/traffic.megaphone.fm/RSV3188865547.mp3?updated=1711480150</a></p>
+<p>Social psychologist Jonathan Haidt has been explaining the human condition to us better than anyone else. He first did it with his book <a href="https://bookshop.org/a/93116/9780307455772" target="_blank" class="external-link"><em>The Righteous Mind: Why Good People Are Divided by Politics and Religion</em></a>, which explored why people were so passionately divided over politics and religion, and argued that people are fundamentally religiously inclined creatures. Then, he did it again with <a href="https://bookshop.org/a/93116/9780735224919" target="_blank" class="external-link"><em>The Coddling of the American Mind: How Good Intentions and Bad Ideas Are Setting Up a Generation for Failure</em></a>, which laid out why kids today—especially on college campuses—have become so intolerant of opinions that conflict with their own.</p>
+<p>Now, he’s done it once more with his new book, <a href="https://bookshop.org/a/93116/9780593655030" target="_blank" class="external-link"><em>The Anxious Generation: How the Great Rewiring of Childhood Is Causing an Epidemic of Mental Illness</em></a><em>.</em> This time, Haidt explains what so many parents have been confused by for the last decade: Why are kids today more anxious than ever, more depressed than ever, more risk-averse than ever, lonelier than ever, and less social than ever?</p>
+<p>It’s pretty simple, Haidt argues: We changed childhood.</p>
+<p>The mass migration of childhood, Haidt says, from the real world to the virtual world has completely changed what it means to be a kid. By replacing free and independent play and quality time with friends with the isolation of screens and phones, we instigated what he calls the “Great Rewiring of Childhood.” What resulted, he argues, is a childhood that is “more sedentary, solitary, virtual, and incompatible with healthy human development.”</p>
+<p>Today, Haidt explains how this massive change happened, its detrimental effects on kids, and what actions we can take—both in our own lives and legislatively—in order to reverse course and free the anxious generation.</p>
+<h2 id="transcript" tabindex="-1">Transcript</h2>
+<p>Social psychologist Jonathan Height will be remembered as one of the most important thinkers of the 21st century. And that's not because he's sending spaceships to Mars, or because he's working on fusion energy, or because he's figured out how to solve the chip problem. It's because Jonathan has been explaining our condition to ourselves better than almost anyone else out there.<br>
+He did it first with his book The Righteous Mind, which helped explain why people are so passionately divided over politics and religion, and which also made the argument that human<br>
+beings are fundamentally religiously inclined creatures.<br>
+Then, he did it again with the coddling of the American mind, which he co-wrote with Greg Lukinov. That book laid out why kids today, especially kids on college campuses, have become so intolerant of opinions that conflict with their own, and how that intolerance has impacted the culture and the country. And now, John Height has done it once more, with his new book The Anxious Generation, How the Great Rewiring of Childhood is Causing an Epidemic of Mental Illness. This time, John explains what so many parents have been confounded by for the last decade. Why, despite all of our luxuries and privileges and wealth, are kids today more anxious than ever, more depressed than ever, more risk averse than ever, more lonely than ever, and less social than ever before? Well, it's pretty simple, John argues. We fundamentally changed childhood. The mass migration of childhood from the real world into the virtual one has completely transformed what it means to grow up. In replacing free play and interaction with friends and other people, and really just the world, with the isolation of screens and phones, we instigated what he calls the great rewiring of childhood. What he means by this is that childhood, as he writes, was rewired into a form that was more sedentary, solitary, virtual, and incompatible with healthy human development.</p>
+<p>A few weeks ago, we had a conversation on this show with Abigail Shrier about many of these topics and questions. It sparked a huge response and a lot of letters to the editor, some of which we published on the Free Press. But what we heard was loud and clear, conversations about parenting and childhood aren't just important for parents, they're important for everybody because the kids of today are becoming the people that will lead our culture and our country in the future. That future, the one all of us will live in, is inextricably linked with how we raise the next generation of adults. So today, we are absolutely thrilled to bring back Jonathan Haidt.</p>
+<p>00:04:07,140 --&gt; 00:04:09,460<br>
+John Height, thank you so much for being here today.<br>
+Thanks for having me back.<br>
+So you were born 20 years before me. You were born in 1963. And if you would, just tell me a little bit about your childhood. How did you grow up?<br>
+Well, now I recognize that I had just the quintessential post-war America childhood. I grew up in Westchester County in the suburb North of New York City. And the key thing is that it was just assumed that kids are on their own when they don't have to be somewhere. And by 2nd and 3rd grade, I was walking over to my friend's house who lived about half mile away. We would come up with games to play. Me and my best friend, Christor, or we'd meet up with a couple other kids. Or once how we had a rock fight with some kids at a nearby school, just you have adventures.</p>
+<p>76<br>
+00:04:54,340 --&gt; 00:04:58,900<br>
+Basically, I had a free range childhood, like everybody, as everybody else did back then.</p>
+<p>77<br>
+00:04:58,900 --&gt; 00:05:01,260<br>
+And that kind of ended in the 90s.</p>
+<p>78<br>
+00:05:01,260 --&gt; 00:05:04,820<br>
+It's almost like you and I grew up in a different world.</p>
+<p>79<br>
+00:05:04,820 --&gt; 00:05:05,820<br>
+It really is.</p>
+<p>80<br>
+00:05:05,820 --&gt; 00:05:06,940<br>
+Paint the picture for us.</p>
+<p>81<br>
+00:05:06,940 --&gt; 00:05:10,820<br>
+What does the average American childhood look like today?</p>
+<p>82<br>
+00:05:10,820 --&gt; 00:05:14,140<br>
+So kids are locked up until they're in middle school.</p>
+<p>83<br>
+00:05:14,140 --&gt; 00:05:17,980<br>
+You don't see eight-eight-year-olds walking around the way we did when we were kids.</p>
+<p>84<br>
+00:05:17,980 --&gt; 00:05:22,820<br>
+And the latest data that I've seen Gallup has a survey out from last year, if you just look at social media, just social media.</p>
+<p>86<br>
+00:05:25,060 --&gt; 00:05:29,860<br>
+And that includes TikTok and YouTube videos, which is the biggest time suckers those two.</p>
+<p>87<br>
+00:05:29,860 --&gt; 00:05:33,300<br>
+It's five hours a day, seven days a week.</p>
+<p>88<br>
+00:05:33,300 --&gt; 00:05:34,860<br>
+For girls, it's even higher.</p>
+<p>89<br>
+00:05:34,860 --&gt; 00:05:37,020<br>
+That's just social media.</p>
+<p>90<br>
+00:05:37,020 --&gt; 00:05:39,020<br>
+Now you add in video games and all the other stuff.</p>
+<p>91<br>
+00:05:39,020 --&gt; 00:05:40,420<br>
+You're up around nine hours a day.</p>
+<p>92<br>
+00:05:40,420 --&gt; 00:05:42,020<br>
+That's the average.</p>
+<p>93<br>
+00:05:42,020 --&gt; 00:05:44,620<br>
+There are many kids who are spending a lot more than that.</p>
+<p>94<br>
+00:05:44,620 --&gt; 00:05:49,940<br>
+So I want to make the point that first, the quantity is just hard to comprehend.</p>
+<p>95<br>
+00:05:49,940 --&gt; 00:05:51,660<br>
+It's mind-boggling.</p>
+<p>96<br>
+00:05:51,660 --&gt; 00:05:58,020<br>
+The most stunning thing is that Gen Z, kids born after 1995, Gen Z has been giving up time with friends outside of school.</p>
+<p>98<br>
+00:05:59,900 --&gt; 00:06:05,420<br>
+You label all of these changes as the great rewiring of childhood.</p>
+<p>99<br>
+00:06:05,420 --&gt; 00:06:10,980<br>
+But the change didn't just happen with the advent of the iPhone or the Android or with the like button.</p>
+<p>101<br>
+00:06:12,180 --&gt; 00:06:19,860<br>
+You trace the change to sort of the 1980s and with the transformation away from free play to a much more fear-based childhood.</p>
+<p>103<br>
+00:06:24,820 --&gt; 00:06:29,500<br>
+What drove the sort of shift away from letting kids like you go and play on their own and figure out how to stone each other without killing each other in the westchester?</p>
+<p>105<br>
+00:06:34,940 --&gt; 00:06:38,700<br>
+When did that begin to shift and why culturally?</p>
+<p>106<br>
+00:06:38,700 --&gt; 00:06:39,700<br>
+Yeah.</p>
+<p>107<br>
+00:06:39,700 --&gt; 00:06:42,940<br>
+So it's not just like, oh, the phones are hurting our kids.</p>
+<p>108<br>
+00:06:42,940 --&gt; 00:06:46,460<br>
+It's like, here's what childhood is.</p>
+<p>109<br>
+00:06:46,460 --&gt; 00:06:49,140<br>
+Because <mark style="background:#fff3A3A6">human childhood is this amazing evolutionary adaptation</mark>.</p>
+<p>110<br>
+00:06:49,140 --&gt; 00:06:50,140<br>
+It's really different.</p>
+<p>111<br>
+00:06:50,140 --&gt; 00:06:55,180<br>
+How the hell evolution figured out that females would secrete nutrients from their chest skin and then infants would, like, completely insane.</p>
+<p>113<br>
+00:06:59,260 --&gt; 00:07:03,060<br>
+We have like, whatever, 300 million years of evolution to get that.</p>
+<p>114<br>
+00:07:03,060 --&gt; 00:07:07,020<br>
+We have this long dependency as mammals on the female body.</p>
+<p>115<br>
+00:07:07,020 --&gt; 00:07:15,060<br>
+And then as the brains are growing in primates, the big jump is to the genus homo, hominids, much bigger brains.</p>
+<p>117<br>
+00:07:16,060 --&gt; 00:07:19,060<br>
+And then you get to homo sapiens and homohydobragensis.</p>
+<p>118<br>
+00:07:19,060 --&gt; 00:07:21,660<br>
+<mark style="background:#fff3A3A6">We have really big brains.<br>
+And it's thought that the last part of that, the huge size, isn't just like, oh, man, the tool user, it's actually much more for social life.</mark></p>
+<p>121<br>
+00:07:29,660 --&gt; 00:07:30,820<br>
+It's for culture.</p>
+<p>122<br>
+00:07:30,820 --&gt; 00:07:33,780<br>
+We have this incredible adaptation called culture.</p>
+<p>123<br>
+00:07:33,780 --&gt; 00:07:39,260<br>
+And it requires a large frontal cortex and a long, long period of learning in order to fill it in with these cultural skills.</p>
+<p>125<br>
+00:07:41,620 --&gt; 00:07:45,020<br>
+And is that long period of learning the thing we called childhood?</p>
+<p>126<br>
+00:07:45,020 --&gt; 00:07:46,020<br>
+Exactly.</p>
+<p>127<br>
+00:07:46,020 --&gt; 00:07:47,980<br>
+You once could have the basic motor skills down.</p>
+<p>128<br>
+00:07:47,980 --&gt; 00:07:51,660<br>
+They love to run and jump and hide and practice avoiding predators.</p>
+<p>129<br>
+00:07:51,660 --&gt; 00:07:52,660<br>
+So it's very physical.</p>
+<p>130<br>
+00:07:52,660 --&gt; 00:07:53,660<br>
+Kids are very physical.</p>
+<p>131<br>
+00:07:53,660 --&gt; 00:07:54,860<br>
+They want to play all the time.</p>
+<p>132<br>
+00:07:54,860 --&gt; 00:07:58,460<br>
+But once they reach around age six or seven, now they really want to play in groups.</p>
+<p>133<br>
+00:07:58,460 --&gt; 00:08:01,340<br>
+They're so exciting to play with another group of kids.</p>
+<p>134<br>
+00:08:01,340 --&gt; 00:08:02,340<br>
+And that's all over the world.</p>
+<p>135<br>
+00:08:02,340 --&gt; 00:08:03,500<br>
+You travel anywhere in the world.</p>
+<p>136<br>
+00:08:03,500 --&gt; 00:08:07,460<br>
+You'll find kids of that age, you know, five or six up through 10 or 12.</p>
+<p>137<br>
+00:08:07,460 --&gt; 00:08:09,220<br>
+They're out playing in groups.</p>
+<p>138<br>
+00:08:09,220 --&gt; 00:08:10,220<br>
+That's what they want to do.</p>
+<p>139<br>
+00:08:10,220 --&gt; 00:08:11,540<br>
+That's how they learn best.</p>
+<p>140<br>
+00:08:11,540 --&gt; 00:08:14,060<br>
+You know, and you asked me at the opening, what was my childhood like?</p>
+<p>141<br>
+00:08:14,060 --&gt; 00:08:15,340<br>
+You know, it was like that.</p>
+<p>142<br>
+00:08:15,340 --&gt; 00:08:18,340<br>
+But then in the 90s, we decided to change it.</p>
+<p>143<br>
+00:08:18,340 --&gt; 00:08:20,780<br>
+We freaked out about child abduction.</p>
+<p>144<br>
+00:08:20,780 --&gt; 00:08:23,100<br>
+We became incredibly overprotective.</p>
+<p>145<br>
+00:08:23,100 --&gt; 00:08:25,620<br>
+We totally focused on college admissions.</p>
+<p>146<br>
+00:08:25,620 --&gt; 00:08:29,620<br>
+And you know, the point of childhood is to do well on the SAT and assemble a resume to get into college.</p>
+<p>148<br>
+00:08:31,140 --&gt; 00:08:34,300<br>
+And there's a graph in the book, 96 was the peak year of change.</p>
+<p>149<br>
+00:08:34,300 --&gt; 00:08:38,540<br>
+That's the year that suddenly women began spending a lot more time with their kids and fathers did too.</p>
+<p>151<br>
+00:08:39,540 --&gt; 00:08:41,180<br>
+Why did that happen?</p>
+<p>152<br>
+00:08:41,180 --&gt; 00:08:46,500<br>
+So first there was a real crime wave and I was just listening to an episode about the 1970s.</p>
+<p>153<br>
+00:08:46,500 --&gt; 00:08:49,460<br>
+And I forgot how completely nuts everything was.</p>
+<p>154<br>
+00:08:49,460 --&gt; 00:08:52,940<br>
+I mean, there were serial killers biting off people's ears.</p>
+<p>155<br>
+00:08:52,940 --&gt; 00:08:55,020<br>
+You know, there was a lot of craziness in mayhem.</p>
+<p>156<br>
+00:08:55,020 --&gt; 00:08:58,740<br>
+There were a lot of terrorism and bombs, street crime, you know, things really did get more dangerous, especially in urban areas.</p>
+<p>158<br>
+00:09:01,380 --&gt; 00:09:05,660<br>
+But you know, suburban areas like yours and mine were still quite safe for kids to be outside.</p>
+<p>159<br>
+00:09:05,660 --&gt; 00:09:08,820<br>
+But fear began to spread in part through the media because, you know, when there were three networks, they didn't have a lot on child abductions.</p>
+<p>161<br>
+00:09:11,540 --&gt; 00:09:15,300<br>
+But once you have cable networks, well now some of them are carrying, you know, there are like a hundred true child abductions every year in this country.</p>
+<p>163<br>
+00:09:18,140 --&gt; 00:09:21,980<br>
+It's tiny, but you know, some of them get a huge amount of attention.</p>
+<p>164<br>
+00:09:21,980 --&gt; 00:09:26,100<br>
+There was the milk cartons with this photos of missing kids.</p>
+<p>165<br>
+00:09:26,100 --&gt; 00:09:30,720<br>
+So for a variety of reasons are thinking about childhood begins to change in the 80s, but kids lives don't change that much until the 90s.</p>
+<p>167<br>
+00:09:33,900 --&gt; 00:09:38,420<br>
+A lot of these trends, the overprotection started among more educated upper-class people.</p>
+<p>168<br>
+00:09:38,420 --&gt; 00:09:43,320<br>
+They're the ones who began to do what the sociologist Annette LaRoe calls concerted cultivation parenting.</p>
+<p>170<br>
+00:09:44,320 --&gt; 00:09:48,000<br>
+You know, I will shepherd you around to, you know, math lessons and Mandarin lessons and these things will make you Ivy League material.</p>
+<p>172<br>
+00:09:50,980 --&gt; 00:09:52,660<br>
+But they've actually spread to everyone now.</p>
+<p>173<br>
+00:09:52,660 --&gt; 00:09:58,660<br>
+There's another aspect to this that I think is under discussed, which is as people had fewer children, their obsession over those children got more intense.</p>
+<p>175<br>
+00:10:03,020 --&gt; 00:10:05,700<br>
+How important of a factor is that?</p>
+<p>176<br>
+00:10:05,700 --&gt; 00:10:06,700<br>
+Yes.</p>
+<p>177<br>
+00:10:06,700 --&gt; 00:10:07,700<br>
+That is huge.</p>
+<p>178<br>
+00:10:07,700 --&gt; 00:10:12,820<br>
+There are several like major sociological trends that drove this change of childhood.</p>
+<p>179<br>
+00:10:12,820 --&gt; 00:10:14,780<br>
+And I just talked about one, which is changing media.</p>
+<p>180<br>
+00:10:14,780 --&gt; 00:10:17,540<br>
+Oh, in a second, a true rise in crime.</p>
+<p>181<br>
+00:10:17,540 --&gt; 00:10:20,660<br>
+The third, I think, is prosperity and education.</p>
+<p>182<br>
+00:10:20,660 --&gt; 00:10:24,880<br>
+So the normal human thing is you have lots of babies and some of them die on the way to adulthood.</p>
+<p>184<br>
+00:10:25,880 --&gt; 00:10:27,900<br>
+You don't invest all that much in anyone.</p>
+<p>185<br>
+00:10:27,900 --&gt; 00:10:29,180<br>
+You just have a lot of them.</p>
+<p>186<br>
+00:10:29,180 --&gt; 00:10:31,660<br>
+And as long as you have a lot of them, well, there are a lot of kids around.</p>
+<p>187<br>
+00:10:31,660 --&gt; 00:10:34,100<br>
+They're all playing with each other and, you know, you've got a lot of work to do.</p>
+<p>188<br>
+00:10:34,100 --&gt; 00:10:36,260<br>
+You're not going to be playing with them.</p>
+<p>189<br>
+00:10:36,260 --&gt; 00:10:37,660<br>
+Let them play with each other.</p>
+<p>190<br>
+00:10:37,660 --&gt; 00:10:39,660<br>
+And so people used to grow up with siblings.</p>
+<p>191<br>
+00:10:39,660 --&gt; 00:10:43,780<br>
+Well, you know, talk to people in China now, especially once they got the one child policy.</p>
+<p>192<br>
+00:10:43,780 --&gt; 00:10:47,900<br>
+They got to the point of a while ago where you have one child with no aunts and uncles and four grandparents.</p>
+<p>194<br>
+00:10:48,900 --&gt; 00:10:52,860<br>
+You have one child, two parents, four grandparents, all doting on this one child.</p>
+<p>195<br>
+00:10:52,860 --&gt; 00:10:57,820<br>
+All of their hopes, genetic and cultural are invested in this one child.</p>
+<p>196<br>
+00:10:57,820 --&gt; 00:11:00,780<br>
+And especially in East Asian societies, which are very much test-based.</p>
+<p>197<br>
+00:11:00,780 --&gt; 00:11:03,700<br>
+You know, they have this ancient meritocracy around tests.</p>
+<p>198<br>
+00:11:03,700 --&gt; 00:11:05,380<br>
+There's a lot of pressure on the kid.</p>
+<p>199<br>
+00:11:05,380 --&gt; 00:11:06,820<br>
+My wife is Korean American.</p>
+<p>200<br>
+00:11:06,820 --&gt; 00:11:08,580<br>
+We've been to Korea together.</p>
+<p>201<br>
+00:11:08,580 --&gt; 00:11:12,220<br>
+And, you know, childhood in Korea is all about just practicing for college entrance exams.</p>
+<p>202<br>
+00:11:12,220 --&gt; 00:11:13,460<br>
+It's really sad.</p>
+<p>203<br>
+00:11:13,460 --&gt; 00:11:18,860<br>
+But so as a society modernizes, as women are, as everyone's wealthier, women are more educated, costs of living go up, for all these reasons, large families decline.</p>
+<p>205<br>
+00:11:22,380 --&gt; 00:11:23,380<br>
+And we have a large family.</p>
+<p>206<br>
+00:11:23,380 --&gt; 00:11:24,380<br>
+You can't oversupervised.</p>
+<p>207<br>
+00:11:24,380 --&gt; 00:11:27,540<br>
+And you can expect the kids to look out for each other.</p>
+<p>208<br>
+00:11:27,540 --&gt; 00:11:32,700<br>
+And when you have two college educated parents and one child, boy, are they going to try to engineer the best outcome?</p>
+<p>210<br>
+00:11:34,820 --&gt; 00:11:38,220<br>
+So for all these reasons, again, it's just the 70s, 80s, and into the 90s.</p>
+<p>211<br>
+00:11:38,220 --&gt; 00:11:42,300<br>
+Just huge sociological changes, huge changes in American family structure.</p>
+<p>212<br>
+00:11:42,300 --&gt; 00:11:47,140<br>
+And all of these contribute to the rewiring of childhood, away from free play and towards concerted cultivation, preparation for college.</p>
+<p>214<br>
+00:11:50,500 --&gt; 00:11:55,740<br>
+So these fundamental changes begin happening in the 80s and then especially in the 90s, where we have fewer kids in the family, less unsupervised play, more fear in paranoia coming from the media and therefore to the parents.</p>
+<p>217<br>
+00:12:03,860 --&gt; 00:12:06,140<br>
+And then more helicopter parenting.</p>
+<p>218<br>
+00:12:06,140 --&gt; 00:12:07,660<br>
+Combine all of these for me.</p>
+<p>219<br>
+00:12:07,660 --&gt; 00:12:10,620<br>
+What do these do to kids?</p>
+<p>220<br>
+00:12:10,620 --&gt; 00:12:13,100<br>
+Before the smartphone even enters the scene?</p>
+<p>221<br>
+00:12:13,100 --&gt; 00:12:15,060<br>
+So two big things.</p>
+<p>222<br>
+00:12:15,060 --&gt; 00:12:19,300<br>
+One is <mark style="background:#fff3A3A6">it deprives them of what they most need to develop anti-fragility</mark>.</p>
+<p>223<br>
+00:12:19,300 --&gt; 00:12:22,500<br>
+So anti-fragility, hope is familiar to your listeners by now.</p>
+<p>224<br>
+00:12:22,500 --&gt; 00:12:27,420<br>
+It's the concept that is from Nassim Taleb, my NYU colleague, it's the opposite of fragility.</p>
+<p>225<br>
+00:12:27,420 --&gt; 00:12:30,260<br>
+It means that you actually need to get knocked around.</p>
+<p>226<br>
+00:12:30,260 --&gt; 00:12:32,260<br>
+<mark style="background:#fff3A3A6">You need to have setbacks in order to get strong.</mark></p>
+<p>227<br>
+00:12:32,260 --&gt; 00:12:37,300<br>
+Also the immune system is the classic example if you protect your kids from bacteria, you're preventing the immune system from developing.</p>
+<p>229<br>
+00:12:39,020 --&gt; 00:12:43,780<br>
+It needs bacteria, it needs to get ill in order to develop immunity.</p>
+<p>230<br>
+00:12:43,780 --&gt; 00:12:49,340<br>
+So the vast over protection is very much like raising your kid in a germ-free bubble.</p>
+<p>231<br>
+00:12:49,340 --&gt; 00:12:52,060<br>
+You are going to cause your kid to have autoimmune diseases.</p>
+<p>232<br>
+00:12:52,060 --&gt; 00:12:56,820<br>
+And I think depression, anxiety, suicidal ideation, and self-harm are sort of the psychiatric equivalence of autoimmune disease.</p>
+<p>234<br>
+00:12:59,140 --&gt; 00:13:03,380<br>
+The other big thing is <mark style="background:#fff3A3A6">we raise them in an environment of fear</mark>.</p>
+<p>235<br>
+00:13:03,380 --&gt; 00:13:05,300<br>
+So we teach them the world is dangerous.</p>
+<p>236<br>
+00:13:05,300 --&gt; 00:13:08,220<br>
+Now in fact, the world has gotten unbelievably safe.</p>
+<p>237<br>
+00:13:08,220 --&gt; 00:13:12,460<br>
+I mean, the death rate from all causes just keeps dropping and dropping, especially with the consumer revolution in the 60, 70s, 80s.</p>
+<p>239<br>
+00:13:16,460 --&gt; 00:13:21,100<br>
+The odds of a kid dying today are tiny compared to 50 or 100 years ago.</p>
+<p>240<br>
+00:13:21,100 --&gt; 00:13:23,860<br>
+So the world gets safer and safer, but we get more and more afraid of it, and we teach that to our kids.</p>
+<p>242<br>
+00:13:25,180 --&gt; 00:13:30,140<br>
+To the point where our kids are told stranger danger, don't ever talk to strangers.</p>
+<p>243<br>
+00:13:30,140 --&gt; 00:13:35,980<br>
+Now yes, our kids should be wary if a stranger comes up to them and says, &quot;Oh, come with me, of course, that's terrible.&quot;</p>
+<p>245<br>
+00:13:36,980 --&gt; 00:13:37,980<br>
+Right.</p>
+<p>246<br>
+00:13:37,980 --&gt; 00:13:41,460<br>
+But when you and I are growing up, if you need directions, you talk to a stranger.</p>
+<p>247<br>
+00:13:41,460 --&gt; 00:13:42,660<br>
+Like you say, &quot;Excuse me, sir.</p>
+<p>248<br>
+00:13:42,660 --&gt; 00:13:43,860<br>
+Can you tell me how to get to zone?&quot;</p>
+<p>249<br>
+00:13:43,860 --&gt; 00:13:49,100<br>
+So there's a wonderful book, &quot;Parented Parenting&quot; by a British sociologist, Frank Verady.</p>
+<p>250<br>
+00:13:49,100 --&gt; 00:13:54,460<br>
+He says, &quot;The center of all of this is the <mark style="background:#fff3A3A6">spectacular collapse of adult solidarity</mark>, which is a fancy way of saying, &quot;Adults used to kind of assume that we'd help each other out with our kids and that if your kids in trouble, and I'm there, I'll help them.&quot;</p>
+<p>253<br>
+00:14:02,220 --&gt; 00:14:05,540<br>
+That's kind of what decent societies have always assumed.</p>
+<p>254<br>
+00:14:05,540 --&gt; 00:14:11,020<br>
+But once we had all these satanic panics and sexual abuse scandals, and some were real, and many were not, we get the feeling that we can never trust any other adult.</p>
+<p>256<br>
+00:14:16,140 --&gt; 00:14:18,300<br>
+No adult can ever talk to our kids.</p>
+<p>257<br>
+00:14:18,300 --&gt; 00:14:21,300<br>
+And so there's a general sense of paranoia about everyone.</p>
+<p>258<br>
+00:14:21,300 --&gt; 00:14:25,860<br>
+Now, if you raise your kids in the safest environments that have ever been, and then you send them to the colleges, universities which are like the socially safest environments that have ever been, but you tell them that everything is dangerous, everyone's out to get you, you can't succeed, there's so many obstacles.</p>
+<p>262<br>
+00:14:38,740 --&gt; 00:14:44,420<br>
+So this is not this sort of paranoia, <mark style="background:#fff3A3A6">this negativity is just not a good way to raise kids that are going to become confident, competent, and capable.<br>
+</mark><br>
+264<br>
+00:14:47,940 --&gt; 00:14:53,300<br>
+There's a beautiful metaphor you use in the book where you compare the raising of resilient children to a reaction in trees that makes them strong, something I never heard of called &quot;stresswood.&quot;</p>
+<p>267<br>
+00:14:58,620 --&gt; 00:15:03,620<br>
+And here's what you write, &quot;Trees that are exposed to strong winds early in life become trees that can withstand even stronger winds when full grown.&quot;</p>
+<p>269<br>
+00:15:07,540 --&gt; 00:15:11,980<br>
+Conversely, trees that are raised in a protected greenhouse sometimes fall over from their own weight before they reach maturity.</p>
+<p>271<br>
+00:15:14,980 --&gt; 00:15:19,860<br>
+<mark style="background:#fff3A3A6">&quot;Stresswood is a perfect metaphor for children who also need to experience frequent stressors in order to become strong adults.</mark></p>
+<p>273<br>
+00:15:22,580 --&gt; 00:15:28,540<br>
+What are those healthy stressors that kids need to develop that they're no longer getting?&quot;</p>
+<p>274<br>
+00:15:28,540 --&gt; 00:15:34,180<br>
+It's all the little small stuff that was unpleasant as a child, so it's being excluded, it's vital that kids be excluded.</p>
+<p>276<br>
+00:15:36,100 --&gt; 00:15:37,260<br>
+Can you imagine?</p>
+<p>277<br>
+00:15:37,260 --&gt; 00:15:39,860<br>
+So your daughter is what, how old are you?</p>
+<p>278<br>
+00:15:39,860 --&gt; 00:15:40,860<br>
+Two, three.</p>
+<p>279<br>
+00:15:40,860 --&gt; 00:15:41,860<br>
+Yeah, she's less than two, yeah.</p>
+<p>280<br>
+00:15:41,860 --&gt; 00:15:44,780<br>
+We're not at the excluding mean girls' phase yet.</p>
+<p>281<br>
+00:15:44,780 --&gt; 00:15:47,740<br>
+But so suppose we'll get there.</p>
+<p>282<br>
+00:15:47,740 --&gt; 00:15:49,540<br>
+That's right, you will.</p>
+<p>283<br>
+00:15:49,540 --&gt; 00:15:52,740<br>
+Given that she's going to get there, if I gave you the option, I said, &quot;If you sign this deal, I can guarantee that she will never face exclusion before her 18th birthday.</p>
+<p>285<br>
+00:15:57,900 --&gt; 00:15:58,900<br>
+Would you sign it?&quot;</p>
+<p>286<br>
+00:15:58,900 --&gt; 00:15:59,900<br>
+No.</p>
+<p>287<br>
+00:15:59,900 --&gt; 00:16:00,900<br>
+Right.</p>
+<p>288<br>
+00:16:00,900 --&gt; 00:16:05,100<br>
+Because we know intuitively that they have to experience it.</p>
+<p>289<br>
+00:16:05,100 --&gt; 00:16:08,740<br>
+Otherwise, it's going to be devastating when they're 18.</p>
+<p>290<br>
+00:16:08,740 --&gt; 00:16:10,940<br>
+And it's the same thing for, let's say, losing.</p>
+<p>291<br>
+00:16:10,940 --&gt; 00:16:14,900<br>
+It's very important that children lose a lot in competitive games.</p>
+<p>292<br>
+00:16:14,900 --&gt; 00:16:17,700<br>
+I remember when my kids were young, it was very painful for them to lose.</p>
+<p>293<br>
+00:16:17,700 --&gt; 00:16:19,140<br>
+They would sometimes get upset.</p>
+<p>294<br>
+00:16:19,140 --&gt; 00:16:21,900<br>
+But after a while, then they just, you know, then they get used to it.</p>
+<p>295<br>
+00:16:21,900 --&gt; 00:16:25,820<br>
+And now you can have a lot more fun because they know we're going to play 20 games and I'm going to lose a bunch of them and win a bunch of them.</p>
+<p>297<br>
+00:16:28,260 --&gt; 00:16:34,020<br>
+So winning and losing, being excluded, certainly falling down and getting hurt and then getting hurt when there's no adult around.</p>
+<p>299<br>
+00:16:35,340 --&gt; 00:16:39,140<br>
+So, you know, like I remember crashing on my bicycle and you have to kind of limp home and maybe the pedal is bent and but you get home and then you realize, oh, I can do that.</p>
+<p>301<br>
+00:16:43,580 --&gt; 00:16:44,580<br>
+I can get home.</p>
+<p>302<br>
+00:16:44,580 --&gt; 00:16:47,100<br>
+There's many fascinating charts in this book.</p>
+<p>303<br>
+00:16:47,100 --&gt; 00:16:52,900<br>
+One of those charts is a chart of hospital admissions for unintentional injuries of children between 2000 and 2018.</p>
+<p>305<br>
+00:16:55,260 --&gt; 00:16:58,660<br>
+And it shows just this unbelievably sharp decrease.</p>
+<p>306<br>
+00:16:58,660 --&gt; 00:17:02,780<br>
+And you also add in the book and this is something that I think will be familiar to many listeners that teens and young adults just aren't experimenting as much.</p>
+<p>308<br>
+00:17:05,980 --&gt; 00:17:07,260<br>
+They don't drink as much.</p>
+<p>309<br>
+00:17:07,260 --&gt; 00:17:08,740<br>
+They're having less sex.</p>
+<p>310<br>
+00:17:08,740 --&gt; 00:17:13,900<br>
+And I think someone might see these figures, a decrease in unintentional injuries, a decrease in drinking, a decrease in sex and say, what's the problem?</p>
+<p>312<br>
+00:17:18,340 --&gt; 00:17:23,060<br>
+You know, less car accidents, fewer hospital admissions, isn't that a good thing?</p>
+<p>313<br>
+00:17:23,060 --&gt; 00:17:24,260<br>
+What do you say to those people?</p>
+<p>314<br>
+00:17:24,260 --&gt; 00:17:29,060<br>
+Oh, what I said is that is if, you know, if everything else were equal and we could have fewer boys with broken arms, I would say, of course, we want fewer boys for your kids with broken arms.</p>
+<p>317<br>
+00:17:34,820 --&gt; 00:17:38,140<br>
+But here's, let me find the graph because this is one of my favorite graphs too.</p>
+<p>318<br>
+00:17:38,140 --&gt; 00:17:40,500<br>
+It was one of the most shocking.</p>
+<p>319<br>
+00:17:40,500 --&gt; 00:17:46,420<br>
+So the CDC gives us data on hospital admissions for various causes and one is unintentional injuries.</p>
+<p>320<br>
+00:17:46,420 --&gt; 00:17:47,940<br>
+So this is not self harm.</p>
+<p>321<br>
+00:17:47,940 --&gt; 00:17:51,300<br>
+You fall down, you know, you fall on your bicycle, whatever.</p>
+<p>322<br>
+00:17:51,300 --&gt; 00:17:54,140<br>
+And who do you think of all the ages and of the two sexes?</p>
+<p>323<br>
+00:17:54,140 --&gt; 00:17:57,380<br>
+Who do you think has by far the highest rates of injuries, you know, broken arms?</p>
+<p>324<br>
+00:17:57,380 --&gt; 00:17:58,380<br>
+Who would it be?</p>
+<p>325<br>
+00:17:58,380 --&gt; 00:17:59,380<br>
+Teenage boys, yeah.</p>
+<p>326<br>
+00:17:59,380 --&gt; 00:18:00,380<br>
+Teenage boys.</p>
+<p>327<br>
+00:18:00,380 --&gt; 00:18:01,460<br>
+And that used to be true.</p>
+<p>328<br>
+00:18:01,460 --&gt; 00:18:06,220<br>
+And what is stunning is that when you see all of the age groups and both genders next to each other and you see that, you know, there has been an overall drop in injuries for most age groups, but the teenage boys and then also the boys in their 20s used to be much higher than the others.</p>
+<p>332<br>
+00:18:17,700 --&gt; 00:18:23,700<br>
+And now they have dropped so fast and so far, especially since 2012 that teenage boys in America today are slightly less likely to get injured than 50 year old men back and they're slightly less likely to get injured than teenage girls were 15 years ago.</p>
+<p>335<br>
+00:18:34,660 --&gt; 00:18:39,060<br>
+And the reason is that boys are not doing anything that could break their arm.</p>
+<p>336<br>
+00:18:39,060 --&gt; 00:18:43,360<br>
+You come home after school, you're on your screen, you're on your, you plug into your game console, yeah.</p>
+<p>338<br>
+00:18:44,360 --&gt; 00:18:45,460<br>
+Yeah, that's right.</p>
+<p>339<br>
+00:18:45,460 --&gt; 00:18:49,020<br>
+So, you know, if someone says, oh, you know, it's great that they're not getting injured, I would say, well, okay, you know, look at the suicide rate.</p>
+<p>341<br>
+00:18:51,500 --&gt; 00:18:54,820<br>
+The injury rate is down, but the suicide rate is way, way up.</p>
+<p>342<br>
+00:18:54,820 --&gt; 00:18:57,820<br>
+And you know, we'll get into the details more about what's happening to boys.</p>
+<p>343<br>
+00:18:57,820 --&gt; 00:19:04,620<br>
+But there's a pervasive feeling of uselessness, of inability to do anything that matters, loneliness.</p>
+<p>345<br>
+00:19:06,300 --&gt; 00:19:12,460<br>
+So yeah, we have kids with unbroken skeletons sitting there feeling disconnected, ripe for recruitment by all kinds of politically extreme organizations.</p>
+<p>347<br>
+00:19:16,660 --&gt; 00:19:18,580<br>
+This is not a good trade off.</p>
+<p>348<br>
+00:19:18,580 --&gt; 00:19:24,460<br>
+One thing you talk about in your book that really interested me is the cycle of incompetence that we have created in children.</p>
+<p>350<br>
+00:19:26,780 --&gt; 00:19:28,700<br>
+Can you say a little bit about that?</p>
+<p>351<br>
+00:19:28,700 --&gt; 00:19:33,780<br>
+So because we came to see our children as vulnerable or fragile rather than antifragile, if you see your kids as antifragile, say, go out and play.</p>
+<p>353<br>
+00:19:36,340 --&gt; 00:19:40,620<br>
+And if they say, oh, it's cold, you say, you know, tough it out or if they fall, you're okay, go back.</p>
+<p>355<br>
+00:19:41,620 --&gt; 00:19:43,380<br>
+So that's what you would do if you think kids are antifragile.</p>
+<p>356<br>
+00:19:43,380 --&gt; 00:19:47,060<br>
+If you think kids are fragile, you're going to never leave them unsupervised, which means they never learn to work things out for themselves.</p>
+<p>358<br>
+00:19:49,500 --&gt; 00:19:52,060<br>
+And you're going to swoop in at this first sign of trouble.</p>
+<p>359<br>
+00:19:52,060 --&gt; 00:19:53,060<br>
+And so what happens?</p>
+<p>360<br>
+00:19:53,060 --&gt; 00:19:56,300<br>
+If you assume that they're incompetent and fragile, then they don't have the experience that would make them competent and non-fragile.</p>
+<p>362<br>
+00:19:59,540 --&gt; 00:20:02,620<br>
+So you're actually making them incompetent and fragile.</p>
+<p>363<br>
+00:20:02,620 --&gt; 00:20:06,220<br>
+And then you look at these incompetent fragile, you know, fifth graders.</p>
+<p>364<br>
+00:20:06,220 --&gt; 00:20:07,940<br>
+And then you say, well, how can we trust you?</p>
+<p>365<br>
+00:20:07,940 --&gt; 00:20:09,780<br>
+I can't let you walk to the store.</p>
+<p>366<br>
+00:20:09,780 --&gt; 00:20:10,780<br>
+What if you get lost?</p>
+<p>367<br>
+00:20:10,780 --&gt; 00:20:12,820<br>
+It's a cycle, a vicious cycle.</p>
+<p>368<br>
+00:20:12,820 --&gt; 00:20:14,260<br>
+And so that's what we have to break.</p>
+<p>369<br>
+00:20:14,260 --&gt; 00:20:15,260<br>
+Okay.</p>
+<p>370<br>
+00:20:15,260 --&gt; 00:20:16,780<br>
+So let's get to the phones.</p>
+<p>371<br>
+00:20:16,780 --&gt; 00:20:22,380<br>
+The next big shift in childhood was not as many people might believe when the first smartphone dropped around 2007.</p>
+<p>373<br>
+00:20:24,340 --&gt; 00:20:31,500<br>
+But you argue it's when the iPhone four dropped in 2010 and kids mental health just plummets.</p>
+<p>374<br>
+00:20:31,500 --&gt; 00:20:36,940<br>
+What was special about the iPhone four and about the iteration of that specific device that really sent kids over the edge?</p>
+<p>376<br>
+00:20:39,260 --&gt; 00:20:42,860<br>
+So that's the first smartphone that has a front-facing camera.</p>
+<p>377<br>
+00:20:42,860 --&gt; 00:20:46,460<br>
+And that means that now all the photos kids are taking of others.</p>
+<p>378<br>
+00:20:46,460 --&gt; 00:20:48,700<br>
+Now they start taking more about themselves.</p>
+<p>379<br>
+00:20:48,700 --&gt; 00:20:52,580<br>
+But I don't want to say that that was the thing that did it, rather what I want to say is there are about three or four different technological innovations that all came together around then.</p>
+<p>382<br>
+00:20:57,980 --&gt; 00:21:02,400<br>
+So if a kid got an iPhone in 2007, very few did, it was great.</p>
+<p>383<br>
+00:21:02,400 --&gt; 00:21:04,300<br>
+It was not harmful in any way.</p>
+<p>384<br>
+00:21:04,300 --&gt; 00:21:08,220<br>
+It was, as Steve Jobs said, Apple is releasing three products today.</p>
+<p>385<br>
+00:21:08,220 --&gt; 00:21:13,820<br>
+A phone, an iPod, and was an internet browser, was the third or whatever.</p>
+<p>386<br>
+00:21:13,820 --&gt; 00:21:15,980<br>
+But it's three products all in one.</p>
+<p>387<br>
+00:21:15,980 --&gt; 00:21:17,540<br>
+And then there's also a flashlight.</p>
+<p>388<br>
+00:21:17,540 --&gt; 00:21:20,660<br>
+It was an amazing, amazing digital Swiss army knife.</p>
+<p>389<br>
+00:21:20,660 --&gt; 00:21:21,660<br>
+And there were no apps.</p>
+<p>390<br>
+00:21:21,660 --&gt; 00:21:23,620<br>
+There were the apps from Apple, but there was no app store.</p>
+<p>391<br>
+00:21:23,620 --&gt; 00:21:25,460<br>
+But then two critical things happen, right?</p>
+<p>392<br>
+00:21:25,460 --&gt; 00:21:27,940<br>
+You have the app store launching in 2008.</p>
+<p>393<br>
+00:21:27,940 --&gt; 00:21:34,020<br>
+And then in 2009, Facebook introducing the like button and Twitter introducing retweets.</p>
+<p>394<br>
+00:21:34,020 --&gt; 00:21:35,020<br>
+That's right.</p>
+<p>395<br>
+00:21:35,020 --&gt; 00:21:39,980<br>
+So what I want to get across to listeners is that the internet came in in two waves.</p>
+<p>396<br>
+00:21:39,980 --&gt; 00:21:43,020<br>
+And you know, you millennials surfed the first wave and it was great fun.</p>
+<p>397<br>
+00:21:43,020 --&gt; 00:21:47,820<br>
+You had AOL, you had web browsers, you know, you had all kinds of, it was like a world opening up.</p>
+<p>399<br>
+00:21:48,820 --&gt; 00:21:52,540<br>
+I've seen no evidence to suggest that there are flip phones, harmed them.</p>
+<p>400<br>
+00:21:52,540 --&gt; 00:21:54,380<br>
+So what happens in the end of 2000s?</p>
+<p>401<br>
+00:21:54,380 --&gt; 00:21:55,380<br>
+It's the things you said.</p>
+<p>402<br>
+00:21:55,380 --&gt; 00:21:59,380<br>
+The iPhone comes out with a touch swipe, you know, interface much more engaging, which is good, you think you get social media becomes much more viral in 2009.</p>
+<p>404<br>
+00:22:05,260 --&gt; 00:22:09,620<br>
+And so before then they were called social networking systems and you put up your page and you linked other people's page that you connect.</p>
+<p>406<br>
+00:22:11,620 --&gt; 00:22:15,860<br>
+But then as they put in the like button, the retweet button, it's much more about virality.</p>
+<p>407<br>
+00:22:15,860 --&gt; 00:22:17,540<br>
+They have much more information on each user.</p>
+<p>408<br>
+00:22:17,540 --&gt; 00:22:19,340<br>
+They can use algorithms much more.</p>
+<p>409<br>
+00:22:19,340 --&gt; 00:22:20,700<br>
+It's all about the news feed.</p>
+<p>410<br>
+00:22:20,700 --&gt; 00:22:24,900<br>
+<mark style="background:#fff3A3A6">So social media fundamentally changes and becomes much more about performance, which opens up much more room for cruelty, mob interactions, cancel culture, all the craziness and universities could not have happened if there wasn't the retweet button and the share button.</mark></p>
+<p>413<br>
+00:22:35,580 --&gt; 00:22:38,260<br>
+The internet wasn't as super viral as it became.</p>
+<p>414<br>
+00:22:38,260 --&gt; 00:22:39,460<br>
+So you have that coming in.</p>
+<p>415<br>
+00:22:39,460 --&gt; 00:22:41,500<br>
+Another big one is high speed internet.</p>
+<p>416<br>
+00:22:41,500 --&gt; 00:22:47,340<br>
+So in 2007 and even all the way up to 2010, very few kids have an unlimited data plan.</p>
+<p>417<br>
+00:22:47,340 --&gt; 00:22:50,460<br>
+You know, back then you had to pay for texts like every text, you know, is going to cost you a few pennies.</p>
+<p>419<br>
+00:22:51,740 --&gt; 00:22:56,780<br>
+So you had a limit, your consumption and your sending and it wasn't fun to, you know, just sit there waiting for slow internet to load.</p>
+<p>421<br>
+00:22:59,020 --&gt; 00:23:03,380<br>
+So that's 2010 and that's when the front-facing camera comes out and that's when Instagram comes out, although it's not popular till 2012.</p>
+<p>423<br>
+00:23:05,940 --&gt; 00:23:10,260<br>
+2012 is basically the last year before the epidemic begins.</p>
+<p>424<br>
+00:23:10,260 --&gt; 00:23:13,980<br>
+Some of the numbers go up in 2012 but for the most part it's kind of, that's the elbow and it's really 2013 that all the numbers of pathology begin to rise and rise very quickly and especially for girls.</p>
+<p>427<br>
+00:23:21,180 --&gt; 00:23:27,300<br>
+So my argument in the book is that the first wave of the internet with computers and web browsers, that was not harmful and the millennials, you know, you guys got through it in time.</p>
+<p>429<br>
+00:23:31,620 --&gt; 00:23:34,220<br>
+You went through puberty in time.</p>
+<p>430<br>
+00:23:34,220 --&gt; 00:23:39,780<br>
+But Gen Z, if you're born in 1996, you might have gotten a smartphone in middle school when you were like 15, 16, you might have gotten on Instagram and you went through puberty, especially if you're born, say, by 2000.</p>
+<p>433<br>
+00:23:46,460 --&gt; 00:23:52,620<br>
+You went through puberty, posting photos, selfies and then wait anxiously for people to comment and then you spent a lot of your day tracking down who like this photo, what did they say?</p>
+<p>435<br>
+00:23:57,540 --&gt; 00:23:58,700<br>
+Why didn't they like this photo?</p>
+<p>436<br>
+00:23:58,700 --&gt; 00:24:00,500<br>
+Why do they like someone else's photo?</p>
+<p>437<br>
+00:24:00,500 --&gt; 00:24:06,060<br>
+<mark style="background:#fff3A3A6">And so especially for girls, it's a fundamental shift in consciousness away from interacting with other kids and toward managing your brand all day long.</mark></p>
+<p>439<br>
+00:24:10,540 --&gt; 00:24:13,780<br>
+And this is a sick thing to do to kids, especially in middle school.</p>
+<p>440<br>
+00:24:13,780 --&gt; 00:24:19,100<br>
+I think it's pretty obvious to any adult who has a phone and finds themselves scrolling Instagram or Twitter late into the night that it's bad for any human being, let alone kids.</p>
+<p>442<br>
+00:24:25,140 --&gt; 00:24:31,340<br>
+But you write in the book that there are <mark style="background:#fff3A3A6">four specific harms that began to emerge for teenagers.<br>
+</mark><br>
+443<br>
+00:24:31,340 --&gt; 00:24:33,460<br>
+Or let's say middle school teenagers.</p>
+<p>444<br>
+00:24:33,460 --&gt; 00:24:35,660<br>
+One is <mark style="background:#bbfABBA6">social deprivation</mark>.</p>
+<p>445<br>
+00:24:35,660 --&gt; 00:24:37,660<br>
+Two is <mark style="background:#bbfABBA6">sleep deprivation</mark>.</p>
+<p>446<br>
+00:24:37,660 --&gt; 00:24:39,900<br>
+Three is <mark style="background:#bbfABBA6">attention fragmentation</mark>.</p>
+<p>447<br>
+00:24:39,900 --&gt; 00:24:41,500<br>
+And four is <mark style="background:#bbfABBA6">addiction</mark>.</p>
+<p>448<br>
+00:24:41,500 --&gt; 00:24:46,580<br>
+So I would love for us to take each of those interns beginning with social deprivation.</p>
+<p>449<br>
+00:24:46,580 --&gt; 00:24:51,580<br>
+The average amount of time that kids between the ages of 15 and 24 years old spent with their friends each day went from about two and a half hours in 2003 to just barely more than 40 minutes in 2019.</p>
+<p>452<br>
+00:25:00,540 --&gt; 00:25:04,340<br>
+And many people are communicating with their friends only through the phone.</p>
+<p>453<br>
+00:25:04,340 --&gt; 00:25:09,940<br>
+You've also seen that kids have seen a steady drop in the number of friends they have since the late 90s.</p>
+<p>455<br>
+00:25:11,940 --&gt; 00:25:17,940<br>
+Meantime the percentage of kids who report feeling lonely has increased since the late 90s.</p>
+<p>456<br>
+00:25:17,940 --&gt; 00:25:19,420<br>
+It's like such a fundamental question.</p>
+<p>457<br>
+00:25:19,420 --&gt; 00:25:21,220<br>
+All this feels weird asking it.</p>
+<p>458<br>
+00:25:21,220 --&gt; 00:25:27,700<br>
+But what are kids losing without friends without that personal interaction and what negative habits are they replacing time with friends with?</p>
+<p>460<br>
+00:25:30,860 --&gt; 00:25:31,860<br>
+Yeah.</p>
+<p>461<br>
+00:25:31,860 --&gt; 00:25:36,820<br>
+So if you think about, what if we were to replace all of the food that kids eat with a science-based formula that had the right amount of starch and sugar and protein and all that, would that work?</p>
+<p>464<br>
+00:25:43,300 --&gt; 00:25:47,340<br>
+No, it wouldn't because there's so many phytonutrients, so many things we need from plants.</p>
+<p>465<br>
+00:25:47,340 --&gt; 00:25:54,140<br>
+You can't just take away all of our evolved programming for digestion and metabolism and swap in some radically new simple science formula.</p>
+<p>467<br>
+00:25:57,580 --&gt; 00:26:02,460<br>
+And in the same way, when kids started spending all this time on these devices, I didn't know that it was going to be bad.</p>
+<p>469<br>
+00:26:03,460 --&gt; 00:26:06,740<br>
+I thought, actually, I remember thinking, you know, it seems weird to me.</p>
+<p>470<br>
+00:26:06,740 --&gt; 00:26:11,460<br>
+To tweet about the hamburger that you just had and then have 25 people comment on your tweet.</p>
+<p>472<br>
+00:26:12,460 --&gt; 00:26:16,180<br>
+It seems kind of stupid to me, but maybe it's like hyper-sociality.</p>
+<p>473<br>
+00:26:16,180 --&gt; 00:26:20,260<br>
+I remember thinking around 2010, 2012, like young people to death, they might actually come out super social, so much social stimulation.</p>
+<p>475<br>
+00:26:22,620 --&gt; 00:26:25,220<br>
+It might actually be better than what we had before.</p>
+<p>476<br>
+00:26:25,220 --&gt; 00:26:26,660<br>
+And that was a theoretical possibility.</p>
+<p>477<br>
+00:26:26,660 --&gt; 00:26:28,660<br>
+It's one that has radically failed to materialize.</p>
+<p>478<br>
+00:26:28,660 --&gt; 00:26:30,780<br>
+In fact, the opposite has materialized.</p>
+<p>479<br>
+00:26:30,780 --&gt; 00:26:33,620<br>
+The more time kids spend doing this, the more lonely they are.</p>
+<p>480<br>
+00:26:33,620 --&gt; 00:26:37,380<br>
+The more time kids spend doing this, the more likely out-of-cub themselves.</p>
+<p>481<br>
+00:26:37,380 --&gt; 00:26:42,380<br>
+What I think is happening is that <mark style="background:#fff3A3A6">real world interactions have a few features that are part of our evolutionary history and virtual interactions lack those features</mark>.</p>
+<p>483<br>
+00:26:46,700 --&gt; 00:26:48,700<br>
+The most obvious one is embodiment.</p>
+<p>484<br>
+00:26:48,700 --&gt; 00:26:51,700<br>
+If you look at chimpanzees, they all groom each other a lot.</p>
+<p>485<br>
+00:26:51,700 --&gt; 00:26:56,420<br>
+There's a lot of interesting speculation about, since humans don't groom, which is a huge, a major, major social interaction for all the other primates is grooming.</p>
+<p>487<br>
+00:27:00,380 --&gt; 00:27:04,740<br>
+We don't groom physically, but we do groom with gossip, at least that was Rob and Dunn Bar's theory.</p>
+<p>489<br>
+00:27:05,740 --&gt; 00:27:08,100<br>
+You might say, &quot;Oh, well, social media is great for gossip.</p>
+<p>490<br>
+00:27:08,100 --&gt; 00:27:09,540<br>
+You can gossip all day long.&quot;</p>
+<p>491<br>
+00:27:09,540 --&gt; 00:27:11,020<br>
+It's not the same.</p>
+<p>492<br>
+00:27:11,020 --&gt; 00:27:14,860<br>
+First of all, we are still embodied creatures, and that is why I think we do like to touch and hug and things like that.</p>
+<p>494<br>
+00:27:16,980 --&gt; 00:27:19,340<br>
+<mark style="background:#fff3A3A6">Virtual interactions deprive you of embodiment.</mark></p>
+<p>495<br>
+00:27:19,340 --&gt; 00:27:21,940<br>
+Virtual interactions are usually asynchronous.</p>
+<p>496<br>
+00:27:21,940 --&gt; 00:27:25,060<br>
+Zoom call, a phone call, those are synchronous.</p>
+<p>497<br>
+00:27:25,060 --&gt; 00:27:27,940<br>
+I talk, you talk, we have a sense of turn-taking.</p>
+<p>498<br>
+00:27:27,940 --&gt; 00:27:33,740<br>
+Most of the kids' interaction is posting and commenting and emojis.</p>
+<p>499<br>
+00:27:33,740 --&gt; 00:27:34,740<br>
+That's asynchronous.</p>
+<p>500<br>
+00:27:34,740 --&gt; 00:27:37,900<br>
+<mark style="background:#fff3A3A6">You don't have the same sense of being in sync with another human being.</mark></p>
+<p>501<br>
+00:27:37,900 --&gt; 00:27:41,020<br>
+You're much more off in your own pod.</p>
+<p>502<br>
+00:27:41,020 --&gt; 00:27:46,340<br>
+A third one is the frequency of one to many communications.</p>
+<p>503<br>
+00:27:46,340 --&gt; 00:27:47,820<br>
+Kids really need a small group.</p>
+<p>504<br>
+00:27:47,820 --&gt; 00:27:48,820<br>
+They need a best friend.</p>
+<p>505<br>
+00:27:48,820 --&gt; 00:27:50,980<br>
+They need a group of three or four friends.</p>
+<p>506<br>
+00:27:50,980 --&gt; 00:27:55,660<br>
+<mark style="background:#fff3A3A6">Kids don't need to be on a soapbox, speaking to thousands of people and waiting for thousands of people to judge them.</mark></p>
+<p>508<br>
+00:27:56,860 --&gt; 00:28:01,860<br>
+That's just a terrible thing to do to children, but these new social media platforms do that.</p>
+<p>509<br>
+00:28:01,860 --&gt; 00:28:06,860<br>
+The final difference is that if you get a conflict with a kid in your class, you can't just delete them or block them.</p>
+<p>511<br>
+00:28:09,580 --&gt; 00:28:13,180<br>
+You actually either have to work it out or you're going to have to suffer for a long time with this strain relationship.</p>
+<p>513<br>
+00:28:14,940 --&gt; 00:28:18,620<br>
+<mark style="background:#fff3A3A6">The real world forces you to practice working out relationships.</mark></p>
+<p>514<br>
+00:28:18,620 --&gt; 00:28:20,340<br>
+That's practice for a democratic society.</p>
+<p>515<br>
+00:28:20,340 --&gt; 00:28:25,380<br>
+<mark style="background:#fff3A3A6">All of this is practice for being self-governing in a democratic society</mark>.</p>
+<p>516<br>
+00:28:25,380 --&gt; 00:28:31,860<br>
+When kids lose almost all of that and get it replaced with virtual interactions, it's like they're losing all the nutrients.</p>
+<p>518<br>
+00:28:33,340 --&gt; 00:28:35,820<br>
+It's like we're giving them just white rice to eat.</p>
+<p>519<br>
+00:28:35,820 --&gt; 00:28:38,140<br>
+White rice has plenty of calories, just eat white rice.</p>
+<p>520<br>
+00:28:38,140 --&gt; 00:28:40,300<br>
+You're going to be deficient in almost everything.</p>
+<p>521<br>
+00:28:40,300 --&gt; 00:28:44,420<br>
+That's what we've done by swapping in virtual sociality for real sociality.</p>
+<p>522<br>
+00:28:44,420 --&gt; 00:28:48,420<br>
+That's why the loneliness statistics, all the questions on monitoring the future about sometimes I feel lonely.</p>
+<p>524<br>
+00:28:49,940 --&gt; 00:28:51,660<br>
+My life has no point.</p>
+<p>525<br>
+00:28:51,660 --&gt; 00:28:54,140<br>
+All these questions, it's like a hockey stick.</p>
+<p>526<br>
+00:28:54,140 --&gt; 00:28:56,780<br>
+They're flat until 2012.</p>
+<p>527<br>
+00:28:56,780 --&gt; 00:29:02,500<br>
+Once kids are moving on to Instagram and other platforms, boom, everything explodes.</p>
+<p>528<br>
+00:29:02,500 --&gt; 00:29:04,700<br>
+So that's social deprivation.</p>
+<p>529<br>
+00:29:04,700 --&gt; 00:29:07,900<br>
+Let's go to the next topic, which is sleep deprivation.</p>
+<p>530<br>
+00:29:07,900 --&gt; 00:29:13,700<br>
+So sleep for everyone, but especially for teens, has gone down in the last decade.</p>
+<p>531<br>
+00:29:13,700 --&gt; 00:29:19,340<br>
+Nearly half of eighth, tenth, and twelfth grade boys are getting less than seven hours of sleep,</p>
+<p>532<br>
+00:29:19,340 --&gt; 00:29:23,940<br>
+which is pretty astonishing considering how much sleep your body needs to get in those critical years of puberty.</p>
+<p>534<br>
+00:29:26,140 --&gt; 00:29:29,820<br>
+And these percentages jump significantly in the early 2010s.</p>
+<p>535<br>
+00:29:29,820 --&gt; 00:29:35,740<br>
+And you directly connect this to kids staying up late at night looking at their phones.</p>
+<p>536<br>
+00:29:35,740 --&gt; 00:29:43,580<br>
+Talk to me about why sleep deprivation is such a serious public health consideration and the effects that it has on the mental health and even the physical well-being of kids.</p>
+<p>538<br>
+00:29:48,820 --&gt; 00:29:53,900<br>
+So the basic data on sleep amount, there was a substantial drop in the 90s.</p>
+<p>539<br>
+00:29:53,900 --&gt; 00:29:58,700<br>
+I don't know if that was television, cable TV, the internet, just a lot more stuff to look at late at night.</p>
+<p>541<br>
+00:29:59,700 --&gt; 00:30:02,900<br>
+And then it kind of levels off in the early 2000s and then it begins dropping again in the 2010s.</p>
+<p>543<br>
+00:30:03,900 --&gt; 00:30:08,420<br>
+Now, as for why sleep is important, your body does all kinds of biological repair processes.</p>
+<p>544<br>
+00:30:08,420 --&gt; 00:30:12,740<br>
+On your brain, I wish to God I had gotten more sleep that I'd taken it more seriously.</p>
+<p>545<br>
+00:30:12,740 --&gt; 00:30:14,260<br>
+It helps the brain regenerate.</p>
+<p>546<br>
+00:30:14,260 --&gt; 00:30:16,540<br>
+The deep sleep is when you flush out broken proteins.</p>
+<p>547<br>
+00:30:16,540 --&gt; 00:30:19,740<br>
+There's all sorts of things that need to happen in sleep.</p>
+<p>548<br>
+00:30:19,740 --&gt; 00:30:23,620<br>
+And teens need a lot of it eight or nine hours depending on the age.</p>
+<p>549<br>
+00:30:23,620 --&gt; 00:30:28,020<br>
+And if they're getting less than eight hours, they're not letting their brain and body regenerated.</p>
+<p>550<br>
+00:30:28,020 --&gt; 00:30:33,140<br>
+It has extraordinary effects then on mood and concentration the next day.</p>
+<p>551<br>
+00:30:33,140 --&gt; 00:30:39,140<br>
+And so if we want our kids to go to school and have a good time with their friends and learn from their teachers, I think that pretty much is what we all want for our kids when they go to school.</p>
+<p>554<br>
+00:30:43,540 --&gt; 00:30:47,260<br>
+But if they don't get enough sleep, they're going to be crankier, more irritable and anxious.</p>
+<p>555<br>
+00:30:47,260 --&gt; 00:30:50,780<br>
+Their social relationships will worsen and they won't be able to pay attention.</p>
+<p>556<br>
+00:30:50,780 --&gt; 00:30:52,060<br>
+They won't learn as much.</p>
+<p>557<br>
+00:30:52,060 --&gt; 00:30:56,220<br>
+It's not a coincidence that we had 50 years of educational progress when you look at the NAEP, the National Educational Assessment.</p>
+<p>559<br>
+00:30:59,020 --&gt; 00:31:05,860<br>
+50 years of slow but steady progress in how much our kids know in this country until 2012.</p>
+<p>560<br>
+00:31:05,860 --&gt; 00:31:07,180<br>
+And then it begins to drop.</p>
+<p>561<br>
+00:31:07,180 --&gt; 00:31:09,820<br>
+And everyone says like, oh, look, COVID, look what COVID did.</p>
+<p>562<br>
+00:31:09,820 --&gt; 00:31:14,700<br>
+And it's true that keeping kids out of school, COVID restrictions really did damage kids learning.</p>
+<p>563<br>
+00:31:14,700 --&gt; 00:31:19,060<br>
+And you see a COVID drop, but the drop actually began after 2012.</p>
+<p>564<br>
+00:31:19,060 --&gt; 00:31:24,140<br>
+So it's just insane that if we want our kids to grow physically healthy, have good, friendly relationships and learn, then if they're not getting enough sleep, all three, all three of those goals are compromised.</p>
+<p>567<br>
+00:31:30,740 --&gt; 00:31:37,100<br>
+You write that in 2022, one third of teens said they were on one of the major social media sites almost constantly.</p>
+<p>569<br>
+00:31:40,380 --&gt; 00:31:44,700<br>
+And you see this, I feel this in myself as an adult whose brain came online before the great re-riaring, I feel the way that these devices and platforms have majorly harmed my ability to focus the way that a distraction, something more exciting, something more enticing and it's just one swipe away.</p>
+<hr>
+<p>573<br>
+00:32:00,500 --&gt; 00:32:06,580<br>
+Tell us about how social media, the phones, but social media specifically has affected</p>
+<p>574<br>
+00:32:06,580 --&gt; 00:32:12,420<br>
+kids' ability to focus deeply, both at school and in other areas of life.</p>
+<p>575<br>
+00:32:12,420 --&gt; 00:32:16,580<br>
+The brain grows very quickly in the first few years of life and then it actually slows down</p>
+<p>576<br>
+00:32:16,580 --&gt; 00:32:17,740<br>
+a lot.</p>
+<p>577<br>
+00:32:17,740 --&gt; 00:32:19,700<br>
+And from then on, it's not so much growth.</p>
+<p>578<br>
+00:32:19,700 --&gt; 00:32:26,020<br>
+It's re-riaring, it's neurons connecting, it synapses forming, it's neurons fading away,</p>
+<p>579<br>
+00:32:26,020 --&gt; 00:32:27,180<br>
+if they're not used.</p>
+<p>580<br>
+00:32:27,180 --&gt; 00:32:31,500<br>
+So there's a lot of re-wiring going on and that speeds up during puberty, especially early</p>
+<p>581<br>
+00:32:31,500 --&gt; 00:32:38,420<br>
+puberty around age 11 or 12 to around 15, 16 is a huge amount of change as the brain basically</p>
+<p>582<br>
+00:32:38,420 --&gt; 00:32:40,900<br>
+sort of like a caterpillar turning into a butterfly.</p>
+<p>583<br>
+00:32:40,900 --&gt; 00:32:45,540<br>
+You have the young form of a human brain kind of rewires now that it's learned culture,</p>
+<p>584<br>
+00:32:45,540 --&gt; 00:32:52,180<br>
+it sort of rewires to lock down into the format of an American or a sweet or whatever.</p>
+<p>585<br>
+00:32:52,180 --&gt; 00:32:55,900<br>
+And this is exactly the period, unfortunately, when we put our kids on social media and</p>
+<p>586<br>
+00:32:55,900 --&gt; 00:32:59,860<br>
+let random weirdos on the internet control how the brain is rewiring.</p>
+<p>587<br>
+00:32:59,860 --&gt; 00:33:03,260<br>
+One of the main things that is happening is in the prefrontal cortex, that's the last</p>
+<p>588<br>
+00:33:03,260 --&gt; 00:33:06,980<br>
+part to really go through the change, which is the seat of executive function that is</p>
+<p>589<br>
+00:33:06,980 --&gt; 00:33:12,540<br>
+the ability to formulate a goal, figure out the means to achieve the goal, and then execute</p>
+<p>590<br>
+00:33:12,540 --&gt; 00:33:14,340<br>
+the plan to achieve the goal.</p>
+<p>591<br>
+00:33:14,340 --&gt; 00:33:18,100<br>
+So if you want to do your homework, I want to watch this TV show at 10 o'clock tonight,</p>
+<p>592<br>
+00:33:18,100 --&gt; 00:33:22,420<br>
+so I have an hour, I better do my homework, I have one hour, kids struggle to do that, especially</p>
+<p>593<br>
+00:33:22,420 --&gt; 00:33:26,060<br>
+if you don't love doing your homework, it's going to take concentration and willpower</p>
+<p>594<br>
+00:33:26,060 --&gt; 00:33:27,380<br>
+to stay on task.</p>
+<p>595<br>
+00:33:27,380 --&gt; 00:33:29,060<br>
+But what happens?</p>
+<p>596<br>
+00:33:29,060 --&gt; 00:33:33,460<br>
+You have an infinite number of really fun digital experiences just waiting for you if you</p>
+<p>597<br>
+00:33:33,460 --&gt; 00:33:36,660<br>
+touch the right buttons, but it's much more than that because you don't have to touch</p>
+<p>598<br>
+00:33:36,660 --&gt; 00:33:37,660<br>
+the right buttons.</p>
+<p>599<br>
+00:33:37,660 --&gt; 00:33:41,820<br>
+The pop-ups are going to be popping up saying, &quot;Come play, come out, come look what someone</p>
+<p>600<br>
+00:33:41,820 --&gt; 00:33:43,420<br>
+just said about you.&quot;</p>
+<p>601<br>
+00:33:43,420 --&gt; 00:33:48,500<br>
+So they're getting, I think on average now, 250 notifications a day is what American teens</p>
+<p>602<br>
+00:33:48,500 --&gt; 00:33:49,500<br>
+now get.</p>
+<p>603<br>
+00:33:49,500 --&gt; 00:33:52,420<br>
+That's 250 times a day that their attention is interrupted.</p>
+<p>604<br>
+00:33:52,420 --&gt; 00:33:54,540<br>
+Most of them don't put it on a focus mode.</p>
+<p>605<br>
+00:33:54,540 --&gt; 00:33:58,060<br>
+They just take it as normal, that any company that wants to take some of their attention</p>
+<p>606<br>
+00:33:58,060 --&gt; 00:33:59,340<br>
+can just take it.</p>
+<p>607<br>
+00:33:59,340 --&gt; 00:34:04,820<br>
+So it was always hard for teens to focus and do their homework or do anything, but doing</p>
+<p>608<br>
+00:34:04,820 --&gt; 00:34:09,620<br>
+that gives you practice in doing it and if you do it repeatedly, you're actually helping</p>
+<p>609<br>
+00:34:09,620 --&gt; 00:34:12,980<br>
+your brain to develop good executive function.</p>
+<p>610<br>
+00:34:12,980 --&gt; 00:34:16,540<br>
+So what would happen if you have a teen who never gets to practice that they literally</p>
+<p>611<br>
+00:34:16,540 --&gt; 00:34:18,940<br>
+never get an hour without an interruption?</p>
+<p>612<br>
+00:34:18,940 --&gt; 00:34:23,940<br>
+I think it could lead to permanent decrements in their ability to function as an adult.</p>
+<p>613<br>
+00:34:23,940 --&gt; 00:34:29,940<br>
+And is the average American, let's just say, 7th, 8th, 9th grader, having their phone</p>
+<p>614<br>
+00:34:29,940 --&gt; 00:34:35,260<br>
+in their pocket with them at school as it's pinging these notifications?</p>
+<p>615<br>
+00:34:35,260 --&gt; 00:34:38,820<br>
+Yes, the great majority of schools say that they have a cell phone bill.</p>
+<p>616<br>
+00:34:38,820 --&gt; 00:34:40,060<br>
+It's complete bullshit.</p>
+<p>617<br>
+00:34:40,060 --&gt; 00:34:44,700<br>
+All they mean is, &quot;Oh, our rule is you're not allowed to take out your phone during class</p>
+<p>618<br>
+00:34:44,700 --&gt; 00:34:46,460<br>
+unless your teacher asks you to.&quot;</p>
+<p>619<br>
+00:34:46,460 --&gt; 00:34:47,700<br>
+That's the rule.</p>
+<p>620<br>
+00:34:47,700 --&gt; 00:34:51,780<br>
+And what that means is that kids have to make some effort to hide their phone use.</p>
+<p>621<br>
+00:34:51,780 --&gt; 00:34:55,460<br>
+They have to at least sit in the back row where they can't be seen or they just put in</p>
+<p>622<br>
+00:34:55,460 --&gt; 00:34:56,460<br>
+a book.</p>
+<p>623<br>
+00:34:56,460 --&gt; 00:35:01,960<br>
+But if the kids put it this way, if any kids in your class are texting during the school</p>
+<p>624<br>
+00:35:01,960 --&gt; 00:35:05,060<br>
+day, then you have to check your texts.</p>
+<p>625<br>
+00:35:05,060 --&gt; 00:35:09,660<br>
+Otherwise, at lunch, you're going to be the only one who doesn't know the thing that so</p>
+<p>626<br>
+00:35:09,660 --&gt; 00:35:11,700<br>
+and so said, which everyone is laughing at.</p>
+<p>627<br>
+00:35:11,700 --&gt; 00:35:14,380<br>
+You don't care if the teacher is mad at you, but you really don't want to be humiliated</p>
+<p>628<br>
+00:35:14,380 --&gt; 00:35:17,020<br>
+in front of your friends by being out of the loop.</p>
+<p>629<br>
+00:35:17,020 --&gt; 00:35:19,780<br>
+So as long as anyone is texting, they're going to check their phone.</p>
+<p>630<br>
+00:35:19,780 --&gt; 00:35:22,780<br>
+They're going to check their texts and social media dramas.</p>
+<p>631<br>
+00:35:22,780 --&gt; 00:35:23,780<br>
+And they do.</p>
+<p>632<br>
+00:35:23,780 --&gt; 00:35:28,020<br>
+That's time you're talking to any group of young people, 45 minutes in, ask them, how many</p>
+<p>633<br>
+00:35:28,020 --&gt; 00:35:30,660<br>
+of you have actually already checked your phone while I was speaking?</p>
+<p>634<br>
+00:35:30,660 --&gt; 00:35:32,740<br>
+How many of you do this typically during a class?</p>
+<p>635<br>
+00:35:32,740 --&gt; 00:35:34,300<br>
+Or almost everybody?</p>
+<p>636<br>
+00:35:34,300 --&gt; 00:35:38,540<br>
+So I think it's completely insane that we allow phones in school.</p>
+<p>637<br>
+00:35:38,540 --&gt; 00:35:41,620<br>
+We wouldn't let them bring their television sets into school and watch television during</p>
+<p>638<br>
+00:35:41,620 --&gt; 00:35:42,620<br>
+class.</p>
+<p>639<br>
+00:35:42,620 --&gt; 00:35:44,140<br>
+Why do we let them have their phones?</p>
+<p>640<br>
+00:35:44,140 --&gt; 00:35:45,740<br>
+It's just distracting.</p>
+<p>641<br>
+00:35:45,740 --&gt; 00:35:50,460<br>
+The word addiction, John, as you know, gets thrown around a lot in our culture.</p>
+<p>642<br>
+00:35:50,460 --&gt; 00:35:52,300<br>
+Sometimes I think it's sort of overused.</p>
+<p>643<br>
+00:35:52,300 --&gt; 00:35:55,100<br>
+But would you argue that social media is a true addiction?</p>
+<p>644<br>
+00:35:55,100 --&gt; 00:35:56,100<br>
+And why?</p>
+<p>645<br>
+00:35:56,100 --&gt; 00:35:57,100<br>
+Yeah.</p>
+<p>646<br>
+00:35:57,100 --&gt; 00:36:00,740<br>
+So here I'll have to respect the term concept creep, which you referred to.</p>
+<p>647<br>
+00:36:00,740 --&gt; 00:36:03,660<br>
+And in the calling of the American mind, Greg and I said that addiction is one of those</p>
+<p>648<br>
+00:36:03,660 --&gt; 00:36:05,260<br>
+terms that has spread out.</p>
+<p>649<br>
+00:36:05,260 --&gt; 00:36:09,660<br>
+So no, I would not call anything an addiction, unless you're very careful about it.</p>
+<p>650<br>
+00:36:09,660 --&gt; 00:36:13,460<br>
+I also know that in the addiction research literature, there's a big debate about this</p>
+<p>651<br>
+00:36:13,460 --&gt; 00:36:16,420<br>
+and some of them say, no, we shouldn't call it addiction.</p>
+<p>652<br>
+00:36:16,420 --&gt; 00:36:20,740<br>
+Now as far as I'm concerned, gambling is an addiction for many people.</p>
+<p>653<br>
+00:36:20,740 --&gt; 00:36:24,300<br>
+And if you watch someone who is a gambling addiction, they're pulling the slot, they get into</p>
+<p>654<br>
+00:36:24,300 --&gt; 00:36:28,300<br>
+a zone, they lose track of time, their life sucks, they hate their life, but for those two</p>
+<p>655<br>
+00:36:28,300 --&gt; 00:36:30,460<br>
+hours, they don't feel the pain.</p>
+<p>656<br>
+00:36:30,460 --&gt; 00:36:32,820<br>
+And that's why they keep doing it and that makes their life worse.</p>
+<p>657<br>
+00:36:32,820 --&gt; 00:36:35,340<br>
+So I'm willing to call that an addiction.</p>
+<p>658<br>
+00:36:35,340 --&gt; 00:36:40,260<br>
+And I think many addiction researchers are some, not most, but some kids have that with social</p>
+<p>659<br>
+00:36:40,260 --&gt; 00:36:41,260<br>
+media.</p>
+<p>660<br>
+00:36:41,260 --&gt; 00:36:44,740<br>
+The better term to use is what they call problematic use.</p>
+<p>661<br>
+00:36:44,740 --&gt; 00:36:50,140<br>
+So if you're spending four hours a day on Instagram, but you're still seeing your</p>
+<p>662<br>
+00:36:50,140 --&gt; 00:36:54,660<br>
+friends, you're still getting good grades in class, it's a time suck, but you can't say</p>
+<p>663<br>
+00:36:54,660 --&gt; 00:36:58,460<br>
+that it's in your fearing with basically love and work of the two areas that psychologists</p>
+<p>664<br>
+00:36:58,460 --&gt; 00:37:03,820<br>
+look at love and work, basically relationships and either work or school work.</p>
+<p>665<br>
+00:37:03,820 --&gt; 00:37:07,580<br>
+So if you're doing fine on those, well, okay, then maybe it's your choice.</p>
+<p>666<br>
+00:37:07,580 --&gt; 00:37:13,060<br>
+But wherever we look, the numbers come up between 5 and 15% as having problematic use.</p>
+<p>667<br>
+00:37:13,060 --&gt; 00:37:15,020<br>
+So video games are tremendous fun.</p>
+<p>668<br>
+00:37:15,020 --&gt; 00:37:18,100<br>
+Boys really defend them and they don't want them taken away.</p>
+<p>669<br>
+00:37:18,100 --&gt; 00:37:23,060<br>
+But it turns out that 5 to 15% have problematic use where they can't stop.</p>
+<p>670<br>
+00:37:23,060 --&gt; 00:37:24,940<br>
+They're surly with their parents.</p>
+<p>671<br>
+00:37:24,940 --&gt; 00:37:28,740<br>
+If they're deprived for a day or two, they get really surly and maybe even aggressive.</p>
+<p>672<br>
+00:37:28,740 --&gt; 00:37:33,140<br>
+It's interfering with their ability to, with their school work, with their ability to function</p>
+<p>673<br>
+00:37:33,140 --&gt; 00:37:34,140<br>
+with friends.</p>
+<p>674<br>
+00:37:34,140 --&gt; 00:37:37,540<br>
+So people say, oh, you know, my kids are fine or you know, most kids are doing, okay, sure,</p>
+<p>675<br>
+00:37:37,540 --&gt; 00:37:38,540<br>
+most are.</p>
+<p>676<br>
+00:37:38,540 --&gt; 00:37:42,500<br>
+But can you think of any consumer product in the world where if there was a one in ten</p>
+<p>677<br>
+00:37:42,500 --&gt; 00:37:47,860<br>
+chance that your kid uses it, they're going to get hooked and have problematic behavior to</p>
+<p>678<br>
+00:37:47,860 --&gt; 00:37:50,540<br>
+the point where it's going to interfere with other life domains.</p>
+<p>679<br>
+00:37:50,540 --&gt; 00:37:53,940<br>
+And if they do it for two or three hours a day over many years, it could change the brain</p>
+<p>680<br>
+00:37:53,940 --&gt; 00:37:54,940<br>
+development.</p>
+<p>681<br>
+00:37:54,940 --&gt; 00:37:58,060<br>
+Is there any other product that we would ever let our kids use?</p>
+<p>682<br>
+00:37:58,060 --&gt; 00:37:59,740<br>
+So that's the way I think about it.</p>
+<p>683<br>
+00:37:59,740 --&gt; 00:38:01,580<br>
+You have to be careful using the word addiction.</p>
+<p>684<br>
+00:38:01,580 --&gt; 00:38:03,620<br>
+But it certainly is a behavior addiction.</p>
+<p>685<br>
+00:38:03,620 --&gt; 00:38:05,500<br>
+It's a psychological dependency.</p>
+<p>686<br>
+00:38:05,500 --&gt; 00:38:07,740<br>
+And I think it alteres developmental pathways.</p>
+<p>687<br>
+00:38:07,740 --&gt; 00:38:11,780<br>
+Anything you do hours a day every day for years is going to alter developmental pathways.</p>
+<p>688<br>
+00:38:11,780 --&gt; 00:38:18,260<br>
+So, John, beyond the sort of four buckets of harm that we just went through, social deprivation,</p>
+<p>689<br>
+00:38:18,260 --&gt; 00:38:23,980<br>
+sleep deprivation, inability to pay attention and addiction, the overall mental health of</p>
+<p>690<br>
+00:38:23,980 --&gt; 00:38:27,580<br>
+American teens has absolutely plunged.</p>
+<p>691<br>
+00:38:27,580 --&gt; 00:38:34,220<br>
+Rates of depression, anxiety, self harm and suicide have more than doubled over the last decade.</p>
+<p>692<br>
+00:38:34,220 --&gt; 00:38:38,780<br>
+Now the skeptic could look at all of those and say, well, I know the answer to that, religion</p>
+<p>693<br>
+00:38:38,780 --&gt; 00:38:39,780<br>
+has plummeted.</p>
+<p>694<br>
+00:38:39,780 --&gt; 00:38:41,620<br>
+Polarization is plummeted.</p>
+<p>695<br>
+00:38:41,620 --&gt; 00:38:48,180<br>
+Kids are lonely and atomized and we're living in a culture that has a sense of sort of meaninglessness.</p>
+<p>696<br>
+00:38:48,180 --&gt; 00:38:51,180<br>
+And that's the real reason why it's not the phone.</p>
+<p>697<br>
+00:38:51,180 --&gt; 00:38:52,180<br>
+What do you say?</p>
+<p>698<br>
+00:38:52,180 --&gt; 00:38:56,700<br>
+So, there's some truth to that and then there's some reverse causality there.</p>
+<p>699<br>
+00:38:56,700 --&gt; 00:39:01,140<br>
+Why is it that this catastrophe, this mental illness epidemic, it all the English-speaking</p>
+<p>700<br>
+00:39:01,140 --&gt; 00:39:03,260<br>
+countries in the same way at the same time?</p>
+<p>701<br>
+00:39:03,260 --&gt; 00:39:05,540<br>
+We find strong evidence in Scandinavia.</p>
+<p>702<br>
+00:39:05,540 --&gt; 00:39:10,340<br>
+We find that in Eastern Europe, actually the numbers are getting a little better, in Southern</p>
+<p>703<br>
+00:39:10,340 --&gt; 00:39:12,380<br>
+Europe they get a little worse but not a lot.</p>
+<p>704<br>
+00:39:12,380 --&gt; 00:39:17,540<br>
+Well, this pattern is basically what Emil Dirkheim observed about suicide rates 120 years</p>
+<p>705<br>
+00:39:17,540 --&gt; 00:39:22,580<br>
+ago, that the Protestant cultures which have the most freedom are more subject to animie</p>
+<p>706<br>
+00:39:22,580 --&gt; 00:39:23,980<br>
+or normlessness.</p>
+<p>707<br>
+00:39:23,980 --&gt; 00:39:29,420<br>
+Now these same Protestant countries were the happiest countries in the world for a long time.</p>
+<p>708<br>
+00:39:29,420 --&gt; 00:39:33,740<br>
+Freedom, individualism, this is the liberal ideal, people should be able to construct</p>
+<p>709<br>
+00:39:33,740 --&gt; 00:39:37,220<br>
+lives that they want to live and the anglos in the Scandinavian countries they always</p>
+<p>710<br>
+00:39:37,220 --&gt; 00:39:40,720<br>
+top the lists of happiest countries in the world.</p>
+<p>711<br>
+00:39:40,720 --&gt; 00:39:44,420<br>
+And their young people were the happiest young people until 2012.</p>
+<p>712<br>
+00:39:44,420 --&gt; 00:39:49,140<br>
+And you can see this in the graphs of Canadian data where it used to be until 2012 it was</p>
+<p>713<br>
+00:39:49,140 --&gt; 00:39:55,700<br>
+the late teen and early twenties girls women who were the happiest compared to older women.</p>
+<p>714<br>
+00:39:55,700 --&gt; 00:39:59,500<br>
+And then right after 2012 it plunges and now they're the least happy.</p>
+<p>715<br>
+00:39:59,500 --&gt; 00:40:05,460<br>
+So something about religious societies seems to confer some immunity whereas if you're</p>
+<p>716<br>
+00:40:05,460 --&gt; 00:40:13,460<br>
+in a secular society you're more vulnerable to the effects of the great rewiring.</p>
+<p>717<br>
+00:40:13,460 --&gt; 00:40:20,420<br>
+More with John Hyte after the break, stay with us.</p>
+<p>718<br>
+00:40:20,420 --&gt; 00:40:25,340<br>
+The US Virgin Islands invites you to experience the gorgeous islands of St Thomas, St.</p>
+<p>719<br>
+00:40:25,340 --&gt; 00:40:31,540<br>
+Croix and St. John, USVI is truly a magical place and a one of a kind travel destination.</p>
+<p>720<br>
+00:40:31,540 --&gt; 00:40:36,740<br>
+From amazing food to the warm hospitality, culture and breathtaking beaches, USVI has</p>
+<p>721<br>
+00:40:36,740 --&gt; 00:40:38,860<br>
+everything you could ever want in a vacation.</p>
+<p>722<br>
+00:40:38,860 --&gt; 00:40:42,220<br>
+Did you know that you don't need a passport when traveling from within the US?</p>
+<p>723<br>
+00:40:42,220 --&gt; 00:40:45,300<br>
+That's right, no passport is needed when traveling from the US.</p>
+<p>724<br>
+00:40:45,300 --&gt; 00:40:46,800<br>
+Making travel hassle free.</p>
+<p>725<br>
+00:40:46,800 --&gt; 00:40:50,540<br>
+Add USVI to your vacation list and feel a vibe like no other.</p>
+<p>726<br>
+00:40:50,540 --&gt; 00:40:54,040<br>
+From the world renowned Trump Bay to Macon's Bay Beach and all the way to point you</p>
+<p>727<br>
+00:40:54,040 --&gt; 00:40:58,720<br>
+to all the easternmost point in the United States, USVI will transport you to a place that</p>
+<p>728<br>
+00:40:58,720 --&gt; 00:41:01,000<br>
+no other Caribbean vacation can.</p>
+<p>729<br>
+00:41:01,000 --&gt; 00:41:05,360<br>
+Whether you choose to visit St. Thomas, St. Croix or St. John, why not all three?</p>
+<p>730<br>
+00:41:05,360 --&gt; 00:41:07,400<br>
+Each island has something for everyone.</p>
+<p>731<br>
+00:41:07,400 --&gt; 00:41:11,880<br>
+For most, USVI is just one non-stop flight or single connection away.</p>
+<p>732<br>
+00:41:11,880 --&gt; 00:41:16,680<br>
+Start planning your getaway to America's Caribbean by visiting visit <a href="http://usvi.com" target="_blank" class="external-link">usvi.com</a>.</p>
+<p>733<br>
+00:41:16,680 --&gt; 00:41:18,680<br>
+That's visit <a href="http://usvi.com" target="_blank" class="external-link">usvi.com</a>.</p>
+<p>734<br>
+00:41:18,680 --&gt; 00:41:21,000<br>
+USVI, naturally in rhythm.</p>
+<p>735<br>
+00:41:21,320 --&gt; 00:41:26,760<br>
+A few weeks ago, we had Abigail Shryer on the podcast.</p>
+<p>736<br>
+00:41:26,760 --&gt; 00:41:27,760<br>
+I know you know her.</p>
+<p>737<br>
+00:41:27,760 --&gt; 00:41:28,760<br>
+Yeah, I listened to her.</p>
+<p>738<br>
+00:41:28,760 --&gt; 00:41:29,760<br>
+That was a great discussion.</p>
+<p>739<br>
+00:41:29,760 --&gt; 00:41:30,760<br>
+Thank you.</p>
+<p>740<br>
+00:41:30,760 --&gt; 00:41:31,760<br>
+So I thought so too.</p>
+<p>741<br>
+00:41:31,760 --&gt; 00:41:32,760<br>
+Listeners loved it.</p>
+<p>742<br>
+00:41:32,760 --&gt; 00:41:36,440<br>
+And here's what she said about smart phones when I pushed her on the extent to which they</p>
+<p>743<br>
+00:41:36,440 --&gt; 00:41:37,960<br>
+have been detrimental.</p>
+<p>744<br>
+00:41:37,960 --&gt; 00:41:42,000<br>
+She said, the phones don't completely explain the rising generations, poor rates of mental</p>
+<p>745<br>
+00:41:42,000 --&gt; 00:41:43,000<br>
+health.</p>
+<p>746<br>
+00:41:43,000 --&gt; 00:41:46,480<br>
+First of all, the decline in mental health is the story that began in the 1950s.</p>
+<p>747<br>
+00:41:46,480 --&gt; 00:41:52,040<br>
+Second of all, in 2016, already one in six kids between the ages of two and eight had a diagnosed</p>
+<p>748<br>
+00:41:52,040 --&gt; 00:41:53,040<br>
+mental disorder.</p>
+<p>749<br>
+00:41:53,040 --&gt; 00:41:56,920<br>
+That's a lot of little kids who obviously don't have a smartphone and aren't on social</p>
+<p>750<br>
+00:41:56,920 --&gt; 00:41:57,920<br>
+media.</p>
+<p>751<br>
+00:41:57,920 --&gt; 00:42:01,680<br>
+And then the last reason she added to think that smartphones don't explain everything is</p>
+<p>752<br>
+00:42:01,680 --&gt; 00:42:05,800<br>
+that there are Western culture countries like Japan and Israel that are saturated in</p>
+<p>753<br>
+00:42:05,800 --&gt; 00:42:09,040<br>
+smartphones where kids got smartphones even younger than us.</p>
+<p>754<br>
+00:42:09,040 --&gt; 00:42:10,600<br>
+They're also in social media.</p>
+<p>755<br>
+00:42:10,600 --&gt; 00:42:14,560<br>
+And yet their mental health is much better, at least than our American teens.</p>
+<p>756<br>
+00:42:14,560 --&gt; 00:42:15,880<br>
+There's sort of two things in there.</p>
+<p>757<br>
+00:42:15,880 --&gt; 00:42:17,880<br>
+How do you respond to both of them?</p>
+<p>758<br>
+00:42:17,880 --&gt; 00:42:19,520<br>
+There's three things in there.</p>
+<p>759<br>
+00:42:19,520 --&gt; 00:42:21,480<br>
+Oh, I'm so glad you asked because I listened to the episode.</p>
+<p>760<br>
+00:42:21,480 --&gt; 00:42:25,580<br>
+I listened to that and I could see, okay, Barry is channeling John Heighten, Gene Twengey</p>
+<p>761<br>
+00:42:25,580 --&gt; 00:42:28,360<br>
+here to see what Abigail says.</p>
+<p>762<br>
+00:42:28,360 --&gt; 00:42:29,360<br>
+That's right.</p>
+<p>763<br>
+00:42:29,360 --&gt; 00:42:33,400<br>
+So first, on the timing, it's true that mental health has been declining in a slow steady</p>
+<p>764<br>
+00:42:33,400 --&gt; 00:42:35,600<br>
+way since the 1950s.</p>
+<p>765<br>
+00:42:35,600 --&gt; 00:42:37,960<br>
+That is true, but it hasn't been a straight line.</p>
+<p>766<br>
+00:42:37,960 --&gt; 00:42:39,640<br>
+Gen X was actually in much worse shape.</p>
+<p>767<br>
+00:42:39,640 --&gt; 00:42:43,200<br>
+And I think she's also referred to something like the suicide rate being higher a while</p>
+<p>768<br>
+00:42:43,200 --&gt; 00:42:44,200<br>
+ago.</p>
+<p>769<br>
+00:42:44,200 --&gt; 00:42:45,200<br>
+That's all true for Gen X.</p>
+<p>770<br>
+00:42:45,200 --&gt; 00:42:48,880<br>
+And as I said, I think that's in part because they had the highest rates of lead poisoning</p>
+<p>771<br>
+00:42:48,880 --&gt; 00:42:52,800<br>
+from the huge amount of lead that was dumped at the atmosphere in the 60s and 70s.</p>
+<p>772<br>
+00:42:52,800 --&gt; 00:42:57,400<br>
+In any case, if we go from the 90s on, mental health is actually getting better.</p>
+<p>773<br>
+00:42:57,400 --&gt; 00:43:04,000<br>
+So if it was just the general rise of therapy, of over therapy, then we would see more steady</p>
+<p>774<br>
+00:43:04,000 --&gt; 00:43:10,320<br>
+increases in rates of mental illness in the 2000s and into the 2010s, but we don't.</p>
+<p>775<br>
+00:43:10,320 --&gt; 00:43:17,000<br>
+We see actually slight improvements in the 2010s and then exactly in 2013, we see everything</p>
+<p>776<br>
+00:43:17,000 --&gt; 00:43:18,000<br>
+take off.</p>
+<p>777<br>
+00:43:18,000 --&gt; 00:43:19,400<br>
+And that doesn't fit with Abigail's story.</p>
+<p>778<br>
+00:43:19,400 --&gt; 00:43:22,360<br>
+Now to be clear, she has a piece of the story that I missed.</p>
+<p>779<br>
+00:43:22,360 --&gt; 00:43:23,360<br>
+And I think she's absolutely right.</p>
+<p>780<br>
+00:43:23,360 --&gt; 00:43:28,040<br>
+I found that so compelling that, as a psychologist, we all know, psychotherapy works.</p>
+<p>781<br>
+00:43:28,040 --&gt; 00:43:29,200<br>
+There's a lot of evidence.</p>
+<p>782<br>
+00:43:29,200 --&gt; 00:43:31,240<br>
+It's a good thing for adults.</p>
+<p>783<br>
+00:43:31,240 --&gt; 00:43:35,880<br>
+It never occurred to me that adults, as she says, adults are in therapy because they</p>
+<p>784<br>
+00:43:35,880 --&gt; 00:43:37,880<br>
+chose to and they want to work on a problem.</p>
+<p>785<br>
+00:43:37,880 --&gt; 00:43:40,280<br>
+And kids are usually there because their parents are sending them.</p>
+<p>786<br>
+00:43:40,280 --&gt; 00:43:44,120<br>
+So she definitely has a piece of the story and she has a piece that I did not work in.</p>
+<p>787<br>
+00:43:44,120 --&gt; 00:43:45,440<br>
+I missed.</p>
+<p>788<br>
+00:43:45,440 --&gt; 00:43:49,000<br>
+But her argument saying that phones are less important, I think there's three points.</p>
+<p>789<br>
+00:43:49,000 --&gt; 00:43:53,760<br>
+One is the one I just made that actually no mental health really got worse in 2012.</p>
+<p>790<br>
+00:43:53,760 --&gt; 00:43:55,600<br>
+It wasn't slow and gradual.</p>
+<p>791<br>
+00:43:55,600 --&gt; 00:44:01,080<br>
+The second one was your point that a lot of younger kids are beginning to have these diagnoses.</p>
+<p>792<br>
+00:44:01,080 --&gt; 00:44:06,600<br>
+Now she's right that part of that is from the therapy culture, but it's not as though</p>
+<p>793<br>
+00:44:06,600 --&gt; 00:44:12,000<br>
+kids had a normal childhood until they reached 11 and got their first smartphone.</p>
+<p>794<br>
+00:44:12,000 --&gt; 00:44:15,920<br>
+The deprivation of play began in the 90s and 2000s.</p>
+<p>795<br>
+00:44:15,920 --&gt; 00:44:21,080<br>
+And the great increase in devices began as soon as the iPad came out.</p>
+<p>796<br>
+00:44:21,080 --&gt; 00:44:25,760<br>
+So a lot of my family videos and when my son was two or three years old, they end with</p>
+<p>797<br>
+00:44:25,760 --&gt; 00:44:30,760<br>
+him reaching for the phone saying, &quot;I want iPhone, I want iPhone.&quot;</p>
+<p>798<br>
+00:44:30,760 --&gt; 00:44:33,080<br>
+Because there was amazing magical devices.</p>
+<p>799<br>
+00:44:33,080 --&gt; 00:44:35,320<br>
+And we sometimes gave our kids their phones to play with.</p>
+<p>800<br>
+00:44:35,320 --&gt; 00:44:37,440<br>
+And then the iPad comes out.</p>
+<p>801<br>
+00:44:37,440 --&gt; 00:44:40,040<br>
+And this is just so suited for kids.</p>
+<p>802<br>
+00:44:40,040 --&gt; 00:44:42,360<br>
+And this is the best deal for parents.</p>
+<p>803<br>
+00:44:42,360 --&gt; 00:44:43,960<br>
+You give your kid an iPad.</p>
+<p>804<br>
+00:44:43,960 --&gt; 00:44:45,920<br>
+It's much better than sitting in front of a TV set.</p>
+<p>805<br>
+00:44:45,920 --&gt; 00:44:47,320<br>
+He'll stay quiet for longer.</p>
+<p>806<br>
+00:44:47,320 --&gt; 00:44:49,160<br>
+Oh, and he's making himself smarter.</p>
+<p>807<br>
+00:44:49,160 --&gt; 00:44:51,320<br>
+It's not like sitting in front of TV, which makes you stupid.</p>
+<p>808<br>
+00:44:51,320 --&gt; 00:44:52,760<br>
+No, this is active.</p>
+<p>809<br>
+00:44:52,760 --&gt; 00:44:56,760<br>
+So it's true that five and six-year-olds don't have iPhones, but they have iPads.</p>
+<p>810<br>
+00:44:56,760 --&gt; 00:44:58,960<br>
+Or they have access to them a lot.</p>
+<p>811<br>
+00:44:58,960 --&gt; 00:45:02,560<br>
+So I think childhood has been rewired, not just for adolescents, but even for children</p>
+<p>812<br>
+00:45:02,560 --&gt; 00:45:04,440<br>
+at elementary school and earlier.</p>
+<p>813<br>
+00:45:04,440 --&gt; 00:45:06,200<br>
+That's the third point, briefly, is the International.</p>
+<p>814<br>
+00:45:06,200 --&gt; 00:45:08,320<br>
+No, she's right, that East Asia seems to be different.</p>
+<p>815<br>
+00:45:08,320 --&gt; 00:45:14,520<br>
+East Asia is intensely digitized, but East Asia is also a much more collectivist.</p>
+<p>816<br>
+00:45:14,520 --&gt; 00:45:18,320<br>
+East Asia, there's much more of an interdependent sense of self.</p>
+<p>817<br>
+00:45:18,320 --&gt; 00:45:20,680<br>
+And so this offers a lot of protection.</p>
+<p>818<br>
+00:45:20,680 --&gt; 00:45:24,320<br>
+It's the freest kids in the freest societies.</p>
+<p>819<br>
+00:45:24,320 --&gt; 00:45:27,920<br>
+They're the ones who got washed away between 2010 and 2015.</p>
+<p>820<br>
+00:45:27,920 --&gt; 00:45:33,680<br>
+There's an anecdote in your book that was sort of so powerful in which, just speaking</p>
+<p>821<br>
+00:45:33,680 --&gt; 00:45:37,960<br>
+of the iPad, you're with, I think, your daughter who's five or six years old at the time.</p>
+<p>822<br>
+00:45:37,960 --&gt; 00:45:39,880<br>
+And what does she say to you?</p>
+<p>823<br>
+00:45:39,880 --&gt; 00:45:41,440<br>
+She says, she calls out from the next room.</p>
+<p>824<br>
+00:45:41,440 --&gt; 00:45:43,320<br>
+I'm at breakfast at a country in.</p>
+<p>825<br>
+00:45:43,320 --&gt; 00:45:46,960<br>
+And she says, &quot;Daddy, can you take the iPad away from me?</p>
+<p>826<br>
+00:45:46,960 --&gt; 00:45:50,280<br>
+I'm trying to take my eyes off it, but I can't.&quot;</p>
+<p>827<br>
+00:45:50,280 --&gt; 00:45:53,000<br>
+So kids don't have executive control.</p>
+<p>828<br>
+00:45:53,000 --&gt; 00:45:54,760<br>
+They don't have executive function.</p>
+<p>829<br>
+00:45:54,760 --&gt; 00:45:55,760<br>
+They're easily hooked.</p>
+<p>830<br>
+00:45:55,760 --&gt; 00:45:56,760<br>
+They're easily addicted.</p>
+<p>831<br>
+00:45:56,760 --&gt; 00:46:01,680<br>
+This is why we don't let minors experiment with addictive drugs and activities.</p>
+<p>832<br>
+00:46:01,680 --&gt; 00:46:06,200<br>
+But the iPad is very good as a behaviorist train, which is like having BF Skinner right in</p>
+<p>833<br>
+00:46:06,200 --&gt; 00:46:08,280<br>
+front of your child saying, &quot;Here, do this.</p>
+<p>834<br>
+00:46:08,280 --&gt; 00:46:09,280<br>
+I'll reward you.</p>
+<p>835<br>
+00:46:09,280 --&gt; 00:46:10,280<br>
+Do this.</p>
+<p>836<br>
+00:46:10,280 --&gt; 00:46:11,280<br>
+I'll reward you.</p>
+<p>837<br>
+00:46:11,280 --&gt; 00:46:15,280<br>
+And after a few tens of thousands of times, your kid's brain is rewired.&quot;</p>
+<p>838<br>
+00:46:15,280 --&gt; 00:46:21,440<br>
+So for relatively long time, people have been writing about the obvious detrimental impact</p>
+<p>839<br>
+00:46:21,440 --&gt; 00:46:26,120<br>
+that the social media apps and platforms have on girls.</p>
+<p>840<br>
+00:46:26,120 --&gt; 00:46:28,720<br>
+And you say in the book, the evidence is overwhelming.</p>
+<p>841<br>
+00:46:28,720 --&gt; 00:46:32,920<br>
+Give us a little bit of that evidence and then I want to talk about boys, which is a subtler</p>
+<p>842<br>
+00:46:32,920 --&gt; 00:46:33,920<br>
+story.</p>
+<p>843<br>
+00:46:33,920 --&gt; 00:46:38,440<br>
+So I'm in a debate with other researchers because they look at the correlation between hours</p>
+<p>844<br>
+00:46:38,440 --&gt; 00:46:41,440<br>
+on social media and mental health.</p>
+<p>845<br>
+00:46:41,440 --&gt; 00:46:45,800<br>
+And there is a correlation very steadily around 0.15 for girls, which I think is big enough</p>
+<p>846<br>
+00:46:45,800 --&gt; 00:46:48,280<br>
+to explain a lot and they think is not.</p>
+<p>847<br>
+00:46:48,280 --&gt; 00:46:51,080<br>
+But that's just one avenue of harm.</p>
+<p>848<br>
+00:46:51,080 --&gt; 00:46:55,680<br>
+And in fact, there's like 15 different ways that girls get harmed on social media.</p>
+<p>849<br>
+00:46:55,680 --&gt; 00:47:00,120<br>
+And so a few that we read about and that I read about the book, so visual social comparison</p>
+<p>850<br>
+00:47:00,120 --&gt; 00:47:01,120<br>
+we already talked about.</p>
+<p>851<br>
+00:47:01,120 --&gt; 00:47:02,120<br>
+That's the obvious one.</p>
+<p>852<br>
+00:47:02,120 --&gt; 00:47:04,400<br>
+Another one is perfectionism.</p>
+<p>853<br>
+00:47:04,400 --&gt; 00:47:06,760<br>
+Girls and boys are sometimes subject to perfectionism.</p>
+<p>854<br>
+00:47:06,760 --&gt; 00:47:08,280<br>
+It's a kind of an anxiety disorder.</p>
+<p>855<br>
+00:47:08,280 --&gt; 00:47:10,000<br>
+It can be kind of crippling.</p>
+<p>856<br>
+00:47:10,000 --&gt; 00:47:14,720<br>
+But one kind is called social perfectionism, which is what you're concerned about is entirely</p>
+<p>857<br>
+00:47:14,720 --&gt; 00:47:16,520<br>
+what others are thinking of you.</p>
+<p>858<br>
+00:47:16,520 --&gt; 00:47:18,160<br>
+It's not internally driven.</p>
+<p>859<br>
+00:47:18,160 --&gt; 00:47:24,080<br>
+And that is higher in girls and boy does, boy, do sites like Instagram bring that out.</p>
+<p>860<br>
+00:47:24,080 --&gt; 00:47:26,520<br>
+Something has to be perfect about your life because you're going to be judged for it or</p>
+<p>861<br>
+00:47:26,520 --&gt; 00:47:30,040<br>
+you're afraid you'll be judged even if people actually don't care that much.</p>
+<p>862<br>
+00:47:30,040 --&gt; 00:47:33,400<br>
+Another is relational aggression, which we've actually, we've already talked about that.</p>
+<p>863<br>
+00:47:33,400 --&gt; 00:47:37,320<br>
+Boys aggression is ultimately backed up by the threat of physical force and domination</p>
+<p>864<br>
+00:47:37,320 --&gt; 00:47:38,520<br>
+punching fighting.</p>
+<p>865<br>
+00:47:38,520 --&gt; 00:47:41,120<br>
+And that's how a boy gets dominance over another boy.</p>
+<p>866<br>
+00:47:41,120 --&gt; 00:47:42,120<br>
+But girls have always done it.</p>
+<p>867<br>
+00:47:42,120 --&gt; 00:47:44,200<br>
+Certainly, you know, mean girls shows this.</p>
+<p>868<br>
+00:47:44,200 --&gt; 00:47:47,800<br>
+You damage and other girls reputation or relationships.</p>
+<p>869<br>
+00:47:47,800 --&gt; 00:47:50,120<br>
+And that's been part of the cruelty of girls.</p>
+<p>870<br>
+00:47:50,120 --&gt; 00:47:53,760<br>
+And social media just makes it a lot easier to do that.</p>
+<p>871<br>
+00:47:53,760 --&gt; 00:47:56,160<br>
+And then they're going to be mislead and on weekends as well.</p>
+<p>872<br>
+00:47:56,160 --&gt; 00:48:01,480<br>
+So girls just are exposed to just much more relational aggression than they were before.</p>
+<p>873<br>
+00:48:01,480 --&gt; 00:48:04,080<br>
+Girls also share emotions more than boys do.</p>
+<p>874<br>
+00:48:04,080 --&gt; 00:48:08,200<br>
+You know, if a few girls are anxious and then they all get on social media and talk about</p>
+<p>875<br>
+00:48:08,200 --&gt; 00:48:12,600<br>
+their anxiety, that is literally going to spread to other girls.</p>
+<p>876<br>
+00:48:12,600 --&gt; 00:48:15,400<br>
+Whereas if a boy is anxious, he's not going to talk about it as much.</p>
+<p>877<br>
+00:48:15,400 --&gt; 00:48:16,560<br>
+And boys are kind of socially clueless.</p>
+<p>878<br>
+00:48:16,560 --&gt; 00:48:18,520<br>
+They're not going to pick up on it as much.</p>
+<p>879<br>
+00:48:18,520 --&gt; 00:48:23,360<br>
+So boys, in a sense, had some protection against the mental and this contagion that social</p>
+<p>880<br>
+00:48:23,360 --&gt; 00:48:25,760<br>
+media spreads among girls.</p>
+<p>881<br>
+00:48:25,760 --&gt; 00:48:27,880<br>
+And I could keep going, there's just so many different ways.</p>
+<p>882<br>
+00:48:27,880 --&gt; 00:48:32,840<br>
+I mean, we haven't even touched on getting contacted by strangers, getting sex-storted.</p>
+<p>883<br>
+00:48:32,840 --&gt; 00:48:34,440<br>
+It's unbelievable.</p>
+<p>884<br>
+00:48:34,440 --&gt; 00:48:39,720<br>
+Once scammers can get a child boy or girl, once they can get the child to send them a picture</p>
+<p>885<br>
+00:48:39,720 --&gt; 00:48:43,960<br>
+of themselves naked or, you know, part of their body, now they've got them.</p>
+<p>886<br>
+00:48:43,960 --&gt; 00:48:47,160<br>
+And then they reveal themselves like, oh, no, I'm not, you know, a kid flirting with you.</p>
+<p>887<br>
+00:48:47,160 --&gt; 00:48:49,240<br>
+I'm actually, you know, a 40-year-old man.</p>
+<p>888<br>
+00:48:49,240 --&gt; 00:48:51,680<br>
+And now I've got you and you have to do what I say.</p>
+<p>889<br>
+00:48:51,680 --&gt; 00:48:57,360<br>
+And there's the story of this one girl, they forced her to carve their names, this group.</p>
+<p>890<br>
+00:48:57,360 --&gt; 00:49:01,920<br>
+She had a carve their names in her thigh with a knife while they watched and laughed.</p>
+<p>891<br>
+00:49:01,920 --&gt; 00:49:06,680<br>
+She had to behead her pet hamster in front of them on camera.</p>
+<p>892<br>
+00:49:06,680 --&gt; 00:49:09,640<br>
+And then they said, now we want you to kill yourself.</p>
+<p>893<br>
+00:49:09,640 --&gt; 00:49:12,360<br>
+If you don't do this, we're going to spread these photos far and wide.</p>
+<p>894<br>
+00:49:12,360 --&gt; 00:49:13,360<br>
+You're going to be humiliated.</p>
+<p>895<br>
+00:49:13,360 --&gt; 00:49:17,600<br>
+At this point, I'm sure the girl was already thinking about suicide because she felt trapped</p>
+<p>896<br>
+00:49:17,600 --&gt; 00:49:19,240<br>
+and humiliated.</p>
+<p>897<br>
+00:49:19,240 --&gt; 00:49:21,520<br>
+And thank God she told her mother at that point.</p>
+<p>898<br>
+00:49:21,520 --&gt; 00:49:23,760<br>
+And then the mother was able to save her.</p>
+<p>899<br>
+00:49:23,760 --&gt; 00:49:30,000<br>
+But the idea that we would never let our children wander in a bad part of town unsupervised</p>
+<p>900<br>
+00:49:30,000 --&gt; 00:49:35,080<br>
+for months, we would never let them go into, you know, a war zone or a brothel.</p>
+<p>901<br>
+00:49:35,080 --&gt; 00:49:38,000<br>
+But we let strangers do this to them.</p>
+<p>902<br>
+00:49:38,000 --&gt; 00:49:41,040<br>
+It's unbelievable to me that we have done this to childhood.</p>
+<p>903<br>
+00:49:41,040 --&gt; 00:49:47,520<br>
+Well, you write in the book about a girl named Alexis Spence, whose life sort of unraveled</p>
+<p>904<br>
+00:49:47,520 --&gt; 00:49:50,640<br>
+because of social media platforms that is currently suing meta.</p>
+<p>905<br>
+00:49:50,640 --&gt; 00:49:54,520<br>
+Tell me a little bit about what happened to her because I think in a way her story, not</p>
+<p>906<br>
+00:49:54,520 --&gt; 00:49:59,000<br>
+the fact that she's suing, but her story is sort of emblematic of what happened to girls.</p>
+<p>907<br>
+00:49:59,000 --&gt; 00:50:03,160<br>
+So she was this, you know, fifth grade girl, grown up on Long Island.</p>
+<p>908<br>
+00:50:03,160 --&gt; 00:50:10,080<br>
+And she had webkins, you know, it's like a toy that you can trap online.</p>
+<p>909<br>
+00:50:10,080 --&gt; 00:50:14,280<br>
+And she thought that was fun, but some of her friends made fun of her for this childish</p>
+<p>910<br>
+00:50:14,280 --&gt; 00:50:15,280<br>
+thing.</p>
+<p>911<br>
+00:50:15,280 --&gt; 00:50:16,560<br>
+No, you should get Instagram.</p>
+<p>912<br>
+00:50:16,560 --&gt; 00:50:18,360<br>
+So she gets Instagram.</p>
+<p>913<br>
+00:50:18,360 --&gt; 00:50:24,160<br>
+And any interesting beauty before you know what you'll be being sent dieting, videos and content</p>
+<p>914<br>
+00:50:24,160 --&gt; 00:50:29,600<br>
+about extreme thinness and anorexia and the skeleton bride diet and all sorts of horrible,</p>
+<p>915<br>
+00:50:29,600 --&gt; 00:50:30,760<br>
+horrible things.</p>
+<p>916<br>
+00:50:30,760 --&gt; 00:50:35,240<br>
+And she develops very severe eating disorders and she's hospitalized multiple times.</p>
+<p>917<br>
+00:50:35,240 --&gt; 00:50:39,840<br>
+And in one of the longer hospitalizations, she goes without her phone for a while.</p>
+<p>918<br>
+00:50:39,840 --&gt; 00:50:42,240<br>
+And the mother says, it's like I got my daughter back.</p>
+<p>919<br>
+00:50:42,240 --&gt; 00:50:46,600<br>
+Once she was not on the phone for a month or two, she became her normal self again.</p>
+<p>920<br>
+00:50:46,600 --&gt; 00:50:50,760<br>
+And this is a story I hear from parents and kids about summer camp as well when kids get</p>
+<p>921<br>
+00:50:50,760 --&gt; 00:50:54,880<br>
+off of their devices because the thing is they get off and so does everyone else.</p>
+<p>922<br>
+00:50:54,880 --&gt; 00:50:56,760<br>
+They're around kids who are not on devices.</p>
+<p>923<br>
+00:50:56,760 --&gt; 00:50:58,240<br>
+So they actually talk to each other.</p>
+<p>924<br>
+00:50:58,240 --&gt; 00:51:00,640<br>
+They play together and they get healthy again.</p>
+<p>925<br>
+00:51:00,640 --&gt; 00:51:03,240<br>
+So Alexis, she was suicidal.</p>
+<p>926<br>
+00:51:03,240 --&gt; 00:51:06,240<br>
+She had severe malnutrition for a long time.</p>
+<p>927<br>
+00:51:06,240 --&gt; 00:51:07,240<br>
+She's recovered.</p>
+<p>928<br>
+00:51:07,240 --&gt; 00:51:13,040<br>
+She's now in her early 20s, but that was a harrowing 10 years for her and her family.</p>
+<p>929<br>
+00:51:13,040 --&gt; 00:51:15,360<br>
+And it starts in fifth grade.</p>
+<p>930<br>
+00:51:15,360 --&gt; 00:51:20,760<br>
+And Congress passed one law, exactly one law to protect children online, cop at the Child</p>
+<p>931<br>
+00:51:20,760 --&gt; 00:51:24,940<br>
+Online Privacy Protection Act in 1997, I think it was.</p>
+<p>932<br>
+00:51:24,940 --&gt; 00:51:28,200<br>
+That act was completely inadequate, but at least it said that there was a minimum age to</p>
+<p>933<br>
+00:51:28,200 --&gt; 00:51:31,680<br>
+sign a contract in terms of service and give away your data to a company.</p>
+<p>934<br>
+00:51:31,680 --&gt; 00:51:32,680<br>
+It's 13.</p>
+<p>935<br>
+00:51:32,680 --&gt; 00:51:37,540<br>
+Oh, but the companies are not liable for that unless they have positive evidence that a kid</p>
+<p>936<br>
+00:51:37,540 --&gt; 00:51:38,540<br>
+is under 13.</p>
+<p>937<br>
+00:51:38,540 --&gt; 00:51:40,840<br>
+So as long as they don't know, then they're okay.</p>
+<p>938<br>
+00:51:40,840 --&gt; 00:51:41,920<br>
+They can't be sued.</p>
+<p>939<br>
+00:51:41,920 --&gt; 00:51:46,400<br>
+And so I argue that we need to raise the age of 16 and enforce it, but for God's sakes,</p>
+<p>940<br>
+00:51:46,400 --&gt; 00:51:51,160<br>
+can't we at least ask the companies, require the companies to enforce the age of 13?</p>
+<p>941<br>
+00:51:51,160 --&gt; 00:51:53,040<br>
+Like, that's the only thing we have in law.</p>
+<p>942<br>
+00:51:53,040 --&gt; 00:51:55,600<br>
+There's been nothing since then, and that's not even enforced.</p>
+<p>943<br>
+00:51:55,600 --&gt; 00:52:00,760<br>
+So let's talk about how much of this you lay at the blame of tech companies.</p>
+<p>944<br>
+00:52:00,760 --&gt; 00:52:02,080<br>
+Here's what you write in the book.</p>
+<p>945<br>
+00:52:02,080 --&gt; 00:52:07,000<br>
+A few of these companies are behaving like the tobacco and vaping industries, which</p>
+<p>946<br>
+00:52:07,000 --&gt; 00:52:11,840<br>
+designed their products to be highly addictive and then skirted laws limiting marketing</p>
+<p>947<br>
+00:52:11,840 --&gt; 00:52:13,000<br>
+to minors.</p>
+<p>948<br>
+00:52:13,000 --&gt; 00:52:17,400<br>
+You also make the analogy in the book to oil companies that fought against a ban on</p>
+<p>949<br>
+00:52:17,400 --&gt; 00:52:23,180<br>
+lead and gasoline, even though the evidence was clear that lead in the atmosphere affected</p>
+<p>950<br>
+00:52:23,180 --&gt; 00:52:24,580<br>
+brain development.</p>
+<p>951<br>
+00:52:24,580 --&gt; 00:52:29,720<br>
+So I want to know, did they know in Silicon Valley what they were creating?</p>
+<p>952<br>
+00:52:29,720 --&gt; 00:52:34,120<br>
+Did they understand they were making a kind of heroin for kids and they did they decide</p>
+<p>953<br>
+00:52:34,120 --&gt; 00:52:35,560<br>
+to do it anyway?</p>
+<p>954<br>
+00:52:35,560 --&gt; 00:52:41,120<br>
+Or did they sort of stumble as backwards into something that is perhaps more addictive</p>
+<p>955<br>
+00:52:41,120 --&gt; 00:52:43,000<br>
+than cigarettes or vaping?</p>
+<p>956<br>
+00:52:43,000 --&gt; 00:52:44,000<br>
+Yeah.</p>
+<p>957<br>
+00:52:44,000 --&gt; 00:52:45,000<br>
+So I think it's some of both.</p>
+<p>958<br>
+00:52:45,000 --&gt; 00:52:48,240<br>
+I think it's nobody had bad intentions.</p>
+<p>959<br>
+00:52:48,240 --&gt; 00:52:53,000<br>
+Nobody said, hey, let's try to addict American kids and ruin their lives.</p>
+<p>960<br>
+00:52:53,000 --&gt; 00:52:58,280<br>
+But once you start a company and you have a product and it is good for some people and</p>
+<p>961<br>
+00:52:58,280 --&gt; 00:53:00,400<br>
+it does some social good in some ways.</p>
+<p>962<br>
+00:53:00,400 --&gt; 00:53:02,960<br>
+So just normal human abilities to rationalize.</p>
+<p>963<br>
+00:53:02,960 --&gt; 00:53:07,160<br>
+If we really give them the benefit of the doubt, we might say, they might have suspected</p>
+<p>964<br>
+00:53:07,160 --&gt; 00:53:11,280<br>
+that their products were harming kids, but they had enough plausible deniability.</p>
+<p>965<br>
+00:53:11,280 --&gt; 00:53:14,320<br>
+There were some psychologists who said, no, the evidence isn't very good.</p>
+<p>966<br>
+00:53:14,320 --&gt; 00:53:18,240<br>
+So being very charitable, we might say, well, maybe they didn't know.</p>
+<p>967<br>
+00:53:18,240 --&gt; 00:53:19,720<br>
+Maybe they didn't believe it.</p>
+<p>968<br>
+00:53:19,720 --&gt; 00:53:23,640<br>
+Maybe they weren't trying to harm kids, but maybe that's all it was.</p>
+<p>969<br>
+00:53:23,640 --&gt; 00:53:25,120<br>
+But then we have the whistleblowers.</p>
+<p>970<br>
+00:53:25,120 --&gt; 00:53:27,400<br>
+We know that they were warned.</p>
+<p>971<br>
+00:53:27,400 --&gt; 00:53:31,960<br>
+Francis Hogan brought out documents showing they had seminars on teen psychology and they</p>
+<p>972<br>
+00:53:31,960 --&gt; 00:53:36,280<br>
+showed images of the brain and they said the frontal cortex doesn't mature until late teens</p>
+<p>973<br>
+00:53:36,280 --&gt; 00:53:41,920<br>
+early 20s and at the earlier ages, kids are especially vulnerable to social concerns and</p>
+<p>974<br>
+00:53:41,920 --&gt; 00:53:44,720<br>
+here's how we can get them to spend more time on the platform.</p>
+<p>975<br>
+00:53:44,720 --&gt; 00:53:47,360<br>
+Here's what we can do to keep them engaged.</p>
+<p>976<br>
+00:53:47,360 --&gt; 00:53:50,720<br>
+So they knew what they were doing and they did it anyway.</p>
+<p>977<br>
+00:53:50,720 --&gt; 00:53:54,680<br>
+In fact, there's a quote, I think I have in the book from one of the early founders of Facebook.</p>
+<p>978<br>
+00:53:54,680 --&gt; 00:53:57,640<br>
+He said about Facebook and all the other platforms.</p>
+<p>979<br>
+00:53:57,640 --&gt; 00:54:03,320<br>
+He said, this is exactly what a hacker would do is hack into the psychology of prestige,</p>
+<p>980<br>
+00:54:03,320 --&gt; 00:54:05,640<br>
+give you a little hit of dopamine, keep you clicking.</p>
+<p>981<br>
+00:54:05,640 --&gt; 00:54:08,880<br>
+He said, we knew what we were doing and we did it anyway.</p>
+<p>982<br>
+00:54:08,880 --&gt; 00:54:11,760<br>
+God only knows what we're doing to our children's brains.</p>
+<p>983<br>
+00:54:11,760 --&gt; 00:54:13,120<br>
+So no, they knew.</p>
+<p>984<br>
+00:54:13,120 --&gt; 00:54:19,400<br>
+Now, tobacco, they were pushing a product that was undeniably addictive.</p>
+<p>985<br>
+00:54:19,400 --&gt; 00:54:24,200<br>
+But I think to be said about tobacco is a kid could choose to not smoke.</p>
+<p>986<br>
+00:54:24,200 --&gt; 00:54:25,760<br>
+There was some pure pressure.</p>
+<p>987<br>
+00:54:25,760 --&gt; 00:54:31,920<br>
+But I found the numbers in 1997 was the peak year of high school age smoking, 37% of kids</p>
+<p>988<br>
+00:54:31,920 --&gt; 00:54:33,520<br>
+smoked in 1997.</p>
+<p>989<br>
+00:54:33,520 --&gt; 00:54:36,000<br>
+And that means that two thirds of kids didn't smoke.</p>
+<p>990<br>
+00:54:36,000 --&gt; 00:54:37,680<br>
+So you could choose to not smoke.</p>
+<p>991<br>
+00:54:37,680 --&gt; 00:54:39,760<br>
+You can't choose to not be on social media.</p>
+<p>992<br>
+00:54:39,760 --&gt; 00:54:43,320<br>
+Now, I'm sorry, it's not that you can't at all, but it's much harder, especially because</p>
+<p>993<br>
+00:54:43,320 --&gt; 00:54:44,800<br>
+it hits you much younger.</p>
+<p>994<br>
+00:54:44,800 --&gt; 00:54:47,360<br>
+You know, we're talking high school kids for smoking, but we're looking at middle school</p>
+<p>995<br>
+00:54:47,360 --&gt; 00:54:50,040<br>
+kids for social media.</p>
+<p>996<br>
+00:54:50,040 --&gt; 00:54:54,360<br>
+So I think in many ways social media is worse than tobacco, worse than let it gas.</p>
+<p>997<br>
+00:54:54,360 --&gt; 00:54:59,440<br>
+And again, 11, 12, 13 year old kids, these kids, they're little, they haven't gone through</p>
+<p>998<br>
+00:54:59,440 --&gt; 00:55:03,120<br>
+puberty, they're incredibly vulnerable and easy to exploit.</p>
+<p>999<br>
+00:55:03,120 --&gt; 00:55:05,960<br>
+And we're just standing back and letting the companies exploit them.</p>
+<p>1000<br>
+00:55:05,960 --&gt; 00:55:09,200<br>
+For God's sakes, make them enforce their own age limits.</p>
+<p>1001<br>
+00:55:09,200 --&gt; 00:55:14,040<br>
+For God's sakes, Congress repeal or modify section 230's that it does just what the original</p>
+<p>1002<br>
+00:55:14,040 --&gt; 00:55:15,120<br>
+intent was.</p>
+<p>1003<br>
+00:55:15,120 --&gt; 00:55:18,400<br>
+It doesn't protect the platforms from any lawsuits.</p>
+<p>1004<br>
+00:55:18,400 --&gt; 00:55:20,960<br>
+The platforms should be liable for underage use.</p>
+<p>1005<br>
+00:55:20,960 --&gt; 00:55:25,280<br>
+They should be liable for putting an architectural features designed to lure in and</p>
+<p>1006<br>
+00:55:25,280 --&gt; 00:55:29,320<br>
+addict kids that we need to make them liable and we're not.</p>
+<p>1007<br>
+00:55:29,320 --&gt; 00:55:33,560<br>
+In March 2021, Mark Zuckerberg appeared in front of Congress.</p>
+<p>1008<br>
+00:55:33,560 --&gt; 00:55:38,480<br>
+And he insisted that the research that we've seen, and this is a quote, is that using social</p>
+<p>1009<br>
+00:55:38,480 --&gt; 00:55:42,360<br>
+apps to connect with other people can have positive mental health benefits.</p>
+<p>1010<br>
+00:55:42,360 --&gt; 00:55:44,480<br>
+What do you say to that?</p>
+<p>1011<br>
+00:55:44,480 --&gt; 00:55:48,120<br>
+The natural inclination of an academic is to say, well, let's look for the arguments</p>
+<p>1012<br>
+00:55:48,120 --&gt; 00:55:49,120<br>
+on both sides.</p>
+<p>1013<br>
+00:55:49,120 --&gt; 00:55:51,120<br>
+There's some pluses and there's some minuses.</p>
+<p>1014<br>
+00:55:51,120 --&gt; 00:55:55,800<br>
+And while that's true, when we look at the pluses of social media, what Zuckerberg was talking</p>
+<p>1015<br>
+00:55:55,800 --&gt; 00:56:00,800<br>
+about is reports, if you survey kids and you say, how does it make you feel?</p>
+<p>1016<br>
+00:56:00,800 --&gt; 00:56:02,280<br>
+And they'll often say positive things.</p>
+<p>1017<br>
+00:56:02,280 --&gt; 00:56:06,640<br>
+In fact, as he pointed out correctly, even in the Francis Hogan revelations of the study</p>
+<p>1018<br>
+00:56:06,640 --&gt; 00:56:12,520<br>
+that Facebook commissioned, more kids said that it had positive effects than negative effects.</p>
+<p>1019<br>
+00:56:12,520 --&gt; 00:56:16,600<br>
+Okay, so you have a consumer product that is only harming a third of its users.</p>
+<p>1020<br>
+00:56:16,600 --&gt; 00:56:18,120<br>
+Okay, you know, maybe that's not so bad.</p>
+<p>1021<br>
+00:56:18,120 --&gt; 00:56:20,200<br>
+So that is incredibly terrible.</p>
+<p>1022<br>
+00:56:20,200 --&gt; 00:56:24,320<br>
+Secondly, to say that there's some mental health benefits, all he really means is they said</p>
+<p>1023<br>
+00:56:24,320 --&gt; 00:56:26,400<br>
+it makes me feel better.</p>
+<p>1024<br>
+00:56:26,400 --&gt; 00:56:30,960<br>
+When you actually look at any other measure of actual mental health problems, you only</p>
+<p>1025<br>
+00:56:30,960 --&gt; 00:56:31,960<br>
+see harms.</p>
+<p>1026<br>
+00:56:31,960 --&gt; 00:56:34,400<br>
+Now, some studies find nothing, it's true.</p>
+<p>1027<br>
+00:56:34,400 --&gt; 00:56:38,400<br>
+But if there was no effect, if it was, if the null hypothesis here was true, then what</p>
+<p>1028<br>
+00:56:38,400 --&gt; 00:56:43,280<br>
+you'd expect is that some studies show a positive effect, a positive correlation or positive</p>
+<p>1029<br>
+00:56:43,280 --&gt; 00:56:48,560<br>
+experimental effect, some show a negative, maybe there's some publication bias, so maybe</p>
+<p>1030<br>
+00:56:48,560 --&gt; 00:56:50,560<br>
+it shifts towards the negative.</p>
+<p>1031<br>
+00:56:50,560 --&gt; 00:56:54,040<br>
+But you would have a lot of studies where the correlation between heavy social media use</p>
+<p>1032<br>
+00:56:54,040 --&gt; 00:56:58,880<br>
+and happiness or mental health was positive, but you don't, you don't find them.</p>
+<p>1033<br>
+00:56:58,880 --&gt; 00:57:03,160<br>
+And you'd find a lot of experiments where having kids do more social media made them happier,</p>
+<p>1034<br>
+00:57:03,160 --&gt; 00:57:04,360<br>
+but you don't.</p>
+<p>1035<br>
+00:57:04,360 --&gt; 00:57:08,880<br>
+So the null hypothesis is definitely false and very confident of that.</p>
+<p>1036<br>
+00:57:08,880 --&gt; 00:57:12,440<br>
+And what Zuckerberg was pointing to was a couple of crumbs here and there that allowed</p>
+<p>1037<br>
+00:57:12,440 --&gt; 00:57:16,880<br>
+him to say, here's a study I can point to where there is some sign that kids say it makes them</p>
+<p>1038<br>
+00:57:16,880 --&gt; 00:57:18,600<br>
+happier and more connected.</p>
+<p>1039<br>
+00:57:18,600 --&gt; 00:57:20,960<br>
+That's true, but it's still devastating their mental health.</p>
+<p>1040<br>
+00:57:20,960 --&gt; 00:57:26,120<br>
+It seems to me that this is a really stratified problem economically.</p>
+<p>1041<br>
+00:57:26,120 --&gt; 00:57:31,160<br>
+The people who live in Northern California that invented a lot of these apps send their</p>
+<p>1042<br>
+00:57:31,160 --&gt; 00:57:34,880<br>
+kids to Montessori schools where there are absolutely no screens and they play with wooden</p>
+<p>1043<br>
+00:57:34,880 --&gt; 00:57:36,400<br>
+blocks all day.</p>
+<p>1044<br>
+00:57:36,400 --&gt; 00:57:43,640<br>
+The people that don't have the luxury of sending their kids to a private school use these</p>
+<p>1045<br>
+00:57:43,640 --&gt; 00:57:47,880<br>
+devices it seems to me often as a kind of babysitter.</p>
+<p>1046<br>
+00:57:47,880 --&gt; 00:57:53,240<br>
+And if you look at the numbers, the average screen time spent in kids in a single parent</p>
+<p>1047<br>
+00:57:53,240 --&gt; 00:57:57,480<br>
+home and in low income families and among black and Hispanic families are higher.</p>
+<p>1048<br>
+00:57:57,480 --&gt; 00:58:00,000<br>
+I'd love for you to comment on that.</p>
+<p>1049<br>
+00:58:00,000 --&gt; 00:58:04,440<br>
+The digital divide used to be that rich kids have computers and poor kids don't, so we'd</p>
+<p>1050<br>
+00:58:04,440 --&gt; 00:58:07,160<br>
+better get computers to the poor kids.</p>
+<p>1051<br>
+00:58:07,160 --&gt; 00:58:11,080<br>
+And oh, you know, our heroes come in, the tech companies will provide a Chromebook, will</p>
+<p>1052<br>
+00:58:11,080 --&gt; 00:58:15,200<br>
+provide devices for the kids and that will even things out.</p>
+<p>1053<br>
+00:58:15,200 --&gt; 00:58:19,400<br>
+Well, that might have been the digital divide 20 years ago, 30 years ago.</p>
+<p>1054<br>
+00:58:19,400 --&gt; 00:58:24,880<br>
+But now the digital divide is that kids with two married college educated parents probably</p>
+<p>1055<br>
+00:58:24,880 --&gt; 00:58:29,920<br>
+are trying to put on restrictions, probably are concerned about the mental health effects</p>
+<p>1056<br>
+00:58:29,920 --&gt; 00:58:35,120<br>
+and they're struggling and probably failing to really do a lot, but they're trying.</p>
+<p>1057<br>
+00:58:35,120 --&gt; 00:58:40,720<br>
+Whereas kids who have a single parent, kids who are from less educated or less wealthy families,</p>
+<p>1058<br>
+00:58:40,720 --&gt; 00:58:44,880<br>
+these kids, they have fewer protections, fewer limitations.</p>
+<p>1059<br>
+00:58:44,880 --&gt; 00:58:48,120<br>
+The mother has to, you know, is using this as a babysitter.</p>
+<p>1060<br>
+00:58:48,120 --&gt; 00:58:53,280<br>
+And so yes, the digital divide now is that it's the wealthy kids and the white and the Asian</p>
+<p>1061<br>
+00:58:53,280 --&gt; 00:58:56,520<br>
+kids and the kids and married families.</p>
+<p>1062<br>
+00:58:56,520 --&gt; 00:59:01,080<br>
+They're the ones who have at least slightly healthier environments, whereas all the other groups</p>
+<p>1063<br>
+00:59:01,080 --&gt; 00:59:07,080<br>
+I think have the worst of all worlds.</p>
+<p>1064<br>
+00:59:07,080 --&gt; 00:59:11,840<br>
+After the break, the most important part of the conversation, John tells us what action</p>
+<p>1065<br>
+00:59:11,840 --&gt; 00:59:32,600<br>
+parents can take, stay with us.</p>
+<p>1066<br>
+00:59:32,600 --&gt; 00:59:37,520<br>
+The US Virgin Islands invites you to experience the gorgeous islands of St. Thomas, St.</p>
+<p>1067<br>
+00:59:37,520 --&gt; 00:59:47,760<br>
+Croix and St. John.</p>
+<p>1068<br>
+00:59:47,760 --&gt; 01:00:13,320<br>
+The US Virgin Islands invites you to experience the gorgeous islands of St. Thomas, St. Croix and St. John.</p>
+<p>1069<br>
+01:00:13,320 --&gt; 01:00:25,880<br>
+Why not all three?</p>
+<p>1070<br>
+01:00:25,880 --&gt; 01:00:42,640<br>
+The US Virgin Islands invites you to experience the gorgeous islands of St. Thomas, St.</p>
+<p>1071<br>
+01:00:42,640 --&gt; 01:00:52,440<br>
+Croix and St. Thomas, St. Croix and St. John.</p>
+<p>1072<br>
+01:00:52,440 --&gt; 01:01:02,440<br>
+What can I possibly do about it?</p>
+<p>1073<br>
+01:01:02,440 --&gt; 01:01:06,680<br>
+To explain that, I have to first say what the solution is and then we'll talk about how</p>
+<p>1074<br>
+01:01:06,680 --&gt; 01:01:09,000<br>
+policy makers can support that.</p>
+<p>1075<br>
+01:01:09,000 --&gt; 01:01:14,240<br>
+The key idea in my book is that we're stuck in a set of collective action problems.</p>
+<p>1076<br>
+01:01:14,240 --&gt; 01:01:17,760<br>
+The main reason why people are giving their kids a smartphone in fifth grade is because</p>
+<p>1077<br>
+01:01:17,760 --&gt; 01:01:22,480<br>
+everybody else in their school is doing it and you don't want your kid to be left out.</p>
+<p>1078<br>
+01:01:22,480 --&gt; 01:01:26,120<br>
+Once we see that, we're each doing this because everyone else is and the kids are spending</p>
+<p>1079<br>
+01:01:26,120 --&gt; 01:01:29,440<br>
+so much time on these platforms because everyone else is.</p>
+<p>1080<br>
+01:01:29,440 --&gt; 01:01:33,720<br>
+The key is we have to act together and what I'm doing in the book is I'm saying, if you're</p>
+<p>1081<br>
+01:01:33,720 --&gt; 01:01:36,920<br>
+with me that there's a mental health crisis, if you're with me that it's caused by the</p>
+<p>1082<br>
+01:01:36,920 --&gt; 01:01:39,880<br>
+rewiring of childhood, we have to unwire.</p>
+<p>1083<br>
+01:01:39,880 --&gt; 01:01:41,520<br>
+We have to roll it back.</p>
+<p>1084<br>
+01:01:41,520 --&gt; 01:01:42,840<br>
+We do that with four norms.</p>
+<p>1085<br>
+01:01:42,840 --&gt; 01:01:46,280<br>
+Just four norms will do most of the work.</p>
+<p>1086<br>
+01:01:46,280 --&gt; 01:01:49,360<br>
+Just list the four norms and I'll say where legislators can help.</p>
+<p>1087<br>
+01:01:49,360 --&gt; 01:01:52,320<br>
+The first norm, no smartphone before high school.</p>
+<p>1088<br>
+01:01:52,320 --&gt; 01:01:54,760<br>
+Just give them a flip, flip phones did not harm the millennials.</p>
+<p>1089<br>
+01:01:54,760 --&gt; 01:01:56,120<br>
+They're just for communication.</p>
+<p>1090<br>
+01:01:56,120 --&gt; 01:02:00,440<br>
+The second norm is no social media till 16.</p>
+<p>1091<br>
+01:02:00,440 --&gt; 01:02:03,840<br>
+Parents should say no and it's very hard to say no if your kid is the only one who is</p>
+<p>1092<br>
+01:02:03,840 --&gt; 01:02:05,480<br>
+not on a platform.</p>
+<p>1093<br>
+01:02:05,480 --&gt; 01:02:09,400<br>
+But if a third or a half of the other kids aren't on it, then it's easy to say no.</p>
+<p>1094<br>
+01:02:09,400 --&gt; 01:02:14,120<br>
+The third norm is phone free schools, which is just a no-brainer.</p>
+<p>1095<br>
+01:02:14,120 --&gt; 01:02:17,600<br>
+Everything good happens from letting kids keep the phone in the pocket and this is really</p>
+<p>1096<br>
+01:02:17,600 --&gt; 01:02:18,600<br>
+happening.</p>
+<p>1097<br>
+01:02:18,600 --&gt; 01:02:21,320<br>
+Schools are really moving this way because the teachers all hate it, the administrators all</p>
+<p>1098<br>
+01:02:21,320 --&gt; 01:02:22,320<br>
+hate it.</p>
+<p>1099<br>
+01:02:22,320 --&gt; 01:02:24,080<br>
+The fourth norm is the only one that's actually hard.</p>
+<p>1100<br>
+01:02:24,080 --&gt; 01:02:30,800<br>
+The fourth one is more independence, free play and responsibility in the real world.</p>
+<p>1101<br>
+01:02:30,800 --&gt; 01:02:35,360<br>
+Because if we're delaying smartphones and social media until high school, we can't just</p>
+<p>1102<br>
+01:02:35,360 --&gt; 01:02:38,360<br>
+expect our middle school kids to just sit home doing nothing.</p>
+<p>1103<br>
+01:02:38,360 --&gt; 01:02:41,360<br>
+We have to let them out to play with each other again and have adventures and have a</p>
+<p>1104<br>
+01:02:41,360 --&gt; 01:02:44,040<br>
+childhood the way most of their parents did.</p>
+<p>1105<br>
+01:02:44,040 --&gt; 01:02:46,240<br>
+So those are the four norms.</p>
+<p>1106<br>
+01:02:46,240 --&gt; 01:02:50,200<br>
+Any talent, any community that does the four, I can almost guarantee that the rates of</p>
+<p>1107<br>
+01:02:50,200 --&gt; 01:02:52,560<br>
+mental illness will come down within two years.</p>
+<p>1108<br>
+01:02:52,560 --&gt; 01:02:54,280<br>
+It's going to be really, really good for the kids.</p>
+<p>1109<br>
+01:02:54,280 --&gt; 01:02:56,360<br>
+Now how can legislators help?</p>
+<p>1110<br>
+01:02:56,360 --&gt; 01:02:58,520<br>
+No social media till 16.</p>
+<p>1111<br>
+01:02:58,520 --&gt; 01:03:03,920<br>
+Congress passed a law in 1997 or 8 saying that you have to be 13 in order to sign up for</p>
+<p>1112<br>
+01:03:03,920 --&gt; 01:03:07,360<br>
+any service that takes your data and it's not enforced.</p>
+<p>1113<br>
+01:03:07,360 --&gt; 01:03:12,000<br>
+And the biggest thing Congress could do would be to raise the age to 16 and require the</p>
+<p>1114<br>
+01:03:12,000 --&gt; 01:03:14,200<br>
+companies to enforce it.</p>
+<p>1115<br>
+01:03:14,200 --&gt; 01:03:18,480<br>
+We don't let kids into bars and casinos and strip clubs and we don't say, well, it's the</p>
+<p>1116<br>
+01:03:18,480 --&gt; 01:03:20,000<br>
+parents job to enforce that.</p>
+<p>1117<br>
+01:03:20,000 --&gt; 01:03:22,920<br>
+You can't expect the bar or the strip club to check ID.</p>
+<p>1118<br>
+01:03:22,920 --&gt; 01:03:24,080<br>
+You can't expect that.</p>
+<p>1119<br>
+01:03:24,080 --&gt; 01:03:25,080<br>
+That's the parents do.</p>
+<p>1120<br>
+01:03:25,080 --&gt; 01:03:26,080<br>
+No, that's impossible.</p>
+<p>1121<br>
+01:03:26,080 --&gt; 01:03:27,080<br>
+It's not working.</p>
+<p>1122<br>
+01:03:27,080 --&gt; 01:03:30,720<br>
+Unless we keep our kids away from the internet, we can't keep our kids away from social media</p>
+<p>1123<br>
+01:03:30,720 --&gt; 01:03:35,520<br>
+unless the government helps us by making the companies do something to check age, to do</p>
+<p>1124<br>
+01:03:35,520 --&gt; 01:03:36,520<br>
+age verification.</p>
+<p>1125<br>
+01:03:36,520 --&gt; 01:03:37,680<br>
+There's lots of different ways.</p>
+<p>1126<br>
+01:03:37,680 --&gt; 01:03:41,920<br>
+So if they have to find solutions, they're going to find solutions very, very quickly.</p>
+<p>1127<br>
+01:03:41,920 --&gt; 01:03:47,240<br>
+There's two arguments that I hear that would be the push back to your claim.</p>
+<p>1128<br>
+01:03:47,240 --&gt; 01:03:50,000<br>
+One is the parents who say, but John, it's too late.</p>
+<p>1129<br>
+01:03:50,000 --&gt; 01:03:51,760<br>
+The train is left the station.</p>
+<p>1130<br>
+01:03:51,760 --&gt; 01:03:56,640<br>
+And the second are the technologists who are defensive of this technology.</p>
+<p>1131<br>
+01:03:56,640 --&gt; 01:04:01,440<br>
+You know, Mark Andreessen, the famed venture capitalist recently tweeted that banning phones</p>
+<p>1132<br>
+01:04:01,440 --&gt; 01:04:05,640<br>
+in the internet for kids would mean that everything they get outside the family is from</p>
+<p>1133<br>
+01:04:05,640 --&gt; 01:04:09,640<br>
+official authority figures, which would make everything worse.</p>
+<p>1134<br>
+01:04:09,640 --&gt; 01:04:12,080<br>
+Seriously, check out today's authority figures.</p>
+<p>1135<br>
+01:04:12,080 --&gt; 01:04:14,600<br>
+How do you respond to those two arguments?</p>
+<p>1136<br>
+01:04:14,600 --&gt; 01:04:17,720<br>
+So the first is that people often confuse, I think, accidentally.</p>
+<p>1137<br>
+01:04:17,720 --&gt; 01:04:20,200<br>
+They confuse social media with the internet.</p>
+<p>1138<br>
+01:04:20,200 --&gt; 01:04:23,240<br>
+And, you know, we generally all agree the internet is amazing.</p>
+<p>1139<br>
+01:04:23,240 --&gt; 01:04:24,760<br>
+We don't want to ban the internet.</p>
+<p>1140<br>
+01:04:24,760 --&gt; 01:04:27,480<br>
+We don't want to keep kids off the internet entirely.</p>
+<p>1141<br>
+01:04:27,480 --&gt; 01:04:30,200<br>
+But the problem for the kids isn't that they have access to the internet.</p>
+<p>1142<br>
+01:04:30,200 --&gt; 01:04:31,520<br>
+They need it from many things.</p>
+<p>1143<br>
+01:04:31,520 --&gt; 01:04:36,320<br>
+The problem happens when kids have 24/7 to the internet privately in their bedroom.</p>
+<p>1144<br>
+01:04:36,320 --&gt; 01:04:38,600<br>
+That's when they get hooked by sex dorshinist.</p>
+<p>1145<br>
+01:04:38,600 --&gt; 01:04:41,960<br>
+That's when they get into the other really bad stuff I'm told.</p>
+<p>1146<br>
+01:04:41,960 --&gt; 01:04:45,760<br>
+Especially happens at night, late at night when a girl is in her room alone with her phone</p>
+<p>1147<br>
+01:04:45,760 --&gt; 01:04:48,000<br>
+for six hours, instead of sleeping.</p>
+<p>1148<br>
+01:04:48,000 --&gt; 01:04:52,440<br>
+So sure, you can make a strong man argument saying, you know, some people want to ban the</p>
+<p>1149<br>
+01:04:52,440 --&gt; 01:04:54,120<br>
+internet for everyone under 18.</p>
+<p>1150<br>
+01:04:54,120 --&gt; 01:04:55,120<br>
+Like, no, that's absurd.</p>
+<p>1151<br>
+01:04:55,120 --&gt; 01:04:56,840<br>
+Nobody wants to do that.</p>
+<p>1152<br>
+01:04:56,840 --&gt; 01:05:01,440<br>
+What I want is an internet that has some guardrails so that kids can just walk into the most</p>
+<p>1153<br>
+01:05:01,440 --&gt; 01:05:05,400<br>
+disgusting pornographic sites at any age.</p>
+<p>1154<br>
+01:05:05,400 --&gt; 01:05:09,200<br>
+And limitations so that the existing law of 13 is enforced.</p>
+<p>1155<br>
+01:05:09,200 --&gt; 01:05:11,680<br>
+What I want is really pretty modest.</p>
+<p>1156<br>
+01:05:11,680 --&gt; 01:05:15,400<br>
+And you know, the argument that the train is left at the station is just resignation.</p>
+<p>1157<br>
+01:05:15,400 --&gt; 01:05:21,040<br>
+So imagine I'm a parent in a school, maybe it's a public school, or even a private school.</p>
+<p>1158<br>
+01:05:21,040 --&gt; 01:05:23,040<br>
+And the school claims that they're banning phones.</p>
+<p>1159<br>
+01:05:23,040 --&gt; 01:05:27,120<br>
+But as you said earlier in this conversation, they're not actually banning phones.</p>
+<p>1160<br>
+01:05:27,120 --&gt; 01:05:31,040<br>
+I don't want to be a helicopter parent, but I really, really want to stand by these</p>
+<p>1161<br>
+01:05:31,040 --&gt; 01:05:41,040<br>
+foreign dorms that you've laid out.</p>
+<p>1162<br>
+01:05:41,040 --&gt; 01:05:43,040<br>
+What should I do?</p>
+<p>1163<br>
+01:05:43,040 --&gt; 01:05:44,040<br>
+Practically speaking.</p>
+<p>1164<br>
+01:05:44,040 --&gt; 01:05:48,040<br>
+You go to <a href="http://anxiousgeneration.com" target="_blank" class="external-link">anxiousgeneration.com</a>, which is the website for the book.</p>
+<p>1165<br>
+01:05:48,040 --&gt; 01:05:49,040<br>
+You go to the tab about the book.</p>
+<p>1166<br>
+01:05:49,040 --&gt; 01:05:55,040<br>
+We have all kinds of resources, including the text of a message you can send to the principal</p>
+<p>1167<br>
+01:05:55,040 --&gt; 01:05:56,040<br>
+administrator of the school.</p>
+<p>1168<br>
+01:05:56,040 --&gt; 01:05:58,320<br>
+The key to addressing collective action problems is to act collectively.</p>
+<p>1169<br>
+01:05:58,320 --&gt; 01:05:59,320<br>
+And I can tell you almost all the principles that head school, they all hate the phones.</p>
+<p>1170<br>
+01:05:59,320 --&gt; 01:06:00,320<br>
+It makes their lives miserable.</p>
+<p>1171<br>
+01:06:00,320 --&gt; 01:06:02,520<br>
+They can't get on these platforms with the kids.</p>
+<p>1172<br>
+01:06:02,520 --&gt; 01:06:04,920<br>
+So they all hate it.</p>
+<p>1173<br>
+01:06:04,920 --&gt; 01:06:05,920<br>
+Why don't they ban it?</p>
+<p>1174<br>
+01:06:05,920 --&gt; 01:06:07,560<br>
+I always ask, why don't you go phone free?</p>
+<p>1175<br>
+01:06:07,560 --&gt; 01:06:10,720<br>
+And whenever I speak to a principal about this, they give the same answer.</p>
+<p>1176<br>
+01:06:10,720 --&gt; 01:06:14,320<br>
+Because some of the parents will freak out, they'll get so upset, and so we just can't do</p>
+<p>1177<br>
+01:06:14,320 --&gt; 01:06:15,320<br>
+it.</p>
+<p>1178<br>
+01:06:15,320 --&gt; 01:06:18,840<br>
+Well, yes, there are some parents who will freak out because they think it's their God-given</p>
+<p>1179<br>
+01:06:18,840 --&gt; 01:06:22,040<br>
+right to communicate with their child while he's in math class.</p>
+<p>1180<br>
+01:06:22,040 --&gt; 01:06:23,720<br>
+And it's not their God-given right.</p>
+<p>1181<br>
+01:06:23,720 --&gt; 01:06:27,800<br>
+The school needs to educate the kids, and it can't do it if the kids are attending to</p>
+<p>1182<br>
+01:06:27,800 --&gt; 01:06:29,720<br>
+their phones instead of the teachers.</p>
+<p>1183<br>
+01:06:29,720 --&gt; 01:06:34,320<br>
+So, but what the leaders need, and this is just basic politics, what they need is to hear</p>
+<p>1184<br>
+01:06:34,320 --&gt; 01:06:37,480<br>
+from the majority that want something done.</p>
+<p>1185<br>
+01:06:37,480 --&gt; 01:06:40,960<br>
+And most parents, I believe, do, or they certainly will once they understand what this is</p>
+<p>1186<br>
+01:06:40,960 --&gt; 01:06:42,280<br>
+doing to their kids.</p>
+<p>1187<br>
+01:06:42,280 --&gt; 01:06:47,520<br>
+So a simple step you can take is just start a text thread with at least one of the parents</p>
+<p>1188<br>
+01:06:47,520 --&gt; 01:06:48,840<br>
+of each of your kids' best friends.</p>
+<p>1189<br>
+01:06:48,840 --&gt; 01:06:52,280<br>
+If your kid has a group of three or four kids that hang out together, start a text thread</p>
+<p>1190<br>
+01:06:52,280 --&gt; 01:06:57,480<br>
+saying, hey, I heard this podcast with Barry Weiss and John Hyde, and they said that</p>
+<p>1191<br>
+01:06:57,480 --&gt; 01:07:02,120<br>
+if we all should delay, not till eighth grade, eighth grade is too early, we should all delay</p>
+<p>1192<br>
+01:07:02,120 --&gt; 01:07:03,640<br>
+until high school.</p>
+<p>1193<br>
+01:07:03,640 --&gt; 01:07:04,640<br>
+I'd like to do that.</p>
+<p>1194<br>
+01:07:04,640 --&gt; 01:07:05,640<br>
+What do you guys think?</p>
+<p>1195<br>
+01:07:05,640 --&gt; 01:07:10,000<br>
+And so just start a text thread and probably the other parents are also concerned.</p>
+<p>1196<br>
+01:07:10,000 --&gt; 01:07:14,240<br>
+And if you start that mostly, whatever I go, people are incredibly supportive.</p>
+<p>1197<br>
+01:07:14,240 --&gt; 01:07:17,880<br>
+I'm facing no opposition, no one's arguing against me.</p>
+<p>1198<br>
+01:07:17,880 --&gt; 01:07:19,560<br>
+It's the most extraordinary thing.</p>
+<p>1199<br>
+01:07:19,560 --&gt; 01:07:23,040<br>
+So we really just need to coordinate and we can solve this problem.</p>
+<p>1200<br>
+01:07:23,040 --&gt; 01:07:29,400<br>
+But when push comes to shove, I suspect that certain parents in theory will pay lip service</p>
+<p>1201<br>
+01:07:29,400 --&gt; 01:07:33,560<br>
+to everything you've been talking about, but will hesitate to actually do it because they're</p>
+<p>1202<br>
+01:07:33,560 --&gt; 01:07:36,480<br>
+scared of pissing their kid off.</p>
+<p>1203<br>
+01:07:36,480 --&gt; 01:07:41,320<br>
+They're scared of being the lame, strict, disciplinarian, authoritative parent.</p>
+<p>1204<br>
+01:07:41,320 --&gt; 01:07:43,360<br>
+Yes, that is true.</p>
+<p>1205<br>
+01:07:43,360 --&gt; 01:07:46,760<br>
+And that is true if you are the only parent doing it.</p>
+<p>1206<br>
+01:07:46,760 --&gt; 01:07:51,080<br>
+There was a review of the anxious generation in the Times in the UK, a very positive review</p>
+<p>1207<br>
+01:07:51,080 --&gt; 01:07:52,760<br>
+by Helen Rumbolo.</p>
+<p>1208<br>
+01:07:52,760 --&gt; 01:07:54,120<br>
+And so here's how she ended it.</p>
+<p>1209<br>
+01:07:54,120 --&gt; 01:07:59,140<br>
+She said, when I caught one of my teenagers between squirrels and asked her, would you have</p>
+<p>1210<br>
+01:07:59,140 --&gt; 01:08:02,160<br>
+liked a social media ban until you were 16?</p>
+<p>1211<br>
+01:08:02,160 --&gt; 01:08:04,880<br>
+She asked, would the ban affect everyone?</p>
+<p>1212<br>
+01:08:04,880 --&gt; 01:08:06,520<br>
+And she paused to think.</p>
+<p>1213<br>
+01:08:06,520 --&gt; 01:08:10,280<br>
+Then she said, yes, I'd have liked that, she said.</p>
+<p>1214<br>
+01:08:10,280 --&gt; 01:08:15,440<br>
+And then the journalist says it was an IRL moment that made me sadder than almost anything</p>
+<p>1215<br>
+01:08:15,440 --&gt; 01:08:17,720<br>
+I'd read.</p>
+<p>1216<br>
+01:08:17,720 --&gt; 01:08:20,920<br>
+Because the young people themselves don't want to be trapped, but they're trapped.</p>
+<p>1217<br>
+01:08:20,920 --&gt; 01:08:22,480<br>
+They feel trapped.</p>
+<p>1218<br>
+01:08:22,480 --&gt; 01:08:28,560<br>
+And so a ban, or rather, I should just say, raising the age to 16 and enforcing it would</p>
+<p>1219<br>
+01:08:28,560 --&gt; 01:08:29,560<br>
+free them.</p>
+<p>1220<br>
+01:08:29,560 --&gt; 01:08:32,720<br>
+And that's why we're calling the movement free the anxious generation.</p>
+<p>1221<br>
+01:08:32,720 --&gt; 01:08:37,800<br>
+You write that kids in America today and in the Westward generally are coming of age</p>
+<p>1222<br>
+01:08:37,800 --&gt; 01:08:45,800<br>
+in a confusing, place-less, a-historical maelstrom of 30-second stories curated by algorithms designed</p>
+<p>1223<br>
+01:08:45,800 --&gt; 01:08:51,520<br>
+to mesmerize them without solid knowledge of the past and the filtering of good ideas</p>
+<p>1224<br>
+01:08:51,520 --&gt; 01:08:52,520<br>
+from bad.</p>
+<p>1225<br>
+01:08:52,520 --&gt; 01:08:58,000<br>
+A process that plays out over many generations, young people will be more prone to believe</p>
+<p>1226<br>
+01:08:58,000 --&gt; 01:09:03,640<br>
+whatever terrible ideas become popular around them, which might explain why videos showing</p>
+<p>1227<br>
+01:09:03,640 --&gt; 01:09:08,920<br>
+young people reacting positively to a psalm of bin Laden's thoughts about America were</p>
+<p>1228<br>
+01:09:08,920 --&gt; 01:09:12,240<br>
+trending on TikTok last fall.</p>
+<p>1229<br>
+01:09:12,240 --&gt; 01:09:19,120<br>
+Talk to us about is the last thought, what's at stake here if we don't change course?</p>
+<p>1230<br>
+01:09:19,120 --&gt; 01:09:27,120<br>
+What's at stake is the loss of a generation or two or three to many things, the loss of</p>
+<p>1231<br>
+01:09:27,120 --&gt; 01:09:29,920<br>
+their connection to everything that came before.</p>
+<p>1232<br>
+01:09:29,920 --&gt; 01:09:32,800<br>
+So my first book was The Happiness Hypothesis.</p>
+<p>1233<br>
+01:09:32,800 --&gt; 01:09:37,600<br>
+It was about ancient wisdom and all that ancient civilizations and societies learned about how</p>
+<p>1234<br>
+01:09:37,600 --&gt; 01:09:40,400<br>
+to live a good life and have a good society.</p>
+<p>1235<br>
+01:09:40,400 --&gt; 01:09:47,240<br>
+And we learned all kinds of lessons in the 20th century about communism, fascism, about economics.</p>
+<p>1236<br>
+01:09:47,240 --&gt; 01:09:51,360<br>
+We've learned an awful lot as a species and as a culture.</p>
+<p>1237<br>
+01:09:51,360 --&gt; 01:09:56,080<br>
+And if kids grow up on social media, they don't have any room in their input streams for any</p>
+<p>1238<br>
+01:09:56,080 --&gt; 01:09:57,080<br>
+of that.</p>
+<p>1239<br>
+01:09:57,080 --&gt; 01:09:59,640<br>
+They don't know it really anything that happened before 2010.</p>
+<p>1240<br>
+01:09:59,640 --&gt; 01:10:04,360<br>
+And so they're growing up without roots, without any historical and any inheritance from</p>
+<p>1241<br>
+01:10:04,360 --&gt; 01:10:05,360<br>
+the past.</p>
+<p>1242<br>
+01:10:05,360 --&gt; 01:10:10,120<br>
+So we're talking about the loss of Western world civilization and culture.</p>
+<p>1243<br>
+01:10:10,120 --&gt; 01:10:11,120<br>
+That's bad enough.</p>
+<p>1244<br>
+01:10:11,120 --&gt; 01:10:16,800<br>
+We're also talking about a generation that has no time to actually do anything that goes</p>
+<p>1245<br>
+01:10:16,800 --&gt; 01:10:18,120<br>
+outside the bubble.</p>
+<p>1246<br>
+01:10:18,120 --&gt; 01:10:22,680<br>
+So if you have to spend, the Gallaudet is nine hours a day on your phone, your other screens,</p>
+<p>1247<br>
+01:10:22,680 --&gt; 01:10:24,360<br>
+there's not time for anything else.</p>
+<p>1248<br>
+01:10:24,360 --&gt; 01:10:26,960<br>
+And if you're walking down the street, you're listening to something.</p>
+<p>1249<br>
+01:10:26,960 --&gt; 01:10:27,960<br>
+There's no time to think.</p>
+<p>1250<br>
+01:10:27,960 --&gt; 01:10:28,960<br>
+There's no time to daydream.</p>
+<p>1251<br>
+01:10:28,960 --&gt; 01:10:30,560<br>
+There's no time to be bored.</p>
+<p>1252<br>
+01:10:30,560 --&gt; 01:10:34,640<br>
+And so if you have no attention to give, no time to do anything, you're not going to do</p>
+<p>1253<br>
+01:10:34,640 --&gt; 01:10:36,160<br>
+anything.</p>
+<p>1254<br>
+01:10:36,160 --&gt; 01:10:40,520<br>
+My prediction is that is that Gen Z, they're certainly smart.</p>
+<p>1255<br>
+01:10:40,520 --&gt; 01:10:42,920<br>
+They certainly want to be successful.</p>
+<p>1256<br>
+01:10:42,920 --&gt; 01:10:46,160<br>
+But they're very risk averse and they have very little attention to give.</p>
+<p>1257<br>
+01:10:46,160 --&gt; 01:10:50,280<br>
+So I think we're going to see fewer companies started, fewer risks taken.</p>
+<p>1258<br>
+01:10:50,280 --&gt; 01:10:51,800<br>
+They'll go for safer jobs.</p>
+<p>1259<br>
+01:10:51,800 --&gt; 01:10:53,440<br>
+There'll be less innovation.</p>
+<p>1260<br>
+01:10:53,440 --&gt; 01:10:55,040<br>
+Now maybe AI will make up for that.</p>
+<p>1261<br>
+01:10:55,040 --&gt; 01:10:59,280<br>
+Maybe AI will be so creative that we can afford to have all human beings from now on just</p>
+<p>1262<br>
+01:10:59,280 --&gt; 01:11:03,200<br>
+sit back and consume and not think anything, not do anything productive.</p>
+<p>1263<br>
+01:11:03,200 --&gt; 01:11:05,480<br>
+I sure as hell don't want to live in that world.</p>
+<p>1264<br>
+01:11:05,480 --&gt; 01:11:08,840<br>
+But that I think is, I hate to be so apocalyptic at the end.</p>
+<p>1265<br>
+01:11:08,840 --&gt; 01:11:10,720<br>
+I'd rather end hopefully.</p>
+<p>1266<br>
+01:11:10,720 --&gt; 01:11:16,080<br>
+But if we don't act, if we just let it go as it is, I don't see how this turns around</p>
+<p>1267<br>
+01:11:16,080 --&gt; 01:11:17,200<br>
+by itself.</p>
+<p>1268<br>
+01:11:17,200 --&gt; 01:11:22,440<br>
+We would have a generation that is not really able to take on the massive challenges that</p>
+<p>1269<br>
+01:11:22,440 --&gt; 01:11:23,520<br>
+we left them.</p>
+<p>1270<br>
+01:11:23,520 --&gt; 01:11:27,120<br>
+They bear no responsibility for the mess the world is in.</p>
+<p>1271<br>
+01:11:27,120 --&gt; 01:11:30,720<br>
+But we are making them poorly equipped to handle it.</p>
+<p>1272<br>
+01:11:30,720 --&gt; 01:11:33,960<br>
+So that would be the negative apocalyptic side.</p>
+<p>1273<br>
+01:11:33,960 --&gt; 01:11:39,080<br>
+The hopeful ending that I hope we can end on is that in our divided society, where it seems</p>
+<p>1274<br>
+01:11:39,080 --&gt; 01:11:43,800<br>
+like we can't really fix anything, this is the one issue that we can fix.</p>
+<p>1275<br>
+01:11:43,800 --&gt; 01:11:48,040<br>
+This is an issue where how much money would cost to fix this to do my fore-norms?</p>
+<p>1276<br>
+01:11:48,040 --&gt; 01:11:49,040<br>
+Zero.</p>
+<p>1277<br>
+01:11:49,040 --&gt; 01:11:50,040<br>
+Zero.</p>
+<p>1278<br>
+01:11:50,040 --&gt; 01:11:52,040<br>
+Yeah, you'd have to buy some phone lockers, but that's about it.</p>
+<p>1279<br>
+01:11:52,040 --&gt; 01:11:53,360<br>
+It's cost nothing to fix.</p>
+<p>1280<br>
+01:11:53,360 --&gt; 01:11:55,040<br>
+You know what the political division is on this?</p>
+<p>1281<br>
+01:11:55,040 --&gt; 01:11:56,040<br>
+Tell me.</p>
+<p>1282<br>
+01:11:56,040 --&gt; 01:11:57,040<br>
+Zero.</p>
+<p>1283<br>
+01:11:57,040 --&gt; 01:11:58,240<br>
+Everyone has kids.</p>
+<p>1284<br>
+01:11:58,240 --&gt; 01:12:00,280<br>
+So there's very little political divide.</p>
+<p>1285<br>
+01:12:00,280 --&gt; 01:12:03,320<br>
+It's one of the most bipartisan issues in Congress.</p>
+<p>1286<br>
+01:12:03,320 --&gt; 01:12:04,760<br>
+So it costs nothing.</p>
+<p>1287<br>
+01:12:04,760 --&gt; 01:12:06,400<br>
+There's no political divide.</p>
+<p>1288<br>
+01:12:06,400 --&gt; 01:12:09,400<br>
+There's really no organized opposition other than of course that meta is some sure</p>
+<p>1289<br>
+01:12:09,400 --&gt; 01:12:15,360<br>
+of our all kinds of lobbyists, but other than that, there's really not political opposition.</p>
+<p>1290<br>
+01:12:15,360 --&gt; 01:12:19,960<br>
+And the kids themselves, not that all would vote for it right away, but they're really dissatisfied</p>
+<p>1291<br>
+01:12:19,960 --&gt; 01:12:22,440<br>
+with what they have.</p>
+<p>1292<br>
+01:12:22,440 --&gt; 01:12:26,640<br>
+And whenever I speak to Gen Z audiences and I lay it out, they want it.</p>
+<p>1293<br>
+01:12:26,640 --&gt; 01:12:29,240<br>
+They say yes, we would like to break out of this.</p>
+<p>1294<br>
+01:12:29,240 --&gt; 01:12:31,800<br>
+So I actually think that we're going to be successful.</p>
+<p>1295<br>
+01:12:31,800 --&gt; 01:12:39,320<br>
+I think that by the end of 2025, norms about 10-year-olds spending their day scrolling</p>
+<p>1296<br>
+01:12:39,320 --&gt; 01:12:44,760<br>
+on a screen like that's going to be seen as an incredibly destructive, sad thing to do.</p>
+<p>1297<br>
+01:12:44,760 --&gt; 01:12:45,760<br>
+And some will still do it.</p>
+<p>1298<br>
+01:12:45,760 --&gt; 01:12:49,160<br>
+I'm not saying we'll get to zero, but I think right now the norm is you kind of have to do</p>
+<p>1299<br>
+01:12:49,160 --&gt; 01:12:50,800<br>
+that if you want to keep up.</p>
+<p>1300<br>
+01:12:50,800 --&gt; 01:12:51,800<br>
+We're going to free them.</p>
+<p>1301<br>
+01:12:51,800 --&gt; 01:12:56,840<br>
+We're going to free the anxious generation from the need to constantly, constantly be online</p>
+<p>1302<br>
+01:12:56,840 --&gt; 01:12:59,280<br>
+checking up on everyone else.</p>
+<p>1303<br>
+01:12:59,280 --&gt; 01:13:02,200<br>
+Well, John Hyne, as always, it's a total pleasure.</p>
+<p>1304<br>
+01:13:02,200 --&gt; 01:13:04,840<br>
+His new book is the anxious generation.</p>
+<p>1305<br>
+01:13:04,840 --&gt; 01:13:10,160<br>
+How the great rewiring of childhood is causing an epidemic of mental illness.</p>
+<p>1306<br>
+01:13:10,160 --&gt; 01:13:12,000<br>
+Thank you so much.</p>
+<p>1307<br>
+01:13:12,000 --&gt; 01:13:13,000<br>
+Thank you, Barry.</p>
+<p>1308<br>
+01:13:13,000 --&gt; 01:13:17,560<br>
+Thank you for all you're doing at Free Press.</p>
+<p>1309<br>
+01:13:17,560 --&gt; 01:13:18,680<br>
+Thanks for listening.</p>
+<p>1310<br>
+01:13:18,680 --&gt; 01:13:22,480<br>
+If you liked this episode, please share it with your friends and family, especially the</p>
+<p>1311<br>
+01:13:22,480 --&gt; 01:13:26,240<br>
+parents you know, and use it to have a conversation of your own.</p>
+<p>1312<br>
+01:13:26,240 --&gt; 01:13:30,960<br>
+If you want to learn more again, John's new book is called The Anxious Generation.</p>
+<p>1313<br>
+01:13:30,960 --&gt; 01:13:32,640<br>
+It's out March 26th.</p>
+<p>1314<br>
+01:13:32,640 --&gt; 01:13:34,800<br>
+You know, add that this isn't just a book for John.</p>
+<p>1315<br>
+01:13:34,800 --&gt; 01:13:35,800<br>
+It's also a movement.</p>
+<p>1316<br>
+01:13:35,800 --&gt; 01:13:40,080<br>
+It's an attempt to really change the course of what's going on with our kids.</p>
+<p>1317<br>
+01:13:40,080 --&gt; 01:13:45,800<br>
+You can find out more about that movement at <a href="http://freetheanxiousgeneration.com" target="_blank" class="external-link">freetheanxiousgeneration.com</a>.</p>
+<p>1318<br>
+01:13:45,800 --&gt; 01:13:49,280<br>
+Last but not least, if you want to support, honestly, there's just one way to do it.</p>
+<p>1319<br>
+01:13:49,280 --&gt; 01:13:54,080<br>
+If by becoming a free presser, it's becoming a subscriber to the free press, by going to</p>
+<p>1320<br>
+01:13:54,080 --&gt; 01:14:00,520<br>
+<a href="http://vfp.com" target="_blank" class="external-link">vfp.com</a>, <a href="http://THefp.com" target="_blank" class="external-link">THefp.com</a>, and becoming a subscriber today.</p>
+<p>1321<br>
+01:14:00,520 --&gt; 01:14:02,560<br>
+We really appreciate the support.</p>
+<p>1322<br>
+01:14:02,560 --&gt; 01:14:03,200<br>
+We'll see you next time.</p>
+<p>1323<br>
+01:14:03,200 --&gt; 01:14:10,200<br>
+♪ ♪</p>
+<p>1324<br>
+01:14:10,200 --&gt; 01:14:20,200<br>
+[MUSIC]</p>
+</main>
+<aside>
+<div class="sidebar">
+<div class="sidebar-container">
+<script>async function fetchGraphData(){var e=await fetch("/graph.json").then(e=>e.json());return{graphData:e,fullGraphData:filterFullGraphData(e)}}function getNextLevelNeighbours(n,r){const l=Object.values(n).map(e=>e.neighbors).flat();return Object.keys(r).reduce((e,t)=>(-1!=l.indexOf(t)?r[t].hide||(n[t]=r[t]):e[t]=r[t],e),{})}function filterLocalGraphData(e,t){if(null==e)return null;let n=JSON.parse(JSON.stringify(e.nodes));var r,e=JSON.parse(JSON.stringify(e.links)),l=decodeURI(window.location.pathname),l=n[l]||Object.values(n).find(e=>e.home),a=(delete n[l.url],l.home||(r=Object.values(n).find(e=>e.home),delete n[r.url]),l.current=!0,{});a[l.url]=l;for(let e=0;e<t;e++)n=getNextLevelNeighbours(a,n);nodes=Object.values(a);let i=(nodes=l.home?nodes:nodes.filter(e=>!e.home)).map(e=>e.id);return{nodes:nodes,links:e.filter(function(e){return-1<i.indexOf(e.target)&&-1<i.indexOf(e.source)})}}function getCssVar(e){return getComputedStyle(document.body).getPropertyValue(e)}function htmlDecode(e){return(new DOMParser).parseFromString(e,"text/html").documentElement.textContent}function renderGraph(t,n,r,a){if(null!=t){n=document.getElementById(n);width=n.offsetWidth,height=n.offsetHeight;const i=new Set;let l=null;const o=getCssVar("--graph-main"),u=getCssVar("--graph-muted");let e=ForceGraph()(n).graphData(t).nodeId("id").nodeLabel("title").linkSource("source").linkTarget("target").d3AlphaDecay(.1).width(width).height(height).linkDirectionalArrowLength(2).linkDirectionalArrowRelPos(.5).autoPauseRedraw(!1).linkColor(e=>null==l||(e.source.id==l.id||e.target.id==l.id)?o:u).nodeCanvasObject((e,t)=>{var n=e.neighbors&&e.neighbors.length||2,n=Math.min(7,Math.max(n/2,2)),r=(t.beginPath(),t.arc(e.x,e.y,n,0,2*Math.PI,!1),null==l||e==l||i.has(e.url)?t.fillStyle=o:t.fillStyle=u,t.fill(),e.current&&(t.beginPath(),t.arc(e.x,e.y,n+1,0,2*Math.PI,!1),t.lineWidth=.5,t.strokeStyle=o,t.stroke()),htmlDecode(e.title));t.font="3.5px Sans-Serif",t.textAlign="center",t.textBaseline="top",t.fillText(r,e.x,e.y+n+2)}).onNodeClick(e=>{window.location=e.url}).onNodeHover(e=>{i.clear(),e&&(i.add(e),e.neighbors.forEach(e=>i.add(e))),l=e||null});return(a||null!=r&&4<t.nodes.length)&&setTimeout(()=>{e.zoomToFit(5,75)},r||200),e}}function renderLocalGraph(e,t,n){return window.graph&&window.graph._destructor(),renderGraph(filterLocalGraphData(e,t),"link-graph",null,n)}function filterFullGraphData(e){if(null==e)return null;e=JSON.parse(JSON.stringify(e));const t=Object.values(e.nodes).filter(e=>e.hide).map(e=>e.id);return{links:JSON.parse(JSON.stringify(e.links)).filter(e=>-1==t.indexOf(e.source)&&-1==t.indexOf(e.target)),nodes:[...Object.values(e.nodes).filter(e=>!e.hide)]}}function openFullGraph(e){return lucide.createIcons({attrs:{class:["svg-icon"]}}),renderGraph(e,"full-graph-container",200,!1)}function closefullGraph(e){return e&&e._destructor(),null}</script>
+<div x-init="{graphData, fullGraphData} = await fetchGraphData();" x-data="{ graphData: null, depth: 1, graph: null, fullGraph: null, showFullGraph: false, fullScreen: false, fullGraphData: null}" id="graph-component" x-bind:class="fullScreen ? 'graph graph-fs' : 'graph'" v-scope>
+<div class="graph-title-container">
+<div class="graph-title">Connected Pages</div>
+<div id="graph-controls">
+<div class="depth-control">
+<label for="graph-depth">Depth</label>
+<div class="slider">
+<input x-model.number="depth" name="graph-depth" list="depthmarkers" type="range" step="1" min="1" max="3" id="graph-depth">
+<datalist id="depthmarkers">
+<option value="1" label="1"></option>
+<option value="2" label="2"></option>
+<option value="3" label="3"></option>
+</datalist>
+</div>
+<span id="depth-display" x-text="depth"></span>
+</div>
+<div class="ctrl-right">
+<span id="global-graph-btn" x-on:click="showFullGraph = true; setTimeout(() => {fullGraph = openFullGraph(fullGraphData)}, 100)"><i icon-name="globe" aria-hidden="true"></i></span>
+<span id="graph-fs-btn" x-on:click="fullScreen = !fullScreen"><i icon-name="expand" aria-hidden="true"></i></span>
+</div>
+</div>
+</div>
+<div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
+<div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
+<span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+</div>
+</div>
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#transcript">Transcript</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+<div class="backlinks">
+<div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
+<div class="backlink-list"><div class="backlink-card"><a href="/track/podcasts/" data-note-icon="" class="backlink">PODCASTS</a>
+</div></div>
+</div>
+</div>
+</div>
+</aside>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",e=>{var t=e.oldURL.split("#"),t=(t[1]&&document.getElementById(t[1]).classList.remove("referred"),e.newURL.split("#"));t[1]&&document.getElementById(t[1]).classList.add("referred")},!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function(e){e.ondblclick=function(e){e=url+"#"+e.target.id;navigator.clipboard.writeText(e)}})</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach(function(e){date=e.getAttribute("data-date")||e.innerText,null!=(parsed_date=null!=(parsed_date=luxon.DateTime.fromISO(date)).invalid?luxon.DateTime.fromSQL(date):parsed_date).invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)})</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
