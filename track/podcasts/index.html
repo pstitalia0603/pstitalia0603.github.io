@@ -509,7 +509,7 @@ CTRL + K
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-14T01:43:42.328Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-14T01:43:42.328Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-14T01:43:42.328Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-14T01:43:44.049Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-14T01:43:44.049Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-14T01:43:44.049Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
                     <a class="search-link" href="${e.url}">${e.title}</a>
                     <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
@@ -536,6 +536,7 @@ CTRL + K
 </div>
 <div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-02 14:27"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-02 14:28"></span></div></div></div>
 </header>
+<p>GO TO TODAY: <a class="internal-link is-unresolved" href="/404" target="">2024-05-13</a></p>
 <p><a class="internal-link is-unresolved" href="/404" target="">INTERESTS</a></p>
 <div class="block-language-dataview table-wrapper"><table class="dataview table-view-table">
 <thead class="table-view-thead">
@@ -543,92 +544,110 @@ CTRL + K
 <th class="table-view-th">File</th>
 <th class="table-view-th">DATE</th>
 <th class="table-view-th">rating</th>
+<th class="table-view-th">transcript</th>
 </tr>
 </thead>
 <tbody class="table-view-tbody">
 <tr>
+<td><a class="internal-link is-unresolved" href="/404" target="">Smartphones Rewired Childhood. Here's How to Fix It.</a></td>
+<td>2024-05-13</td>
+<td>5</td>
+<td>Y</td>
+</tr>
+<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/">Nicole Avant on Tragedy, Forgiveness, and Thinking Free</a></td>
 <td>2024-04-18</td>
 <td>5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/archive/2024/how-the-working-class-became-america-s-second-class/">How the Working Class Became America’s Second Class</a></td>
 <td>2024-04-02</td>
 <td>5</td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/archive/2024/rewired-childhood/">Rewired Childhood</a></td>
-<td>2024-03-26</td>
-<td>5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Why the Kids Aren't Alright</a></td>
 <td>2024-02-27</td>
 <td>5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Covid Failures</a></td>
 <td>2024-01-18</td>
 <td>5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Why Half of American Babies are Born to Unmarried Couples</a></td>
 <td>2023-12-26</td>
 <td>5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/archive/2023/the-witch-trials-of-j-k-rowling/">The Witch Trials of J.K. Rowling</a></td>
 <td>2023-10-12</td>
 <td>5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/">The Deep Conflict Between Our Work and Parenting Ideals</a></td>
 <td>2024-03-25</td>
 <td>4.5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/archive/2024/economist-roland-fryer-on-adversity-race-and-refusing-to-conform/">Economist Roland Fryer on Adversity, Race, and Refusing to Conform</a></td>
 <td>2024-02-21</td>
 <td>4.5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/archive/2024/about-a-boy-the-story-of-vladimir-putin/">About a Boy-The Story of Vladimir Putin</a></td>
 <td>2024-02-12</td>
 <td>4.5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Raising Wages Kills Jobs and Other Lies From the 1%</a></td>
 <td>2024-01-22</td>
 <td>4.5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">What to Expect in 2024- Predictions</a></td>
 <td>2024-01-12</td>
 <td>4.5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Andrew Yang If Trump Wins, It’s the Democrats’ Fault</a></td>
 <td>2024-02-19</td>
 <td>4</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Can Dean Phillips Pull Off the Impossible Defeat Joe Biden</a></td>
 <td>2024-01-12</td>
 <td>4</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Democrats Have a Better Option Than Biden</a></td>
 <td>2024-02-21</td>
 <td>3.75</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Do Not Buy A House</a></td>
 <td>2024-02-18</td>
 <td>3.5</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">Should the U.S. Shut Its Borders</a></td>
 <td>2024-04-30</td>
+<td>-</td>
 <td>-</td>
 </tr>
 </tbody>
