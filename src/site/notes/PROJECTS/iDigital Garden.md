@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/i-digital-garden/","tags":["inbox","Portfolio","code","Projects"],"noteIcon":"","created":"2024-02-14T17:31:00","updated":"2024-02-14 17:31"}
+{"dg-publish":true,"permalink":"/projects/i-digital-garden/","tags":["inbox","Portfolio","code","Projects"],"noteIcon":"","created":"2024-03-02 9:30:01 am","updated":"2024-05-15 8:20:44 pm"}
 ---
 
 ## Instructions: How to get Digital Garden to work for Github Pages!
