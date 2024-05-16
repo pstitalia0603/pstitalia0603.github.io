@@ -2,8 +2,6 @@
 {"dg-publish":true,"permalink":"/archive/2024/smartphones-rewired-childhood-here-s-how-to-fix-it/","tags":["podcast"],"noteIcon":"","created":"2024-05-13T08:36:00","updated":"2024-05-13 8:36:56 pm"}
 ---
 
-- [ ] The Free Press 3/25/2024 🛫 2024-05-14 
-
 Honestly with Bari Weiss: Jonathan Haidt: Smartphones Rewired Childhood. Here's How to Fix It.
 
 Episode webpage: https://www.bariweiss.com/
@@ -1553,19 +1551,11 @@ And you see this, I feel this in myself as an adult whose brain came online befo
 
 573
 00:32:00,500 --> 00:32:06,580
-Tell us about how social media, the phones, but social media specifically has affected
-
-574
-00:32:06,580 --> 00:32:12,420
-kids' ability to focus deeply, both at school and in other areas of life.
+Tell us about how social media, the phones, but social media specifically has affected kids' ability to focus deeply, both at school and in other areas of life.
 
 575
 00:32:12,420 --> 00:32:16,580
-The brain grows very quickly in the first few years of life and then it actually slows down
-
-576
-00:32:16,580 --> 00:32:17,740
-a lot.
+The brain grows very quickly in the first few years of life and then it actually slows down a lot.
 
 577
 00:32:17,740 --> 00:32:19,700
@@ -1573,103 +1563,43 @@ And from then on, it's not so much growth.
 
 578
 00:32:19,700 --> 00:32:26,020
-It's re-riaring, it's neurons connecting, it synapses forming, it's neurons fading away,
-
-579
-00:32:26,020 --> 00:32:27,180
-if they're not used.
+It's re-riaring, it's neurons connecting, it synapses forming, it's neurons fading away, if they're not used.
 
 580
 00:32:27,180 --> 00:32:31,500
-So there's a lot of re-wiring going on and that speeds up during puberty, especially early
-
-581
-00:32:31,500 --> 00:32:38,420
-puberty around age 11 or 12 to around 15, 16 is a huge amount of change as the brain basically
-
-582
-00:32:38,420 --> 00:32:40,900
-sort of like a caterpillar turning into a butterfly.
+So there's a lot of re-wiring going on and that speeds up during puberty, especially early puberty around age 11 or 12 to around 15, 16 is a huge amount of change as the brain basically sort of like a caterpillar turning into a butterfly.
 
 583
 00:32:40,900 --> 00:32:45,540
-You have the young form of a human brain kind of rewires now that it's learned culture,
-
-584
-00:32:45,540 --> 00:32:52,180
-it sort of rewires to lock down into the format of an American or a sweet or whatever.
+You have the young form of a human brain kind of rewires now that it's learned culture, it sort of rewires to lock down into the format of an American or a sweet or whatever.
 
 585
 00:32:52,180 --> 00:32:55,900
-And this is exactly the period, unfortunately, when we put our kids on social media and
-
-586
-00:32:55,900 --> 00:32:59,860
-let random weirdos on the internet control how the brain is rewiring.
+And this is exactly the period, unfortunately, when we put our kids on social media and let random weirdos on the internet control how the brain is rewiring.
 
 587
 00:32:59,860 --> 00:33:03,260
-One of the main things that is happening is in the prefrontal cortex, that's the last
-
-588
-00:33:03,260 --> 00:33:06,980
-part to really go through the change, which is the seat of executive function that is
+One of the main things that is happening is in the prefrontal cortex, that's the last part to really go through the change, which is the seat of executive function that is
 
 589
 00:33:06,980 --> 00:33:12,540
-the ability to formulate a goal, figure out the means to achieve the goal, and then execute
-
-590
-00:33:12,540 --> 00:33:14,340
-the plan to achieve the goal.
+the ability to formulate a goal, figure out the means to achieve the goal, and then execute the plan to achieve the goal.
 
 591
 00:33:14,340 --> 00:33:18,100
-So if you want to do your homework, I want to watch this TV show at 10 o'clock tonight,
-
-592
-00:33:18,100 --> 00:33:22,420
-so I have an hour, I better do my homework, I have one hour, kids struggle to do that, especially
-
-593
-00:33:22,420 --> 00:33:26,060
-if you don't love doing your homework, it's going to take concentration and willpower
-
-594
-00:33:26,060 --> 00:33:27,380
-to stay on task.
-
-595
-00:33:27,380 --> 00:33:29,060
-But what happens?
+So if you want to do your homework, I want to watch this TV show at 10 o'clock tonight, so I have an hour, I better do my homework, I have one hour, kids struggle to do that, especially if you don't love doing your homework, it's going to take concentration and willpower to stay on task. But what happens?
 
 596
 00:33:29,060 --> 00:33:33,460
-You have an infinite number of really fun digital experiences just waiting for you if you
-
-597
-00:33:33,460 --> 00:33:36,660
-touch the right buttons, but it's much more than that because you don't have to touch
-
-598
-00:33:36,660 --> 00:33:37,660
-the right buttons.
+You have an infinite number of really fun digital experiences just waiting for you if you touch the right buttons, but it's much more than that because you don't have to touch the right buttons.
 
 599
 00:33:37,660 --> 00:33:41,820
-The pop-ups are going to be popping up saying, "Come play, come out, come look what someone
-
-600
-00:33:41,820 --> 00:33:43,420
-just said about you."
+The pop-ups are going to be popping up saying, "Come play, come out, come look what someone just said about you."
 
 601
 00:33:43,420 --> 00:33:48,500
-So they're getting, I think on average now, 250 notifications a day is what American teens
-
-602
-00:33:48,500 --> 00:33:49,500
-now get.
+So they're getting, I think on average now, 250 notifications a day is what American teens now get.
 
 603
 00:33:49,500 --> 00:33:52,420
@@ -1681,43 +1611,19 @@ Most of them don't put it on a focus mode.
 
 605
 00:33:54,540 --> 00:33:58,060
-They just take it as normal, that any company that wants to take some of their attention
-
-606
-00:33:58,060 --> 00:33:59,340
-can just take it.
+They just take it as normal, that any company that wants to take some of their attention can just take it.
 
 607
 00:33:59,340 --> 00:34:04,820
-So it was always hard for teens to focus and do their homework or do anything, but doing
-
-608
-00:34:04,820 --> 00:34:09,620
-that gives you practice in doing it and if you do it repeatedly, you're actually helping
-
-609
-00:34:09,620 --> 00:34:12,980
-your brain to develop good executive function.
+So it was always hard for teens to focus and do their homework or do anything, but doing that gives you practice in doing it and if you do it repeatedly, you're actually helping your brain to develop good executive function.
 
 610
 00:34:12,980 --> 00:34:16,540
-So what would happen if you have a teen who never gets to practice that they literally
-
-611
-00:34:16,540 --> 00:34:18,940
-never get an hour without an interruption?
-
-612
-00:34:18,940 --> 00:34:23,940
-I think it could lead to permanent decrements in their ability to function as an adult.
+So what would happen if you have a teen who never gets to practice that they literally never get an hour without an interruption? I think it could lead to permanent decrements in their ability to function as an adult.
 
 613
 00:34:23,940 --> 00:34:29,940
-And is the average American, let's just say, 7th, 8th, 9th grader, having their phone
-
-614
-00:34:29,940 --> 00:34:35,260
-in their pocket with them at school as it's pinging these notifications?
+And is the average American, let's just say, 7th, 8th, 9th grader, having their phone in their pocket with them at school as it's pinging these notifications?
 
 615
 00:34:35,260 --> 00:34:38,820
@@ -1729,11 +1635,7 @@ It's complete bullshit.
 
 617
 00:34:40,060 --> 00:34:44,700
-All they mean is, "Oh, our rule is you're not allowed to take out your phone during class
-
-618
-00:34:44,700 --> 00:34:46,460
-unless your teacher asks you to."
+All they mean is, "Oh, our rule is you're not allowed to take out your phone during class unless your teacher asks you to."
 
 619
 00:34:46,460 --> 00:34:47,700
@@ -1745,35 +1647,19 @@ And what that means is that kids have to make some effort to hide their phone us
 
 621
 00:34:51,780 --> 00:34:55,460
-They have to at least sit in the back row where they can't be seen or they just put in
-
-622
-00:34:55,460 --> 00:34:56,460
-a book.
+They have to at least sit in the back row where they can't be seen or they just put in a book.
 
 623
 00:34:56,460 --> 00:35:01,960
-But if the kids put it this way, if any kids in your class are texting during the school
-
-624
-00:35:01,960 --> 00:35:05,060
-day, then you have to check your texts.
+But if the kids put it this way, if any kids in your class are texting during the school day, then you have to check your texts.
 
 625
 00:35:05,060 --> 00:35:09,660
-Otherwise, at lunch, you're going to be the only one who doesn't know the thing that so
-
-626
-00:35:09,660 --> 00:35:11,700
-and so said, which everyone is laughing at.
+Otherwise, at lunch, you're going to be the only one who doesn't know the thing that so and so said, which everyone is laughing at.
 
 627
 00:35:11,700 --> 00:35:14,380
-You don't care if the teacher is mad at you, but you really don't want to be humiliated
-
-628
-00:35:14,380 --> 00:35:17,020
-in front of your friends by being out of the loop.
+You don't care if the teacher is mad at you, but you really don't want to be humiliated in front of your friends by being out of the loop.
 
 629
 00:35:17,020 --> 00:35:19,780
@@ -1789,11 +1675,7 @@ And they do.
 
 632
 00:35:23,780 --> 00:35:28,020
-That's time you're talking to any group of young people, 45 minutes in, ask them, how many
-
-633
-00:35:28,020 --> 00:35:30,660
-of you have actually already checked your phone while I was speaking?
+That's time you're talking to any group of young people, 45 minutes in, ask them, how many of you have actually already checked your phone while I was speaking?
 
 634
 00:35:30,660 --> 00:35:32,740
@@ -1809,11 +1691,7 @@ So I think it's completely insane that we allow phones in school.
 
 637
 00:35:38,540 --> 00:35:41,620
-We wouldn't let them bring their television sets into school and watch television during
-
-638
-00:35:41,620 --> 00:35:42,620
-class.
+We wouldn't let them bring their television sets into school and watch television during class.
 
 639
 00:35:42,620 --> 00:35:44,140
@@ -1849,11 +1727,7 @@ So here I'll have to respect the term concept creep, which you referred to.
 
 647
 00:36:00,740 --> 00:36:03,660
-And in the calling of the American mind, Greg and I said that addiction is one of those
-
-648
-00:36:03,660 --> 00:36:05,260
-terms that has spread out.
+And in the calling of the American mind, Greg and I said that addiction is one of those terms that has spread out.
 
 649
 00:36:05,260 --> 00:36:09,660
@@ -1861,11 +1735,7 @@ So no, I would not call anything an addiction, unless you're very careful about 
 
 650
 00:36:09,660 --> 00:36:13,460
-I also know that in the addiction research literature, there's a big debate about this
-
-651
-00:36:13,460 --> 00:36:16,420
-and some of them say, no, we shouldn't call it addiction.
+I also know that in the addiction research literature, there's a big debate about this and some of them say, no, we shouldn't call it addiction.
 
 652
 00:36:16,420 --> 00:36:20,740
@@ -1873,15 +1743,7 @@ Now as far as I'm concerned, gambling is an addiction for many people.
 
 653
 00:36:20,740 --> 00:36:24,300
-And if you watch someone who is a gambling addiction, they're pulling the slot, they get into
-
-654
-00:36:24,300 --> 00:36:28,300
-a zone, they lose track of time, their life sucks, they hate their life, but for those two
-
-655
-00:36:28,300 --> 00:36:30,460
-hours, they don't feel the pain.
+And if you watch someone who is a gambling addiction, they're pulling the slot, they get into a zone, they lose track of time, their life sucks, they hate their life, but for those two hours, they don't feel the pain.
 
 656
 00:36:30,460 --> 00:36:32,820
@@ -1893,11 +1755,7 @@ So I'm willing to call that an addiction.
 
 658
 00:36:35,340 --> 00:36:40,260
-And I think many addiction researchers are some, not most, but some kids have that with social
-
-659
-00:36:40,260 --> 00:36:41,260
-media.
+And I think many addiction researchers are some, not most, but some kids have that with social media.
 
 660
 00:36:41,260 --> 00:36:44,740
@@ -1905,19 +1763,7 @@ The better term to use is what they call problematic use.
 
 661
 00:36:44,740 --> 00:36:50,140
-So if you're spending four hours a day on Instagram, but you're still seeing your
-
-662
-00:36:50,140 --> 00:36:54,660
-friends, you're still getting good grades in class, it's a time suck, but you can't say
-
-663
-00:36:54,660 --> 00:36:58,460
-that it's in your fearing with basically love and work of the two areas that psychologists
-
-664
-00:36:58,460 --> 00:37:03,820
-look at love and work, basically relationships and either work or school work.
+So if you're spending four hours a day on Instagram, but you're still seeing your friends, you're still getting good grades in class, it's a time suck, but you can't say that it's in your fearing with basically love and work of the two areas that psychologists look at love and work, basically relationships and either work or school work.
 
 665
 00:37:03,820 --> 00:37:07,580
@@ -1949,39 +1795,19 @@ If they're deprived for a day or two, they get really surly and maybe even aggre
 
 672
 00:37:28,740 --> 00:37:33,140
-It's interfering with their ability to, with their school work, with their ability to function
-
-673
-00:37:33,140 --> 00:37:34,140
-with friends.
+It's interfering with their ability to, with their school work, with their ability to function with friends.
 
 674
 00:37:34,140 --> 00:37:37,540
-So people say, oh, you know, my kids are fine or you know, most kids are doing, okay, sure,
-
-675
-00:37:37,540 --> 00:37:38,540
-most are.
+So people say, oh, you know, my kids are fine or you know, most kids are doing, okay, sure, most are.
 
 676
 00:37:38,540 --> 00:37:42,500
-But can you think of any consumer product in the world where if there was a one in ten
-
-677
-00:37:42,500 --> 00:37:47,860
-chance that your kid uses it, they're going to get hooked and have problematic behavior to
-
-678
-00:37:47,860 --> 00:37:50,540
-the point where it's going to interfere with other life domains.
+But can you think of any consumer product in the world where if there was a one in ten chance that your kid uses it, they're going to get hooked and have problematic behavior to the point where it's going to interfere with other life domains.
 
 679
 00:37:50,540 --> 00:37:53,940
-And if they do it for two or three hours a day over many years, it could change the brain
-
-680
-00:37:53,940 --> 00:37:54,940
-development.
+And if they do it for two or three hours a day over many years, it could change the brain development.
 
 681
 00:37:54,940 --> 00:37:58,060
@@ -2009,19 +1835,11 @@ And I think it alteres developmental pathways.
 
 687
 00:38:07,740 --> 00:38:11,780
-Anything you do hours a day every day for years is going to alter developmental pathways.
+<mark style="background: #FFF3A3A6;">Anything you do hours a day every day for years is going to alter developmental pathways.</mark>
 
 688
 00:38:11,780 --> 00:38:18,260
-So, John, beyond the sort of four buckets of harm that we just went through, social deprivation,
-
-689
-00:38:18,260 --> 00:38:23,980
-sleep deprivation, inability to pay attention and addiction, the overall mental health of
-
-690
-00:38:23,980 --> 00:38:27,580
-American teens has absolutely plunged.
+So, John, beyond the sort of four buckets of harm that we just went through, social deprivation, sleep deprivation, inability to pay attention and addiction, the overall mental health of American teens has absolutely plunged.
 
 691
 00:38:27,580 --> 00:38:34,220
@@ -2029,11 +1847,7 @@ Rates of depression, anxiety, self harm and suicide have more than doubled over 
 
 692
 00:38:34,220 --> 00:38:38,780
-Now the skeptic could look at all of those and say, well, I know the answer to that, religion
-
-693
-00:38:38,780 --> 00:38:39,780
-has plummeted.
+Now the skeptic could look at all of those and say, well, I know the answer to that, religion has plummeted.
 
 694
 00:38:39,780 --> 00:38:41,620
@@ -2057,11 +1871,7 @@ So, there's some truth to that and then there's some reverse causality there.
 
 699
 00:38:56,700 --> 00:39:01,140
-Why is it that this catastrophe, this mental illness epidemic, it all the English-speaking
-
-700
-00:39:01,140 --> 00:39:03,260
-countries in the same way at the same time?
+Why is it that this catastrophe, this mental illness epidemic, it all the English-speaking countries in the same way at the same time?
 
 701
 00:39:03,260 --> 00:39:05,540
@@ -2069,23 +1879,11 @@ We find strong evidence in Scandinavia.
 
 702
 00:39:05,540 --> 00:39:10,340
-We find that in Eastern Europe, actually the numbers are getting a little better, in Southern
-
-703
-00:39:10,340 --> 00:39:12,380
-Europe they get a little worse but not a lot.
+We find that in Eastern Europe, actually the numbers are getting a little better, in Southern Europe they get a little worse but not a lot.
 
 704
 00:39:12,380 --> 00:39:17,540
-Well, this pattern is basically what Emil Dirkheim observed about suicide rates 120 years
-
-705
-00:39:17,540 --> 00:39:22,580
-ago, that the Protestant cultures which have the most freedom are more subject to animie
-
-706
-00:39:22,580 --> 00:39:23,980
-or normlessness.
+Well, this pattern is basically what Emil Dirkheim observed about suicide rates 120 years ago, that the Protestant cultures which have the most freedom are more subject to animie or normlessness.
 
 707
 00:39:23,980 --> 00:39:29,420
@@ -2093,15 +1891,7 @@ Now these same Protestant countries were the happiest countries in the world for
 
 708
 00:39:29,420 --> 00:39:33,740
-Freedom, individualism, this is the liberal ideal, people should be able to construct
-
-709
-00:39:33,740 --> 00:39:37,220
-lives that they want to live and the anglos in the Scandinavian countries they always
-
-710
-00:39:37,220 --> 00:39:40,720
-top the lists of happiest countries in the world.
+Freedom, individualism, this is the liberal ideal, people should be able to construct lives that they want to live and the anglos in the Scandinavian countries they always top the lists of happiest countries in the world.
 
 711
 00:39:40,720 --> 00:39:44,420
@@ -2109,11 +1899,7 @@ And their young people were the happiest young people until 2012.
 
 712
 00:39:44,420 --> 00:39:49,140
-And you can see this in the graphs of Canadian data where it used to be until 2012 it was
-
-713
-00:39:49,140 --> 00:39:55,700
-the late teen and early twenties girls women who were the happiest compared to older women.
+And you can see this in the graphs of Canadian data where it used to be until 2012 it was the late teen and early twenties girls women who were the happiest compared to older women.
 
 714
 00:39:55,700 --> 00:39:59,500
@@ -2121,83 +1907,7 @@ And then right after 2012 it plunges and now they're the least happy.
 
 715
 00:39:59,500 --> 00:40:05,460
-So something about religious societies seems to confer some immunity whereas if you're
-
-716
-00:40:05,460 --> 00:40:13,460
-in a secular society you're more vulnerable to the effects of the great rewiring.
-
-717
-00:40:13,460 --> 00:40:20,420
-More with John Hyte after the break, stay with us.
-
-718
-00:40:20,420 --> 00:40:25,340
-The US Virgin Islands invites you to experience the gorgeous islands of St Thomas, St.
-
-719
-00:40:25,340 --> 00:40:31,540
-Croix and St. John, USVI is truly a magical place and a one of a kind travel destination.
-
-720
-00:40:31,540 --> 00:40:36,740
-From amazing food to the warm hospitality, culture and breathtaking beaches, USVI has
-
-721
-00:40:36,740 --> 00:40:38,860
-everything you could ever want in a vacation.
-
-722
-00:40:38,860 --> 00:40:42,220
-Did you know that you don't need a passport when traveling from within the US?
-
-723
-00:40:42,220 --> 00:40:45,300
-That's right, no passport is needed when traveling from the US.
-
-724
-00:40:45,300 --> 00:40:46,800
-Making travel hassle free.
-
-725
-00:40:46,800 --> 00:40:50,540
-Add USVI to your vacation list and feel a vibe like no other.
-
-726
-00:40:50,540 --> 00:40:54,040
-From the world renowned Trump Bay to Macon's Bay Beach and all the way to point you
-
-727
-00:40:54,040 --> 00:40:58,720
-to all the easternmost point in the United States, USVI will transport you to a place that
-
-728
-00:40:58,720 --> 00:41:01,000
-no other Caribbean vacation can.
-
-729
-00:41:01,000 --> 00:41:05,360
-Whether you choose to visit St. Thomas, St. Croix or St. John, why not all three?
-
-730
-00:41:05,360 --> 00:41:07,400
-Each island has something for everyone.
-
-731
-00:41:07,400 --> 00:41:11,880
-For most, USVI is just one non-stop flight or single connection away.
-
-732
-00:41:11,880 --> 00:41:16,680
-Start planning your getaway to America's Caribbean by visiting visit usvi.com.
-
-733
-00:41:16,680 --> 00:41:18,680
-That's visit usvi.com.
-
-734
-00:41:18,680 --> 00:41:21,000
-USVI, naturally in rhythm.
+<mark style="background: #FFF3A3A6;">So something about religious societies seems to confer some immunity whereas if you're in a secular society you're more vulnerable to the effects of the great rewiring.</mark>
 
 735
 00:41:21,320 --> 00:41:26,760
@@ -2229,19 +1939,11 @@ Listeners loved it.
 
 742
 00:41:32,760 --> 00:41:36,440
-And here's what she said about smart phones when I pushed her on the extent to which they
-
-743
-00:41:36,440 --> 00:41:37,960
-have been detrimental.
+And here's what she said about smart phones when I pushed her on the extent to which they have been detrimental.
 
 744
 00:41:37,960 --> 00:41:42,000
-She said, the phones don't completely explain the rising generations, poor rates of mental
-
-745
-00:41:42,000 --> 00:41:43,000
-health.
+She said, the phones don't completely explain the rising generations, poor rates of mental health.
 
 746
 00:41:43,000 --> 00:41:46,480
@@ -2249,31 +1951,15 @@ First of all, the decline in mental health is the story that began in the 1950s.
 
 747
 00:41:46,480 --> 00:41:52,040
-Second of all, in 2016, already one in six kids between the ages of two and eight had a diagnosed
-
-748
-00:41:52,040 --> 00:41:53,040
-mental disorder.
+Second of all, in 2016, already one in six kids between the ages of two and eight had a diagnosed mental disorder.
 
 749
 00:41:53,040 --> 00:41:56,920
-That's a lot of little kids who obviously don't have a smartphone and aren't on social
-
-750
-00:41:56,920 --> 00:41:57,920
-media.
+That's a lot of little kids who obviously don't have a smartphone and aren't on social media.
 
 751
 00:41:57,920 --> 00:42:01,680
-And then the last reason she added to think that smartphones don't explain everything is
-
-752
-00:42:01,680 --> 00:42:05,800
-that there are Western culture countries like Japan and Israel that are saturated in
-
-753
-00:42:05,800 --> 00:42:09,040
-smartphones where kids got smartphones even younger than us.
+And then the last reason she added to think that smartphones don't explain everything is that there are Western culture countries like Japan and Israel that are saturated in smartphones where kids got smartphones even younger than us.
 
 754
 00:42:09,040 --> 00:42:10,600
@@ -2301,11 +1987,7 @@ Oh, I'm so glad you asked because I listened to the episode.
 
 760
 00:42:21,480 --> 00:42:25,580
-I listened to that and I could see, okay, Barry is channeling John Heighten, Gene Twengey
-
-761
-00:42:25,580 --> 00:42:28,360
-here to see what Abigail says.
+I listened to that and I could see, okay, Barry is channeling John Heighten, Gene Twengey here to see what Abigail says.
 
 762
 00:42:28,360 --> 00:42:29,360
@@ -2313,11 +1995,7 @@ That's right.
 
 763
 00:42:29,360 --> 00:42:33,400
-So first, on the timing, it's true that mental health has been declining in a slow steady
-
-764
-00:42:33,400 --> 00:42:35,600
-way since the 1950s.
+So first, on the timing, it's true that mental health has been declining in a slow steady way since the 1950s.
 
 765
 00:42:35,600 --> 00:42:37,960
@@ -2329,11 +2007,7 @@ Gen X was actually in much worse shape.
 
 767
 00:42:39,640 --> 00:42:43,200
-And I think she's also referred to something like the suicide rate being higher a while
-
-768
-00:42:43,200 --> 00:42:44,200
-ago.
+And I think she's also referred to something like the suicide rate being higher a while ago.
 
 769
 00:42:44,200 --> 00:42:45,200
@@ -2341,11 +2015,7 @@ That's all true for Gen X.
 
 770
 00:42:45,200 --> 00:42:48,880
-And as I said, I think that's in part because they had the highest rates of lead poisoning
-
-771
-00:42:48,880 --> 00:42:52,800
-from the huge amount of lead that was dumped at the atmosphere in the 60s and 70s.
+And as I said, I think that's in part because they had the highest rates of lead poisoning from the huge amount of lead that was dumped at the atmosphere in the 60s and 70s.
 
 772
 00:42:52,800 --> 00:42:57,400
@@ -2353,19 +2023,11 @@ In any case, if we go from the 90s on, mental health is actually getting better.
 
 773
 00:42:57,400 --> 00:43:04,000
-So if it was just the general rise of therapy, of over therapy, then we would see more steady
-
-774
-00:43:04,000 --> 00:43:10,320
-increases in rates of mental illness in the 2000s and into the 2010s, but we don't.
+So if it was just the general rise of therapy, of over therapy, then we would see more steady increases in rates of mental illness in the 2000s and into the 2010s, but we don't.
 
 775
 00:43:10,320 --> 00:43:17,000
-We see actually slight improvements in the 2010s and then exactly in 2013, we see everything
-
-776
-00:43:17,000 --> 00:43:18,000
-take off.
+We see actually slight improvements in the 2010s and then exactly in 2013, we see everything take off.
 
 777
 00:43:18,000 --> 00:43:19,400
@@ -2393,11 +2055,7 @@ It's a good thing for adults.
 
 783
 00:43:31,240 --> 00:43:35,880
-It never occurred to me that adults, as she says, adults are in therapy because they
-
-784
-00:43:35,880 --> 00:43:37,880
-chose to and they want to work on a problem.
+It never occurred to me that adults, as she says, adults are in therapy because they chose to and they want to work on a problem.
 
 785
 00:43:37,880 --> 00:43:40,280
@@ -2405,11 +2063,7 @@ And kids are usually there because their parents are sending them.
 
 786
 00:43:40,280 --> 00:43:44,120
-So she definitely has a piece of the story and she has a piece that I did not work in.
-
-787
-00:43:44,120 --> 00:43:45,440
-I missed.
+So she definitely has a piece of the story and she has a piece that I did not work in. I missed.
 
 788
 00:43:45,440 --> 00:43:49,000
@@ -2429,11 +2083,7 @@ The second one was your point that a lot of younger kids are beginning to have t
 
 792
 00:44:01,080 --> 00:44:06,600
-Now she's right that part of that is from the therapy culture, but it's not as though
-
-793
-00:44:06,600 --> 00:44:12,000
-kids had a normal childhood until they reached 11 and got their first smartphone.
+Now she's right that part of that is from the therapy culture, but it's not as though kids had a normal childhood until they reached 11 and got their first smartphone.
 
 794
 00:44:12,000 --> 00:44:15,920
@@ -2445,11 +2095,7 @@ And the great increase in devices began as soon as the iPad came out.
 
 796
 00:44:21,080 --> 00:44:25,760
-So a lot of my family videos and when my son was two or three years old, they end with
-
-797
-00:44:25,760 --> 00:44:30,760
-him reaching for the phone saying, "I want iPhone, I want iPhone."
+So a lot of my family videos and when my son was two or three years old, they end with him reaching for the phone saying, "I want iPhone, I want iPhone."
 
 798
 00:44:30,760 --> 00:44:33,080
@@ -2473,11 +2119,7 @@ And this is the best deal for parents.
 
 803
 00:44:42,360 --> 00:44:43,960
-You give your kid an iPad.
-
-804
-00:44:43,960 --> 00:44:45,920
-It's much better than sitting in front of a TV set.
+You give your kid an iPad. It's much better than sitting in front of a TV set.
 
 805
 00:44:45,920 --> 00:44:47,320
@@ -2505,11 +2147,7 @@ Or they have access to them a lot.
 
 811
 00:44:58,960 --> 00:45:02,560
-So I think childhood has been rewired, not just for adolescents, but even for children
-
-812
-00:45:02,560 --> 00:45:04,440
-at elementary school and earlier.
+So I think childhood has been rewired, not just for adolescents, but even for children at elementary school and earlier.
 
 813
 00:45:04,440 --> 00:45:06,200
@@ -2533,19 +2171,11 @@ And so this offers a lot of protection.
 
 818
 00:45:20,680 --> 00:45:24,320
-It's the freest kids in the freest societies.
-
-819
-00:45:24,320 --> 00:45:27,920
-They're the ones who got washed away between 2010 and 2015.
+<mark style="background: #FFF3A3A6;">It's the freest kids in the freest societies. They're the ones who got washed away between 2010 and 2015.</mark>
 
 820
 00:45:27,920 --> 00:45:33,680
-There's an anecdote in your book that was sort of so powerful in which, just speaking
-
-821
-00:45:33,680 --> 00:45:37,960
-of the iPad, you're with, I think, your daughter who's five or six years old at the time.
+There's an anecdote in your book that was sort of so powerful in which, just speaking of the iPad, you're with, I think, your daughter who's five or six years old at the time.
 
 822
 00:45:37,960 --> 00:45:39,880
@@ -2553,34 +2183,11 @@ And what does she say to you?
 
 823
 00:45:39,880 --> 00:45:41,440
-She says, she calls out from the next room.
-
-824
-00:45:41,440 --> 00:45:43,320
-I'm at breakfast at a country in.
-
-825
-00:45:43,320 --> 00:45:46,960
-And she says, "Daddy, can you take the iPad away from me?
-
-826
-00:45:46,960 --> 00:45:50,280
-I'm trying to take my eyes off it, but I can't."
+She says, she calls out from the next room. I'm at breakfast at a country in. And she says, "Daddy, can you take the iPad away from me? I'm trying to take my eyes off it, but I can't."
 
 827
 00:45:50,280 --> 00:45:53,000
-So kids don't have executive control.
-
-828
-00:45:53,000 --> 00:45:54,760
-They don't have executive function.
-
-829
-00:45:54,760 --> 00:45:55,760
-They're easily hooked.
-
-830
-00:45:55,760 --> 00:45:56,760
+So <mark style="background: #FFF3A3A6;">kids don't have executive control. They don't have executive function.</mark> They're easily hooked.
 They're easily addicted.
 
 831
@@ -2589,19 +2196,7 @@ This is why we don't let minors experiment with addictive drugs and activities.
 
 832
 00:46:01,680 --> 00:46:06,200
-But the iPad is very good as a behaviorist train, which is like having BF Skinner right in
-
-833
-00:46:06,200 --> 00:46:08,280
-front of your child saying, "Here, do this.
-
-834
-00:46:08,280 --> 00:46:09,280
-I'll reward you.
-
-835
-00:46:09,280 --> 00:46:10,280
-Do this.
+But <mark style="background: #FFF3A3A6;">the iPad is very good as a behaviorist train, which is like having BF Skinner right in front of your child</mark> saying, "Here, do this. I'll reward you. Do this.
 
 836
 00:46:10,280 --> 00:46:11,280
@@ -2613,11 +2208,7 @@ And after a few tens of thousands of times, your kid's brain is rewired."
 
 838
 00:46:15,280 --> 00:46:21,440
-So for relatively long time, people have been writing about the obvious detrimental impact
-
-839
-00:46:21,440 --> 00:46:26,120
-that the social media apps and platforms have on girls.
+So for relatively long time, people have been writing about the obvious detrimental impact that the social media apps and platforms have on girls.
 
 840
 00:46:26,120 --> 00:46:28,720
@@ -2625,27 +2216,15 @@ And you say in the book, the evidence is overwhelming.
 
 841
 00:46:28,720 --> 00:46:32,920
-Give us a little bit of that evidence and then I want to talk about boys, which is a subtler
-
-842
-00:46:32,920 --> 00:46:33,920
-story.
+Give us a little bit of that evidence and then I want to talk about boys, which is a subtler story.
 
 843
 00:46:33,920 --> 00:46:38,440
-So I'm in a debate with other researchers because they look at the correlation between hours
-
-844
-00:46:38,440 --> 00:46:41,440
-on social media and mental health.
+So I'm in a debate with other researchers because they look at the correlation between hours on social media and mental health.
 
 845
 00:46:41,440 --> 00:46:45,800
-And there is a correlation very steadily around 0.15 for girls, which I think is big enough
-
-846
-00:46:45,800 --> 00:46:48,280
-to explain a lot and they think is not.
+And there is a correlation very steadily around 0.15 for girls, which I think is big enough to explain a lot and they think is not.
 
 847
 00:46:48,280 --> 00:46:51,080
@@ -2657,11 +2236,7 @@ And in fact, there's like 15 different ways that girls get harmed on social medi
 
 849
 00:46:55,680 --> 00:47:00,120
-And so a few that we read about and that I read about the book, so visual social comparison
-
-850
-00:47:00,120 --> 00:47:01,120
-we already talked about.
+And so a few that we read about and that I read about the book, so visual social comparison we already talked about.
 
 851
 00:47:01,120 --> 00:47:02,120
@@ -2685,11 +2260,7 @@ It can be kind of crippling.
 
 856
 00:47:10,000 --> 00:47:14,720
-But one kind is called social perfectionism, which is what you're concerned about is entirely
-
-857
-00:47:14,720 --> 00:47:16,520
-what others are thinking of you.
+But one kind is called <mark style="background: #FFF3A3A6;">social perfectionism</mark>, which is what you're concerned about is entirely what others are thinking of you.
 
 858
 00:47:16,520 --> 00:47:18,160
@@ -2701,23 +2272,15 @@ And that is higher in girls and boy does, boy, do sites like Instagram bring tha
 
 860
 00:47:24,080 --> 00:47:26,520
-Something has to be perfect about your life because you're going to be judged for it or
-
-861
-00:47:26,520 --> 00:47:30,040
-you're afraid you'll be judged even if people actually don't care that much.
+Something has to be perfect about your life because you're going to be judged for it or you're afraid you'll be judged even if people actually don't care that much.
 
 862
 00:47:30,040 --> 00:47:33,400
-Another is relational aggression, which we've actually, we've already talked about that.
+Another is <mark style="background: #FFF3A3A6;">relational aggression</mark>, which we've actually, we've already talked about that.
 
 863
 00:47:33,400 --> 00:47:37,320
-Boys aggression is ultimately backed up by the threat of physical force and domination
-
-864
-00:47:37,320 --> 00:47:38,520
-punching fighting.
+Boys aggression is ultimately backed up by the threat of physical force and domination punching fighting.
 
 865
 00:47:38,520 --> 00:47:41,120
@@ -2749,7 +2312,7 @@ And then they're going to be mislead and on weekends as well.
 
 872
 00:47:56,160 --> 00:48:01,480
-So girls just are exposed to just much more relational aggression than they were before.
+So <mark style="background: #FFF3A3A6;">girls just are exposed to just much more relational aggression than they were before</mark>.
 
 873
 00:48:01,480 --> 00:48:04,080
@@ -2757,11 +2320,7 @@ Girls also share emotions more than boys do.
 
 874
 00:48:04,080 --> 00:48:08,200
-You know, if a few girls are anxious and then they all get on social media and talk about
-
-875
-00:48:08,200 --> 00:48:12,600
-their anxiety, that is literally going to spread to other girls.
+You know, if a few girls are anxious and then they all get on social media and talk about their anxiety, that is literally going to spread to other girls.
 
 876
 00:48:12,600 --> 00:48:15,400
@@ -2777,11 +2336,7 @@ They're not going to pick up on it as much.
 
 879
 00:48:18,520 --> 00:48:23,360
-So boys, in a sense, had some protection against the mental and this contagion that social
-
-880
-00:48:23,360 --> 00:48:25,760
-media spreads among girls.
+So boys, in a sense, had some protection against the mental and this contagion that social media spreads among girls.
 
 881
 00:48:25,760 --> 00:48:27,880
@@ -2797,11 +2352,7 @@ It's unbelievable.
 
 884
 00:48:34,440 --> 00:48:39,720
-Once scammers can get a child boy or girl, once they can get the child to send them a picture
-
-885
-00:48:39,720 --> 00:48:43,960
-of themselves naked or, you know, part of their body, now they've got them.
+Once scammers can get a child boy or girl, once they can get the child to send them a picture of themselves naked or, you know, part of their body, now they've got them.
 
 886
 00:48:43,960 --> 00:48:47,160
@@ -2817,51 +2368,11 @@ And now I've got you and you have to do what I say.
 
 889
 00:48:51,680 --> 00:48:57,360
-And there's the story of this one girl, they forced her to carve their names, this group.
-
-890
-00:48:57,360 --> 00:49:01,920
-She had a carve their names in her thigh with a knife while they watched and laughed.
-
-891
-00:49:01,920 --> 00:49:06,680
-She had to behead her pet hamster in front of them on camera.
-
-892
-00:49:06,680 --> 00:49:09,640
-And then they said, now we want you to kill yourself.
-
-893
-00:49:09,640 --> 00:49:12,360
-If you don't do this, we're going to spread these photos far and wide.
-
-894
-00:49:12,360 --> 00:49:13,360
-You're going to be humiliated.
-
-895
-00:49:13,360 --> 00:49:17,600
-At this point, I'm sure the girl was already thinking about suicide because she felt trapped
-
-896
-00:49:17,600 --> 00:49:19,240
-and humiliated.
-
-897
-00:49:19,240 --> 00:49:21,520
-And thank God she told her mother at that point.
-
-898
-00:49:21,520 --> 00:49:23,760
-And then the mother was able to save her.
+And there's the story of this one girl, they forced her to carve their names, this group. She had a carve their names in her thigh with a knife while they watched and laughed. She had to behead her pet hamster in front of them on camera. And then they said, now we want you to kill yourself. If you don't do this, we're going to spread these photos far and wide. You're going to be humiliated. At this point, I'm sure the girl was already thinking about suicide because she felt trapped and humiliated. And thank God she told her mother at that point. And then the mother was able to save her.
 
 899
 00:49:23,760 --> 00:49:30,000
-But the idea that we would never let our children wander in a bad part of town unsupervised
-
-900
-00:49:30,000 --> 00:49:35,080
-for months, we would never let them go into, you know, a war zone or a brothel.
+<mark style="background: #BBFABBA6;">But the idea that we would never let our children wander in a bad part of town unsupervised for months, we would never let them go into, you know, a war zone or a brothel.</mark>
 
 901
 00:49:35,080 --> 00:49:38,000
@@ -2873,79 +2384,15 @@ It's unbelievable to me that we have done this to childhood.
 
 903
 00:49:41,040 --> 00:49:47,520
-Well, you write in the book about a girl named Alexis Spence, whose life sort of unraveled
-
-904
-00:49:47,520 --> 00:49:50,640
-because of social media platforms that is currently suing meta.
+Well, you write in the book about a girl named Alexis Spence, whose life sort of unraveled because of social media platforms that is currently suing meta.
 
 905
 00:49:50,640 --> 00:49:54,520
-Tell me a little bit about what happened to her because I think in a way her story, not
-
-906
-00:49:54,520 --> 00:49:59,000
-the fact that she's suing, but her story is sort of emblematic of what happened to girls.
+Tell me a little bit about what happened to her because I think in a way her story, not the fact that she's suing, but her story is sort of emblematic of what happened to girls.
 
 907
 00:49:59,000 --> 00:50:03,160
-So she was this, you know, fifth grade girl, grown up on Long Island.
-
-908
-00:50:03,160 --> 00:50:10,080
-And she had webkins, you know, it's like a toy that you can trap online.
-
-909
-00:50:10,080 --> 00:50:14,280
-And she thought that was fun, but some of her friends made fun of her for this childish
-
-910
-00:50:14,280 --> 00:50:15,280
-thing.
-
-911
-00:50:15,280 --> 00:50:16,560
-No, you should get Instagram.
-
-912
-00:50:16,560 --> 00:50:18,360
-So she gets Instagram.
-
-913
-00:50:18,360 --> 00:50:24,160
-And any interesting beauty before you know what you'll be being sent dieting, videos and content
-
-914
-00:50:24,160 --> 00:50:29,600
-about extreme thinness and anorexia and the skeleton bride diet and all sorts of horrible,
-
-915
-00:50:29,600 --> 00:50:30,760
-horrible things.
-
-916
-00:50:30,760 --> 00:50:35,240
-And she develops very severe eating disorders and she's hospitalized multiple times.
-
-917
-00:50:35,240 --> 00:50:39,840
-And in one of the longer hospitalizations, she goes without her phone for a while.
-
-918
-00:50:39,840 --> 00:50:42,240
-And the mother says, it's like I got my daughter back.
-
-919
-00:50:42,240 --> 00:50:46,600
-Once she was not on the phone for a month or two, she became her normal self again.
-
-920
-00:50:46,600 --> 00:50:50,760
-And this is a story I hear from parents and kids about summer camp as well when kids get
-
-921
-00:50:50,760 --> 00:50:54,880
-off of their devices because the thing is they get off and so does everyone else.
+So she was this, you know, fifth grade girl, grown up on Long Island. And she had webkins, you know, it's like a toy that you can trap online. And she thought that was fun, but some of her friends made fun of her for this childish thing. No, you should get Instagram. So she gets Instagram. And any interesting beauty before you know what you'll be being sent dieting, videos and content about extreme thinness and anorexia and the skeleton bride diet and all sorts of horrible, horrible things. And she develops very severe eating disorders and she's hospitalized multiple times. And in one of the longer hospitalizations, she goes without her phone for a while. And the mother says, it's like I got my daughter back. Once she was not on the phone for a month or two, she became her normal self again. And this is a story I hear from parents and kids about summer camp as well when kids get off of their devices because the thing is they get off and so does everyone else.
 
 922
 00:50:54,880 --> 00:50:56,760
@@ -2981,19 +2428,11 @@ And it starts in fifth grade.
 
 930
 00:51:15,360 --> 00:51:20,760
-And Congress passed one law, exactly one law to protect children online, cop at the Child
-
-931
-00:51:20,760 --> 00:51:24,940
-Online Privacy Protection Act in 1997, I think it was.
+And Congress passed one law, exactly one law to protect children online, cop at the Child Online Privacy Protection Act in 1997, I think it was.
 
 932
 00:51:24,940 --> 00:51:28,200
-That act was completely inadequate, but at least it said that there was a minimum age to
-
-933
-00:51:28,200 --> 00:51:31,680
-sign a contract in terms of service and give away your data to a company.
+That act was completely inadequate, but at least it said that there was a minimum age to sign a contract in terms of service and give away your data to a company.
 
 934
 00:51:31,680 --> 00:51:32,680
@@ -3001,11 +2440,7 @@ It's 13.
 
 935
 00:51:32,680 --> 00:51:37,540
-Oh, but the companies are not liable for that unless they have positive evidence that a kid
-
-936
-00:51:37,540 --> 00:51:38,540
-is under 13.
+Oh, but the companies are not liable for that unless they have positive evidence that a kid is under 13.
 
 937
 00:51:38,540 --> 00:51:40,840
@@ -3017,11 +2452,7 @@ They can't be sued.
 
 939
 00:51:41,920 --> 00:51:46,400
-And so I argue that we need to raise the age of 16 and enforce it, but for God's sakes,
-
-940
-00:51:46,400 --> 00:51:51,160
-can't we at least ask the companies, require the companies to enforce the age of 13?
+And so I argue that we need to raise the age of 16 and enforce it, but for God's sakes, can't we at least ask the companies, require the companies to enforce the age of 13?
 
 941
 00:51:51,160 --> 00:51:53,040
@@ -3041,47 +2472,15 @@ Here's what you write in the book.
 
 945
 00:52:02,080 --> 00:52:07,000
-A few of these companies are behaving like the tobacco and vaping industries, which
-
-946
-00:52:07,000 --> 00:52:11,840
-designed their products to be highly addictive and then skirted laws limiting marketing
-
-947
-00:52:11,840 --> 00:52:13,000
-to minors.
+A few of these companies are behaving like the tobacco and vaping industries, which designed their products to be highly addictive and then skirted laws limiting marketing to minors.
 
 948
 00:52:13,000 --> 00:52:17,400
-You also make the analogy in the book to oil companies that fought against a ban on
-
-949
-00:52:17,400 --> 00:52:23,180
-lead and gasoline, even though the evidence was clear that lead in the atmosphere affected
-
-950
-00:52:23,180 --> 00:52:24,580
-brain development.
+You also make the analogy in the book to oil companies that fought against a ban on lead and gasoline, even though the evidence was clear that lead in the atmosphere affected brain development.
 
 951
 00:52:24,580 --> 00:52:29,720
-So I want to know, did they know in Silicon Valley what they were creating?
-
-952
-00:52:29,720 --> 00:52:34,120
-Did they understand they were making a kind of heroin for kids and they did they decide
-
-953
-00:52:34,120 --> 00:52:35,560
-to do it anyway?
-
-954
-00:52:35,560 --> 00:52:41,120
-Or did they sort of stumble as backwards into something that is perhaps more addictive
-
-955
-00:52:41,120 --> 00:52:43,000
-than cigarettes or vaping?
+So I want to know, did they know in Silicon Valley what they were creating? Did they understand they were making a kind of heroin for kids and they did they decide to do it anyway? Or did they sort of stumble as backwards into something that is perhaps more addictive than cigarettes or vaping?
 
 956
 00:52:43,000 --> 00:52:44,000
@@ -3101,11 +2500,7 @@ Nobody said, hey, let's try to addict American kids and ruin their lives.
 
 960
 00:52:53,000 --> 00:52:58,280
-But once you start a company and you have a product and it is good for some people and
-
-961
-00:52:58,280 --> 00:53:00,400
-it does some social good in some ways.
+But once you start a company and you have a product and it is good for some people and it does some social good in some ways.
 
 962
 00:53:00,400 --> 00:53:02,960
@@ -3113,11 +2508,7 @@ So just normal human abilities to rationalize.
 
 963
 00:53:02,960 --> 00:53:07,160
-If we really give them the benefit of the doubt, we might say, they might have suspected
-
-964
-00:53:07,160 --> 00:53:11,280
-that their products were harming kids, but they had enough plausible deniability.
+If we really give them the benefit of the doubt, we might say, they might have suspected that their products were harming kids, but they had enough plausible deniability.
 
 965
 00:53:11,280 --> 00:53:14,320
@@ -3145,19 +2536,7 @@ We know that they were warned.
 
 971
 00:53:27,400 --> 00:53:31,960
-Francis Hogan brought out documents showing they had seminars on teen psychology and they
-
-972
-00:53:31,960 --> 00:53:36,280
-showed images of the brain and they said the frontal cortex doesn't mature until late teens
-
-973
-00:53:36,280 --> 00:53:41,920
-early 20s and at the earlier ages, kids are especially vulnerable to social concerns and
-
-974
-00:53:41,920 --> 00:53:44,720
-here's how we can get them to spend more time on the platform.
+Francis Hogan brought out documents showing they had seminars on teen psychology and they showed images of the brain and they said the frontal cortex doesn't mature until late teens early 20s and at the earlier ages, kids are especially vulnerable to social concerns and here's how we can get them to spend more time on the platform.
 
 975
 00:53:44,720 --> 00:53:47,360
@@ -3169,19 +2548,7 @@ So they knew what they were doing and they did it anyway.
 
 977
 00:53:50,720 --> 00:53:54,680
-In fact, there's a quote, I think I have in the book from one of the early founders of Facebook.
-
-978
-00:53:54,680 --> 00:53:57,640
-He said about Facebook and all the other platforms.
-
-979
-00:53:57,640 --> 00:54:03,320
-He said, this is exactly what a hacker would do is hack into the psychology of prestige,
-
-980
-00:54:03,320 --> 00:54:05,640
-give you a little hit of dopamine, keep you clicking.
+In fact, there's a quote, I think I have in the book from one of the early founders of Facebook. He said about Facebook and all the other platforms. He said, this is exactly what a hacker would do is hack into the psychology of prestige, give you a little hit of dopamine, keep you clicking.
 
 981
 00:54:05,640 --> 00:54:08,880
@@ -3209,11 +2576,7 @@ There was some pure pressure.
 
 987
 00:54:25,760 --> 00:54:31,920
-But I found the numbers in 1997 was the peak year of high school age smoking, 37% of kids
-
-988
-00:54:31,920 --> 00:54:33,520
-smoked in 1997.
+But I found the numbers in 1997 was the peak year of high school age smoking, 37% of kids smoked in 1997.
 
 989
 00:54:33,520 --> 00:54:36,000
@@ -3229,19 +2592,11 @@ You can't choose to not be on social media.
 
 992
 00:54:39,760 --> 00:54:43,320
-Now, I'm sorry, it's not that you can't at all, but it's much harder, especially because
-
-993
-00:54:43,320 --> 00:54:44,800
-it hits you much younger.
+Now, I'm sorry, it's not that you can't at all, but it's much harder, especially because it hits you much younger.
 
 994
 00:54:44,800 --> 00:54:47,360
-You know, we're talking high school kids for smoking, but we're looking at middle school
-
-995
-00:54:47,360 --> 00:54:50,040
-kids for social media.
+You know, we're talking high school kids for smoking, but we're looking at middle school kids for social media.
 
 996
 00:54:50,040 --> 00:54:54,360
@@ -3249,11 +2604,7 @@ So I think in many ways social media is worse than tobacco, worse than let it ga
 
 997
 00:54:54,360 --> 00:54:59,440
-And again, 11, 12, 13 year old kids, these kids, they're little, they haven't gone through
-
-998
-00:54:59,440 --> 00:55:03,120
-puberty, they're incredibly vulnerable and easy to exploit.
+And again, 11, 12, 13 year old kids, <mark style="background: #FFF3A3A6;">these kids, they're little, they haven't gone through puberty, they're incredibly vulnerable and easy to exploit.</mark>
 
 999
 00:55:03,120 --> 00:55:05,960
@@ -3265,11 +2616,7 @@ For God's sakes, make them enforce their own age limits.
 
 1001
 00:55:09,200 --> 00:55:14,040
-For God's sakes, Congress repeal or modify section 230's that it does just what the original
-
-1002
-00:55:14,040 --> 00:55:15,120
-intent was.
+For God's sakes, Congress repeal or modify section 230's that it does just what the original intent was.
 
 1003
 00:55:15,120 --> 00:55:18,400
@@ -3281,23 +2628,11 @@ The platforms should be liable for underage use.
 
 1005
 00:55:20,960 --> 00:55:25,280
-They should be liable for putting an architectural features designed to lure in and
-
-1006
-00:55:25,280 --> 00:55:29,320
-addict kids that we need to make them liable and we're not.
+They should be liable for putting an architectural features designed to lure in and addict kids that we need to make them liable and we're not.
 
 1007
 00:55:29,320 --> 00:55:33,560
-In March 2021, Mark Zuckerberg appeared in front of Congress.
-
-1008
-00:55:33,560 --> 00:55:38,480
-And he insisted that the research that we've seen, and this is a quote, is that using social
-
-1009
-00:55:38,480 --> 00:55:42,360
-apps to connect with other people can have positive mental health benefits.
+In March 2021, Mark Zuckerberg appeared in front of Congress. And he insisted that the research that we've seen, and this is a quote, is that using social apps to connect with other people can have positive mental health benefits.
 
 1010
 00:55:42,360 --> 00:55:44,480
@@ -3305,11 +2640,7 @@ What do you say to that?
 
 1011
 00:55:44,480 --> 00:55:48,120
-The natural inclination of an academic is to say, well, let's look for the arguments
-
-1012
-00:55:48,120 --> 00:55:49,120
-on both sides.
+The natural inclination of an academic is to say, well, let's look for the arguments on both sides.
 
 1013
 00:55:49,120 --> 00:55:51,120
@@ -3317,11 +2648,7 @@ There's some pluses and there's some minuses.
 
 1014
 00:55:51,120 --> 00:55:55,800
-And while that's true, when we look at the pluses of social media, what Zuckerberg was talking
-
-1015
-00:55:55,800 --> 00:56:00,800
-about is reports, if you survey kids and you say, how does it make you feel?
+And while that's true, when we look at the pluses of social media, what Zuckerberg was talking about is reports, if you survey kids and you say, how does it make you feel?
 
 1016
 00:56:00,800 --> 00:56:02,280
@@ -3329,11 +2656,7 @@ And they'll often say positive things.
 
 1017
 00:56:02,280 --> 00:56:06,640
-In fact, as he pointed out correctly, even in the Francis Hogan revelations of the study
-
-1018
-00:56:06,640 --> 00:56:12,520
-that Facebook commissioned, more kids said that it had positive effects than negative effects.
+In fact, as he pointed out correctly, even in the Francis Hogan revelations of the study that Facebook commissioned, more kids said that it had positive effects than negative effects.
 
 1019
 00:56:12,520 --> 00:56:16,600
@@ -3349,55 +2672,23 @@ So that is incredibly terrible.
 
 1022
 00:56:20,200 --> 00:56:24,320
-Secondly, to say that there's some mental health benefits, all he really means is they said
-
-1023
-00:56:24,320 --> 00:56:26,400
-it makes me feel better.
+Secondly, to say that there's some mental health benefits, all he really means is they said it makes me feel better.
 
 1024
 00:56:26,400 --> 00:56:30,960
-When you actually look at any other measure of actual mental health problems, you only
-
-1025
-00:56:30,960 --> 00:56:31,960
-see harms.
-
-1026
-00:56:31,960 --> 00:56:34,400
-Now, some studies find nothing, it's true.
+When you actually look at any other measure of actual mental health problems, you only see harms. Now, some studies find nothing, it's true.
 
 1027
 00:56:34,400 --> 00:56:38,400
-But if there was no effect, if it was, if the null hypothesis here was true, then what
-
-1028
-00:56:38,400 --> 00:56:43,280
-you'd expect is that some studies show a positive effect, a positive correlation or positive
-
-1029
-00:56:43,280 --> 00:56:48,560
-experimental effect, some show a negative, maybe there's some publication bias, so maybe
-
-1030
-00:56:48,560 --> 00:56:50,560
-it shifts towards the negative.
+But if there was no effect, if it was, if the null hypothesis here was true, then what you'd expect is that some studies show a positive effect, a positive correlation or positive experimental effect, some show a negative, maybe there's some publication bias, so maybe it shifts towards the negative.
 
 1031
 00:56:50,560 --> 00:56:54,040
-But you would have a lot of studies where the correlation between heavy social media use
-
-1032
-00:56:54,040 --> 00:56:58,880
-and happiness or mental health was positive, but you don't, you don't find them.
+But you would have a lot of studies where the correlation between heavy social media use and happiness or mental health was positive, but you don't, you don't find them.
 
 1033
 00:56:58,880 --> 00:57:03,160
-And you'd find a lot of experiments where having kids do more social media made them happier,
-
-1034
-00:57:03,160 --> 00:57:04,360
-but you don't.
+And you'd find a lot of experiments where having kids do more social media made them happier, but you don't.
 
 1035
 00:57:04,360 --> 00:57:08,880
@@ -3405,15 +2696,7 @@ So the null hypothesis is definitely false and very confident of that.
 
 1036
 00:57:08,880 --> 00:57:12,440
-And what Zuckerberg was pointing to was a couple of crumbs here and there that allowed
-
-1037
-00:57:12,440 --> 00:57:16,880
-him to say, here's a study I can point to where there is some sign that kids say it makes them
-
-1038
-00:57:16,880 --> 00:57:18,600
-happier and more connected.
+And what Zuckerberg was pointing to was a couple of crumbs here and there that allowed him to say, here's a study I can point to where there is some sign that kids say it makes them happier and more connected.
 
 1039
 00:57:18,600 --> 00:57:20,960
@@ -3425,31 +2708,15 @@ It seems to me that this is a really stratified problem economically.
 
 1041
 00:57:26,120 --> 00:57:31,160
-The people who live in Northern California that invented a lot of these apps send their
-
-1042
-00:57:31,160 --> 00:57:34,880
-kids to Montessori schools where there are absolutely no screens and they play with wooden
-
-1043
-00:57:34,880 --> 00:57:36,400
-blocks all day.
+<mark style="background: #BBFABBA6;">The people who live in Northern California that invented a lot of these apps send their kids to Montessori schools where there are absolutely no screens and they play with wooden blocks all day.</mark>
 
 1044
 00:57:36,400 --> 00:57:43,640
-The people that don't have the luxury of sending their kids to a private school use these
-
-1045
-00:57:43,640 --> 00:57:47,880
-devices it seems to me often as a kind of babysitter.
+The people that don't have the luxury of sending their kids to a private school use these devices it seems to me often as a kind of babysitter.
 
 1046
 00:57:47,880 --> 00:57:53,240
-And if you look at the numbers, the average screen time spent in kids in a single parent
-
-1047
-00:57:53,240 --> 00:57:57,480
-home and in low income families and among black and Hispanic families are higher.
+And if you look at the numbers, the average screen time spent in kids in a single parent home and in low income families and among black and Hispanic families are higher.
 
 1048
 00:57:57,480 --> 00:58:00,000
@@ -3457,19 +2724,11 @@ I'd love for you to comment on that.
 
 1049
 00:58:00,000 --> 00:58:04,440
-The digital divide used to be that rich kids have computers and poor kids don't, so we'd
-
-1050
-00:58:04,440 --> 00:58:07,160
-better get computers to the poor kids.
+The digital divide used to be that rich kids have computers and poor kids don't, so we'd better get computers to the poor kids.
 
 1051
 00:58:07,160 --> 00:58:11,080
-And oh, you know, our heroes come in, the tech companies will provide a Chromebook, will
-
-1052
-00:58:11,080 --> 00:58:15,200
-provide devices for the kids and that will even things out.
+And oh, you know, our heroes come in, the tech companies will provide a Chromebook, will provide devices for the kids and that will even things out.
 
 1053
 00:58:15,200 --> 00:58:19,400
@@ -3477,23 +2736,7 @@ Well, that might have been the digital divide 20 years ago, 30 years ago.
 
 1054
 00:58:19,400 --> 00:58:24,880
-But now the digital divide is that kids with two married college educated parents probably
-
-1055
-00:58:24,880 --> 00:58:29,920
-are trying to put on restrictions, probably are concerned about the mental health effects
-
-1056
-00:58:29,920 --> 00:58:35,120
-and they're struggling and probably failing to really do a lot, but they're trying.
-
-1057
-00:58:35,120 --> 00:58:40,720
-Whereas kids who have a single parent, kids who are from less educated or less wealthy families,
-
-1058
-00:58:40,720 --> 00:58:44,880
-these kids, they have fewer protections, fewer limitations.
+<mark style="background: #FFF3A3A6;">But now the digital divide is that kids with two married college educated parents probably are trying to put on restrictions, probably are concerned about the mental health effects and they're struggling and probably failing to really do a lot, but they're trying.</mark> Whereas kids who have a single parent, kids who are from less educated or less wealthy families, these kids, they have fewer protections, fewer limitations.
 
 1059
 00:58:44,880 --> 00:58:48,120
@@ -3501,11 +2744,7 @@ The mother has to, you know, is using this as a babysitter.
 
 1060
 00:58:48,120 --> 00:58:53,280
-And so yes, the digital divide now is that it's the wealthy kids and the white and the Asian
-
-1061
-00:58:53,280 --> 00:58:56,520
-kids and the kids and married families.
+And so yes, the digital divide now is that it's the wealthy kids and the white and the Asian kids and the kids and married families.
 
 1062
 00:58:56,520 --> 00:59:01,080
@@ -3517,35 +2756,7 @@ I think have the worst of all worlds.
 
 1064
 00:59:07,080 --> 00:59:11,840
-After the break, the most important part of the conversation, John tells us what action
-
-1065
-00:59:11,840 --> 00:59:32,600
-parents can take, stay with us.
-
-1066
-00:59:32,600 --> 00:59:37,520
-The US Virgin Islands invites you to experience the gorgeous islands of St. Thomas, St.
-
-1067
-00:59:37,520 --> 00:59:47,760
-Croix and St. John.
-
-1068
-00:59:47,760 --> 01:00:13,320
-The US Virgin Islands invites you to experience the gorgeous islands of St. Thomas, St. Croix and St. John.
-
-1069
-01:00:13,320 --> 01:00:25,880
-Why not all three?
-
-1070
-01:00:25,880 --> 01:00:42,640
-The US Virgin Islands invites you to experience the gorgeous islands of St. Thomas, St.
-
-1071
-01:00:42,640 --> 01:00:52,440
-Croix and St. Thomas, St. Croix and St. John.
+After the break, the most important part of the conversation, John tells us what action parents can take, stay with us.
 
 1072
 01:00:52,440 --> 01:01:02,440
@@ -3553,43 +2764,23 @@ What can I possibly do about it?
 
 1073
 01:01:02,440 --> 01:01:06,680
-To explain that, I have to first say what the solution is and then we'll talk about how
-
-1074
-01:01:06,680 --> 01:01:09,000
-policy makers can support that.
+To explain that, I have to first say what the solution is and then we'll talk about how policy makers can support that.
 
 1075
 01:01:09,000 --> 01:01:14,240
-The key idea in my book is that we're stuck in a set of collective action problems.
+The key idea in my book is that <mark style="background: #FFB86CA6;">we're stuck in a set of collective action problems</mark>.
 
 1076
 01:01:14,240 --> 01:01:17,760
-The main reason why people are giving their kids a smartphone in fifth grade is because
-
-1077
-01:01:17,760 --> 01:01:22,480
-everybody else in their school is doing it and you don't want your kid to be left out.
+The main reason why people are giving their kids a smartphone in fifth grade is because everybody else in their school is doing it and you don't want your kid to be left out.
 
 1078
 01:01:22,480 --> 01:01:26,120
-Once we see that, we're each doing this because everyone else is and the kids are spending
-
-1079
-01:01:26,120 --> 01:01:29,440
-so much time on these platforms because everyone else is.
+Once we see that, we're each doing this because everyone else is and the kids are spending so much time on these platforms because everyone else is.
 
 1080
 01:01:29,440 --> 01:01:33,720
-The key is we have to act together and what I'm doing in the book is I'm saying, if you're
-
-1081
-01:01:33,720 --> 01:01:36,920
-with me that there's a mental health crisis, if you're with me that it's caused by the
-
-1082
-01:01:36,920 --> 01:01:39,880
-rewiring of childhood, we have to unwire.
+The key is we have to act together and what I'm doing in the book is I'm saying, if you're with me that there's a mental health crisis, if you're with me that it's caused by the rewiring of childhood, we have to unwire.
 
 1083
 01:01:39,880 --> 01:01:41,520
@@ -3597,7 +2788,7 @@ We have to roll it back.
 
 1084
 01:01:41,520 --> 01:01:42,840
-We do that with four norms.
+We do that with<mark style="background: #ADCCFFA6;"> four norms</mark>.
 
 1085
 01:01:42,840 --> 01:01:46,280
@@ -3609,7 +2800,7 @@ Just list the four norms and I'll say where legislators can help.
 
 1087
 01:01:49,360 --> 01:01:52,320
-The first norm, no smartphone before high school.
+The first norm, <mark style="background: #FF5582A6;">no smartphone before high school</mark>.
 
 1088
 01:01:52,320 --> 01:01:54,760
@@ -3621,15 +2812,11 @@ They're just for communication.
 
 1090
 01:01:56,120 --> 01:02:00,440
-The second norm is no social media till 16.
+The second norm is <mark style="background: #FF5582A6;">no social media till 16</mark>.
 
 1091
 01:02:00,440 --> 01:02:03,840
-Parents should say no and it's very hard to say no if your kid is the only one who is
-
-1092
-01:02:03,840 --> 01:02:05,480
-not on a platform.
+Parents should say no and it's very hard to say no if your kid is the only one who is not on a platform.
 
 1093
 01:02:05,480 --> 01:02:09,400
@@ -3637,23 +2824,15 @@ But if a third or a half of the other kids aren't on it, then it's easy to say n
 
 1094
 01:02:09,400 --> 01:02:14,120
-The third norm is phone free schools, which is just a no-brainer.
+The third norm is<mark style="background: #FF5582A6;"> phone free schools</mark>, which is just a no-brainer.
 
 1095
 01:02:14,120 --> 01:02:17,600
-Everything good happens from letting kids keep the phone in the pocket and this is really
-
-1096
-01:02:17,600 --> 01:02:18,600
-happening.
+Everything good happens from letting kids keep the phone in the pocket and this is really happening.
 
 1097
 01:02:18,600 --> 01:02:21,320
-Schools are really moving this way because the teachers all hate it, the administrators all
-
-1098
-01:02:21,320 --> 01:02:22,320
-hate it.
+Schools are really moving this way because the teachers all hate it, the administrators all hate it.
 
 1099
 01:02:22,320 --> 01:02:24,080
@@ -3661,23 +2840,15 @@ The fourth norm is the only one that's actually hard.
 
 1100
 01:02:24,080 --> 01:02:30,800
-The fourth one is more independence, free play and responsibility in the real world.
+The fourth one is <mark style="background: #FF5582A6;">more independence, free play and responsibility in the real world</mark>.
 
 1101
 01:02:30,800 --> 01:02:35,360
-Because if we're delaying smartphones and social media until high school, we can't just
-
-1102
-01:02:35,360 --> 01:02:38,360
-expect our middle school kids to just sit home doing nothing.
+Because if we're delaying smartphones and social media until high school, we can't just expect our middle school kids to just sit home doing nothing.
 
 1103
 01:02:38,360 --> 01:02:41,360
-We have to let them out to play with each other again and have adventures and have a
-
-1104
-01:02:41,360 --> 01:02:44,040
-childhood the way most of their parents did.
+We have to let them out to play with each other again and have adventures and have a childhood the way most of their parents did.
 
 1105
 01:02:44,040 --> 01:02:46,240
@@ -3685,11 +2856,7 @@ So those are the four norms.
 
 1106
 01:02:46,240 --> 01:02:50,200
-Any talent, any community that does the four, I can almost guarantee that the rates of
-
-1107
-01:02:50,200 --> 01:02:52,560
-mental illness will come down within two years.
+Any talent, any community that does the four, I can almost guarantee that the rates of mental illness will come down within two years.
 
 1108
 01:02:52,560 --> 01:02:54,280
@@ -3705,27 +2872,15 @@ No social media till 16.
 
 1111
 01:02:58,520 --> 01:03:03,920
-Congress passed a law in 1997 or 8 saying that you have to be 13 in order to sign up for
-
-1112
-01:03:03,920 --> 01:03:07,360
-any service that takes your data and it's not enforced.
+Congress passed a law in 1997 or 8 saying that you have to be 13 in order to sign up for any service that takes your data and it's not enforced.
 
 1113
 01:03:07,360 --> 01:03:12,000
-And the biggest thing Congress could do would be to raise the age to 16 and require the
-
-1114
-01:03:12,000 --> 01:03:14,200
-companies to enforce it.
+And the biggest thing Congress could do would be to raise the age to 16 and require the companies to enforce it.
 
 1115
 01:03:14,200 --> 01:03:18,480
-We don't let kids into bars and casinos and strip clubs and we don't say, well, it's the
-
-1116
-01:03:18,480 --> 01:03:20,000
-parents job to enforce that.
+<mark style="background: #FF5582A6;">We don't let kids into bars and casinos and strip clubs and we don't say, well, it's the parents job to enforce that.</mark>
 
 1117
 01:03:20,000 --> 01:03:22,920
@@ -3749,15 +2904,7 @@ It's not working.
 
 1122
 01:03:27,080 --> 01:03:30,720
-Unless we keep our kids away from the internet, we can't keep our kids away from social media
-
-1123
-01:03:30,720 --> 01:03:35,520
-unless the government helps us by making the companies do something to check age, to do
-
-1124
-01:03:35,520 --> 01:03:36,520
-age verification.
+Unless we keep our kids away from the internet, we can't keep our kids away from social media unless the government helps us by making the companies do something to check age, to do age verification.
 
 1125
 01:03:36,520 --> 01:03:37,680
@@ -3785,15 +2932,7 @@ And the second are the technologists who are defensive of this technology.
 
 1131
 01:03:56,640 --> 01:04:01,440
-You know, Mark Andreessen, the famed venture capitalist recently tweeted that banning phones
-
-1132
-01:04:01,440 --> 01:04:05,640
-in the internet for kids would mean that everything they get outside the family is from
-
-1133
-01:04:05,640 --> 01:04:09,640
-official authority figures, which would make everything worse.
+You know, Mark Andreessen, the famed venture capitalist recently tweeted that banning phones in the internet for kids would mean that everything they get outside the family is from official authority figures, which would make everything worse.
 
 1134
 01:04:09,640 --> 01:04:12,080
@@ -3845,19 +2984,11 @@ That's when they get into the other really bad stuff I'm told.
 
 1146
 01:04:41,960 --> 01:04:45,760
-Especially happens at night, late at night when a girl is in her room alone with her phone
-
-1147
-01:04:45,760 --> 01:04:48,000
-for six hours, instead of sleeping.
+Especially happens at night, late at night when a girl is in her room alone with her phone for six hours, instead of sleeping.
 
 1148
 01:04:48,000 --> 01:04:52,440
-So sure, you can make a strong man argument saying, you know, some people want to ban the
-
-1149
-01:04:52,440 --> 01:04:54,120
-internet for everyone under 18.
+So sure, you can make a strong man argument saying, you know, some people want to ban the internet for everyone under 18.
 
 1150
 01:04:54,120 --> 01:04:55,120
@@ -3869,11 +3000,7 @@ Nobody wants to do that.
 
 1152
 01:04:56,840 --> 01:05:01,440
-What I want is an internet that has some guardrails so that kids can just walk into the most
-
-1153
-01:05:01,440 --> 01:05:05,400
-disgusting pornographic sites at any age.
+What I want is an internet that has some guardrails so that kids can just walk into the most disgusting pornographic sites at any age.
 
 1154
 01:05:05,400 --> 01:05:09,200
@@ -3901,11 +3028,7 @@ But as you said earlier in this conversation, they're not actually banning phone
 
 1160
 01:05:27,120 --> 01:05:31,040
-I don't want to be a helicopter parent, but I really, really want to stand by these
-
-1161
-01:05:31,040 --> 01:05:41,040
-foreign dorms that you've laid out.
+I don't want to be a helicopter parent, but I really, really want to stand by these foreign dorms that you've laid out.
 
 1162
 01:05:41,040 --> 01:05:43,040
@@ -3925,11 +3048,7 @@ You go to the tab about the book.
 
 1166
 01:05:49,040 --> 01:05:55,040
-We have all kinds of resources, including the text of a message you can send to the principal
-
-1167
-01:05:55,040 --> 01:05:56,040
-administrator of the school.
+We have all kinds of resources, including the text of a message you can send to the principal administrator of the school.
 
 1168
 01:05:56,040 --> 01:05:58,320
@@ -3965,19 +3084,11 @@ And whenever I speak to a principal about this, they give the same answer.
 
 1176
 01:06:10,720 --> 01:06:14,320
-Because some of the parents will freak out, they'll get so upset, and so we just can't do
-
-1177
-01:06:14,320 --> 01:06:15,320
-it.
+Because some of the parents will freak out, they'll get so upset, and so we just can't do it.
 
 1178
 01:06:15,320 --> 01:06:18,840
-Well, yes, there are some parents who will freak out because they think it's their God-given
-
-1179
-01:06:18,840 --> 01:06:22,040
-right to communicate with their child while he's in math class.
+Well, yes, there are some parents who will freak out because they think it's their God-given right to communicate with their child while he's in math class.
 
 1180
 01:06:22,040 --> 01:06:23,720
@@ -3985,51 +3096,23 @@ And it's not their God-given right.
 
 1181
 01:06:23,720 --> 01:06:27,800
-The school needs to educate the kids, and it can't do it if the kids are attending to
-
-1182
-01:06:27,800 --> 01:06:29,720
-their phones instead of the teachers.
+The school needs to educate the kids, and it can't do it if the kids are attending to their phones instead of the teachers.
 
 1183
 01:06:29,720 --> 01:06:34,320
-So, but what the leaders need, and this is just basic politics, what they need is to hear
-
-1184
-01:06:34,320 --> 01:06:37,480
-from the majority that want something done.
+So, but what the leaders need, and this is just basic politics, what they need is to hear from the majority that want something done.
 
 1185
 01:06:37,480 --> 01:06:40,960
-And most parents, I believe, do, or they certainly will once they understand what this is
-
-1186
-01:06:40,960 --> 01:06:42,280
-doing to their kids.
+And most parents, I believe, do, or they certainly will once they understand what this is doing to their kids.
 
 1187
 01:06:42,280 --> 01:06:47,520
-So a simple step you can take is just start a text thread with at least one of the parents
-
-1188
-01:06:47,520 --> 01:06:48,840
-of each of your kids' best friends.
+So a simple step you can take is just start a text thread with at least one of the parents of each of your kids' best friends.
 
 1189
 01:06:48,840 --> 01:06:52,280
-If your kid has a group of three or four kids that hang out together, start a text thread
-
-1190
-01:06:52,280 --> 01:06:57,480
-saying, hey, I heard this podcast with Barry Weiss and John Hyde, and they said that
-
-1191
-01:06:57,480 --> 01:07:02,120
-if we all should delay, not till eighth grade, eighth grade is too early, we should all delay
-
-1192
-01:07:02,120 --> 01:07:03,640
-until high school.
+If your kid has a group of three or four kids that hang out together, start a text thread saying, hey, I heard this podcast with Barry Weiss and John Hyde, and they said that if we all should delay, not till eighth grade, eighth grade is too early, we should all delay until high school.
 
 1193
 01:07:03,640 --> 01:07:04,640
@@ -4061,15 +3144,7 @@ So we really just need to coordinate and we can solve this problem.
 
 1200
 01:07:23,040 --> 01:07:29,400
-But when push comes to shove, I suspect that certain parents in theory will pay lip service
-
-1201
-01:07:29,400 --> 01:07:33,560
-to everything you've been talking about, but will hesitate to actually do it because they're
-
-1202
-01:07:33,560 --> 01:07:36,480
-scared of pissing their kid off.
+<mark style="background: #FFF3A3A6;">But when push comes to shove, I suspect that certain parents in theory will pay lip service to everything you've been talking about, but will hesitate to actually do it because they're scared of pissing their kid off.</mark>
 
 1203
 01:07:36,480 --> 01:07:41,320
@@ -4085,59 +3160,19 @@ And that is true if you are the only parent doing it.
 
 1206
 01:07:46,760 --> 01:07:51,080
-There was a review of the anxious generation in the Times in the UK, a very positive review
-
-1207
-01:07:51,080 --> 01:07:52,760
-by Helen Rumbolo.
+There was a review of the anxious generation in the Times in the UK, a very positive review by Helen Rumbolo.
 
 1208
 01:07:52,760 --> 01:07:54,120
-And so here's how she ended it.
-
-1209
-01:07:54,120 --> 01:07:59,140
-She said, when I caught one of my teenagers between squirrels and asked her, would you have
-
-1210
-01:07:59,140 --> 01:08:02,160
-liked a social media ban until you were 16?
-
-1211
-01:08:02,160 --> 01:08:04,880
-She asked, would the ban affect everyone?
-
-1212
-01:08:04,880 --> 01:08:06,520
-And she paused to think.
-
-1213
-01:08:06,520 --> 01:08:10,280
-Then she said, yes, I'd have liked that, she said.
-
-1214
-01:08:10,280 --> 01:08:15,440
-And then the journalist says it was an IRL moment that made me sadder than almost anything
-
-1215
-01:08:15,440 --> 01:08:17,720
-I'd read.
+And so here's how she ended it. She said, when I caught one of my teenagers between squirrels and asked her, would you have liked a social media ban until you were 16? She asked, would the ban affect everyone? And she paused to think. Then she said, yes, I'd have liked that, she said. And then the journalist says it was an IRL moment that made me sadder than almost anything I'd read.
 
 1216
 01:08:17,720 --> 01:08:20,920
-Because the young people themselves don't want to be trapped, but they're trapped.
-
-1217
-01:08:20,920 --> 01:08:22,480
-They feel trapped.
+Because <mark style="background: #FFF3A3A6;">the young people themselves don't want to be trapped, but they're trapped. They feel trapped.</mark>
 
 1218
 01:08:22,480 --> 01:08:28,560
-And so a ban, or rather, I should just say, raising the age to 16 and enforcing it would
-
-1219
-01:08:28,560 --> 01:08:29,560
-free them.
+And so a ban, or rather, I should just say, raising the age to 16 and enforcing it would free them.
 
 1220
 01:08:29,560 --> 01:08:32,720
@@ -4145,111 +3180,23 @@ And that's why we're calling the movement free the anxious generation.
 
 1221
 01:08:32,720 --> 01:08:37,800
-You write that kids in America today and in the Westward generally are coming of age
-
-1222
-01:08:37,800 --> 01:08:45,800
-in a confusing, place-less, a-historical maelstrom of 30-second stories curated by algorithms designed
-
-1223
-01:08:45,800 --> 01:08:51,520
-to mesmerize them without solid knowledge of the past and the filtering of good ideas
-
-1224
-01:08:51,520 --> 01:08:52,520
-from bad.
+You write that kids in America today and in the Westward generally are coming of age in a confusing, place-less, a-historical maelstrom of 30-second stories curated by algorithms designed to mesmerize them without solid knowledge of the past and the filtering of good ideas from bad.
 
 1225
 01:08:52,520 --> 01:08:58,000
-A process that plays out over many generations, young people will be more prone to believe
-
-1226
-01:08:58,000 --> 01:09:03,640
-whatever terrible ideas become popular around them, which might explain why videos showing
-
-1227
-01:09:03,640 --> 01:09:08,920
-young people reacting positively to a psalm of bin Laden's thoughts about America were
-
-1228
-01:09:08,920 --> 01:09:12,240
-trending on TikTok last fall.
+A process that plays out over many generations, young people will be more prone to believe whatever terrible ideas become popular around them, which might explain why videos showing young people reacting positively to a psalm of bin Laden's thoughts about America were trending on TikTok last fall.
 
 1229
 01:09:12,240 --> 01:09:19,120
-Talk to us about is the last thought, what's at stake here if we don't change course?
-
-1230
-01:09:19,120 --> 01:09:27,120
-What's at stake is the loss of a generation or two or three to many things, the loss of
-
-1231
-01:09:27,120 --> 01:09:29,920
-their connection to everything that came before.
+Talk to us about is the last thought, what's at stake here if we don't change course? What's at stake is the loss of a generation or two or three to many things, the loss of their connection to everything that came before.
 
 1232
 01:09:29,920 --> 01:09:32,800
-So my first book was The Happiness Hypothesis.
-
-1233
-01:09:32,800 --> 01:09:37,600
-It was about ancient wisdom and all that ancient civilizations and societies learned about how
-
-1234
-01:09:37,600 --> 01:09:40,400
-to live a good life and have a good society.
-
-1235
-01:09:40,400 --> 01:09:47,240
-And we learned all kinds of lessons in the 20th century about communism, fascism, about economics.
-
-1236
-01:09:47,240 --> 01:09:51,360
-We've learned an awful lot as a species and as a culture.
-
-1237
-01:09:51,360 --> 01:09:56,080
-And if kids grow up on social media, they don't have any room in their input streams for any
-
-1238
-01:09:56,080 --> 01:09:57,080
-of that.
-
-1239
-01:09:57,080 --> 01:09:59,640
-They don't know it really anything that happened before 2010.
-
-1240
-01:09:59,640 --> 01:10:04,360
-And so they're growing up without roots, without any historical and any inheritance from
-
-1241
-01:10:04,360 --> 01:10:05,360
-the past.
-
-1242
-01:10:05,360 --> 01:10:10,120
-So we're talking about the loss of Western world civilization and culture.
-
-1243
-01:10:10,120 --> 01:10:11,120
-That's bad enough.
-
-1244
-01:10:11,120 --> 01:10:16,800
-We're also talking about a generation that has no time to actually do anything that goes
-
-1245
-01:10:16,800 --> 01:10:18,120
-outside the bubble.
+So my first book was The Happiness Hypothesis. It was about ancient wisdom and all that ancient civilizations and societies learned about how to live a good life and have a good society. And we learned all kinds of lessons in the 20th century about communism, fascism, about economics. We've learned an awful lot as a species and as a culture. And if kids grow up on social media, they don't have any room in their input streams for any of that. They don't know it really anything that happened before 2010. <mark style="background: #ADCCFFA6;">And so they're growing up without roots, without any historical and any inheritance from the past. So we're talking about the loss of Western world civilization and culture. </mark>That's bad enough. We're also talking about a generation that has no time to actually do anything that goes outside the bubble.
 
 1246
 01:10:18,120 --> 01:10:22,680
-So if you have to spend, the Gallaudet is nine hours a day on your phone, your other screens,
-
-1247
-01:10:22,680 --> 01:10:24,360
-there's not time for anything else.
+So if you have to spend, the Gallaudet is nine hours a day on your phone, your other screens, there's not time for anything else.
 
 1248
 01:10:24,360 --> 01:10:26,960
@@ -4257,23 +3204,7 @@ And if you're walking down the street, you're listening to something.
 
 1249
 01:10:26,960 --> 01:10:27,960
-There's no time to think.
-
-1250
-01:10:27,960 --> 01:10:28,960
-There's no time to daydream.
-
-1251
-01:10:28,960 --> 01:10:30,560
-There's no time to be bored.
-
-1252
-01:10:30,560 --> 01:10:34,640
-And so if you have no attention to give, no time to do anything, you're not going to do
-
-1253
-01:10:34,640 --> 01:10:36,160
-anything.
+<mark style="background: #FFB86CA6;">There's no time to think. There's no time to daydream. There's no time to be bored. And so if you have no attention to give, no time to do anything, you're not going to do anything.</mark>
 
 1254
 01:10:36,160 --> 01:10:40,520
@@ -4305,11 +3236,7 @@ Now maybe AI will make up for that.
 
 1261
 01:10:55,040 --> 01:10:59,280
-Maybe AI will be so creative that we can afford to have all human beings from now on just
-
-1262
-01:10:59,280 --> 01:11:03,200
-sit back and consume and not think anything, not do anything productive.
+Maybe AI will be so creative that we can afford to have all human beings from now on just sit back and consume and not think anything, not do anything productive.
 
 1263
 01:11:03,200 --> 01:11:05,480
@@ -4325,19 +3252,11 @@ I'd rather end hopefully.
 
 1266
 01:11:10,720 --> 01:11:16,080
-But if we don't act, if we just let it go as it is, I don't see how this turns around
-
-1267
-01:11:16,080 --> 01:11:17,200
-by itself.
+But if we don't act, if we just let it go as it is, I don't see how this turns around by itself.
 
 1268
 01:11:17,200 --> 01:11:22,440
-We would have a generation that is not really able to take on the massive challenges that
-
-1269
-01:11:22,440 --> 01:11:23,520
-we left them.
+We would have a generation that is not really able to take on the massive challenges that we left them.
 
 1270
 01:11:23,520 --> 01:11:27,120
@@ -4413,19 +3332,11 @@ There's no political divide.
 
 1288
 01:12:06,400 --> 01:12:09,400
-There's really no organized opposition other than of course that meta is some sure
-
-1289
-01:12:09,400 --> 01:12:15,360
-of our all kinds of lobbyists, but other than that, there's really not political opposition.
+There's really no organized opposition other than of course that meta is some sure of our all kinds of lobbyists, but other than that, there's really not political opposition.
 
 1290
 01:12:15,360 --> 01:12:19,960
-And the kids themselves, not that all would vote for it right away, but they're really dissatisfied
-
-1291
-01:12:19,960 --> 01:12:22,440
-with what they have.
+And the kids themselves, not that all would vote for it right away, but they're really dissatisfied with what they have.
 
 1292
 01:12:22,440 --> 01:12:26,640
@@ -4441,11 +3352,7 @@ So I actually think that we're going to be successful.
 
 1295
 01:12:31,800 --> 01:12:39,320
-I think that by the end of 2025, norms about 10-year-olds spending their day scrolling
-
-1296
-01:12:39,320 --> 01:12:44,760
-on a screen like that's going to be seen as an incredibly destructive, sad thing to do.
+I think that by the end of 2025, norms about 10-year-olds spending their day scrolling on a screen like that's going to be seen as an incredibly destructive, sad thing to do.
 
 1297
 01:12:44,760 --> 01:12:45,760
@@ -4453,11 +3360,7 @@ And some will still do it.
 
 1298
 01:12:45,760 --> 01:12:49,160
-I'm not saying we'll get to zero, but I think right now the norm is you kind of have to do
-
-1299
-01:12:49,160 --> 01:12:50,800
-that if you want to keep up.
+I'm not saying we'll get to zero, but I think right now the norm is you kind of have to do that if you want to keep up.
 
 1300
 01:12:50,800 --> 01:12:51,800
@@ -4465,11 +3368,7 @@ We're going to free them.
 
 1301
 01:12:51,800 --> 01:12:56,840
-We're going to free the anxious generation from the need to constantly, constantly be online
-
-1302
-01:12:56,840 --> 01:12:59,280
-checking up on everyone else.
+We're going to free the anxious generation from the need to constantly, constantly be online checking up on everyone else.
 
 1303
 01:12:59,280 --> 01:13:02,200
