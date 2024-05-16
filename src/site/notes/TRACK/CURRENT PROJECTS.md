@@ -41,7 +41,7 @@
 
 # Web / Development
 - https://tailwindcss.com/
-- [ ] https://astro.build/ --> [[PROJECTS/MEED Project\|MEED Project]] 🛫 2024-05-14 
+- [ ] https://astro.build/ --> [[PROJECTS/MEED Project\|MEED Project]] 🛫 2024-05-16
 - https://www.markdownguide.org/cheat-sheet/
 - [[TECHNOLOGY/DEV/ohmyposh\|ohmyposh]]
 - https://tina.io/
