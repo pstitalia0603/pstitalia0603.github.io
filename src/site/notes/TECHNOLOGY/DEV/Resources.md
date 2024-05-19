@@ -26,6 +26,7 @@ https://ohmyposh.dev/
 - https://pirateipsum.me/
 - http://officeipsum.com/
 - https://loremipsum.ro/
+- https://www.justinmind.com/blog/awesome-lorem-ipsum-alternatives/
 
 # Fonts
 - https://fontshub.pro/
