@@ -10,7 +10,8 @@
 [[TECHNOLOGY/DEV/Resources\|Resources]]
 
 
-# [[TECHNOLOGY/DEV/HTML Email Resources\|HTML Email Resources]] 
+# HTML Email Resources 
+- https://useblocks.io/
 
 # Graphic Design
 - Brochure in Affinity Designer
