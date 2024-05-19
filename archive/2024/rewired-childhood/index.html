@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Syncthing linux</title>
+<title>Rewired Childhood</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -116,7 +116,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/rewired-childhood/">Rewired Childhood </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -421,7 +421,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/linux/syncthing-linux/">Syncthing linux </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/linux/syncthing-linux/">Syncthing linux </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -535,67 +535,21 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Syncthing linux</h1>
+<h1 data-note-icon="">Rewired Childhood</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#linux
+#ToListen
 </a>
 <a class="tag" onclick="toggleTagSearch(this)">
-#syncthing
+#podcast
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-04 13:55"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-04 13:56"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-26T06:07:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-26T06:08:00"></span></div></div></div>
 </header>
-<p><a class="internal-link" target="" data-note-icon="" href="/technology/linux/syncthing-on-raspberry-pi/">Syncthing on Raspberry Pi</a></p>
-<h1 id="a-href-https-apt-syncthing-net-target-blank-class-external-link-syncthing-a" tabindex="-1"><a href="https://apt.syncthing.net/" target="_blank" class="external-link">Syncthing</a></h1>
-<p><a href="https://pimylifeup.com/raspberry-pi-syncthing/" target="_blank" class="external-link">https://pimylifeup.com/raspberry-pi-syncthing/</a></p>
-<p><a href="https://www.linuxfordevices.com/tutorials/ubuntu/syncthing-install-and-setup" target="_blank" class="external-link">https://www.linuxfordevices.com/tutorials/ubuntu/syncthing-install-and-setup</a></p>
-<p><strong>find configuration file: syncthing -paths</strong></p>
-<h2 id="debian-ubuntu-packages" tabindex="-1">Debian/Ubuntu Packages</h2>
-<p>To allow the system to check the packages authenticity, you need to provide the release key.</p>
-<p># Add the release PGP keys:<br>
-<strong>sudo mkdir -p /etc/apt/keyrings<br>
-sudo curl -L -o /etc/apt/keyrings/syncthing-archive-keyring.gpg <a href="https://syncthing.net/release-key.gpg" target="_blank" class="external-link">https://syncthing.net/release-key.gpg</a></strong></p>
-<p>The <code>stable</code> channel is updated with stable release builds, usually every first Tuesday of the month.</p>
-<p># Add the &quot;stable&quot; channel to your APT sources:<br>
-<strong>echo &quot;deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] <a href="https://apt.syncthing.net/" target="_blank" class="external-link">https://apt.syncthing.net/</a> syncthing stable&quot; | sudo tee /etc/apt/sources.list.d/syncthing.list</strong></p>
-<p>The <code>candidate</code> channel is updated with release candidate builds, usually every second Tuesday of the month. These predate the corresponding stable builds by about three weeks.</p>
-<p># Add the &quot;candidate&quot; channel to your APT sources:<br>
-<strong>echo &quot;deb [signed-by=/etc/apt/keyrings/syncthing-archive-keyring.gpg] <a href="https://apt.syncthing.net/" target="_blank" class="external-link">https://apt.syncthing.net/</a> syncthing candidate&quot; | sudo tee /etc/apt/sources.list.d/syncthing.list</strong></p>
-<p>And finally.</p>
-<p># Update and install syncthing:<br>
-<strong>sudo apt-get update<br>
-sudo apt-get install syncthing</strong></p>
-<hr>
-<h2 id="troubleshooting" tabindex="-1">Troubleshooting</h2>
-<h2 id="distribution-package-preferred-over-this-version" tabindex="-1">Distribution Package Preferred Over This Version</h2>
-<p>To make sure the system packages do not take preference over those in this repository, you need to adjust the priority/preference.</p>
-<p># Increase preference of Syncthing's packages (&quot;pinning&quot;)<br>
-<strong>printf &quot;Package: *\nPin: origin <a href="http://apt.syncthing.net" target="_blank" class="external-link">apt.syncthing.net</a>\nPin-Priority: 990\n&quot; | sudo tee /etc/apt/preferences.d/syncthing.pref</strong></p>
-<h2 id="https-method-driver-missing" tabindex="-1">HTTPS Method Driver Missing</h2>
-<p>Depending on your distribution, you may see an error similar to the following when running <code>apt-get</code>:</p>
-<p>E: The method driver /usr/lib/apt/methods/https could not be found.<br>
-N: Is the package apt-transport-https installed?<br>
-E: Failed to fetch <a href="https://apt.syncthing.net/dists/syncthing/InRelease" target="_blank" class="external-link">https://apt.syncthing.net/dists/syncthing/InRelease</a></p>
-<p>If so, please install the <code>apt-transport-https</code> package and try again:</p>
-<p><strong>sudo apt-get install apt-transport-https</strong></p>
-<h2 id="server-certificate-verification-failed" tabindex="-1">Server Certificate Verification Failed</h2>
-<p>Especially for older distributions, your system TLS certificate store might be outdated. Since October 2021, a newer Let's Encrypt root certificate must be installed, or you may see an error similar to the following when running <code>apt-get</code>:</p>
-<p>E: Failed to fetch <a href="https://apt.syncthing.net/dists/syncthing/stable/binary-armhf/Packages" target="_blank" class="external-link">https://apt.syncthing.net/dists/syncthing/stable/binary-armhf/Packages</a><br>
-server certificate verification failed. CAfile: /etc/ssl/certs/ca-certificates.crt CRLfile: none<br>
-E: Some index files failed to download. They have been ignored, or old ones used instead.</p>
-<p>Please make sure you have the latest version of the <code>ca-certificates</code> package and try again:</p>
-<p><strong>sudo apt-get update<br>
-sudo apt-get install ca-certificates</strong></p>
-<hr>
-<h3 id="auto-on-w-indows-syncthing" tabindex="-1">Auto on WIndows - Syncthing</h3>
-<p><a href="https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd" target="_blank" class="external-link">https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd</a></p>
-<p>REFERENCE:<br>
-<a href="https://viniciusnevescosta.medium.com/syncing-and-backing-up-your-thoughts-with-obsidian-syncthing-and-gitwatch-a55670b2b63f" target="_blank" class="external-link">https://viniciusnevescosta.medium.com/syncing-and-backing-up-your-thoughts-with-obsidian-syncthing-and-gitwatch-a55670b2b63f</a></p>
-<p><a href="https://snippets.page/posts/sync-obsidian-notes-between-pc-and-android-with-syncthing/" target="_blank" class="external-link">https://snippets.page/posts/sync-obsidian-notes-between-pc-and-android-with-syncthing/</a></p>
-<p><a href="https://prakashjoshipax.com/free-obsidian-sync/" target="_blank" class="external-link">https://prakashjoshipax.com/free-obsidian-sync/</a></p>
-<p><a href="https://facedragons.com/foss/sync-obsidian-across-devices/" target="_blank" class="external-link">https://facedragons.com/foss/sync-obsidian-across-devices/</a></p>
+<p>Honestly with Bari Weiss: Jonathan Haidt: Smartphones Rewired Childhood. Here's How to Fix It.</p>
+<p>Episode webpage: <a href="https://www.bariweiss.com/" target="_blank" class="external-link">https://www.bariweiss.com/</a></p>
+<p>Media file: <a href="https://pdst.fm/e/mgln.ai/track/verifi.podscribe.com/rss/p/chrt.fm/track/384D27/pscrb.fm/rss/p/traffic.megaphone.fm/RSV3188865547.mp3?updated=1711480150" target="_blank" class="external-link">https://pdst.fm/e/mgln.ai/track/verifi.podscribe.com/rss/p/chrt.fm/track/384D27/pscrb.fm/rss/p/traffic.megaphone.fm/RSV3188865547.mp3?updated=1711480150</a></p>
 </main>
 <aside>
 <div class="sidebar">
@@ -628,40 +582,10 @@ sudo apt-get install ca-certificates</strong></p>
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
 </div>
 </div>
-<div class="toc">
-<div class="toc-title-container">
-<div class="toc-title">
-On this page
-</div>
-</div>
-<div class="toc-container">
-<nav class="toc">
-<ol>
-<li><a href="#a-href-https-apt-syncthing-net-target-blank-class-external-link-syncthing-a">Syncthing</a>
-<ol>
-<li><a href="#debian-ubuntu-packages">Debian/Ubuntu Packages</a>
-</li>
-<li><a href="#troubleshooting">Troubleshooting</a>
-</li>
-<li><a href="#distribution-package-preferred-over-this-version">Distribution Package Preferred Over This Version</a>
-</li>
-<li><a href="#https-method-driver-missing">HTTPS Method Driver Missing</a>
-</li>
-<li><a href="#server-certificate-verification-failed">Server Certificate Verification Failed</a>
-<ol>
-<li><a href="#auto-on-w-indows-syncthing">Auto on WIndows - Syncthing</a>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-</nav>
-</div>
-</div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><a href="/technology/linux/syncthing-on-raspberry-pi/" data-note-icon="" class="backlink">Syncthing on Raspberry Pi</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
