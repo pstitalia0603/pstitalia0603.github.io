@@ -13,10 +13,6 @@
 # HTML Email Resources 
 - https://useblocks.io/
 
-# Graphic Design
-- Brochure in Affinity Designer
-- Style guide
-
 # Databases / BI tools
 - [[TECHNOLOGY/DEV/Apache Superset\|Apache Superset]]  (https://preset.io/)
 - https://dbeaver.io/download/
@@ -28,25 +24,16 @@
 - [CiviCRM](https://civicrm.org/)
 - https://www.odoo.com/app/crm
 
-# Project Management
-- event management (gantt chart?)
-- list of annual events and procedures
-	- responsibilities
-
-# Office Workflow
-- mail merges
-- online forms
-
 # Dynamic Calendar	
 - [[PROJECTS/FULLCALENDAR\|FULLCALENDAR]]
 
 # Web / Development
 - https://tailwindcss.com/
-- https://astro.build/ --> [[PROJECTS/MEED Project\|MEED Project]] 
+- https://astro.build/ 
 - https://www.markdownguide.org/cheat-sheet/
 - [[TECHNOLOGY/DEV/ohmyposh\|ohmyposh]]
 - https://tina.io/
 - https://picocss.com/
-- useblocks.io [[WORK/STP/PROJECTS/St. Patrick's Projects#^34KDWW1\|St. Patrick's Projects#^34KDWW1]]
+
 
 
