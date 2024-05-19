@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/podcasts/","tags":["Interests"],"noteIcon":"","created":"2024-04-02 14:27","updated":"2024-04-02 14:28"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/05-May/2024-05-16\|2024-05-16]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/05-May/2024-05-18\|2024-05-18]]
 
 
 [[TRACK/INTERESTS\|INTERESTS]]
@@ -12,7 +12,6 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/05-May/2024-05-16\|2024-05-16]]
 | [[ARCHIVE/2024/Smartphones Rewired Childhood. Here's How to Fix It.\|Smartphones Rewired Childhood. Here's How to Fix It.]]                             | 2024-05-13 | 5      | Y          |
 | [[ARCHIVE/2024/Nicole Avant on Tragedy, Forgiveness, and Thinking Free\|Nicole Avant on Tragedy, Forgiveness, and Thinking Free]]                       | 2024-04-18 | 5      | \-         |
 | [[ARCHIVE/2024/How the Working Class Became America’s Second Class\|How the Working Class Became America’s Second Class]]                               | 2024-04-02 | 5      | \-         |
-| [[ARCHIVE/2024/Rewired Childhood\|Rewired Childhood]]                                                                                                   | 2024-03-26 | 5      | \-         |
 | [[ARCHIVE/2024/Why the Kids Aren't Alright\|Why the Kids Aren't Alright]]                                                                               | 2024-02-27 | 5      | \-         |
 | [[ARCHIVE/2024/Covid Failures\|Covid Failures]]                                                                                                         | 2024-01-18 | 5      | \-         |
 | [[ARCHIVE/2024/Why Half of American Babies are Born to Unmarried Couples\|Why Half of American Babies are Born to Unmarried Couples]]                   | 2023-12-26 | 5      | \-         |
