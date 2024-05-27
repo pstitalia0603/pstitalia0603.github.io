@@ -1,11 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/track/podcasts/","tags":["Interests"],"noteIcon":"","created":"2024-04-02 14:27","updated":"2024-04-02 14:28"}
+dg-publish: true
+dg-home: false
+tags:
+  - Interests
+date_created: 2024-04-02 14:27
+date_modified: 2024-04-02 14:28
 ---
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/05-May/2024-05-27\|2024-05-27]]
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/05-May/2024-05-18\|2024-05-18]]
 
-
-[[TRACK/INTERESTS\|INTERESTS]]
+[[TRACK/Interests\|INTERESTS]]
 
 | File                                                                                                                                                       | DATE       | rating | transcript |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------ | ---------- |
