@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/technology/linux/linux-samba-server-on-windows-11/","tags":["linux"],"noteIcon":"","created":"2024-03-21T20:17:00","updated":"2024-03-21 20:17"}
+dg-publish: true
+dg-home: false
+tags:
+  - linux
+date_created: 2024-03-21T20:17:00
+date_modified: 2024-03-21 20:17
+date_completed: 2024-03-22T06:41:00
 ---
-
 [[TECHNOLOGY/LINUX/Share external drive with Samba on Raspberry Pi\|Share external drive with Samba on Raspberry Pi]]
 [[TECHNOLOGY/LINUX/UFW firewall allow Samba inbound from Windows\|UFW firewall allow Samba inbound from Windows]]
 
