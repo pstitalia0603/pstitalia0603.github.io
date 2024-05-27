@@ -1,7 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/data/date-table-and-fiscal-year-column/","tags":["Power_bi","Power_query","m-code","dax","Data"],"noteIcon":"","created":"2023-12-03T10:12:00","updated":"2024-03-01 19:45"}
+dg-publish: true
+dg-home: false
+date_created: 2023-12-03T10:12:00
+date_modified: 2024-03-01 19:45
+tags:
+  - Power_bi
+  - Power_query
+  - m-code
+  - dax
+  - Data
 ---
-
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 FISCAL YEAR M CODE
