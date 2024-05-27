@@ -1,8 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/technology/dev/apache-superset/","tags":["Data","Projects"],"noteIcon":"","created":"2024-04-27 3:27:06 pm","updated":"2024-04-27 3:27:53 pm"}
+dg-home: false
+dg-publish: true
+tags:
+  - Data
+  - Projects
+date_created: 2024-04-27 3:27:06 pm
+date_modified: 2024-04-27 3:27:53 pm
+date_completed: 2024-05-01T20:21:00
 ---
-
-[[TRACK/CURRENT PROJECTS\|CURRENT PROJECTS]]
+[[TRACK/Current Projects\|CURRENT PROJECTS]]
 
 - [x] Superset - Install in docker image: https://docs.docker.com/engine/install/debian/ 🛫  ✅ 2024-04-30
 https://superset.apache.org/docs/intro
