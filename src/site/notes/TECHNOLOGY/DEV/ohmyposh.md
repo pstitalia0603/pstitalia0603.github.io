@@ -1,8 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/technology/dev/ohmyposh/","tags":["Projects","code"],"noteIcon":"","created":"2024-04-28 11:32:43 am","updated":"2024-04-28T11:32:50"}
+dg-home: false
+dg-publish: true
+tags:
+  - Projects
+  - code
+date_created: 2024-04-28 11:32:43 am
+date_modified: 2024-04-28T11:32:50
+date_completed: 2024-04-29T18:20:00
 ---
-
-[[TRACK/CURRENT PROJECTS\|CURRENT PROJECTS]]
+[[TRACK/Current Projects\|CURRENT PROJECTS]]
 
 https://ohmyposh.dev/docs/installation/prompt
 
