@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Best Breakfast casserole</title>
+<title>Read Line Length (wider-note) - CSS snippet</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -430,7 +430,7 @@ CTRL + K
 <span class="foldername">OBSIDIAN</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/obsidian/read-line-length-wider-note-css-snippet/">Read Line Length (wider-note) - CSS snippet </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/obsidian/read-line-length-wider-note-css-snippet/">Read Line Length (wider-note) - CSS snippet </a>
 </div>
 </div>
 </div>
@@ -544,30 +544,41 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Best Breakfast casserole</h1>
+<h1 data-note-icon="">Read Line Length (wider-note) - CSS snippet</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Recipes
+#code
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#wider-note
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#Obsidian
 </a>
 </div>
-<div class="timestamps"></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-05-27 4:26:35 pm"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-05-27 4:26:54 pm"></span></div></div></div>
 </header>
-<h1 id="a-href-https-www-allrecipes-com-recipe-87013-hash-brown-and-egg-casserole-target-blank-class-external-link-best-breakfast-casserole-hash-browns-and-amp-eggs-a" tabindex="-1"><a href="https://www.allrecipes.com/recipe/87013/hash-brown-and-egg-casserole/" target="_blank" class="external-link">Best Breakfast Casserole (Hash Browns &amp; Eggs)</a></h1>
-<ol>
-<li>
-<p>Preheat the oven to 350 degrees F (175 degrees C). Grease an 8-inch square pan; add hash brown potatoes and arrange in an even layer.</p>
-</li>
-<li>
-<p>Place sausage and onion in a large skillet over medium heat. Cook and stir until the sausage is browned and crumbled, about 10 minutes; drain.</p>
-</li>
-<li>
-<p>Meanwhile, whisk eggs, milk, onion powder, garlic powder, salt, and pepper together in a large bowl until well combined; pour over the potatoes and sprinkle with 1/2 of the Cheddar cheese. Add sausage mixture on top and sprinkle with remaining Cheddar. Cover with aluminum foil.</p>
-</li>
-<li>
-<p>Bake in the preheated oven for 1 hour. Remove foil; return casserole to the oven and bake until a knife inserted into the center comes out clean, about 10 minutes. Let stand for 5 minutes before serving.</p>
-</li>
-</ol>
+<p>Description: allow individual note bypassing of limiting line length set in Settings--&gt;Editor--&gt;Readable Line Length</p>
+<p>Filename: wider-note.css<br>
+Save to .obsidian\snippets<br>
+Add property: cssclasses: wider-note</p>
+<pre><code class="language-css">  /* save this as wider-note.css in your snippet */
+.wider-note {
+
+    /*Set the width of your desire here*/
+    /* --user-custom-width: 60rem !important; */
+    --user-custom-width: 1500px !important;
+
+    /*Code for edit view*/
+    --file-line-width: var(--user-custom-width) ;
+
+    /*Code for live read view*/
+    /* --content-max-width: 100rem !important; */
+    --content-max-width: 1500px !important;
+    --content-base-width: var(--user-custom-width);
+}
+</code></pre>
 </main>
 <aside>
 <div class="sidebar">
@@ -600,24 +611,10 @@ CTRL + K
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
 </div>
 </div>
-<div class="toc">
-<div class="toc-title-container">
-<div class="toc-title">
-On this page
-</div>
-</div>
-<div class="toc-container">
-<nav class="toc">
-<ol>
-<li><a href="#a-href-https-www-allrecipes-com-recipe-87013-hash-brown-and-egg-casserole-target-blank-class-external-link-best-breakfast-casserole-hash-browns-and-amp-eggs-a">Best Breakfast Casserole (Hash Browns & Eggs)</a>
-</li>
-</ol>
-</nav>
-</div>
-</div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><a href="/notes/TRACK/RECIPES/" data-note-icon="" class="backlink">RECIPES</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
