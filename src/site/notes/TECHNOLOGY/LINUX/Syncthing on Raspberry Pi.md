@@ -9,6 +9,11 @@
 
 
 
+Find everything running on the network: 
+```
+sudo nmap -sn 192.168.1.0/24
+```
+
 ## Installing Syncthing to Your Raspberry Pi
 
 In this section, you will learn how to easily install the Syncthing software to your Raspberry Pi using straightforward steps.
@@ -107,10 +112,13 @@ This configuration file will only work as long as we run the Syncthing software 
 Begin editing the required config file using the [nano text editor](https://pimylifeup.com/nano-text-editor/) by using the command below.
 
 ## IMPORTANT TO FIND CONFIG FILE:
-**find configuration file: syncthing -paths**
+find configuration file: 
+```text
+syncthing -paths
+```
 
 ```bash
-nano ~/.config/syncthing/config.xml
+sudo nano ~/.local/state/syncthing/config.xml
 ```
 
 **4.** Within this file, you need to find the following line.
@@ -153,7 +161,7 @@ sudo nano /lib/systemd/system/syncthing.service
 
 **2.** Within this file, enter the following lines.
 
-While entering these lines ensure that you replace “`pi`” with the name of your user.
+**While entering these lines ensure that you replace “`pi`” with the name of your user.**
 
 ```systemd
 [Unit]
@@ -208,12 +216,20 @@ We can verify this by using the command below.
 sudo systemctl status syncthing
 ```
 
+OPEN Ports:
+  22000/tcp
+  21027/udp
+
 If the service has started correctly and is running, you should see the following displayed within the message.
 
 ```
 Active: active (running)
 ```
 
+# UFW profile
+```
+sudo ufw app info syncthing
+```
 ## Using your Raspberry Pi’s Syncthing Web Interface
 
 At this point, you should now have the Syncthing software up and running on your Raspberry Pi.
