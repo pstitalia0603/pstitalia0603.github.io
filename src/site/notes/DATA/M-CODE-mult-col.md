@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/data/m-code-mult-col/","tags":["Power_query","Data"],"noteIcon":"","created":"2023-12-03T10:12:00","updated":"2024-03-01 19:43"}
+dg-publish: true
+dg-home: false
+date_created: 2023-12-03T10:12:00
+date_modified: 2024-03-01 19:43
+tags:
+  - Power_query
+  - Data
 ---
-
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 //let
