@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Obsidian Quicknotes - Android with Tasker</title>
+<title>iDigital Garden</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -303,15 +303,15 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/i-digital-garden/">iDigital Garden </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">iDigital Garden </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/obsidian-quicknotes-android-with-tasker/">Obsidian Quicknotes - Android with Tasker </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Obsidian Quicknotes - Android with Tasker </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/workout-log-documentation/">Workout log DOCUMENTATION </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Workout log DOCUMENTATION </a>
 </div>
 </div>
 </div>
@@ -324,7 +324,7 @@ CTRL + K
 <span class="foldername">RECIPES</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/bananakies/">Bananakies </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Bananakies </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -513,7 +513,7 @@ CTRL + K
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:35:08.020Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:35:08.020Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:35:08.020Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:35:10.124Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:35:10.124Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:35:10.124Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
                     <a class="search-link" href="${e.url}">${e.title}</a>
                     <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
@@ -531,11 +531,14 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Obsidian Quicknotes - Android with Tasker</h1>
+<h1 data-note-icon="">iDigital Garden</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Obsidian
+#inbox
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#Portfolio
 </a>
 <a class="tag" onclick="toggleTagSearch(this)">
 #code
@@ -544,76 +547,87 @@ CTRL + K
 #Projects
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-02 9:29:28 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-13 12:42:15 pm"></span></div></div></div>
+<div class="timestamps"></div></div>
 </header>
-<h1 id="a-href-https-github-com-guy-92-quick-note-target-blank-class-external-link-git-hub-guy-92-quick-note-a-way-to-take-quick-notes-in-obsidian-on-android-a" tabindex="-1"><a href="https://github.com/Guy-92/QuickNote" target="_blank" class="external-link">GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android</a></h1>
-<p><a href="https://github.com/Guy-92/QuickNote#start-of-content" target="_blank" class="external-link">https://github.com/Guy-92/QuickNote#start-of-content</a></p>
-<h2 id="quick-note" tabindex="-1">QuickNote</h2>
-<h3 id="a-way-to-take-quick-notes-in-a-href-https-obsidian-md-target-blank-class-external-link-obsidian-a-on-android" tabindex="-1">A way to take Quick Notes in <a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> on Android</h3>
-<p>This task displays an input dialog to take a note in the app Obsidian.</p>
-<hr>
-<p><a href="https://taskernet.com/shares/?user=AS35m8nSFNRSqPmtuWoUzDvbOkD1v%2FlqgfcQ2ZMUW6BRdBoRrpot%2BuokAci2FnhAYxkZxeZC&amp;id=Project%3AObsidian+QuickNote" target="_blank" class="external-link">Link to project in TaskerNet</a></p>
-<h4 id="features" tabindex="-1">Features</h4>
+<h2 id="instructions-how-to-get-digital-garden-to-work-for-github-pages" tabindex="-1">Instructions: How to get Digital Garden to work for Github Pages!</h2>
+<h4 id="concept-a-href-https-dg-docs-ole-dev-advanced-hosting-alternatives-target-blank-class-external-link-https-dg-docs-ole-dev-advanced-hosting-alternatives-a" tabindex="-1">Concept: <a href="https://dg-docs.ole.dev/advanced/hosting-alternatives/" target="_blank" class="external-link">https://dg-docs.ole.dev/advanced/hosting-alternatives/</a></h4>
+<h2 id="steps" tabindex="-1">Steps</h2>
+<ol>
+<li>Clone repository: <a href="https://github.com/oleeskild/digitalgarden" target="_blank" class="external-link">https://github.com/oleeskild/digitalgarden</a>
 <ul>
-<li>Open a Quick Note dialog from a home screen widget, quick tile or notification</li>
-<li>Special characters - configurable characters that do a certain thing.
-<ul>
-<li>Save note
-<ul>
-<li>Saves the note. Must be written at the end of a note.</li>
+<li>(USE THIS TEMPLATE &gt; CREATE A NEW REPOSITORY)</li>
+<li>NAME THE REPOSITORY &quot;&lt;/GITHUBNAME/&gt;.github.io&quot;</li>
 </ul>
 </li>
-<li>Save and exit note
+<li>Configure build.yml
 <ul>
-<li>Saves the note and closes the input dialog. Must be written at the end of a note.</li>
+<li><a href="https://github.com/oleeskild/obsidian-digital-garden/discussions/389" target="_blank" class="external-link">https://github.com/oleeskild/obsidian-digital-garden/discussions/389</a></li>
 </ul>
 </li>
-<li>Clear note
+<li>Set repository --&gt; Settings --&gt; Pages --&gt; Source (Deploy from a branch): gh-pages
 <ul>
-<li>Clears all the text in the input dialog. Must be written at the end of the note.</li>
+<li>View Actions and see if they are successful!</li>
 </ul>
 </li>
-<li>Escape
-<ul>
-<li>Tells the task to ignore a custom character.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="permissions" tabindex="-1">Permissions</h4>
-<ul>
-<li>Manage external storage - To write and read notes in the device</li>
-<li>Accessibly service - To detect tapped notification with Tasker notification (this is optional)</li>
-<li>App usage stats - To detect AutoNotification is installed. (this is optional)</li>
-<li>Calendar - To detect AutoNotification is installed. (this is optional)</li>
-</ul>
-<h4 id="apps" tabindex="-1">Apps</h4>
-<h5 id="required" tabindex="-1">Required</h5>
-<ul>
-<li><a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> - A notes app that is a powerful knowledge base on top of a local folder of plain text Markdown files.
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=md.obsidian" target="_blank" class="external-link">Play Store link</a></li>
-</ul>
-</li>
-<li><a href="https://tasker.joaoapps.com/" target="_blank" class="external-link">Tasker</a> - Tasker is an Android application that performs tasks, based on contexts like application, event, gesture, date, time, location in user defined profiles or home screen widgets. A 7 day free trial can be downloaded <a href="https://tasker.joaoapps.com/download.html" target="_blank" class="external-link">here</a>.
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&amp;hl=en&amp;gl=US" target="_blank" class="external-link">Play Store link</a></li>
-</ul>
-</li>
-</ul>
-<h5 id="optional" tabindex="-1">Optional</h5>
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification" target="_blank" class="external-link">AutoNotification</a> - To add quick tile to trigger the Quick Notes dialog (this can be done with just Tasker too)</li>
-</ul>
-<h4 id="what-is-tasker-net" tabindex="-1">What is TaskerNet</h4>
-<p>TaskerNet is a website where you can store and share Tasker projects and tasks.</p>
-<h4 id="notes" tabindex="-1">Notes</h4>
-<ul>
-<li>Tapping outside of the input dialog when the keyboard is hidden will cancel the note and delete all contents, if you are writing a long note, you can save the note by typing the &quot;SaveNoteCharacter&quot; and pressing ok.</li>
-<li>Locking the screen when taking a note will cancel the note and delete all contents, use the &quot;SaveAndExitNoteCharacter&quot; before locking the screen</li>
-<li>The timestamp format can be configured in the &quot;QuickNote&quot; task, enter the task, tap on the search icon and search &quot;timestamp&quot;, this will lead you to the action where you can edit the timestamp format.</li>
-</ul>
+</ol>
+<h5 id="build-yml" tabindex="-1">build.yml</h5>
+<pre><code class="language-text">name: GH Pages
+
+on:
+  push:
+    branches: [ &quot;main&quot; ]
+  pull_request:
+    branches: [ &quot;main&quot; ]
+
+# permissions:
+  # contents: read
+  # pages: write
+  # id-token: write
+
+# concurrency:
+  # group: &quot;pages&quot;
+  # cancel-in-progress: false
+
+# concurrency:
+#   group: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  build:
+  
+    runs-on: ubuntu-22.04
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm install
+      - run: npm run build --if-present
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN2 }}  # This is from /settings/secrets/actions --&gt; Repository secrets
+          publish_dir: ./dist
+</code></pre>
+<h4 id="note-instructions-for-token-and-gt-action-secret" tabindex="-1">NOTE: INSTRUCTIONS FOR TOKEN --&gt; ACTION SECRET</h4>
+<pre><code class="language-text">You will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)  
+You will also need to name your repository in github, `&lt;username&gt;.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `&lt;username&gt;.github.io/&lt;repositoryname&gt;`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `&lt;username&gt;.github.io/styles/style.css`, because they are actually located in `&lt;username&gt;.github.io/&lt;repositoryname&gt;/styles/style.css`.
+</code></pre>
+<h4 id="references" tabindex="-1">REFERENCES</h4>
+<p><a href="https://dg-docs.ole.dev/getting-started/01-getting-started/" target="_blank" class="external-link">https://dg-docs.ole.dev/getting-started/01-getting-started/</a></p>
+<p><a href="https://github.com/marketplace/actions/github-pages-action" target="_blank" class="external-link">https://github.com/marketplace/actions/github-pages-action</a></p>
+<p><a href="https://github.com/peaceiris/actions-gh-pages" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages</a></p>
+<p>Proof of Concept: <a href="https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay" target="_blank" class="external-link">https://www.linkedin.com/pulse/eleventy-github-pages-lea-tortay</a></p>
+<p>possibly necessary: <a href="https://github.com/peaceiris/actions-gh-pages/issues/736" target="_blank" class="external-link">https://github.com/peaceiris/actions-gh-pages/issues/736</a></p>
+<p>and API key: <a href="https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128" target="_blank" class="external-link">https://stackoverflow.com/questions/76023778/action-failed-with-the-process-usr-bin-git-failed-with-exit-code-128</a></p>
 </main>
 <aside>
 <div class="sidebar">
@@ -655,31 +669,19 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#a-href-https-github-com-guy-92-quick-note-target-blank-class-external-link-git-hub-guy-92-quick-note-a-way-to-take-quick-notes-in-obsidian-on-android-a">GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android</a>
+<li><a href="#instructions-how-to-get-digital-garden-to-work-for-github-pages">Instructions: How to get Digital Garden to work for Github Pages!</a>
 <ol>
-<li><a href="#quick-note">QuickNote</a>
-<ol>
-<li><a href="#a-way-to-take-quick-notes-in-a-href-https-obsidian-md-target-blank-class-external-link-obsidian-a-on-android">A way to take Quick Notes in Obsidian on Android</a>
-<ol>
-<li><a href="#features">Features</a>
-</li>
-<li><a href="#permissions">Permissions</a>
-</li>
-<li><a href="#apps">Apps</a>
-<ol>
-<li><a href="#required">Required</a>
-</li>
-<li><a href="#optional">Optional</a>
+<li><a href="#concept-a-href-https-dg-docs-ole-dev-advanced-hosting-alternatives-target-blank-class-external-link-https-dg-docs-ole-dev-advanced-hosting-alternatives-a">Concept: https://dg-docs.ole.dev/advanced/hosting-alternatives/</a>
 </li>
 </ol>
 </li>
-<li><a href="#what-is-tasker-net">What is TaskerNet</a>
+<li><a href="#steps">Steps</a>
+<ol>
+<li><a href="#build-yml">build.yml</a>
 </li>
-<li><a href="#notes">Notes</a>
+<li><a href="#note-instructions-for-token-and-gt-action-secret">NOTE: INSTRUCTIONS FOR TOKEN --> ACTION SECRET</a>
 </li>
-</ol>
-</li>
-</ol>
+<li><a href="#references">REFERENCES</a>
 </li>
 </ol>
 </li>
@@ -689,8 +691,7 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card">
-<span class="no-backlinks-message">No other pages mentions this page</span>
+<div class="backlink-list"><div class="backlink-card"><a href="/" data-note-icon="" class="backlink">Home</a>
 </div></div>
 </div>
 </div>

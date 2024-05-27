@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Bananakies</title>
+<title>Obsidian Quicknotes - Android with Tasker</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -303,15 +303,15 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/i-digital-garden/">iDigital Garden </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">iDigital Garden </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/obsidian-quicknotes-android-with-tasker/">Obsidian Quicknotes - Android with Tasker </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Obsidian Quicknotes - Android with Tasker </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/workout-log-documentation/">Workout log DOCUMENTATION </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Workout log DOCUMENTATION </a>
 </div>
 </div>
 </div>
@@ -324,7 +324,7 @@ CTRL + K
 <span class="foldername">RECIPES</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/bananakies/">Bananakies </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Bananakies </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -513,7 +513,7 @@ CTRL + K
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:35:08.020Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:35:08.020Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:35:08.020Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:35:10.124Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:35:10.124Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:35:10.124Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
                     <a class="search-link" href="${e.url}">${e.title}</a>
                     <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
@@ -531,37 +531,88 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Bananakies</h1>
+<h1 data-note-icon="">Obsidian Quicknotes - Android with Tasker</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Recipes
+#Obsidian
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#code
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#Projects
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-01T17:15:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-01 17:15"></span></div></div></div>
+<div class="timestamps"></div></div>
 </header>
-<h1 id="a-href-https-www-skinnytaste-com-healthy-cookies-recipe-target-blank-class-external-link-healthy-bananakies-cookies-a" tabindex="-1"><a href="https://www.skinnytaste.com/healthy-cookies/#recipe" target="_blank" class="external-link">Healthy Bananakies Cookies</a></h1>
-<p>PREP TIME:<br>
-10minutes mins<br>
-COOK TIME:<br>
-15minutes mins<br>
-TOTAL TIME:<br>
-25minutes mins<br>
-YIELD: 8 servings</p>
-<p>Ingredients<br>
-2 medium ripe bananas (mashed)<br>
-1 cup of uncooked quick oats*<br>
-1/3 cup chocolate chips<br>
-1/4 cup chia seeds / flax seeds</p>
-<p>Instructions</p>
-<p>Preheat oven to 350°F.</p>
-<p>Spray a non-stick cookie sheet with cooking spray or use a Silpat.<br>
-Combine the mashed bananas and oats in a bowl. Fold in the other items<br>
-.<br>
-Place a tablespoon of each on the cookie sheet.</p>
-<p>Bake 15 minutes. Makes 16 cookies.</p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Bananakies 🛫 2024-03-26 ✅ 2024-03-26</label></li>
+<h1 id="a-href-https-github-com-guy-92-quick-note-target-blank-class-external-link-git-hub-guy-92-quick-note-a-way-to-take-quick-notes-in-obsidian-on-android-a" tabindex="-1"><a href="https://github.com/Guy-92/QuickNote" target="_blank" class="external-link">GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android</a></h1>
+<p><a href="https://github.com/Guy-92/QuickNote#start-of-content" target="_blank" class="external-link">https://github.com/Guy-92/QuickNote#start-of-content</a></p>
+<h2 id="quick-note" tabindex="-1">QuickNote</h2>
+<h3 id="a-way-to-take-quick-notes-in-a-href-https-obsidian-md-target-blank-class-external-link-obsidian-a-on-android" tabindex="-1">A way to take Quick Notes in <a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> on Android</h3>
+<p>This task displays an input dialog to take a note in the app Obsidian.</p>
+<hr>
+<p><a href="https://taskernet.com/shares/?user=AS35m8nSFNRSqPmtuWoUzDvbOkD1v%2FlqgfcQ2ZMUW6BRdBoRrpot%2BuokAci2FnhAYxkZxeZC&amp;id=Project%3AObsidian+QuickNote" target="_blank" class="external-link">Link to project in TaskerNet</a></p>
+<h4 id="features" tabindex="-1">Features</h4>
+<ul>
+<li>Open a Quick Note dialog from a home screen widget, quick tile or notification</li>
+<li>Special characters - configurable characters that do a certain thing.
+<ul>
+<li>Save note
+<ul>
+<li>Saves the note. Must be written at the end of a note.</li>
+</ul>
+</li>
+<li>Save and exit note
+<ul>
+<li>Saves the note and closes the input dialog. Must be written at the end of a note.</li>
+</ul>
+</li>
+<li>Clear note
+<ul>
+<li>Clears all the text in the input dialog. Must be written at the end of the note.</li>
+</ul>
+</li>
+<li>Escape
+<ul>
+<li>Tells the task to ignore a custom character.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="permissions" tabindex="-1">Permissions</h4>
+<ul>
+<li>Manage external storage - To write and read notes in the device</li>
+<li>Accessibly service - To detect tapped notification with Tasker notification (this is optional)</li>
+<li>App usage stats - To detect AutoNotification is installed. (this is optional)</li>
+<li>Calendar - To detect AutoNotification is installed. (this is optional)</li>
+</ul>
+<h4 id="apps" tabindex="-1">Apps</h4>
+<h5 id="required" tabindex="-1">Required</h5>
+<ul>
+<li><a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> - A notes app that is a powerful knowledge base on top of a local folder of plain text Markdown files.
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=md.obsidian" target="_blank" class="external-link">Play Store link</a></li>
+</ul>
+</li>
+<li><a href="https://tasker.joaoapps.com/" target="_blank" class="external-link">Tasker</a> - Tasker is an Android application that performs tasks, based on contexts like application, event, gesture, date, time, location in user defined profiles or home screen widgets. A 7 day free trial can be downloaded <a href="https://tasker.joaoapps.com/download.html" target="_blank" class="external-link">here</a>.
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&amp;hl=en&amp;gl=US" target="_blank" class="external-link">Play Store link</a></li>
+</ul>
+</li>
+</ul>
+<h5 id="optional" tabindex="-1">Optional</h5>
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification" target="_blank" class="external-link">AutoNotification</a> - To add quick tile to trigger the Quick Notes dialog (this can be done with just Tasker too)</li>
+</ul>
+<h4 id="what-is-tasker-net" tabindex="-1">What is TaskerNet</h4>
+<p>TaskerNet is a website where you can store and share Tasker projects and tasks.</p>
+<h4 id="notes" tabindex="-1">Notes</h4>
+<ul>
+<li>Tapping outside of the input dialog when the keyboard is hidden will cancel the note and delete all contents, if you are writing a long note, you can save the note by typing the &quot;SaveNoteCharacter&quot; and pressing ok.</li>
+<li>Locking the screen when taking a note will cancel the note and delete all contents, use the &quot;SaveAndExitNoteCharacter&quot; before locking the screen</li>
+<li>The timestamp format can be configured in the &quot;QuickNote&quot; task, enter the task, tap on the search icon and search &quot;timestamp&quot;, this will lead you to the action where you can edit the timestamp format.</li>
 </ul>
 </main>
 <aside>
@@ -604,7 +655,33 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#a-href-https-www-skinnytaste-com-healthy-cookies-recipe-target-blank-class-external-link-healthy-bananakies-cookies-a">Healthy Bananakies Cookies</a>
+<li><a href="#a-href-https-github-com-guy-92-quick-note-target-blank-class-external-link-git-hub-guy-92-quick-note-a-way-to-take-quick-notes-in-obsidian-on-android-a">GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android</a>
+<ol>
+<li><a href="#quick-note">QuickNote</a>
+<ol>
+<li><a href="#a-way-to-take-quick-notes-in-a-href-https-obsidian-md-target-blank-class-external-link-obsidian-a-on-android">A way to take Quick Notes in Obsidian on Android</a>
+<ol>
+<li><a href="#features">Features</a>
+</li>
+<li><a href="#permissions">Permissions</a>
+</li>
+<li><a href="#apps">Apps</a>
+<ol>
+<li><a href="#required">Required</a>
+</li>
+<li><a href="#optional">Optional</a>
+</li>
+</ol>
+</li>
+<li><a href="#what-is-tasker-net">What is TaskerNet</a>
+</li>
+<li><a href="#notes">Notes</a>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 </li>
 </ol>
 </nav>
@@ -612,7 +689,8 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><a href="/recipes/recipes/" data-note-icon="" class="backlink">RECIPES</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
