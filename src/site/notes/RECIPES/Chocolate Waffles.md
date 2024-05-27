@@ -1,7 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/chocolate-waffles/","tags":["Recipes","inbox"],"noteIcon":"","created":"2024-04-04T08:43:00","updated":"2024-04-13 10:47:47 am"}
+dg-home: false
+dg-publish: true
+date_created: 2024-04-04T08:43:00
+date_modified: 2024-04-13 10:47:47 am
+tags:
+  - Recipes
+  - inbox
+date_completed: 2024-02-11T14:56:00
 ---
-
 2024-02-11 06-36-03 -
 
 # [Chocolate Waffles](https://lilluna.com/chocolate-waffles/#wprm-recipe-container-167383)
