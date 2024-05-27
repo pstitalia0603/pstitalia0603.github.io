@@ -1,8 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/technology/dev/resources/","tags":["web_design","code","Work"],"noteIcon":"","created":"2024-04-21T11:13:44","updated":"2024-04-21 11:14:00 am"}
+dg-home: false
+dg-publish: true
+tags:
+  - web_design
+  - code
+  - Work
+date_created: 2024-04-21T11:13:44
+date_modified: 2024-04-21 11:14:00 am
 ---
-
-[[TRACK/CURRENT PROJECTS\|CURRENT PROJECTS]]
+[[TRACK/Current Projects\|CURRENT PROJECTS]]
 
 # Code
 - https://updateyourfooter.com/
