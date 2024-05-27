@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/nutella-crepes/","tags":["Recipes"],"noteIcon":"","created":"2023-12-01T21:56:00","updated":"2024-02-19 19:26"}
+dg-publish: true
+dg-home: false
+aliases: 
+date_created: 2023-12-01T21:56:00
+date_modified: 2024-02-19 19:26
+tags:
+  - Recipes
 ---
-
 
 https://www.theyellowtable.com/recipes/best-nutella-crepe-recipe 
 
