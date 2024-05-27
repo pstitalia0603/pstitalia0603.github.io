@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/mini-cinnamon-muffin/","tags":["Recipes","Ella"],"noteIcon":"","created":"2024-04-03T08:43:00","updated":"2024-04-13 10:48:31 am"}
+dg-home: false
+dg-publish: true
+date_created: 2024-04-03T08:43:00
+date_modified: 2024-04-13 10:48:31 am
+tags:
+  - Recipes
+  - Ella
 ---
-
 # [Easy Muffin Recipe for Kids – Mini Cinnamon Muffin | Kidstir](https://kidstir.com/kids-recipes/churro-muffins/)
 
 Are you a fan of churros, the sweet cinnamon Spanish and Mexican treats? Then you’ll love this easy muffin recipe for kids! They are easy to mix up, and kids have fun dipping the warm muffins in melted butter and cinnamon sugar. They are as tasty as the real churros without all the mess of deep-frying.
