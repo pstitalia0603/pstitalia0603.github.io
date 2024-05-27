@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>CS50&#39;s Intro to Databases with SQL</title>
+<title>PROGRESS OF CS50 SQL</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -232,7 +232,7 @@ CTRL + K
 <span class="foldername">Courses</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/learning/courses/cs-50-s-intro-to-databases-with-sql/">CS50&#39;s Intro to Databases with SQL </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">CS50&#39;s Intro to Databases with SQL </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -240,7 +240,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/learning/courses/progress-of-cs-50-sql/">PROGRESS OF CS50 SQL </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">PROGRESS OF CS50 SQL </a>
 </div>
 </div>
 </div>
@@ -262,7 +262,7 @@ CTRL + K
 <span class="foldername">INTERESTS</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/personal/interests/la-divina-commedia/">La Divina Commedia </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">La Divina Commedia </a>
 </div>
 </div>
 </div>
@@ -282,7 +282,7 @@ CTRL + K
 <span class="foldername">ITALIA</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/personal/travel/italia/italia-2023-itinerary/">Italia 2023 - ITINERARY </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Italia 2023 - ITINERARY </a>
 </div>
 </div>
 </div>
@@ -299,7 +299,7 @@ CTRL + K
 <span class="foldername">PROJECTS</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/archive-ics-to-csv-to-md/">ARCHIVE ICS TO CSV TO MD </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">ARCHIVE ICS TO CSV TO MD </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -513,7 +513,7 @@ CTRL + K
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:35:05.617Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:35:05.617Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:35:05.617Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:35:08.020Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:35:08.020Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:35:08.020Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
                     <a class="search-link" href="${e.url}">${e.title}</a>
                     <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
@@ -531,18 +531,75 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">CS50&#39;s Intro to Databases with SQL</h1>
+<h1 data-note-icon="">PROGRESS OF CS50 SQL</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#ToLearn
+#Courses
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-12-26T19:14:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-03 07:56"></span></div></div></div>
+<div class="timestamps"></div></div>
 </header>
-<p><a href="https://cs50.harvard.edu/sql/2024/" target="_blank" class="external-link">https://cs50.harvard.edu/sql/2024/</a></p>
-<p><a class="internal-link" target="" data-note-icon="" href="/learning/courses/progress-of-cs-50-sql/">PROGRESS OF CS50 SQL</a></p>
-<p>Currently working</p>
+<p><span><span><img alt="progress" src="https://progress-bar.dev/51/" referrerpolicy="no-referrer"></span></span></p>
+<p><a href="https://cs50.harvard.edu/sql/2023/project/" target="_blank" class="external-link">CS50 SQL</a></p>
+<p><a href="https://cs50.me/cs50sql" target="_blank" class="external-link">CS50.me SQL</a></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Week 0 - Querying ✅ 2024-02-01</label>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> <a href="https://cs50.harvard.edu/sql/2023/psets/0/cyberchase/" target="_blank" class="external-link">Cyberchase</a> ✅ 2023-12-13</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_2" checked="true" disabled="true"><label for="cbx_2"> <a href="https://cs50.harvard.edu/sql/2023/psets/0/views/" target="_blank" class="external-link">36 Views</a> ✅ 2024-01-09</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_3" checked="true" disabled="true"><label for="cbx_3"> <a href="https://cs50.harvard.edu/sql/2023/psets/0/normals/" target="_blank" class="external-link">Normals</a> ✅ 2024-01-09</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_4" checked="true" disabled="true"><label for="cbx_4"> <a href="https://cs50.harvard.edu/sql/2023/psets/0/players/" target="_blank" class="external-link">Players</a> ✅ 2024-01-18</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_5" checked="true" disabled="true"><label for="cbx_5"> Week 1 - Relating ✅ 2023-12-19</label>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_6" checked="true" disabled="true"><label for="cbx_6"> Packages, Please ✅ 2023-12-20</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_7" checked="true" disabled="true"><label for="cbx_7"> DESE ✅ 2023-12-21</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_8" checked="true" disabled="true"><label for="cbx_8"> Moneyball ✅ 2023-12-22</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_9" checked="true" disabled="true"><label for="cbx_9"> Week 2 - Designing ✅ 2023-12-23</label>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_10" checked="true" disabled="true"><label for="cbx_10"> ATL ✅ 2023-12-24</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_11" checked="true" disabled="true"><label for="cbx_11"> Happy to Connect ✅ 2023-12-24</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_12" checked="true" disabled="true"><label for="cbx_12"> Union Square Donuts ✅ 2023-12-26</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_13" checked="true" disabled="true"><label for="cbx_13"> Week 3 - Writing ✅ 2023-12-26</label>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_14" checked="true" disabled="true"><label for="cbx_14"> Don't Panic ✅ 2023-12-27</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_15" checked="true" disabled="true"><label for="cbx_15"> Meteorite Cleaning ✅ 2023-12-28</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_16" disabled="true"><label for="cbx_16"> Week 4 - Viewing</label>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_17" disabled="true"><label for="cbx_17"> Census Taker</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_18" disabled="true"><label for="cbx_18"> The Private Eye</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_19" disabled="true"><label for="cbx_19"> Bed and Breakfast</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_20" disabled="true"><label for="cbx_20"> Week 5 - Optimizing</label>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_21" disabled="true"><label for="cbx_21"> In a Snap</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_22" disabled="true"><label for="cbx_22"> your.harvard</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_23" disabled="true"><label for="cbx_23"> Week 6 - Scaling</label>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_24" disabled="true"><label for="cbx_24"> Happy to Connect (Sentimental)</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_25" disabled="true"><label for="cbx_25"> From the Deep</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_26" disabled="true"><label for="cbx_26"> Don't Panic (Sentimental) with Python</label></li>
+</ul>
+</li>
+<li class="task-list-item"><input type="checkbox" id="cbx_27" disabled="true"><label for="cbx_27"> Week 7 - Final Project</label>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_28" disabled="true"><label for="cbx_28"> <a href="http://DESIGN.md" target="_blank" class="external-link">DESIGN.md</a></label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_29" disabled="true"><label for="cbx_29"> schema.sql</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_30" disabled="true"><label for="cbx_30"> queries.sql</label></li>
+</ul>
+</li>
+</ul>
 </main>
 <aside>
 <div class="sidebar">
@@ -577,8 +634,7 @@ CTRL + K
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card">
-<span class="no-backlinks-message">No other pages mentions this page</span>
+<div class="backlink-list"><div class="backlink-card"><a href="/notes/LEARNING/Courses/CS50&#39;s Intro to Databases with SQL/" data-note-icon="" class="backlink">CS50&#39;s Intro to Databases with SQL</a>
 </div></div>
 </div>
 </div>
