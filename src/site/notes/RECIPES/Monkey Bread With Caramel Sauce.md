@@ -1,7 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/monkey-bread-with-caramel-sauce/","tags":["Recipes"],"noteIcon":"","created":"2024-02-28T17:38:00","updated":"2024-02-28 17:39"}
+dg-publish: true
+dg-home: false
+tags:
+  - Recipes
+date_created: 2024-02-28T17:38:00
+date_modified: 2024-02-28 17:39
 ---
-
 
 - [ ] Monkey Bread 🛫 2024-06-05
 
