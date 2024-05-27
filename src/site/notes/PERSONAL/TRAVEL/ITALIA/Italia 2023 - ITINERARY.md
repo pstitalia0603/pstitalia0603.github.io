@@ -1,7 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/personal/travel/italia/italia-2023-itinerary/","tags":["Italia","Trips"],"noteIcon":"","created":"2024-02-18 4:31:34 pm","updated":"2024-04-13 12:44:16 pm"}
+dg-home: false
+dg-publish: true
+date_created: 2024-02-18 4:31:34 pm
+date_modified: 2024-04-13 12:44:16 pm
+tags:
+  - Italia
+  - Trips
+date_completed: 2024-01-14T11:55:00
+locations:
 ---
-
 
 
 
