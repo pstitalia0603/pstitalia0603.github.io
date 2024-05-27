@@ -1,7 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/data/errors-in-pq/","tags":["Data","Power_query"],"noteIcon":"","created":"2024-04-10T11:00:00","updated":"2024-04-10T15:56:00"}
+dg-home: false
+dg-publish: true
+date_created: 2024-04-10T11:00:00
+date_modified: 2024-04-10T15:56:00
+tags:
+  - Data
+  - Power_query
+date_completed: 2024-04-10T18:29:00
 ---
-
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 # [New way of Dealing with errors in Power Query – Curbal](https://curbal.com/curbal-learning-portal/new-way-of-dealing-with-errors-in-power-query)
