@@ -120,7 +120,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/">The Deep Conflict Between Our Work and Parenting Ideals </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">The Deep Conflict Between Our Work and Parenting Ideals </a>
 </div>
 </div>
 </div>
@@ -135,39 +135,39 @@ CTRL + K
 <span class="foldername">DATA</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Addressee COUPLE LASTNAMES </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">BI and PQ DATA TIPS AND TRICKS </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/count-non-null-values/">Count Non-null Values </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Count Non-null Values </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Date Table and Fiscal Year column </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/errors-in-pq/">Errors in PQ </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Errors in PQ </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/fiscal-month-number-calc/">FISCAL MONTH NUMBER CALC </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">FISCAL MONTH NUMBER CALC </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/list-repeat-power-query-m/">List.Repeat - PowerQuery M </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">List.Repeat - PowerQuery M </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/m-mode-multiple-columns/">M Mode - Multiple Columns </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">M Mode - Multiple Columns </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/m-code-mult-col/">M-CODE-mult-col </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">M-CODE-mult-col </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -513,7 +513,7 @@ CTRL + K
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:34:37.401Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:34:37.401Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:34:37.401Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:34:39.681Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:34:39.681Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:34:39.681Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
                     <a class="search-link" href="${e.url}">${e.title}</a>
                     <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
@@ -544,7 +544,7 @@ CTRL + K
 #Projects
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-03 4:09:59 pm"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-10T09:25:21"></span></div></div></div>
+<div class="timestamps"></div></div>
 </header>
 <div class="block-language-dataview table-wrapper"><table class="dataview table-view-table">
 <thead class="table-view-thead">
@@ -557,92 +557,92 @@ CTRL + K
 <tbody class="table-view-tbody">
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/technology/dev/apache-superset/">Apache Superset</a></td>
-<td>04-30-2024</td>
+<td>05-25-2024</td>
 <td><ul><li>Data</li><li>Projects</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link is-unresolved" href="/404" target="">6-month Roadmap Data Analysis</a></td>
-<td>05-03-2024</td>
+<td>05-25-2024</td>
 <td><ul><li>Data</li><li>ToLearn</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/uppercase-and-underscore-column-names/">UPPERCASE AND UNDERSCORE COLUMN NAMES</a></td>
-<td>04-05-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-m-mode-multiple-columns">M Mode - Multiple Columns</a></td>
+<td>05-25-2024</td>
+<td><ul><li>Data</li><li>m-code</li><li>dax</li><li>Power_query</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/notes/data-weeknum-function">WEEKNUM function</a></td>
-<td>04-11-2024</td>
+<td>05-25-2024</td>
 <td><ul><li>Excel</li><li>Data</li></ul></td>
 </tr>
 <tr>
+<td><a class="internal-link" target="" data-note-icon="" href="/data/uppercase-and-underscore-column-names/">UPPERCASE AND UNDERSCORE COLUMN NAMES</a></td>
+<td>05-27-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
+</tr>
+<tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/transform-column-names-in-bulk/">Transform Column Names in Bulk</a></td>
-<td>04-11-2024</td>
+<td>05-25-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/replace-values-multiple-criteria/">REPLACE VALUES, MULTIPLE CRITERIA </a></td>
-<td>04-05-2024</td>
+<td>05-25-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/remove-duplicates/">REMOVE DUPLICATES</a></td>
-<td>04-05-2024</td>
+<td>05-25-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/remove-duplicates-power-bi/">Remove Duplicates PowerBI</a></td>
-<td>04-05-2024</td>
+<td>05-25-2024</td>
 <td><ul><li>dax</li><li>Power_bi</li><li>Data</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/remove-duplicates-in-power-query-m/">Remove Duplicates in Power Query M</a></td>
-<td>04-05-2024</td>
+<td>05-25-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
 <td><a class="internal-link" target="" data-note-icon="" href="/data/number-rows-by-group/">Number rows by group</a></td>
-<td>04-05-2024</td>
+<td>05-25-2024</td>
 <td><ul><li>Power_query</li><li>Data</li><li>STP</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/m-code-mult-col/">M-CODE-mult-col</a></td>
-<td>04-11-2024</td>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-m-code-mult-col">M-CODE-mult-col</a></td>
+<td>05-25-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/m-mode-multiple-columns/">M Mode - Multiple Columns</a></td>
-<td>04-05-2024</td>
-<td><ul><li>Data</li><li>m-code</li><li>dax</li><li>Power_query</li></ul></td>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-count-non-null-values">Count Non-null Values</a></td>
+<td>05-25-2024</td>
+<td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/list-repeat-power-query-m/">List.Repeat - PowerQuery M</a></td>
-<td>04-11-2024</td>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-list-repeat-power-query-m">List.Repeat - PowerQuery M</a></td>
+<td>05-25-2024</td>
 <td><ul><li>Data</li><li>Power_query</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/fiscal-month-number-calc/">FISCAL MONTH NUMBER CALC</a></td>
-<td>04-05-2024</td>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-fiscal-month-number-calc">FISCAL MONTH NUMBER CALC</a></td>
+<td>05-25-2024</td>
 <td><ul><li>Power_bi</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/errors-in-pq/">Errors in PQ</a></td>
-<td>04-12-2024</td>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-errors-in-pq">Errors in PQ</a></td>
+<td>05-25-2024</td>
 <td><ul><li>Data</li><li>Power_query</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/date-table-and-fiscal-year-column/">Date Table and Fiscal Year column</a></td>
-<td>04-11-2024</td>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-date-table-and-fiscal-year-column">Date Table and Fiscal Year column</a></td>
+<td>05-25-2024</td>
 <td><ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul></td>
 </tr>
 <tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/count-non-null-values/">Count Non-null Values</a></td>
-<td>04-11-2024</td>
-<td><ul><li>Power_query</li><li>Data</li></ul></td>
-</tr>
-<tr>
-<td><a class="internal-link" target="" data-note-icon="" href="/data/addressee-couple-lastnames/">Addressee COUPLE LASTNAMES</a></td>
-<td>04-11-2024</td>
+<td><a class="internal-link" target="" data-note-icon="" href="/notes/data-addressee-couple-lastnames">Addressee COUPLE LASTNAMES</a></td>
+<td>05-25-2024</td>
 <td><ul><li>Power_query</li><li>Data</li></ul></td>
 </tr>
 </tbody>
@@ -681,14 +681,14 @@ CTRL + K
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><a href="/data/addressee-couple-lastnames/" data-note-icon="" class="backlink">Addressee COUPLE LASTNAMES</a>
-</div><div class="backlink-card"><a href="/data/count-non-null-values/" data-note-icon="" class="backlink">Count Non-null Values</a>
-</div><div class="backlink-card"><a href="/data/date-table-and-fiscal-year-column/" data-note-icon="" class="backlink">Date Table and Fiscal Year column</a>
-</div><div class="backlink-card"><a href="/data/errors-in-pq/" data-note-icon="" class="backlink">Errors in PQ</a>
-</div><div class="backlink-card"><a href="/data/fiscal-month-number-calc/" data-note-icon="" class="backlink">FISCAL MONTH NUMBER CALC</a>
-</div><div class="backlink-card"><a href="/data/list-repeat-power-query-m/" data-note-icon="" class="backlink">List.Repeat - PowerQuery M</a>
-</div><div class="backlink-card"><a href="/data/m-mode-multiple-columns/" data-note-icon="" class="backlink">M Mode - Multiple Columns</a>
-</div><div class="backlink-card"><a href="/data/m-code-mult-col/" data-note-icon="" class="backlink">M-CODE-mult-col</a>
+<div class="backlink-list"><div class="backlink-card"><a href="/notes/DATA/Addressee COUPLE LASTNAMES/" data-note-icon="" class="backlink">Addressee COUPLE LASTNAMES</a>
+</div><div class="backlink-card"><a href="/notes/DATA/Count Non-null Values/" data-note-icon="" class="backlink">Count Non-null Values</a>
+</div><div class="backlink-card"><a href="/notes/DATA/Date Table and Fiscal Year column/" data-note-icon="" class="backlink">Date Table and Fiscal Year column</a>
+</div><div class="backlink-card"><a href="/notes/DATA/Errors in PQ/" data-note-icon="" class="backlink">Errors in PQ</a>
+</div><div class="backlink-card"><a href="/notes/DATA/FISCAL MONTH NUMBER CALC/" data-note-icon="" class="backlink">FISCAL MONTH NUMBER CALC</a>
+</div><div class="backlink-card"><a href="/notes/DATA/List.Repeat - PowerQuery M/" data-note-icon="" class="backlink">List.Repeat - PowerQuery M</a>
+</div><div class="backlink-card"><a href="/notes/DATA/M Mode - Multiple Columns/" data-note-icon="" class="backlink">M Mode - Multiple Columns</a>
+</div><div class="backlink-card"><a href="/notes/DATA/M-CODE-mult-col/" data-note-icon="" class="backlink">M-CODE-mult-col</a>
 </div><div class="backlink-card"><a href="/data/number-rows-by-group/" data-note-icon="" class="backlink">Number rows by group</a>
 </div><div class="backlink-card"><a href="/data/remove-duplicates/" data-note-icon="" class="backlink">REMOVE DUPLICATES</a>
 </div><div class="backlink-card"><a href="/data/replace-values-multiple-criteria/" data-note-icon="" class="backlink">REPLACE VALUES, MULTIPLE CRITERIA </a>
