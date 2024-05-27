@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>No-Bake Chocolate Oatmeal Bars</title>
+<title>Monkey Bread With Caramel Sauce</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -336,19 +336,19 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/mini-cinnamon-muffin/">Mini Cinnamon Muffin </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Mini Cinnamon Muffin </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/monkey-bread-with-caramel-sauce/">Monkey Bread With Caramel Sauce </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Monkey Bread With Caramel Sauce </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/no-bake-chocolate-oatmeal-bars/">No-Bake Chocolate Oatmeal Bars </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">No-Bake Chocolate Oatmeal Bars </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/nutella-crepes/">Nutella Crepes </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Nutella Crepes </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -360,7 +360,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/pasta-with-roasted-cauliflower-capers/">Pasta with Roasted Cauliflower Capers </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Pasta with Roasted Cauliflower Capers </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -368,7 +368,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/stuffed-peppers/">Stuffed Peppers </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Stuffed Peppers </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -513,7 +513,7 @@ CTRL + K
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:35:15.001Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:35:15.001Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:35:15.001Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-05-27T17:35:32.190Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-05-27T17:35:32.190Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-05-27T17:35:32.190Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
                     <a class="search-link" href="${e.url}">${e.title}</a>
                     <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
@@ -531,22 +531,58 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">No-Bake Chocolate Oatmeal Bars</h1>
+<h1 data-note-icon="">Monkey Bread With Caramel Sauce</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
 #Recipes
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-18T14:40:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-18 14:41"></span></div></div></div>
+<div class="timestamps"></div></div>
 </header>
-<p><a class="internal-link is-unresolved" href="/404" target="">ReadItLater</a> <a class="internal-link is-unresolved" href="/404" target="">Youtube</a></p>
-<h1 id="a-href-https-youtube-com-watch-v-0rxfh-mp3-z9s-and-amp-feature-shared-target-blank-class-external-link-no-bake-chocolate-oatmeal-bars-a" tabindex="-1"><a href="https://youtube.com/watch?v=0rxfhMp3Z9s&amp;feature=shared" target="_blank" class="external-link">No-Bake Chocolate Oatmeal Bars</a></h1>
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0rxfhMp3Z9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> No-Bake Chocolate Oatmeal Bars 🛫 2024-04-03 ✅ 2024-04-03</label></li>
+<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> Monkey Bread 🛫 2024-06-05</label></li>
 </ul>
-<p><a href="https://www.thecookingfoodie.com/recipe/NoBake-Chocolate-Oatmeal-Bars" target="_blank" class="external-link">https://www.thecookingfoodie.com/recipe/NoBake-Chocolate-Oatmeal-Bars</a></p>
+<h1 id="a-href-https-www-thecookingfoodie-com-recipe-monkey-bread-recipe-target-blank-class-external-link-monkey-bread-recipe-with-caramel-sauce-a" tabindex="-1"><a href="https://www.thecookingfoodie.com/recipe/Monkey-Bread-Recipe" target="_blank" class="external-link">Monkey Bread Recipe With Caramel Sauce</a></h1>
+<p><a href="https://www.thecookingfoodie.com/recipe/Monkey-Bread-Recipe#" target="_blank" class="external-link"><img src="https://www.thecookingfoodie.com/Images/Site/Products/240740_video_d1.jpg" alt="Monkey Bread Recipe With Caramel Sauce" title="Monkey Bread Recipe With Caramel Sauce"></a><br>
+Monkey bread with caramel sauce is the best pull apart bread you can find. Sticky, gooey sweet bread that everyone loves. This recipe includes full tutorial on how to make monkey bread and how to make homemade caramel sauce.</p>
+<p>INGREDIENTS FOR YIELDS</p>
+<p>For the bread:</p>
+<ul>
+<li>5 cups (625g) All-purpose flour</li>
+<li>1/4 cup (50g) Sugar</li>
+<li>2 teaspoons (6g) Instant-dry yeast</li>
+<li>1 teaspoon Salt</li>
+<li>1 1/3 cups (320ml) Whole milk</li>
+<li>2 Eggs</li>
+<li>1/3 cup (70g) Butter, melted</li>
+</ul>
+<p>For the coating:</p>
+<ul>
+<li>1/4 cup (60g) Butter</li>
+<li>3/4 cup (150g) White sugar</li>
+<li>1 tablespoon Cinnamon</li>
+</ul>
+<p>For the caramel sauce:</p>
+<ul>
+<li>1 cup (200g) Sugar</li>
+<li>1/4 cup (60ml) Water</li>
+</ul>
+<p>1/3 cup (70g) Butter, cold</p>
+<p>1/2 cup (120ml) Heavy cream</p>
+<p>DIRECTIONS</p>
+<ol>
+<li>Make the dough: into a bowl of a stand mixer place flour, sugar, yeast and salt. Mix.</li>
+<li>Make a well in the center and add milk, eggs, and melted butter. Using the hook attachment, knead the on medium speed until soft and smooth dough forms, about 4-5 minutes.</li>
+<li>Place the dough in a lightly oiled bowl, cover and let rise until doubled in size, about 1 hour.</li>
+<li>Make the coating: in a bowl mix sugar and cinnamon. Set aside.</li>
+<li>Make caramel sauce: in a sauce pan combine sugar and water, heat over medium heat until sugar dissolved and turns thick brown, amber-colored liquid (do not stir). Be careful not to burn. Once sugar is completely melted and reached a deep amber color, remove the saucepan from heat. Immediately pour heavy cream (Be careful, as the caramel will bubble up) and whisk until all the cream has been incorporated and you have a smooth sauce. Add butter, stir until melted.</li>
+<li>Shape the dough: Punch the dough down to release air, transfer to a lightly floured surface and divide the dough into small pieces. Roll each piece into a ball, then roll each ball in sugar cinnamon mixture.</li>
+<li>Grease a Bundt cake pan and pour 2-3 tablespoons of the caramel sauce to the bottom of the pan. Arrange 1/3 of the balls in the pan, pour 2-3 tablespoons of the caramel sauce, arrange another 1/3 of the dough balls, pour another 2-3 tablespoons of the caramel sauce, arrange he last third and pour another 2-3 tablespoon of the caramel sauce on top. Cover and let rise for 20 minutes, or until doubled in size.</li>
+<li>Preheat oven to 350F (180C).</li>
+<li>Bake for 30 minutes, until golden brown on top.</li>
+<li>Cool for 5 minutes, then invert onto a serving plate or cake stand. Release from the pan and drizzle as much caramel sauce as you like on top of the cake and serve warm.</li>
+</ol>
 </main>
 <aside>
 <div class="sidebar">
@@ -588,7 +624,7 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#a-href-https-youtube-com-watch-v-0rxfh-mp3-z9s-and-amp-feature-shared-target-blank-class-external-link-no-bake-chocolate-oatmeal-bars-a">No-Bake Chocolate Oatmeal Bars</a>
+<li><a href="#a-href-https-www-thecookingfoodie-com-recipe-monkey-bread-recipe-target-blank-class-external-link-monkey-bread-recipe-with-caramel-sauce-a">Monkey Bread Recipe With Caramel Sauce</a>
 </li>
 </ol>
 </nav>
