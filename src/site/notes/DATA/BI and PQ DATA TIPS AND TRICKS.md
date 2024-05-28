@@ -12,9 +12,9 @@ date_completed: 2024-01-10T09:26:00
 | File                                                                                     | DATE       | tags                                                                                   |
 | ---------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------- |
 | [[TECHNOLOGY/DEV/Apache Superset\|Apache Superset]]                                   | 05-25-2024 | <ul><li>Data</li><li>Projects</li></ul>                                                |
-| [[LEARNING/Courses/6-month Roadmap Data Analysis\|6-month Roadmap Data Analysis]]     | 05-25-2024 | <ul><li>Data</li><li>ToLearn</li></ul>                                                 |
-| [[DATA/UPPERCASE AND UNDERSCORE COLUMN NAMES\|UPPERCASE AND UNDERSCORE COLUMN NAMES]] | 05-27-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
+| [[LEARNING/Courses/6-month Roadmap Data Analysis\|6-month Roadmap Data Analysis]]     | 05-28-2024 | <ul><li>Data</li><li>ToLearn</li></ul>                                                 |
 | [[DATA/WEEKNUM function\|WEEKNUM function]]                                           | 05-25-2024 | <ul><li>Excel</li><li>Data</li></ul>                                                   |
+| [[DATA/UPPERCASE AND UNDERSCORE COLUMN NAMES\|UPPERCASE AND UNDERSCORE COLUMN NAMES]] | 05-27-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Transform Column Names in Bulk\|Transform Column Names in Bulk]]               | 05-25-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/REPLACE VALUES, MULTIPLE CRITERIA \|REPLACE VALUES, MULTIPLE CRITERIA ]]       | 05-25-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/REMOVE DUPLICATES\|REMOVE DUPLICATES]]                                         | 05-25-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
