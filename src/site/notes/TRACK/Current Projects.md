@@ -31,7 +31,7 @@ date_modified: 2024-04-25T12:25:39
 - https://www.odoo.com/app/crm
 
 # Dynamic Calendar	
-- [[PROJECTS/FULLCALENDAR\|FULLCALENDAR]]
+- [[PROJECTS/FULLCALENDAR\|PROJECTS/FULLCALENDAR]]
 
 # Web / Development
 - https://tailwindcss.com/
