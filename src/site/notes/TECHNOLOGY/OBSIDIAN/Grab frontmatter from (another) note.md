@@ -2,6 +2,11 @@
 {"dg-publish":true,"permalink":"/technology/obsidian/grab-frontmatter-from-another-note/","tags":["Obsidian","code"],"noteIcon":"","created":"2024-05-28T00:00:00","updated":"2024-05-28 9:45:35 am"}
 ---
 
+
+
+- [x] Difference in Hours 🛫 2024-05-28 ✅ 2024-05-28 
+ 
+
 ## Yesterday is relative
 <span><span>NOTES/DAILY NOTES/2024/05-May/2024-05-27.md</span></span>
 
