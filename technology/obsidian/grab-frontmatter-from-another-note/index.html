@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>UPPERCASE AND UNDERSCORE COLUMN NAMES</title>
+<title>Grab frontmatter from (another) note</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -195,7 +195,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/uppercase-and-underscore-column-names/">UPPERCASE AND UNDERSCORE COLUMN NAMES </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/data/uppercase-and-underscore-column-names/">UPPERCASE AND UNDERSCORE COLUMN NAMES </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -430,7 +430,7 @@ CTRL + K
 <span class="foldername">OBSIDIAN</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/obsidian/grab-frontmatter-from-another-note/">Grab frontmatter from (another) note </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/obsidian/grab-frontmatter-from-another-note/">Grab frontmatter from (another) note </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -548,26 +548,36 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">UPPERCASE AND UNDERSCORE COLUMN NAMES</h1>
+<h1 data-note-icon="">Grab frontmatter from (another) note</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Power_query
+#Obsidian
 </a>
 <a class="tag" onclick="toggleTagSearch(this)">
-#Data
+#code
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2023-12-03 10:12"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-03-01 19:43"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-05-28T00:00:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-05-28 9:45:35 am"></span></div></div></div>
 </header>
-<p><a class="internal-link" target="" data-note-icon="" href="/notes/data-bi-and-pq-data-tips-and-tricks">BI and PQ DATA TIPS AND TRICKS</a></p>
-<p>Table.TransformColumnNames( Source, each Text.Upper( _ ) )<br>
-// CAPITALIZES All Column Names</p>
-<p>Table.TransformColumnNames(UppercasedText, each Text.Replace( <em>, &quot; &quot;, &quot;</em>&quot; ) )<br>
-// Replaces all full stops with a space</p>
-<p>EXAMPLE IN EDITOR<br>
-UppercasedText = Table.TransformColumnNames(#&quot;Renamed Columns4&quot;, each Text.Upper( _ ) ),<br>
-AddUnderScore = Table.TransformColumnNames(UppercasedText, each Text.Replace( _, &quot;.&quot;, &quot; &quot; ))</p>
+<h2 id="yesterday-is-relative" tabindex="-1">Yesterday is relative</h2>
+<p><span><span>NOTES/DAILY NOTES/2024/05-May/2024-05-27.md</span></span></p>
+<h2 id="yesterday-is-relative-but-grabs-frontmatter-from-yesterday" tabindex="-1">Yesterday is relative, but grabs frontmatter from yesterday</h2>
+<p><span><span>IF_START: 2024-05-27T17:45:00.000-04:00</span></span></p>
+<h2 id="yesterday-is-relative-but-does-calculation-between-notes" tabindex="-1">Yesterday is relative, but does calculation between notes</h2>
+<p><span><span>Time difference between IF_START and IF_END: 13.00 hours</span></span></p>
+<h2 id="grabs-frontmatter-from-date-created-today-not-relative" tabindex="-1">Grabs frontmatter from date_created today (not relative)</h2>
+<p><span>2024-05-28</span></p>
+<h2 id="calculates-non-relative-yesterday" tabindex="-1">Calculates non-relative yesterday</h2>
+<p><span><span>2024-05-27</span></span></p>
+<h2 id="non-relative-yesterday-and-today" tabindex="-1">Non-relative yesterday and today</h2>
+<p><span><span>Today: 2024-05-28, Yesterday: 2024-05-27</span></span></p>
+<h2 id="best-way-to-grab-frontmatter-from-current-note" tabindex="-1">Best way to grab frontmatter from current note:</h2>
+<p>dv.current().date_created</p>
+<h2 id="this-is-the-final-correct-code" tabindex="-1">This is the final correct code!</h2>
+<p><span><span>Difference in hours between IF_START from yesterday and IF_END from today: 13</span></span></p>
+<p>REFERENCE:<br>
+<a href="https://chatgpt.com/share/38311efa-b7d5-4844-826c-f2193e555f0b" target="_blank" class="external-link">https://chatgpt.com/share/38311efa-b7d5-4844-826c-f2193e555f0b</a></p>
 </main>
 <aside>
 <div class="sidebar">
@@ -600,9 +610,39 @@ AddUnderScore = Table.TransformColumnNames(UppercasedText, each Text.Replace( _,
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
 </div>
 </div>
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#yesterday-is-relative">Yesterday is relative</a>
+</li>
+<li><a href="#yesterday-is-relative-but-grabs-frontmatter-from-yesterday">Yesterday is relative, but grabs frontmatter from yesterday</a>
+</li>
+<li><a href="#yesterday-is-relative-but-does-calculation-between-notes">Yesterday is relative, but does calculation between notes</a>
+</li>
+<li><a href="#grabs-frontmatter-from-date-created-today-not-relative">Grabs frontmatter from date_created today (not relative)</a>
+</li>
+<li><a href="#calculates-non-relative-yesterday">Calculates non-relative yesterday</a>
+</li>
+<li><a href="#non-relative-yesterday-and-today">Non-relative yesterday and today</a>
+</li>
+<li><a href="#best-way-to-grab-frontmatter-from-current-note">Best way to grab frontmatter from current note:</a>
+</li>
+<li><a href="#this-is-the-final-correct-code">This is the final correct code!</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><a href="/notes/DATA/BI and PQ DATA TIPS AND TRICKS/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
