@@ -26,3 +26,6 @@ Add property: cssclasses: wider-note
 }
 ```
 
+Reference:
+- https://www.reddit.com/r/ObsidianMD/comments/s55zcw/how_to_have_a_custom_line_width/
+- https://github.com/0skater0/obsidian-custom-note-width
