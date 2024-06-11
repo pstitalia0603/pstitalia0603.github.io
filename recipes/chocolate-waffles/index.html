@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Linux Samba Server on Windows 11</title>
+<title>Chocolate Waffles</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -123,6 +123,10 @@ CTRL + K
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">The Deep Conflict Between Our Work and Parenting Ideals </a>
 </div>
 </div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/what-happens-now-that-everyone-hates-their-phone/">What Happens Now That Everyone Hates Their Phone </a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -213,19 +217,6 @@ CTRL + K
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/stuff-i-use/">Stuff I use </a>
-</div>
-</div>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('INBOX')}" @click.stop="isOpen=!isOpen">
-<div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
-<span class="foldername">INBOX</span>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/inbox/what-happens-now-that-everyone-hates-their-phone/">What Happens Now That Everyone Hates Their Phone </a>
 </div>
 </div>
 </div>
@@ -345,7 +336,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Chocolate Waffles </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/chocolate-waffles/">Chocolate Waffles </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -353,7 +344,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Monkey Bread With Caramel Sauce </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/monkey-bread-with-caramel-sauce/">Monkey Bread With Caramel Sauce </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -409,7 +400,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Resources </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/resources/">Resources </a>
 </div>
 </div>
 </div>
@@ -422,7 +413,7 @@ CTRL + K
 <span class="foldername">LINUX</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Linux Samba Server on Windows 11 </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/linux/linux-samba-server-on-windows-11/">Linux Samba Server on Windows 11 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -462,7 +453,7 @@ CTRL + K
 <span class="foldername">TRACK</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Current Projects </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/track/current-projects/">Current Projects </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -470,7 +461,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">RECIPES </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/track/recipes/">RECIPES </a>
 </div>
 </div>
 </div>
@@ -543,7 +534,7 @@ CTRL + K
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-06-11T19:17:29.489Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-06-11T19:17:29.489Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-06-11T19:17:29.489Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-06-11T19:19:09.125Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-06-11T19:19:09.125Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-06-11T19:19:09.125Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
                     <a class="search-link" href="${e.url}">${e.title}</a>
                     <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
@@ -561,109 +552,68 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Linux Samba Server on Windows 11</h1>
+<h1 data-note-icon="">Chocolate Waffles</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#linux
+#Recipes
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#inbox
 </a>
 </div>
-<div class="timestamps"></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-04T08:43:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-13 10:47:47 am"></span></div></div></div>
 </header>
-<p><a class="internal-link is-unresolved" href="/404" target="">Share external drive with Samba on Raspberry Pi</a><br>
-<a class="internal-link is-unresolved" href="/404" target="">UFW firewall allow Samba inbound from Windows</a></p>
-<h1 id="a-href-https-unixcop-com-how-to-configure-samba-server-with-debian-11-target-blank-class-external-link-configure-samba-server-with-debian-a" tabindex="-1"><a href="https://unixcop.com/how-to-configure-samba-server-with-debian-11/" target="_blank" class="external-link">Configure Samba Server with Debian</a></h1>
-<h2 id="install-samba-server" tabindex="-1">Install Samba server</h2>
-<p>Check what is the IP address of the server.</p>
-<pre><code># ip addr
-</code></pre>
-<p>Update Server</p>
-<pre><code>sudo apt update
-</code></pre>
-<p>Install required package for Samba server.</p>
-<pre><code>sudo apt install samba
-</code></pre>
-<p>Enable samba service on reboot.</p>
-<pre><code>systemctl enable smbd
-</code></pre>
-<p>Open the following ports on the firewall.</p>
-<pre><code>ufw allow 139
-
-ufw allow 445 
-
-sudo ufw allow Samba
-</code></pre>
-<p>Now, restart the smbd service</p>
-<pre><code>systemctl restart smbd
-</code></pre>
-<p>Check running status of service.</p>
-<pre><code>systemctl status smbd
-</code></pre>
-<h2 id="mount-drive-in-linux" tabindex="-1">Mount drive in Linux</h2>
-<p><a href="https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/" target="_blank" class="external-link">https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/</a></p>
-<pre><code class="language-bash">sudo fdisk -l
-</code></pre>
-<p>Look towards bottom and assuming this is the only additional drive you have plugged in, you should see something like this:</p>
-<pre><code class="language-bash">Device     Boot Start       End   Sectors   Size Id Type
-/dev/sda1  *        2 975400959 975400958 465.1G 83 Linu
-</code></pre>
-<p>/dev/sda1 is the name of the partition on our external drive.</p>
-<p>Create a directory within our <code>/media/</code> folder to mount drive into</p>
-<pre><code class="language-bash">sudo mkdir /media/USBHDD
-</code></pre>
-<p>Ensure full access to the directory.</p>
-<pre><code class="language-bash">sudo chmod -R 777 /media/USBHDD/share
-</code></pre>
-<p>Mount external drive into that new directory.</p>
-<pre><code class="language-bash">sudo mount -t auto /dev/sda1 /media/USBHDD
-</code></pre>
-<p>Edit fstab configuration so that drive will properly mount whenever Raspberry Pi reboots.</p>
-<pre><code class="language-bash">sudo nano /etc/fstab
-</code></pre>
-<p>Add the following line to the bottom of the config file<br>
-<code>/dev/sda1 /media/USBHDD auto noatime 0 0</code></p>
-<h2 id="how-to-setup-samba-share" tabindex="-1">How to setup samba share.</h2>
-<p>Define a folder that will be shared across the network. In our example, the scenario folder name will be smbshare.</p>
-<p>Create a folder first.</p>
-<pre><code>mkdir /media/USBHDD
-</code></pre>
-<p>Before editing, copy the samba configuration file for the safe side.</p>
-<pre><code>cp /etc/samba/smb.conf smb.conf.orig
-</code></pre>
-<p>Edit the conf file and amend the following line at the bottom.</p>
-<pre><code>[sambashare]
-comment = Samba share
-path = /media/USBHDD
-read-only = no
-browsable = yes
-writeable=yes
-guest ok = yes
-create mask = 0777
-directory mask = 0777
-</code></pre>
-<p>Add a samba user to provide access over the internet.</p>
-<pre><code>sudo useradd smbuser
-</code></pre>
-<p>Provide smb authentication to the newly created user i.e. smbuser.</p>
-<pre><code>sudo smbpasswd -a smbuser
-</code></pre>
-<p>Make smbuser owner for samba share.</p>
-<pre><code>sudo chown smbuser:smbuser /smbshare/
-</code></pre>
-<p>Restart the samba service once again.</p>
-<pre><code>systemctl restart smbd
-</code></pre>
-<p>Open an MS window client. Map drive</p>
-<p><img src="https://unixcop.com/wp-content/uploads/2021/09/image-95.png" alt=""></p>
-<p>[[smb.conf]]</p>
-<p>Reference:<br>
-<a class="internal-link is-unresolved" href="/404" target="">Share external drive with Samba on Raspberry Pi</a><br>
-<a href="https://fernandezvictor.medium.com/raspberry-pi-as-samba-server-to-create-shared-folder-between-computers-cdea979092b8" target="_blank" class="external-link">https://fernandezvictor.medium.com/raspberry-pi-as-samba-server-to-create-shared-folder-between-computers-cdea979092b8</a><br>
-<a class="internal-link is-unresolved" href="/404" target="">Upgrade Debian 12 From Debian 11</a><br>
-<a href="https://www.webnots.com/how-to-enable-smb-server-in-windows-pc/" target="_blank" class="external-link">https://www.webnots.com/how-to-enable-smb-server-in-windows-pc/</a><br>
-<a href="https://orcacore.com/install-samba-file-sharing-debian-12/?trk=article-ssr-frontend-pulse_little-text-block" target="_blank" class="external-link">https://orcacore.com/install-samba-file-sharing-debian-12/?trk=article-ssr-frontend-pulse_little-text-block</a><br>
-<a href="https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/" target="_blank" class="external-link">https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/</a><br>
-<a class="internal-link is-unresolved" href="/404" target="">UFW firewall allow Samba inbound from Windows</a></p>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Waffles 🛫 2024-06-02 ✅ 2024-06-02</label></li>
+</ul>
+<h1 id="a-href-https-lilluna-com-chocolate-waffles-wprm-recipe-container-167383-target-blank-class-external-link-chocolate-waffles-a" tabindex="-1"><a href="https://lilluna.com/chocolate-waffles/#wprm-recipe-container-167383" target="_blank" class="external-link">Chocolate Waffles</a></h1>
+<h1 id="recipe" tabindex="-1">Recipe</h1>
+<ul>
+<li>
+<p>▢ 1 1/2 cups <a href="https://amzn.to/3rCHT6Z" target="_blank" class="external-link">all-purpose flour</a></p>
+</li>
+<li>
+<p>▢ 2 tsp <a href="https://amzn.to/36zp1i0" target="_blank" class="external-link">baking powder</a></p>
+</li>
+<li>
+<p>▢ 1/2 tsp baking soda</p>
+</li>
+<li>
+<p>▢ 1/2 tsp <a href="https://amzn.to/3C05p0i" target="_blank" class="external-link">salt</a></p>
+</li>
+<li>
+<p>▢ 1/2 cup <a href="https://amzn.to/36icNrv" target="_blank" class="external-link">sugar</a></p>
+</li>
+<li>
+<p>▢ 1/2 cup cocoa powder</p>
+</li>
+<li>
+<p>▢ 1 cup milk, 2% or higher</p>
+</li>
+<li>
+<p>▢ 2 eggs</p>
+</li>
+<li>
+<p>▢ 4 tbsp <a href="https://amzn.to/3cPKLoj" target="_blank" class="external-link">butter,</a> melted</p>
+</li>
+<li>
+<p>▢ 1 cup chocolate chips</p>
+</li>
+<li>
+<p>Preheat waffle iron.</p>
+</li>
+<li>
+<p>Mix flour, baking powder, baking soda, salt, sugar and cocoa in a large mixing bowl.</p>
+</li>
+<li>
+<p>Stir in milk, eggs and butter and mix until smooth. Fold in chocolate chips.</p>
+</li>
+<li>
+<p>Scoop out almost 1 cups worth of batter and pour onto greased waffle iron. Cook for a few minutes, or until golden brown.</p>
+</li>
+</ul>
+<p>Serving: 4g, Calories: 689kcal, Carbohydrates: 102g, Protein: 14g, Fat: 28g, Saturated Fat: 16g, Polyunsaturated Fat: 1g, Monounsaturated Fat: 5g, Trans Fat: 1g, Cholesterol: 125mg, Sodium: 621mg, Potassium: 531mg, Fiber: 6g, Sugar: 57g, Vitamin A: 668IU, Vitamin C: 1mg, Calcium: 245mg, Iron: 5mg</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -705,15 +655,9 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#a-href-https-unixcop-com-how-to-configure-samba-server-with-debian-11-target-blank-class-external-link-configure-samba-server-with-debian-a">Configure Samba Server with Debian</a>
-<ol>
-<li><a href="#install-samba-server">Install Samba server</a>
+<li><a href="#a-href-https-lilluna-com-chocolate-waffles-wprm-recipe-container-167383-target-blank-class-external-link-chocolate-waffles-a">Chocolate Waffles</a>
 </li>
-<li><a href="#mount-drive-in-linux">Mount drive in Linux</a>
-</li>
-<li><a href="#how-to-setup-samba-share">How to setup samba share.</a>
-</li>
-</ol>
+<li><a href="#recipe">Recipe</a>
 </li>
 </ol>
 </nav>
@@ -721,8 +665,7 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card">
-<span class="no-backlinks-message">No other pages mentions this page</span>
+<div class="backlink-list"><div class="backlink-card"><a href="/track/recipes/" data-note-icon="" class="backlink">RECIPES</a>
 </div></div>
 </div>
 </div>

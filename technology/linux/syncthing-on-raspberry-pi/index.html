@@ -123,6 +123,10 @@ CTRL + K
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">The Deep Conflict Between Our Work and Parenting Ideals </a>
 </div>
 </div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/archive/2024/what-happens-now-that-everyone-hates-their-phone/">What Happens Now That Everyone Hates Their Phone </a>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -213,19 +217,6 @@ CTRL + K
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/digital-garden/stuff-i-use/">Stuff I use </a>
-</div>
-</div>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="">
-<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('INBOX')}" @click.stop="isOpen=!isOpen">
-<div class="foldername-wrapper align-icon">
-<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
-<i x-show="!isOpen" icon-name="chevron-right"></i>
-<span class="foldername">INBOX</span>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/inbox/what-happens-now-that-everyone-hates-their-phone/">What Happens Now That Everyone Hates Their Phone </a>
 </div>
 </div>
 </div>
@@ -345,7 +336,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Chocolate Waffles </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/chocolate-waffles/">Chocolate Waffles </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -353,7 +344,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Monkey Bread With Caramel Sauce </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/monkey-bread-with-caramel-sauce/">Monkey Bread With Caramel Sauce </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -409,7 +400,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Resources </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/resources/">Resources </a>
 </div>
 </div>
 </div>
@@ -422,7 +413,7 @@ CTRL + K
 <span class="foldername">LINUX</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Linux Samba Server on Windows 11 </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/linux/linux-samba-server-on-windows-11/">Linux Samba Server on Windows 11 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -462,7 +453,7 @@ CTRL + K
 <span class="foldername">TRACK</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">Current Projects </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/track/current-projects/">Current Projects </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -470,7 +461,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/">RECIPES </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/track/recipes/">RECIPES </a>
 </div>
 </div>
 </div>
@@ -543,7 +534,7 @@ CTRL + K
                    repeatCount="indefinite" />
           </circle>
       </g>
-  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-06-11T19:17:29.489Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-06-11T19:17:29.489Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-06-11T19:17:29.489Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
+  </svg>`;function debounce(n,r,i){var c;return function(){var e=this,t=arguments,a=i&&!c;clearTimeout(c),c=setTimeout(function(){c=null,i||n.apply(e,t)},r),a&&n.apply(e,t)}}function setCorrectShortcut(){0<=navigator.platform.toUpperCase().indexOf("MAC")&&document.querySelectorAll(".search-keys").forEach(e=>e.innerHTML="⌘ + K")}function createIndex(e){var t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/);const a=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach((e,t)=>{a.add({id:t,title:e.title,content:e.content,tags:e.tags})}),a}async function init(){var e;let t=!0;localStorage.getItem("searchIndex")&&({date:e,docs:n}=JSON.parse(localStorage.getItem("searchIndex")),"2024-06-11T19:19:09.125Z"===e)&&(t=!1,e=createIndex(n),window.docs=n,window.index=e),t&&(e=createIndex(n=await(await fetch("/searchIndex.json?v=2024-06-11T19:19:09.125Z")).json()),localStorage.setItem("searchIndex",JSON.stringify({date:"2024-06-11T19:19:09.125Z",docs:n})),window.docs=n,window.index=e),document.addEventListener("keydown",e=>{var t;(e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")&&("ArrowDown"===e.key&&(e.preventDefault(),((t=document.querySelector(".searchresult.active"))&&(t.classList.remove("active"),t.nextElementSibling)||document.querySelector(".searchresult")).classList.add("active"),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"ArrowUp"===e.key&&(e.preventDefault(),(t=document.querySelector(".searchresult.active"))?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling||e.classList.add("active")})):document.querySelectorAll(".searchresult").forEach(e=>{e.nextElementSibling&&e.classList.add("active")}),t=document.querySelector(".searchresult.active"))&&t.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"}),"Enter"===e.key)&&(e.preventDefault(),t=document.querySelector(".searchresult.active"))&&(window.location.href=t.querySelector("a").href)});const a=debounce(search,200,!1);(field=document.querySelector("#term")).addEventListener("keydown",e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&a()}),resultsDiv=document.querySelector("#search-results");var n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){var e=field.value.trim();if(e&&e!=lastSearch){console.log("search for "+e),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;var a=offlineSearch(e);let t="";a.length?(t+='<div style="max-width:100%;">',a.forEach(e=>{e.tags&&0<e.tags.length?t+=`<div class="searchresult">
                     <a class="search-link" href="${e.url}">${e.title}</a>
                     <div onclick="window.location='${e.url}'">
                         <div class="header-meta">
@@ -578,10 +569,12 @@ CTRL + K
 </header>
 <p><a class="internal-link" target="" data-note-icon="" href="/technology/linux/syncthing-linux/">Syncthing linux</a></p>
 <h1 id="synchronizing-files-on-your-raspberry-pi-with-syncthing" tabindex="-1">Synchronizing Files on your Raspberry Pi with Syncthing</h1>
-<p><a href="https://syncthing.net/downloads/" target="_blank" class="external-link">Clients for Syncthing</a> are available for each of these operating systems that make it easy to use.</p>
+<p><a href="https://syncthing.net/downloads/" target="_blank" class="external-link">Clients for Syncthing</a></p>
 <p>Find everything running on the network:</p>
 <pre><code>sudo nmap -sn 192.168.1.0/24
 </code></pre>
+<h2 id="assign-static-ip-to-raspberry-pi" tabindex="-1">Assign static IP to raspberry Pi</h2>
+<p><a href="https://pimylifeup.com/raspberry-pi-static-ip-address/" target="_blank" class="external-link">https://pimylifeup.com/raspberry-pi-static-ip-address/</a></p>
 <h2 id="installing-syncthing-to-your-raspberry-pi" tabindex="-1">Installing Syncthing to Your Raspberry Pi</h2>
 <p>In this section, you will learn how to easily install the Syncthing software to your Raspberry Pi using straightforward steps.</p>
 <p>To install the software, we will need to add the project’s PGP keys and add its package repository as a potential source.</p>
@@ -590,13 +583,13 @@ CTRL + K
 <pre><code class="language-bash">sudo apt update
 sudo apt full-upgrade
 </code></pre>
-<p><strong>2.</strong> Next, we need to make sure that we have the <code>apt-transport-https</code> package installed.</p>
+<p><strong>2.</strong> Next, make sure the <code>apt-transport-https</code> package is installed.</p>
 <p>This package allows the package manager to handle sources that operate over the HTTPS protocol. By default, this is not supported.</p>
 <p>Typically this is provided with most operating systems these days, however, trimmed back ones such as Raspberry Pi OS Lite might have it removed.</p>
-<p>We can install the required package by running the command below.</p>
+<p>Install the required package by running the command below.</p>
 <pre><code class="language-bash">sudo apt install apt-transport-https
 </code></pre>
-<p><strong>3.</strong> Finally, we can store the Syncthing GPG keys in our keyrings directory.</p>
+<p><strong>3.</strong> Finally, store the Syncthing GPG keys in keyrings directory.</p>
 <p>These keys are designed to ensure that the packages we are installing have been correctly signed and aren’t coming from an unexpected source.</p>
 <p>Download and save the keys by using the following command on your Raspberry Pi.</p>
 <pre><code class="language-bash">curl -s https://syncthing.net/release-key.txt | gpg --dearmor | sudo tee /usr/share/keyrings/syncthing-archive-keyring.gpg &gt;/dev/null
@@ -631,7 +624,7 @@ sudo apt full-upgrade
 <p><strong>3.</strong> After the first run, Syncthing will create all the configuration files we need.</p>
 <p>This configuration file will only work as long as we run the Syncthing software with our <code>pi</code> user.</p>
 <p>Begin editing the required config file using the <a href="https://pimylifeup.com/nano-text-editor/" target="_blank" class="external-link">nano text editor</a> by using the command below.</p>
-<h2 id="important-to-find-config-file" tabindex="-1">IMPORTANT TO FIND CONFIG FILE:</h2>
+<h2 id="strong-important-to-find-config-file-strong" tabindex="-1"><strong>IMPORTANT TO FIND CONFIG FILE:</strong></h2>
 <p>find configuration file:</p>
 <pre><code class="language-text">syncthing -paths
 </code></pre>
@@ -695,15 +688,24 @@ WantedBy=multi-user.target
 <p>We can verify this by using the command below.</p>
 <pre><code class="language-bash">sudo systemctl status syncthing
 </code></pre>
+<h1 id="ufw-profile" tabindex="-1">UFW profile</h1>
+<p>This tells you which ports the particular app uses</p>
+<pre><code>sudo ufw app info syncthing
+</code></pre>
+<h2 id="ufw-settings" tabindex="-1">UFW settings</h2>
+<pre><code>sudo ufw status
+</code></pre>
 <p>OPEN Ports:<br>
 22000/tcp<br>
 21027/udp</p>
+<pre><code>sudo ufw allow 22000
+</code></pre>
+<pre><code>sudo ufw allow 21027
+</code></pre>
+<pre><code>sudo ufw allow 8384
+</code></pre>
 <p>If the service has started correctly and is running, you should see the following displayed within the message.</p>
-<pre><code>Active: active (running)
-</code></pre>
-<h1 id="ufw-profile" tabindex="-1">UFW profile</h1>
-<pre><code>sudo ufw app info syncthing
-</code></pre>
+<p>Active: active (running)</p>
 <h2 id="using-your-raspberry-pi-s-syncthing-web-interface" tabindex="-1">Using your Raspberry Pi’s Syncthing Web Interface</h2>
 <p>At this point, you should now have the Syncthing software up and running on your Raspberry Pi.</p>
 <p>We can finally move on to configuring the software and adding a device to synchronize files with. To make this easier to follow, we will split this into smaller sections.</p>
@@ -823,11 +825,13 @@ On this page
 <ol>
 <li><a href="#synchronizing-files-on-your-raspberry-pi-with-syncthing">Synchronizing Files on your Raspberry Pi with Syncthing</a>
 <ol>
+<li><a href="#assign-static-ip-to-raspberry-pi">Assign static IP to raspberry Pi</a>
+</li>
 <li><a href="#installing-syncthing-to-your-raspberry-pi">Installing Syncthing to Your Raspberry Pi</a>
 </li>
 <li><a href="#allowing-outside-access-to-your-syncthing-web-interface">Allowing Outside Access to your Syncthing Web Interface</a>
 </li>
-<li><a href="#important-to-find-config-file">IMPORTANT TO FIND CONFIG FILE:</a>
+<li><a href="#strong-important-to-find-config-file-strong">IMPORTANT TO FIND CONFIG FILE:</a>
 </li>
 <li><a href="#setting-up-syncthing-as-a-service-on-the-raspberry-pi">Setting up Syncthing as a Service on the Raspberry Pi</a>
 </li>
@@ -835,6 +839,8 @@ On this page
 </li>
 <li><a href="#ufw-profile">UFW profile</a>
 <ol>
+<li><a href="#ufw-settings">UFW settings</a>
+</li>
 <li><a href="#using-your-raspberry-pi-s-syncthing-web-interface">Using your Raspberry Pi’s Syncthing Web Interface</a>
 <ol>
 <li><a href="#connecting-to-the-syncthing-web-interface">Connecting to the Syncthing Web Interface</a>
