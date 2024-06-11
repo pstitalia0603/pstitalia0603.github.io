@@ -8,14 +8,14 @@
  
 
 ## Yesterday is relative
-<span><span>NOTES/DAILY NOTES/2024/05-May/2024-05-27.md</span></span>
+<span><span>FITNESS/LOGS/2024-06-10 mon610.md</span></span>
 
 
 ## Yesterday is relative, but grabs frontmatter from yesterday
-<span><span>IF_START: 2024-05-27T17:45:00.000-04:00</span></span>
+<span><span>IF_START: IF_START field not found.</span></span>
 
 ## Yesterday is relative, but does calculation between notes
-<span><span>Time difference between IF_START and IF_END: 13.00 hours</span></span>
+<span><span>Time difference between IF_START and IF_END: 11.67 hours</span></span>
 
 
 
@@ -36,6 +36,24 @@ dv.current().date_created
 
 ## This is the final correct code!
 <span><span>Difference in hours between IF_START from yesterday and IF_END from today: 13</span></span>
+
+
+## Without Metaedit Plugin
+<span><span><strong>Fasting overnight Hours:</strong> 13</span></span>
+
+## With Metaedit Plugin
+<pre class="dataview dataview-error">Evaluation Error: TypeError: Cannot read properties of undefined (reading 'api')
+    at eval (eval at &lt;anonymous&gt; (plugin:dataview), &lt;anonymous&gt;:63:57)
+    at DataviewInlineApi.eval (plugin:dataview:18869:16)
+    at evalInContext (plugin:dataview:18870:7)
+    at asyncEvalInContext (plugin:dataview:18880:32)
+    at DataviewJSRenderer.render (plugin:dataview:18906:19)
+    at DataviewJSRenderer.onload (plugin:dataview:18448:14)
+    at e.load (app://obsidian.md/app.js:1:1165962)
+    at DataviewApi.executeJs (plugin:dataview:19449:18)
+    at DataviewCompiler.eval (plugin:digitalgarden:10760:23)
+    at Generator.next (&lt;anonymous&gt;)
+    at fulfilled (plugin:digitalgarden:77:24)</pre>
 
 
 REFERENCE:

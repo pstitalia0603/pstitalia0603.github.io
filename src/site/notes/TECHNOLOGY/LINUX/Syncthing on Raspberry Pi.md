@@ -5,7 +5,7 @@
 [[TECHNOLOGY/LINUX/Syncthing linux\|Syncthing linux]]
 # Synchronizing Files on your Raspberry Pi with Syncthing
 
-[Clients for Syncthing](https://syncthing.net/downloads/) are available for each of these operating systems that make it easy to use.
+[Clients for Syncthing](https://syncthing.net/downloads/) 
 
 
 
@@ -13,6 +13,9 @@ Find everything running on the network:
 ```
 sudo nmap -sn 192.168.1.0/24
 ```
+
+## Assign static IP to raspberry Pi
+https://pimylifeup.com/raspberry-pi-static-ip-address/
 
 ## Installing Syncthing to Your Raspberry Pi
 
@@ -29,19 +32,19 @@ sudo apt update
 sudo apt full-upgrade
 ```
 
-**2.** Next, we need to make sure that we have the `apt-transport-https` package installed.
+**2.** Next, make sure the `apt-transport-https` package is installed.
 
 This package allows the package manager to handle sources that operate over the HTTPS protocol. By default, this is not supported.
 
 Typically this is provided with most operating systems these days, however, trimmed back ones such as Raspberry Pi OS Lite might have it removed.
 
-We can install the required package by running the command below.
+Install the required package by running the command below.
 
 ```bash
 sudo apt install apt-transport-https
 ```
 
-**3.** Finally, we can store the Syncthing GPG keys in our keyrings directory.
+**3.** Finally, store the Syncthing GPG keys in keyrings directory.
 
 These keys are designed to ensure that the packages we are installing have been correctly signed and aren’t coming from an unexpected source.
 
@@ -111,7 +114,7 @@ This configuration file will only work as long as we run the Syncthing software 
 
 Begin editing the required config file using the [nano text editor](https://pimylifeup.com/nano-text-editor/) by using the command below.
 
-## IMPORTANT TO FIND CONFIG FILE:
+## **IMPORTANT TO FIND CONFIG FILE:**
 find configuration file: 
 ```text
 syncthing -paths
@@ -216,20 +219,36 @@ We can verify this by using the command below.
 sudo systemctl status syncthing
 ```
 
+# UFW profile
+This tells you which ports the particular app uses
+```
+sudo ufw app info syncthing
+```
+## UFW settings
+```
+sudo ufw status
+```
+
 OPEN Ports:
   22000/tcp
   21027/udp
 
+```
+sudo ufw allow 22000
+```
+
+```
+sudo ufw allow 21027
+```
+
+```
+sudo ufw allow 8384
+```
+
 If the service has started correctly and is running, you should see the following displayed within the message.
 
-```
 Active: active (running)
-```
 
-# UFW profile
-```
-sudo ufw app info syncthing
-```
 ## Using your Raspberry Pi’s Syncthing Web Interface
 
 At this point, you should now have the Syncthing software up and running on your Raspberry Pi.

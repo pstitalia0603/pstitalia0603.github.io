@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/obsidian/read-line-length-wider-note-css-snippet/","tags":["code","wider-note","Obsidian"],"noteIcon":"","created":"2024-05-27 4:26:35 pm","updated":"2024-05-27 4:26:54 pm"}
+{"dg-publish":true,"permalink":"/technology/obsidian/read-line-length-wider-note-css-snippet/","tags":["code","wider-note","Obsidian","Reference"],"noteIcon":"","created":"2024-05-27 4:26:35 pm","updated":"2024-05-27 4:26:54 pm"}
 ---
 
 Description: allow individual note bypassing of limiting line length set in Settings-->Editor-->Readable Line Length

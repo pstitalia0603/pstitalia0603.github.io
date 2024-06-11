@@ -1,12 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-tags:
-  - linux
-date_created: 2024-03-21T20:17:00
-date_modified: 2024-03-21 20:17
-date_completed: 2024-03-22T06:41:00
+{"dg-publish":true,"permalink":"/technology/linux/linux-samba-server-on-windows-11/","tags":["linux"],"noteIcon":"","created":"2024-03-21T20:17:00","updated":"2024-03-21 20:17"}
 ---
+
 [[TECHNOLOGY/LINUX/Share external drive with Samba on Raspberry Pi\|Share external drive with Samba on Raspberry Pi]]
 [[TECHNOLOGY/LINUX/UFW firewall allow Samba inbound from Windows\|UFW firewall allow Samba inbound from Windows]]
 
@@ -29,13 +24,17 @@ sudo apt update
 Install required package for Samba server.
 
 ```
-sudo apt install samba
+sudo apt install samba samba-common-bin
 ```
 
 Enable samba service on reboot.
 
 ```
-systemctl enable smbd
+sudo systemctl enable smbd
+
+sudo systemctl start smbd
+
+sudo systemctl status smbd
 ```
 
 Open the following ports on the firewall.
@@ -64,7 +63,7 @@ systemctl status smbd
 
 https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/
 
-```bash
+```
 sudo fdisk -l
 ```
 
@@ -86,23 +85,25 @@ sudo mkdir /media/USBHDD
 Ensure full access to the directory.
 
 ```bash
-sudo chmod -R 777 /media/USBHDD/share
+sudo chmod -R 777 /media/USBHDD/
 ```
 
 Mount external drive into that new directory.
 
-```bash
+```
 sudo mount -t auto /dev/sda1 /media/USBHDD
 ```
 
 Edit fstab configuration so that drive will properly mount whenever Raspberry Pi reboots.
 
-```bash
+```
 sudo nano /etc/fstab
 ```
 
 Add the following line to the bottom of the config file
-`/dev/sda1 /media/USBHDD auto noatime 0 0` 
+```
+/dev/sda1 /media/USBHDD auto noatime 0 0
+```
 ## How to setup samba share.
 
 Define a folder that will be shared across the network. In our example, the scenario folder name will be smbshare.
@@ -151,7 +152,13 @@ Make smbuser owner for samba share.
 sudo chown smbuser:smbuser /smbshare/
 ```
 
-Restart the samba service once again.
+if errors:
+```
+sudo systemctl enable smbd.service 
+sudo systemctl start smbd.service
+```
+
+Restart the samba service once again.just saw
 
 ```
 systemctl restart smbd

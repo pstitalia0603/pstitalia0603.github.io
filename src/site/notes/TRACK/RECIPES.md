@@ -1,18 +1,15 @@
 ---
-dg-publish: true
-dg-home: false
-tags:
-  - Interests
-date_created: 2024-02-25T15:55:00
-date_modified: 2024-02-25 15:59
+{"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"noteIcon":"","created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/05-May/2024-05-28\|2024-05-28]]
+
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/06-Jun/2024-06-11\|2024-06-11]]
 
 
 [[TRACK/Interests\|INTERESTS]]
 
 | File                                                                                              | DATE       |
 | ------------------------------------------------------------------------------------------------- | ---------- |
+| [[RECIPES/Tzatziki Sauce - Love and Lemons\|Tzatziki Sauce - Love and Lemons]]                 | 2024-06-01 |
 | [[RECIPES/Pineapple Upside Down Cake\|Pineapple Upside Down Cake]]                             | 2024-05-25 |
 | [[RECIPES/Baked Oatmeal - Two Peas & Their Pod\|Baked Oatmeal - Two Peas & Their Pod]]         | 2024-05-18 |
 | [[RECIPES/Copycat Junior Mints  Kidstir\|Copycat Junior Mints  Kidstir]]                       | 2024-05-18 |
