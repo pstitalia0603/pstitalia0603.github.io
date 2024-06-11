@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Apache Superset</title>
+<title>What Happens Now That Everyone Hates Their Phone</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://fastly.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js"></script>
 <script>mermaid.initialize({startOnLoad:!0})</script>
@@ -229,7 +229,7 @@ CTRL + K
 <span class="foldername">INBOX</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/inbox/what-happens-now-that-everyone-hates-their-phone/">What Happens Now That Everyone Hates Their Phone </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/inbox/what-happens-now-that-everyone-hates-their-phone/">What Happens Now That Everyone Hates Their Phone </a>
 </div>
 </div>
 </div>
@@ -565,94 +565,20 @@ CTRL + K
                 </div>`}),t+="</div>",resultsDiv.innerHTML=t):((a=document.createElement("p")).innerText=`No results for "${e}"`,resultsDiv.innerHTML="",resultsDiv.appendChild(a))}}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs;let a="#"===e[0]&&1<e.length?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);e=t=>{var e=a.filter(e=>e.field===t);return 0===e.length?[]:[...e[0].result]};return[...new Set([...e("title"),...e("content"),...e("tags")])].map(e=>{e=t[e];return e.content=truncate(e.content,400),e.tags=e.tags.filter(e=>"gardenEntry"!=e&&"note"!=e),e})}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Apache Superset</h1>
+<h1 data-note-icon="">What Happens Now That Everyone Hates Their Phone</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Data
+#ToWatch
 </a>
 <a class="tag" onclick="toggleTagSearch(this)">
-#Projects
+#podcast
 </a>
 </div>
-<div class="timestamps"></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-05-28 2:43:37 pm"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-05-28 2:43:56 pm"></span></div></div></div>
 </header>
-<p><a class="internal-link" target="" data-note-icon="" href="/track/current-projects/">CURRENT PROJECTS</a></p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> Superset - Install in docker image: <a href="https://docs.docker.com/engine/install/debian/" target="_blank" class="external-link">https://docs.docker.com/engine/install/debian/</a> 🛫 ✅ 2024-04-30<br>
-<a href="https://superset.apache.org/docs/intro" target="_blank" class="external-link">https://superset.apache.org/docs/intro</a></label></li>
-</ul>
-<h2 id="remove-old-docker-containers" tabindex="-1">Remove old Docker containers</h2>
-<p><a href="https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes" target="_blank" class="external-link">https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes</a></p>
-<p>LIST:</p>
-<pre><code>sudo docker images -a
-</code></pre>
-<p>REMOVE ALL:</p>
-<pre><code>sudo docker system prune -a
-</code></pre>
-<hr>
-<h1 id="install-apache-superset-in-venv" tabindex="-1">Install Apache Superset in venv</h1>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> Install apache superset/venv 🛫 2024-04-30 ✅ 2024-04-30</label></li>
-</ul>
-<p>-- reference: <a href="https://www.youtube.com/watch?v=yE5oFC0VAKo" target="_blank" class="external-link">https://www.youtube.com/watch?v=yE5oFC0VAKo</a></p>
-<ul>
-<li>python -m venv supersetvenv</li>
-<li>. ./supersetvenv/bin/activate</li>
-<li>pip install apache-superset</li>
-<li>pip install --upgrade pip</li>
-<li>export FLASK_APP=superset</li>
-<li>openssl rand -base64 42</li>
-<li>&lt;/copy SECRET_KEY&gt;</li>
-<li>cd/supersetvenv/lib/python3.11/site-packages/superset</li>
-<li>sudo nano <a href="http://config.py" target="_blank" class="external-link">config.py</a></li>
-<li>&lt;/below SECRET_KEY = os.environ.get(&quot;SUPERSET_SECRET_KEY&quot;) or CHANGE_ME SECRET_KEY/&gt; ... add</li>
-<li>SECRET_KEY='&lt;/ SECRET_ _KEY CREATED ABOVE /&gt;'</li>
-<li>superset db upgrade</li>
-<li>pip install pillow</li>
-<li>superset fab create-admin
-<ul>
-<li>username: admin</li>
-<li>password: admin</li>
-</ul>
-</li>
-<li>superset load_examples</li>
-<li>superset init</li>
-<li>Open UFW Port
-<ul>
-<li>sudo ufw allow 8089</li>
-</ul>
-</li>
-<li>superset run -h 192.168.1.167 -p 8089 --with-threads --reload --debugger</li>
-<li><a href="http://192.168.1.167:8089/login/" target="_blank" class="external-link">http://192.168.1.167:8089/login/</a></li>
-<li>&lt;/ctrl c/&gt;</li>
-<li>to end: deactivate</li>
-<li>To spin up again:
-<ul>
-<li>First time only:
-<ul>
-<li>pip install python-dotenv</li>
-<li>Create a &quot;.flaskenv&quot; in your project's root directory<br>
-- sudo nano .flaskenv<br>
-- Enter this--&gt;<br>
-- FLASK_APP=superset</li>
-</ul>
-</li>
-<li>cd ~</li>
-<li>source supersetvenv/bin/activate</li>
-<li>superset run -h 192.168.1.167 -p 8089 --with-threads --reload --debugger</li>
-</ul>
-</li>
-</ul>
-<h1 id="next-and-gt-connect-to-sqlite-db" tabindex="-1">Next --&gt; connect to sqlite db</h1>
-<p><a href="https://superset.apache.org/docs/databases/installing-database-drivers/" target="_blank" class="external-link">https://superset.apache.org/docs/databases/installing-database-drivers/</a></p>
-<ul>
-<li>SQLITE --&gt; SUPERSET
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_2" checked="true" disabled="true"><label for="cbx_2"> sqlite://path/to/file.db?check_same_thread=false 🛫 2024-05-02 ✅ 2024-05-02</label></li>
-</ul>
-</li>
-</ul>
+<h1 id="a-href-https-youtube-com-watch-v-2-lp-r9zh-el2-a-and-amp-feature-shared-target-blank-class-external-link-what-happens-now-that-everyone-hates-their-phone-a" tabindex="-1"><a href="https://youtube.com/watch?v=2LpR9zhEl2A&amp;feature=shared" target="_blank" class="external-link">What Happens Now That Everyone Hates Their Phone?</a></h1>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2LpR9zhEl2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </main>
 <aside>
 <div class="sidebar">
@@ -694,11 +620,7 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#remove-old-docker-containers">Remove old Docker containers</a>
-</li>
-<li><a href="#install-apache-superset-in-venv">Install Apache Superset in venv</a>
-</li>
-<li><a href="#next-and-gt-connect-to-sqlite-db">Next --> connect to sqlite db</a>
+<li><a href="#a-href-https-youtube-com-watch-v-2-lp-r9zh-el2-a-and-amp-feature-shared-target-blank-class-external-link-what-happens-now-that-everyone-hates-their-phone-a">What Happens Now That Everyone Hates Their Phone?</a>
 </li>
 </ol>
 </nav>
@@ -706,8 +628,8 @@ On this page
 </div>
 <div class="backlinks">
 <div class="backlink-title" style="margin:4px 0!important">Pages mentioning this page</div>
-<div class="backlink-list"><div class="backlink-card"><a href="/notes/DATA/BI and PQ DATA TIPS AND TRICKS/" data-note-icon="" class="backlink">BI and PQ DATA TIPS AND TRICKS</a>
-</div><div class="backlink-card"><a href="/track/current-projects/" data-note-icon="" class="backlink">Current Projects</a>
+<div class="backlink-list"><div class="backlink-card">
+<span class="no-backlinks-message">No other pages mentions this page</span>
 </div></div>
 </div>
 </div>
