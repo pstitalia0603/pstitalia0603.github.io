@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/stuff-i-use/","tags":["DigitalGarden"],"noteIcon":"","created":"2024-02-19T15:12:00","updated":"2024-02-19T15:12:00"}
+{"dg-publish":true,"permalink":"/digital-garden/stuff-i-use/","tags":["DigitalGarden"],"noteIcon":"","created":"2024-02-19T15:12:00","updated":"2024-06-17T16:12:00"}
 ---
 
 [[Home\|Home]]
