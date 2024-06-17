@@ -2,13 +2,14 @@
 {"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"noteIcon":"","created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/06-Jun/2024-06-11\|2024-06-11]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/06-Jun/2024-06-17\|2024-06-17]]
 
 
 [[TRACK/Interests\|INTERESTS]]
 
 | File                                                                                              | DATE       |
 | ------------------------------------------------------------------------------------------------- | ---------- |
+| [[RECIPES/Youtube - Lentil Curry Recipe\|Youtube - Lentil Curry Recipe]]                       | 2024-06-17 |
 | [[RECIPES/Tzatziki Sauce - Love and Lemons\|Tzatziki Sauce - Love and Lemons]]                 | 2024-06-01 |
 | [[RECIPES/Pineapple Upside Down Cake\|Pineapple Upside Down Cake]]                             | 2024-05-25 |
 | [[RECIPES/Baked Oatmeal - Two Peas & Their Pod\|Baked Oatmeal - Two Peas & Their Pod]]         | 2024-05-18 |

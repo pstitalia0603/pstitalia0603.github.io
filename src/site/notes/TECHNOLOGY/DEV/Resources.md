@@ -88,7 +88,7 @@ https://ohmyposh.dev/
 - https://htmldog.com/guides/
 
 # Markdown Collaboration 
-- [ ] https://onlinemarkdowneditor.dev/  🛫 2024-06-13
+- [ ] https://onlinemarkdowneditor.dev/  
 
 # Localhost tunnels/other
 links-cloud and web hosting 🛫 2024-06-13

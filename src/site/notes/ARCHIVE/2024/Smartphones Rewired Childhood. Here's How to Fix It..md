@@ -1,15 +1,7 @@
 ---
-dg-home: false
-dg-publish: true
-tags:
-  - podcast
-date_created: 2024-05-13T08:36:00
-date_modified: 2024-05-13 8:36:56 pm
-date_completed: 2024-03-26T21:34:00
-archive: "2024"
-Rating: 5
-Transcript: Y
+{"dg-publish":true,"permalink":"/archive/2024/smartphones-rewired-childhood-here-s-how-to-fix-it/","tags":["podcast"],"noteIcon":"","created":"2024-05-13T08:36:00","updated":"2024-05-13 8:36:56 pm"}
 ---
+
 Honestly with Bari Weiss: Jonathan Haidt: Smartphones Rewired Childhood. Here's How to Fix It.
 
 Episode webpage: https://www.bariweiss.com/
