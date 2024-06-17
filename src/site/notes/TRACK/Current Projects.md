@@ -34,12 +34,12 @@
 - [[TECHNOLOGY/DEV/ohmyposh\|ohmyposh]]
 - https://tina.io/
 - https://picocss.com/
+- [[TECHNOLOGY/LINUX/Coolify and Cloudflared\|Coolify and Cloudflared]]
 
 
 
-# [[PROJECTS/MEED Project\|MEED Project]] 
 
-# [[TECHNOLOGY/LINUX/Coolify and Cloudflared\|Coolify and Cloudflared]]
+## 
 
 
 
