@@ -13,7 +13,7 @@
 - RaspberryPi 4B
 
 ## OS / Environment
-- Debian / Ubuntu Linux 
+- Debian / Ubuntu Linux / Mint Linux
 - Android
 - Windows 11
 
@@ -44,7 +44,7 @@
 - Aegis
 
 ## Services
-- [Syncthing](https://syncthing.net/) - File Syncronization
+- [Syncthing](https://syncthing.net/) - File Synchronization
 
 ## Online Services
 - Bitwarden
