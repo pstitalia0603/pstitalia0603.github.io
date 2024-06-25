@@ -84,11 +84,12 @@ https://ohmyposh.dev/
 # Git
 - https://learngitbranching.js.org/
 
-# Tutorial
+# Tutorials
 - https://htmldog.com/guides/
+- https://thevalleyofcode.com/
 
 # Markdown Collaboration 
-- [ ] https://onlinemarkdowneditor.dev/  
+- https://onlinemarkdowneditor.dev/  
 
 # Localhost tunnels/other
 links-cloud and web hosting 🛫 2024-06-13
