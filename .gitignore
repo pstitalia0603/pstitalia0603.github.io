@@ -10,6 +10,7 @@ src/site/styles/_theme.*.css
 .vercel
 .cache
 _site/
+.env
 **/.DS_Store
 gh-pages.pub
 gh-pages
