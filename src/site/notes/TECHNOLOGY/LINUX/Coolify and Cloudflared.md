@@ -43,6 +43,10 @@ https://one.dash.cloudflare.com/85c72c7e3c5d0360367307dada3d35f8/networks/tunnel
 more info:
 https://omar2cloud.github.io/cloudflare/cloudflared/cloudflare/
 
+
+## Update cloudflared
+curl -L --output cloudflared.deb [https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb](https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb) && sudo dpkg -i cloudflared.deb && sudo systemctl restart cloudflared
+
 ### Check architecture
 ```
 apt-config dump | grep -F "APT::Architectures" -
@@ -65,7 +69,22 @@ apt-config dump | grep -F "APT::Architectures" -
 
 ---
 
-[[INBOX/Secure VPS - Self-host\|Secure VPS - Self-host]]
+[[TECHNOLOGY/LINUX/Secure VPS - Self-host\|Secure VPS - Self-host]]
+
+Install NPM, NVM, NODE, PNPM, etc. [[REFERENCE/Useful Linux Commands\|Useful Linux Commands]]
+
+## Install coolify.io
+https://coolify.io/self-hosted
+
+### create root password
+https://idroot.us/change-root-password-ubuntu-24-04/
+
+
+```
+sudo curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
+```
+
+
 
 https://medium.com/@vcoder/pi-hosted-on-premise-a-simple-guide-for-a-secured-budget-and-efficient-home-hosting-83c98027771a
 

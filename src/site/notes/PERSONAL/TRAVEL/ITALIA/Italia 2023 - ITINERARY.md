@@ -1,14 +1,7 @@
 ---
-dg-home: false
-dg-publish: true
-date_created: 2024-02-18 4:31:34 pm
-date_modified: 2024-04-13 12:44:16 pm
-tags:
-  - Italia
-  - Trips
-date_completed: 2024-01-14T11:55:00
-locations:
+{"dg-publish":true,"permalink":"/personal/travel/italia/italia-2023-itinerary/","tags":["Italia","Trips"],"noteIcon":"","created":"2024-02-18 4:31:34 pm","updated":"2024-04-13 12:44:16 pm"}
 ---
+
 
 
 
@@ -105,7 +98,7 @@ Dinner - Pasta Carmela made
 ### Garaguso
 ### Accettura 
 [accettura](geo:40.491016,16.157977)
-Lunch 12:30p - 4:30p - with Zio Donato/Zia Maria, Carmela
+Lunch 12:30p - 4:30p - with Zio Donato/Zia Maria, Carmela -;Ristorante Fiore
 ### Oliveto Lucano
 [oliveto lucano](geo:40.535317,16.184577)
 7:30p-8:30p
@@ -153,6 +146,7 @@ Ninillo's for dinner
 [matera](geo:40.447641899999994,16.47357384028852)
 Tour: Matera
 Lunch: **Ristorante Pizzeria il Casino del Diavolo** - Via la Martella, 75100 Matera MT, Italy
+
 Dinner: Tricarico - Pizzeria with Giocomo and family
 
 # Day 14 (8/3/23)

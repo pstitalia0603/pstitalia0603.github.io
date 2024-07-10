@@ -5,6 +5,8 @@
 [[TECHNOLOGY/LINUX/Share external drive with Samba on Raspberry Pi\|Share external drive with Samba on Raspberry Pi]]
 [[TECHNOLOGY/LINUX/UFW firewall allow Samba inbound from Windows\|UFW firewall allow Samba inbound from Windows]]
 
+
+[[REFERENCE/Useful Linux Commands\|Useful Linux Commands]]
 # [Configure Samba Server with Debian](https://unixcop.com/how-to-configure-samba-server-with-debian-11/)
 
 ## Install Samba server
@@ -122,6 +124,8 @@ cp /etc/samba/smb.conf smb.conf.orig
 
 Edit the conf file and amend the following line at the bottom.
 
+[[smb.conf]]
+
 ```
 [sambashare]
 comment = Samba share
@@ -169,7 +173,7 @@ Open an MS window client. Map drive
 ![](https://unixcop.com/wp-content/uploads/2021/09/image-95.png)
 
 
-[[smb.conf]]
+
 
 
 Reference: 

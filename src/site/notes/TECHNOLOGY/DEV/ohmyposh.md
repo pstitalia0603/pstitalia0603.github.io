@@ -1,14 +1,8 @@
 ---
-dg-home: false
-dg-publish: true
-tags:
-  - Projects
-  - code
-date_created: 2024-04-28 11:32:43 am
-date_modified: 2024-04-28T11:32:50
-date_completed: 2024-04-29T18:20:00
+{"dg-publish":true,"permalink":"/technology/dev/ohmyposh/","tags":["Projects","code"],"noteIcon":"","created":"2024-04-28 11:32:43 am","updated":"2024-04-28T11:32:50"}
 ---
-[[TRACK/Current Projects\|CURRENT PROJECTS]]
+
+[[TECHNOLOGY/DEV/RaspberryPI Setup\|RaspberryPI Setup]]
 
 https://ohmyposh.dev/docs/installation/prompt
 
@@ -179,3 +173,93 @@ nerd fonts: https://www.nerdfonts.com/font-downloads
 
 }
 ```
+
+## Linux setup
+
+https://www.youtube.com/watch?v=nGHgyPLi7UM
+
+```
+mkdir ~/bin
+```
+
+```
+curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
+```
+
+```
+eval "$(oh-my-posh init bash)"
+```
+
+```
+sudo nano ~/.bash_profile
+```
+
+download themes
+
+```
+cd bin
+```
+
+```
+git clone https://github.com/JanDeDobbeleer/oh-my-posh.git posh-themes
+```
+
+change psfrago to alpha, etc.
+```
+export PATH=$PATH:/home/psfrago/bin
+
+POSH_THEME="blueish"
+
+eval "$(oh-my-posh init bash --config /home/psfrago/bin/posh-themes/themes/$POSH_THEME.omp.json)"
+
+#blue-owl
+#atomic
+#blue-owl
+#blueish
+#montys
+#quick-term
+
+```
+
+### RENDER
+```
+ . ~/.bash_profile
+```
+
+## Windows setup
+
+find path
+```
+$PROFILE
+```
+
+run as administrator powershell
+
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+```
+
+```
+notepad $PROFILE
+```
+
+```
+oh-my-posh init pwsh | Invoke-Expression
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\blue-owl.omp.json" --print) -join "`n"))
+```
+
+render path
+```
+. $PROFILE
+```
+## THEMES
+https://ohmyposh.dev/docs/themes
+
+- atomic
+- blue-owl
+- blueish
+- montys
+- paradox
+- pixelrobots
+- powerline
+- quick-term

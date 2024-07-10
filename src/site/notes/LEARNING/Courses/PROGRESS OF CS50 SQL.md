@@ -1,14 +1,10 @@
 ---
-dg-publish: true
-dg-home: false
-tags:
-  - Courses
-date_created: 2024-02-19T08:21:00
-date_modified: 2024-04-03T07:57:00
+{"dg-publish":true,"permalink":"/learning/courses/progress-of-cs-50-sql/","tags":["Courses"],"noteIcon":"","created":"2024-02-19T08:21:00","updated":"2024-04-03T07:57:00"}
 ---
 
 
-<span><span><img alt="progress" src="https://progress-bar.dev/51/" referrerpolicy="no-referrer"></span></span>
+
+<span><span><p dir="auto"><img alt="progress" src="https://progress-bar.dev/51/" referrerpolicy="no-referrer"></p></span></span>
 
 [CS50 SQL](https://cs50.harvard.edu/sql/2023/project/)
 

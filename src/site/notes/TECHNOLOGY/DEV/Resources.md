@@ -48,6 +48,7 @@ https://ohmyposh.dev/
 
 # HTML Email tools
  - [[TECHNOLOGY/DEV/HTML Email Resources\|HTML Email Resources]]
+ - https://temp-mail.org/en/ - TempMail
 
 # Tools
 - https://rallly.co/
@@ -78,6 +79,12 @@ https://ohmyposh.dev/
 - https://cssreference.io/
 - https://css-tricks.com/
 
+# APIs
+- Weather
+	- [Open-Meteo](https://open-meteo.com/en/docs#current=&hourly=&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York&forecast_days=1)
+	- [wttr.in](https://wttr.in/?1)
+
+
 # Templates
 - https://www.template.net/editable/5198/school-email-newsletter
 
@@ -93,9 +100,20 @@ https://ohmyposh.dev/
 
 # Localhost tunnels/other
 links-cloud and web hosting 🛫 2024-06-13
+https://github.com/anderspitman/awesome-tunneling?tab=readme-ov-file
+
 - [ ] https://pinggy.io
 - [ ] https://zrok.io/ 
 - [ ] https://localxpose.io/docs/tutorials/sharing-files-from-localhost 
 - [ ] https://www.drv.tw/#how
 - [ ] https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs
 - [ ] https://code.visualstudio.com/docs/editor/port-forwarding
+- [ ] https://tunnel.pyjam.as/
+- [ ] https://tailscale.com/
+- [ ] https://earvingad.github.io/posts/headscale/ --> https://www.youtube.com/watch?v=OKwrfmMoAk0
+- [ ] https://telebit.cloud/
+
+# Self-host
+
+- [ ] https://www.youtube.com/watch?v=MpaAu3HVDYE 
+- [ ] https://www.youtube.com/watch?v=9t9Mp0BGnyI NginX

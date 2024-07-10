@@ -1,15 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-tags:
-  - Portfolio
-  - code
-  - Projects
-  - Python
-date_created: 2024-01-08T17:31:00
-date_modified: 2024-03-23T09:40:00
-date_completed: 2023-12-29T14:47:00
+{"dg-publish":true,"permalink":"/projects/archive-ics-to-csv-to-md/","tags":["Portfolio","code","Projects","Python"],"noteIcon":"","created":"2024-01-08T17:31:00","updated":"2024-03-23T09:40:00"}
 ---
+
 [[DO LIST/Archived calendars to obsidian\|Archived calendars to obsidian]]
 
 Converting historic calendar events to Full Calendar in Obsidian

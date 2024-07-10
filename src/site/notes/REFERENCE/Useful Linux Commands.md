@@ -30,7 +30,7 @@ npm install -g npm
 
 ### Install NVM
 ```
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
 Running either of the above commands downloads a script and runs it. The script clones the nvm repository to `~/.nvm`, and attempts to add the source lines from the snippet below to the correct profile file (`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`).
@@ -77,3 +77,15 @@ cat /sys/firmware/devicetree/base/model
 apt-config dump | grep -F "APT::Architectures" -
 ```
 
+### Services
+
+https://pimylifeup.com/raspberry-pi-security/
+
+- List running services:  
+    sudo service --status-all
+    
+- To stop a service use:  
+    sudo service service-name stop   
+
+- To uninstall it, it should be something like:  
+    sudo apt remove service-name

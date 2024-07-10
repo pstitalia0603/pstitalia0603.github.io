@@ -2,13 +2,14 @@
 {"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"noteIcon":"","created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/06-Jun/2024-06-25\|2024-06-25]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/07-Jul/2024-07-10\|2024-07-10]]
 
 
 [[TRACK/Interests\|INTERESTS]]
 
 | File                                                                                                      | DATE       |
 | --------------------------------------------------------------------------------------------------------- | ---------- |
+| [[RECIPES/Cauliflower Pita Bread Recipe\|Cauliflower Pita Bread Recipe]]                               | 2024-06-28 |
 | [[RECIPES/Sweet Potato Hashbrowns - Spend With Pennies\|Sweet Potato Hashbrowns - Spend With Pennies]] | 2024-06-18 |
 | [[RECIPES/Youtube - Lentil Curry Recipe\|Youtube - Lentil Curry Recipe]]                               | 2024-06-17 |
 | [[RECIPES/Tzatziki Sauce - Love and Lemons\|Tzatziki Sauce - Love and Lemons]]                         | 2024-06-01 |
@@ -25,8 +26,8 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/06-Jun/2024-06-25\|2024-06-25]]
 | [[RECIPES/Soft Boiled Eggs\|Soft Boiled Eggs]]                                                         | 2024-04-04 |
 | [[RECIPES/Tomato Basil Soup\|Tomato Basil Soup]]                                                       | 2024-04-04 |
 | [[RECIPES/Smoothie Recipe\|Smoothie Recipe]]                                                           | 2024-04-04 |
-| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                 | 2024-04-03 |
 | [[RECIPES/Lemon-Blueberry Oatmeal Bars\|Lemon-Blueberry Oatmeal Bars]]                                 | 2024-04-03 |
+| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                 | 2024-04-03 |
 | [[RECIPES/Mini Quiche\|Mini Quiche]]                                                                   | 2024-04-03 |
 | [[RECIPES/No-Bake Chocolate Oatmeal Bars\|No-Bake Chocolate Oatmeal Bars]]                             | 2024-03-18 |
 | [[RECIPES/Oatmeal Cups Recipe\|Oatmeal Cups Recipe]]                                                   | 2024-03-10 |

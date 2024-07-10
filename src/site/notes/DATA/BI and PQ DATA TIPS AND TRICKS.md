@@ -12,7 +12,6 @@ date_completed: 2024-01-10T09:26:00
 | File                                                                                     | DATE       | tags                                                                                   |
 | ---------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------- |
 | [[TECHNOLOGY/DEV/Apache Superset\|Apache Superset]]                                   | 05-23-2024 | <ul><li>Data</li><li>Projects</li></ul>                                                |
-| [[LEARNING/Courses/6-month Roadmap Data Analysis\|6-month Roadmap Data Analysis]]     | 06-03-2024 | <ul><li>Data</li><li>ToLearn</li></ul>                                                 |
 | [[DATA/Number rows by group\|Number rows by group]]                                   | 05-23-2024 | <ul><li>Power_query</li><li>Data</li><li>STP</li></ul>                                 |
 | [[DATA/REPLACE VALUES, MULTIPLE CRITERIA \|REPLACE VALUES, MULTIPLE CRITERIA ]]       | 05-23-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/Addressee COUPLE LASTNAMES\|Addressee COUPLE LASTNAMES]]                       | 05-23-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
