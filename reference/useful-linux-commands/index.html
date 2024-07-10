@@ -52,7 +52,7 @@ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.mi
 <pre><code>npm install -g npm
 </code></pre>
 <h3 id="install-nvm" tabindex="-1">Install NVM</h3>
-<pre><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+<pre><code>sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 </code></pre>
 <p>Running either of the above commands downloads a script and runs it. The script clones the nvm repository to <code>~/.nvm</code>, and attempts to add the source lines from the snippet below to the correct profile file (<code>~/.bash_profile</code>, <code>~/.zshrc</code>, <code>~/.profile</code>, or <code>~/.bashrc</code>).</p>
 <pre><code>export NVM_DIR=&quot;$([ -z &quot;${XDG_CONFIG_HOME-}&quot; ] &amp;&amp; printf %s &quot;${HOME}/.nvm&quot; || printf %s &quot;${XDG_CONFIG_HOME}/nvm&quot;)&quot;
@@ -81,6 +81,22 @@ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.mi
 <h3 id="check-architecture" tabindex="-1">Check architecture</h3>
 <pre><code>apt-config dump | grep -F &quot;APT::Architectures&quot; -
 </code></pre>
+<h3 id="services" tabindex="-1">Services</h3>
+<p><a href="https://pimylifeup.com/raspberry-pi-security/" target="_blank" class="external-link">https://pimylifeup.com/raspberry-pi-security/</a></p>
+<ul>
+<li>
+<p>List running services:<br>
+sudo service --status-all</p>
+</li>
+<li>
+<p>To stop a service use:<br>
+sudo service service-name stop</p>
+</li>
+<li>
+<p>To uninstall it, it should be something like:<br>
+sudo apt remove service-name</p>
+</li>
+</ul>
 </main>
 <script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",e=>{var t=e.oldURL.split("#"),t=(t[1]&&document.getElementById(t[1]).classList.remove("referred"),e.newURL.split("#"));t[1]&&document.getElementById(t[1]).classList.add("referred")},!1);let url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach(function(e){e.ondblclick=function(e){e=url+"#"+e.target.id;navigator.clipboard.writeText(e)}})</script>
 <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>

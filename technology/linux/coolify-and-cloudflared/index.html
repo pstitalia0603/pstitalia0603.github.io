@@ -61,6 +61,8 @@ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.mi
 <a href="https://one.dash.cloudflare.com/85c72c7e3c5d0360367307dada3d35f8/networks/tunnels?search=" target="_blank" class="external-link">https://one.dash.cloudflare.com/85c72c7e3c5d0360367307dada3d35f8/networks/tunnels?search=</a></p>
 <p>more info:<br>
 <a href="https://omar2cloud.github.io/cloudflare/cloudflared/cloudflare/" target="_blank" class="external-link">https://omar2cloud.github.io/cloudflare/cloudflared/cloudflare/</a></p>
+<h2 id="update-cloudflared" tabindex="-1">Update cloudflared</h2>
+<p>curl -L --output cloudflared.deb <a href="https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb" target="_blank" class="external-link">https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb</a> &amp;&amp; sudo dpkg -i cloudflared.deb &amp;&amp; sudo systemctl restart cloudflared</p>
 <h3 id="check-architecture" tabindex="-1">Check architecture</h3>
 <pre><code>apt-config dump | grep -F &quot;APT::Architectures&quot; -
 </code></pre>
@@ -73,6 +75,13 @@ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.mi
 </code></pre>
 <hr>
 <p><a class="internal-link is-unresolved" href="/404" target="">Secure VPS - Self-host</a></p>
+<p>Install NPM, NVM, NODE, PNPM, etc. <a class="internal-link" target="" data-note-icon="undefined" href="/reference/useful-linux-commands/">Useful Linux Commands</a></p>
+<h2 id="install-a-href-http-coolify-io-target-blank-class-external-link-coolify-io-a" tabindex="-1">Install <a href="http://coolify.io" target="_blank" class="external-link">coolify.io</a></h2>
+<p><a href="https://coolify.io/self-hosted" target="_blank" class="external-link">https://coolify.io/self-hosted</a></p>
+<h3 id="create-root-password" tabindex="-1">create root password</h3>
+<p><a href="https://idroot.us/change-root-password-ubuntu-24-04/" target="_blank" class="external-link">https://idroot.us/change-root-password-ubuntu-24-04/</a></p>
+<pre><code>sudo curl -fsSL https://cdn.coollabs.io/coolify/install.sh | bash
+</code></pre>
 <p><a href="https://medium.com/@vcoder/pi-hosted-on-premise-a-simple-guide-for-a-secured-budget-and-efficient-home-hosting-83c98027771a" target="_blank" class="external-link">https://medium.com/@vcoder/pi-hosted-on-premise-a-simple-guide-for-a-secured-budget-and-efficient-home-hosting-83c98027771a</a></p>
 <p><a href="https://github.com/coollabsio/coolify/blob/main/README.md" target="_blank" class="external-link">https://github.com/coollabsio/coolify/blob/main/README.md</a></p>
 <p><a href="https://rasmusgodske.com/posts/securely-expose-your-coolify-apps-with-the-magic-of-cloudflare-tunnels/" target="_blank" class="external-link">https://rasmusgodske.com/posts/securely-expose-your-coolify-apps-with-the-magic-of-cloudflare-tunnels/</a></p>

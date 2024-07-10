@@ -40,6 +40,7 @@ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.mi
 </header>
 <p><a class="internal-link is-unresolved" href="/404" target="">Share external drive with Samba on Raspberry Pi</a><br>
 <a class="internal-link is-unresolved" href="/404" target="">UFW firewall allow Samba inbound from Windows</a></p>
+<p><a class="internal-link" target="" data-note-icon="undefined" href="/reference/useful-linux-commands/">Useful Linux Commands</a></p>
 <h1 id="a-href-https-unixcop-com-how-to-configure-samba-server-with-debian-11-target-blank-class-external-link-configure-samba-server-with-debian-a" tabindex="-1"><a href="https://unixcop.com/how-to-configure-samba-server-with-debian-11/" target="_blank" class="external-link">Configure Samba Server with Debian</a></h1>
 <h2 id="install-samba-server" tabindex="-1">Install Samba server</h2>
 <p>Check what is the IP address of the server.</p>
@@ -104,6 +105,7 @@ sudo ufw allow Samba
 <pre><code>cp /etc/samba/smb.conf smb.conf.orig
 </code></pre>
 <p>Edit the conf file and amend the following line at the bottom.</p>
+<p>[[smb.conf]]</p>
 <pre><code>[sambashare]
 comment = Samba share
 path = /media/USBHDD
@@ -132,7 +134,6 @@ sudo systemctl start smbd.service
 </code></pre>
 <p>Open an MS window client. Map drive</p>
 <p><img src="https://unixcop.com/wp-content/uploads/2021/09/image-95.png" alt=""></p>
-<p>[[smb.conf]]</p>
 <p>Reference:<br>
 <a class="internal-link is-unresolved" href="/404" target="">Share external drive with Samba on Raspberry Pi</a><br>
 <a href="https://fernandezvictor.medium.com/raspberry-pi-as-samba-server-to-create-shared-folder-between-computers-cdea979092b8" target="_blank" class="external-link">https://fernandezvictor.medium.com/raspberry-pi-as-samba-server-to-create-shared-folder-between-computers-cdea979092b8</a><br>
