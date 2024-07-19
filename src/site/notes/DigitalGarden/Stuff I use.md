@@ -36,6 +36,7 @@
 - Visual Studio Code
 - git/github
 - DBeaver
+- AstroJS
 
 ## Other Software
 - [Obsidian](https://obsidian.md/) – Notes and documentation

@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"noteIcon":"","created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/07-Jul/2024-07-10\|2024-07-10]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/07-Jul/2024-07-19\|2024-07-19]]
 
 
 [[TRACK/Interests\|INTERESTS]]
@@ -40,6 +40,7 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/07-Jul/2024-07-10\|2024-07-10]]
 | [[RECIPES/Stuffed Peppers\|Stuffed Peppers]]                                                           | 2024-02-04 |
 | [[RECIPES/Nutella Crepes\|Nutella Crepes]]                                                             | 2023-12-01 |
 | [[RECIPES/Italian Grilled Cheese Sandwich\|Italian Grilled Cheese Sandwich]]                           | 2016-12-03 |
+| [[RECIPES/Ice Cream in a Bag\|Ice Cream in a Bag]]                                                     | \-         |
 
 { .block-language-dataview}
 
