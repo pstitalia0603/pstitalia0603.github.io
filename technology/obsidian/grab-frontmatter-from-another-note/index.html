@@ -457,6 +457,7 @@
 </div>
 <main class="content cm-s-obsidian">
 <header>
+<h1 data-note-icon="">Grab frontmatter from (another) note</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
@@ -534,6 +535,39 @@
 <div x-effect="window.graph = renderLocalGraph(graphData, depth, fullScreen)" id="link-graph"></div>
 <div x-show="showFullGraph" id="full-graph" class="show" style="display:none">
 <span id="full-graph-close" x-on:click="fullGraph = closefullGraph(fullGraph); showFullGraph = false;"><i icon-name="x" aria-hidden="true"></i></span><div id="full-graph-container"></div>
+</div>
+</div>
+<div class="toc">
+<div class="toc-title-container">
+<div class="toc-title">
+On this page
+</div>
+</div>
+<div class="toc-container">
+<nav class="toc">
+<ol>
+<li><a href="#yesterday-is-relative">Yesterday is relative</a>
+</li>
+<li><a href="#yesterday-is-relative-but-grabs-frontmatter-from-yesterday">Yesterday is relative, but grabs frontmatter from yesterday</a>
+</li>
+<li><a href="#yesterday-is-relative-but-does-calculation-between-notes">Yesterday is relative, but does calculation between notes</a>
+</li>
+<li><a href="#grabs-frontmatter-from-date-created-today-not-relative">Grabs frontmatter from date_created today (not relative)</a>
+</li>
+<li><a href="#calculates-non-relative-yesterday">Calculates non-relative yesterday</a>
+</li>
+<li><a href="#non-relative-yesterday-and-today">Non-relative yesterday and today</a>
+</li>
+<li><a href="#best-way-to-grab-frontmatter-from-current-note">Best way to grab frontmatter from current note:</a>
+</li>
+<li><a href="#this-is-the-final-correct-code">This is the final correct code!</a>
+</li>
+<li><a href="#without-metaedit-plugin">Without Metaedit Plugin</a>
+</li>
+<li><a href="#with-metaedit-plugin">With Metaedit Plugin</a>
+</li>
+</ol>
+</nav>
 </div>
 </div>
 <div class="backlinks">
