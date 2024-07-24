@@ -1,15 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-tags:
-  - ToListen
-  - podcast
-date_created: 2024-03-25T06:04:00
-date_modified: 2024-03-25T06:06:00
-date_completed: 2024-03-25T11:06:00
-archive: "2024"
-Rating: 4.5
+{"dg-publish":true,"permalink":"/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/","tags":["ToListen","podcast"]}
 ---
+
 
 The Ezra Klein Show: The Deep Conflict Between Our Work and Parenting Ideals
 

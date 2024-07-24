@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/personal/travel/italia/italia-2023-itinerary/","tags":["Italia","Trips"],"noteIcon":"","created":"2024-02-18 4:31:34 pm","updated":"2024-04-13 12:44:16 pm"}
+{"dg-publish":true,"permalink":"/personal/travel/italia/italia-2023-itinerary/","tags":["Italia","Trips"]}
 ---
 
 

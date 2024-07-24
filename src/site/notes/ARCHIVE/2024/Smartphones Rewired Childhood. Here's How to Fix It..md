@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/smartphones-rewired-childhood-here-s-how-to-fix-it/","tags":["podcast"],"noteIcon":"","created":"2024-05-13T08:36:00","updated":"2024-05-13 8:36:56 pm"}
+{"dg-publish":true,"permalink":"/archive/2024/smartphones-rewired-childhood-here-s-how-to-fix-it/","tags":["podcast"]}
 ---
 
 Honestly with Bari Weiss: Jonathan Haidt: Smartphones Rewired Childhood. Here's How to Fix It.

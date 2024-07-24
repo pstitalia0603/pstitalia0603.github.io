@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/reference/useful-linux-commands/","tags":["linux","Reference"],"noteIcon":"","created":"2024-06-04 1:18:06 pm","updated":"2024-06-04 1:18:50 pm"}
+{"dg-publish":true,"permalink":"/reference/useful-linux-commands/","tags":["linux","Reference"]}
 ---
 
 

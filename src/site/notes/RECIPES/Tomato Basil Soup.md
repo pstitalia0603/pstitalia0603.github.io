@@ -1,12 +1,7 @@
 ---
-dg-home: false
-dg-publish: true
-date_created: 2024-04-04T08:43:00
-date_modified: 2024-04-13 10:49:32 am
-tags:
-  - Recipes
-date_completed: 2024-02-04T11:21:00
+{"dg-publish":true,"permalink":"/recipes/tomato-basil-soup/","tags":["Recipes"]}
 ---
+
 2024-01-28 11-59-14 -
 
 # [Tomato Basil Soup](https://magnolia.com/blog/recipe/31eabf45-8a09-458a-a2a9-bff132288208/tomato-basil-soup/)

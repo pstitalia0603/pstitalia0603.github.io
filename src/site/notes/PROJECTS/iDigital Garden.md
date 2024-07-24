@@ -1,15 +1,7 @@
 ---
-dg-home: false
-date_created: 2024-03-02 9:30:01 am
-date_modified: 2024-05-15 8:20:44 pm
-tags:
-  - inbox
-  - Portfolio
-  - code
-  - Projects
-dg-publish: true
-date_completed: 2024-02-18T16:33:00
+{"dg-publish":true,"permalink":"/projects/i-digital-garden/","tags":["inbox","Portfolio","code","Projects"]}
 ---
+
 ## Instructions: How to get Digital Garden to work for Github Pages!
 
 #### Concept:  https://dg-docs.ole.dev/advanced/hosting-alternatives/

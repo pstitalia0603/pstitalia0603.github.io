@@ -1,12 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-date_created: 2023-12-03T10:12:00
-date_modified: 2024-03-01 19:44
-tags:
-  - Power_query
-  - Data
+{"dg-publish":true,"permalink":"/data/count-non-null-values/","tags":["Power_query","Data"]}
 ---
+
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 {"Count", each Table.RowCount(_), Int64.Type}})

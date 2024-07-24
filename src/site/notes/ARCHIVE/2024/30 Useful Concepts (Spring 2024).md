@@ -1,12 +1,7 @@
 ---
-dg-home: false
-dg-publish: true
-tags:
-  - article
-date_created: 2024-05-06T07:13:00
-date_modified: 2024-05-06 7:14:52 am
-archive: "2024"
+{"dg-publish":true,"permalink":"/archive/2024/30-useful-concepts-spring-2024/","tags":["article"]}
 ---
+
 # [30 Useful Concepts (Spring 2024)](https://open.substack.com/pub/gurwinder/p/30-useful-concepts-spring-2024?utm_source=share&utm_medium=android&r=9yuk2)
 https://www.substack.com/@gurwinder
 

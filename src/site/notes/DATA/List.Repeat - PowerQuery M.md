@@ -1,12 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-tags:
-  - Data
-  - Power_query
-date_created: 2024-03-14T13:47:00
-date_modified: 2024-03-14 13:48
+{"dg-publish":true,"permalink":"/data/list-repeat-power-query-m/","tags":["Data","Power_query"]}
 ---
+
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 # [List.Repeat - PowerQuery M](https://learn.microsoft.com/en-us/powerquery-m/list-repeat)

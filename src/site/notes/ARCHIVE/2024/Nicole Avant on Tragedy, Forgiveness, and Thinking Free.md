@@ -1,13 +1,7 @@
 ---
-dg-home: false
-dg-publish: true
-tags:
-  - podcast
-date_created: 2024-04-18T11:59:38
-date_modified: 2024-04-18 11:59:53 am
-Rating: 5
-archive: "2024"
+{"dg-publish":true,"permalink":"/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/","tags":["podcast"]}
 ---
+
 
 Honestly with Bari Weiss: Nicole Avant on Tragedy, Forgiveness, and Thinking Free
 

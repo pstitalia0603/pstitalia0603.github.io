@@ -1,11 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-tags:
-  - Recipes
-date_created: 2024-03-02T08:53:00
-date_modified: 2024-03-02 08:53
+{"dg-publish":true,"permalink":"/recipes/pasta-with-roasted-cauliflower-capers/","tags":["Recipes"]}
 ---
+
 # [Pasta with Roasted Cauliflower and Crispy Capers Recipe](https://www.foodandwine.com/recipes/pasta-roasted-cauliflower-and-crispy-capers)
 
 ## Ingredients

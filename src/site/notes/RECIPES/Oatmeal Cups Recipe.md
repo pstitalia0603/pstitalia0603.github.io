@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/oatmeal-cups-recipe/","tags":["Recipes"],"noteIcon":"","created":"2024-03-10T19:25:00","updated":"2024-03-10 19:26"}
+{"dg-publish":true,"permalink":"/recipes/oatmeal-cups-recipe/","tags":["Recipes"]}
 ---
 
 
@@ -7,7 +7,7 @@
 
 [![Oatmeal Cups Recipe](https://www.thecookingfoodie.com/Images/Site/Products/241011_video_d1.jpg "Oatmeal Cups Recipe")](https://www.thecookingfoodie.com/recipe/Oatmeal-Cups-Recipe#)
 
-- [ ] Oatmeal Cups Recipe 🛫 2024-07-20
+- [ ] Oatmeal Cups Recipe 🛫 2024-07-26
 
 
 

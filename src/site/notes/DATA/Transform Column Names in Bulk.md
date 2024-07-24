@@ -1,12 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-date_created: 2023-12-03T10:12:00
-date_modified: 2024-03-01 19:45
-tags:
-  - Power_query
-  - Data
+{"dg-publish":true,"permalink":"/data/transform-column-names-in-bulk/","tags":["Power_query","Data"]}
 ---
+
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 # [Transform Column Names in Bulk in Power Query - BI Gorilla](https://gorilla.bi/power-query/transform-column-names/)
 
@@ -115,6 +110,6 @@ Table.TransformColumnNames(
                        MissingField.Ignore )
  
 = Table.RenameColumns( Source,
-                       Table.ToRows( Rename[[OldName],[NewName\|OldName],[NewName]] ),
+                       Table.ToRows( Rename[[OldName],[NewName]] ),
                        MissingField.Ignore )
 ```

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/obsidian/grab-frontmatter-from-another-note/","tags":["Obsidian","code"],"noteIcon":"","created":"2024-05-28T00:00:00","updated":"2024-05-28 9:45:35 am"}
+{"dg-publish":true,"permalink":"/technology/obsidian/grab-frontmatter-from-another-note/","tags":["Obsidian","code"]}
 ---
 
 
@@ -8,14 +8,14 @@
  
 
 ## Yesterday is relative
-<span><span>NOTES/DAILY NOTES/2024/07-Jul/2024-07-18.md</span></span>
+<span><span>LEARNING/Courses/UofHelsinki - Data Analysis with Python.md</span></span>
 
 
 ## Yesterday is relative, but grabs frontmatter from yesterday
-<span><span>IF_START: 2024-07-18T17:50:00.000-04:00</span></span>
+<span><span>IF_START: IF_START field not found.</span></span>
 
 ## Yesterday is relative, but does calculation between notes
-<span><span>Time difference between IF_START and IF_END: 14.25 hours</span></span>
+<span><span>Time difference between IF_START and IF_END: 14.43 hours</span></span>
 
 
 
@@ -49,7 +49,7 @@ dv.current().date_created
     at asyncEvalInContext (plugin:dataview:18896:32)
     at DataviewJSRenderer.render (plugin:dataview:18922:19)
     at DataviewJSRenderer.onload (plugin:dataview:18464:14)
-    at e.load (app://obsidian.md/app.js:1:1166483)
+    at e.load (app://obsidian.md/app.js:1:1166456)
     at DataviewApi.executeJs (plugin:dataview:19465:18)
     at DataviewCompiler.eval (plugin:digitalgarden:10760:23)
     at Generator.next (&lt;anonymous&gt;)

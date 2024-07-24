@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","resume","gardenEntry"],"noteIcon":"","created":"2024-02-17T15:34:00","updated":"2024-04-11T15:34:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","resume","gardenEntry"]}
 ---
 
 # Hi, I'm Paula
@@ -33,9 +33,9 @@ I'm an **analytical problem-solver** who is:
 - Video Production: Apple iMovie, DaVinci Resolve
 - Microsoft Office 365
 ---
-### [[DigitalGarden/Stuff I use\|Stuff I use]]
+### [[Stuff I use\|Stuff I use]]
 
-### [[TRACK/Current Projects\|CURRENT PROJECTS]]
+### [[TRACK/CURRENT PROJECTS\|CURRENT PROJECTS]]
 
 ---
 

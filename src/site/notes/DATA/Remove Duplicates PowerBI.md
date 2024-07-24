@@ -1,13 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-date_created: 2023-12-03 10:12
-date_modified: 2024-03-01 19:44
-tags:
-  - dax
-  - Power_bi
-  - Data
+{"dg-publish":true,"permalink":"/data/remove-duplicates-power-bi/","tags":["dax","Power_bi","Data"]}
 ---
+
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 remove duplicates from an individual cell PowerBi

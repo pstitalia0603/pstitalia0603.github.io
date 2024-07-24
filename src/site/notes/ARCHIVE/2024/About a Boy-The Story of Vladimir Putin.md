@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/about-a-boy-the-story-of-vladimir-putin/","tags":["podcast"],"noteIcon":"","created":"2024-02-12T01:40:00","updated":"2024-04-12T01:40:00"}
+{"dg-publish":true,"permalink":"/archive/2024/about-a-boy-the-story-of-vladimir-putin/","tags":["podcast"]}
 ---
 
 [[TRACK/PODCASTS\|PODCASTS]]

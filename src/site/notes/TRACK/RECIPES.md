@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"noteIcon":"","created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
+{"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"]}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/07-Jul/2024-07-19\|2024-07-19]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/07-Jul/2024-07-24\|2024-07-24]]
 
 
-[[TRACK/Interests\|INTERESTS]]
+[[TRACK/INTERESTS\|INTERESTS]]
 
 | File                                                                                                      | DATE       |
 | --------------------------------------------------------------------------------------------------------- | ---------- |
@@ -27,8 +27,8 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/07-Jul/2024-07-19\|2024-07-19]]
 | [[RECIPES/Tomato Basil Soup\|Tomato Basil Soup]]                                                       | 2024-04-04 |
 | [[RECIPES/Smoothie Recipe\|Smoothie Recipe]]                                                           | 2024-04-04 |
 | [[RECIPES/Lemon-Blueberry Oatmeal Bars\|Lemon-Blueberry Oatmeal Bars]]                                 | 2024-04-03 |
-| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                 | 2024-04-03 |
 | [[RECIPES/Mini Quiche\|Mini Quiche]]                                                                   | 2024-04-03 |
+| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                 | 2024-04-03 |
 | [[RECIPES/No-Bake Chocolate Oatmeal Bars\|No-Bake Chocolate Oatmeal Bars]]                             | 2024-03-18 |
 | [[RECIPES/Oatmeal Cups Recipe\|Oatmeal Cups Recipe]]                                                   | 2024-03-10 |
 | [[RECIPES/Oatmeal Flax Chocolate Chip Cookies\|Oatmeal Flax Chocolate Chip Cookies]]                   | 2024-03-10 |
@@ -41,6 +41,7 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/07-Jul/2024-07-19\|2024-07-19]]
 | [[RECIPES/Nutella Crepes\|Nutella Crepes]]                                                             | 2023-12-01 |
 | [[RECIPES/Italian Grilled Cheese Sandwich\|Italian Grilled Cheese Sandwich]]                           | 2016-12-03 |
 | [[RECIPES/Ice Cream in a Bag\|Ice Cream in a Bag]]                                                     | \-         |
+| [[RECIPES/Pizza Dough\|Pizza Dough]]                                                                   | \-         |
 
 { .block-language-dataview}
 

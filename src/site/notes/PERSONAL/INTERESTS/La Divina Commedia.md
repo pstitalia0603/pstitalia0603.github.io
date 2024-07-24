@@ -1,12 +1,7 @@
 ---
-dg-home: false
-dg-publish: true
-date_modified: 2024-04-13 11:50:56 am
-tags:
-  - Interests
-date_created: 2024-04-11 9:26:26 am
-date_completed: 2024-03-24T16:28:00
+{"dg-publish":true,"permalink":"/personal/interests/la-divina-commedia/","tags":["Interests"]}
 ---
+
 https://www.reddit.com/r/books/comments/pocnyf/the_best_online_resources_for_reading_dantes/
 
 https://theconversation.com/guide-to-the-classics-dantes-divine-comedy-84603

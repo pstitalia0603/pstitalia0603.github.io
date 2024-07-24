@@ -1,12 +1,7 @@
 ---
-dg-home: false
-date_created: 2024-04-05T08:43:00
-date_modified: 2024-04-13 10:48:05 am
-tags:
-  - Recipes
-date_completed: 2024-02-04T11:21:00
-dg-publish: true
+{"dg-publish":true,"permalink":"/recipes/best-breakfast-casserole/","tags":["Recipes"]}
 ---
+
 
 
 # [Best Breakfast Casserole (Hash Browns & Eggs)](https://www.allrecipes.com/recipe/87013/hash-brown-and-egg-casserole/)

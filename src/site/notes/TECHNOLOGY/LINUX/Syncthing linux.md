@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/linux/syncthing-linux/","tags":["linux","syncthing"],"noteIcon":"","created":"2024-04-04 13:55","updated":"2024-04-04 13:56"}
+{"dg-publish":true,"permalink":"/technology/linux/syncthing-linux/","tags":["linux","syncthing"]}
 ---
 
 [[TECHNOLOGY/LINUX/Syncthing on Raspberry Pi\|Syncthing on Raspberry Pi]]

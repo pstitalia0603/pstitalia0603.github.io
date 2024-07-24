@@ -1,12 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-date_created: 2023-12-04 16:08
-date_modified: 2024-03-01 19:43
-tags:
-  - Power_query
-  - Data
+{"dg-publish":true,"permalink":"/data/remove-duplicates-in-power-query-m/","tags":["Power_query","Data"]}
 ---
+
 
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 

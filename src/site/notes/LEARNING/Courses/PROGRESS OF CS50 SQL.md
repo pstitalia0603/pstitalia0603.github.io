@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/learning/courses/progress-of-cs-50-sql/","tags":["Courses"],"noteIcon":"","created":"2024-02-19T08:21:00","updated":"2024-04-03T07:57:00"}
+{"dg-publish":true,"permalink":"/learning/courses/progress-of-cs-50-sql/","tags":["Courses"]}
 ---
 
 

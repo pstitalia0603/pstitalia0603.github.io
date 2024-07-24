@@ -1,14 +1,7 @@
 ---
-dg-home: false
-dg-publish: true
-tags:
-  - podcast
-date_created: 2023-10-12T01:43:00
-date_modified: 2023-10-12T01:44:00
-date_completed: 2023-11-12T13:44:00
-Rating: 5
-archive: "2023"
+{"dg-publish":true,"permalink":"/archive/2023/the-witch-trials-of-j-k-rowling/","tags":["podcast"]}
 ---
+
 [[TRACK/PODCASTS\|PODCASTS]]
 
 The Witch Trials of J.K. Rowling

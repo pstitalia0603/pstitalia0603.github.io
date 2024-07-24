@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/linux/linux-samba-server-on-windows-11/","tags":["linux"],"noteIcon":"","created":"2024-03-21T20:17:00","updated":"2024-03-21 20:17"}
+{"dg-publish":true,"permalink":"/technology/linux/linux-samba-server-on-windows-11/","tags":["linux"]}
 ---
 
 [[TECHNOLOGY/LINUX/Share external drive with Samba on Raspberry Pi\|Share external drive with Samba on Raspberry Pi]]

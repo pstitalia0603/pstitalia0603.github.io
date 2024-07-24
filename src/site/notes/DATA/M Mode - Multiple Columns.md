@@ -1,14 +1,7 @@
 ---
-dg-publish: true
-dg-home: false
-tags:
-  - Data
-  - m-code
-  - dax
-  - Power_query
-date_created: 2023-12-03 10:12
-date_modified: 2024-03-01 19:44
+{"dg-publish":true,"permalink":"/data/m-mode-multiple-columns/","tags":["Data","m-code","dax","Power_query"]}
 ---
+
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]
 
 //let
