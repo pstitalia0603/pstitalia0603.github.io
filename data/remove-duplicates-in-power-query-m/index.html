@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>CURRENT PROJECTS</title>
+<title>Remove Duplicates in Power Query M</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -36,41 +36,15 @@
 <div class="header-meta">
 </div>
 </header>
-<p><a class="internal-link" target="" data-note-icon="undefined" href="/">Home</a></p>
-<p><a class="internal-link" target="" data-note-icon="undefined" href="/technology/dev/resources/">Resources</a></p>
-<h1 id="html-email-resources" tabindex="-1">HTML Email Resources</h1>
-<ul>
-<li><a href="https://useblocks.io/" target="_blank" class="external-link">https://useblocks.io/</a></li>
-</ul>
-<h1 id="databases-bi-tools" tabindex="-1">Databases / BI tools</h1>
-<ul>
-<li><a class="internal-link" target="" data-note-icon="undefined" href="/technology/dev/apache-superset/">Apache Superset</a> (<a href="https://preset.io/" target="_blank" class="external-link">https://preset.io/</a>)</li>
-<li><a href="https://dbeaver.io/download/" target="_blank" class="external-link">https://dbeaver.io/download/</a></li>
-</ul>
-<h1 id="obsidian" tabindex="-1">Obsidian</h1>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" checked="true" disabled="true"><label for="cbx_0"> <a href="https://docs.syncthing.net/users/autostart.html#autostart-windows-taskschd" target="_blank" class="external-link">syncthing</a> 🛫 2024-05-04 ✅ 2024-05-04</label></li>
-</ul>
-<h1 id="crm-database" tabindex="-1">CRM Database</h1>
-<ul>
-<li><a href="https://civicrm.org/" target="_blank" class="external-link">CiviCRM</a></li>
-<li><a href="https://www.odoo.com/app/crm" target="_blank" class="external-link">https://www.odoo.com/app/crm</a></li>
-</ul>
-<h1 id="dynamic-calendar" tabindex="-1">Dynamic Calendar</h1>
-<ul>
-<li><a class="internal-link is-unresolved" href="/404" target="">PROJECTS/FULLCALENDAR</a></li>
-</ul>
-<h1 id="web-development" tabindex="-1">Web / Development</h1>
-<ul>
-<li><a href="https://tailwindcss.com/" target="_blank" class="external-link">https://tailwindcss.com/</a></li>
-<li><a href="https://astro.build/" target="_blank" class="external-link">https://astro.build/</a></li>
-<li><a href="https://www.markdownguide.org/cheat-sheet/" target="_blank" class="external-link">https://www.markdownguide.org/cheat-sheet/</a></li>
-<li><a class="internal-link" target="" data-note-icon="undefined" href="/technology/dev/ohmyposh/">ohmyposh</a></li>
-<li><a href="https://tina.io/" target="_blank" class="external-link">https://tina.io/</a></li>
-<li><a href="https://picocss.com/" target="_blank" class="external-link">https://picocss.com/</a></li>
-<li><a class="internal-link" target="" data-note-icon="undefined" href="/technology/linux/coolify-and-cloudflared/">Coolify and Cloudflared</a></li>
-</ul>
-<h2 id="" tabindex="-1"></h2>
+<p><a class="internal-link" target="" data-note-icon="undefined" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
+<h1 id="a-href-https-gorilla-bi-power-query-removing-duplicates-target-blank-class-external-link-how-to-remove-duplicates-in-power-query-m-complete-guide-a" tabindex="-1"><a href="https://gorilla.bi/power-query/removing-duplicates/" target="_blank" class="external-link">How to Remove Duplicates in Power Query M (Complete Guide)</a></h1>
+<h2 id="basics-for-removing-duplicates" tabindex="-1">Basics for Removing Duplicates</h2>
+<p>So, how can you remove duplicates using the Power Query Editor? Under the hood, the operation uses the <a href="https://powerquery.how/table-distinct/" target="_blank" class="external-link">Table.Distinct</a> function to remove duplicates. The syntax for the function is as follows:</p>
+<pre><code>= Table.Distinct(
+    table as table, 
+    optional equationCriteria as any
+   )
+</code></pre>
 </main>
 <script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
 <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>

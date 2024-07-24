@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>M-CODE-mult-col</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.eae2f3b6.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p><a class="internal-link" target="" data-note-icon="undefined" href="/data/bi-and-pq-data-tips-and-tricks/">BI and PQ DATA TIPS AND TRICKS</a></p>
+<p>//let<br>
+// Source = #&quot;Families-Parents-Students-LIST&quot;,<br>
+// #&quot;Renamed Columns&quot; = Table.RenameColumns(Source,{{&quot;CHILD GRADE&quot;, &quot;GRADE&quot;}})<br>
+//in<br>
+// #&quot;Renamed Columns&quot;</p>
+<p>let</p>
+<p>//Read in the data and set data types<br>
+Source = Excel.CurrentWorkbook(){[Name=&quot;FAM&quot;]}[Content],<br>
+#&quot;Changed Type&quot; = Table.TransformColumnTypes(Source,{<br>
+{&quot;C_FNAME&quot;, type text}, {&quot;C_LNAME&quot;, type text}, {&quot;GRADE&quot;, type text},<br>
+{&quot;FAMILY&quot;, type text}, {&quot;EMAIL&quot;, type text},{&quot;ADDRESS&quot;, type text},{&quot;PHONE&quot;, type text },{&quot;DONATION&quot;, type text}}),</p>
+<p>//Unpivot columns other than the two Parent columns<br>
+#&quot;Unpivoted Other Columns&quot; = Table.UnpivotOtherColumns(#&quot;Changed Type&quot;,<br>
+{&quot;EMAIL&quot;, &quot;PHONE&quot;, &quot;ADDRESS&quot;, &quot;DONATION&quot;, &quot;FAMILY&quot;}, &quot;Attribute&quot;, &quot;Value&quot;),</p>
+<p>//Group by the Parent Columns<br>
+//Then add an index colum to each sub-table<br>
+#&quot;Grouped Rows&quot; = Table.Group(#&quot;Unpivoted Other Columns&quot;, {&quot;EMAIL&quot;, &quot;PHONE&quot;, &quot;ADDRESS&quot;, &quot;DONATION&quot;, &quot;FAMILY&quot;}, {<br>
+{&quot;idx&quot;, each Table.AddIndexColumn(_,&quot;idx&quot;),Int64.Type}}),</p>
+<p>//Add integer/divide by 3 column to each subtable to differentiate the different children<br>
+//Note that we set the data type to Text for later combining with the Attributes<br>
+#&quot;Added Custom&quot; = Table.AddColumn(#&quot;Grouped Rows&quot;, &quot;int/div&quot;,<br>
+each Table.TransformColumnTypes(<br>
+Table.AddColumn([idx], &quot;Integer-Division&quot;,<br>
+each Number.IntegerDivide([idx], 3)),{&quot;Integer-Division&quot;,Text.Type})),</p>
+<p>//Combine Attribute and int/divide column to create unique names for each child/column<br>
+#&quot;Added Custom1&quot; = Table.AddColumn(#&quot;Added Custom&quot;, &quot;childNum&quot;,<br>
+each Table.CombineColumns([#&quot;int/div&quot;],<br>
+{&quot;Attribute&quot;,&quot;Integer-Division&quot;},<br>
+Combiner.CombineTextByDelimiter(&quot;.&quot;),&quot;Attribute&quot;)),</p>
+<p>//Remove unneeded columns<br>
+#&quot;Removed Columns&quot; = Table.RemoveColumns(#&quot;Added Custom1&quot;,{&quot;idx&quot;, &quot;int/div&quot;}),</p>
+<p>//Pivot each sub-table<br>
+#&quot;Added Custom2&quot; = Table.AddColumn(#&quot;Removed Columns&quot;, &quot;pivot subtable&quot;, each<br>
+let<br>
+//Remove columns we don't want when we pivot<br>
+x=Table.RemoveColumns([childNum],{&quot;EMAIL&quot;, &quot;PHONE&quot;, &quot;ADDRESS&quot;, &quot;DONATION&quot;, &quot;FAMILY&quot;, &quot;idx&quot;})<br>
+in<br>
+Table.Pivot(x,x[Attribute],&quot;Attribute&quot;,&quot;Value&quot;)),</p>
+<p>//Remove unneeded columns and expand the pivot subtables<br>
+//May need to generate the list of expanded column names dynamically<br>
+#&quot;Removed Columns1&quot; = Table.RemoveColumns(#&quot;Added Custom2&quot;,{&quot;childNum&quot;}),<br>
+#&quot;Expanded pivot subtable&quot; = Table.ExpandTableColumn(#&quot;Removed Columns1&quot;, &quot;pivot subtable&quot;,<br>
+{&quot;C_FNAME.0&quot;, &quot;C_LNAME.0&quot;, &quot;GRADE.0&quot;, &quot;C_FNAME.1&quot;, &quot;C_LNAME.1&quot;, &quot;GRADE.1&quot;, &quot;C_FNAME.2&quot;, &quot;C_LNAME.2&quot;, &quot;GRADE.2&quot;, &quot;C_FNAME.3&quot;, &quot;C_LNAME.3&quot;, &quot;GRADE.3&quot;,&quot;C_FNAME.4&quot;, &quot;C_LNAME.4&quot;, &quot;GRADE.4&quot;,&quot;C_FNAME.5&quot;, &quot;C_LNAME.5&quot;, &quot;GRADE.5&quot;},<br>
+{&quot;C_FNAME.0&quot;, &quot;C_LNAME.0&quot;, &quot;GRADE.0&quot;, &quot;C_FNAME.1&quot;, &quot;C_LNAME.1&quot;, &quot;GRADE.1&quot;, &quot;C_FNAME.2&quot;, &quot;C_LNAME.2&quot;, &quot;GRADE.2&quot;, &quot;C_FNAME.3&quot;, &quot;C_LNAME.3&quot;, &quot;GRADE.3&quot;,&quot;C_FNAME.4&quot;, &quot;C_LNAME.4&quot;, &quot;GRADE.4&quot;,&quot;C_FNAME.5&quot;, &quot;C_LNAME.5&quot;, &quot;GRADE.5&quot;})<br>
+in<br>
+#&quot;Expanded pivot subtable&quot;</p>
+<hr>
+<p>let</p>
+<p>//Read in the data and set data types<br>
+Source = Excel.CurrentWorkbook(){[Name=&quot;FAM&quot;]}[Content],<br>
+#&quot;Changed Type&quot; = Table.TransformColumnTypes(Source,{<br>
+{&quot;student_id&quot;, Int64.Type}, {&quot;Child_LAST_NAME&quot;, type text}, {&quot;Child_FIRST_NAME&quot;, type text} {&quot;CHILD_GRADE&quot;, type text},<br>
+{&quot;Final_Amount&quot;, Int64.Type},{&quot;PARTICIPATED&quot;,type text}}),</p>
+<p>//Unpivot columns other than the two transactions<br>
+#&quot;Unpivoted Other Columns&quot; = Table.UnpivotOtherColumns(#&quot;Changed Type&quot;,<br>
+{&quot;student_id&quot;, &quot;LAST_NAME&quot;, &quot;CHILD_LAST_NAME&quot;, &quot;CHILD_FIRST_NAME&quot;, &quot;CHILD_GRADE&quot;,&quot;PARTICIPATED&quot;}, &quot;Attribute&quot;, &quot;Value&quot;),</p>
+<p>//Group by the LAST_NAME Columns<br>
+//Then add an index colum to each sub-table<br>
+#&quot;Grouped Rows&quot; = Table.Group(#&quot;Unpivoted Other Columns&quot;, {&quot;EMAIL&quot;, &quot;PHONE&quot;, &quot;ADDRESS&quot;, &quot;DONATION&quot;, &quot;FAMILY&quot;}, {<br>
+{&quot;idx&quot;, each Table.AddIndexColumn(_,&quot;idx&quot;),Int64.Type}}),</p>
+<p>//Add integer/divide by 3 column to each subtable to differentiate the different children<br>
+//Note that we set the data type to Text for later combining with the Attributes<br>
+#&quot;Added Custom&quot; = Table.AddColumn(#&quot;Grouped Rows&quot;, &quot;int/div&quot;,<br>
+each Table.TransformColumnTypes(<br>
+Table.AddColumn([idx], &quot;Integer-Division&quot;,<br>
+each Number.IntegerDivide([idx], 3)),{&quot;Integer-Division&quot;,Text.Type})),</p>
+<p>//Combine Attribute and int/divide column to create unique names for each child/column<br>
+#&quot;Added Custom1&quot; = Table.AddColumn(#&quot;Added Custom&quot;, &quot;childNum&quot;,<br>
+each Table.CombineColumns([#&quot;int/div&quot;],<br>
+{&quot;Attribute&quot;,&quot;Integer-Division&quot;},<br>
+Combiner.CombineTextByDelimiter(&quot;.&quot;),&quot;Attribute&quot;)),</p>
+<p>//Remove unneeded columns<br>
+#&quot;Removed Columns&quot; = Table.RemoveColumns(#&quot;Added Custom1&quot;,{&quot;idx&quot;, &quot;int/div&quot;}),</p>
+<p>//Pivot each sub-table<br>
+#&quot;Added Custom2&quot; = Table.AddColumn(#&quot;Removed Columns&quot;, &quot;pivot subtable&quot;, each<br>
+let<br>
+//Remove columns we don't want when we pivot<br>
+x=Table.RemoveColumns([childNum],{&quot;EMAIL&quot;, &quot;PHONE&quot;, &quot;ADDRESS&quot;, &quot;DONATION&quot;, &quot;FAMILY&quot;, &quot;idx&quot;})<br>
+in<br>
+Table.Pivot(x,x[Attribute],&quot;Attribute&quot;,&quot;Value&quot;)),</p>
+<p>//Remove unneeded columns and expand the pivot subtables<br>
+//May need to generate the list of expanded column names dynamically<br>
+#&quot;Removed Columns1&quot; = Table.RemoveColumns(#&quot;Added Custom2&quot;,{&quot;childNum&quot;}),<br>
+#&quot;Expanded pivot subtable&quot; = Table.ExpandTableColumn(#&quot;Removed Columns1&quot;, &quot;pivot subtable&quot;,<br>
+{&quot;Child_FNAME.0&quot;, &quot;Child_LNAME.0&quot;, &quot;GRADE.0&quot;, &quot;Child_FNAME.1&quot;, &quot;Child_LNAME.1&quot;, &quot;GRADE.1&quot;, &quot;Child_FNAME.2&quot;, &quot;Child_LNAME.2&quot;, &quot;GRADE.2&quot;},<br>
+{&quot;Child_FNAME.0&quot;, &quot;Child_LNAME.0&quot;, &quot;GRADE.0&quot;, &quot;Child_FNAME.1&quot;, &quot;Child_LNAME.1&quot;, &quot;GRADE.1&quot;, &quot;Child_FNAME.2&quot;, &quot;Child_LNAME.2&quot;, &quot;GRADE.2&quot;})<br>
+in<br>
+#&quot;Expanded pivot subtable&quot;</p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
