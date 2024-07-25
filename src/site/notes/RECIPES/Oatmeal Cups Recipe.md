@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/oatmeal-cups-recipe/","tags":["Recipes"]}
+{"dg-publish":true,"permalink":"/recipes/oatmeal-cups-recipe/","tags":["Recipes"],"created":"2024-03-10T19:25:00","updated":"2024-03-10 19:26"}
 ---
 
 

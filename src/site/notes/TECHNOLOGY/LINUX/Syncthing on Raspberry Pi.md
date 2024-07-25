@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/linux/syncthing-on-raspberry-pi/","tags":["Obsidian","linux","syncthing"]}
+{"dg-publish":true,"permalink":"/technology/linux/syncthing-on-raspberry-pi/","tags":["Obsidian","linux","syncthing"],"created":"2024-04-04T14:49:00","updated":"2024-04-04 14:50"}
 ---
 
 [[TECHNOLOGY/LINUX/Syncthing linux\|Syncthing linux]]

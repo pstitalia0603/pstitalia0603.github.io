@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/nutella-crepes/","tags":["Recipes"]}
+{"dg-publish":true,"permalink":"/recipes/nutella-crepes/","tags":["Recipes"],"created":"2023-12-01T21:56:00","updated":"2024-02-19 19:26"}
 ---
 
 

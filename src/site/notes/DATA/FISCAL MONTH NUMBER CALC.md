@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/fiscal-month-number-calc/","tags":["Power_bi","Data"]}
+{"dg-publish":true,"permalink":"/data/fiscal-month-number-calc/","tags":["Power_bi","Data"],"created":"2023-12-03 10:12","updated":"2024-03-01 19:43"}
 ---
 
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]

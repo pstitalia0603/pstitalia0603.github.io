@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/monkey-bread-with-caramel-sauce/","tags":["Recipes"]}
+{"dg-publish":true,"permalink":"/recipes/monkey-bread-with-caramel-sauce/","tags":["Recipes"],"created":"2024-02-28T17:38:00","updated":"2024-02-28 17:39"}
 ---
 
 

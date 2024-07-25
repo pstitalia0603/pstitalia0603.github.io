@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/bananakies/","tags":["Recipes"]}
+{"dg-publish":true,"permalink":"/recipes/bananakies/","tags":["Recipes"],"created":"2024-03-01T17:15:00","updated":"2024-03-01 17:15"}
 ---
 
 # [Healthy Bananakies Cookies](https://www.skinnytaste.com/healthy-cookies/#recipe) 

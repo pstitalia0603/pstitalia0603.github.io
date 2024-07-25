@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/no-bake-chocolate-oatmeal-bars/","tags":["Recipes"]}
+{"dg-publish":true,"permalink":"/recipes/no-bake-chocolate-oatmeal-bars/","tags":["Recipes"],"created":"2024-03-18T14:40:00","updated":"2024-03-18 14:41"}
 ---
 
 [[ReadItLater\|ReadItLater]] [[Youtube\|Youtube]]

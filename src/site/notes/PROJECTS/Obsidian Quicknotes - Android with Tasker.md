@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/projects/obsidian-quicknotes-android-with-tasker/","tags":["Obsidian","code","Projects"]}
+{"dg-publish":true,"permalink":"/projects/obsidian-quicknotes-android-with-tasker/","tags":["Obsidian","code","Projects"],"created":"2024-03-02 9:29:28 am","updated":"2024-04-13 12:42:15 pm"}
 ---
 
 # [GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android](https://github.com/Guy-92/QuickNote)

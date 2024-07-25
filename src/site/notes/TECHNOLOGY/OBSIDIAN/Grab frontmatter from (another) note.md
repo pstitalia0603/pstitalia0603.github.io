@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/obsidian/grab-frontmatter-from-another-note/","tags":["Obsidian","code"]}
+{"dg-publish":true,"permalink":"/technology/obsidian/grab-frontmatter-from-another-note/","tags":["Obsidian","code"],"created":"2024-05-28T00:00:00","updated":"2024-05-28 9:45:35 am"}
 ---
 
 
@@ -8,14 +8,14 @@
  
 
 ## Yesterday is relative
-<span><span>LEARNING/Courses/UofHelsinki - Data Analysis with Python.md</span></span>
+<span><span>NOTES/DAILY NOTES/2024/07-Jul/2024-07-24.md</span></span>
 
 
 ## Yesterday is relative, but grabs frontmatter from yesterday
-<span><span>IF_START: IF_START field not found.</span></span>
+<span><span>IF_START: 2024-07-24T18:00:00.000-04:00</span></span>
 
 ## Yesterday is relative, but does calculation between notes
-<span><span>Time difference between IF_START and IF_END: 14.43 hours</span></span>
+<span><span>Time difference between IF_START and IF_END: 14.62 hours</span></span>
 
 
 

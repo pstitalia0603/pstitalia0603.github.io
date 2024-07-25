@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/transform-column-names-in-bulk/","tags":["Power_query","Data"]}
+{"dg-publish":true,"permalink":"/data/transform-column-names-in-bulk/","tags":["Power_query","Data"],"created":"2023-12-03T10:12:00","updated":"2024-03-01 19:45"}
 ---
 
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]

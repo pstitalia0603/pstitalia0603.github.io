@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2023/the-witch-trials-of-j-k-rowling/","tags":["podcast"]}
+{"dg-publish":true,"permalink":"/archive/2023/the-witch-trials-of-j-k-rowling/","tags":["podcast"],"created":"2023-10-12T01:43:00","updated":"2023-10-12T01:44:00"}
 ---
 
 [[TRACK/PODCASTS\|PODCASTS]]

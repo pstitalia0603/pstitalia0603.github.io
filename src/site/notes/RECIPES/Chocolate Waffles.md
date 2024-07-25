@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/chocolate-waffles/","tags":["Recipes","inbox"]}
+{"dg-publish":true,"permalink":"/recipes/chocolate-waffles/","tags":["Recipes","inbox"],"created":"2024-04-04T08:43:00","updated":"2024-04-13 10:47:47 am"}
 ---
 
 - [x] Waffles 🛫 2024-06-02 ✅ 2024-06-02

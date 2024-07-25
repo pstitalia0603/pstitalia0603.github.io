@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/personal/travel/italia/italia-2023-itinerary/","tags":["Italia","Trips"]}
+{"dg-publish":true,"permalink":"/personal/travel/italia/italia-2023-itinerary/","tags":["Italia","Trips"],"created":"2024-02-18 4:31:34 pm","updated":"2024-04-13 12:44:16 pm"}
 ---
 
 
@@ -75,7 +75,9 @@ Dinner: Est Artigiani del Gusto - Vicolo della Cancelleria, 11, 00186 Roma RM, I
 ### TOUR: Vatican Tour with Museums, Sistine Chapel & St. Peter's Basilica
 9:00 AM
 
-LUNCH: Panini
+LUNCH: Panini Cafe near Vatican
+
+Rome shops
 ### Segni
 Pick up by Damiano
 4:00p - 9:30p

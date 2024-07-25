@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/how-the-working-class-became-america-s-second-class/","tags":["podcast","ToListen","article"]}
+{"dg-publish":true,"permalink":"/archive/2024/how-the-working-class-became-america-s-second-class/","tags":["podcast","ToListen","article"],"created":"2024-04-02T10:02:00","updated":"2024-04-02 10:02"}
 ---
 
 Honestly with Bari Weiss: How the Working Class Became America’s Second Class

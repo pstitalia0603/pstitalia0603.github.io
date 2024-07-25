@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/pasta-with-roasted-cauliflower-capers/","tags":["Recipes"]}
+{"dg-publish":true,"permalink":"/recipes/pasta-with-roasted-cauliflower-capers/","tags":["Recipes"],"created":"2024-03-02T08:53:00","updated":"2024-03-02 08:53"}
 ---
 
 # [Pasta with Roasted Cauliflower and Crispy Capers Recipe](https://www.foodandwine.com/recipes/pasta-roasted-cauliflower-and-crispy-capers)

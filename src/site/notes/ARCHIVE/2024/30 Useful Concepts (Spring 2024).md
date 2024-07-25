@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/30-useful-concepts-spring-2024/","tags":["article"]}
+{"dg-publish":true,"permalink":"/archive/2024/30-useful-concepts-spring-2024/","tags":["article"],"created":"2024-05-06T07:13:00","updated":"2024-05-06T07:14:52"}
 ---
 
 # [30 Useful Concepts (Spring 2024)](https://open.substack.com/pub/gurwinder/p/30-useful-concepts-spring-2024?utm_source=share&utm_medium=android&r=9yuk2)
@@ -13,7 +13,7 @@ It’s that time again; a summary of interesting and useful concepts to spur you
 
 The delay between desire & gratification is shrinking. Pleasure is increasingly more instant & effortless. Everything is becoming a drug. What will it do to us?
 
-[
+
 
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3fa6f337-7d2c-4a37-97e9-38f29f12b017_1490x860.jpeg)
 

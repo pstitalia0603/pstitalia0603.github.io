@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/linux/coolify-and-cloudflared/","tags":["linux"]}
+{"dg-publish":true,"permalink":"/technology/linux/coolify-and-cloudflared/","tags":["linux"],"created":"2024-06-02 7:18:44 pm","updated":"2024-06-02 7:18:55 pm"}
 ---
 
 
