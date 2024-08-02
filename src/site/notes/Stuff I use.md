@@ -24,6 +24,7 @@
 - MS Excel / Power Query
 - SQL (Postgres, MSSQL, MySQL)
 - Python (Pandas, NumPy)
+- R (trying to learn!)
 - HTML5
 - CSS3
  
