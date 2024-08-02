@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","resume","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"created":"2024-02-17T15:34:00","updated":"2024-04-11T15:34:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","resume","gardenEntry"],"created":"2024-02-17T15:34:00","updated":"2024-04-11T15:34:00"}
 ---
 
-# Hi, I'm Paula
+# Hi, I'm [Paula](https://github.com/pstitalia0603/)
 
 ###### This is a [[PROJECTS/iDigital Garden\|port of my Obsidian Vault]] online through Github Pages!
 #### data, web, design -- Data Management & Analysis, Web Development, Graphic Design/Desktop Publishing, Multimedia / Video Production, Desktop/Mobile Support
