@@ -150,6 +150,7 @@ Tour: Matera
 Lunch: **Ristorante Pizzeria il Casino del Diavolo** - Via la Martella, 75100 Matera MT, Italy
 
 Dinner: Tricarico - Pizzeria with Giocomo and family
+https://www.trecancelli.it/
 
 # Day 14 (8/3/23)
 ### Garaguso to Manfredonia
@@ -216,6 +217,3 @@ Hotel: **Hotel Parco dei Principi** - Via Vito Vasile, 3, 70132 Bari BA, Italy
 ### Paris to IAD
 [dulles airport](geo:38.95226625,-77.4534849116007)
 5:10P - 7:00P
-
-
-

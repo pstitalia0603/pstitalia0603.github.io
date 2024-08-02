@@ -8,6 +8,7 @@ Instructions:
 https://www.youtube.com/watch?v=ZvIdFs3M5ic
 https://www.youtube.com/watch?v=ey4u7OUAF3c
 
+DIRECTIONS: https://coolify.io/docs/knowledge-base/cloudflare/tunnels
 # Coolify.io
 
 ```
