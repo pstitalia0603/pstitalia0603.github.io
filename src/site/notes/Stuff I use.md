@@ -3,6 +3,7 @@
 ---
 
 
+
 [[Home\|Home]]
 ## Life stuff
 - Coros Pace 3
