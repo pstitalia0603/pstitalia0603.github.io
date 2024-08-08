@@ -8,14 +8,14 @@
  
 
 ## Yesterday is relative
-<span><span>NOTES/DAILY NOTES/2024/08-Aug/2024-08-02.md</span></span>
+<span><span>NOTES/DAILY NOTES/2024/08-Aug/2024-08-07.md</span></span>
 
 
 ## Yesterday is relative, but grabs frontmatter from yesterday
-<span><span>IF_START: 2024-08-02T18:27:00.000-04:00</span></span>
+<span><span>IF_START: 2024-08-07T19:16:00.000-04:00</span></span>
 
 ## Yesterday is relative, but does calculation between notes
-<span><span>IF_END not found for today.</span></span>
+<span><span>Time difference between IF_START and IF_END: 13.00 hours</span></span>
 
 
 
@@ -49,7 +49,7 @@ dv.current().date_created
     at asyncEvalInContext (plugin:dataview:18896:32)
     at DataviewJSRenderer.render (plugin:dataview:18922:19)
     at DataviewJSRenderer.onload (plugin:dataview:18464:14)
-    at e.load (http://localhost/app.js:1:1171693)
+    at e.load (app://obsidian.md/app.js:1:1166456)
     at DataviewApi.executeJs (plugin:dataview:19465:18)
     at DataviewCompiler.eval (plugin:digitalgarden:10760:23)
     at Generator.next (&lt;anonymous&gt;)
