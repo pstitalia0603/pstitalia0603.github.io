@@ -217,3 +217,7 @@ Hotel: **Hotel Parco dei Principi** - Via Vito Vasile, 3, 70132 Bari BA, Italy
 ### Paris to IAD
 [dulles airport](geo:38.95226625,-77.4534849116007)
 5:10P - 7:00P
+
+https://travel.fragolab.us/italia2023.html
+
+![italia2023.png](/img/user/PERSONAL/TRAVEL/ITALIA/italia2023.png)
