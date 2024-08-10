@@ -8,14 +8,14 @@
  
 
 ## Yesterday is relative
-<span><span>ARCHIVE/2024/The Outrageous Rise of Neotoddlerism.md</span></span>
+<span><span>NOTES/DAILY NOTES/2024/08-Aug/2024-08-09.md</span></span>
 
 
 ## Yesterday is relative, but grabs frontmatter from yesterday
-<span><span>IF_START: IF_START field not found.</span></span>
+<span><span>IF_START: 2024-08-09T18:33:00.000-04:00</span></span>
 
 ## Yesterday is relative, but does calculation between notes
-<span><span>Time difference between IF_START and IF_END: 10.65 hours</span></span>
+<span><span>Time difference between IF_START and IF_END: 17.37 hours</span></span>
 
 
 
