@@ -10,6 +10,8 @@ Converting historic calendar events to Full Calendar in Obsidian
 1. Export ICS from from  Calendar app
 2. Run convert_ICS 
 	1. File will export to: C:/Users/XXXXX/OneDrive/xfer/CALENDARS/COMPLETE
+
+![[CONVERT_CVS.ipynb]]
 ## 2. Run convert_ics code
 
 ```python
@@ -52,7 +54,14 @@ csv_file.close()
 ```
 
 
+
+
 ## 3. Clean csv output (power query)
+USE TEMPLATE XLSX FILE!
+
+![[CONVERSION_TEMPLATE_WORKING.xlsx]]
+
+
 1) Check errors (try --> HasError = "True") --> automated power query file in /COMPLETE/WORKING_XLSX/
 2) Replace value for TimeZone Start time and End time (-04:00 --> +00:00) or (-05:00 --> +00:00)
 	1) Duplicate Start Time and End Time
@@ -70,7 +79,7 @@ from datetime import datetime,date
 CAL_NAME="DSF"
 tag_name="\n- '#Nico'"  #How to export multiple tags? another \n?
 
-data = pd.read_csv(f'C:/Users/XXXXX/OneDrive/xfer/CALENDARS/COMPLETE/CSV/{CAL_NAME}2.csv', delimiter=',')
+data = pd.read_csv(f'D:/xfer/CALENDARS/COMPLETE/CSV/{CAL_NAME}2.csv', delimiter=',')
 
 files = data.values.tolist()
 
@@ -83,13 +92,15 @@ for file in files:
     end_time = pd.to_datetime(file[5]).strftime("%H:%M")
     description = file[6]
     location = file[7]
-    file_name = f'C:/Users/XXXXX/OneDrive/xfer/CALENDARS/COMPLETE/CSV/{CAL_NAME}/{start_date}_{index}_{CAL_NAME}.md'
+    file_name = f'D:/xfer/CALENDARS/COMPLETE/CSV/{CAL_NAME}/{start_date}_{index}_{CAL_NAME}.md'
     with open(file_name, 'w', encoding='utf-8') as f:
         f.write(f'---\ntitle: {subject}\ndate: {start_date}\nstartTime: {start_time}\ncompleted: {end_date}\nendTime: {end_time}\ntags:{tag_name}\n---\nIndex: {index}_{CAL_NAME}\nDescription: {description}\nLocation: {location}\n')
         f.close()
 print(f'{file_name} saved.')
 ```
 
+
+![[CSV2MD.ipynb]]
 
 
 

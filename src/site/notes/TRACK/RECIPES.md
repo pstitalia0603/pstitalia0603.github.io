@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/08-Aug/2024-08-10\|2024-08-10]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/08-Aug/2024-08-30\|2024-08-30]]
 
 
 [[TRACK/INTERESTS\|INTERESTS]]
@@ -27,8 +27,8 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/08-Aug/2024-08-10\|2024-08-10]]
 | [[RECIPES/Tomato Basil Soup\|Tomato Basil Soup]]                                                                                                                     | 2024-04-04 |
 | [[RECIPES/Smoothie Recipe\|Smoothie Recipe]]                                                                                                                         | 2024-04-04 |
 | [[RECIPES/Lemon-Blueberry Oatmeal Bars\|Lemon-Blueberry Oatmeal Bars]]                                                                                               | 2024-04-03 |
-| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                                                                               | 2024-04-03 |
 | [[RECIPES/Mini Quiche\|Mini Quiche]]                                                                                                                                 | 2024-04-03 |
+| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                                                                               | 2024-04-03 |
 | [[RECIPES/No-Bake Chocolate Oatmeal Bars\|No-Bake Chocolate Oatmeal Bars]]                                                                                           | 2024-03-18 |
 | [[RECIPES/Oatmeal Cups Recipe\|Oatmeal Cups Recipe]]                                                                                                                 | 2024-03-10 |
 | [[RECIPES/Oatmeal Flax Chocolate Chip Cookies\|Oatmeal Flax Chocolate Chip Cookies]]                                                                                 | 2024-03-10 |
@@ -42,6 +42,7 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/08-Aug/2024-08-10\|2024-08-10]]
 | [[RECIPES/Italian Grilled Cheese Sandwich\|Italian Grilled Cheese Sandwich]]                                                                                         | 2016-12-03 |
 | [[RECIPES/Chocolate Covered Banana Pops  Healthy 3-Ingredient Dessert! - From My Bowl\|Chocolate Covered Banana Pops  Healthy 3-Ingredient Dessert! - From My Bowl]] | \-         |
 | [[RECIPES/Ice Cream in a Bag\|Ice Cream in a Bag]]                                                                                                                   | \-         |
+| [[RECIPES/Mini Thai Crab Cakes with Spicy Aioli\|Mini Thai Crab Cakes with Spicy Aioli]]                                                                             | \-         |
 | [[RECIPES/Pizza Dough\|Pizza Dough]]                                                                                                                                 | \-         |
 | [[RECIPES/Thai Chicken Coconut Curry - Averie Cooks\|Thai Chicken Coconut Curry - Averie Cooks]]                                                                     | \-         |
 

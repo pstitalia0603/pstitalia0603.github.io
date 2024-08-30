@@ -4,6 +4,11 @@
 
 
 
+[[TECHNOLOGY/LINUX/Portainer -- alphapi\|Portainer -- alphapi]] on alphapi
+
+[[TECHNOLOGY/DEV/HEDGEDOC on Coolify\|HEDGEDOC on Coolify]]
+
+
 Instructions:
 https://www.youtube.com/watch?v=ZvIdFs3M5ic
 https://www.youtube.com/watch?v=ey4u7OUAF3c
@@ -95,12 +100,11 @@ https://github.com/coollabsio/coolify/blob/main/README.md
 https://rasmusgodske.com/posts/securely-expose-your-coolify-apps-with-the-magic-of-cloudflare-tunnels/
 # [Self-hosting Your Website with Coolify v4: A Step-by-Step Guide](https://billyle.dev/posts/self-hosting-your-website-with-coolify-v4-a-step-by-step-guide)
 
- !["breathe" neon sign hung against a wall of foliage](https://images.unsplash.com/photo-1502139214982-d0ad755818d8?w=600&q=50&fit=crop&auto=format&fm=avif)
-
-
 ## Creating your SSH key
 
-[[TECHNOLOGY/LINUX/SSH keys - lock down raspberry pi\|SSH keys - lock down raspberry pi]]
+[[TECHNOLOGY/LINUX/Lock down raspberry pi\|Lock down raspberry pi]]
+
+[[TECHNOLOGY/DEV/Git & Github Useful Commands\|Git & Github Useful Commands]]
 
 If you want to use your password for SSH’ing remotely onto your server, you will have to perform this step. Otherwise, you can just skip to the next section since Hetzner will email you the root password if you omit it. You can also skip this step if you already have an existing SSH key you want to use.
 
