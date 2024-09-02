@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/08-Aug/2024-08-31\|2024-08-31]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/09-Sep/2024-09-02\|2024-09-02]]
 
 
 [[TRACK/INTERESTS\|INTERESTS]]
@@ -40,9 +40,9 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/08-Aug/2024-08-31\|2024-08-31]]
 | [[RECIPES/Stuffed Peppers\|Stuffed Peppers]]                                                                                                                         | 2024-02-04 |
 | [[RECIPES/Nutella Crepes\|Nutella Crepes]]                                                                                                                           | 2023-12-01 |
 | [[RECIPES/Italian Grilled Cheese Sandwich\|Italian Grilled Cheese Sandwich]]                                                                                         | 2016-12-03 |
-| [[RECIPES/Mini Thai Crab Cakes with Spicy Aioli\|Mini Thai Crab Cakes with Spicy Aioli]]                                                                             | \-         |
 | [[RECIPES/Chocolate Covered Banana Pops  Healthy 3-Ingredient Dessert! - From My Bowl\|Chocolate Covered Banana Pops  Healthy 3-Ingredient Dessert! - From My Bowl]] | \-         |
 | [[RECIPES/Ice Cream in a Bag\|Ice Cream in a Bag]]                                                                                                                   | \-         |
+| [[RECIPES/Mini Thai Crab Cakes with Spicy Aioli\|Mini Thai Crab Cakes with Spicy Aioli]]                                                                             | \-         |
 | [[RECIPES/Pizza Dough\|Pizza Dough]]                                                                                                                                 | \-         |
 | [[RECIPES/Thai Chicken Coconut Curry\|Thai Chicken Coconut Curry]]                                                                                                   | \-         |
 
