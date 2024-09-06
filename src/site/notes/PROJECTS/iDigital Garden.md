@@ -14,7 +14,7 @@
 	- https://github.com/oleeskild/obsidian-digital-garden/discussions/389
 3) Set repository --> Settings --> Pages --> Source (Deploy from a branch): gh-pages 
 	- View Actions and see if they are successful!
-##### build.yml
+##### build.yml (in .github folder)
 ```text
 name: GH Pages
 
@@ -59,7 +59,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN2 }}  # This is from /settings/secrets/actions --> Repository secrets
+          github_token: ${{ secrets.DG_TOKEN }}  # This is from /settings/secrets/actions --> Repository secrets (You can reuse the one you have in your plugin settings)
           publish_dir: ./dist
 ```
 

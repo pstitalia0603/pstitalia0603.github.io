@@ -51,7 +51,29 @@ https://omar2cloud.github.io/cloudflare/cloudflared/cloudflare/
 
 
 ## Update cloudflared
-curl -L --output cloudflared.deb [https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb](https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb) && sudo dpkg -i cloudflared.deb && sudo systemctl restart cloudflared
+
+https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/downloads/update-cloudflared/
+
+```
+sudo apt-get upgrade cloudflared
+```
+
+```
+sudo systemctl restart cloudflared.service
+```
+
+```
+curl --location --output cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb && sudo dpkg -i cloudflared.deb
+```
+
+```
+sudo systemctl restart cloudflared.service
+```
+
+
+
+(https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm64.deb) && sudo dpkg -i cloudflared.deb && sudo systemctl restart cloudflared
+
 
 ### Check architecture
 ```
