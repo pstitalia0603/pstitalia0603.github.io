@@ -228,6 +228,7 @@ eval "$(oh-my-posh init bash --config /home/psfrago/bin/posh-themes/themes/$POSH
 
 ## Windows setup
 
+
 find path
 ```
 $PROFILE

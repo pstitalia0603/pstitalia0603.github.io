@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/podcasts/","tags":["Interests"],"created":"2024-04-02 14:27","updated":"2024-04-02 14:28"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/09-Sep/2024-09-06\|2024-09-06]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/09-Sep/2024-09-30\|2024-09-30]]
 
 
 [[TRACK/INTERESTS\|INTERESTS]]
@@ -27,6 +27,8 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/09-Sep/2024-09-06\|2024-09-06]]
 | [[ARCHIVE/2024/Can Dean Phillips Pull Off the Impossible Defeat Joe Biden\|Can Dean Phillips Pull Off the Impossible Defeat Joe Biden]]                                                         | 2024-01-12 | 4      | \-         |
 | [[ARCHIVE/2024/Democrats Have a Better Option Than Biden\|Democrats Have a Better Option Than Biden]]                                                                                           | 2024-02-21 | 3.75   | \-         |
 | [[ARCHIVE/2024/Do Not Buy A House\|Do Not Buy A House]]                                                                                                                                         | 2024-02-18 | 3.5    | \-         |
+| [[ARCHIVE/2024/Matt Taibbi on the Global Censorship-Industrial Complex\|Matt Taibbi on the Global Censorship-Industrial Complex]]                                                               | \-         | \-     | \-         |
+| [[ARCHIVE/2024/1992-The year politics broke\|1992-The year politics broke]]                                                                                                                     | \-         | \-     | \-         |
 | [[ARCHIVE/2024/What Happens Now That Everyone Hates Their Phone\|What Happens Now That Everyone Hates Their Phone]]                                                                             | 2024-05-28 | \-     | \-         |
 | [[ARCHIVE/2024/Should the U.S. Shut Its Borders\|Should the U.S. Shut Its Borders]]                                                                                                             | 2024-04-30 | \-     | \-         |
 
