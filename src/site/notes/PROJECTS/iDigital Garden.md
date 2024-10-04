@@ -67,6 +67,7 @@ jobs:
 
 ```text
 You will need to add a GH_TOKEN secret to your repo, which should be a github API token having access to your repo. (You can reuse the one you have in your plugin settings)  
+# This is from /settings/secrets/actions --> Repository secrets (You can reuse the one you have in your plugin settings)
 You will also need to name your repository in github, `<username>.github.io`. So in your case `efemkay.github.io`. This is because otherwise the URL will be  `<username>.github.io/<repositoryname>`. This will cause errors when the site tries to get CSS and Javascript from URLs like  `<username>.github.io/styles/style.css`, because they are actually located in `<username>.github.io/<repositoryname>/styles/style.css`.
 ```
 
