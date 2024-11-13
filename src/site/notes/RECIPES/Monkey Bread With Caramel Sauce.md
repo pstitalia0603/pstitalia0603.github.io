@@ -3,7 +3,6 @@
 ---
 
 
-- [ ] Monkey Bread 🛫 2024-10-19
 
 # [Monkey Bread Recipe With Caramel Sauce](https://www.thecookingfoodie.com/recipe/Monkey-Bread-Recipe)
 
