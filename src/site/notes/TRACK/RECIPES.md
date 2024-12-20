@@ -49,6 +49,7 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/12-Dec/2024-12-20\|2024-12-20]]
 | [[RECIPES/Mini Thai Crab Cakes with Spicy Aioli\|Mini Thai Crab Cakes with Spicy Aioli]]                                                                             | \-         |
 | [[RECIPES/Pizza Dough\|Pizza Dough]]                                                                                                                                 | \-         |
 | [[RECIPES/Thai Chicken Coconut Curry\|Thai Chicken Coconut Curry]]                                                                                                   | \-         |
+| [[RECIPES/{3 Ingredient} Easy Sugar Cookies\|{3 Ingredient} Easy Sugar Cookies]]                                                                                     | \-         |
 
 { .block-language-dataview}
 
