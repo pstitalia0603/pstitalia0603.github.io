@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2024/11-Nov/2024-11-13\|2024-11-13]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2024/12-Dec/2024-12-20\|2024-12-20]]
 
 
 [[TRACK/INTERESTS\|INTERESTS]]
@@ -23,13 +23,13 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/11-Nov/2024-11-13\|2024-11-13]]
 | [[RECIPES/Curried Lentil, Tomato, and Coconut Soup\|Curried Lentil, Tomato, and Coconut Soup]]                                                                       | 2024-04-16 |
 | [[RECIPES/Sweet Spinach Muffins with Banana\|Sweet Spinach Muffins with Banana]]                                                                                     | 2024-04-15 |
 | [[RECIPES/Best Breakfast casserole\|Best Breakfast casserole]]                                                                                                       | 2024-04-05 |
-| [[RECIPES/Tomato Basil Soup\|Tomato Basil Soup]]                                                                                                                     | 2024-04-04 |
-| [[RECIPES/Soft Boiled Eggs\|Soft Boiled Eggs]]                                                                                                                       | 2024-04-04 |
 | [[RECIPES/Chocolate Waffles\|Chocolate Waffles]]                                                                                                                     | 2024-04-04 |
+| [[RECIPES/Soft Boiled Eggs\|Soft Boiled Eggs]]                                                                                                                       | 2024-04-04 |
+| [[RECIPES/Tomato Basil Soup\|Tomato Basil Soup]]                                                                                                                     | 2024-04-04 |
 | [[RECIPES/Smoothie Recipe\|Smoothie Recipe]]                                                                                                                         | 2024-04-04 |
-| [[RECIPES/Mini Quiche\|Mini Quiche]]                                                                                                                                 | 2024-04-03 |
-| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                                                                               | 2024-04-03 |
 | [[RECIPES/Lemon-Blueberry Oatmeal Bars\|Lemon-Blueberry Oatmeal Bars]]                                                                                               | 2024-04-03 |
+| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                                                                               | 2024-04-03 |
+| [[RECIPES/Mini Quiche\|Mini Quiche]]                                                                                                                                 | 2024-04-03 |
 | [[RECIPES/Chocolate Oatmeal Bars\|Chocolate Oatmeal Bars]]                                                                                                           | 2024-03-18 |
 | [[RECIPES/Oatmeal Cups Recipe\|Oatmeal Cups Recipe]]                                                                                                                 | 2024-03-10 |
 | [[RECIPES/Oatmeal Flax Chocolate Chip Cookies\|Oatmeal Flax Chocolate Chip Cookies]]                                                                                 | 2024-03-10 |
@@ -41,13 +41,14 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/11-Nov/2024-11-13\|2024-11-13]]
 | [[RECIPES/Stuffed Peppers\|Stuffed Peppers]]                                                                                                                         | 2024-02-04 |
 | [[RECIPES/Nutella Crepes\|Nutella Crepes]]                                                                                                                           | 2023-12-01 |
 | [[RECIPES/Italian Grilled Cheese Sandwich\|Italian Grilled Cheese Sandwich]]                                                                                         | 2016-12-03 |
-| [[RECIPES/Thai Chicken Coconut Curry\|Thai Chicken Coconut Curry]]                                                                                                   | \-         |
-| [[RECIPES/Pizza Dough\|Pizza Dough]]                                                                                                                                 | \-         |
-| [[RECIPES/Mini Thai Crab Cakes with Spicy Aioli\|Mini Thai Crab Cakes with Spicy Aioli]]                                                                             | \-         |
-| [[RECIPES/Low Carb Tortillas - The Kellie Kitchen\|Low Carb Tortillas - The Kellie Kitchen]]                                                                         | \-         |
-| [[RECIPES/Ice Cream in a Bag\|Ice Cream in a Bag]]                                                                                                                   | \-         |
-| [[RECIPES/German Chocolate Cake\|German Chocolate Cake]]                                                                                                             | \-         |
 | [[RECIPES/Chocolate Covered Banana Pops  Healthy 3-Ingredient Dessert! - From My Bowl\|Chocolate Covered Banana Pops  Healthy 3-Ingredient Dessert! - From My Bowl]] | \-         |
+| [[RECIPES/Chunky Chipotle Mashed Potatoes - Pati Jinich\|Chunky Chipotle Mashed Potatoes - Pati Jinich]]                                                             | \-         |
+| [[RECIPES/German Chocolate Cake\|German Chocolate Cake]]                                                                                                             | \-         |
+| [[RECIPES/Ice Cream in a Bag\|Ice Cream in a Bag]]                                                                                                                   | \-         |
+| [[RECIPES/Low Carb Tortillas - The Kellie Kitchen\|Low Carb Tortillas - The Kellie Kitchen]]                                                                         | \-         |
+| [[RECIPES/Mini Thai Crab Cakes with Spicy Aioli\|Mini Thai Crab Cakes with Spicy Aioli]]                                                                             | \-         |
+| [[RECIPES/Pizza Dough\|Pizza Dough]]                                                                                                                                 | \-         |
+| [[RECIPES/Thai Chicken Coconut Curry\|Thai Chicken Coconut Curry]]                                                                                                   | \-         |
 
 { .block-language-dataview}
 
