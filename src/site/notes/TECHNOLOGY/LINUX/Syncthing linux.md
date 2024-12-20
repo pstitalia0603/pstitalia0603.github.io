@@ -84,3 +84,9 @@ https://snippets.page/posts/sync-obsidian-notes-between-pc-and-android-with-sync
 https://prakashjoshipax.com/free-obsidian-sync/
 
 https://facedragons.com/foss/sync-obsidian-across-devices/
+
+## Edit/change password
+Edit the [config file 14.6k](https://docs.syncthing.net/users/config.html) to remove the user and password in the `gui` section, then restart syncthing. 
+<encryptionPassword></encryptionPassword>
+
+`%LOCALAPPDATA%\Syncthing` (Windows) (or C:\Users\psfrago\AppData\Local\Syncthing\config.xml)

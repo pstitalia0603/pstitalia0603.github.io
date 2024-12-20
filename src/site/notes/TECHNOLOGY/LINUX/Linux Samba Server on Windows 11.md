@@ -168,6 +168,8 @@ Restart the samba service once again.just saw
 systemctl restart smbd
 ```
 
+Error fix: https://www.blackmoreops.com/2023/04/26/how-to-fix-you-cant-access-this-shared-folder-because-your-organizations-security-policies-block-unauthenticated-guest-access-error-on-windows-11/
+
 Open an MS window client. Map drive
 
 ![](https://unixcop.com/wp-content/uploads/2021/09/image-95.png)
