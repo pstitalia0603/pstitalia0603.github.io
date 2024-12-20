@@ -34,7 +34,7 @@
 - [[TECHNOLOGY/DEV/ohmyposh\|ohmyposh]]
 - https://tina.io/
 - https://picocss.com/
-- [[TECHNOLOGY/LINUX/Coolify and Cloudflared\|Coolify and Cloudflared]]
+- [[TECHNOLOGY/HOMELAB/Coolify and Cloudflared\|Coolify and Cloudflared]]
 
 
 

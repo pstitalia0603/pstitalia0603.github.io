@@ -39,7 +39,7 @@
 - Visual Studio Code
 - git/github
 - DBeaver
-- coolify.io - [[TECHNOLOGY/LINUX/Coolify and Cloudflared\|Coolify and Cloudflared]]
+- coolify.io - [[TECHNOLOGY/HOMELAB/Coolify and Cloudflared\|Coolify and Cloudflared]]
 - AstroJS
 
 ## Other Software
