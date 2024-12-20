@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Obsidian Quicknotes - Android with Tasker</title>
+<title>People Don’t Care How Much You Know Until They Know How Much You Care</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -274,7 +274,7 @@ CTRL + K
 <span class="foldername">IDEAS</span>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/personal/ideas/people-don-t-care-how-much-you-know-until-they-know-how-much-you-care/">People Don’t Care How Much You Know Until They Know How Much You Care </a>
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/personal/ideas/people-don-t-care-how-much-you-know-until-they-know-how-much-you-care/">People Don’t Care How Much You Know Until They Know How Much You Care </a>
 </div>
 </div>
 </div>
@@ -336,7 +336,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/obsidian-quicknotes-android-with-tasker/">Obsidian Quicknotes - Android with Tasker </a>
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/projects/obsidian-quicknotes-android-with-tasker/">Obsidian Quicknotes - Android with Tasker </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -542,89 +542,112 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2024-12-20T18:11:15.278Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2024-12-20T18:11:15.278Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2024-12-20T18:11:15.278Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Obsidian Quicknotes - Android with Tasker</h1>
+<h1 data-note-icon="">People Don’t Care How Much You Know Until They Know How Much You Care</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Obsidian
+#mantra
 </a>
 <a class="tag" onclick="toggleTagSearch(this)">
-#code
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#Projects
+#Paula
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-03-02 9:29:28 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-13 12:42:15 pm"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-12-20 9:12:42 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-12-20 9:12:50 am"></span></div></div></div>
 </header>
-<h1 id="a-href-https-github-com-guy-92-quick-note-target-blank-class-external-link-git-hub-guy-92-quick-note-a-way-to-take-quick-notes-in-obsidian-on-android-a" tabindex="-1"><a href="https://github.com/Guy-92/QuickNote" target="_blank" class="external-link">GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android</a></h1>
-<p><a href="https://github.com/Guy-92/QuickNote#start-of-content" target="_blank" class="external-link">https://github.com/Guy-92/QuickNote#start-of-content</a></p>
-<h2 id="quick-note" tabindex="-1">QuickNote</h2>
-<h3 id="a-way-to-take-quick-notes-in-a-href-https-obsidian-md-target-blank-class-external-link-obsidian-a-on-android" tabindex="-1">A way to take Quick Notes in <a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> on Android</h3>
-<p>This task displays an input dialog to take a note in the app Obsidian.</p>
-<hr>
-<p><a href="https://taskernet.com/shares/?user=AS35m8nSFNRSqPmtuWoUzDvbOkD1v%2FlqgfcQ2ZMUW6BRdBoRrpot%2BuokAci2FnhAYxkZxeZC&amp;id=Project%3AObsidian+QuickNote" target="_blank" class="external-link">Link to project in TaskerNet</a></p>
-<h4 id="features" tabindex="-1">Features</h4>
-<ul>
-<li>Open a Quick Note dialog from a home screen widget, quick tile or notification</li>
-<li>Special characters - configurable characters that do a certain thing.
-<ul>
-<li>Save note
-<ul>
-<li>Saves the note. Must be written at the end of a note.</li>
-</ul>
-</li>
-<li>Save and exit note
-<ul>
-<li>Saves the note and closes the input dialog. Must be written at the end of a note.</li>
-</ul>
-</li>
-<li>Clear note
-<ul>
-<li>Clears all the text in the input dialog. Must be written at the end of the note.</li>
-</ul>
-</li>
-<li>Escape
-<ul>
-<li>Tells the task to ignore a custom character.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="permissions" tabindex="-1">Permissions</h4>
-<ul>
-<li>Manage external storage - To write and read notes in the device</li>
-<li>Accessibly service - To detect tapped notification with Tasker notification (this is optional)</li>
-<li>App usage stats - To detect AutoNotification is installed. (this is optional)</li>
-<li>Calendar - To detect AutoNotification is installed. (this is optional)</li>
-</ul>
-<h4 id="apps" tabindex="-1">Apps</h4>
-<h5 id="required" tabindex="-1">Required</h5>
-<ul>
-<li><a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> - A notes app that is a powerful knowledge base on top of a local folder of plain text Markdown files.
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=md.obsidian" target="_blank" class="external-link">Play Store link</a></li>
-</ul>
-</li>
-<li><a href="https://tasker.joaoapps.com/" target="_blank" class="external-link">Tasker</a> - Tasker is an Android application that performs tasks, based on contexts like application, event, gesture, date, time, location in user defined profiles or home screen widgets. A 7 day free trial can be downloaded <a href="https://tasker.joaoapps.com/download.html" target="_blank" class="external-link">here</a>.
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&amp;hl=en&amp;gl=US" target="_blank" class="external-link">Play Store link</a></li>
-</ul>
-</li>
-</ul>
-<h5 id="optional" tabindex="-1">Optional</h5>
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=com.joaomgcd.autonotification" target="_blank" class="external-link">AutoNotification</a> - To add quick tile to trigger the Quick Notes dialog (this can be done with just Tasker too)</li>
-</ul>
-<h4 id="what-is-tasker-net" tabindex="-1">What is TaskerNet</h4>
-<p>TaskerNet is a website where you can store and share Tasker projects and tasks.</p>
-<h4 id="notes" tabindex="-1">Notes</h4>
-<ul>
-<li>Tapping outside of the input dialog when the keyboard is hidden will cancel the note and delete all contents, if you are writing a long note, you can save the note by typing the &quot;SaveNoteCharacter&quot; and pressing ok.</li>
-<li>Locking the screen when taking a note will cancel the note and delete all contents, use the &quot;SaveAndExitNoteCharacter&quot; before locking the screen</li>
-<li>The timestamp format can be configured in the &quot;QuickNote&quot; task, enter the task, tap on the search icon and search &quot;timestamp&quot;, this will lead you to the action where you can edit the timestamp format.</li>
-</ul>
+<h1 id="a-href-https-quoteinvestigator-com-2024-07-04-know-care-target-blank-class-external-link-people-don-t-care-how-much-you-know-until-they-know-how-much-you-care-quote-investigator-a" tabindex="-1"><a href="https://quoteinvestigator.com/2024/07/04/know-care/" target="_blank" class="external-link">People Don’t Care How Much You Know Until They Know How Much You Care – Quote Investigator®</a></h1>
+<h4 id="strong-theodore-roosevelt-margaret-tyson-zig-ziglar-john-c-maxwell-james-f-hind-beltone-hearing-aid-company-strong" tabindex="-1"><strong>Theodore Roosevelt? Margaret Tyson? Zig Ziglar? John C. Maxwell? James F. Hind? Beltone Hearing Aid Company?</strong></h4>
+<p><a href="https://quoteinvestigator.com/wp-content/uploads/2024/07/medequip07.jpg" target="_blank" class="external-link"><img src="https://quoteinvestigator.com/wp-content/uploads/2024/07/medequip07-1024x773.jpg" alt=""></a></p>
+<p><strong>Items used to care for medical patients fron Unsplash</strong></p>
+<p><strong>Question for Quote Investigator:</strong> Interpersonal relationships are based on trust. A knowledgeable person can be impressive, but another quality is more important when establishing a connection. Here is a pertinent adage:</p>
+<blockquote>
+<p>People don’t care how much you know until they know how much you care.</p>
+</blockquote>
+<p>This statement has been attributed to U.S. President Theodore Roosevelt, motivational speaker Zig Ziglar, best-selling author John C. Maxwell, and others. Yet, I have not seen any definitive citations. Would you please help trace this statement?</p>
+<p><strong>Reply from Quote Investigator:</strong> This clever saying employs a rhetorical device called antimetabole. Key words in the first half of the statement are reordered in the second half.</p>
+<p><strong>QI</strong> has found no evidence that Theodore Roosevelt used this expression. The earliest match located by <strong>QI</strong> appeared in a 1959 commencement speech by Margaret Tyson who was the Dean of the School of Nursing at the University of Virginia. Boldface added to excerpts by <strong>QI:</strong><a href="https://quoteinvestigator.com/2024/07/04/know-care/#340847a3-8229-4712-8f05-b3d7835df66a" target="_blank" class="external-link">1</a></p>
+<blockquote>
+<p>Nurses graduating from a course at King’s Daughter’s Hospital here last night were told that <strong>“People won’t care how much you know unless they really know how much you care.”</strong></p>
+</blockquote>
+<p>Margaret Tyson is a candidate for creator of the saying, but <strong>QI</strong> conjectures that the saying was already in circulation, and the originator remains anonymous.</p>
+<p>Below are additional selected citations in chronological order.</p>
+<p>In 1962 a subcommittee of the U.S. Senate held a meeting which discussed the price of hearing aids. One of the exhibits at the meeting was a manual from the Beltone Hearing Aid Company. The manual included the following passage:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#34f580f7-8306-4d29-ad6b-49d2f01bb0a6" target="_blank" class="external-link">2</a></p>
+<blockquote>
+<p>Beltone has an old saying, <strong>“People don’t care how much you know—until they know how much you care.”</strong> Now is the time to show how much you care.</p>
+</blockquote>
+<p>In 1969 a newspaper columnist in Marshall, Texas used the saying:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#ef55a970-9b92-487d-8412-00cfb5102d15" target="_blank" class="external-link">3</a></p>
+<blockquote>
+<p>Think With Us From Bill Sullivan, Jr.<br>
+<strong>“PEOPLE DON’T CARE HOW MUCH YOU KNOW UNTIL THEY KNOW HOW MUCH YOU CARE.”</strong></p>
+</blockquote>
+<p>In 1970 a newspaper in Sedalia, Missouri reported on a speech made by politician Jerry Jones:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#dc4d0cba-3753-4885-8954-c86149ead9b4" target="_blank" class="external-link">4</a></p>
+<blockquote>
+<p>Jones delivered his address to an evening dinner meeting of the Republicans For Improvement Club, a newly-formed Sedalia political organization.</p>
+<p><strong>“People don’t care about how much you know until they know how much you care,”</strong> Jones said.</p>
+</blockquote>
+<p>In 1972 the saying appeared within an advertisement for the Beltone Hearing Aid Company:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#9061cb3e-2d14-43d9-86d4-7d3f3002bedd" target="_blank" class="external-link">5</a></p>
+<blockquote>
+<p><strong>NOBODY CARES HOW MUCH YOU KNOW, UNTIL THEY KNOW HOW MUCH YOU CARE.</strong><br>
+GEORGE A. VUXTON, Dealer<br>
+BELTONE HEARING AID CENTER<br>
+406 Walnut Street<br>
+ELMIRA, NEW YORK</p>
+</blockquote>
+<p>In 1973 a group of students at Brigham Young University in Provo, Utah sent a letter to the student newspaper. The letter included an instance of the saying with an anonymous attribution:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#b03cdf3c-566c-48f2-9a4a-2adde85794ad" target="_blank" class="external-link">6</a></p>
+<blockquote>
+<p>The statement has been appropriately made, <strong>“I don’t care how much you know until I know how much you care.”</strong></p>
+</blockquote>
+<p>In 1978 Zig Ziglar wrote “See You At the Top”, and he used a version of the expression:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#4863bae6-5f49-47f7-a906-238bd5ddc0be" target="_blank" class="external-link">7</a></p>
+<blockquote>
+<p>It truly “pays” to be genuinely interested in others because <strong>employees “don’t care how much you know until they know how much you care.”</strong></p>
+</blockquote>
+<p>In 1984 Zig Ziglar wrote “Secrets of Closing the Sale”, and he used the expression again:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#b84688e6-d554-4406-9fd5-2c51b558ba15" target="_blank" class="external-link">8</a></p>
+<blockquote>
+<p>When you are on a sales interview, whether you are selling a product or a business opportunity, you must believe deeply, firmly, and sincerely that what you offer is in the best interests of the person you are trying to persuade to take action. If you believe this way you can sincerely pull for your prospect to buy for his benefit. . . . It’s true, as a wise man said: <strong>“People don’t really care how much you know—until they know how much you care.”</strong></p>
+</blockquote>
+<p>In 1985 the book “The Great Communicators” included a chapter by Lee S. Shapiro which contained the following passage:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#84e9b705-75f8-4a7b-bf7b-6d5a356a39cd" target="_blank" class="external-link">9</a></p>
+<blockquote>
+<p>“What you must know is that everyone wants to love and be loved, to feel that they’re important, that they matter . . . Give them the wonderful gift of listening, catch them doing something right, ask them a question, let them know that you care. <strong>They don’t care how much you know, until they know how much you care.”</strong></p>
+</blockquote>
+<p>In 1986 “One Minute Messages” by Dan Clark with Michael Gale included the following:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#7b26a001-fdde-4d90-b664-9e038f758e6d" target="_blank" class="external-link">10</a></p>
+<blockquote>
+<p>When others are talking, don’t just be reloading your own mouth to talk, let them know you hear what they’re saying. Listen to learn. <strong>People don’t care how much you know until they know how much you care.</strong></p>
+</blockquote>
+<p>In 1989 the following appeared as an epigraph at the beginning of the book “Be a People Person” by John C. Maxwell:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#4f74abc6-fb6f-4333-801c-24539780221d" target="_blank" class="external-link">11</a></p>
+<blockquote>
+<p><strong>People don’t care how much you know until they know how much you care.</strong></p>
+</blockquote>
+<p>In 1995 by John C. Maxwell wrote the following in “Developing the Leaders Around You”:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#e3ed4424-7537-4e76-8a30-2968d956ecc6" target="_blank" class="external-link">12</a></p>
+<blockquote>
+<p>In all my years of leading people, I must have said this more than a thousand times: <strong>“People don’t care how much you know until they know how much you care.” It’s true.</strong></p>
+</blockquote>
+<p>In 1997 “Reader’s Digest Quotable Quotes: Wit and Wisdom for All Occasions” contained the following entry:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#989ba833-4bc2-486e-98f0-bb2575272cef" target="_blank" class="external-link">13</a></p>
+<blockquote>
+<p><strong>People want to know how much you care before they care how much you know.</strong><br>
+—JAMES F. HIND in The Wall Street Journal</p>
+</blockquote>
+<p>In 2009 a newspaper in Manitowoc, Wisconsin printed the remarks of a fitness facility owner who attributed the saying to the 28th U.S. President:<a href="https://quoteinvestigator.com/2024/07/04/know-care/#f7778e07-7f59-4e52-a31a-8d207066d6a0" target="_blank" class="external-link">14</a></p>
+<blockquote>
+<p>The fitness buff points to a president when coming up with his secret to success. “I truly believe in the famous quote by Theodore Roosevelt: <strong>‘Nobody cares how much you know, until they know how much you care.’</strong> Especially in the fitness industry, we are simply a means to an end and true success lies in motivating others to change their lives for the better.”</p>
+</blockquote>
+<p>In conclusion, this is a modern adage with an anonymous provenance. Margaret Tyson who was the dean of a nursing school used the saying by 1959, and the Beltone Hearing Aid Company used the motto by 1962. Future researchers my uncover earlier evidence. <strong>QI</strong> has found no substantive evidence for the attribution to Theodore Roosevelt.</p>
+<p>Image Notes: Picture of items used to care for medical patients from Kristine Wook at Unplash. The picture has been cropped and resized.</p>
+<p>Acknowledgements: Great thanks to Mary Burzynski, Rand Careaga, G. Albers, and Quinn Que whose inquiries led QI to formulate this question and perform this exploration. Also, thanks to the pioneering work of researcher Barry Popik who found the 1962 Beltone citation and other citations.</p>
+<ol>
+<li>1959 March 7, Waynesboro News-Virginian Nursing Class Graduates, Hears Speaker Cite Value of Integrity, Quote Page 3, Column 1 and 2, Waynesboro, Virginia. (Newspapers_com) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#340847a3-8229-4712-8f05-b3d7835df66a-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1962, Hearings Before the Subcommittee On Antitrust and Monopoly of the Committee On the Judiciary, United States Senate, Eighty-Seventh Congress, Second Session, April 18, 19, 24, 25, and May 16, 1962, Prices of Hearing Aids, Section: Exhibits and Appendix, Exhibit 36: (Reprint of Beltone Consultant’s Manual, Section IV, Page 10), Quote Page 412, U.S. Government Printing Office, Washington D.C. (Google Books Full View) <a href="https://books.google.com/books?id=q0WVJ83GqnwC&amp;q=%22until+they+know%22#v=snippet&amp;" target="_blank" class="external-link">link</a> <a href="https://quoteinvestigator.com/2024/07/04/know-care/#34f580f7-8306-4d29-ad6b-49d2f01bb0a6-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1969 June 16, Marshall News Messenger, Think With Us From Bill Sullivan, Jr., Quote Page 3, Column 1, Marshall, Texas. (Newspapers_com) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#ef55a970-9b92-487d-8412-00cfb5102d15-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1970 March 29, The Sedalia Democrat, Overflow Crowd Hears Jones Present Speech, Quote Page 1, Column 3, Sedalia, Missouri. (Newspapers_com) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#dc4d0cba-3753-4885-8954-c86149ead9b4-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1972 January 28, Star-Gazette, (Advertisement for Beltone Hearing Aid Center), Quote Page 2, Column 6, Elmira, New York. (Newspapers_com) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#9061cb3e-2d14-43d9-86d4-7d3f3002bedd-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1973 November 19, The Daily Universe, Section: Opinion and Comment, Letter to the Editor, Letter Title: An open letter, Quote Page 10, Column 3, Associated Students of Brigham Young University, Provo, Utah. (Verified with scans) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#b03cdf3c-566c-48f2-9a4a-2adde85794ad-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1978 (1977 Copyright), See You At the Top (Formerly entitled Biscuits, Fleas, and Pump Handles) by Zig Ziglar, Segment 5: Attitude, Chapter One: Is the “Right” Attitude Important?, Quote Page 214 and 215, Pelican Publishing Company, Gretna, Louisiana. (Verified with scans) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#4863bae6-5f49-47f7-a906-238bd5ddc0be-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1985 (Copyright 1984), Zig Ziglar’s Secrets of Closing the Sale by Zig Ziglar, Chapter 15: Ya Gotta Have Love, Quote Page 154, Berkley Books, New York. (Verified with scans) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#b84688e6-d554-4406-9fd5-2c51b558ba15-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1985 Copyright, The Great Communicators, Edited by Dottie Walters, Chapter 5: Veritatus Simplex Oratio Est (The Language of Truth Is Simple), by Lee S. Shapiro, J.D., Quote Page 95 and 96, Royal Publishing, Glendora, California. (Verified with scans) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#84e9b705-75f8-4a7b-bf7b-6d5a356a39cd-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1986 Copyright, One Minute Messages: an anthology of “old popular” and “new original” thoughts, stories, poetry and prose by Dan Clark with Michael Gale, Chapter: Listening, Section: The Conversation Hog, Quote Page 163, Sunrise Publishing. (Verified with scans) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#7b26a001-fdde-4d90-b664-9e038f758e6d-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1989 Copyright, Be a People Person by John C. Maxwell, (Book Epigraph), Quote Page 6, Victor Books: A Division of Scripture Press Publications, USA. (Verified with scans) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#4f74abc6-fb6f-4333-801c-24539780221d-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1995 Copyright, Developing the Leaders Around You by John C. Maxwell, Chapter 8: The Leader’s Greatest Joy: Coaching a Dream Team of Leaders, Quote Page 163, Thomas Nelson Publishers, Nashville, Tennessee. (Verified with scans) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#e3ed4424-7537-4e76-8a30-2968d956ecc6-link" target="_blank" class="external-link">↩︎</a></li>
+<li>1997, Reader’s Digest Quotable Quotes: Wit and Wisdom for All Occasions, Quote Page 81, Published by Reader’s Digest Association, Pleasantville, New York. (Verified on paper) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#989ba833-4bc2-486e-98f0-bb2575272cef-link" target="_blank" class="external-link">↩︎</a></li>
+<li>2009 January 30, Manitowoc Herald-Times, Section: Manitowoc Herald Times Reporter, 40 Under 40, Date on Section: January 2009,  Mike Langley: Owner Anytime Fitness, Quote Page 5, Column 2, Manitowoc, Wisconsin. (Newspapers_com) <a href="https://quoteinvestigator.com/2024/07/04/know-care/#f7778e07-7f59-4e52-a31a-8d207066d6a0-link" target="_blank" class="external-link">↩︎</a></li>
+</ol>
 </main>
 <aside>
 <div class="sidebar">
@@ -666,31 +689,9 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#a-href-https-github-com-guy-92-quick-note-target-blank-class-external-link-git-hub-guy-92-quick-note-a-way-to-take-quick-notes-in-obsidian-on-android-a">GitHub - Guy-92/QuickNote: A way to take Quick Notes in Obsidian on Android</a>
+<li><a href="#a-href-https-quoteinvestigator-com-2024-07-04-know-care-target-blank-class-external-link-people-don-t-care-how-much-you-know-until-they-know-how-much-you-care-quote-investigator-a">People Don’t Care How Much You Know Until They Know How Much You Care – Quote Investigator®</a>
 <ol>
-<li><a href="#quick-note">QuickNote</a>
-<ol>
-<li><a href="#a-way-to-take-quick-notes-in-a-href-https-obsidian-md-target-blank-class-external-link-obsidian-a-on-android">A way to take Quick Notes in Obsidian on Android</a>
-<ol>
-<li><a href="#features">Features</a>
-</li>
-<li><a href="#permissions">Permissions</a>
-</li>
-<li><a href="#apps">Apps</a>
-<ol>
-<li><a href="#required">Required</a>
-</li>
-<li><a href="#optional">Optional</a>
-</li>
-</ol>
-</li>
-<li><a href="#what-is-tasker-net">What is TaskerNet</a>
-</li>
-<li><a href="#notes">Notes</a>
-</li>
-</ol>
-</li>
-</ol>
+<li><a href="#strong-theodore-roosevelt-margaret-tyson-zig-ziglar-john-c-maxwell-james-f-hind-beltone-hearing-aid-company-strong">Theodore Roosevelt? Margaret Tyson? Zig Ziglar? John C. Maxwell? James F. Hind? Beltone Hearing Aid Company?</a>
 </li>
 </ol>
 </li>
