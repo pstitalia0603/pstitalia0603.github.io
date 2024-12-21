@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/recipes/bananakies/","tags":["Recipes"],"created":"2024-03-01T17:15:00","updated":"2024-03-01 17:15"}
 ---
 
-- [ ] bananakies 🛫 2024-12-20
+- [x] bananakies 🛫 2024-12-20 ✅ 2024-12-20
 # [Healthy Bananakies Cookies](https://www.skinnytaste.com/healthy-cookies/#recipe) 
 
 PREP TIME: 10minutes mins
