@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/matt-taibbi-on-the-global-censorship-industrial-complex/","tags":["podcast"],"created":"2024-09-11 9:27:45 pm","updated":"2024-09-11 9:28:07 pm"}
+{"dg-publish":true,"permalink":"/archive/2024/matt-taibbi-on-the-global-censorship-industrial-complex/","tags":["podcast"],"noteIcon":"","created":"2024-09-11 9:27:45 pm","updated":"2024-09-11 9:28:07 pm"}
 ---
 
 

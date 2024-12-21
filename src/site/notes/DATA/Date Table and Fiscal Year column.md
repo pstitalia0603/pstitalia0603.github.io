@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/date-table-and-fiscal-year-column/","tags":["Power_bi","Power_query","m-code","dax","Data"],"created":"2023-12-03T10:12:00","updated":"2024-03-01 19:45"}
+{"dg-publish":true,"permalink":"/data/date-table-and-fiscal-year-column/","tags":["Power_bi","Power_query","m-code","dax","Data"],"noteIcon":"","created":"2023-12-03T10:12:00","updated":"2024-03-01 19:45"}
 ---
 
 [[DATA/BI and PQ DATA TIPS AND TRICKS\|BI and PQ DATA TIPS AND TRICKS]]

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/mini-cinnamon-muffin/","tags":["Recipes","Ella"],"created":"2024-04-03T08:43:00","updated":"2024-04-13 10:48:31 am"}
+{"dg-publish":true,"permalink":"/recipes/mini-cinnamon-muffin/","tags":["Recipes","Ella"],"noteIcon":"","created":"2024-04-03T08:43:00","updated":"2024-04-13 10:48:31 am"}
 ---
 
 # [Easy Muffin Recipe for Kids – Mini Cinnamon Muffin | Kidstir](https://kidstir.com/kids-recipes/churro-muffins/)

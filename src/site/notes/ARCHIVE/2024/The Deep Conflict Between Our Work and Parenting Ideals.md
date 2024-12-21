@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/","tags":["ToListen","podcast"],"created":"2024-03-25T06:04:00","updated":"2024-03-25T06:06:00"}
+{"dg-publish":true,"permalink":"/archive/2024/the-deep-conflict-between-our-work-and-parenting-ideals/","tags":["ToListen","podcast"],"noteIcon":"","created":"2024-03-25T06:04:00","updated":"2024-03-25T06:06:00"}
 ---
 
 

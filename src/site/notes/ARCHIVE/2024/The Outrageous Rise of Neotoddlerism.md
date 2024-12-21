@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/the-outrageous-rise-of-neotoddlerism/","tags":["article"],"created":"2024-08-08 5:10:07 pm","updated":"2024-08-08 5:10:17 pm"}
+{"dg-publish":true,"permalink":"/archive/2024/the-outrageous-rise-of-neotoddlerism/","tags":["article"],"noteIcon":"","created":"2024-08-08 5:10:07 pm","updated":"2024-08-08 5:10:17 pm"}
 ---
 
 # [The Outrageous Rise of Neotoddlerism](https://open.substack.com/pub/gurwinder/p/the-outrageous-rise-of-neotoddlerism?utm_source=share&utm_medium=android&r=9yuk2)

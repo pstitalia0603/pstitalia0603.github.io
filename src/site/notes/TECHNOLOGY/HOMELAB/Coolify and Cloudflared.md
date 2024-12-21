@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/homelab/coolify-and-cloudflared/","tags":["linux"],"created":"2024-06-02 7:18:44 pm","updated":"2024-06-02 7:18:55 pm"}
+{"dg-publish":true,"permalink":"/technology/homelab/coolify-and-cloudflared/","tags":["linux"],"noteIcon":"","created":"2024-06-02 7:18:44 pm","updated":"2024-06-02 7:18:55 pm"}
 ---
 
 

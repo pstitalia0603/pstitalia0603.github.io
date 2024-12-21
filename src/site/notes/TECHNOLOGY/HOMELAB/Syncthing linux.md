@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/homelab/syncthing-linux/","tags":["linux","syncthing"],"created":"2024-04-04 13:55","updated":"2024-04-04 13:56"}
+{"dg-publish":true,"permalink":"/technology/homelab/syncthing-linux/","tags":["linux","syncthing"],"noteIcon":"","created":"2024-04-04 13:55","updated":"2024-04-04 13:56"}
 ---
 
 [[TECHNOLOGY/HOMELAB/Syncthing on Raspberry Pi\|Syncthing on Raspberry Pi]]

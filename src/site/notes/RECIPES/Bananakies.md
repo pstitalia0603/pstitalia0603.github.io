@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/bananakies/","tags":["Recipes"],"created":"2024-03-01T17:15:00","updated":"2024-03-01 17:15"}
+{"dg-publish":true,"permalink":"/recipes/bananakies/","tags":["Recipes"],"noteIcon":"","created":"2024-03-01T17:15:00","updated":"2024-03-01 17:15"}
 ---
 
 - [x] bananakies 🛫 2024-12-20 ✅ 2024-12-20

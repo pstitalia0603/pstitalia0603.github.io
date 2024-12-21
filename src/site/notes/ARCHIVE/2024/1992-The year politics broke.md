@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/1992-the-year-politics-broke/","tags":["podcast"],"created":"2024-09-11 9:25:00 pm","updated":"2024-09-11 9:25:50 pm"}
+{"dg-publish":true,"permalink":"/archive/2024/1992-the-year-politics-broke/","tags":["podcast"],"noteIcon":"","created":"2024-09-11 9:25:00 pm","updated":"2024-09-11 9:25:50 pm"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/the-anti-woke-expert/","tags":["podcast"],"created":"2024-10-04 11:19:00 am","updated":"2024-10-04 11:19:40 am"}
+{"dg-publish":true,"permalink":"/archive/2024/the-anti-woke-expert/","tags":["podcast"],"noteIcon":"","created":"2024-10-04 11:19:00 am","updated":"2024-10-04 11:19:40 am"}
 ---
 
 

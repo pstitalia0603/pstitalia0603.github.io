@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/dev/ohmyposh/","tags":["Projects","code"],"created":"2024-04-28 11:32:43 am","updated":"2024-04-28T11:32:50"}
+{"dg-publish":true,"permalink":"/technology/dev/ohmyposh/","tags":["Projects","code"],"noteIcon":"","created":"2024-04-28 11:32:43 am","updated":"2024-04-28T11:32:50"}
 ---
 
 [[TECHNOLOGY/DEV/RaspberryPI Setup\|RaspberryPI Setup]]

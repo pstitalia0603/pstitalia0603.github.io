@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/","tags":["podcast"],"created":"2024-04-18T11:59:38","updated":"2024-04-18 11:59:53 am"}
+{"dg-publish":true,"permalink":"/archive/2024/nicole-avant-on-tragedy-forgiveness-and-thinking-free/","tags":["podcast"],"noteIcon":"","created":"2024-04-18T11:59:38","updated":"2024-04-18 11:59:53 am"}
 ---
 
 

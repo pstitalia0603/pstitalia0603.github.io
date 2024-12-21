@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/homelab/syncthing-on-raspberry-pi/","tags":["Obsidian","linux","syncthing"],"created":"2024-04-04T14:49:00","updated":"2024-04-04 14:50"}
+{"dg-publish":true,"permalink":"/technology/homelab/syncthing-on-raspberry-pi/","tags":["Obsidian","linux","syncthing"],"noteIcon":"","created":"2024-04-04T14:49:00","updated":"2024-04-04 14:50"}
 ---
 
 [[TECHNOLOGY/HOMELAB/Syncthing linux\|Syncthing linux]]

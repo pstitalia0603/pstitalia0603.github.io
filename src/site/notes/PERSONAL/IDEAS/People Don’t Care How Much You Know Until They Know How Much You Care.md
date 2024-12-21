@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/personal/ideas/people-don-t-care-how-much-you-know-until-they-know-how-much-you-care/","tags":["mantra","Paula"],"created":"2024-12-20 9:12:42 am","updated":"2024-12-20 9:12:50 am"}
+{"dg-publish":true,"permalink":"/personal/ideas/people-don-t-care-how-much-you-know-until-they-know-how-much-you-care/","tags":["mantra","Paula"],"noteIcon":"","created":"2024-12-20 9:12:42 am","updated":"2024-12-20 9:12:50 am"}
 ---
 
 # [People Don’t Care How Much You Know Until They Know How Much You Care – Quote Investigator®](https://quoteinvestigator.com/2024/07/04/know-care/)

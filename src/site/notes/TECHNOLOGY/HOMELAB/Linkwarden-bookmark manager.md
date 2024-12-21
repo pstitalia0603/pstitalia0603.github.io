@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/homelab/linkwarden-bookmark-manager/","tags":["FOSS","tools","ToLearn","homelab"],"created":"2024-10-12 7:34:14 pm","updated":"2024-10-12 7:34:26 pm"}
+{"dg-publish":true,"permalink":"/technology/homelab/linkwarden-bookmark-manager/","tags":["FOSS","tools","ToLearn","homelab"],"noteIcon":"","created":"2024-10-12 7:34:14 pm","updated":"2024-10-12 7:34:26 pm"}
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/what-happens-now-that-everyone-hates-their-phone/","tags":["podcast"],"created":"2024-05-28T02:43:00","updated":"2024-05-28 2:43:56 pm"}
+{"dg-publish":true,"permalink":"/archive/2024/what-happens-now-that-everyone-hates-their-phone/","tags":["podcast"],"noteIcon":"","created":"2024-05-28T02:43:00","updated":"2024-05-28 2:43:56 pm"}
 ---
 
 # [What Happens Now That Everyone Hates Their Phone?](https://youtube.com/watch?v=2LpR9zhEl2A&feature=shared)

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/personal/travel/italia/italia-2003/","tags":["Paula","JOURNEY","Trips"],"created":"2024-08-04 12:51:00 pm","updated":"2024-08-04 12:51:29 pm"}
+{"dg-publish":true,"permalink":"/personal/travel/italia/italia-2003/","tags":["Paula","JOURNEY","Trips"],"noteIcon":"","created":"2024-08-04 12:51:00 pm","updated":"2024-08-04 12:51:29 pm"}
 ---
 
 5/31/2003 - DC--> Roma

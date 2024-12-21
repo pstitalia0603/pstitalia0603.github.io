@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/chocolate-oatmeal-bars/","tags":["Recipes"],"created":"2024-03-18T14:40:00","updated":"2024-03-18 14:41"}
+{"dg-publish":true,"permalink":"/recipes/chocolate-oatmeal-bars/","tags":["Recipes"],"noteIcon":"","created":"2024-03-18T14:40:00","updated":"2024-03-18 14:41"}
 ---
 
 [[ReadItLater\|ReadItLater]] [[Youtube\|Youtube]]

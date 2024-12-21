@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/30-useful-concepts-spring-2024/","tags":["article"],"created":"2024-05-06T07:13:00","updated":"2024-05-06T07:14:52"}
+{"dg-publish":true,"permalink":"/archive/2024/30-useful-concepts-spring-2024/","tags":["article"],"noteIcon":"","created":"2024-05-06T07:13:00","updated":"2024-05-06T07:14:52"}
 ---
 
 # [30 Useful Concepts (Spring 2024)](https://open.substack.com/pub/gurwinder/p/30-useful-concepts-spring-2024?utm_source=share&utm_medium=android&r=9yuk2)

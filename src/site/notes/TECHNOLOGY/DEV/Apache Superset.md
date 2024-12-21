@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/dev/apache-superset/","tags":["Data","Projects"],"created":"2024-04-27 3:27:06 pm","updated":"2024-04-27 3:27:53 pm"}
+{"dg-publish":true,"permalink":"/technology/dev/apache-superset/","tags":["Data","Projects"],"noteIcon":"","created":"2024-04-27 3:27:06 pm","updated":"2024-04-27 3:27:53 pm"}
 ---
 
 [[TRACK/CURRENT PROJECTS\|CURRENT PROJECTS]]

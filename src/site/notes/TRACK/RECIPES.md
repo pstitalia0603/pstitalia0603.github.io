@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
+{"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"noteIcon":"","created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
 GO TO TODAY: [[NOTES/DAILY NOTES/2024/12-Dec/2024-12-21\|2024-12-21]]

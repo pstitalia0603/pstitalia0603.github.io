@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/recipes/oatmeal-flax-chocolate-chip-cookies/","tags":["Recipes"],"created":"2024-03-10T19:07:00","updated":"2024-03-10 19:07"}
+{"dg-publish":true,"permalink":"/recipes/oatmeal-flax-chocolate-chip-cookies/","tags":["Recipes"],"noteIcon":"","created":"2024-03-10T19:07:00","updated":"2024-03-10 19:07"}
 ---
 
 

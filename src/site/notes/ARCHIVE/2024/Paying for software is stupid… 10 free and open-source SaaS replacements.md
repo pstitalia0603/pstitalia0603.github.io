@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/archive/2024/paying-for-software-is-stupid-10-free-and-open-source-saa-s-replacements/","tags":["development","FOSS"],"created":"2024-08-29 2:56:37 pm","updated":"2024-08-29 2:56:44 pm"}
+{"dg-publish":true,"permalink":"/archive/2024/paying-for-software-is-stupid-10-free-and-open-source-saa-s-replacements/","tags":["development","FOSS"],"noteIcon":"","created":"2024-08-29 2:56:37 pm","updated":"2024-08-29 2:56:44 pm"}
 ---
 
 [[ReadItLater\|ReadItLater]] [[Youtube\|Youtube]]

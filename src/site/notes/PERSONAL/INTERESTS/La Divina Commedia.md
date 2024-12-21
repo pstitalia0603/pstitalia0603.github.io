@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/personal/interests/la-divina-commedia/","tags":["Interests"],"created":"2024-04-11 9:26:26 am","updated":"2024-04-13 11:50:56 am"}
+{"dg-publish":true,"permalink":"/personal/interests/la-divina-commedia/","tags":["Interests"],"noteIcon":"","created":"2024-04-11 9:26:26 am","updated":"2024-04-13 11:50:56 am"}
 ---
 
 https://www.reddit.com/r/books/comments/pocnyf/the_best_online_resources_for_reading_dantes/
