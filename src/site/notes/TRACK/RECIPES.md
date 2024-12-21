@@ -23,13 +23,13 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2024/12-Dec/2024-12-21\|2024-12-21]]
 | [[RECIPES/Curried Lentil, Tomato, and Coconut Soup\|Curried Lentil, Tomato, and Coconut Soup]]                                                                       | 2024-04-16 |
 | [[RECIPES/Sweet Spinach Muffins with Banana\|Sweet Spinach Muffins with Banana]]                                                                                     | 2024-04-15 |
 | [[RECIPES/Best Breakfast casserole\|Best Breakfast casserole]]                                                                                                       | 2024-04-05 |
-| [[RECIPES/Chocolate Waffles\|Chocolate Waffles]]                                                                                                                     | 2024-04-04 |
 | [[RECIPES/Soft Boiled Eggs\|Soft Boiled Eggs]]                                                                                                                       | 2024-04-04 |
 | [[RECIPES/Tomato Basil Soup\|Tomato Basil Soup]]                                                                                                                     | 2024-04-04 |
+| [[RECIPES/Chocolate Waffles\|Chocolate Waffles]]                                                                                                                     | 2024-04-04 |
 | [[RECIPES/Smoothie Recipe\|Smoothie Recipe]]                                                                                                                         | 2024-04-04 |
 | [[RECIPES/Lemon-Blueberry Oatmeal Bars\|Lemon-Blueberry Oatmeal Bars]]                                                                                               | 2024-04-03 |
-| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                                                                               | 2024-04-03 |
 | [[RECIPES/Mini Quiche\|Mini Quiche]]                                                                                                                                 | 2024-04-03 |
+| [[RECIPES/Mini Cinnamon Muffin\|Mini Cinnamon Muffin]]                                                                                                               | 2024-04-03 |
 | [[RECIPES/Chocolate Oatmeal Bars\|Chocolate Oatmeal Bars]]                                                                                                           | 2024-03-18 |
 | [[RECIPES/Oatmeal Cups Recipe\|Oatmeal Cups Recipe]]                                                                                                                 | 2024-03-10 |
 | [[RECIPES/Oatmeal Flax Chocolate Chip Cookies\|Oatmeal Flax Chocolate Chip Cookies]]                                                                                 | 2024-03-10 |
