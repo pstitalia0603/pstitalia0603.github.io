@@ -59,7 +59,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.DG_TOKEN }}  # This is from /settings/secrets/actions --> Repository secrets (You can reuse the one you have in your plugin settings)
+          github_token: ${{ secrets.DG_TOKEN }}  # This is from repository's /settings/secrets/actions --> Repository secrets (You can reuse the one you have in your plugin settings)
           publish_dir: ./dist
 ```
 

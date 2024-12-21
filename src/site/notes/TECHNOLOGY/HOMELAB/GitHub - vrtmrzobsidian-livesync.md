@@ -2,7 +2,9 @@
 {"dg-publish":true,"permalink":"/technology/homelab/git-hub-vrtmrzobsidian-livesync/","tags":["Obsidian","ToLearn","homelab"],"created":"2024-12-21 12:57:00 pm","updated":"2024-12-21 12:57:04 pm"}
 ---
 
+instructions: https://jegtnes.com/blog/self-hosting-obsidian-sync-for-ios-android-mac-and-windows-with-couchdb/
 
+- [ ] obsidian livesync 🛫 2024-12-22 
 # [GitHub - vrtmrz/obsidian-livesync](https://github.com/vrtmrz/obsidian-livesync)
 
 ## Self-hosted LiveSync
