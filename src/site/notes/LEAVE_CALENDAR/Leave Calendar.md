@@ -5,6 +5,8 @@
 
 [[LEAVE_CALENDAR/Leave Details\|Leave Details]]
 
+[[LEAVE_CALENDAR/Leave Calendar Documentation\|Leave Calendar Documentation]]
+
 ```button
 name Create Leave Request
 type command

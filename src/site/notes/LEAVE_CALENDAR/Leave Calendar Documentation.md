@@ -27,6 +27,7 @@ This version of the code assumes the following:
 - Person Leave is accrued at the rate of 8 hours every year, beginning on the first of the year, only to be used once
 - Max Annual Leave is 200 hours
 - Max Sick Leave is 56 hours
+- I assume these [[LEAVE_CALENDAR/Leave_Requests/Holidays\|Holidays]]
 
 ### File Structure
 
