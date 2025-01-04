@@ -4,8 +4,6 @@
 
 [[LEAVE_CALENDAR/Leave Details\|Leave Details]]
 
-[[TEMPLATES/LEAVE_REQUEST\|LEAVE_REQUEST]]
-
 [[LEAVE_CALENDAR/Leave Calendar\|Leave Calendar]]
 
 ### This project was heavily influenced by ChatGPT, and a LOT (a LOT) of back and forth!!!
