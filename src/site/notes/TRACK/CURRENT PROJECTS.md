@@ -7,7 +7,7 @@
 
 
 
-[[TECHNOLOGY/DEV/Resources\|Resources]]
+[[REFERENCE/Resources\|Resources]]
 
 
 # HTML Email Resources 

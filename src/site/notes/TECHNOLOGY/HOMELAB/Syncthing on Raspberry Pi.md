@@ -3,6 +3,9 @@
 ---
 
 [[TECHNOLOGY/HOMELAB/Syncthing linux\|Syncthing linux]]
+
+[[TECHNOLOGY/DEV/Syncthing - multiple-folders\|Syncthing - multiple-folders]]
+
 # Synchronizing Files on your Raspberry Pi with Syncthing
 
 [Clients for Syncthing](https://syncthing.net/downloads/) 

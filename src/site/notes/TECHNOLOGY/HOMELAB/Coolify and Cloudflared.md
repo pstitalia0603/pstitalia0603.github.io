@@ -92,7 +92,7 @@ apt-config dump | grep -F "APT::Architectures" -
 
 [[TECHNOLOGY/LINUX/Secure VPS - Self-host\|Secure VPS - Self-host]]
 
-Install NPM, NVM, NODE, PNPM, etc. [[REFERENCE/Useful Linux Commands\|Useful Linux Commands]]
+Install NPM, NVM, NODE, PNPM, etc. [[TECHNOLOGY/LINUX/Useful Linux Commands\|Useful Linux Commands]]
 
 ## Install coolify.io
 https://coolify.io/self-hosted

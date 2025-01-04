@@ -6,7 +6,7 @@
 [[TECHNOLOGY/LINUX/UFW firewall allow Samba inbound from Windows\|UFW firewall allow Samba inbound from Windows]]
 
 
-[[REFERENCE/Useful Linux Commands\|Useful Linux Commands]]
+[[TECHNOLOGY/LINUX/Useful Linux Commands\|Useful Linux Commands]]
 # [Configure Samba Server with Debian](https://unixcop.com/how-to-configure-samba-server-with-debian-11/)
 
 ## Install Samba server
@@ -61,6 +61,7 @@ Check running status of service.
 systemctl status smbd
 ```
 
+[[TECHNOLOGY/HOMELAB/Homelab Projects\|Homelab Projects]] 
 ## Mount drive in Linux
 
 https://www.lefkowitz.me/setup-a-network-share-via-samba-on-your-raspberry-pi/

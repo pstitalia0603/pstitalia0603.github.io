@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/homelab/send-with-ses-drag-and-drop-email-designer/","tags":["ToLearn","homelab","FOSS"],"noteIcon":"","created":"2024-12-20 11:02:48 am","updated":"2024-12-20 11:02:52 am"}
+{"dg-publish":true,"permalink":"/technology/homelab/send-with-ses-drag-and-drop-email-designer/","tags":["homelab","FOSS"],"noteIcon":"","created":"2024-12-20 11:02:48 am","updated":"2024-12-20 11:02:52 am"}
 ---
 
 
