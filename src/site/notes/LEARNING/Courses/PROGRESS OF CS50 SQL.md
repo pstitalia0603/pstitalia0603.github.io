@@ -4,7 +4,7 @@
 
 
 
-<span><span><p dir="auto"><img alt="progress" src="https://progress-bar.dev/51/" referrerpolicy="no-referrer"></p></span></span>
+<span><span><img alt="progress" src="https://progress-bar.dev/51/" referrerpolicy="no-referrer"></span></span>
 
 [CS50 SQL](https://cs50.harvard.edu/sql/2023/project/)
 
