@@ -51,6 +51,8 @@ I'm an **analytical problem-solver** who is:
 - Technology Podcasts and Blogs
 ---
 ### Projects
+[[TECHNOLOGY/HOMELAB/Homelab Projects\|Homelab Projects]]
+[[Rocky 3d\|Rocky 3d]]
 [[LEAVE_CALENDAR/Leave Calendar Documentation\|Leave Calendar Documentation]]
 [[PROJECTS/iDigital Garden\|iDigital Garden]]
 [[PROJECTS/ARCHIVE ICS TO CSV TO MD\|ARCHIVE ICS TO CSV TO MD]]
