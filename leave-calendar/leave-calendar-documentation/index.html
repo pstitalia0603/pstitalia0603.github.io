@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Resources</title>
+<title>Leave Calendar Documentation</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -261,6 +261,27 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('LEAVE_CALENDAR')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">LEAVE_CALENDAR</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/leave-calendar/leave-calendar-documentation/">Leave Calendar Documentation </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/leave-calendar/leave-calendar/">Leave Calendar </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/leave-calendar/leave-details/">Leave Details </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
 <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('PERSONAL')}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
 <i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
@@ -358,7 +379,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/best-breakfast-casserole/">Best Breakfast casserole </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/breakfast-casserole/">Breakfast casserole </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -370,7 +391,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/mini-cinnamon-muffin/">Mini Cinnamon Muffin </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/cinnamon-muffin/">Cinnamon Muffin </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -404,6 +425,19 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('REFERENCE')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">REFERENCE</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/reference/resources/">Resources </a>
+</div>
+</div>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="">
 <div class="folder inner-folder" x-data="{isOpen: $persist(false).as('TECHNOLOGY')}" @click.stop="isOpen=!isOpen">
 <div class="foldername-wrapper align-icon">
 <i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
@@ -423,10 +457,6 @@ CTRL + K
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/ohmyposh/">ohmyposh </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/resources/">Resources </a>
 </div>
 </div>
 </div>
@@ -548,159 +578,187 @@ CTRL + K
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2024-12-23T19:52:14.812Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2024-12-23T19:52:14.812Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2024-12-23T19:52:14.812Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-01-04T21:50:36.764Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-01-04T21:50:36.764Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-01-04T21:50:36.764Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Resources</h1>
+<h1 data-note-icon="">Leave Calendar Documentation</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#web_design
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#code
-</a>
-<a class="tag" onclick="toggleTagSearch(this)">
-#Work
+#Projects
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-21T11:13:44"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-21 11:14:00 am"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2025-01-04 4:29:00 pm"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-01-04 4:32:54 pm"></span></div></div></div>
 </header>
-<p><a class="internal-link" target="" data-note-icon="" href="/track/current-projects/">CURRENT PROJECTS</a></p>
-<h1 id="code" tabindex="-1">Code</h1>
+<p><a class="internal-link" target="" data-note-icon="" href="/leave-calendar/leave-details/">Leave Details</a></p>
+<p><a class="internal-link is-unresolved" href="/404" target="">LEAVE_REQUEST</a></p>
+<p><a class="internal-link" target="" data-note-icon="" href="/leave-calendar/leave-calendar/">Leave Calendar</a></p>
+<h3 id="this-project-was-heavily-influenced-by-chat-gpt-and-a-lot-a-lot-of-back-and-forth" tabindex="-1">This project was heavily influenced by ChatGPT, and a LOT (a LOT) of back and forth!!!</h3>
+<h3 id="plugins-needed" tabindex="-1">Plugins needed</h3>
 <ul>
-<li><a href="https://updateyourfooter.com/" target="_blank" class="external-link">https://updateyourfooter.com/</a></li>
+<li>Dataview</li>
+<li>Buttons</li>
+<li>QuickAdd</li>
+<li>Templater</li>
 </ul>
-<h1 id="code-tips" tabindex="-1">Code Tips</h1>
-<p><a href="https://code.visualstudio.com/docs/editor/codebasics" target="_blank" class="external-link">https://code.visualstudio.com/docs/editor/codebasics</a> ( Ctrl+Alt+Down or Ctrl+Alt+Up )</p>
-<h1 id="shell-formatting" tabindex="-1">Shell formatting</h1>
-<p><a href="https://ohmyposh.dev/" target="_blank" class="external-link">https://ohmyposh.dev/</a></p>
-<h1 id="images" tabindex="-1">Images</h1>
+<h3 id="overview" tabindex="-1">Overview</h3>
+<p>This JavaScript code generates a leave calendar that tracks and displays sick, annual, and personal leave over a specified date range. The calendar also takes into account holidays and leave requests.</p>
+<p>This version of the code assumes the following:</p>
 <ul>
-<li><a href="https://placehold.co/" target="_blank" class="external-link">https://placehold.co/</a></li>
-<li><a href="https://iconscout.com/" target="_blank" class="external-link">https://iconscout.com/</a></li>
-<li><a href="https://www.freepik.com" target="_blank" class="external-link">https://www.freepik.com</a></li>
-<li><a href="https://undraw.co/illustrations" target="_blank" class="external-link">https://undraw.co/illustrations</a></li>
-<li><a href="https://www.pexels.com/" target="_blank" class="external-link">https://www.pexels.com/</a></li>
+<li>Pay Period Start Date is 9/20/2024</li>
+<li>Annual Leave is accrued at the rate of 4.6 hours every 14 days after Pay Period Start Date</li>
+<li>Sick Leave is accrued at the rate of 2.7 hours every 14 days after Pay Period Start Date</li>
+<li>Person Leave is accrued at the rate of 8 hours every year, beginning on the first of the year, only to be used once</li>
+<li>Max Annual Leave is 200 hours</li>
+<li>Max Sick Leave is 56 hours</li>
 </ul>
-<h1 id="text" tabindex="-1">Text</h1>
+<h3 id="file-structure" tabindex="-1">File Structure</h3>
+<p>The system relies on the following folder and file structure:</p>
+<pre><code class="language-bash">LEAVE_CALENDAR/
+├── Leave Calendar.md             # Main page containing the leave calendar
+├── Leave Details                 # Folder containing detailed leave information (if needed)
+├── UPGRADES                      # For testing and new features (optional)
+├── Leave_Requests/
+│   ├── Holidays.md              # A markdown file containing the list of holidays
+│   ├── &lt;date&gt;.md                # Markdown files for each leave request, named by date (e.g., 2024-01-01.md)
+└── TEMPLATES/
+    └── LEAVE_REQUEST             # Template for creating new leave requests
+</code></pre>
+<h3 id="key-sections" tabindex="-1">Key Sections</h3>
+<ol>
+<li>
+<p><strong>Loading the Holidays</strong></p>
 <ul>
-<li><a href="https://cupcakeipsum.com/" target="_blank" class="external-link">https://cupcakeipsum.com/</a></li>
-<li><a href="https://loremipsum.io/" target="_blank" class="external-link">https://loremipsum.io/</a></li>
-<li><a href="https://pirateipsum.me/" target="_blank" class="external-link">https://pirateipsum.me/</a></li>
-<li><a href="http://officeipsum.com/" target="_blank" class="external-link">http://officeipsum.com/</a></li>
-<li><a href="https://loremipsum.ro/" target="_blank" class="external-link">https://loremipsum.ro/</a></li>
-<li><a href="https://www.justinmind.com/blog/awesome-lorem-ipsum-alternatives/" target="_blank" class="external-link">https://www.justinmind.com/blog/awesome-lorem-ipsum-alternatives/</a></li>
-</ul>
-<h1 id="fonts" tabindex="-1">Fonts</h1>
-<ul>
-<li><a href="https://fontshub.pro/" target="_blank" class="external-link">https://fontshub.pro/</a></li>
-<li><a href="https://freefontsfamily.net/" target="_blank" class="external-link">https://freefontsfamily.net/</a></li>
-<li><a href="https://fonts.google.com/" target="_blank" class="external-link">https://fonts.google.com/</a></li>
-<li><a href="https://fontawesome.com/start" target="_blank" class="external-link">https://fontawesome.com/start</a></li>
-</ul>
-<h1 id="colors" tabindex="-1">Colors</h1>
-<ul>
-<li><a href="https://imagecolorpicker.com/en" target="_blank" class="external-link">https://imagecolorpicker.com/en</a></li>
-<li><a href="https://coolors.co/" target="_blank" class="external-link">https://coolors.co/</a></li>
-<li><a href="https://colours.neilorangepeel.com/" target="_blank" class="external-link">https://colours.neilorangepeel.com/</a></li>
-<li><a href="https://www.materialpalette.com/" target="_blank" class="external-link">https://www.materialpalette.com/</a></li>
-<li><a href="https://colorhunt.co/" target="_blank" class="external-link">https://colorhunt.co/</a></li>
-</ul>
-<h1 id="database" tabindex="-1">Database</h1>
-<ul>
-<li><a href="https://app.quickdatabasediagrams.com/#/" target="_blank" class="external-link">https://app.quickdatabasediagrams.com/#/</a></li>
-<li><a href="https://dbdiagram.io/d" target="_blank" class="external-link">https://dbdiagram.io/d</a></li>
-<li><a href="https://robomongo.org/" target="_blank" class="external-link">https://robomongo.org/</a></li>
-</ul>
-<h1 id="html-email-tools" tabindex="-1">HTML Email tools</h1>
-<ul>
-<li><a class="internal-link is-unresolved" href="/404" target="">HTML Email Resources</a></li>
-<li><a href="https://temp-mail.org/en/" target="_blank" class="external-link">https://temp-mail.org/en/</a> - TempMail</li>
-</ul>
-<h1 id="tools" tabindex="-1">Tools</h1>
-<ul>
-<li><a href="https://rallly.co/" target="_blank" class="external-link">https://rallly.co/</a></li>
-<li><a href="https://excalidraw.com/" target="_blank" class="external-link">https://excalidraw.com/</a></li>
-<li><a href="https://www.figma.com/" target="_blank" class="external-link">https://www.figma.com/</a></li>
-<li><a href="https://wireframe.cc/" target="_blank" class="external-link">https://wireframe.cc/</a></li>
-<li><a href="https://app.diagrams.net/" target="_blank" class="external-link">https://app.diagrams.net/</a></li>
-<li><a href="https://getsharex.com/" target="_blank" class="external-link">https://getsharex.com/</a></li>
-<li><a href="https://flameshot.org/" target="_blank" class="external-link">https://flameshot.org/</a></li>
-<li><a href="https://www.converto.io/en69//" target="_blank" class="external-link">https://www.converto.io/en69//</a></li>
-</ul>
-<h1 id="interactive-pdf" tabindex="-1">Interactive PDF</h1>
-<ul>
-<li><a href="https://heyzine.com/" target="_blank" class="external-link">https://heyzine.com/</a></li>
-</ul>
-<h1 id="emojis" tabindex="-1">Emojis 🤌</h1>
-<ul>
-<li><a href="https://emojipedia.org/pinched-fingers" target="_blank" class="external-link">https://emojipedia.org/pinched-fingers</a></li>
-</ul>
-<h1 id="audio" tabindex="-1">Audio</h1>
-<ul>
-<li><a href="https://www.pond5.com/" target="_blank" class="external-link">https://www.pond5.com/</a></li>
-</ul>
-<h1 id="shell" tabindex="-1">Shell</h1>
-<ul>
-<li><a href="https://ohmyposh.dev/docs/installation/prompt" target="_blank" class="external-link">https://ohmyposh.dev/docs/installation/prompt</a></li>
-</ul>
-<h1 id="crm" tabindex="-1">CRM</h1>
-<ul>
-<li><a href="https://civicrm.org/download" target="_blank" class="external-link">https://civicrm.org/download</a></li>
-<li><a href="https://suitecrm.com/" target="_blank" class="external-link">https://suitecrm.com/</a></li>
-</ul>
-<h1 id="css" tabindex="-1">CSS</h1>
-<ul>
-<li><a href="https://cssreference.io/" target="_blank" class="external-link">https://cssreference.io/</a></li>
-<li><a href="https://css-tricks.com/" target="_blank" class="external-link">https://css-tricks.com/</a></li>
-</ul>
-<h1 id="ap-is" tabindex="-1">APIs</h1>
-<ul>
-<li>Weather
-<ul>
-<li><a href="https://open-meteo.com/en/docs#current=&amp;hourly=&amp;temperature_unit=fahrenheit&amp;wind_speed_unit=mph&amp;precipitation_unit=inch&amp;timezone=America%2FNew_York&amp;forecast_days=1" target="_blank" class="external-link">Open-Meteo</a></li>
-<li><a href="https://wttr.in/?1" target="_blank" class="external-link">wttr.in</a></li>
+<li>The code loads a list of holidays from the <code>LEAVE_CALENDAR/Leave_Requests/Holidays.md</code> file. The holidays are identified by dates in the <code>YYYY-MM-DD</code> format.</li>
 </ul>
 </li>
-</ul>
-<h1 id="templates" tabindex="-1">Templates</h1>
+</ol>
+<pre><code class="language-javascript">`const holidayPage = dv.pages('&quot;LEAVE_CALENDAR/Leave_Requests/Holidays.md&quot;');`
+</code></pre>
+<p>- <strong>What to modify:</strong><br>
+If your holiday data is stored in a different file, update the path to the appropriate markdown file.<br>
+2. <strong>Accrual Rates and Maximum Balances</strong></p>
+<p>- The accrual rates specify how much leave (sick, annual, and personal) is earned per pay period (14 days).<br>
+- The maximum balances define the cap on how much sick and annual leave can be accumulated.</p>
+<pre><code class="language-javascript">    const accrualRates = {     
+    sick: 2.7, // Sick leave accrues 2.7 hours per pay period     
+    annual: 4.6, // Annual leave accrues 4.6 hours per pay period     
+    personal: 8 // Personal leave: 8 hours per year };`
+</code></pre>
+<p>- <strong>What to modify:</strong><br>
+- Change the <code>sick</code>, <code>annual</code>, and <code>personal</code> values to adjust the leave accrual rates.<br>
+- Modify <code>maxSickBalance</code> and <code>maxAnnualBalance</code> to set the maximum leave balances.<br>
+3. <strong>Pay Period Configuration</strong></p>
+<p>- The first pay period start date is set to <code>September 20, 2024</code>, and the pay period length is 14 days.</p>
+<pre><code class="language-javascript">    const firstPayPeriodStart = new Date(2024, 8, 20); // First pay period: September 20, 2024
+const payPeriodLength = 14; // 14 days per pay period
+</code></pre>
+<p>- <strong>What to modify:</strong><br>
+- Change <code>firstPayPeriodStart</code> to the start date of your first pay period.<br>
+- Adjust <code>payPeriodLength</code> if your pay periods are different.</p>
+<ol start="4">
+<li>
+<p><strong>Date Helper Functions</strong></p>
 <ul>
-<li><a href="https://www.template.net/editable/5198/school-email-newsletter" target="_blank" class="external-link">https://www.template.net/editable/5198/school-email-newsletter</a></li>
+<li>Several helper functions handle date operations like formatting and adding days.</li>
 </ul>
-<h1 id="git" tabindex="-1">Git</h1>
+</li>
+</ol>
+<pre><code class="language-javascript">    function toISODateString(date) {
+    return date.toISOString().split(&quot;T&quot;)[0];
+}
+
+function addDays(date, days) {
+    const result = new Date(date);
+    result.setDate(result.getDate() + days);
+    return result;
+}
+
+function formatDate(date) {
+    return new Intl.DateTimeFormat(&quot;en-US&quot;, {
+        month: &quot;2-digit&quot;,
+        day: &quot;2-digit&quot;,
+        year: &quot;numeric&quot;
+    }).format(date);
+}
+</code></pre>
+<p>- <strong>What to modify:</strong><br>
+These functions handle date formatting and manipulation. If you need different date formats or other operations, modify these functions.</p>
+<ol start="5">
+<li>
+<p><strong>Leave Request Parsing</strong></p>
 <ul>
-<li><a href="https://learngitbranching.js.org/" target="_blank" class="external-link">https://learngitbranching.js.org/</a></li>
+<li>The code fetches leave requests from the <code>LEAVE_CALENDAR/Leave_Requests</code> folder and processes them. Each leave request is stored in a markdown file named by the date of the request (e.g., <code>2024-01-01.md</code>).</li>
 </ul>
-<h1 id="tutorials" tabindex="-1">Tutorials</h1>
+</li>
+</ol>
+<pre><code class="language-javascript">const leaveRequests = dv.pages('&quot;LEAVE_CALENDAR/Leave_Requests&quot;')
+    .where(p =&gt; p.date &amp;&amp; new Date(p.date) &gt;= firstPayPeriodStart); 
+</code></pre>
+<p>- <strong>What to modify:</strong><br>
+Ensure the path (<code>&quot;LEAVE_CALENDAR/Leave_Requests&quot;</code>) matches where your leave requests are stored. Each leave request file should contain a <code>date</code> field, which is used to track the leave.<br>
+6. <strong>Render Calendar</strong></p>
+<p>- The <code>renderCalendar</code> function generates the table, calculating balances and leave usage for each day in the specified date range.</p>
+<pre><code class="language-javascript">    function renderCalendar(start, end, events) {
+    // Logic to render the leave calendar
+}
+</code></pre>
+<p>- <strong>What to modify:</strong><br>
+You can adjust how the calendar is rendered, including adding more details or changing the layout.<br>
+7. <strong>Table Start and End Dates</strong></p>
+<p>- The <code>tableStartDate</code> is the date from which the calendar begins. The <code>tableEndDate</code> is calculated to be 3 months after the <code>tableStartDate</code>.</p>
+<pre><code class="language-javascript">    const tableStartDate = new Date(); // This will get the current date and time
+const tableEndDate = new Date();
+tableEndDate.setMonth(tableEndDate.getMonth() + 3); // Adds 3 months to today's date
+
+</code></pre>
+<p>- <strong>What to modify:</strong><br>
+- Set <code>tableStartDate</code> to the desired start date for the calendar (e.g., <code>new Date(2024, 8, 9)</code>).<br>
+- Adjust the <code>tableEndDate</code> calculation to reflect a different duration. For example, to add 6 months, change <code>setMonth(tableEndDate.getMonth() + 3)</code> to <code>setMonth(tableEndDate.getMonth() + 6)</code>.</p>
+<ol start="8">
+<li>
+<p><strong>Rendering the Table</strong></p>
 <ul>
-<li><a href="https://htmldog.com/guides/" target="_blank" class="external-link">https://htmldog.com/guides/</a></li>
-<li><a href="https://thevalleyofcode.com/" target="_blank" class="external-link">https://thevalleyofcode.com/</a></li>
+<li>The <code>dv.table</code> function generates the calendar table using the start and end dates.</li>
 </ul>
-<h1 id="markdown-collaboration" tabindex="-1">Markdown Collaboration</h1>
+</li>
+</ol>
+<pre><code class="language-javascript">    dv.table(
+    [&quot;Date&quot;, &quot;Leave Type&quot;, &quot;Hours Taken&quot;, &quot;Sick Balance&quot;, &quot;Annual Balance&quot;, &quot;Personal Balance&quot;, &quot;Color&quot;],
+    renderCalendar(tableStartDate, tableEndDate, events)
+);
+
+</code></pre>
+<p>- <strong>What to modify:</strong><br>
+If you want to change the columns displayed in the table, modify the array <code>[&quot;Date&quot;, &quot;Leave Type&quot;, &quot;Hours Taken&quot;, &quot;Sick Balance&quot;, &quot;Annual Balance&quot;, &quot;Personal Balance&quot;, &quot;Color&quot;]</code> to match the desired headers.</p>
+<hr>
+<h3 id="how-to-adjust-dates" tabindex="-1">How to Adjust Dates</h3>
+<ol>
+<li>
+<p><strong>Set the Start Date for the Calendar:</strong></p>
 <ul>
-<li><a href="https://onlinemarkdowneditor.dev/" target="_blank" class="external-link">https://onlinemarkdowneditor.dev/</a></li>
+<li>Find the line:</li>
 </ul>
-<h1 id="localhost-tunnels-other" tabindex="-1">Localhost tunnels/other</h1>
-<p>links-cloud and web hosting 🛫 2024-06-13<br>
-<a href="https://github.com/anderspitman/awesome-tunneling?tab=readme-ov-file" target="_blank" class="external-link">https://github.com/anderspitman/awesome-tunneling?tab=readme-ov-file</a></p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <a href="https://pinggy.io" target="_blank" class="external-link">https://pinggy.io</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_1" disabled="true"><label for="cbx_1"> <a href="https://zrok.io/" target="_blank" class="external-link">https://zrok.io/</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_2" disabled="true"><label for="cbx_2"> <a href="https://localxpose.io/docs/tutorials/sharing-files-from-localhost" target="_blank" class="external-link">https://localxpose.io/docs/tutorials/sharing-files-from-localhost</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_3" disabled="true"><label for="cbx_3"> <a href="https://www.drv.tw/#how" target="_blank" class="external-link">https://www.drv.tw/#how</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_4" disabled="true"><label for="cbx_4"> <a href="https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs" target="_blank" class="external-link">https://learn.microsoft.com/en-us/azure/app-service/quickstart-nodejs</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_5" disabled="true"><label for="cbx_5"> <a href="https://code.visualstudio.com/docs/editor/port-forwarding" target="_blank" class="external-link">https://code.visualstudio.com/docs/editor/port-forwarding</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_6" disabled="true"><label for="cbx_6"> <a href="https://tunnel.pyjam.as/" target="_blank" class="external-link">https://tunnel.pyjam.as/</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_7" disabled="true"><label for="cbx_7"> <a href="https://tailscale.com/" target="_blank" class="external-link">https://tailscale.com/</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_8" disabled="true"><label for="cbx_8"> <a href="https://earvingad.github.io/posts/headscale/" target="_blank" class="external-link">https://earvingad.github.io/posts/headscale/</a> --&gt; <a href="https://www.youtube.com/watch?v=OKwrfmMoAk0" target="_blank" class="external-link">https://www.youtube.com/watch?v=OKwrfmMoAk0</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_9" disabled="true"><label for="cbx_9"> <a href="https://telebit.cloud/" target="_blank" class="external-link">https://telebit.cloud/</a></label></li>
+</li>
+</ol>
+<pre><code class="language-javascript">   const tableStartDate = new Date();
+</code></pre>
+<p>- Modify this line to set a specific start date, for example:</p>
+<pre><code class="language-javascript">const tableStartDate = new Date(2024, 8, 9); // September 9, 2024
+</code></pre>
+<ol>
+<li>
+<p><strong>Set the End Date for the Calendar:</strong></p>
+<ul>
+<li>The end date is calculated based on the start date:</li>
 </ul>
-<h1 id="self-host" tabindex="-1">Self-host</h1>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_10" disabled="true"><label for="cbx_10"> <a href="https://www.youtube.com/watch?v=MpaAu3HVDYE" target="_blank" class="external-link">https://www.youtube.com/watch?v=MpaAu3HVDYE</a></label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_11" disabled="true"><label for="cbx_11"> <a href="https://www.youtube.com/watch?v=9t9Mp0BGnyI" target="_blank" class="external-link">https://www.youtube.com/watch?v=9t9Mp0BGnyI</a> NginX</label></li>
-</ul>
+</li>
+</ol>
+<pre><code class="language-javascript">        tableEndDate.setMonth(tableEndDate.getMonth() + 3); // Adds 3 months to today's date
+</code></pre>
+<p>- If you want the calendar to end 6 months after the start date, change it to:</p>
+<pre><code class="language-javascript">tableEndDate.setMonth(tableEndDate.getMonth() + 6); // Adds 6 months
+</code></pre>
 </main>
 <aside>
 <div class="sidebar">
@@ -742,51 +800,17 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#code">Code</a>
+<li><a href="#this-project-was-heavily-influenced-by-chat-gpt-and-a-lot-a-lot-of-back-and-forth">This project was heavily influenced by ChatGPT, and a LOT (a LOT) of back and forth!!!</a>
 </li>
-<li><a href="#code-tips">Code Tips</a>
+<li><a href="#plugins-needed">Plugins needed</a>
 </li>
-<li><a href="#shell-formatting">Shell formatting</a>
+<li><a href="#overview">Overview</a>
 </li>
-<li><a href="#images">Images</a>
+<li><a href="#file-structure">File Structure</a>
 </li>
-<li><a href="#text">Text</a>
+<li><a href="#key-sections">Key Sections</a>
 </li>
-<li><a href="#fonts">Fonts</a>
-</li>
-<li><a href="#colors">Colors</a>
-</li>
-<li><a href="#database">Database</a>
-</li>
-<li><a href="#html-email-tools">HTML Email tools</a>
-</li>
-<li><a href="#tools">Tools</a>
-</li>
-<li><a href="#interactive-pdf">Interactive PDF</a>
-</li>
-<li><a href="#emojis">Emojis 🤌</a>
-</li>
-<li><a href="#audio">Audio</a>
-</li>
-<li><a href="#shell">Shell</a>
-</li>
-<li><a href="#crm">CRM</a>
-</li>
-<li><a href="#css">CSS</a>
-</li>
-<li><a href="#ap-is">APIs</a>
-</li>
-<li><a href="#templates">Templates</a>
-</li>
-<li><a href="#git">Git</a>
-</li>
-<li><a href="#tutorials">Tutorials</a>
-</li>
-<li><a href="#markdown-collaboration">Markdown Collaboration</a>
-</li>
-<li><a href="#localhost-tunnels-other">Localhost tunnels/other</a>
-</li>
-<li><a href="#self-host">Self-host</a>
+<li><a href="#how-to-adjust-dates">How to Adjust Dates</a>
 </li>
 </ol>
 </nav>
