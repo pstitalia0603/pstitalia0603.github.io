@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","resume","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry","gardenEntry"],"noteIcon":"","created":"2024-02-17T15:34:00","updated":"2024-04-11T15:34:00"}
+{"dg-publish":true,"permalink":"/home/","tags":["Portfolio","resume","gardenEntry"],"noteIcon":"","created":"2024-02-17T15:34:00","updated":"2024-04-11T15:34:00"}
 ---
 
 
@@ -51,6 +51,7 @@ I'm an **analytical problem-solver** who is:
 - Technology Podcasts and Blogs
 ---
 ### Projects
+[[LEAVE_CALENDAR/Leave Calendar Documentation\|Leave Calendar Documentation]]
 [[PROJECTS/iDigital Garden\|iDigital Garden]]
 [[PROJECTS/ARCHIVE ICS TO CSV TO MD\|ARCHIVE ICS TO CSV TO MD]]
 [[PROJECTS/Workout log DOCUMENTATION\|Workout log DOCUMENTATION]]
