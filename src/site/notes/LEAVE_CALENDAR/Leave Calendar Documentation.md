@@ -13,6 +13,7 @@
 
 - Dataview
 - Buttons
+- QuickAdd
 - Templater
 ### Overview
 
