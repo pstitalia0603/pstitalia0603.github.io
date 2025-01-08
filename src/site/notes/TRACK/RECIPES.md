@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"noteIcon":"","created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2025/01-Jan/2025-01-07\|2025-01-07]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2025/01-Jan/2025-01-08\|2025-01-08]]
 
 
 [[TRACK/INTERESTS\|INTERESTS]]

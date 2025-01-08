@@ -8,14 +8,14 @@
  
 
 ## Yesterday is relative
-<span><span>NOTES/DAILY NOTES/2025/01-Jan/2025-01-06.md</span></span>
+<span><span>NOTES/DAILY NOTES/2025/01-Jan/2025-01-07.md</span></span>
 
 
 ## Yesterday is relative, but grabs frontmatter from yesterday
-<span><span>IF_START: 2025-01-06T18:10:00.000-05:00</span></span>
+<span><span>IF_START: 2025-01-07T18:10:00.000-05:00</span></span>
 
 ## Yesterday is relative, but does calculation between notes
-<span><span>Time difference between IF_START and IF_END: 13.82 hours</span></span>
+<span><span>Time difference between IF_START and IF_END: 13.85 hours</span></span>
 
 
 

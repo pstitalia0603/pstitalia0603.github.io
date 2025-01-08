@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/podcasts/","tags":["Interests"],"noteIcon":"","created":"2024-04-02 14:27","updated":"2024-04-02 14:28"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2025/01-Jan/2025-01-07\|2025-01-07]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2025/01-Jan/2025-01-08\|2025-01-08]]
 
 
 [[TRACK/INTERESTS\|INTERESTS]]
