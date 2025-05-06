@@ -472,6 +472,14 @@
 },
 
 {
+		"title": "Stuff I use",
+		"date":"Tue May 06 2025 23:21:30 GMT+0000 (Coordinated Universal Time)",
+		"url":"/stuff-i-use/",
+		"content": "<a class=\"internal-link is-unresolved\" href=\"/404\" target=\"\">Home</a>\nLife stuff\n\nCoros Pace 3\nObsidian – Notes and documentation\n\nHardware\n\nLaptop: Surface Laptop 4\nPhone: Samsung Galaxy S23U\nRaspberryPi 4B\n\nOS / Environment\n\nDebian / Ubuntu Linux / Mint Linux\nAndroid\nWindows 11\n\nData Stack\n\nMS Power BI\nMS Excel / Power Query\nSQL (Postgres, MSSQL, MySQL)\nPython (Pandas, NumPy)\nR (trying to learn!)\nHTML5\nCSS3\n\nMultimedia Design\n\nAffinity Suite: Photo, Designer, Publisher\nAdobe (Photoshop, Illustrator, Acrobat)\nVideo Production: Apple iMovie, DaVinci Resolve\nMicrosoft Office 365\n\nDevelopment\n\nBrave – Web Browser\nVisual Studio Code\ngit/github\nDBeaver\ncoolify.io - <a class=\"internal-link\" target=\"\" data-note-icon=\"\" href=\"/technology/homelab/coolify-and-cloudflared/\">Coolify and Cloudflared</a>\nAstroJS\n\nOther Software\n\nObsidian – Notes and documentation\nCryptomator\nAntennaPod\nAegis\n\nServices\n\nSyncthing - File Synchronization\n\nOnline Services\n\nBitwarden",
+		"tags": [ "note","Work","Projects","tracking"]
+},
+
+{
 		"title": "Apache Superset",
 		"date":"Tue May 06 2025 23:21:30 GMT+0000 (Coordinated Universal Time)",
 		"url":"/technology/dev/apache-superset/",

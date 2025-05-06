@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Monkey Bread With Caramel Sauce</title>
+<title>Stuff I use</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -404,7 +404,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/monkey-bread-with-caramel-sauce/">Monkey Bread With Caramel Sauce </a>
+<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/recipes/monkey-bread-with-caramel-sauce/">Monkey Bread With Caramel Sauce </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -596,7 +596,7 @@ CTRL + K
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="">
-<div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/stuff-i-use/">Stuff I use </a>
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/stuff-i-use/">Stuff I use </a>
 </div>
 </div>
 </div>
@@ -625,55 +625,80 @@ CTRL + K
 <script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-05-06T23:21:52.109Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-05-06T23:21:52.109Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-05-06T23:21:52.109Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Monkey Bread With Caramel Sauce</h1>
+<h1 data-note-icon="">Stuff I use</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#Recipes
+#Work
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#Projects
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#tracking
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-02-28T17:38:00"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-02-28 17:39"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-04-25T12:25:27"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-04-25T12:25:39"></span></div></div></div>
 </header>
-<h1 id="a-href-https-www-thecookingfoodie-com-recipe-monkey-bread-recipe-target-blank-class-external-link-monkey-bread-recipe-with-caramel-sauce-a" tabindex="-1"><a href="https://www.thecookingfoodie.com/recipe/Monkey-Bread-Recipe" target="_blank" class="external-link">Monkey Bread Recipe With Caramel Sauce</a></h1>
-<p><a href="https://www.thecookingfoodie.com/recipe/Monkey-Bread-Recipe#" target="_blank" class="external-link"><img src="https://www.thecookingfoodie.com/Images/Site/Products/240740_video_d1.jpg" alt="Monkey Bread Recipe With Caramel Sauce" title="Monkey Bread Recipe With Caramel Sauce"></a><br>
-Monkey bread with caramel sauce is the best pull apart bread you can find. Sticky, gooey sweet bread that everyone loves. This recipe includes full tutorial on how to make monkey bread and how to make homemade caramel sauce.</p>
-<p>INGREDIENTS FOR YIELDS</p>
-<p>For the bread:</p>
+<p><a class="internal-link is-unresolved" href="/404" target="">Home</a></p>
+<h2 id="life-stuff" tabindex="-1">Life stuff</h2>
 <ul>
-<li>5 cups (625g) All-purpose flour</li>
-<li>1/4 cup (50g) Sugar</li>
-<li>2 teaspoons (6g) Instant-dry yeast</li>
-<li>1 teaspoon Salt</li>
-<li>1 1/3 cups (320ml) Whole milk</li>
-<li>2 Eggs</li>
-<li>1/3 cup (70g) Butter, melted</li>
+<li>Coros Pace 3</li>
+<li><a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> – Notes and documentation</li>
 </ul>
-<p>For the coating:</p>
+<h2 id="hardware" tabindex="-1">Hardware</h2>
 <ul>
-<li>1/4 cup (60g) Butter</li>
-<li>3/4 cup (150g) White sugar</li>
-<li>1 tablespoon Cinnamon</li>
+<li>Laptop: Surface Laptop 4</li>
+<li>Phone: Samsung Galaxy S23U</li>
+<li>RaspberryPi 4B</li>
 </ul>
-<p>For the caramel sauce:</p>
+<h2 id="os-environment" tabindex="-1">OS / Environment</h2>
 <ul>
-<li>1 cup (200g) Sugar</li>
-<li>1/4 cup (60ml) Water</li>
+<li>Debian / Ubuntu Linux / Mint Linux</li>
+<li>Android</li>
+<li>Windows 11</li>
 </ul>
-<p>1/3 cup (70g) Butter, cold</p>
-<p>1/2 cup (120ml) Heavy cream</p>
-<p>DIRECTIONS</p>
-<ol>
-<li>Make the dough: into a bowl of a stand mixer place flour, sugar, yeast and salt. Mix.</li>
-<li>Make a well in the center and add milk, eggs, and melted butter. Using the hook attachment, knead the on medium speed until soft and smooth dough forms, about 4-5 minutes.</li>
-<li>Place the dough in a lightly oiled bowl, cover and let rise until doubled in size, about 1 hour.</li>
-<li>Make the coating: in a bowl mix sugar and cinnamon. Set aside.</li>
-<li>Make caramel sauce: in a sauce pan combine sugar and water, heat over medium heat until sugar dissolved and turns thick brown, amber-colored liquid (do not stir). Be careful not to burn. Once sugar is completely melted and reached a deep amber color, remove the saucepan from heat. Immediately pour heavy cream (Be careful, as the caramel will bubble up) and whisk until all the cream has been incorporated and you have a smooth sauce. Add butter, stir until melted.</li>
-<li>Shape the dough: Punch the dough down to release air, transfer to a lightly floured surface and divide the dough into small pieces. Roll each piece into a ball, then roll each ball in sugar cinnamon mixture.</li>
-<li>Grease a Bundt cake pan and pour 2-3 tablespoons of the caramel sauce to the bottom of the pan. Arrange 1/3 of the balls in the pan, pour 2-3 tablespoons of the caramel sauce, arrange another 1/3 of the dough balls, pour another 2-3 tablespoons of the caramel sauce, arrange he last third and pour another 2-3 tablespoon of the caramel sauce on top. Cover and let rise for 20 minutes, or until doubled in size.</li>
-<li>Preheat oven to 350F (180C).</li>
-<li>Bake for 30 minutes, until golden brown on top.</li>
-<li>Cool for 5 minutes, then invert onto a serving plate or cake stand. Release from the pan and drizzle as much caramel sauce as you like on top of the cake and serve warm.</li>
-</ol>
+<h2 id="data-stack" tabindex="-1">Data Stack</h2>
+<ul>
+<li>MS Power BI</li>
+<li>MS Excel / Power Query</li>
+<li>SQL (Postgres, MSSQL, MySQL)</li>
+<li>Python (Pandas, NumPy)</li>
+<li>R (trying to learn!)</li>
+<li>HTML5</li>
+<li>CSS3</li>
+</ul>
+<h2 id="multimedia-design" tabindex="-1">Multimedia Design</h2>
+<ul>
+<li>Affinity Suite: Photo, Designer, Publisher</li>
+<li>Adobe (Photoshop, Illustrator, Acrobat)</li>
+<li>Video Production: Apple iMovie, DaVinci Resolve</li>
+<li>Microsoft Office 365</li>
+</ul>
+<h2 id="development" tabindex="-1">Development</h2>
+<ul>
+<li>Brave – Web Browser</li>
+<li>Visual Studio Code</li>
+<li>git/github</li>
+<li>DBeaver</li>
+<li><a href="http://coolify.io" target="_blank" class="external-link">coolify.io</a> - <a class="internal-link" target="" data-note-icon="" href="/technology/homelab/coolify-and-cloudflared/">Coolify and Cloudflared</a></li>
+<li>AstroJS</li>
+</ul>
+<h2 id="other-software" tabindex="-1">Other Software</h2>
+<ul>
+<li><a href="https://obsidian.md/" target="_blank" class="external-link">Obsidian</a> – Notes and documentation</li>
+<li>Cryptomator</li>
+<li>AntennaPod</li>
+<li>Aegis</li>
+</ul>
+<h2 id="services" tabindex="-1">Services</h2>
+<ul>
+<li><a href="https://syncthing.net/" target="_blank" class="external-link">Syncthing</a> - File Synchronization</li>
+</ul>
+<h2 id="online-services" tabindex="-1">Online Services</h2>
+<ul>
+<li>Bitwarden</li>
+</ul>
 </main>
 <aside>
 <div class="sidebar">
@@ -715,7 +740,23 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#a-href-https-www-thecookingfoodie-com-recipe-monkey-bread-recipe-target-blank-class-external-link-monkey-bread-recipe-with-caramel-sauce-a">Monkey Bread Recipe With Caramel Sauce</a>
+<li><a href="#life-stuff">Life stuff</a>
+</li>
+<li><a href="#hardware">Hardware</a>
+</li>
+<li><a href="#os-environment">OS / Environment</a>
+</li>
+<li><a href="#data-stack">Data Stack</a>
+</li>
+<li><a href="#multimedia-design">Multimedia Design</a>
+</li>
+<li><a href="#development">Development</a>
+</li>
+<li><a href="#other-software">Other Software</a>
+</li>
+<li><a href="#services">Services</a>
+</li>
+<li><a href="#online-services">Online Services</a>
 </li>
 </ol>
 </nav>
