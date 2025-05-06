@@ -8,6 +8,7 @@
 
 [[TECHNOLOGY/DEV/HEDGEDOC on Coolify\|HEDGEDOC on Coolify]]
 
+[[TECHNOLOGY/HOMELAB/Actual Budget Server\|Actual Budget Server]]
 
 Instructions:
 https://www.youtube.com/watch?v=ZvIdFs3M5ic

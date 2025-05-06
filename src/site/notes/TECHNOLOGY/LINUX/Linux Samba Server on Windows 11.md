@@ -14,7 +14,7 @@
 Check what is the IP address of the server.
 
 ```
-# ip addr
+ip addr
 ```
 
 Update Server
@@ -33,20 +33,28 @@ Enable samba service on reboot.
 
 ```
 sudo systemctl enable smbd
+```
 
+```
 sudo systemctl start smbd
+```
 
+```
 sudo systemctl status smbd
 ```
 
 Open the following ports on the firewall.
 
 ```
-ufw allow 139
+sudo ufw allow 139
+```
 
-ufw allow 445 
+```
+sudo ufw allow 445 
+```
 
-sudo ufw allow Samba
+```
+sudo sudo ufw allow Samba
 ```
 
 Now, restart the smbd service

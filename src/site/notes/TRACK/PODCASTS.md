@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/podcasts/","tags":["Interests"],"noteIcon":"","created":"2024-04-02 14:27","updated":"2024-04-02 14:28"}
 ---
 
-GO TO TODAY: [[NOTES/DAILY NOTES/2025/01-Jan/2025-01-08\|2025-01-08]]
+GO TO TODAY: [[2025-05-06\|2025-05-06]]
 
 
 [[TRACK/INTERESTS\|INTERESTS]]
@@ -27,6 +27,7 @@ GO TO TODAY: [[NOTES/DAILY NOTES/2025/01-Jan/2025-01-08\|2025-01-08]]
 | [[ARCHIVE/2024/Can Dean Phillips Pull Off the Impossible Defeat Joe Biden\|Can Dean Phillips Pull Off the Impossible Defeat Joe Biden]]                                                         | 2024-01-12 | 4      | \-         |
 | [[ARCHIVE/2024/Democrats Have a Better Option Than Biden\|Democrats Have a Better Option Than Biden]]                                                                                           | 2024-02-21 | 3.75   | \-         |
 | [[ARCHIVE/2024/Do Not Buy A House\|Do Not Buy A House]]                                                                                                                                         | 2024-02-18 | 3.5    | \-         |
+| [[2025/Modern Wisdom 886 - Konstantin Kisin - A Plan To Save The Western World\|Modern Wisdom 886 - Konstantin Kisin - A Plan To Save The Western World]]                                       | \-         | \-     | \-         |
 | [[ARCHIVE/2024/The Anti-Woke Expert\|The Anti-Woke Expert]]                                                                                                                                     | \-         | \-     | \-         |
 | [[ARCHIVE/2024/Matt Taibbi on the Global Censorship-Industrial Complex\|Matt Taibbi on the Global Censorship-Industrial Complex]]                                                               | \-         | \-     | \-         |
 | [[ARCHIVE/2024/1992-The year politics broke\|1992-The year politics broke]]                                                                                                                     | \-         | \-     | \-         |

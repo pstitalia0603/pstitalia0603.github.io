@@ -3,6 +3,7 @@
 ---
 
 - [x] bananakies 🛫 2024-12-20 ✅ 2024-12-20
+- [x] bananakies 🛫 2025-03-01 ✅ 2025-03-01
 # [Healthy Bananakies Cookies](https://www.skinnytaste.com/healthy-cookies/#recipe) 
 
 PREP TIME: 10minutes mins

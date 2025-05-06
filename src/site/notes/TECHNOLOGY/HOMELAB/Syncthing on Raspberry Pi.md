@@ -1,10 +1,21 @@
 ---
-{"dg-publish":true,"permalink":"/technology/homelab/syncthing-on-raspberry-pi/","tags":["Obsidian","linux","syncthing"],"noteIcon":"","created":"2024-04-04T14:49:00","updated":"2024-04-04 14:50"}
+{"dg-publish":true,"permalink":"/technology/homelab/syncthing-on-raspberry-pi/","tags":["Obsidian","linux","syncthing"],"noteIcon":"","created":"2024-04-04T14:49:00","updated":"2025-03-25T18:49:00"}
 ---
 
 [[TECHNOLOGY/HOMELAB/Syncthing linux\|Syncthing linux]]
 
+As of 3/23/25 Syncthing is running on 192.168.1.246
+http://192.168.1.246:8384/#
+
+
 [[TECHNOLOGY/DEV/Syncthing - multiple-folders\|Syncthing - multiple-folders]]
+
+syncthing stop from powershell
+
+```
+taskkill /F /IM syncthing.exe
+```
+
 
 # Synchronizing Files on your Raspberry Pi with Syncthing
 
@@ -271,6 +282,37 @@ With the IP in hand, you can go to the following web address in a web browser of
 ```
 http://[PIIPADDRESS]:8384
 ```
+
+## If syncthing status stuck on activating:
+
+### **Fix the Issue:**
+
+1. **Stop the Incorrectly Running Service** (if it's running globally)
+    
+```bash
+sudo systemctl stop syncthing
+```
+    
+1. **Start Syncthing with Your Username**  
+    
+    ```bash
+
+    sudo systemctl restart syncthing@$(whoami)
+    ```
+    
+    Then check its status:
+    
+    ```bash
+    sudo systemctl status syncthing@$(whoami)
+    ```
+    
+2. **Enable It to Start on Boot**
+    
+    ```bash
+sudo systemctl enable syncthing@$(whoami)
+```
+
+---
 
 It’s essential that whatever you type in that the port number (`8384`) remains at the end as this is where the Syncthing software listens.
 

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/technology/homelab/homelab-projects/","tags":["homelab","Projects"],"noteIcon":"","created":"2024-12-24 9:38:44 am","updated":"2024-12-24 9:38:53 am"}
+{"dg-publish":true,"permalink":"/technology/homelab/homelab-projects-sync-conflict-20250323-184634-uanhon-5/","tags":["homelab","Projects"],"noteIcon":"","created":"2024-12-24 9:38:44 am","updated":"2024-12-24 9:38:53 am"}
 ---
 
 - [ ] [[TECHNOLOGY/HOMELAB/Homelab Projects\|Homelab Projects]] 🛫 2025-05-15
@@ -9,8 +9,8 @@
 
 # IMMICH
 - https://github.com/immich-app/immich
-	- [ ] Immich - backup to smugmug (with 20tb drive purchase?) 
-	- [ ] http://192.168.1.161:8000/login
+	- [x] Immich - backup to smugmug (with 20tb drive purchase?) 🛫 2025-02-28 ✅ 2025-03-30
+	- [x] http://192.168.1.161:8000/login ✅ 2025-03-30
 
 	
 - https://jellyfin.org/docs/general/installation/

@@ -220,4 +220,4 @@ Hotel: **Hotel Parco dei Principi** - Via Vito Vasile, 3, 70132 Bari BA, Italy
 
 https://travel.fragolab.us/italia2023.html
 
-![italia2023.png](/img/user/PERSONAL/TRAVEL/ITALIA/italia2023.png)
+![[italia2023.png\|italia2023.png]]

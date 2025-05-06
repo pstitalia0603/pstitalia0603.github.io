@@ -27,4 +27,4 @@
 
 https://travel.fragolab.us/italia2003.html
 
-![italia2003.png](/img/user/PERSONAL/TRAVEL/ITALIA/italia2003.png)
+![[italia2003.png\|italia2003.png]]

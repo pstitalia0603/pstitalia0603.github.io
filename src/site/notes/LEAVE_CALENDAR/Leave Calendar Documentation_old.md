@@ -43,6 +43,7 @@ LEAVE_CALENDAR/
     └── LEAVE_REQUEST             # Template for creating new leave requests
 ```
 
+
 ### Key Sections
 
 1. **Loading the Holidays**

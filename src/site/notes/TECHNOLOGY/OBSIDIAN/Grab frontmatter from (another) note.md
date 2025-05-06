@@ -8,19 +8,19 @@
  
 
 ## Yesterday is relative
-<span><span>NOTES/DAILY NOTES/2025/01-Jan/2025-01-07.md</span></span>
+<span><span>NOTES/DAILY NOTES/2025/05-May/2025-05-05.md</span></span>
 
 
 ## Yesterday is relative, but grabs frontmatter from yesterday
-<span><span>IF_START: 2025-01-07T18:10:00.000-05:00</span></span>
+<span><span>IF_START: 2025-05-05T18:45:00.000-04:00</span></span>
 
 ## Yesterday is relative, but does calculation between notes
-<span><span>Time difference between IF_START and IF_END: 13.85 hours</span></span>
+<span><span>IF_END not found for today.</span></span>
 
 
 
 ## Grabs frontmatter from date_created today (not relative)
-<span>2024-05-28</span>
+<span>May 28, 2024</span>
 
 
 ## Calculates non-relative yesterday
@@ -44,13 +44,13 @@ dv.current().date_created
 ## With Metaedit Plugin
 <pre class="dataview dataview-error">Evaluation Error: TypeError: Cannot read properties of undefined (reading 'api')
     at eval (eval at &lt;anonymous&gt; (plugin:dataview), &lt;anonymous&gt;:63:57)
-    at DataviewInlineApi.eval (plugin:dataview:18885:16)
-    at evalInContext (plugin:dataview:18886:7)
-    at asyncEvalInContext (plugin:dataview:18896:32)
-    at DataviewJSRenderer.render (plugin:dataview:18922:19)
-    at DataviewJSRenderer.onload (plugin:dataview:18464:14)
-    at e.load (app://obsidian.md/app.js:1:1230365)
-    at DataviewApi.executeJs (plugin:dataview:19465:18)
+    at DataviewInlineApi.eval (plugin:dataview:19027:16)
+    at evalInContext (plugin:dataview:19028:7)
+    at asyncEvalInContext (plugin:dataview:19038:32)
+    at DataviewJSRenderer.render (plugin:dataview:19064:19)
+    at DataviewJSRenderer.onload (plugin:dataview:18606:14)
+    at e.load (app://obsidian.md/app.js:1:1214378)
+    at DataviewApi.executeJs (plugin:dataview:19607:18)
     at DataviewCompiler.eval (plugin:digitalgarden:10760:23)
     at Generator.next (&lt;anonymous&gt;)</pre>
 
