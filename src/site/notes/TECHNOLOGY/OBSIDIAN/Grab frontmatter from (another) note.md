@@ -8,14 +8,14 @@
  
 
 ## Yesterday is relative
-<span><span>NOTES/DAILY NOTES/2025/05-May/2025-05-05.md</span></span>
+<span><span>NOTES/DAILY NOTES/2025/05-May/2025-05-11.md</span></span>
 
 
 ## Yesterday is relative, but grabs frontmatter from yesterday
-<span><span>IF_START: 2025-05-05T18:45:00.000-04:00</span></span>
+<span><span>IF_START: IF_START field not found.</span></span>
 
 ## Yesterday is relative, but does calculation between notes
-<span><span>IF_END not found for today.</span></span>
+<span><span>IF_START not found for yesterday.</span></span><span><span>IF_END not found for today.</span></span>
 
 
 

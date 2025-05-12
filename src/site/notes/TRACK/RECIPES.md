@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/track/recipes/","tags":["Interests"],"noteIcon":"","created":"2024-02-25T15:55:00","updated":"2024-02-25 15:59"}
 ---
 
-GO TO TODAY: [[2025-05-06\|2025-05-06]]
+GO TO TODAY: [[NOTES/DAILY NOTES/2025/05-May/2025-05-12\|2025-05-12]]
 
 
 [[TRACK/INTERESTS\|INTERESTS]]
@@ -44,8 +44,8 @@ GO TO TODAY: [[2025-05-06\|2025-05-06]]
 | [[RECIPES/Zucchini Fritters\|Zucchini Fritters]]                                                                                                                                             | \-         |
 | [[RECIPES/Zucchini Chips\|Zucchini Chips]]                                                                                                                                                   | \-         |
 | [[RECIPES/Thai Chicken Coconut Curry\|Thai Chicken Coconut Curry]]                                                                                                                           | \-         |
-| [[RECIPES/Sugar Cookies\|Sugar Cookies]]                                                                                                                                                     | \-         |
 | [[RECIPES/Pizza Dough\|Pizza Dough]]                                                                                                                                                         | \-         |
+| [[RECIPES/Sugar Cookies\|Sugar Cookies]]                                                                                                                                                     | \-         |
 | [[RECIPES/Mini Thai Crab Cakes with Spicy Aioli\|Mini Thai Crab Cakes with Spicy Aioli]]                                                                                                     | \-         |
 | [[RECIPES/Low Carb Tortillas\|Low Carb Tortillas]]                                                                                                                                           | \-         |
 | [[RECIPES/Keto Snack Recipes\|Keto Snack Recipes]]                                                                                                                                           | \-         |
@@ -58,7 +58,6 @@ GO TO TODAY: [[2025-05-06\|2025-05-06]]
 | [[RECIPES/Cottage Cheese Chocolate Chip Cookies (High Protein & Gluten-Free) - The Cooking Foodie\|Cottage Cheese Chocolate Chip Cookies (High Protein & Gluten-Free) - The Cooking Foodie]] | \-         |
 | [[RECIPES/Coconut Flour Waffles - LeelaLicious\|Coconut Flour Waffles - LeelaLicious]]                                                                                                       | \-         |
 | [[RECIPES/Coconut Flour Pizza Crust - Healthy Recipes Blog\|Coconut Flour Pizza Crust - Healthy Recipes Blog]]                                                                               | \-         |
-| [[RECIPES/Coconut Flour Cookies\|Coconut Flour Cookies]]                                                                                                                                     | \-         |
 | [[RECIPES/Chocolate Oatmeal Cake\|Chocolate Oatmeal Cake]]                                                                                                                                   | \-         |
 | [[RECIPES/Chocolate Covered Banana Pops\|Chocolate Covered Banana Pops]]                                                                                                                     | \-         |
 | [[RECIPES/Chipotle Mashed Potatoes\|Chipotle Mashed Potatoes]]                                                                                                                               | \-         |
@@ -67,6 +66,7 @@ GO TO TODAY: [[2025-05-06\|2025-05-06]]
 | [[RECIPES/Butternut Squash Soup with Cheesy Croutons  Kidstir\|Butternut Squash Soup with Cheesy Croutons  Kidstir]]                                                                         | \-         |
 | [[RECIPES/Basic Keto Cheese Crisps\|Basic Keto Cheese Crisps]]                                                                                                                               | \-         |
 | [[RECIPES/Baked Oatmeal Squares for Breakfast\|Baked Oatmeal Squares for Breakfast]]                                                                                                         | \-         |
+| [[RECIPES/Coconut Flour Cookies\|Coconut Flour Cookies]]                                                                                                                                     | \-         |
 
 { .block-language-dataview}
 
