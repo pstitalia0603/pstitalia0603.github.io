@@ -2,9 +2,9 @@
 {"dg-publish":true,"permalink":"/leave-calendar/leave-calendar-documentation-old/","tags":["Projects"],"noteIcon":"","created":"2025-01-04 4:29:00 pm","updated":"2025-01-04 4:32:54 pm"}
 ---
 
-[[LEAVE_CALENDAR/Leave Details\|Leave Details]]
+[[LEAVE_CALENDAR/Leave Details\|LEAVE DETAILS]]
 
-[[LEAVE_CALENDAR/Leave Calendar\|Leave Calendar]]
+[[LEAVE_CALENDAR/LEAVE LIST\|LEAVE LIST]]
 
 ### This project was heavily influenced by ChatGPT, and a LOT (a LOT) of back and forth!!!
 ### Plugins needed
