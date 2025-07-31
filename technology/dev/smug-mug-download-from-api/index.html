@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>Homelab Projects.sync-conflict-20250323-184634-UANHON5</title>
+<title>SmugMug Download from API</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -468,6 +468,10 @@ CTRL + K
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/ohmyposh/">ohmyposh </a>
 </div>
 </div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/dev/smug-mug-download-from-api/">SmugMug Download from API </a>
+</div>
+</div>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -487,10 +491,6 @@ CTRL + K
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
 <div @click.stop class="notelink"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/homelab/homelab-projects/">Homelab Projects </a>
-</div>
-</div>
-<div x-show="isOpen" style="display:none" class="filelist">
-<div @click.stop class="notelink active-note"><a data-note-icon="" style="text-decoration:none" class="filename" href="/technology/homelab/homelab-projects-sync-conflict-20250323-184634-uanhon-5/">Homelab Projects.sync-conflict-20250323-184634-UANHON5 </a>
 </div>
 </div>
 <div x-show="isOpen" style="display:none" class="filelist">
@@ -618,70 +618,96 @@ CTRL + K
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.21/dist/flexsearch.bundle.js"></script>
-<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-07-11T23:13:43.273Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-07-11T23:13:43.273Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-07-11T23:13:43.273Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
+<script>document.addEventListener("DOMContentLoaded",init,!1),document.addEventListener("DOMContentLoaded",setCorrectShortcut,!1),window.toggleSearch=function(){document.getElementById("globalsearch").classList.contains("active")?document.getElementById("globalsearch").classList.remove("active"):(document.getElementById("globalsearch").classList.add("active"),document.getElementById("term").focus())},window.toggleTagSearch=function(e){console.log(e.textContent);const t=e.textContent;t&&(window.document.getElementById("term").value=t.trim(),window.toggleSearch(),window.search())};const loadingSvg='\n    <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">\n      <g fill="none" fill-rule="evenodd" transform="translate(1 1)" stroke-width="2">\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="1.5s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="1.5s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="1.5s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="6" stroke-opacity="0">\n              <animate attributeName="r"\n                   begin="3s" dur="3s"\n                   values="6;22"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-opacity"\n                   begin="3s" dur="3s"\n                   values="1;0" calcMode="linear"\n                   repeatCount="indefinite" />\n              <animate attributeName="stroke-width"\n                   begin="3s" dur="3s"\n                   values="2;0" calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n          <circle cx="22" cy="22" r="8">\n              <animate attributeName="r"\n                   begin="0s" dur="1.5s"\n                   values="6;1;2;3;4;5;6"\n                   calcMode="linear"\n                   repeatCount="indefinite" />\n          </circle>\n      </g>\n  </svg>';function debounce(e,t,n){var a;return function(){var r=this,i=arguments,c=n&&!a;clearTimeout(a),a=setTimeout((function(){a=null,n||e.apply(r,i)}),t),c&&e.apply(r,i)}}function setCorrectShortcut(){navigator.platform.toUpperCase().indexOf("MAC")>=0&&document.querySelectorAll(".search-keys").forEach((e=>e.innerHTML="⌘ + K"))}function createIndex(e){const t=e=>e.toLowerCase().split(/([^a-z]|[^\x00-\x7F])/),n=new FlexSearch.Document({cache:!0,charset:"latin:extra",optimize:!0,index:[{field:"content",tokenize:"reverse",encode:t},{field:"title",tokenize:"forward",encode:t},{field:"tags",tokenize:"forward",encode:t}]});return e.forEach(((e,t)=>{n.add({id:t,title:e.title,content:e.content,tags:e.tags})})),n}async function init(){let e=!0;if(localStorage.getItem("searchIndex")){let{date:t,docs:n}=JSON.parse(localStorage.getItem("searchIndex"));if("2025-07-31T18:08:58.382Z"===t){e=!1;let t=createIndex(n);window.docs=n,window.index=t}}if(e){let e=await(await fetch("/searchIndex.json?v=2025-07-31T18:08:58.382Z")).json(),t=createIndex(e);localStorage.setItem("searchIndex",JSON.stringify({date:"2025-07-31T18:08:58.382Z",docs:e})),window.docs=e,window.index=t}document.addEventListener("keydown",(e=>{if((e.ctrlKey||e.metaKey)&&"k"===e.key&&(e.preventDefault(),toggleSearch()),"Escape"===e.key&&document.getElementById("globalsearch").classList.remove("active"),document.getElementById("globalsearch").classList.contains("active")){if("ArrowDown"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.nextElementSibling?t.nextElementSibling.classList.add("active"):document.querySelector(".searchresult").classList.add("active")):document.querySelector(".searchresult").classList.add("active");let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("ArrowUp"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t?(t.classList.remove("active"),t.previousElementSibling?t.previousElementSibling.classList.add("active"):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling||e.classList.add("active")}))):document.querySelectorAll(".searchresult").forEach((e=>{e.nextElementSibling&&e.classList.add("active")}));let n=document.querySelector(".searchresult.active");n&&n.scrollIntoView({behavior:"smooth",block:"nearest",inline:"start"})}if("Enter"===e.key){e.preventDefault();let t=document.querySelector(".searchresult.active");t&&(window.location.href=t.querySelector("a").href)}}}));const t=debounce(search,200,!1);field=document.querySelector("#term"),field.addEventListener("keydown",(e=>{"ArrowDown"!==e.key&&"ArrowUp"!==e.key&&t()})),resultsDiv=document.querySelector("#search-results");const n=new URL(location.href).searchParams;n.get("q")&&(field.setAttribute("value",n.get("q")),toggleSearch(),search())}async function search(){let e=field.value.trim();if(!e)return;if(e==lastSearch)return;console.log(`search for ${e}`),window.lastSearch=e,resultsDiv.innerHTML=loadingSvg;let t=offlineSearch(e),n="";if(!t.length){let t=document.createElement("p");return t.innerText=`No results for "${e}"`,resultsDiv.innerHTML="",void resultsDiv.appendChild(t)}n+='<div style="max-width:100%;">',t.forEach((e=>{e.tags&&e.tags.length>0?n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        <div class="header-meta">\n                            <div class="header-tags">\n                                ${e.tags.map((e=>'<a class="tag" href="JavaScript:Void(0);">#'+e+"</a>")).join("")}\n                            </div>\n                        </div>\n                        ${e.content}\n                    </div>\n                </div>`:n+=`<div class="searchresult">\n                    <a class="search-link" href="${e.url}">${e.title}</a>\n                    <div onclick="window.location='${e.url}'">\n                        ${e.content}\n                    </div>\n                </div>`})),n+="</div>",resultsDiv.innerHTML=n}function truncate(e,t){return(e=e.replaceAll(/<[^>]*>/g,"")).length<t?e:e.substring(0,t-3)+"..."}function offlineSearch(e){let t=window.docs,n="#"===e[0]&&e.length>1?index.search(e.substring(1),[{field:"tags"}]):index.search(e,[{field:"title",limit:5},{field:"content",weight:10}]);const a=e=>{const t=n.filter((t=>t.field===e));return 0===t.length?[]:[...t[0].result]};return[...new Set([...a("title"),...a("content"),...a("tags")])].map((e=>{let n=t[e];return n.content=truncate(n.content,400),n.tags=n.tags.filter((e=>"gardenEntry"!=e&&"note"!=e)),n}))}window.lastSearch=""</script>
 <main class="content cm-s-obsidian">
 <header>
-<h1 data-note-icon="">Homelab Projects.sync-conflict-20250323-184634-UANHON5</h1>
+<h1 data-note-icon="">SmugMug Download from API</h1>
 <div class="header-meta">
 <div class="header-tags">
 <a class="tag" onclick="toggleTagSearch(this)">
-#homelab
+#technology
 </a>
 <a class="tag" onclick="toggleTagSearch(this)">
-#Projects
+#smugmug
+</a>
+<a class="tag" onclick="toggleTagSearch(this)">
+#Python
 </a>
 </div>
-<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2024-12-24 9:38:44 am"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2024-12-24 9:38:53 am"></span></div></div></div>
+<div class="timestamps"><div><i icon-name="calendar-plus"></i> <span class="human-date" data-date="2025-07-31 2:07:01 pm"></span></div><div><i icon-name="calendar-clock"></i> <span class="human-date" data-date="2025-07-31 2:07:18 pm"></span></div></div></div>
 </header>
-<ul class="task-list">
-<li class="task-list-item">
-<p><input type="checkbox" id="cbx_0" disabled="true"><label for="cbx_0"> <a class="internal-link" target="" data-note-icon="" href="/technology/homelab/homelab-projects/">Homelab Projects</a> 🛫 2025-05-15</label></p>
-</li>
-<li>
-<p><a href="https://dbeaver.com/docs/cloudbeaver/" target="_blank" class="external-link">https://dbeaver.com/docs/cloudbeaver/</a></p>
-</li>
-<li>
-<p><a href="https://docs.gitlab.com/ee/install/docker/index.html" target="_blank" class="external-link">https://docs.gitlab.com/ee/install/docker/index.html</a></p>
-</li>
-</ul>
-<h1 id="immich" tabindex="-1">IMMICH</h1>
+<p><a href="https://github.com/pstitalia0603/DOWNLOAD_SMUGMUG/blob/main/download_smugmug_photos_GH.py" target="_blank" class="external-link">https://github.com/pstitalia0603/DOWNLOAD_SMUGMUG/blob/main/download_smugmug_photos_GH.py</a></p>
+<h1 id="download-your-smugmug-photos-from-the-api" tabindex="-1">Download your Smugmug photos from the API!</h1>
+<h2 id="replace-with-your-credentials" tabindex="-1">🔐 Replace with your credentials</h2>
 <ul>
-<li>
-<p><a href="https://github.com/immich-app/immich" target="_blank" class="external-link">https://github.com/immich-app/immich</a></p>
-<ul class="task-list">
-<li class="task-list-item"><input type="checkbox" id="cbx_1" checked="true" disabled="true"><label for="cbx_1"> Immich - backup to smugmug (with 20tb drive purchase?) 🛫 2025-02-28 ✅ 2025-03-30</label></li>
-<li class="task-list-item"><input type="checkbox" id="cbx_2" checked="true" disabled="true"><label for="cbx_2"> <a href="http://192.168.1.161:8000/login" target="_blank" class="external-link">http://192.168.1.161:8000/login</a> ✅ 2025-03-30</label></li>
+<li>API DOCUMENTATION: <a href="https://api.smugmug.com/api/v2/doc/tutorial/basics.html" target="_blank" class="external-link">https://api.smugmug.com/api/v2/doc/tutorial/basics.html</a></li>
+<li><a href="https://api.smugmug.com/api/v2/doc" target="_blank" class="external-link">https://api.smugmug.com/api/v2/doc</a></li>
+<li>FIND API INFO: <a href="https://www.smugmug.com/app/developer" target="_blank" class="external-link">https://www.smugmug.com/app/developer</a></li>
 </ul>
-</li>
-<li>
-<p><a href="https://jellyfin.org/docs/general/installation/" target="_blank" class="external-link">https://jellyfin.org/docs/general/installation/</a></p>
-</li>
-<li>
-<p><a href="https://listmonk.app/#download" target="_blank" class="external-link">https://listmonk.app/#download</a></p>
-</li>
-<li>
-<p><a href="https://docs.mattermost.com/" target="_blank" class="external-link">https://docs.mattermost.com/</a></p>
-</li>
-<li>
-<p><a href="https://github.com/maybe-finance/maybe" target="_blank" class="external-link">https://github.com/maybe-finance/maybe</a></p>
-</li>
-<li>
-<p><a href="https://docs.mealie.io/" target="_blank" class="external-link">https://docs.mealie.io/</a></p>
-</li>
-<li>
-<p><a href="https://www.metabase.com/" target="_blank" class="external-link">https://www.metabase.com/</a></p>
-</li>
-<li>
-<p><a href="https://github.com/alexta69/metube" target="_blank" class="external-link">https://github.com/alexta69/metube</a></p>
-</li>
-<li>
-<p><a href="https://nocodb.com/" target="_blank" class="external-link">https://nocodb.com/</a></p>
-</li>
-<li>
-<p><a href="https://www.odoo.com/" target="_blank" class="external-link">https://www.odoo.com/</a></p>
-</li>
+<h2 id="smug-mug-photo-downloader" tabindex="-1">📸 SmugMug Photo Downloader</h2>
+<p>A Python script to authenticate with the SmugMug API via OAuth 1.0a, retrieve all albums and images for a user, and download the images organized by album folder.</p>
+<h2 id="features" tabindex="-1">🚀 Features</h2>
+<ul>
+<li>OAuth 1.0a authentication flow with manual PIN entry</li>
+<li>Fetches user info (nickname, user key, etc.)</li>
+<li>Retrieves all albums (auto-paginated)</li>
+<li>Retrieves all images within each album (auto-paginated)</li>
 </ul>
-<p><a class="internal-link is-unresolved" href="/404" target="">PSFNuc</a></p>
+<p>📁 Folder Structure<br>
+All images are downloaded to a local folder called smugmug_photos, which is automatically created in the same directory as the script. Inside that folder, each album is saved in its own subfolder named after the album title.</p>
+<p>Example layout:</p>
+<pre><code>your_project_directory/
+├── download_smugmug_photos.py
+├── smugmug_photos/
+│ ├── Summer Vacation 2023/
+│ │ ├── IMG_001.jpg
+│ │ ├── IMG_002.jpg
+│ │ └── ...
+│ ├── Family Reunion/
+│ │ ├── photo1.jpg
+│ │ ├── photo2.jpg
+│ │ └── ...
+│ └── ...
+</code></pre>
+<ul>
+<li>Handles SmugMug API rate limits (429) and respects Retry-After headers</li>
+<li>Logs remaining requests and reset times via rate limit headers</li>
+</ul>
+<h2 id="requirements" tabindex="-1">🛠️ Requirements</h2>
+<ul>
+<li>Python 3.7+</li>
+<li><code>requests</code></li>
+<li><code>requests_oauthlib</code></li>
+</ul>
+<p>Install requirements:</p>
+<pre><code class="language-bash">pip install requests requests_oauthlib
+</code></pre>
+<h2 id="configuration" tabindex="-1">🔐 Configuration</h2>
+<p>Update your script with your SmugMug API credentials:</p>
+<ul>
+<li>API_KEY = &quot;YOUR_API_KEY&quot;</li>
+<li>API_SECRET = &quot;YOUR_API_SECRET&quot;</li>
+</ul>
+<h2 id="usage" tabindex="-1">🧪 Usage</h2>
+<p>Run the script:</p>
+<pre><code class="language-python">python download_smugmug_photos.py
+</code></pre>
+<p>You'll be prompted to visit a SmugMug authorization URL and enter a PIN.</p>
+<p>Once authenticated, the script will:</p>
+<p>Fetch your SmugMug albums</p>
+<p>Fetch all images from each album</p>
+<p>Download images into a folder named smugmug_photos</p>
+<h2 id="notes" tabindex="-1">🧠 Notes</h2>
+<p>SmugMug paginates API responses; this script handles pagination automatically.</p>
+<p>SmugMug imposes a rate limit on API usage. If you hit the limit (status code 429), the script will pause and retry automatically.</p>
+<p>Album names are sanitized for safe folder creation.</p>
+<p>Duplicate images will not be re-downloaded if they already exist locally.</p>
+<h2 id="to-do" tabindex="-1">📝 To-Do</h2>
+<p>Add support for incremental syncing (skip albums that haven’t changed)</p>
+<p>Add progress bar</p>
+<p>Add logging or summary report</p>
+<h2 id="license" tabindex="-1">📄 License</h2>
+<p>MIT License. Use freely and modify as needed.</p>
 </main>
 <aside>
 <div class="sidebar">
@@ -723,7 +749,27 @@ On this page
 <div class="toc-container">
 <nav class="toc">
 <ol>
-<li><a href="#immich">IMMICH</a>
+<li><a href="#download-your-smugmug-photos-from-the-api">Download your Smugmug photos from the API!</a>
+<ol>
+<li><a href="#replace-with-your-credentials">🔐 Replace with your credentials</a>
+</li>
+<li><a href="#smug-mug-photo-downloader">📸 SmugMug Photo Downloader</a>
+</li>
+<li><a href="#features">🚀 Features</a>
+</li>
+<li><a href="#requirements">🛠️ Requirements</a>
+</li>
+<li><a href="#configuration">🔐 Configuration</a>
+</li>
+<li><a href="#usage">🧪 Usage</a>
+</li>
+<li><a href="#notes">🧠 Notes</a>
+</li>
+<li><a href="#to-do">📝 To-Do</a>
+</li>
+<li><a href="#license">📄 License</a>
+</li>
+</ol>
 </li>
 </ol>
 </nav>
