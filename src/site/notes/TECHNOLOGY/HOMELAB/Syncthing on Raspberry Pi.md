@@ -176,6 +176,10 @@ Run the following command to begin writing the file within the “`/lib/systemd/
 sudo nano /lib/systemd/system/syncthing.service
 ```
 
+this is probably better location?
+```
+sudo nano /etc/systemd/system/syncthing.service
+```
 **2.** Within this file, enter the following lines.
 
 **While entering these lines ensure that you replace “`pi`” with the name of your user.**
@@ -212,6 +216,24 @@ These lines dictate how the operating system will handle Syncthing on our Raspbe
 **4.** With our service created, we can now enable it to start at boot.
 
 All you need to do is run the following command.
+
+```bash
+sudo systemctl restart syncthing@$(whoami)
+```
+
+```bash
+sudo systemctl enable syncthing@$(whoami)
+```
+
+```bash
+sudo systemctl start syncthing@$(whoami)
+```
+
+```bash
+sudo systemctl status syncthing@$(whoami)
+```
+
+
 
 ```bash
 sudo systemctl enable syncthing
