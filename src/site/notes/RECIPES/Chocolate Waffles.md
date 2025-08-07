@@ -4,6 +4,7 @@
 
 - [x] Waffles 🛫 2024-08-29 ✅ 2024-08-29
 - [x] Waffles 🛫 2024-12-31 ✅ 2024-12-31
+- [x] choc waffles 🛫 2025-05-26 ✅ 2025-05-26
 # [Chocolate Waffles](https://lilluna.com/chocolate-waffles/#wprm-recipe-container-167383)
 
 # Recipe

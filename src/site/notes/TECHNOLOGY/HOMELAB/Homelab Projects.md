@@ -2,10 +2,12 @@
 {"dg-publish":true,"permalink":"/technology/homelab/homelab-projects/","tags":["homelab","Projects"],"noteIcon":"","created":"2024-12-24 9:38:44 am","updated":"2024-12-24 9:38:53 am"}
 ---
 
-- [ ] [[TECHNOLOGY/HOMELAB/Homelab Projects\|Homelab Projects]] 🛫 2025-05-15
+- [ ] [[TECHNOLOGY/HOMELAB/Homelab Projects\|Homelab Projects]] 
 
 - https://dbeaver.com/docs/cloudbeaver/
 - https://docs.gitlab.com/ee/install/docker/index.html
+
+https://github.com/awesome-selfhosted/awesome-selfhosted
 
 # IMMICH
 - https://github.com/immich-app/immich

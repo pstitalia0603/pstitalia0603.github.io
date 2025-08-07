@@ -8,7 +8,7 @@
  
 
 ## Yesterday is relative
-<span><span>NOTES/DAILY NOTES/2025/05-May/2025-05-11.md</span></span>
+<span><span>NOTES/DAILY NOTES/2025/07-Jul/2025-07-30.md</span></span>
 
 
 ## Yesterday is relative, but grabs frontmatter from yesterday
@@ -51,7 +51,7 @@ dv.current().date_created
     at DataviewJSRenderer.onload (plugin:dataview:18606:14)
     at e.load (app://obsidian.md/app.js:1:1214378)
     at DataviewApi.executeJs (plugin:dataview:19607:18)
-    at DataviewCompiler.eval (plugin:digitalgarden:10760:23)
+    at DataviewCompiler.eval (plugin:digitalgarden:10763:23)
     at Generator.next (&lt;anonymous&gt;)</pre>
 
 

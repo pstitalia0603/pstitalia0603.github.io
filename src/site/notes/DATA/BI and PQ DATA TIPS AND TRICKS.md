@@ -5,8 +5,8 @@
 | File                                                                                     | DATE       | tags                                                                                   |
 | ---------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------- |
 | [[TECHNOLOGY/DEV/Apache Superset\|Apache Superset]]                                   | 07-21-2024 | <ul><li>Data</li><li>Projects</li></ul>                                                |
-| [[DATA/WEEKNUM function\|WEEKNUM function]]                                           | 07-21-2024 | <ul><li>Excel</li><li>Data</li></ul>                                                   |
 | [[DATA/UPPERCASE AND UNDERSCORE COLUMN NAMES\|UPPERCASE AND UNDERSCORE COLUMN NAMES]] | 07-21-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
+| [[DATA/WEEKNUM function\|WEEKNUM function]]                                           | 07-21-2024 | <ul><li>Excel</li><li>Data</li></ul>                                                   |
 | [[DATA/Transform Column Names in Bulk\|Transform Column Names in Bulk]]               | 07-21-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/REPLACE VALUES, MULTIPLE CRITERIA \|REPLACE VALUES, MULTIPLE CRITERIA ]]       | 07-21-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/REMOVE DUPLICATES\|REMOVE DUPLICATES]]                                         | 07-21-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
@@ -16,8 +16,8 @@
 | [[DATA/M-CODE-mult-col\|M-CODE-mult-col]]                                             | 07-21-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
 | [[DATA/M Mode - Multiple Columns\|M Mode - Multiple Columns]]                         | 07-21-2024 | <ul><li>Data</li><li>m-code</li><li>dax</li><li>Power_query</li></ul>                  |
 | [[DATA/List.Repeat - PowerQuery M\|List.Repeat - PowerQuery M]]                       | 07-21-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
-| [[DATA/Errors in PQ\|Errors in PQ]]                                                   | 07-21-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
 | [[DATA/FISCAL MONTH NUMBER CALC\|FISCAL MONTH NUMBER CALC]]                           | 07-21-2024 | <ul><li>Power_bi</li><li>Data</li></ul>                                                |
+| [[DATA/Errors in PQ\|Errors in PQ]]                                                   | 07-21-2024 | <ul><li>Data</li><li>Power_query</li></ul>                                             |
 | [[DATA/Date Table and Fiscal Year column\|Date Table and Fiscal Year column]]         | 07-21-2024 | <ul><li>Power_bi</li><li>Power_query</li><li>m-code</li><li>dax</li><li>Data</li></ul> |
 | [[DATA/Data Governance\|Data Governance]]                                             | 09-12-2024 | <ul><li>Data</li><li>Work</li></ul>                                                    |
 | [[DATA/Count Non-null Values\|Count Non-null Values]]                                 | 07-21-2024 | <ul><li>Power_query</li><li>Data</li></ul>                                             |
